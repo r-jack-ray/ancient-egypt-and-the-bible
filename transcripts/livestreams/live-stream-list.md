@@ -1,12 +1,12 @@
 # 📺 Ancient Egypt and the Bible – Livestream Archive
 - [Live Stream #209: One-Meaning Flippancy](https://www.youtube.com/watch?v=H6CBCG9YX4U) `209-one-meaning-flippancy`
-- [Live Stream #208: Hysterical Context Error](https://www.youtube.com/watch?v=wf4G-NcyCe4&t=1932s) `208-hysterical-context-error`
+- [Live Stream #208: Hysterical Context Error](https://www.youtube.com/watch?v=wf4G-NcyCe4) `208-hysterical-context-error`
 - [Live Stream #207: Root of the Problem](https://www.youtube.com/watch?v=Gjz-v5Wi804) `207-root-of-the-problem`
-- [Live Stream #206: Getting All Wet](https://www.youtube.com/watch?v=PBp54FqPv7E&t=20s) `206-getting-all-wet`
-- [Live Stream #205: Dead Seminaries Society](https://www.youtube.com/watch?v=9X7hVNRfNUw&t=3677s) `205-dead-seminaries-society`
+- [Live Stream #206: Getting All Wet](https://www.youtube.com/watch?v=PBp54FqPv7E) `206-getting-all-wet`
+- [Live Stream #205: Dead Seminaries Society](https://www.youtube.com/watch?v=9X7hVNRfNUw) `205-dead-seminaries-society`
 - [Live Stream #204: Never Ending Popcorn](https://www.youtube.com/watch?v=7-_-pSlLCgw) `204-never-ending-popcorn`
 - [Live Stream #203: Degenerative Artificial Intelligence](https://www.youtube.com/watch?v=6DKyKGhC8Q4) `203-degenerative-artificial-intelligence`
-- [Live Stream #202: Rewriting Rewritten History: Did Egypt Try to Hide the Monster Pyramid Springs?](https://www.youtube.com/watch?v=KIoyVPmseOc&t=10259s) `202-rewriting-rewritten-history-did-egypt-try-to-hide-the-monster-pyramid-springs`
+- [Live Stream #202: Rewriting Rewritten History: Did Egypt Try to Hide the Monster Pyramid Springs?](https://www.youtube.com/watch?v=KIoyVPmseOc) `202-rewriting-rewritten-history-did-egypt-try-to-hide-the-monster-pyramid-springs`
 - [Live Stream #201: Back From The Land Of The Dead](https://www.youtube.com/watch?v=JZy3BGzlUxo) `201-back-from-the-land-of-the-dead`
 - [Live Stream #200: The Terrible Two Hundreds!!!](https://www.youtube.com/watch?v=wQkBymcVTEs) `200-the-terrible-two-hundreds`
 - [Live Stream #199: Discovering the Tomb of Pharaoh Khnop-Hotep.](https://www.youtube.com/watch?v=NSFbjecsdX8) `199-discovering-the-tomb-of-pharaoh-khnop-hotep`
@@ -14,32 +14,32 @@
 - [Live Stream #197: USAID Now Paying Grants in Canadian Tire Money](https://www.youtube.com/watch?v=MzscycBpgjI) `197-usaid-now-paying-grants-in-canadian-tire-money`
 - [Live Stream #196: Remembering Kenneth A. Kitchen](https://www.youtube.com/watch?v=pGmOZ9jdOdQ) `196-remembering-kenneth-a-kitchen`
 - [Live Stream #195: Wisdom of the Channel](https://www.youtube.com/watch?v=vd2HbEVjess) `195-wisdom-of-the-channel`
-- [Live Stream #194: Vancouver City V](https://www.youtube.com/watch?v=b4lWcz28fMw&t=4150s) `194-vancouver-city-v`
-- [Live Stream #193: Back in the Saddle.](https://www.youtube.com/watch?v=F3BEjnAqgWw&t=1077s) `193-back-in-the-saddle`
-- [Live Stream #192: Truths, Facts, and Blessed Facts](https://www.youtube.com/watch?v=_5SSVZ0_soc&t=1341s) `192-truths-facts-and-blessed-facts`
+- [Live Stream #194: Vancouver City V](https://www.youtube.com/watch?v=b4lWcz28fMw) `194-vancouver-city-v`
+- [Live Stream #193: Back in the Saddle.](https://www.youtube.com/watch?v=F3BEjnAqgWw) `193-back-in-the-saddle`
+- [Live Stream #192: Truths, Facts, and Blessed Facts](https://www.youtube.com/watch?v=_5SSVZ0_soc) `192-truths-facts-and-blessed-facts`
 - [Live Stream #191: Happy New Year!!!](https://www.youtube.com/watch?v=J_S_LxHFa08) `191-happy-new-year`
 - [Live Stream #190: Spilt Tea All Over the Floor](https://www.youtube.com/watch?v=QhyTbeOS4g4) `190-spilt-tea-all-over-the-floor`
 - [Live Stream #189: The Thirteenthest of Fridays](https://www.youtube.com/watch?v=CQdYUSe3hV4) `189-the-thirteenthest-of-fridays`
 - [Live Stream #188: Turning to Spilling the Coffee](https://www.youtube.com/watch?v=aLsOi-ig6X4) `188-turning-to-spilling-the-coffee`
 - [Live Stream #187: Post-Conference Apocalypse](https://www.youtube.com/watch?v=NZiidCizBEQ) `187-post-conference-apocalypse`
-- [Live Stream #186: Our Second ETS D&D Special Live Stream](https://www.youtube.com/watch?v=msTEhuIDElw&t=6963s) `186-our-second-ets-dd-special-live-stream`
+- [Live Stream #186: Our Second ETS D&D Special Live Stream](https://www.youtube.com/watch?v=msTEhuIDElw) `186-our-second-ets-dd-special-live-stream`
 - [Live Stream #185: Song of the Awesome](https://www.youtube.com/watch?v=ZmyvBLejXL0) `185-song-of-the-awesome`
 - [Live Stream #184: Priesthood of the Most Sacred Question](https://www.youtube.com/watch?v=GhhX7GR-zvE) `184-priesthood-of-the-most-sacred-question`
 - [Live Stream #183: Happy All Saints Day!](https://www.youtube.com/watch?v=UnLfr0rCC2k) `183-happy-all-saints-day`
 - [Live Stream #182: Rolling Dice For The Answers](https://www.youtube.com/watch?v=6frru028lOc) `182-rolling-dice-for-the-answers`
-- [Live Stream #181: Growing Concern Over The Ever Shrinking Deben](https://www.youtube.com/watch?v=1A4vtYOyyLc&t=1051s) `181-growing-concern-over-the-ever-shrinking-deben`
+- [Live Stream #181: Growing Concern Over The Ever Shrinking Deben](https://www.youtube.com/watch?v=1A4vtYOyyLc) `181-growing-concern-over-the-ever-shrinking-deben`
 - [Live Stream #180: Quirky Square Dancing Publishing](https://www.youtube.com/watch?v=poPNaIqdshw) `180-quirky-square-dancing-publishing`
 - [Live Stream #179: Remember That Time I Took a Day Off?  Me Neither.](https://www.youtube.com/watch?v=FfAZ-VQatxI) `179-remember-that-time-i-took-a-day-off-me-neither`
 - [Live Stream #178: Raising Samuel For Fun and Prophet](https://www.youtube.com/watch?v=hCdQe9q4A5w) `178-raising-samuel-for-fun-and-prophet`
 - [Live Stream #177: Is David Falk the Same Person as Dr. Falk?](https://www.youtube.com/watch?v=ISMO6TD9giY) `177-is-david-falk-the-same-person-as-dr-falk`
-- [Live Stream #176: The People Groups of YouTube](https://www.youtube.com/watch?v=sKKScMy3Q64&t=1s) `176-the-people-groups-of-you-tube`
+- [Live Stream #176: The People Groups of YouTube](https://www.youtube.com/watch?v=sKKScMy3Q64) `176-the-people-groups-of-you-tube`
 - [Live Stream #175: Meta the Meta, Meta Responses](https://www.youtube.com/watch?v=bGY1zwr_wss) `175-meta-the-meta-meta-responses`
 - [Live Stream #174: The Shroud With The X-Ray Eyes](https://www.youtube.com/watch?v=pjs3dNgZMQA) `174-the-shroud-with-the-x-ray-eyes`
 - [Live Stream #173: I never said she stole my money](https://www.youtube.com/watch?v=80oRlFB_V60) `173-i-never-said-she-stole-my-money`
 - [Live Stream #172: A Marathon of 14,000 Subs](https://www.youtube.com/watch?v=uSma5je3KA4) `172-a-marathon-of-14000-subs`
 - [Live Stream #171: A Census of Every Conjecture](https://www.youtube.com/watch?v=IArgOM3IUb4) `171-a-census-of-every-conjecture`
-- [Live Stream #170: The Foundation of All Deposits](https://www.youtube.com/watch?v=rlELX8XI7S8&pp=0gcJCY0JAYcqIYzv) `170-the-foundation-of-all-deposits`
-- [Live Stream #169: Your Local Ski Resort Cannot Be The Real Mount Sinai](https://www.youtube.com/watch?v=Ur0jd3JLNxk&t=3s) `169-your-local-ski-resort-cannot-be-the-real-mount-sinai`
+- [Live Stream #170: The Foundation of All Deposits](https://www.youtube.com/watch?v=rlELX8XI7S8) `170-the-foundation-of-all-deposits`
+- [Live Stream #169: Your Local Ski Resort Cannot Be The Real Mount Sinai](https://www.youtube.com/watch?v=Ur0jd3JLNxk) `169-your-local-ski-resort-cannot-be-the-real-mount-sinai`
 - [Live Stream #168: Funky, Groovy, Trendy Ramesses II](https://www.youtube.com/watch?v=g9tKk48D9Rw) `168-funky-groovy-trendy-ramesses-ii`
 - [Live Stream #167: Super Expensive Egyptian Ritual Practice](https://www.youtube.com/watch?v=GRa11_37Vy8) `167-super-expensive-egyptian-ritual-practice`
 - [Live Stream #166: Have Nothing to Do with Those Spirally Galaxies](https://www.youtube.com/watch?v=p2U6vH79c7o) `166-have-nothing-to-do-with-those-spirally-galaxies`
@@ -50,62 +50,62 @@
 - [Live Stream #161: All The Second-Born Questions](https://www.youtube.com/watch?v=2f1Teze-G7Y) `161-all-the-second-born-questions`
 - [Live Stream #160: The Synchronicity Of 13,000 Subs](https://www.youtube.com/watch?v=JA1A7IeLekE) `160-the-synchronicity-of-13000-subs`
 - [Live Stream #159: A Flood of Questions](https://www.youtube.com/watch?v=q88q_ozY_Ec) `159-a-flood-of-questions`
-- [Live Stream #158: Biblically Accurate Harsh Language](https://www.youtube.com/watch?v=E9vtdhGehes&pp=0gcJCY0JAYcqIYzv) `158-biblically-accurate-harsh-language`
+- [Live Stream #158: Biblically Accurate Harsh Language](https://www.youtube.com/watch?v=E9vtdhGehes) `158-biblically-accurate-harsh-language`
 - [Live Stream #157: The No True Canadian Fallacy](https://www.youtube.com/watch?v=pqpz1SEv_II) `157-the-no-true-canadian-fallacy`
 - [Live Stream #156: The Pursuasion Dictionary](https://www.youtube.com/watch?v=bsrdrbRaZYQ) `156-the-pursuasion-dictionary`
 - [Live Stream #155: The Tyranny of Hypocrisy](https://www.youtube.com/watch?v=qQuVwgNpPk8) `155-the-tyranny-of-hypocrisy`
 - [Live Stream #154: A Brief Question of Logic](https://www.youtube.com/watch?v=kH3qHY_b3BU) `154-a-brief-question-of-logic`
 - [Live Stream #153: Philosophy Is A Walk On A Slippery Rock](https://www.youtube.com/watch?v=B-mR9TACPCM) `153-philosophy-is-a-walk-on-a-slippery-rock`
-- [Live Stream #152: Good Friday 2024](https://www.youtube.com/watch?v=6G_FngsHgV8&t=1311s) `152-good-friday-2024`
+- [Live Stream #152: Good Friday 2024](https://www.youtube.com/watch?v=6G_FngsHgV8) `152-good-friday-2024`
 - [Live Stream #151: Nine Myths About Spam](https://www.youtube.com/watch?v=oGgvDwIod1U) `151-nine-myths-about-spam`
 - [Live Stream #150: Not So Glorious Glass Fish](https://www.youtube.com/watch?v=I53p5iUeVjY) `150-not-so-glorious-glass-fish`
 - [Live Stream #149: Univocality and Naïve Literalism Sitting in a Tree](https://www.youtube.com/watch?v=RE-lcBpQJ0s) `149-univocality-and-naive-literalism-sitting-in-a-tree`
 - [Live Stream #148: Christian Marriage, Meant To Endure](https://www.youtube.com/watch?v=MHfIQdIFROg) `148-christian-marriage-meant-to-endure`
 - [Live Stream #147: Celebrating 12,000 Subs… We Hope.](https://www.youtube.com/watch?v=mVea6OvoRic) `147-celebrating-12000-subs-we-hope`
-- [Live Stream #146: An Evening with David Falk, Whatcha Expecting?](https://www.youtube.com/watch?v=9vUnL8PmZFI&t=8s) `146-an-evening-with-david-falk-whatcha-expecting`
+- [Live Stream #146: An Evening with David Falk, Whatcha Expecting?](https://www.youtube.com/watch?v=9vUnL8PmZFI) `146-an-evening-with-david-falk-whatcha-expecting`
 - [Live Stream #145: Questions at 8pm PST](https://www.youtube.com/watch?v=F0YfmR6qli4) `145-questions-at-8-pm-pst`
 - [Live Stream #144: Stampede of Sacred Cows](https://www.youtube.com/watch?v=soQU4CJKdt4) `144-stampede-of-sacred-cows`
 - [Live Stream #143: Something Overripe in the State of the Answers](https://www.youtube.com/watch?v=QfRTudHfzBk) `143-something-overripe-in-the-state-of-the-answers`
 - [Live Stream #142: Think About the Questions!!!](https://www.youtube.com/watch?v=fVPZXw6Vbt0) `142-think-about-the-questions`
-- [Live Stream #141: The Sweet Incense of an Answered Question](https://www.youtube.com/watch?v=u_631AIpRwA&t=8860s&pp=0gcJCY0JAYcqIYzv) `141-the-sweet-incense-of-an-answered-question`
-- [Live Stream #140: Popcorn or Curse Amulet, which is Saltier?](https://www.youtube.com/watch?v=X3LyU6SOsNM&t=4272s) `140-popcorn-or-curse-amulet-which-is-saltier`
+- [Live Stream #141: The Sweet Incense of an Answered Question](https://www.youtube.com/watch?v=u_631AIpRwA) `141-the-sweet-incense-of-an-answered-question`
+- [Live Stream #140: Popcorn or Curse Amulet, which is Saltier?](https://www.youtube.com/watch?v=X3LyU6SOsNM) `140-popcorn-or-curse-amulet-which-is-saltier`
 - [Live Stream #139: Mr. EC Wishes You A Happy 2024](https://www.youtube.com/watch?v=HEs8SiArRI0) `139-mr-ec-wishes-you-a-happy-2024`
 - [Live Stream #138: St. Nick is Watching You](https://www.youtube.com/watch?v=gULL91393YI) `138-st-nick-is-watching-you`
-- [Live Stream #137: 365.2422 Days Of Questions](https://www.youtube.com/watch?v=fGyijLYdH7A&t=7529s) `137-365-2422-days-of-questions`
-- [Live Stream #136: Extreme Old Questions](https://www.youtube.com/watch?v=QihdtBTu_tg&t=6002s) `136-extreme-old-questions`
+- [Live Stream #137: 365.2422 Days Of Questions](https://www.youtube.com/watch?v=fGyijLYdH7A) `137-365-2422-days-of-questions`
+- [Live Stream #136: Extreme Old Questions](https://www.youtube.com/watch?v=QihdtBTu_tg) `136-extreme-old-questions`
 - [Live Stream #135: Full Time!!! Full Time!!!](https://www.youtube.com/watch?v=e4ZN0Zc9I7Y) `135-full-time-full-time`
 - [Live Stream #134: Home Sweet Home](https://www.youtube.com/watch?v=HgdAiK9HH-A) `134-home-sweet-home`
-- [Live Stream #133: The ETS D&D Special Live Stream](https://www.youtube.com/watch?v=m0lfwar6BD0&t=6054s) `133-the-ets-dd-special-live-stream`
+- [Live Stream #133: The ETS D&D Special Live Stream](https://www.youtube.com/watch?v=m0lfwar6BD0) `133-the-ets-dd-special-live-stream`
 - [Live Stream #132: The Questions are Genuine, But Not In The Way You Think](https://www.youtube.com/watch?v=0UFI0kEn0BI) `132-the-questions-are-genuine-but-not-in-the-way-you-think`
-- [Live Stream #131: Very Spooky Scary Answers](https://www.youtube.com/watch?v=5eWfYtTAN4A&pp=0gcJCY0JAYcqIYzv) `131-very-spooky-scary-answers`
-- [Live Stream #130: Million Dollar Questions](https://www.youtube.com/watch?v=9nYsP-vzSXQ&t=5s) `130-million-dollar-questions`
-- [Live Stream #129: Anything But Ammonites](https://www.youtube.com/watch?v=FLegx9MGmdc&t=1968s) `129-anything-but-ammonites`
+- [Live Stream #131: Very Spooky Scary Answers](https://www.youtube.com/watch?v=5eWfYtTAN4A) `131-very-spooky-scary-answers`
+- [Live Stream #130: Million Dollar Questions](https://www.youtube.com/watch?v=9nYsP-vzSXQ) `130-million-dollar-questions`
+- [Live Stream #129: Anything But Ammonites](https://www.youtube.com/watch?v=FLegx9MGmdc) `129-anything-but-ammonites`
 - [Live Stream #128: Knowledge Gaps Filled Fast](https://www.youtube.com/watch?v=SCiHmB9L850) `128-knowledge-gaps-filled-fast`
-- [Live Stream #127: Pyramid of the Puppet Pharaohs](https://www.youtube.com/watch?v=hqbQIlTCGTE&t=17s) `127-pyramid-of-the-puppet-pharaohs`
+- [Live Stream #127: Pyramid of the Puppet Pharaohs](https://www.youtube.com/watch?v=hqbQIlTCGTE) `127-pyramid-of-the-puppet-pharaohs`
 - [Live Stream #126: Apocalypse Of The Sock Puppet](https://www.youtube.com/watch?v=Ou2jBECn4rM) `126-apocalypse-of-the-sock-puppet`
-- [Live Stream #125: In the Beginning... Nope… Let's Question Instead.](https://www.youtube.com/watch?v=zv-1Fp_A8Fg&t=5816s) `125-in-the-beginning-nope-lets-question-instead`
+- [Live Stream #125: In the Beginning... Nope… Let's Question Instead.](https://www.youtube.com/watch?v=zv-1Fp_A8Fg) `125-in-the-beginning-nope-lets-question-instead`
 - [Live Stream #124: Questioning Book Learning](https://www.youtube.com/watch?v=OZSDvdeTC-Q) `124-questioning-book-learning`
-- [Live Stream #123: Biblical Archaeology, A Game Any Clown Can Play](https://www.youtube.com/watch?v=8B89Z9FUymI&t=8765s) `123-biblical-archaeology-a-game-any-clown-can-play`
-- [Live Stream #122: Myths, The Academic World, and Questions](https://www.youtube.com/watch?v=chnlrXAizaM&t=1s) `122-myths-the-academic-world-and-questions`
+- [Live Stream #123: Biblical Archaeology, A Game Any Clown Can Play](https://www.youtube.com/watch?v=8B89Z9FUymI) `123-biblical-archaeology-a-game-any-clown-can-play`
+- [Live Stream #122: Myths, The Academic World, and Questions](https://www.youtube.com/watch?v=chnlrXAizaM) `122-myths-the-academic-world-and-questions`
 - [Live Stream #121: Big questions and puny gods](https://www.youtube.com/watch?v=4pba10scwKg) `121-big-questions-and-puny-gods`
-- [Live Stream #120: What Are You Going To Do With Your Question?](https://www.youtube.com/watch?v=0WXR_JFYsFQ&t=6798s) `120-what-are-you-going-to-do-with-your-question`
+- [Live Stream #120: What Are You Going To Do With Your Question?](https://www.youtube.com/watch?v=0WXR_JFYsFQ) `120-what-are-you-going-to-do-with-your-question`
 - [Live Stream #119: Dinosaur? Hippo? Question Monster?](https://www.youtube.com/watch?v=RR1gcWg1gus) `119-dinosaur-hippo-question-monster`
-- [Live Stream #118: Yeah, Even with Good Questions, the Egyptian Afterlife Still Sucks](https://www.youtube.com/watch?v=JwbrXBi_ieU&t=2803s) `118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks`
-- [Live Stream #117: Celebrating 10,000 Subscribers](https://www.youtube.com/watch?v=mW67gRhiXgs&t=8736s) `117-celebrating-10000-subscribers`
-- [Live Stream #116: Anachronistic Questions Brought Direct to You](https://www.youtube.com/watch?v=iuLLi4v_pkw&t=8566s) `116-anachronistic-questions-brought-direct-to-you`
-- [Live Stream #115: The Magic of a Good Question](https://www.youtube.com/watch?v=63Yt1EIc8Ng&t=741s) `115-the-magic-of-a-good-question`
-- [Live Stream #114: Sugary Question Goodness](https://www.youtube.com/watch?v=HJp8t4AXgXg&t=11889s) `114-sugary-question-goodness`
-- [Live Stream #113: Questioning the Lore](https://www.youtube.com/watch?v=KSYXqKQnJxA&t=15s) `113-questioning-the-lore`
-- [Live Stream #112: Questions Are The Reward](https://www.youtube.com/watch?v=MlFIL9cvfsg&t=9100s) `112-questions-are-the-reward`
-- [Live Stream #111: Questions in the Garden](https://www.youtube.com/watch?v=x0lq8l-Ehvs&t=13003s) `111-questions-in-the-garden`
-- [Live Stream #110: Statues in the Mist](https://www.youtube.com/watch?v=RQKbcY5k4rE&t=24s) `110-statues-in-the-mist`
-- [Live Stream #109: A Revised View of Pseudoscience](https://www.youtube.com/watch?v=rson-uLBhPk&t=1390s) `109-a-revised-view-of-pseudoscience`
-- [Live Stream #108: The Many Views of Heck](https://www.youtube.com/watch?v=y5KgOW9yQ3w&t=482s) `108-the-many-views-of-heck`
+- [Live Stream #118: Yeah, Even with Good Questions, the Egyptian Afterlife Still Sucks](https://www.youtube.com/watch?v=JwbrXBi_ieU) `118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks`
+- [Live Stream #117: Celebrating 10,000 Subscribers](https://www.youtube.com/watch?v=mW67gRhiXgs) `117-celebrating-10000-subscribers`
+- [Live Stream #116: Anachronistic Questions Brought Direct to You](https://www.youtube.com/watch?v=iuLLi4v_pkw) `116-anachronistic-questions-brought-direct-to-you`
+- [Live Stream #115: The Magic of a Good Question](https://www.youtube.com/watch?v=63Yt1EIc8Ng) `115-the-magic-of-a-good-question`
+- [Live Stream #114: Sugary Question Goodness](https://www.youtube.com/watch?v=HJp8t4AXgXg) `114-sugary-question-goodness`
+- [Live Stream #113: Questioning the Lore](https://www.youtube.com/watch?v=KSYXqKQnJxA) `113-questioning-the-lore`
+- [Live Stream #112: Questions Are The Reward](https://www.youtube.com/watch?v=MlFIL9cvfsg) `112-questions-are-the-reward`
+- [Live Stream #111: Questions in the Garden](https://www.youtube.com/watch?v=x0lq8l-Ehvs) `111-questions-in-the-garden`
+- [Live Stream #110: Statues in the Mist](https://www.youtube.com/watch?v=RQKbcY5k4rE) `110-statues-in-the-mist`
+- [Live Stream #109: A Revised View of Pseudoscience](https://www.youtube.com/watch?v=rson-uLBhPk) `109-a-revised-view-of-pseudoscience`
+- [Live Stream #108: The Many Views of Heck](https://www.youtube.com/watch?v=y5KgOW9yQ3w) `108-the-many-views-of-heck`
 - [Live Stream #107: A Hot Mess of Ebal Amulet Epigraphy](https://www.youtube.com/watch?v=DClj9BDRQLQ) `107-a-hot-mess-of-ebal-amulet-epigraphy`
-- [Live Stream #106: It may be a problem if Mr EC reads the Bible more than you](https://www.youtube.com/watch?v=KtleYR1edg8&t=9030s) `106-it-may-be-a-problem-if-mr-ec-reads-the-bible-more-than-you`
+- [Live Stream #106: It may be a problem if Mr EC reads the Bible more than you](https://www.youtube.com/watch?v=KtleYR1edg8) `106-it-may-be-a-problem-if-mr-ec-reads-the-bible-more-than-you`
 - [Live Stream #105: Happy Birthday!!! Three Years of Ancient Egypt and the Bible](https://www.youtube.com/watch?v=64BI7V-Ex8E) `105-happy-birthday-three-years-of-ancient-egypt-and-the-bible`
 - [Live Stream #104: Striving Towards An Inerrant Live Stream](https://www.youtube.com/watch?v=_3LJbRKb2Lc) `104-striving-towards-an-inerrant-live-stream`
-- [Live Stream #103: Six Reasons To Watch This Live Stream](https://www.youtube.com/watch?v=pibf9ANi2x4&pp=0gcJCY0JAYcqIYzv) `103-six-reasons-to-watch-this-live-stream`
+- [Live Stream #103: Six Reasons To Watch This Live Stream](https://www.youtube.com/watch?v=pibf9ANi2x4) `103-six-reasons-to-watch-this-live-stream`
 - [Live Stream #102: PhD in OT or a Cognate Field, a False Dilemma](https://www.youtube.com/watch?v=tFhkc2K0hIs) `102-ph-d-in-ot-or-a-cognate-field-a-false-dilemma`
 - [Live Stream #101: God Will Provide A Lamb](https://www.youtube.com/watch?v=D7p6tUmGDuI) `101-god-will-provide-a-lamb`
 - [Live Stream #100: Celebration? Could Be!](https://www.youtube.com/watch?v=dE-S1eNreRU) `100-celebration-could-be`
@@ -116,14 +116,14 @@
 - [Live Stream #95: Egyptian Myths Interacting With Our Live Streams](https://www.youtube.com/watch?v=NUHnprKRn0I) `95-egyptian-myths-interacting-with-our-live-streams`
 - [Live Stream #94: A Divinely Inspired Live Stream, or So We Can Dream](https://www.youtube.com/watch?v=ZHAJp0qm3uI) `94-a-divinely-inspired-live-stream-or-so-we-can-dream`
 - [Live Stream #93: Praying for the People of Turkey](https://www.youtube.com/watch?v=Q7XQMH-rmWo) `93-praying-for-the-people-of-turkey`
-- [Live Stream #92: Ten Myths about the Good Doctor](https://www.youtube.com/watch?v=EsTdqeuDvS4&pp=0gcJCY0JAYcqIYzv) `92-ten-myths-about-the-good-doctor`
+- [Live Stream #92: Ten Myths about the Good Doctor](https://www.youtube.com/watch?v=EsTdqeuDvS4) `92-ten-myths-about-the-good-doctor`
 - [Live Stream #91: Take Two Cuneiform Tablets and Call Me in the Morning.](https://www.youtube.com/watch?v=h3iIN4M2pIM) `91-take-two-cuneiform-tablets-and-call-me-in-the-morning`
 - [Live Stream #90: Open Round-Table, Discussing the Amorite Tablets.](https://www.youtube.com/watch?v=fX3v3WBBJxw) `90-open-round-table-discussing-the-amorite-tablets`
-- [Live Stream #89: Osiris god of the dead. He's dead dead. Dead as a door knocker.](https://www.youtube.com/watch?v=nMFRDIncoB0&pp=0gcJCY0JAYcqIYzv) `89-osiris-god-of-the-dead-hes-dead-dead-dead-as-a-door-knocker`
+- [Live Stream #89: Osiris god of the dead. He's dead dead. Dead as a door knocker.](https://www.youtube.com/watch?v=nMFRDIncoB0) `89-osiris-god-of-the-dead-hes-dead-dead-dead-as-a-door-knocker`
 - [Live Stream #88: Popcorn is at the Gates!!!](https://www.youtube.com/watch?v=MFQf6gUtm-E) `88-popcorn-is-at-the-gates`
-- [Live Stream #87: 8000 Subs, Further and Farther than We Ever Thought](https://www.youtube.com/watch?v=-9ev3g39jtQ&pp=0gcJCY0JAYcqIYzv) `87-8000-subs-further-and-farther-than-we-ever-thought`
+- [Live Stream #87: 8000 Subs, Further and Farther than We Ever Thought](https://www.youtube.com/watch?v=-9ev3g39jtQ) `87-8000-subs-further-and-farther-than-we-ever-thought`
 - [Live Stream #86: 2022, Ushering Out the Year of the Dead Hard Drive](https://www.youtube.com/watch?v=PiiwZYM6TQk) `86-2022-ushering-out-the-year-of-the-dead-hard-drive`
-- [Live Stream #85: St. Nicholas vs Arius, the Cage Match. This Time It's Theological!](https://www.youtube.com/watch?v=LXv_tj5rTHw&pp=0gcJCY0JAYcqIYzv) `85-st-nicholas-vs-arius-the-cage-match-this-time-its-theological`
+- [Live Stream #85: St. Nicholas vs Arius, the Cage Match. This Time It's Theological!](https://www.youtube.com/watch?v=LXv_tj5rTHw) `85-st-nicholas-vs-arius-the-cage-match-this-time-its-theological`
 - [Live Stream #84: And Now Back To Our Regularly Scheduled Program](https://www.youtube.com/watch?v=M_i8PNIjQUM) `84-and-now-back-to-our-regularly-scheduled-program`
 - [Live Stream #83: Now is the Winter of Our Discontent](https://www.youtube.com/watch?v=46uDNoLqNA8) `83-now-is-the-winter-of-our-discontent`
 - [Live Stream #82: The Censors Are Coming For You!!!](https://www.youtube.com/watch?v=AgLundgwtWs) `82-the-censors-are-coming-for-you`
@@ -144,7 +144,7 @@
 - [Live Stream #67: Ignorance of the Incredulously Fallacious.](https://www.youtube.com/watch?v=N3rD-n6CbYY) `67-ignorance-of-the-incredulously-fallacious`
 - [Live Stream #66: Osiris, Vampires, and Other Undead Playas.](https://www.youtube.com/watch?v=6MHlQAmAbSI) `66-osiris-vampires-and-other-undead-playas`
 - [Live Stream #65: The Storage City of Popcorn](https://www.youtube.com/watch?v=oz6vqfVDmQM) `65-the-storage-city-of-popcorn`
-- [Live Stream #64: A Flock of Horus Birds.](https://www.youtube.com/watch?v=1j6E3oI0fNk&pp=0gcJCY0JAYcqIYzv) `64-a-flock-of-horus-birds`
+- [Live Stream #64: A Flock of Horus Birds.](https://www.youtube.com/watch?v=1j6E3oI0fNk) `64-a-flock-of-horus-birds`
 - [Live Stream #63: Wash and Wear Charioteer Gear.](https://www.youtube.com/watch?v=6II72aUU4fM) `63-wash-and-wear-charioteer-gear`
 - [Live Stream #62: Kernels of Truth.](https://www.youtube.com/watch?v=tDAmbiFJLAU) `62-kernels-of-truth`
 - [Live Stream #61: Understanding Hell, There Will Be A Test.](https://www.youtube.com/watch?v=llax2yc_y8w) `61-understanding-hell-there-will-be-a-test`
@@ -152,15 +152,15 @@
 - [Live Stream #59: No Space Like Home](https://www.youtube.com/watch?v=RqA8RW50z8I) `59-no-space-like-home`
 - [Live Stream #58: Is Like The Luckiest Number Ever](https://www.youtube.com/watch?v=iMKb3EZ1uw0) `58-is-like-the-luckiest-number-ever`
 - [Live Stream #57: This Business Is Our Fifty-Seven](https://www.youtube.com/watch?v=b3ytxeDVHGg) `57-this-business-is-our-fifty-seven`
-- [Live Stream #56: Celebrating Like A Statistician: 6000 +/- 10 Subs!](https://www.youtube.com/watch?v=MA8Ualgbc4o&pp=0gcJCY0JAYcqIYzv) `56-celebrating-like-a-statistician-6000---10-subs`
+- [Live Stream #56: Celebrating Like A Statistician: 6000 +/- 10 Subs!](https://www.youtube.com/watch?v=MA8Ualgbc4o) `56-celebrating-like-a-statistician-6000---10-subs`
 - [Live Stream #55: Beastie Under The Hood.](https://www.youtube.com/watch?v=ykRkSLGH810) `55-beastie-under-the-hood`
 - [Live Stream #54: Amun-Re Dumps Amonet.](https://www.youtube.com/watch?v=FT2gTO3om8U) `54-amun-re-dumps-amonet`
 - [Live Stream #53: Harmony and Discord.](https://www.youtube.com/watch?v=lS8ldTuFJvU) `53-harmony-and-discord`
-- [Live Stream #52: One Year Streaming, We Can't Believe It Either.](https://www.youtube.com/watch?v=XKgzzgmUBKg&pp=0gcJCY0JAYcqIYzv) `52-one-year-streaming-we-cant-believe-it-either`
+- [Live Stream #52: One Year Streaming, We Can't Believe It Either.](https://www.youtube.com/watch?v=XKgzzgmUBKg) `52-one-year-streaming-we-cant-believe-it-either`
 - [Live Stream #51: Manna Machines Over Area 51.](https://www.youtube.com/watch?v=w-YYxBd2iRw) `51-manna-machines-over-area-51`
 - [Live Stream #50: Terminator Edition.](https://www.youtube.com/watch?v=VeCTayU7MpQ) `50-terminator-edition`
 - [Live Stream #49: Counting The Omer.](https://www.youtube.com/watch?v=9yvb8Yl3hao) `49-counting-the-omer`
-- [Live Stream #48: Good Friday Orthodox Style.](https://www.youtube.com/watch?v=ravUgMK9MEU&pp=0gcJCY0JAYcqIYzv) `48-good-friday-orthodox-style`
+- [Live Stream #48: Good Friday Orthodox Style.](https://www.youtube.com/watch?v=ravUgMK9MEU) `48-good-friday-orthodox-style`
 - [Live Stream #47: Passover 2022.](https://www.youtube.com/watch?v=KvObTy1LgnE) `47-passover-2022`
 - [Live Stream #46: God Is Our Refuge And Strength.](https://www.youtube.com/watch?v=l80zyabM1gE) `46-god-is-our-refuge-and-strength`
 - [Live Stream #45: Amulets and Rumors of Amulets.](https://www.youtube.com/watch?v=K-auTwN2ygQ) `45-amulets-and-rumors-of-amulets`
@@ -170,7 +170,7 @@
 - [Live Stream #41: Celebrating 5000 Subs!!!](https://www.youtube.com/watch?v=sSZq20O84tc) `41-celebrating-5000-subs`
 - [Live Stream #40: The Indefinite Extended Idiom](https://www.youtube.com/watch?v=t_t-ItKSmJY) `40-the-indefinite-extended-idiom`
 - [Live Stream #39: Master of the Sock Puppets](https://www.youtube.com/watch?v=qi7VuxyqWr8) `39-master-of-the-sock-puppets`
-- [Live Stream #38: A Doctorate for Every Bunny](https://www.youtube.com/watch?v=CdHTkfIpCLQ&pp=0gcJCY0JAYcqIYzv) `38-a-doctorate-for-every-bunny`
+- [Live Stream #38: A Doctorate for Every Bunny](https://www.youtube.com/watch?v=CdHTkfIpCLQ) `38-a-doctorate-for-every-bunny`
 - [Live Stream #37: Normal Temp Before Mummification](https://www.youtube.com/watch?v=5O4HOnymvwU) `37-normal-temp-before-mummification`
 - [Live Stream #36: Sum of the Integers of the Beast](https://www.youtube.com/watch?v=4ne7HUq5FhA) `36-sum-of-the-integers-of-the-beast`
 - [Live Stream #35: Pyramids Versus Tetrahedrons](https://www.youtube.com/watch?v=E6eCS3n2Gtk) `35-pyramids-versus-tetrahedrons`
@@ -179,21 +179,21 @@
 - [Live Stream #32: Last Stream for 2021](https://www.youtube.com/watch?v=KCxkCQlDTrY) `32-last-stream-for-2021`
 - [Live Stream #31: Twas the Night Before the Night Before Christmas.](https://www.youtube.com/watch?v=TT2tApnGZPY) `31-twas-the-night-before-the-night-before-christmas`
 - [Live Stream #30: Full Moon on Saturday.](https://www.youtube.com/watch?v=CG3UQpEmAsk) `30-full-moon-on-saturday`
-- [Live Stream #29: A Copper Penny For Your Thoughts](https://www.youtube.com/watch?v=x-ro6ZwbeMg&pp=0gcJCY0JAYcqIYzv) `29-a-copper-penny-for-your-thoughts`
+- [Live Stream #29: A Copper Penny For Your Thoughts](https://www.youtube.com/watch?v=x-ro6ZwbeMg) `29-a-copper-penny-for-your-thoughts`
 - [Live Stream #28: The Popcorn Must Flow](https://www.youtube.com/watch?v=bovInqgl6HI) `28-the-popcorn-must-flow`
 - [Live Stream #27: Number of New Testament Books](https://www.youtube.com/watch?v=i9prAi9prCg) `27-number-of-new-testament-books`
 - [Live Stream #26: I Can't Believe We've Been Doing This For 6 Months](https://www.youtube.com/watch?v=SNg5WZwVWRA) `26-i-cant-believe-weve-been-doing-this-for-6-months`
 - [Live Stream #25: The Canonical Age For Levitical Priests](https://www.youtube.com/watch?v=au5AYPIFPbY) `25-the-canonical-age-for-levitical-priests`
 - [Live Stream #24: The 24 Thrones](https://www.youtube.com/watch?v=8ADMb8ZtUiQ) `24-the-24-thrones`
 - [Live Stream #23: The 23 Enigma](https://www.youtube.com/watch?v=DVV7DMRiBL4) `23-the-23-enigma`
-- [Live Stream #22: The Catch-22 of Questions](https://www.youtube.com/watch?v=o5hu9f9P6Do&pp=0gcJCY0JAYcqIYzv) `22-the-catch-22-of-questions`
+- [Live Stream #22: The Catch-22 of Questions](https://www.youtube.com/watch?v=o5hu9f9P6Do) `22-the-catch-22-of-questions`
 - [Live Stream #21: The Weight of the Soul](https://www.youtube.com/watch?v=vNKg8-e68Aw) `21-the-weight-of-the-soul`
 - [Live Stream #20: What's Your Twenty?](https://www.youtube.com/watch?v=UR7cGZCgB3E) `20-whats-your-twenty`
 - [Live Stream #19: The First of Octember](https://www.youtube.com/watch?v=t4AYsYhvxd8) `19-the-first-of-octember`
 - [Live Stream #18: For the Good Life](https://www.youtube.com/watch?v=N4pgeufCqLQ) `18-for-the-good-life`
 - [Live Stream #17: Back to Prime Time](https://www.youtube.com/watch?v=fVpJZyvwIq8) `17-back-to-prime-time`
 - [Live Stream #16: Questions from the East](https://www.youtube.com/watch?v=8aV8S0cQ2Dg) `16-questions-from-the-east`
-- [Live Stream #15: And Other Taboo Jewish Numbers](https://www.youtube.com/watch?v=s3grFd_g6yk&pp=0gcJCY0JAYcqIYzv) `15-and-other-taboo-jewish-numbers`
+- [Live Stream #15: And Other Taboo Jewish Numbers](https://www.youtube.com/watch?v=s3grFd_g6yk) `15-and-other-taboo-jewish-numbers`
 - [Live Stream #14: Fourteen Pieces of Osiris](https://www.youtube.com/watch?v=rccstKeVJoI) `14-fourteen-pieces-of-osiris`
 - [Live Stream #13: Triskaidekaphobia](https://www.youtube.com/watch?v=orrXTt_zI6I) `13-triskaidekaphobia`
 - [Live Stream #12: The Quorum of the Twelve](https://www.youtube.com/watch?v=09kSL_GX9Os) `12-the-quorum-of-the-twelve`
@@ -202,9 +202,9 @@
 - [Live Stream #9: The Nine Bows.](https://www.youtube.com/watch?v=jUs0gqWhuZE) `9-the-nine-bows`
 - [Live Stream #8: Questions behind the Eight Ball](https://www.youtube.com/watch?v=AGAwu3NDnCM) `8-questions-behind-the-eight-ball`
 - [Live Stream #7: Seven and the Ragged Tiger](https://www.youtube.com/watch?v=99jbuPoy8_U) `7-seven-and-the-ragged-tiger`
-- [Live Stream #6: All of This has Happened Before...](https://www.youtube.com/watch?v=XcN_Xhr8bPM&pp=0gcJCY0JAYcqIYzv) `6-all-of-this-has-happened-before`
+- [Live Stream #6: All of This has Happened Before...](https://www.youtube.com/watch?v=XcN_Xhr8bPM) `6-all-of-this-has-happened-before`
 - [Live Stream #5: Five and Even More Questions.](https://www.youtube.com/watch?v=6w6NTLN3two) `5-five-and-even-more-questions`
-- [Live Stream #4: The More Bugs Stomped, The More Appear.](https://www.youtube.com/watch?v=HbJo9pcyNgE&pp=0gcJCY0JAYcqIYzv) `4-the-more-bugs-stomped-the-more-appear`
+- [Live Stream #4: The More Bugs Stomped, The More Appear.](https://www.youtube.com/watch?v=HbJo9pcyNgE) `4-the-more-bugs-stomped-the-more-appear`
 - [Live Stream #3: Thrice the Bugs, Thrice the Charm.](https://www.youtube.com/watch?v=aauuHFdpbuU) `3-thrice-the-bugs-thrice-the-charm`
 - [Live Stream #2: Bugs, bugs, and fixes.](https://www.youtube.com/watch?v=rm5VDYEkXz8) `2-bugs-bugs-and-fixes`
 - [Live Stream #1: The Debug Episode.](https://www.youtube.com/watch?v=uduERXxcb1E) `1-the-debug-episode`
