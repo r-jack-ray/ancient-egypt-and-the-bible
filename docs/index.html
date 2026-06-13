@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project Search</title>
+</head>
+<body>
+  <h1>Project Search</h1>
+
+  <form action="https://github.com/search" method="get">
+    <input type="hidden" name="type" value="code">
+    <input
+      type="hidden"
+      name="q"
+      value="repo:OWNER/REPO path:/src/main/resources/sql/**"
+    >
+
+    <p>
+      This searches the project directory:
+      <code>/src/main/resources/sql</code>
+    </p>
+
+    <button type="submit">Search this directory on GitHub</button>
+  </form>
+</body>
+</html>
