@@ -4,10 +4,6 @@ This repository is a public reference project for the *Ancient Egypt and the Bib
 
 The raw transcripts are useful, but long livestreams are hard to navigate from transcript text alone. This project organizes the source material into timestamped files and curated Markdown pages so viewers can jump from a topic or question directly to the matching moment in the video.
 
-## Search
-Use the project search page:
-https://r-jack-ray.github.io/ancient-egypt-and-the-bible/
-
 ## Start Here
 
 - [Livestream archive](src/live-stream-list.md) - episode list with YouTube links and transcript slugs.
