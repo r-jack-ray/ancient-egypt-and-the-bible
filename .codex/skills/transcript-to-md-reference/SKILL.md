@@ -2,7 +2,7 @@
 
 name: transcript-to-md-reference
 description: Convert Ancient Egypt and the Bible livestream transcript exports into curated GitHub Pages Q&A reference pages. Use when Codex needs to turn transcript JSON/source files into Markdown files under docs/questions with all real audience questions, short answer summaries, timestamps, and direct YouTube links like docs/questions/6-all-of-this-has-happened-before-questions.md.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 # Transcript to MD Reference
 
@@ -12,17 +12,17 @@ Create curated Markdown reference pages from livestream transcript files.
 
 The goal is not to reproduce the whole transcript. The goal is to make GitHub Pages readers able to:
 
-* find any real audience question
+* find real audience questions
 * scan a short answer direction
 * open the original video at the right timestamp
 
 The public-facing Markdown output belongs under `docs/questions/`.
 
-Keep raw or generated source data under `src/`.
+Keep raw transcript source data under `src/`.
 
 ## Source Files
 
-Use `src/transcripts/json/*.json` as the transcript source files.
+Use `src/transcripts/json/*.json` as the primary transcript source files.
 
 Use `src/live-stream-list.md` to confirm:
 
@@ -31,7 +31,7 @@ Use `src/live-stream-list.md` to confirm:
 * YouTube video URL
 * slug / filename pattern
 
-If legacy curated Markdown exists under `src/md/`, treat it as old output. New or regenerated curated Q&A pages should be written under `docs/questions/`.
+If legacy curated Markdown exists under `src/md/`, `transcripts/livestreams/md/`, or other non-`docs/questions/` paths, treat it as old output. New or regenerated curated Q&A pages should be written under `docs/questions/`.
 
 ## Output Location
 
@@ -44,10 +44,14 @@ docs/questions/
 Use filenames like:
 
 ```text
+<slug>-qa.md
+
+```text
 docs/questions/6-all-of-this-has-happened-before-questions.md
 docs/questions/208-super-chat-questions.md
 ```
 
+Special-purpose pages may diverge from the slug when the page indexes a narrower topic (for example, `docs/questions/208-super-chat-questions.md` is sourced from `src/transcripts/json/208-hysterical-context-error.json` but indexes only super chats). Use this only when explicitly requested.
 Do not write new public Q&A pages under:
 
 ```text
@@ -86,7 +90,7 @@ Time links open the YouTube video at the relevant timestamp.
 
 | Time | Question | Short answer / answer direction |
 |---:|---|---|
-| <a href="https://youtu.be/VIDEO_ID?t=136" target="_blank">2:16</a> | Did the Sea Peoples' attacks on Egypt under Merneptah and Ramesses III contribute to the end of the New Kingdom? | Yes, especially under Ramesses III, but the decline was a longer economic and political process. |
+| <a href="https://youtu.be/VIDEO_ID?t=136" target="_blank" rel="noopener noreferrer">2:16</a> | Did the Sea Peoples' attacks on Egypt under Merneptah and Ramesses III contribute to the end of the New Kingdom? | Yes, especially under Ramesses III, but the decline was a longer economic and political process. |
 ```
 
 For other topic indexes, adapt the table columns, but keep timestamp links in the first column.
@@ -143,6 +147,10 @@ After editing, run quick local checks:
 
 ```powershell
 Select-String -Path docs/questions/FILE.md -Pattern 'target="_blank"'
+
+rg -n "\[Watch on YouTube\]|\[PLACEHOLDER\]" docs/questions/FILE.md
+
+rg -n "src/md|transcripts/livestreams/md" .codex/skills/transcript-to-md-reference/SKILL.md docs
 
 rg -n "\[Watch on YouTube\]|\[PLACEHOLDER\]" docs/questions/FILE.md
 
