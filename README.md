@@ -4,17 +4,21 @@ This repository is a public reference project for the *Ancient Egypt and the Bib
 
 The raw transcripts are useful, but long livestreams are hard to navigate from transcript text alone. This project organizes the source material into timestamped files and curated Markdown pages so viewers can jump from a topic or question directly to the matching moment in the video.
 
+## Search
+Use the project search page:
+https://r-jack-ray.github.io/ancient-egypt-and-the-bible/
+
 ## Start Here
 
 - [Livestream archive](transcripts/livestreams/live-stream-list.md) - episode list with YouTube links and transcript slugs.
-- [1-the-debug-episode-questions](src/transcripts/livestreams/md/1-the-debug-episode-questions.md)
-- [2-bugs-bugs-and-fixes-questions](src/transcripts/livestreams/md/2-bugs-bugs-and-fixes-questions.md)
-- [3-thrice-the-bugs-thrice-the-charm-questions](src/transcripts/livestreams/md/3-thrice-the-bugs-thrice-the-charm-questions.md)
-- [4-the-more-bugs-stomped-the-more-appear-questions](src/transcripts/livestreams/md/4-the-more-bugs-stomped-the-more-appear-questions.md)
-- [5-five-and-even-more-questions](src/transcripts/livestreams/md/5-five-and-even-more-questions.md)
-- [6-all-of-this-has-happened-before-questions](src/transcripts/livestreams/md/6-all-of-this-has-happened-before-questions.md)
-- [7-seven-and-the-ragged-tiger-questions](src/transcripts/livestreams/md/7-seven-and-the-ragged-tiger-questions.md)
-- [Episode 208 super chat questions](src/transcripts/livestreams/md/208-super-chat-questions.md) - example of a curated question-and-answer reference page with timestamp links.
+- [Episode 1-the-debug-episode-questions](src/md/1-the-debug-episode-questions.md)
+- [Episode 2-bugs-bugs-and-fixes-questions](src/md/2-bugs-bugs-and-fixes-questions.md)
+- [Episode 3-thrice-the-bugs-thrice-the-charm-questions](src/md/3-thrice-the-bugs-thrice-the-charm-questions.md)
+- [Episode 4-the-more-bugs-stomped-the-more-appear-questions](src/md/4-the-more-bugs-stomped-the-more-appear-questions.md)
+- [Episode 5-five-and-even-more-questions](src/md/5-five-and-even-more-questions.md)
+- [Episode 6-all-of-this-has-happened-before-questions](src/md/6-all-of-this-has-happened-before-questions.md)
+- [Episode 7-seven-and-the-ragged-tiger-questions](src/md/7-seven-and-the-ragged-tiger-questions.md)
+- [Episode 208 super chat questions](src/md/208-super-chat-questions.md) - example of a curated question-and-answer reference page with timestamp links.
 
 ## Repository Layout
 

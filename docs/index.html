@@ -2,25 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Project Search</title>
+  <title>Ancient Egypt and the Bible Search</title>
 </head>
 <body>
-  <h1>Project Search</h1>
+  <h1>Ancient Egypt and the Bible Search</h1>
 
-  <form action="https://github.com/search" method="get">
-    <input type="hidden" name="type" value="code">
-    <input
-      type="hidden"
-      name="q"
-      value="repo:OWNER/REPO path:/src/main/resources/sql/**"
-    >
-
-    <p>
-      This searches the project directory:
-      <code>/src/main/resources/sql</code>
-    </p>
-
-    <button type="submit">Search this directory on GitHub</button>
+  <form id="searchForm">
+    <label for="searchText">Search transcripts and reference files</label>
+    <br>
+    <input id="searchText" type="search" placeholder="Egypt, Exodus, Joseph, chronology">
+    <button type="submit">Search</button>
   </form>
+
+  <script>
+    document.getElementById("searchForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const term = document.getElementById("searchText").value.trim();
+
+      const query = [
+        "repo:r-jack-ray/ancient-egypt-and-the-bible",
+        "path:/src/**",
+        term
+      ].filter(Boolean).join(" ");
+
+      window.location.href =
+        "https://github.com/search?type=code&q=" + encodeURIComponent(query);
+    });
+  </script>
 </body>
 </html>
