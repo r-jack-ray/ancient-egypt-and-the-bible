@@ -8,14 +8,21 @@
   <h1>Ancient Egypt and the Bible Search</h1>
 
   <form id="searchForm">
-    <label for="searchText">Search this project</label>
+    <label for="searchText">Search files under <code>/src/md</code></label>
     <br>
-    <input id="searchText" type="search" placeholder="Joseph, Exodus, Ramesses, chronology">
+    <input
+      id="searchText"
+      type="search"
+      placeholder="Joseph, Exodus, chronology, Ramesses"
+      autofocus
+    >
     <button type="submit">Search</button>
   </form>
 
   <p>
-    Searches files under <code>/src</code>, including curated Markdown pages and transcript data.
+    This searches only files under
+    <code>/src/md</code>
+    in this GitHub repository.
   </p>
 
   <script>
@@ -26,7 +33,7 @@
 
       const query = [
         "repo:r-jack-ray/ancient-egypt-and-the-bible",
-        "path:/src/**",
+        "path:/src/md/**",
         term
       ].filter(Boolean).join(" ");
 
