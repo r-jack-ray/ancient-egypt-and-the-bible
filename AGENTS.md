@@ -2,12 +2,12 @@
 
 ## Project Structure & Module Organization
 
-This repository is a transcript reference archive, not an application. The main content lives under `transcripts/livestreams/`.
+This repository is a Questions & Answers reference archive for the Ancient Egypt and the Bible livestreams, not an application. The main content lives under `transcripts/livestreams/`.
 
 - `live-stream-list.md` and `live-stream-list.txt`: episode indexes.
 - `json/`: raw YouTube transcript data for reprocessing and auditing.
 - `tsv/`: timestamped transcript exports with `Timestamp`, `Text`, and `Link` columns.
-- `md/`: curated GitHub-readable reference pages, such as question lists with timestamp links.
+- `md/`: curated GitHub-readable Q&A reference pages with timestamp links.
 
 There is currently no source-code module tree, test directory, or asset pipeline.
 
@@ -53,4 +53,6 @@ Pull requests should explain the affected episode range or file set, note whethe
 
 ## Agent-Specific Instructions
 
-Do not invent transcript content. Preserve uncertainty when audio or transcript text is unclear. Keep curated pages useful as navigation aids: question, timestamp, direct video link, and a short answer direction when supported by the source.
+Do not invent transcript content. Preserve uncertainty when audio or transcript text is unclear. This project converts the Questions & Answers in general from Ancient Egypt and the Bible livestreams into a reference repository, so curated pages should include all real questions supported by the transcript, not only super chats. Keep curated pages useful as navigation aids: question, timestamp, direct video link, and a short answer direction when supported by the source.
+
+Backlog note: curated Markdown reference pages still need to be filled in for livestream episodes 6 through 207. When the user asks for the "next two episodes" in this repository, interpret that as the next two missing episode Markdown pages in ascending episode order from that backlog. Once episodes 6 through 207 are complete, remove this backlog note from `AGENTS.md`.
