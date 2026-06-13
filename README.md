@@ -7,6 +7,13 @@ The raw transcripts are useful, but long livestreams are hard to navigate from t
 ## Start Here
 
 - [Livestream archive](transcripts/livestreams/live-stream-list.md) - episode list with YouTube links and transcript slugs.
+- [1-the-debug-episode-questions](transcripts/livestreams/md/1-the-debug-episode-questions.md)
+- [2-bugs-bugs-and-fixes-questions](transcripts/livestreams/md/2-bugs-bugs-and-fixes-questions.md)
+- [3-thrice-the-bugs-thrice-the-charm-questions](transcripts/livestreams/md/3-thrice-the-bugs-thrice-the-charm-questions.md)
+- [4-the-more-bugs-stomped-the-more-appear-questions](transcripts/livestreams/md/4-the-more-bugs-stomped-the-more-appear-questions.md)
+- [5-five-and-even-more-questions](transcripts/livestreams/md/5-five-and-even-more-questions.md)
+- [6-all-of-this-has-happened-before-questions](transcripts/livestreams/md/6-all-of-this-has-happened-before-questions.md)
+- [7-seven-and-the-ragged-tiger-questions](transcripts/livestreams/md/7-seven-and-the-ragged-tiger-questions.md)
 - [Episode 208 super chat questions](transcripts/livestreams/md/208-super-chat-questions.md) - example of a curated question-and-answer reference page with timestamp links.
 
 ## Repository Layout
