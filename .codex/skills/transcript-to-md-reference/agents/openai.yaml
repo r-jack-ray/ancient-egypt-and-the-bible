@@ -1,0 +1,4 @@
+interface:
+  display_name: "Transcript to MD Reference"
+  short_description: "Curate transcript exports into Markdown pages"
+  default_prompt: "Use $transcript-to-md-reference to convert a livestream transcript export into a curated Markdown reference page."
