@@ -10,35 +10,35 @@ https://r-jack-ray.github.io/ancient-egypt-and-the-bible/
 
 ## Start Here
 
-- [Livestream archive](transcripts/livestreams/live-stream-list.md) - episode list with YouTube links and transcript slugs.
-- [Episode 1-the-debug-episode-questions](src/md/1-the-debug-episode-questions.md)
-- [Episode 2-bugs-bugs-and-fixes-questions](src/md/2-bugs-bugs-and-fixes-questions.md)
-- [Episode 3-thrice-the-bugs-thrice-the-charm-questions](src/md/3-thrice-the-bugs-thrice-the-charm-questions.md)
-- [Episode 4-the-more-bugs-stomped-the-more-appear-questions](src/md/4-the-more-bugs-stomped-the-more-appear-questions.md)
-- [Episode 5-five-and-even-more-questions](src/md/5-five-and-even-more-questions.md)
-- [Episode 6-all-of-this-has-happened-before-questions](src/md/6-all-of-this-has-happened-before-questions.md)
-- [Episode 7-seven-and-the-ragged-tiger-questions](src/md/7-seven-and-the-ragged-tiger-questions.md)
-- [Episode 208 super chat questions](src/md/208-super-chat-questions.md) - example of a curated question-and-answer reference page with timestamp links.
+- [Livestream archive](src/live-stream-list.md) - episode list with YouTube links and transcript slugs.
+- [Episode 1: The Debug Episode](docs/questions/1-the-debug-episode-questions.md)
+- [Episode 2: Bugs, Bugs, and Fixes](docs/questions/2-bugs-bugs-and-fixes-questions.md)
+- [Episode 3: Thrice the Bugs, Thrice the Charm](docs/questions/3-thrice-the-bugs-thrice-the-charm-questions.md)
+- [Episode 4: The More Bugs Stomped, the More Appear](docs/questions/4-the-more-bugs-stomped-the-more-appear-questions.md)
+- [Episode 5: Five and Even More Questions](docs/questions/5-five-and-even-more-questions.md)
+- [Episode 6: All of This Has Happened Before](docs/questions/6-all-of-this-has-happened-before-questions.md)
+- [Episode 7: Seven and the Ragged Tiger](docs/questions/7-seven-and-the-ragged-tiger-questions.md)
+- [Episode 8: Questions Behind the Eight Ball](docs/questions/8-questions-behind-the-eight-ball-questions.md)
+- [Episode 9: The Nine Bows](docs/questions/9-the-nine-bows-questions.md)
+- [Episode 208: Super Chat Questions](docs/questions/208-super-chat-questions.md) - example of a curated question-and-answer reference page with timestamp links.
 
 ## Repository Layout
 
 ```text
-transcripts/
-  livestreams/
-    live-stream-list.md      Episode index for GitHub browsing
-    live-stream-list.txt     Plain text episode index
-    json/                    Raw YouTube transcript data
-    tsv/                     Timestamped transcript exports
-    md/                      Curated Markdown reference pages
+docs/
+  index.html                  GitHub Pages search page
+  questions/                  Public curated Markdown Q&A reference pages
+src/
+  live-stream-list.md         Episode index with YouTube links and transcript slugs
+  live-stream-list.txt        Plain text episode index
+  transcripts/                Raw transcript source data
 ```
 
 ## File Types
 
-`json/` contains raw transcript data preserved from the transcript source. These files are best for reprocessing, rebuilding exports, or auditing source text.
+`src/transcripts/` contains raw transcript data preserved from the transcript source. These files are best for reprocessing, rebuilding exports, or auditing source text.
 
-`tsv/` contains line-by-line transcript exports with timestamps and direct YouTube links. These files are useful for search, spreadsheet work, and finding the exact transcript area for a topic.
-
-`md/` contains human-edited reference pages. These are meant to be read directly on GitHub and may include cleaned-up questions, short answer summaries, and timestamp links.
+`docs/questions/` contains human-edited reference pages. These are meant to be read directly on GitHub Pages and GitHub and may include cleaned-up questions, short answer summaries, and timestamp links.
 
 ## How to Use This Reference
 

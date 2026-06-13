@@ -159,4 +159,6 @@ rg -n "transcripts/livestreams/md|src/md" .codex/skills/transcript-to-md-referen
 
 For tables, verify each row has the same number of pipe characters or inspect in a Markdown preview.
 
+Ensure the README file links to the new page, in the section with the other episode links.
+
 If migrating old generated pages, move them from `src/md/` to `docs/questions/` and update any README, index, or search-page references that still point at `src/md/`.
