@@ -8,11 +8,15 @@
   <h1>Ancient Egypt and the Bible Search</h1>
 
   <form id="searchForm">
-    <label for="searchText">Search transcripts and reference files</label>
+    <label for="searchText">Search this project</label>
     <br>
-    <input id="searchText" type="search" placeholder="Egypt, Exodus, Joseph, chronology">
+    <input id="searchText" type="search" placeholder="Joseph, Exodus, Ramesses, chronology">
     <button type="submit">Search</button>
   </form>
+
+  <p>
+    Searches files under <code>/src</code>, including curated Markdown pages and transcript data.
+  </p>
 
   <script>
     document.getElementById("searchForm").addEventListener("submit", function (event) {
