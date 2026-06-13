@@ -1,271 +1,55 @@
-### 📺 Super Chat Questions in Livestream 208
-
-1. **[7:34]** – About the rules of the channel Then start getting into your questions Uh the rules are the same as always Super chats
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=454)
-
-1. **[8:00]** – As far as we can tell Okay Uh only post your non-s super chats once Question
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=480)
-
-1. **[8:26]** – Uh sponsorship of non-s super chat questions and if you sponsor a question
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=506)
-
-1. **[8:32]** – Please put a copy of the question in your super chat so we again we don't
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=512)
-
-1. **[8:57]** – Into the questions Okay our first question of the
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=537)
-
-1. **[9:03]** – Night is going to be coming from Joseph aptly named and he asks "Did
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=543)
-
-1. **[14:32]** – Was Okay Okay the next question here is from Harry Stark and he asks a personal
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=872)
-
-1. **[19:17]** – Mobius Uh and he asks "Considering how far back in time the history of Jericho
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=1157)
-
-1. **[21:52]** – Uh from Mary Stark and this will be the last known super chat for the beginning segment here and he asks "Have book
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=1312)
-
-1. **[27:12]** – Children and adult bodies I encountered Then he asks "Is academia of
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=1632)
-
-1. **[32:01]** – Live stream on this Okay so let's get back to our questions here Our first super chat here is from
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=1921)
-
-1. **[32:11]** – Uh Joseph for $2 Thank you for the super chat book recommendations for NT use of
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=1931)
-
-1. **[37:04]** – Yep Um Dark Blade asks "Uh would there have been regular sacrifices during the wandering period?" There would have been
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=2224)
-
-1. **[38:48]** – U Mr Petups asks "Do you take the number of 40 years to be historical or
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=2328)
-
-1. **[40:21]** – All right next super chat here from Andrew Tinsley for $5 Thank you for the super chat Do we know ancient any other
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=2421)
-
-1. **[47:11]** – Thank you for the super chat He says "My sister has come back to Christ and is taking her children to
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=2831)
-
-1. **[50:28]** – Psychological or the medical side of this All right so I hope that helps Thank you very much for the super chat
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=3028)
-
-1. **[54:17]** – Too Okay Dossman for $2 Thank you for the super chat Best explanation of the
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=3257)
-
-1. **[55:37]** – Uh Dossman asks "How did this start and how is it old?" It's not terribly
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=3337)
-
-1. **[1:00:38]** – Super chat Very much appreciate
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=3638)
-
-1. **[1:00:51]** – Chat Okay Joseph for $2 Uh thank you for the super chat Meaning of dominion of
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=3651)
-
-1. **[1:05:39]** – Very much for the super chat Very much appreciate it Okay we're on to the AT ministries
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=3939)
-
-1. **[1:09:58]** – Very much for the super chat Very much appreciate it Okay next one here from 18 ministries
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=4198)
-
-1. **[1:10:06]** – From 199 Thank you for the super chat Genesis 32:12 What garment would he have worn
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=4206)
-
-1. **[1:19:59]** – So I hope that helps A team thank you very much for the super chat Very much appreciate
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=4799)
-
-1. **[1:22:43]** – To this in his next super chat Where are the Benjaminites in the New
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=4963)
-
-1. **[1:28:16]** – For the super chat Very much appreciated BC is pig leather a thing
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=5296)
-
-1. **[1:29:04]** – Okay Next one here from 18 ministers for 199 Thank you for the super chat Did
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=5344)
-
-1. **[1:31:58]** – Helps Thank you for the super chat very much
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=5518)
-
-1. **[1:32:04]** – Appreciated 18 Ministry for 199 Thank you for the super chat Thoughts on the Dynasty 5 tomb discovery
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=5524)
-
-1. **[1:32:49]** – Don't have any any real opinion on it yet So thank you very much for the super chat Very much appreciated
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=5569)
-
-1. **[1:32:59]** – 80 ministries for $4
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=5579)
-
-1. **[1:35:41]** – So so I hope that helps Thank you very much for the super chat Very much appreciate
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=5741)
-
-1. **[1:35:49]** – It At Ministries for $4
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=5749)
-
-1. **[1:40:15]** – Yep Okay Okay Let's get back to the super chats here
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=6015)
-
-1. **[1:40:21]** – Uh next super chat is from AT Ministries for $4
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=6021)
-
-1. **[1:43:10]** – The tent of the meeting Okay so that's what's going on there So I hope that helps Thank you for the super chat Very
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=6190)
-
-1. **[1:43:23]** – Super chat What makes Abraham a prophet ooh
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=6203)
-
-1. **[1:45:22]** – Okay So I hope that helps Thank you very much for the super chat very much
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=6322)
-
-1. **[1:45:30]** – Appreciated 18 ministries for 199 Thank you for the super chat I don't like wine
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=6330)
-
-1. **[1:47:38]** – For the super chat Very much appreciate it
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=6458)
-
-1. **[1:59:58]** – Much for the super chat Very much appreciate it
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=7198)
-
-1. **[2:00:03]** – Okay 18 ministers for 199 Thank you for the super chat Explain Deuteronomy
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=7203)
-
-1. **[2:07:48]** – Uh 14:24-27 Thank you very much the super chat Very much appreciate
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=7668)
-
-1. **[2:07:53]** – It Okay 18 ministries for $4
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=7673)
-
-1. **[2:15:47]** – Okay so I hope that helps Thank you very much for the super chat Very much
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=8147)
-
-1. **[2:16:08]** – Super chat In a previous live stream you mentioned that the coast of Palestine does not have a deep sea port necessary
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=8168)
-
-1. **[2:19:44]** – Okay Andrew Gler for $20 Thank you for the super chat Uh The Mummy 1999 Great movie Love
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=8384)
-
-1. **[2:22:43]** – For the super chat Very much appreciated
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=8563)
-
-1. **[2:24:29]** – Just weren't elite warriors So hope that helps Thank you for the super chat Very much appreciated
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=8669)
-
-1. **[2:24:42]** – You for the super chat What is it about the Song of Deborah that many scholars are convinced
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=8682)
-
-1. **[2:30:09]** – Okay next super chat here is from Johnny Mo for $20 Thank you for the super chat What do you think of the idea of a
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=9009)
-
-1. **[2:33:15]** – Thank you very much for the super chat Very much appreciate it Uh Mike JSB for $2 Thank you for the
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=9195)
-
-1. **[2:33:23]** – Super chat Have you read Nigro's recent preliminary report which one he's had
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=9203)
-
-1. **[2:34:19]** – Preliminary reports on Jericho So anyway thank you very much Super chat Very much appreciated
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=9259)
-
-1. **[2:34:27]** – Uh Mike JSB for $2 Uh thank you for the super chat Is Telbond a problem for the 13th century conquest not
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=9267)
-
-1. **[2:43:44]** – Okay so anyway I hope that helps Thank you for the super chat Very much
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=9824)
-
-1. **[2:53:43]** – Okay next one here is from Esther for $5 Thank you for the super chat When people more educated than I
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=10423)
-
-1. **[2:55:49]** – Yeah My my producer asks you know is this a denominational difference is this
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=10549)
-
-1. **[3:01:58]** – Oh thank you very much for the super chat Very much
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=10918)
-
-1. **[3:04:09]** – Chat And she go she asks "Any book or video recommendations to learn how to
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=11049)
-
-1. **[3:05:17]** – Helps Thank you for the super chat Very much appreciate it Messianic Telmid for $5 Thank you for
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=11117)
-
-1. **[3:05:24]** – The super chat How similar is the creator God ta compared to Yahweh in the
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=11124)
-
-1. **[3:07:52]** – The only way they're similar Okay so I hope that helps Thank you very much for the super chat Very much appreciate
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=11272)
-
-1. **[3:08:00]** – It All right Esther again for $5 Thank you very much for the super chat How would the disciples have understood
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=11280)
-
-1. **[3:25:24]** – Messianic Talbad for $5 Thank you for the super chat How similar are the fights and squables of Egyptian gods
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=12324)
-
-1. **[3:27:02]** – Okay so I hope that helps Thank you for the super chat Very much appreciate
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=12422)
-
-1. **[3:27:09]** – It Right Messi Adam Talmud for $5 Thank you for the super chat Uh did Egyptian gods physically get
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=12429)
-
-1. **[3:32:08]** – Okay so so anyway I hope that answers your question Thank you very much for the super chat very much
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=12728)
-
-1. **[3:32:24]** – Appreciated Okay Daniel for $5 Thank you very much for the super chat First Kings 3:2 Would one of these
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=12744)
-
-1. **[3:38:19]** – Much for super chat Very much
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=13099)
-
-1. **[3:50:34]** – Nonsense All right let's go move on to the next super chat here
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=13834)
-
-1. **[3:51:32]** – Be All right Uh Daniel for $5 Thank you for the super chat Are there any guides
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=13892)
-
-1. **[3:53:01]** – Christian Doctrines by J&D Kelly Okay So thank you very much for the super chat Very much appreciated I hope that
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=13981)
-
-1. **[3:53:14]** – Helps All right Daniel for five bucks Thank you for the super chat Where can I find more recent
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=13994)
-
-1. **[3:58:23]** – Um Mama asks "I find myself wondering who got Kitchen's library
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=14303)
-
-1. **[4:02:23]** – Too Yeah Okay Um Tyler X9 asks "Any
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=14543)
-
-1. **[4:04:12]** – East So I hope that helps Thank you very much for the super chat Very much
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=14652)
-
-1. **[4:04:19]** – Appreciated Okay mysterious fungus for $10 Thank you for the super chat Uh are there lines between specific
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=14659)
-
-1. **[4:23:20]** – So all right So let's move on here and do the last super chats here and then we'll call it a
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=15800)
-
-1. **[4:25:37]** – Much Okay Paul for 1999 Thank you for the super chat Thoughts on the new pope
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=15937)
-
-1. **[4:26:35]** – Um only time will tell Okay but thank you very much for the super chat Very much
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=15995)
-
-1. **[4:26:47]** – Pope Uh Courtney Thompson for $2 Thank you very much for the super chat
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=16007)
-
-1. **[4:29:33]** – Very much The super chat very much appreciated And this is the final super chat of the night
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=16173)
-
-1. **[4:30:21]** – You for the super chat And this is the last super chat of the night here Uh it's 12:30 already so it's probably a
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=16221)
-
-1. **[4:30:26]** – Good time to end Uh he asks do the colors in Exodus 26:1 give us clues of
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=16226)
-
-1. **[4:33:56]** – Pigment Yeah you have to crush a lot of them Yeah Uh mama asks "Is it UV light that makes
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=16436)
-
-1. **[4:35:06]** – Um mama asks "So if you use Egyptian blue in resin would it maintain its
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=16506)
-
-1. **[4:36:34]** – Much for asking the question Okay Uh do we have any non-s super chats we'll take one non-s super chat if we have one If
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=16594)
-
-1. **[4:39:43]** – I want to thank all the super chatters who who have donated generously
-   [Watch on YouTube](https://youtu.be/wf4G-NcyCe4?t=16783)
+# Super Chat Questions in Livestream 208
+
+Live Stream #208: Hysterical Context Error
+
+Time links open the YouTube video at the relevant timestamp. The links use HTML anchors so GitHub can render them with `target="_blank"`.
+
+| Time | Question | Short answer / answer direction |
+|---:|---|---|
+| <a href="https://youtu.be/wf4G-NcyCe4?t=543" target="_blank" rel="noopener noreferrer">9:03</a> | Did Egyptians actually think the brain was useless? | No. They did not know exactly what it did, but medical texts and surgery show they knew brain injury affected the person. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=872" target="_blank" rel="noopener noreferrer">14:32</a> | After David told his secular friends he was a Christian, were any of them surprised? | Not really. It came up naturally in conversation rather than as a dramatic announcement. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=1157" target="_blank" rel="noopener noreferrer">19:17</a> | Considering how far back Jericho's history goes, is it odd that nothing from Abraham to Jacob mentions it? | No. Jericho guarded the Jordan fords, and Abraham and Jacob were not using that route. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=1312" target="_blank" rel="noopener noreferrer">21:52</a> | Have book critics said anything about the novel? | Yes. One Christian fiction reviewer had high praise for it. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=1632" target="_blank" rel="noopener noreferrer">27:12</a> | Is Ancient Egypt academia really so backbiting? | Egyptology has some of that, but theology and seminary academia can be worse. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=1931" target="_blank" rel="noopener noreferrer">32:11</a> | Any book recommendations for New Testament use of the Old Testament? | He did not have a single recommendation and discussed an unrealized Carson/Longman project that would have been useful. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=2224" target="_blank" rel="noopener noreferrer">37:04</a> | Would there have been regular sacrifices during the wilderness wandering? | Yes, at least when the tabernacle was set up. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=2328" target="_blank" rel="noopener noreferrer">38:48</a> | Do you take the 40 years in the wilderness as historical or allegorical? | He takes it as idiomatic and approximate, not necessarily an exact count. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=2421" target="_blank" rel="noopener noreferrer">40:21</a> | Do we know of ancient Egyptian or other ancient Near Eastern kings with as many wives as Solomon? | Yes. Ramesses is given as the main example. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=2831" target="_blank" rel="noopener noreferrer">47:11</a> | My sister returned to Christ and her children are seeing shadowy figures. Any recommendations? | Praise God and pray; if it continues, also consider possible medical or psychological explanations. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=3257" target="_blank" rel="noopener noreferrer">54:17</a> | What is the best explanation of the prosperity gospel? | In short: enough faith supposedly obligates God to give health, wealth, or whatever is desired. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=3337" target="_blank" rel="noopener noreferrer">55:37</a> | How did the prosperity gospel start, and how old is it? | It is not very old; he connects it mainly to aberrant 1960s Pentecostal revival teaching and televangelism. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=3651" target="_blank" rel="noopener noreferrer">1:00:51</a> | What is the meaning of dominion over fish and birds in Genesis 1:28? | It is about humanity ruling as God's representative within the created order. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=4206" target="_blank" rel="noopener noreferrer">1:10:06</a> | In Genesis 39:12, what garment would Joseph have worn? | Likely a light linen robe or wrap, suitable for Egyptian conditions. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=4963" target="_blank" rel="noopener noreferrer">1:22:43</a> | Where are the Benjaminites in the New Testament? | He corrects this to Gadites and points to Luke 8. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=5296" target="_blank" rel="noopener noreferrer">1:28:16</a> | Is pig leather a thing? | Yes, but it would be unclean for Israelites; modern "pigskin" footballs are usually cow leather. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=5344" target="_blank" rel="noopener noreferrer">1:29:04</a> | Did Nefertiti take Neferneferuaten as a throne name? | He describes this as controversial and says many Egyptologists now identify Neferneferuaten as one of Nefertiti's daughters. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=5524" target="_blank" rel="noopener noreferrer">1:32:04</a> | Thoughts on the Dynasty 5 tomb discovery? | He has no firm opinion yet and wants official publication details before commenting. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=5579" target="_blank" rel="noopener noreferrer">1:32:59</a> | Are skeptics becoming more skeptical without warrant? | He says that is plausible and connects it to atheism losing cultural and argumentative momentum. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=6021" target="_blank" rel="noopener noreferrer">1:40:21</a> | What double offense did Moses commit that kept him from entering Canaan? | He says it need not be a double offense; Moses misrepresented God by acting angry when God was not. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=6203" target="_blank" rel="noopener noreferrer">1:43:23</a> | What makes Abraham a prophet? | Abraham received theophany and prophecy, including promises about a son and many nations. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=6330" target="_blank" rel="noopener noreferrer">1:45:30</a> | I do not like wine. What do I do for communion? | It depends on the denomination; some require wine, while others permit grape juice, water, or exceptions. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=7203" target="_blank" rel="noopener noreferrer">2:00:03</a> | Explain Deuteronomy 14:24-27. | It concerns converting a tithe to money for travel and then rejoicing before the Lord at the chosen place. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=7673" target="_blank" rel="noopener noreferrer">2:07:53</a> | What does Hebrews 7:15-17 mean by a priest in the order of Melchizedek because of an indestructible life? | Hebrews contrasts Christ's eternal priesthood with priesthood based on physical descent. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=8168" target="_blank" rel="noopener noreferrer">2:16:08</a> | If Palestine lacked a deep sea port, how did Dan have ships in Judges 5:17? | Dan had Joppa, a real port, though not originally a deep sea port. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=8384" target="_blank" rel="noopener noreferrer">2:19:44</a> | Did ancient Egypt have elite warriors called the Medjai, as in The Mummy? | Not as the film presents them. Medjai existed, but by Dynasty 19 they were more like guards, police, or officials. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=8682" target="_blank" rel="noopener noreferrer">2:24:42</a> | Why are many scholars convinced the Song of Deborah is the oldest part of the Bible and dates to the 1200s BC? | He disputes the 1200s date and criticizes the assumption that poetic archaism proves earlier composition. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=9009" target="_blank" rel="noopener noreferrer">2:30:09</a> | What about gradual unveiling of God's character to explain harsh judgments, Jonah, and Jesus? | Yes; theologians call this progressive revelation. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=9203" target="_blank" rel="noopener noreferrer">2:33:23</a> | Have you read Nigro's recent preliminary report? | He asks which one; he has read multiple 2023 Jericho reports but not every recent one. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=9267" target="_blank" rel="noopener noreferrer">2:34:27</a> | Is Tel Heshbon a problem for a 13th-century conquest? | Not necessarily; he treats it as an absence-of-evidence issue that raises questions but is not decisive. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=10423" target="_blank" rel="noopener noreferrer">2:53:43</a> | When educated people disagree, how can a layperson discern truth and speak confidently? | Go back to Scripture, compare the options, and remember experts can be wrong. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=11049" target="_blank" rel="noopener noreferrer">3:04:09</a> | Any book or video recommendations for learning to think like an Old Testament Israelite or New Testament Jew? | He recommends John Walton's Lost World books. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=11124" target="_blank" rel="noopener noreferrer">3:05:24</a> | How similar is the creator god Ptah to Yahweh in the Bible? | Only in the idea of fiat creation; otherwise he sees little similarity. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=11280" target="_blank" rel="noopener noreferrer">3:08:00</a> | How would the disciples have understood Mark 8:34 before the crucifixion? | Very poorly; taking up a cross would have sounded shameful and horrifying before the crucifixion. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=12324" target="_blank" rel="noopener noreferrer">3:25:24</a> | How similar are the fights and squabbles of Egyptian gods to Greek mythology? | Not very similar. Egyptian divine conflict is comparatively limited and context-specific. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=12429" target="_blank" rel="noopener noreferrer">3:27:09</a> | Did Egyptian gods physically get women pregnant like the Olympians? | Generally no, though Egyptian royal birth theology gives gods a role in the conception of kings. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=12744" target="_blank" rel="noopener noreferrer">3:32:24</a> | In 1 Kings 3:2, would one of the high places be Mount Ebal? | No. He says the Mount Ebal site was remote and short-lived. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=13892" target="_blank" rel="noopener noreferrer">3:51:32</a> | Are there guides to the Ante-Nicene Fathers' writings that you recommend? | He recommends J. N. D. Kelly's Early Christian Doctrines as a primer. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=13994" target="_blank" rel="noopener noreferrer">3:53:14</a> | Where can I find more recent translations of lesser-known church fathers? | He mentions newer translation series but cannot recall the specific series name during the stream. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=14303" target="_blank" rel="noopener noreferrer">3:58:23</a> | Who got Kenneth Kitchen's library? | Tyndale House got Kitchen's library. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=14543" target="_blank" rel="noopener noreferrer">4:02:23</a> | Is there ancient Near Eastern material on poltergeist activity? | Yes. He recommends The First Ghosts by Irving Finkel. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=14659" target="_blank" rel="noopener noreferrer">4:04:19</a> | Are lines between specific clans set in stone or subjective? | They can be subjective; clans subdivide and can split into new clans over time. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=15937" target="_blank" rel="noopener noreferrer">4:25:37</a> | Thoughts on the new pope? | It is too early to tell; he has heard the pope is moderate and hopes he respects church tradition. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=16007" target="_blank" rel="noopener noreferrer">4:26:47</a> | In Joshua 10:41 and 11:16, did Goshen move? | No. He explains this as a duplicate toponym: one name can refer to more than one place or region. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=16226" target="_blank" rel="noopener noreferrer">4:30:26</a> | Do the colors in Exodus 26:1 give clues about how the cherubim were woven in an Egyptian context? | Not much. The colors suggest possible pigments or dyes, but not enough to reconstruct the weaving. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=16436" target="_blank" rel="noopener noreferrer">4:33:56</a> | Is it UV light that makes the scarlet pigment fade? | No. He says dehydration is the issue. |
+| <a href="https://youtu.be/wf4G-NcyCe4?t=16506" target="_blank" rel="noopener noreferrer">4:35:06</a> | If Egyptian blue is used in resin, would it maintain its color? | Probably yes, and he discusses possible infrared luminescence behavior. |
