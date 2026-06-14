@@ -16,6 +16,10 @@ The raw transcripts are useful, but long livestreams are hard to navigate from t
 - [Episode 7: Seven and the Ragged Tiger](docs/questions/7-seven-and-the-ragged-tiger-questions.md)
 - [Episode 8: Questions Behind the Eight Ball](docs/questions/8-questions-behind-the-eight-ball-questions.md)
 - [Episode 9: The Nine Bows](docs/questions/9-the-nine-bows-questions.md)
+- [Episode 10: A Tenth Portion](docs/questions/10-a-tenth-portion-questions.md)
+- [Episode 11: Questions at the Eleventh Hour](docs/questions/11-questions-at-the-eleventh-hour-questions.md)
+- [Episode 12: The Quorum of the Twelve](docs/questions/12-the-quorum-of-the-twelve-questions.md)
+- [Episode 13: Triskaidekaphobia](docs/questions/13-triskaidekaphobia-questions.md)
 - [Episode 208: Super Chat Questions](docs/questions/208-super-chat-questions.md) - example of a curated question-and-answer reference page with timestamp links.
 
 ## Repository Layout
@@ -29,6 +33,7 @@ src/
   live-stream-list.txt        Plain text episode index
   transcripts/                Raw transcript source data
 ```
+
 
 ## File Types
 
@@ -45,6 +50,12 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 ## Current Status
 
 The archive contains raw transcript data for many livestreams, with curated Markdown pages being added incrementally. Curated pages should be treated as reference aids, not full replacements for the original video or transcript.
+
+### TODO: Pull transcripts for:
+
+    118 - missing transcript content - [118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks.json](src/transcripts/json/118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks.json)
+    162 - missing transcript content - [162-king-for-a-day.json](src/transcripts/json/162-king-for-a-day.json)
+    209 and greater
 
 ## Contributing Notes
 
