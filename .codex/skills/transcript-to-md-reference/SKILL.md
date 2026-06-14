@@ -1,7 +1,7 @@
 ---
 
 name: transcript-to-md-reference
-description: Convert Ancient Egypt and the Bible livestream transcript exports into curated GitHub Pages Q&A reference pages. Use when Codex needs to turn transcript JSON/source files into Markdown files under docs/questions with all real audience questions, short answer summaries, timestamps, and direct YouTube links like docs/questions/6-all-of-this-has-happened-before-questions.md.
+description: Convert Ancient Egypt and the Bible livestream transcript exports and generated TXT working transcripts into curated GitHub Pages Q&A reference pages. Use when Codex needs to turn source files under src/transcripts into Markdown files under docs/questions with all real audience questions, short answer summaries, timestamps, and direct YouTube links like docs/questions/6-all-of-this-has-happened-before-questions.md.
 ---
 
 # Transcript to MD Reference
@@ -22,14 +22,16 @@ Keep raw transcript source data under `src/`.
 
 ## Source Files
 
-Use `src/transcripts/json/*.json` as the primary transcript source files.
+Use `src/transcripts/json/*.json` as the source of record.
 
-Use `src/transcripts/txt/*.txt` as generated working transcripts for fast inspection. These TXT files are derived from the JSON files and should have the same base slug:
+Use `src/transcripts/txt/*.txt` as the default working transcripts for fast inspection and Q&A curation. These TXT files are derived from the JSON files and should have the same base slug:
 
 ```text
 src/transcripts/json/12-the-quorum-of-the-twelve.json
 src/transcripts/txt/12-the-quorum-of-the-twelve.txt
 ```
+
+The generated TXT corpus currently covers all non-empty JSON transcript exports through episode 208. Episodes 118 and 162 are known empty JSON placeholders and should not produce TXT files or curated pages until real transcript data is added.
 
 If the TXT file does not exist for a target JSON file, generate it before curating:
 
@@ -42,6 +44,8 @@ The converter writes to `src/transcripts/txt/` by default, overwrites generated 
 ```text
 [22] 3:58    okay um how prevalent were the gnostics in egypt
 ```
+
+If the converter reports that no transcript segments were found, treat the JSON as an empty placeholder. Do not invent a curated page; note the blocker and move to the next requested episode only when the user asked for a batch such as "next two episodes."
 
 For structured processing, the same script can emit TSV under `src/transcripts/tsv/`:
 
@@ -79,6 +83,8 @@ docs/questions/6-all-of-this-has-happened-before-questions.md
 docs/questions/208-super-chat-questions.md
 ```
 
+If the slug already ends in `questions`, use `<slug>.md` instead of duplicating the word, as in `docs/questions/5-five-and-even-more-questions.md`.
+
 Special-purpose pages may diverge from the slug when the page indexes a narrower topic (for example, `docs/questions/208-super-chat-questions.md` is sourced from `src/transcripts/json/208-hysterical-context-error.json` but indexes only super chats). Use this only when explicitly requested.
 Do not write new public Q&A pages under:
 
@@ -92,20 +98,21 @@ Those are legacy or incorrect output locations for this GitHub Pages layout.
 ## Workflow
 
 1. Identify the target episode number and slug.
-2. Confirm the matching JSON source exists under `src/transcripts/json/`.
-3. Confirm the matching TXT working transcript exists under `src/transcripts/txt/`; if not, run `scripts/Convert-TranscriptJson.ps1` for the JSON file.
-4. Use `src/live-stream-list.md` to confirm the episode title and YouTube video URL.
-5. Read the TXT transcript around likely question starts using `rg`, `Select-String`, or bounded `Get-Content` inspection. Use the JSON only when you need raw transcript fields not present in the TXT file.
-6. Find real audience question starts, including:
+2. Use `src/live-stream-list.md` to confirm the episode title, YouTube video URL, and slug.
+3. Confirm the matching JSON source exists under `src/transcripts/json/`.
+4. Confirm the matching TXT working transcript exists under `src/transcripts/txt/`; if not, run `scripts/Convert-TranscriptJson.ps1` for the JSON file.
+5. Read the TXT transcript first. Use `rg`, `Select-String`, or bounded `Get-Content` inspection around likely question markers such as `?`, `question`, `asks`, `super chat`, `what`, `why`, `how`, `where`, `when`, `who`, `does`, `did`, `is`, `are`, `can`, `could`, and `would`.
+6. Use the JSON only when you need raw transcript fields not present in the TXT file. Use TSV when many exact `StartSeconds` values or generated links need to be audited.
+7. Find real audience question starts, including:
 
    * super chats
    * regular chat questions
    * questions read from any backlog
-7. Never limit the page to super chats only unless the requested page is explicitly a super-chat-only index.
-8. Expand each question across adjacent transcript rows until the question is complete.
-9. Add a short answer / answer direction only when the transcript clearly supports it.
-10. Write the output under `docs/questions/`.
-11. Validate that table rows render cleanly and timestamp links point to the right YouTube time.
+8. Never limit the page to super chats only unless the requested page is explicitly a super-chat-only index.
+9. Expand each question across adjacent transcript rows until the question is complete. Use the question start, not the answer start, for the timestamp.
+10. Add a short answer / answer direction only when the transcript clearly supports it.
+11. Write the output under `docs/questions/`.
+12. Validate that table rows render cleanly and timestamp links point to the right YouTube time.
 
 ## Output Format
 
@@ -152,6 +159,7 @@ When the transcript TXT line has only the display timestamp, convert it to secon
 * Preserve uncertainty when the transcript is unclear.
 * Include all real questions supported by the transcript, not only super chats.
 * Clean obvious transcript artifacts only when the intended wording is clear.
+* Combine split transcript rows into one readable question, but do not over-normalize unclear wording.
 * Prefer concise summaries over long paraphrases.
 * Omit non-question setup, housekeeping, and closing thanks unless the page is explicitly meant to index them.
 * Exclude repeated "thank you for the super chat" fragments unless they introduce the actual question.
@@ -162,12 +170,11 @@ When the transcript TXT line has only the display timestamp, convert it to secon
 
 Pages under `docs/questions/` are public-facing GitHub Pages content.
 
-When adding new pages, also consider whether `docs/index.md` or `docs/index.html` needs a link to the new question page.
+When adding new pages, update `README.md` if it is maintaining an explicit episode-link list. `docs/index.html` searches `docs/questions/` dynamically and usually does not need a per-page link update.
 
-For a large number of pages, prefer a grouped index such as:
+For a large number of pages, prefer a grouped Markdown index under `docs/questions/`, leaving the existing `docs/index.html` search page intact unless the search UI itself needs to change:
 
 ```text
-docs/index.md
 docs/questions/index.md
 docs/questions/1-the-debug-episode-questions.md
 docs/questions/2-bugs-bugs-and-fixes-questions.md
@@ -187,7 +194,7 @@ rg -n "transcripts/livestreams/md|src/md" docs README.md
 
 For tables, verify each row has the same number of pipe characters or inspect in a Markdown preview.
 
-Ensure the README file links to the new page, in the section with the other episode links.
+If adding a new curated episode page, ensure the README file links to the new page when the surrounding README section is listing curated episodes.
 
 If a TXT file was generated for the episode, verify it exists under `src/transcripts/txt/` and that its line count matches the transcript segment count reported by the converter.
 

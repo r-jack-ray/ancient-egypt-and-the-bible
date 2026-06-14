@@ -39,3 +39,7 @@ env/
 
 # Transcript tooling venv
 .venv-transcripts/
+
+# Local transient task summaries and notes. Keep only the policy README.
+/task-notes/*
+!/task-notes/README.md
