@@ -1,4 +1,55 @@
 #requires -Version 7.0
+<#
+.SYNOPSIS
+Converts a YouTube transcript JSON export into a plain TXT or TSV working transcript.
+
+.DESCRIPTION
+Use this script from the repository root to create generated transcript files for
+Codex or manual transcript review. By default it reads a JSON file from
+src/transcripts/json/ and writes a matching TXT file to src/transcripts/txt/.
+
+The TXT output contains one transcript segment per line:
+
+    [22] 3:58    okay um how prevalent were the gnostics in egypt
+
+Use TSV output when you need structured columns such as StartSeconds, StartMs,
+EndMs, Text, and direct YouTube timestamp links.
+
+.PARAMETER Path
+One or more transcript JSON files to convert.
+
+.PARAMETER Format
+Output format. Use Txt for readable working transcripts or Tsv for structured
+processing. Defaults to Txt.
+
+.PARAMETER OutputRoot
+Optional output folder. Defaults to src/transcripts/txt/ for Txt and
+src/transcripts/tsv/ for Tsv.
+
+.PARAMETER VideoUrl
+Optional YouTube URL used to build timestamp links. The script usually infers
+the video ID from the transcript segment target IDs, so this is only needed if
+inference fails or you want to override it.
+
+.PARAMETER NoClobber
+Fails if the output file already exists. Without this switch, generated output
+is overwritten so repeated processing stays simple.
+
+.EXAMPLE
+pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/12-the-quorum-of-the-twelve.json
+
+Creates src/transcripts/txt/12-the-quorum-of-the-twelve.txt.
+
+.EXAMPLE
+pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/12-the-quorum-of-the-twelve.json -Format Tsv
+
+Creates src/transcripts/tsv/12-the-quorum-of-the-twelve.tsv.
+
+.EXAMPLE
+Get-ChildItem src/transcripts/json/14-*.json,src/transcripts/json/15-*.json | pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1
+
+Converts multiple JSON files supplied through the pipeline.
+#>
 
 [CmdletBinding()]
 param(
