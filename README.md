@@ -6,7 +6,6 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 
 ## Start Here
 
-- [GitHub Pages search page](docs/index.html) - browser page for searching the public reference content.
 - [Livestream archive](src/live-stream-list.md) - episode list with YouTube links and transcript slugs.
 - [Episode 1: The Debug Episode](docs/questions/1-the-debug-episode-questions.md)
 - [Episode 2: Bugs, Bugs, and Fixes](docs/questions/2-bugs-bugs-and-fixes-questions.md)
