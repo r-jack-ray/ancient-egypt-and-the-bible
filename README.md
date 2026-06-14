@@ -1,11 +1,12 @@
 # Ancient Egypt and the Bible Transcript Reference
 
-This repository is a public reference project for the *Ancient Egypt and the Bible* livestream archive. Its goal is to turn livestream transcripts into material that is easy to browse, search, quote, and use from GitHub.
+This repository is a public reference project for the *Ancient Egypt and the Bible* livestream archive. Its goal is to turn livestream transcripts into material that is easy to browse, search, quote, and verify from the original videos.
 
-The raw transcripts are useful, but long livestreams are hard to navigate from transcript text alone. This project organizes the source material into timestamped files and curated Markdown pages so viewers can jump from a topic or question directly to the matching moment in the video.
+The raw transcript exports are useful, but long livestreams are hard to navigate from transcript text alone. This project keeps the raw data, generates working transcript text files for processing, and adds curated Markdown Q&A pages so readers can jump from a topic or question directly to the matching moment in the video.
 
 ## Start Here
 
+- [GitHub Pages search page](docs/index.html) - browser page for searching the public reference content.
 - [Livestream archive](src/live-stream-list.md) - episode list with YouTube links and transcript slugs.
 - [Episode 1: The Debug Episode](docs/questions/1-the-debug-episode-questions.md)
 - [Episode 2: Bugs, Bugs, and Fixes](docs/questions/2-bugs-bugs-and-fixes-questions.md)
@@ -28,36 +29,76 @@ The raw transcripts are useful, but long livestreams are hard to navigate from t
 docs/
   index.html                  GitHub Pages search page
   questions/                  Public curated Markdown Q&A reference pages
+scripts/
+  Convert-TranscriptJson.ps1  PowerShell 7 converter from JSON to TXT or TSV
 src/
   live-stream-list.md         Episode index with YouTube links and transcript slugs
   live-stream-list.txt        Plain text episode index
-  transcripts/                Raw transcript source data
+  transcripts/
+    json/                     Raw YouTube transcript JSON exports
+    txt/                      Generated working transcript text files
+    tsv/                      Optional generated TSV files, created on demand
 ```
-
 
 ## File Types
 
-`src/transcripts/` contains raw transcript data preserved from the transcript source. These files are best for reprocessing, rebuilding exports, or auditing source text.
+`src/transcripts/json/` contains raw YouTube transcript exports. Treat these as the source of record when rebuilding or auditing transcript-derived files.
+
+`src/transcripts/txt/` contains generated working transcripts. Each line has a segment index, display timestamp, and transcript text. These files are optimized for fast `rg`, `Select-String`, and Codex-assisted review.
+
+`src/transcripts/tsv/` is optional generated output for structured processing. TSV rows include columns such as `Timestamp`, `StartSeconds`, `Text`, and `Link`.
 
 `docs/questions/` contains human-edited reference pages. These are meant to be read directly on GitHub Pages and GitHub and may include cleaned-up questions, short answer summaries, and timestamp links.
 
+## Transcript Conversion
+
+Use PowerShell 7 to generate TXT working transcripts from JSON exports:
+
+```powershell
+pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/14-fourteen-pieces-of-osiris.json
+```
+
+By default, the script writes to `src/transcripts/txt/` and overwrites generated output so repeated processing is simple. Use `-NoClobber` if you want the script to fail when an output file already exists.
+
+For structured processing, generate TSV instead:
+
+```powershell
+pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/14-fourteen-pieces-of-osiris.json -Format Tsv
+```
+
+The script can also process multiple files from the pipeline:
+
+```powershell
+Get-ChildItem src/transcripts/json/14-*.json,src/transcripts/json/15-*.json |
+    pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1
+```
+
 ## How to Use This Reference
 
-Use GitHub search to find a topic, Bible passage, person, place, or episode number. For broad searching, the TSV files usually give the widest coverage. For cleaner browsing, use the Markdown files when available.
+Use GitHub search to find a topic, Bible passage, person, place, or episode number. For broad searching, generated TXT transcripts are usually the fastest to scan. For cleaner browsing, use the curated Markdown pages when available.
 
 Timestamp links point to the relevant place in the YouTube video. Curated Markdown pages may use HTML links with `target="_blank"` so GitHub opens the video in a new tab.
 
 ## Current Status
 
-The archive contains raw transcript data for many livestreams, with curated Markdown pages being added incrementally. Curated pages should be treated as reference aids, not full replacements for the original video or transcript.
+The archive contains raw JSON transcript data for many livestreams through episode 208. Curated Markdown pages currently cover episodes 1-13, plus a super-chat-focused page for episode 208. Generated TXT working transcripts currently exist for episodes 12, 14, and 15.
 
-### TODO: Pull transcripts for:
+Curated pages should be treated as reference aids, not full replacements for the original video or transcript.
 
-    118 - missing transcript content - [118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks.json](src/transcripts/json/118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks.json)
-    162 - missing transcript content - [162-king-for-a-day.json](src/transcripts/json/162-king-for-a-day.json)
-    209 and greater
+Known transcript gaps:
+
+- Episode 118 has an empty JSON placeholder: [118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks.json](src/transcripts/json/118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks.json)
+- Episode 162 has an empty JSON placeholder: [162-king-for-a-day.json](src/transcripts/json/162-king-for-a-day.json)
+- Episode 209 and newer still need transcript pulls.
 
 ## Contributing Notes
+
+When converting transcripts:
+
+- Keep raw YouTube JSON exports under `src/transcripts/json/`.
+- Generate TXT working files with `scripts/Convert-TranscriptJson.ps1` when a matching TXT file is missing.
+- Use TSV output only when structured columns are needed for a processing task.
+- Do not hand-edit generated TXT or TSV files unless the goal is explicitly to repair generated output.
 
 When adding or improving a curated page:
 
