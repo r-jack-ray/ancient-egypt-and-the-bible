@@ -85,11 +85,9 @@ The repository has JSON transcript files for episodes 1-208. Of those, 206 conta
 
 Curated pages should be treated as reference aids, not full replacements for the original video or transcript.
 
-Known transcript gaps and blocked placeholders:
-
-- Episode 118 has an empty JSON placeholder and no generated TXT file: [118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks.json](src/transcripts/json/118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks.json)
-- Episode 162 has an empty JSON placeholder and no generated TXT file: [162-king-for-a-day.json](src/transcripts/json/162-king-for-a-day.json)
-- `src/live-stream-list.md` includes episode 209, but no transcript JSON for that episode is present in this repository yet.
+## Transcripts Disabled By Creator and Cannot be processed at present.
+- Live Stream #118: Yeah, Even with Good Questions, the Egyptian Afterlife Still Sucks
+- Live Stream #162: King for a Day
 
 ## Contributing Notes
 
