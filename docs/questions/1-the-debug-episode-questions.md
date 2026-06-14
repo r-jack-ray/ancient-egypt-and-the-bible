@@ -2,7 +2,7 @@
 
 Live Stream #1: The Debug Episode.
 
-Time links open the YouTube video at the relevant timestamp. The links use HTML anchors so GitHub can render them with `target="_blank"`.
+Time links open the YouTube video at the relevant timestamp.
 
 | Time | Question | Short answer / answer direction |
 |---:|---|---|
@@ -10,6 +10,7 @@ Time links open the YouTube video at the relevant timestamp. The links use HTML 
 | <a href="https://youtu.be/uduERXxcb1E?t=207" target="_blank" rel="noopener noreferrer">3:27</a> | How did I come to know Christ? | He became a Christian at age seven while growing up in an evangelical Christian home. |
 | <a href="https://youtu.be/uduERXxcb1E?t=373" target="_blank" rel="noopener noreferrer">6:13</a> | Did you watch the Pharaohs' Golden Parade? If so, what was your reaction? | Yes. He thought it was a great spectacle and especially interesting as a modern ritual procession. |
 | <a href="https://youtu.be/uduERXxcb1E?t=420" target="_blank" rel="noopener noreferrer">7:00</a> | Have you looked into Ezekiel's prophecy concerning Nebuchadnezzar attacking Egypt? | Yes. He says Egypt was reduced to a rump state, though whether the prophecy is specifically about Nebuchadnezzar remains the debated question. |
+| <a href="https://youtu.be/uduERXxcb1E?t=606" target="_blank" rel="noopener noreferrer">10:06</a> | Who are your favorite philosophical influences? | He studied philosophy of religion and philosophy of science, was especially interested in Plato, and says teachers influenced him more than any one modern writer. |
 | <a href="https://youtu.be/uduERXxcb1E?t=795" target="_blank" rel="noopener noreferrer">13:15</a> | What are the highs and lows of being interviewed? | Highs include good conversations; lows include interview settings that become more like debates. |
 | <a href="https://youtu.be/uduERXxcb1E?t=909" target="_blank" rel="noopener noreferrer">15:09</a> | Can you tell a fun or weird story from Egyptian history that people do not usually see in basic history? | He points to a humorous ancient Egyptian autobiographical tomb story involving a priest and a crocodile. |
 | <a href="https://youtu.be/uduERXxcb1E?t=992" target="_blank" rel="noopener noreferrer">16:32</a> | What is your favorite Egyptian creation myth? | He highlights the Memphite theology, where Ptah creates through thought and speech. |
