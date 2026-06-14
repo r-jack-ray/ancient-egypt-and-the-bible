@@ -8,7 +8,7 @@
   <h1>Ancient Egypt and the Bible Search</h1>
 
   <form id="searchForm">
-    <label for="searchText">Search files under <code>/src/md</code></label>
+    <label for="searchText">Search files under <code>/docs/questions</code></label>
     <br>
     <input
       id="searchText"
@@ -21,7 +21,7 @@
 
   <p>
     This searches only files under
-    <code>/src/md</code>
+    <code>/docs/questions</code>
     in this GitHub repository.
   </p>
 
@@ -33,7 +33,7 @@
 
       const query = [
         "repo:r-jack-ray/ancient-egypt-and-the-bible",
-        "path:/src/md/**",
+        "path:/docs/questions/**",
         term
       ].filter(Boolean).join(" ");
 

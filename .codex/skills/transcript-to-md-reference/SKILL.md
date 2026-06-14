@@ -24,6 +24,31 @@ Keep raw transcript source data under `src/`.
 
 Use `src/transcripts/json/*.json` as the primary transcript source files.
 
+Use `src/transcripts/txt/*.txt` as generated working transcripts for fast inspection. These TXT files are derived from the JSON files and should have the same base slug:
+
+```text
+src/transcripts/json/12-the-quorum-of-the-twelve.json
+src/transcripts/txt/12-the-quorum-of-the-twelve.txt
+```
+
+If the TXT file does not exist for a target JSON file, generate it before curating:
+
+```powershell
+pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/12-the-quorum-of-the-twelve.json
+```
+
+The converter writes to `src/transcripts/txt/` by default, overwrites generated output by default, and emits one line per transcript segment:
+
+```text
+[22] 3:58    okay um how prevalent were the gnostics in egypt
+```
+
+For structured processing, the same script can emit TSV under `src/transcripts/tsv/`:
+
+```powershell
+pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/12-the-quorum-of-the-twelve.json -Format Tsv
+```
+
 Use `src/live-stream-list.md` to confirm:
 
 * episode number
@@ -44,7 +69,10 @@ docs/questions/
 Use filenames like:
 
 ```text
-<slug>-qa.md
+<slug>-questions.md
+```
+
+Examples:
 
 ```text
 docs/questions/6-all-of-this-has-happened-before-questions.md
@@ -64,18 +92,20 @@ Those are legacy or incorrect output locations for this GitHub Pages layout.
 ## Workflow
 
 1. Identify the target episode number and slug.
-2. Read the transcript JSON around likely question starts using `rg`, `Select-String`, or bounded `Get-Content` inspection.
-3. Use `src/live-stream-list.md` to confirm the episode title and YouTube video URL.
-4. Find real audience question starts, including:
+2. Confirm the matching JSON source exists under `src/transcripts/json/`.
+3. Confirm the matching TXT working transcript exists under `src/transcripts/txt/`; if not, run `scripts/Convert-TranscriptJson.ps1` for the JSON file.
+4. Use `src/live-stream-list.md` to confirm the episode title and YouTube video URL.
+5. Read the TXT transcript around likely question starts using `rg`, `Select-String`, or bounded `Get-Content` inspection. Use the JSON only when you need raw transcript fields not present in the TXT file.
+6. Find real audience question starts, including:
 
    * super chats
    * regular chat questions
    * questions read from any backlog
-5. Never limit the page to super chats only unless the requested page is explicitly a super-chat-only index.
-6. Expand each question across adjacent transcript rows until the question is complete.
-7. Add a short answer / answer direction only when the transcript clearly supports it.
-8. Write the output under `docs/questions/`.
-9. Validate that table rows render cleanly and timestamp links point to the right YouTube time.
+7. Never limit the page to super chats only unless the requested page is explicitly a super-chat-only index.
+8. Expand each question across adjacent transcript rows until the question is complete.
+9. Add a short answer / answer direction only when the transcript clearly supports it.
+10. Write the output under `docs/questions/`.
+11. Validate that table rows render cleanly and timestamp links point to the right YouTube time.
 
 ## Output Format
 
@@ -102,7 +132,7 @@ Markdown links cannot force new tabs on GitHub.
 Use HTML anchors for timestamp links:
 
 ```html
-<a href="https://youtu.be/VIDEO_ID?t=123" target="_blank">2:03</a>
+<a href="https://youtu.be/VIDEO_ID?t=123" target="_blank" rel="noopener noreferrer">2:03</a>
 ```
 
 Keep the timestamp display human-readable:
@@ -113,6 +143,8 @@ Keep the timestamp display human-readable:
 ```
 
 Keep the `?t=` value in seconds.
+
+When the transcript TXT line has only the display timestamp, convert it to seconds for the URL. If using TSV output, use the `StartSeconds` and `Link` columns directly.
 
 ## Curation Rules
 
@@ -150,15 +182,13 @@ Select-String -Path docs/questions/FILE.md -Pattern 'target="_blank"'
 
 rg -n "\[Watch on YouTube\]|\[PLACEHOLDER\]" docs/questions/FILE.md
 
-rg -n "src/md|transcripts/livestreams/md" .codex/skills/transcript-to-md-reference/SKILL.md docs
-
-rg -n "\[Watch on YouTube\]|\[PLACEHOLDER\]" docs/questions/FILE.md
-
-rg -n "transcripts/livestreams/md|src/md" .codex/skills/transcript-to-md-reference/SKILL.md docs
+rg -n "transcripts/livestreams/md|src/md" docs README.md
 ```
 
 For tables, verify each row has the same number of pipe characters or inspect in a Markdown preview.
 
 Ensure the README file links to the new page, in the section with the other episode links.
+
+If a TXT file was generated for the episode, verify it exists under `src/transcripts/txt/` and that its line count matches the transcript segment count reported by the converter.
 
 If migrating old generated pages, move them from `src/md/` to `docs/questions/` and update any README, index, or search-page references that still point at `src/md/`.
