@@ -21,7 +21,7 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 - [Episode 11: Questions at the Eleventh Hour](docs/questions/11-questions-at-the-eleventh-hour-questions.md)
 - [Episode 12: The Quorum of the Twelve](docs/questions/12-the-quorum-of-the-twelve-questions.md)
 - [Episode 13: Triskaidekaphobia](docs/questions/13-triskaidekaphobia-questions.md)
-- [Episode 208: Super Chat Questions](docs/questions/208-super-chat-questions.md) - example of a curated question-and-answer reference page with timestamp links.
+- [Episode 208: Hysterical Context Error](docs/questions/208-hysterical-context-error-questions.md)
 
 ## Repository Layout
 
@@ -82,7 +82,7 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 
 ## Current Status
 
-The repository has JSON transcript files for episodes 1-208. Of those, 206 contain transcript segments and have generated TXT working transcripts. Curated Markdown pages currently cover episodes 1-13, plus a super-chat-focused page for episode 208.
+The repository has JSON transcript files for episodes 1-208. Of those, 206 contain transcript segments and have generated TXT working transcripts. Curated Markdown pages currently cover episodes 1-13 and 208, plus a super-chat-focused special page for episode 208.
 
 Curated pages should be treated as reference aids, not full replacements for the original video or transcript.
 
