@@ -1,0 +1,1372 @@
+[0] 0:16	[Music]
+[1] 0:39	[Music]
+[2] 0:57	[Music]
+[3] 1:04	do [Music]
+[4] 1:30	[Music]
+[5] 1:53	[Music]
+[6] 3:02	[Music]
+[7] 3:09	hello and welcome to this our 55th live stream wow
+[8] 3:15	uh today's live stream is entitled beasty under the hood
+[9] 3:20	it's beasty is the name of the demon
+[10] 3:26	that's portrayed on say um the cover of the bsd um handbooks now
+[11] 3:34	bsd for those who are not computer geeks is a variation of the unix operating
+[12] 3:39	system so it's a very very interesting since it's our last monday release had
+[13] 3:46	to do with the spirit world of demons and we used beastie on the thumbnail i
+[14] 3:51	thought we'd name the live stream tonight after that so uh
+[15] 3:56	we're going to get right into it because we've got a lot of questions tonight now
+[16] 4:02	unfortunately we got something like 30 non-super chat questions leading up
+[17] 4:08	to this we're not going to be able to take all those non-super chats uh it's just we just don't have the time
+[18] 4:15	okay so we we do have to give our super chats priority so uh they're gonna get priority we're
+[19] 4:22	still gonna take some non-super chats and if we have time at the end of the livestream tonight we'll take some more non-super chats
+[20] 4:28	but we're not going to answer everyone's it's just not going to be possible tonight and i apologize for that there's just
+[21] 4:34	a limited number of hours in the live stream and in the day okay so i've i've also asked
+[22] 4:43	my wife uh not to take special pleading either so if you really really plead for her to
+[23] 4:51	take your question uh i've instructed her to ignore uh special pleads so
+[24] 4:59	i know a lot of you do make special please for her to get her attention to have me answer a question
+[25] 5:05	and she's got a big big heart okay she's a sucker for special pleading but
+[26] 5:11	i've instructed her not to accept special pleading tonight so
+[27] 5:17	the rules are the same as always super chats have priority
+[28] 5:23	if you're going to ask a non-super chat question and should we still have time and i hope we do because i love taking
+[29] 5:28	on super chat questions as well put a q and a colon in front of your question
+[30] 5:33	so that i know it's being directed to me if there's no q and a colon it's not going to be seen pretty much
+[31] 5:40	although there is a couple here one here that i am going to sort of pick up
+[32] 5:45	um there is also a um
+[33] 5:52	if you do a question a non-subjective question please only
+[34] 5:58	state it once and only once we're going to get really really sticky about this because we've had some people try to
+[35] 6:04	uh flood our channel with the repeated question over and over again hoping it'll be seen
+[36] 6:11	that ain't going to work we're going to we're going to intentionally ignore those questions from now on
+[37] 6:16	and finally if it happens to be uh refer to a bible verse
+[38] 6:22	or a foreign word please specify the
+[39] 6:27	book chapter and verse and in the case of the foreign language tell me what language it is and what you
+[40] 6:32	think it needs just so i have a little bit of context here to go off of all right so with that said let's get into it now
+[41] 6:40	we're actually going to start with five non-super chats tonight and that's because we had like 30 of them so
+[42] 6:49	so let's get right into it our first non-super chat today comes
+[43] 6:55	from here comes nobody question is there any lore behind
+[44] 7:01	liverpool being the place for egyptology egyptology or did it just end up that
+[45] 7:07	like that randomly um the history of liverpool as a center for
+[46] 7:12	egyptology is really interesting for a while it was um
+[47] 7:20	it was sort of the the the hot center for all egyptology garstang was there petrie made visits
+[48] 7:27	there even um sir alan gardner would frequent
+[49] 7:33	liverpool liverpool went through a uh egyptology craze in the late 19th
+[50] 7:40	century i mean it was big you can still see it in the architecture there
+[51] 7:45	uh even the catholic church there there's a catholic cathedral there which
+[52] 7:51	is unflatteringly called uh st patrick's
+[53] 7:56	wigwam because it's kind of shaped like a tent it's really a weird shape for a roman catholic uh
+[54] 8:02	cathedral but you go behind the cathedral
+[55] 8:08	and there's actually two pyramids right near the entrance to the crypt
+[56] 8:13	very interesting it's very unusual but you go through a liverpool and you'll see like uh
+[57] 8:20	um egyptian inspired architecture everywhere it's everywhere
+[58] 8:26	so there was a mad craze of egyptology uh in liverpool in the 19th century
+[59] 8:32	and that just continued on at the university of liverpool so you know you had the
+[60] 8:38	it became a real center for egyptology and it's still still so today
+[61] 8:44	um i mean it's it's uh i mean it was the
+[62] 8:49	basically the academic home of uh kenneth kitchen alan millard um steve collier
+[63] 8:56	um oh um uh i think it's ff martin
+[64] 9:01	um this was there um there there was a couple others too but yeah but garstein
+[65] 9:08	was the big name garstang was the big big name and
+[66] 9:14	uh he actually uh did some uh excavations at jericho
+[67] 9:19	and um and you know brought a lot of stuff back to start the museum uh basically the um
+[68] 9:28	the egyptology museum at the university of liverpool also the liverpool world museum uh was the recipient of many of
+[69] 9:35	these artifact donations too so yeah liverpool
+[70] 9:41	it you know the lore there is is just just just the
+[71] 9:46	whole city was just fascinated with with egyptology so you know a lot of interesting stuff
+[72] 9:53	there a lot of uh i mean it's a great place to study egyptology if you're going to do it in fact i'd highly recommend it if you want to study
+[73] 10:00	egyptology that's the place the unfortunate part of it is they got very shallow pockets so they can't fund
+[74] 10:07	students the way that other schools can but it does have the largest faculty of
+[75] 10:12	of egyptologists pretty much outside of cairo itself
+[76] 10:19	so great place to study okay so thank you very much for that question
+[77] 10:26	the next question is from uh chao yi is it a desecration of the imago de
+[78] 10:32	that's the image of god to create a machine in the image of a man or could a sufficiently advanced ai
+[79] 10:41	capable of passing the turing test be conferred such a status okay
+[80] 10:48	now there is no possibility for a
+[81] 10:55	ai to be confirmed the status of the imago day because that's something that's special
+[82] 11:01	to mankind and can only be given by god can we make a robot that's sufficiently
+[83] 11:08	advanced so it acts like a man absolutely absolutely in fact
+[84] 11:13	there are ais that already do this um especially uh like for example ais that do customer
+[85] 11:20	service and uh at least first-tier customer service or um ai's that do say counseling
+[86] 11:28	sessions they are sufficiently sophisticated that they can fool many
+[87] 11:34	people you know so um
+[88] 11:40	you know i mean i i've had that when i picked up a phone and i was start talking to a customer service rep and i
+[89] 11:45	found out hey the it's not quite right and then finally concluded and said
+[90] 11:51	am i talking to an ai and then i get i'm going to redirect you now to a customer service manager
+[91] 11:59	okay yeah i was talking to an ai [Laughter]
+[92] 12:06	so but it did have me going for a while it was sophisticated enough
+[93] 12:12	to to be able to respond to to my voice and
+[94] 12:18	and and what i asked so we already have ar that are in some
+[95] 12:26	respect a good many respects passing the turing test
+[96] 12:31	and saudi arabia has um you know made a robot already
+[97] 12:38	given it says now that robot is a little more than a walking doorstop but you know it does set a precedent
+[98] 12:45	that um that
+[99] 12:51	that robots will be given human rights now we do have to make the distinction here that human rights are not
+[100] 12:59	god-given it's not the same as as the god-given image of god you know because that's really the image
+[101] 13:05	of god is really god's perspective on basically his spirit dwelling within us or is his
+[102] 13:13	uh at least is his his breath of life living in us
+[103] 13:19	so not the same thing an ai is not alive it can imitate life
+[104] 13:26	but it isn't life itself uh the big expert on this is actually
+[105] 13:31	sitting beside me right here so um my my producer is really just
+[106] 13:37	is the real expert on trans humanism artificial intelligence and all this stuff so
+[107] 13:42	i can speak more to say the imago day maybe because of the work i did in um
+[108] 13:49	in ancient near eastern idols but really she's the expert on say
+[109] 13:54	futurism and transhumanism so anyway thank you very much for that question it's an interesting question
+[110] 14:00	and uh very interesting question actually
+[111] 14:06	okay mr bob asks abraham was originally a polytheist
+[112] 14:12	that was called by el to worship him alone while the text is silent to my knowledge
+[113] 14:17	on it do you think abraham was a monologist i think so or a heno theist
+[114] 14:24	um difficult to say i don't think he was a henna theist
+[115] 14:30	i do think he was a monologist okay i do think he probably accepted the
+[116] 14:35	existence of other godlike entities i think i think i think abraham was a minorical monotheist
+[117] 14:43	and we that that view is becoming much much more um accepted
+[118] 14:48	as sort of the old 19th century categories of monotheism henotheism polytheism sort of
+[119] 14:55	break down a bit one of the things that the anthropological studies of religion have
+[120] 15:01	showed us is those categories are in some ways kind of artificial
+[121] 15:07	there are many sort of monotheistic belief systems that were much more same monoliths
+[122] 15:14	and sometimes even leaning towards say henotheist than
+[123] 15:20	say say strictly monotheist and likewise there were
+[124] 15:27	henotheisms that were a lot more polytheist than purely henotheist
+[125] 15:34	so that's going to really depend but i think with the categories you've given
+[126] 15:39	me here i think abraham is probably a monologist
+[127] 15:46	underserved more rubric of monarchical monotheism that is there's many sort of godlike
+[128] 15:53	entities running around but only one supreme god that rules them all or is seeking to rule them all
+[129] 16:01	okay so that's my answer to that question thank you very much for the question
+[130] 16:08	okay
+[131] 16:14	uh cambrit asks uh goldbecky tepe is an interesting site yes it is an interesting site it's a
+[132] 16:21	cult site that doesn't seem to have any um agricultural settlement around it
+[133] 16:27	that alone is really super interesting it's very very rare that we do find that
+[134] 16:34	so interesting this is interesting just for that and it's a it's a megalithic
+[135] 16:39	uh site in that it's it's got these huge um carved pillars
+[136] 16:45	it's clearly a cult site it's got icons of animals on it and it's just amazing absolutely amazing
+[137] 16:53	but it's very old it's a very old site it's it's at least uh 10 to
+[138] 16:59	12 000 bc i mean it's really old it goes on further could it have
+[139] 17:05	implications for the historical noaa flood with it being in modern turkey and being
+[140] 17:11	very early in human history well okay one of the things i think when we talk
+[141] 17:17	about the flood is i think the flood was a lot earlier
+[142] 17:23	than even goldbecky tepi okay i think if if there is a good plausible
+[143] 17:29	chance for a flood it goes long before then
+[144] 17:34	and part of my rationale on this is i look at something like for example
+[145] 17:42	the um the clan structures in in in genesis 5
+[146] 17:48	and 11 and i can see that there's actually a lot more scope in there
+[147] 17:54	um i mean fundamentalist american young earth
+[148] 17:59	creation [Music] hermeneutics aside here because i think that that's that leads you to
+[149] 18:06	to some extreme historical problems if you view that as more of clan
+[150] 18:12	structures with more flexibility there as far as when
+[151] 18:17	and i'm going to probably do a video on this to see basically show how how much
+[152] 18:22	stretch there is to those genealogies i mean there's as i think i as if i mean i
+[153] 18:28	did calculate this out once and i believe there's as much as 50 000 years of stretch there
+[154] 18:34	so that's a long time you could easily have a flood within
+[155] 18:40	that 50 000 years and still have the civilization at goldbecky tepe you know flourish
+[156] 18:48	so i don't think it has huge implications for the flood it does have huge implications though for say
+[157] 18:56	the dating of um of say fundamentalist hermeneutics
+[158] 19:03	the the ultimate problem with those stones is we find those stones erect we find them erect
+[159] 19:09	if it was a global flood those stones would be scattered because flood just moved stones all around
+[160] 19:15	bigger stones than that like for example
+[161] 19:20	uh when i went to the valley of the monkey in um in a
+[162] 19:27	in egypt um it's a wadi it's a big wadi now
+[163] 19:34	there's a photograph i saw a photograph of of that valley before i went down there
+[164] 19:40	in 1906 1906 and there's this
+[165] 19:46	massive stone i mean huge i mean it's the size of three houses i mean it's big
+[166] 19:53	big big stone kind of blocking at the top of the wadi
+[167] 19:58	well you know a few rainstorms later in the 1920s
+[168] 20:05	and that stone is now all the way down the bottom of the wadi it moved a lot
+[169] 20:13	so if you have a bunch of erect stones and you've got a flood a flood's going to move that all around
+[170] 20:20	so it doesn't look to appear to me that gobeki tepe underwent any sort of
+[171] 20:25	destructive forces of a flood so i think that has implications
+[172] 20:31	and has implications more for say certain hermeneutical perspectives than it does to the actual existence of a
+[173] 20:37	flood or not so anyway that's the answer to the to the question i hope that was informative
+[174] 20:43	at least it gave some perspective to this so i thank you very much for the question
+[175] 20:49	and now we got one more non-super chat and then we'll get to the super chats
+[176] 20:55	okay the last non-super chat is from dale mckenzie
+[177] 21:00	and uh he writes if taking 17 jubilee cycles recorded in
+[178] 21:05	the talmud as fact in the light of arakin 12 b would it be necessary
+[179] 21:12	um to necessitate an extra 100 years to the early date of the exodus
+[180] 21:18	okay um not quite a hundred but we have to take a few things into perspective
+[181] 21:25	when we talk about um that whole sort of arakin 12
+[182] 21:31	both a and b here and one of the problems when we deal with
+[183] 21:37	say um air king 12 a and b is that we are
+[184] 21:46	we are really dealing with um
+[185] 21:53	rabbinic literature now rabbinic tel talmudic literature is kind of dialectic
+[186] 22:00	it's basically one guy given his opinion and then another guy responding to his opinion
+[187] 22:06	and in the case of of eric king um
+[188] 22:13	12 b
+[189] 22:21	you have basically this dialectic and and it's it's basically we've got one
+[190] 22:27	rabbi that says well there isn't a teaching of 17 jubilee
+[191] 22:34	cycles before the destruction of the temple
+[192] 22:40	well because otherwise it would have landed on a a the destruction temple would have landed on a
+[193] 22:46	a jubilee year and that would have been abhorrent to them okay so you got one guy saying that
+[194] 22:53	then you got second rabbi saying no no no that's not the reason why there isn't us
+[195] 22:58	17 cycle teaching it's because 35 years
+[196] 23:06	after the destruction of temple is a jubilee year per ezekiel
+[197] 23:11	okay so you've got two rabbis basically saying there's no 17 jupiter cycle
+[198] 23:18	for this reason reason a and other ones say there's no no 17-year jubilee cycle for reason b
+[199] 23:29	is anyone actually affirming a 17-year jubilee cycle doesn't appear so
+[200] 23:35	you know in both cases both rabbits are saying there's no 17-year jubilee cycle
+[201] 23:40	teaching both of them are denying this so in both
+[202] 23:46	when both people in the dialectic are denying it but for different reasons
+[203] 23:53	it's really really hard to take that as fact okay but let's just say for the sake of
+[204] 24:00	argument we will take it as fact um
+[205] 24:06	it wouldn't necessitate an additional 100 years to the early exodus date
+[206] 24:12	okay but it is going to necessitate a longer
+[207] 24:20	date than the early date of the exodus you know and some of that is going to it's going to
+[208] 24:26	be it's going to be roughly 50 years but here's the problem if it's off by
+[209] 24:32	even say 10 years that is a big problem
+[210] 24:37	for the early exodus state big problem for the early exodus date
+[211] 24:42	um and it's going to be a big problem for them in another respect which is the
+[212] 24:48	fact that um the early exodus perspective is highly
+[213] 24:56	dependent on the julian calendar it's really dependent on the julian calendar
+[214] 25:01	uh in fact all their calculations are based upon the julian calendar it's one of the underlying presuppositions
+[215] 25:07	okay um they need the they need the julian calendar to make other things work
+[216] 25:15	okay so if if it's if if they don't have that
+[217] 25:21	julian calendar things just go to heck in a handbasket
+[218] 25:27	so they absolutely need that julian calendar and they need to get it down to exact year otherwise their
+[219] 25:33	interpretation of first king six one goes into the rubbish bin
+[220] 25:38	okay so as a result they've had to re also reinterpret and reinterpret erikine 12
+[221] 25:47	um b to a basically equate ezekiel's
+[222] 25:52	uh jubilee with the 17th jubilee so they need to cut off that 49 years in
+[223] 25:59	order to get it to work so um this is a problem i mean it's a
+[224] 26:05	problem in both respects i mean it's a problem in the respect that
+[225] 26:10	um they're having to not only just say okay there is a 17-year teaching contrary to what both
+[226] 26:17	rabbis say and the problem is if they actually are reading the arakin 12b in the setter
+[227] 26:25	olam rabbah correctly there's more jubilee cycles there than
+[228] 26:30	they really want so it doesn't it would necessitate an extra
+[229] 26:38	amount of time for the early exodus date definitely
+[230] 26:43	but it's also going to be a huge issue tier 2 with um just how they're approaching this text
+[231] 26:50	hermeneutically which is they're using julian years
+[232] 26:55	it's an anachronism but it's anachronism that they've they're doubling down on
+[233] 27:00	because otherwise their 480 of first king61 doesn't work
+[234] 27:06	and that would be an issue be a big issue okay
+[235] 27:11	so anyway thank you very much for the question it's an interesting question it's a highly technical question
+[236] 27:16	but um one definitely that was worth exploring so anyway that's gonna be the last non-super chat for the moment and
+[237] 27:22	let's get to the super chats okay
+[238] 27:27	our first super chat is from mr rich bob for two dollars thank you very much for the super chat uh what was that book on problems
+[239] 27:36	with uh evolution proper ah got it down here somewhere
+[240] 27:41	excuse me it's a guy by the name of michael denton
+[241] 27:48	uh evolution uh theory and crisis now the original was uh uh evolution ethereal crisis his updated version here
+[242] 27:56	is evolution still a theory in crisis
+[243] 28:03	now he wrote his first uh book on this uh you know in 1985
+[244] 28:09	okay and the updated book here is 2016 so it is relatively recent
+[245] 28:17	but it is an excellent book um it does really outline the problems with
+[246] 28:23	evolution proper dentin is not a creationist i believe he
+[247] 28:30	holds to the theory of panspermia is what i believe but he does lay out the problems of
+[248] 28:36	evolution very well and i i think i think it's an i think it was an excellent book
+[249] 28:43	so anyway um that's the quick answer to that question thank you very much for the super chat really appreciate it
+[250] 28:52	okay uh the next super chat comes from disciples real for 9.99 thank you very much for the super chat
+[251] 29:00	uh who was yah in the egyptian pantheon did the israelites adopt yahweh's name
+[252] 29:07	from him can this also be a source for the shastu of yahoo okay
+[253] 29:13	probably okay i'll answer the last one first probably not they're probably unrelated uh the god yaw in the egyptian pantheon
+[254] 29:21	is actually a mispronunciation okay it's actually eek
+[255] 29:27	or yeah it's the read leaf arm
+[256] 29:32	and uh the dot h so it's kind of a a a a real a really breathy age so it's
+[257] 29:42	um yeah yeah and he was a moon god he was a moon god
+[258] 29:48	now the thing is he's a really minor moon god really minor moon god
+[259] 29:55	um there's very little actually known about uh yeah
+[260] 30:00	he's he's he's discussed briefly in say the pyramid
+[261] 30:06	texts but by the time you get to the new kingdom he's very subservient to
+[262] 30:13	barely mentioned at all um because other the other moon god uh
+[263] 30:19	um sorry kansu has taken over the role and even more so thoth
+[264] 30:26	was a uh had the body of a head of an ibis um
+[265] 30:31	but he was essentially a very very minor moon deity very minor moon deity as i say it's it's so minor that it's
+[266] 30:39	almost not mentioned at all in new kingdom texts
+[267] 30:44	there might be one reference to him in um
+[268] 30:50	in uh tuts tune but this is very minor so uh i doubt i have i i doubt that i mean
+[269] 30:59	linguistics aside because the linguistics don't match um the
+[270] 31:04	basically the the i and the iron don't equate to a a a yod in in hebrew so so that
+[271] 31:12	diphthong would would doesn't really work it doesn't really work and nor does the dot h
+[272] 31:19	because it would it would more likely translate to a a a hate in hebrew
+[273] 31:26	so it doesn't work linguistically and it really doesn't work uh evidentially either now
+[274] 31:33	that sort of then resolves the third question of can this also be the source of this
+[275] 31:40	of yahoo the more i look at the of sat
+[276] 31:50	i'm mixing my sibilance [Laughter]
+[277] 31:56	which actually happens in in in ancient languages too where uh sibilants shift
+[278] 32:03	for the shastu of yahoo we still don't know whether
+[279] 32:09	yahoo here is a god uh until we get more evidence from the region
+[280] 32:15	of edom and edomite uh archaeology we're just not gonna know
+[281] 32:21	uh there were several many tribes of shasu in the area um
+[282] 32:26	they each had their particular names uh even if we had say for example uh an
+[283] 32:31	egyptian text with shasu of yahu yahoo with say a god
+[284] 32:36	determinative that would be evidence and we don't even have that all the evidence we have of um
+[285] 32:43	the shastu of yahoo has no determinative so it's not helpful for us to to determine who who or what yahoo was
+[286] 32:52	was yahoo a region possibly was it the name of a human being a a clan leader
+[287] 32:57	possibly is it the name of a god possibly we don't know we have nothing that will actually tell us
+[288] 33:03	so anyway thank you very much for the super chat very much
+[289] 33:09	it okay uh mr rich b will be for five
+[290] 33:15	dollars thank you very much for the super chat very much appreciated uh
+[291] 33:21	remembering david off his brothers too what are your thoughts on the idea that goliath had giantism
+[292] 33:28	was probably badly impaired and just for intimidation
+[293] 33:34	um well the problem is that uh goliath was
+[294] 33:39	a mercenary uh his armor was is actually not typical
+[295] 33:45	of the philistines it was actually more typical of um like for example he's got bracers
+[296] 33:51	so he was a merc mercenary for the mycenaeans so
+[297] 33:57	given that he probably served some real hard campaigns
+[298] 34:03	so i don't think he was badly impaired we do have uh accounts from egypt of
+[299] 34:12	shasu that were were giants that were said to be
+[300] 34:17	very very dangerous very dangerous fighting men so the giantism that appears in levant
+[301] 34:25	appears to be something where it's um
+[302] 34:30	not doesn't have the same impairment that that they say the medical condition of
+[303] 34:36	giantism has so i mean there is it is true there is there is an intimidation element here
+[304] 34:43	that's true i mean the whole reason you'd field a a giant
+[305] 34:48	uh in one-to-one combat is to intimidate you know um
+[306] 34:55	there was a roman gladiator that was um that was a giant um was it thicities or
+[307] 35:01	something like that i can't remember the name exactly but um he won many many many battles he was
+[308] 35:08	more than just he was more than just a big man um you know he was terrifying in the
+[309] 35:13	arena so um we do get these people who are
+[310] 35:19	very large very big and um that are actually competent in fighting
+[311] 35:26	also and it appears that goliath and perhaps even some of his brothers were
+[312] 35:31	such that they were from you know a strain of of of canaanites that were large and you
+[313] 35:38	know trained in war so i don't think it was just i don't think he was impaired and i don't think
+[314] 35:44	it was just for intimidation so anyway thank you very much for the super chat um i but i do think there's evidence
+[315] 35:50	here to suggest that you know these were really really dangerous men all right
+[316] 35:56	um super chat number four is from pseudoanubis for ten dollars
+[317] 36:01	thank you very much for the super chat very much appreciate it uh a friend of mine recommended that i
+[318] 36:07	read robert devos ancient israel how fully familiar are you with this book i'm not that familiar with it it's
+[319] 36:15	really long in the tooth i'm concerned that it might be fairly outdated being over 50 years old and all
+[320] 36:21	yes it is very long in the tooth uh devoe died in 1971
+[321] 36:27	and he did most of his work in the 1950s and i think he retired in 62.
+[322] 36:35	it's a very old book it's a very old book it's very long in tooth and a lot has changed in
+[323] 36:41	archaeology since he wrote so um
+[324] 36:46	i a book that old isn't very reliable anymore because so much has changed i mean you
+[325] 36:52	look at how much has changed in archaeology in the last 10 years
+[326] 36:58	i mean it blow your socks off um
+[327] 37:03	i think that there are other books now that are much much better
+[328] 37:09	perhaps not as general as devoe's book but overall better
+[329] 37:15	uh you know even though it's starting to get long in the tooth kenneth kitchen's on the reliability of the old testament
+[330] 37:21	is certainly better than devos i would also uh suggest the works of
+[331] 37:26	richard hess and say john walton i think both of those are current active
+[332] 37:33	scholars in the field that are still writing on this subject and i think they both them present very very good books
+[333] 37:40	um richard hess's ancient israelite religion is phenomenal it's a really
+[334] 37:46	good book and um would highly recommend that one too
+[335] 37:51	so yeah i think i think devoes i mean devos book even uh predates say
+[336] 37:58	the second set of excavations as hot sore
+[337] 38:03	you know it doesn't even isn't even able to tie that in because it's just so dated so if you're not if you're not engaging
+[338] 38:10	that material you know it's yeah i think it's passed way past its shelf life
+[339] 38:17	and that's unfortunate that almost all our books will eventually be past the shelf life they'll all go
+[340] 38:22	obsolete eventually and it usually hits about 50 years anything older than 50 years you should
+[341] 38:28	probably think real twice before using you know some books are you know
+[342] 38:34	have longer shelf lifes but you know they're usually the exception not the rule
+[343] 38:40	so any thank you very much for the super chat very much appreciated and it's a great question
+[344] 38:48	okay uh mr rich uh bob for five dollars thank you very much the super chat you mentioned non-pre-arranged marriage
+[345] 38:55	was viewed as immoral for the mental health of people going out into a cruel world
+[346] 39:00	uh he's specifically talking here about um ancient israelite morality okay
+[347] 39:08	uh and he concludes any more like paradigm shifts okay
+[348] 39:14	now in ancient israel it was um it was seen that if you were parents of
+[349] 39:21	a child it was your responsibility to arrange a good marriage
+[350] 39:26	because you're sending them out in the big bad world and it'd be immoral to send your kids
+[351] 39:32	out in that big bad world without a good spouse and if you were a very good parent you
+[352] 39:39	got them a very good spouse okay but there were other things other
+[353] 39:45	paradigm shifts too such as arranging a good livelihood
+[354] 39:50	parents would also arrange your livelihoods if you were um in a farming community
+[355] 39:56	you'd be taught how to how to run the farm if you had so many children that
+[356] 40:02	your farm couldn't support them you would arrange apprenticeships for them you know buy a apprenticeship for your
+[357] 40:07	for your child make sure they have a job so
+[358] 40:14	parents took a lot more control over the lives of their children back then than they do today
+[359] 40:20	but that's a lot of that was too because there was a lot less options for children back then than today
+[360] 40:26	you know today a child can go to school pursue any sort of career nursing engineering
+[361] 40:33	computers all sorts of things that we have options today for our children that we just
+[362] 40:38	couldn't have dreamed of say even a hundred years ago you know 150 years ago if your
+[363] 40:45	if your dad was a matt blacksmith most likely you became a blacksmith too
+[364] 40:51	and cultures of the past did try to make sure like for example the whole matter of inheritance you know today parents
+[365] 40:58	think nothing about giving everything they have to charity and leaving their kids out in the cold
+[366] 41:04	that would have been utterly reprehensible you know back in the late bronze age
+[367] 41:10	you know i mean unless you're you're your child was a real bad person i mean
+[368] 41:16	i mean just vilified in the community your child got a piece of the inheritance
+[369] 41:23	you know the idea of not leaving your kids anything was just
+[370] 41:28	horrendous completely it was just conceived as
+[371] 41:34	almost the worst of the worst i mean you would be you'd be just a bad parent
+[372] 41:39	horrible parent you know even if your child was a no-good scumbag
+[373] 41:44	you know as long as he wasn't vilified completely in the community he got something he got something you know
+[374] 41:51	today though it's it's not uncommon for for parents to um
+[375] 41:56	to cut the kids out of the will it's not uncommon today for parents to
+[376] 42:03	throw kids out of the house at age 18 and let them fend for themselves also another thing that would have been
+[377] 42:08	completely abhorrent in say um ancient times
+[378] 42:13	you know you basically kept your kids as long as long as they needed you you know that was just
+[379] 42:19	part of the responsibility of being a parent yeah and in turn the kids took care of
+[380] 42:24	the parents now the the problem here is when we get that
+[381] 42:30	the other paradigm shift goes towards the parents too you know um the idea that a kid would say
+[382] 42:38	put his parent in a government institution to take care of you know that would have been abhorrent you know
+[383] 42:45	uh it was always expected that you know the kids would take care of the parents you know honor your father and mother
+[384] 42:50	well you know that's sort of that was the retirement plan of the ancient world well today
+[385] 42:56	parents don't have any responsibility to the kids and kids don't have much responsibility to the parents
+[386] 43:02	so you know there's a lot of these paradigm shifts that happened and you know um
+[387] 43:09	you know there's there's is and it's a cultural difference it's a it's really is a
+[388] 43:14	cultural difference and it's not saying that one is necessarily more right than the other but it is a difference in culture that
+[389] 43:22	does have diff um basically the moral implications
+[390] 43:27	of this are you know gonna be very culturally relative and while i'm not a huge fan of cultural
+[391] 43:33	relativism there is something to it in in so far as one culture is going to view something
+[392] 43:39	you know as called as morally superior to say another culture and every culture views itself as the most moral culture
+[393] 43:47	you know you know every culture stands in judgment of other cultures
+[394] 43:52	because that's the water they're swimming in okay so anyway i hope that gave you some
+[395] 43:58	examples thank you very much for the questions a very interesting question and thank you for the super chat
+[396] 44:05	okay and
+[397] 44:10	all right uh five dollar super chat from brick creation thank you very much for the super chat good to see you tonight
+[398] 44:16	hi dr folk uh any updates on the archaeology of jericho and the conquest
+[399] 44:22	uh any new evidence related to the exodus well um
+[400] 44:30	well the thing is these updates don't often happen quickly and they don't often happen they also
+[401] 44:37	kind of come in like clusters if i can say that you know we haven't seen a good um
+[402] 44:45	good update in a while um
+[403] 44:54	there is uh there is a slight update and
+[404] 45:03	which is um um abr has published an article recently
+[405] 45:09	on the mount ebbel um amulet and we are going to go into that at some
+[406] 45:15	point uh we got them probably our monday we we're going to be doing a mana machine update on the current status of
+[407] 45:22	the mount ebbel inscription uh
+[408] 45:28	so uh that that update is coming uh this monday it's gonna preempt our our
+[409] 45:33	schedule by a week because uh we were hoping to get it out last night i just couldn't get it edited in time
+[410] 45:39	uh the video turned out to be almost 40 minutes so
+[411] 45:44	so we are we are we are doing a mana machine update it's going to come out monday
+[412] 45:50	and it's going to talk about the mount ebbel uh inscription uh it's not a whole lot of new
+[413] 45:55	information but um what's new is basically how it's being spun
+[414] 46:01	so i hope you'll look forward to that uh but there hasn't been a lot more out
+[415] 46:07	recently on jericho and the conquest um
+[416] 46:12	from what i know from what i've heard they are going back to jericho to do some more excavations but i have no
+[417] 46:18	details on that so anyway uh thank you very much for the super chat um very much appreciate it
+[418] 46:26	oh i should add uh there's also nothing really new on the exodus at the moment either so
+[419] 46:33	thank you very much for the super chat very much appreciate it
+[420] 46:40	okay brick creation for ten dollars uh thank you very much for the super chat
+[421] 46:45	some people take deuteronomy 12 19 to 32 to mean you can't celebrate holidays like christmas and easter because they
+[422] 46:52	have pagan roots do they does psalm 104 have similarities to the hymn and the
+[423] 46:58	atonement all right let's take a look at uh this here i'm going to go to
+[424] 47:05	deuteronomy because it's always good to look at the text deuteronomy
+[425] 47:13	12 29 all right
+[426] 47:18	and the text says when the lord your god cuts off before you the nations which
+[427] 47:23	which you are going in to dispossess and you dispossess them and dwell in their land
+[428] 47:28	beware that you are not ensnared to follow them after they are destroyed before you
+[429] 47:34	that you do not inquire after their gods say how do these nations serve their gods that i may do likewise
+[430] 47:42	you shall not behave thus towards the lord your god for every abominable act
+[431] 47:48	which the lord hates they have done for their gods for they even burn their sons
+[432] 47:53	and daughters to the fire of their gods whatever i command you you shall be careful to do you shall not add or nor
+[433] 48:00	take away from it okay now
+[434] 48:05	gotta be a little careful here because one of the things is even though this is used as a justification for
+[435] 48:12	saying you know you can't celebrate holidays like christmas easter because they have pagan
+[436] 48:17	roots a couple things we have to note here first of all
+[437] 48:22	this passage here in deuteronomy 12 29 to 32 is not saying that everything the pagans did was bad
+[438] 48:29	but it's also saying that a lot of their practices were bad
+[439] 48:35	don't do the bad practices you know and they cite here the um essentially
+[440] 48:42	doing burnt offerings of their their infant children you know child sacrifice bad don't do it
+[441] 48:50	okay so there there is that that perspective here
+[442] 48:57	of you know that that they're doing they're doing forbidden stuff so don't do that forbidden stuff
+[443] 49:03	but it's also not saying either that all of it was bad
+[444] 49:10	okay so you know there is that there is a there's a little nuance to this passage
+[445] 49:16	now with your particular question here christmas and easter do not have pagan
+[446] 49:22	roads sorry um neither christmas nor easter
+[447] 49:29	christmas is not uh based upon the festival of saturnalia it just isn't
+[448] 49:34	uh saturnalia actually i believe happens on the 17th of december and it wasn't actually ascribed to being
+[449] 49:42	the 25th until the third century a.d so you know it doesn't actually have
+[450] 49:48	pagan roots it's actually based roughly on the um the festival of epiphany is it's
+[451] 49:55	basically what it's what's gauged off of and even easter easter is just um
+[452] 50:02	a roman word a latin or a eastern european word actually
+[453] 50:08	astra which means easterly towards the sunrise
+[454] 50:13	and it's basically just a placeholder for passover really
+[455] 50:19	so the roots of easter is essentially passover
+[456] 50:24	so yeah there's no there's no pagan roots there to to really be offended at but
+[457] 50:31	that doesn't mean that the myth doesn't keep going and you know there we have our own sort
+[458] 50:36	of myths you know in the west here and that's those are one of them
+[459] 50:41	now psalm 104 is actually based upon um the hymn of
+[460] 50:47	the atom that's absolutely true it does have similarities to him in the athens and it's probably been
+[461] 50:54	inspired by the hymn of the atom so if you apply the same
+[462] 51:00	same standard of your previous question to this one yes you'd have to throw out psalm 104 as well
+[463] 51:06	would also have to throw out a lot of the um the law of um
+[464] 51:12	of uh the torah because a lot of the laws in the torah are also
+[465] 51:17	inspired by pagan practices like ritual bathing you know the egyptians were big on
+[466] 51:23	ritual bathing for before going into a temple israelites did the same thing
+[467] 51:30	um the idea of um of not eating pork egyptians didn't eat
+[468] 51:37	pork they carried that over into into the land of canaan
+[469] 51:42	so you know there are there are pagan aspects to things in the
+[470] 51:47	bible you know and this the bible's very nuanced about this you know
+[471] 51:52	it's going to say i mean it's going to take what the pagan said and say this is right this is wrong
+[472] 51:58	keep the right throw out the wrong you know god speaks and it comes into existence
+[473] 52:05	that's just like the memphis theology tah thinks it speaks it comes into existence
+[474] 52:11	that's right that's correct about god um god slayed this chaos beast that's wrong
+[475] 52:19	throw that out okay so the the bible is very much an engaged
+[476] 52:25	text there's intertextuality it's engaging all sorts of different ideas and basically making value judgments on
+[477] 52:33	them so this sort of idea that you just throw out something because it has you know
+[478] 52:40	pagan said it first is a very very shallow way of looking at
+[479] 52:45	the bible it's a very shallow way of looking at the bible it's obviously going to lead you to mistakes because of it
+[480] 52:52	so anyway thank you very much for the super chat very much appreciate i hope that answered your question
+[481] 53:02	okay the next super chat is also from uh brick creation for ten dollars
+[482] 53:08	uh some allegedly say that catholicism changed the sabbath from saturday to sunday had the power to do so according
+[483] 53:15	to reverend stephen keenan and others is that valid any clarification on this no
+[484] 53:21	[Laughter] um
+[485] 53:26	keenan's ridiculous i mean keenan is just being plainly ridiculous here
+[486] 53:34	um catholicism did not change the sabbath from saturday to sunday
+[487] 53:41	that change actually happens really early on in the history of the christian church
+[488] 53:47	um it pretty much happens by the end of the first century
+[489] 53:53	and it wasn't catholicism that it i mean catholicism wasn't even really an entity
+[490] 53:58	at this point the four apostolic seas were still trying to sort of you know hadn't even
+[491] 54:04	completely spread out yet they were still spreading out at that point uh
+[492] 54:11	why the change okay in the earliest days of the church when um in in acts when the first
+[493] 54:19	christians were meeting they actually celebrated both they celebrate the sabbath on saturday
+[494] 54:25	and uh sunday which they call it the first day
+[495] 54:31	okay that's the first day the first day of the week is sunday so when you see first day of the week in the biblical text that's sunday
+[496] 54:37	okay so they're celebrating both and the saturday according to the jewish uh
+[497] 54:44	you know commandment you know that shall keep the sabbath second day is uh sunday they they kept
+[498] 54:52	because that was the day of the lord's resurrection so already in the earliest years of the
+[499] 54:58	church they're already already celebrating weekly the resurrection of the lord jesus christ on sunday
+[500] 55:07	so why they switched to one and not both it came down to this
+[501] 55:12	they got thrown out of the synagogues christians repeatedly got thrown out of
+[502] 55:18	the synagogues they got thrown out on um in acts 5 in acts chapter 20 and acts
+[503] 55:25	chapter 21. christians are constantly getting thrown out of the synagogues because every time
+[504] 55:31	they go in and they start talking opening their mouths they're causing your riot
+[505] 55:37	well if you're causing a near riot
+[506] 55:42	you're not welcome there you're just not welcome so what happened is you know
+[507] 55:48	very um you know into the synagogue movement even as early as like 50 a.d
+[508] 55:54	you know christians are already being have already bounced out of the synagogue in the
+[509] 56:01	and temple that point the question is what's the point of celebrating the sabbath if you can't do
+[510] 56:08	the synagogue if there's no community there you don't have a temple school scroll
+[511] 56:14	read from so many christians early on just opted to
+[512] 56:20	you know avoid the trouble of conflicting with the synagogue and the temple and basically met in churches or in
+[513] 56:28	church home churches so that's what really predicated the shift from saturday to sunday is they
+[514] 56:35	start off doing both got thrown out of the synagogues and you know only we're left with you know meeting on
+[515] 56:42	sundays so that's the origin of that it long
+[516] 56:48	predates the christian church or sorry the roman catholic church you can find references to this in the early church
+[517] 56:54	fathers you know it's well established history so um keenan's out to lunch here
+[518] 57:00	completely up to lunch so anyway thank you very much for the super chat very much appreciated
+[519] 57:09	okay uh and a two dollar super chat from brick creation thank you very much for the super chat very much appreciate it
+[520] 57:15	where did abraham get his camels we don't know [Music]
+[521] 57:23	um kanan was a place where travelers and soldiers travel through all the time
+[522] 57:28	okay um you know it's part of the fertile crescent so you got traders that were coming in
+[523] 57:36	from mesopotamia they go over to syria down through canaan into
+[524] 57:41	egypt and into africa okay so
+[525] 57:47	camels had been domesticated probably as early at least the first attempts to domesticate uh dromedaries was as early
+[526] 57:55	as uh 5000 bc we have uh there is a skeleton or a skull of a camel that was
+[527] 58:01	found in the feiyun that dates to about 5000 bc so it probably goes way back
+[528] 58:07	and we know for sure that they were already fully domesticated by about the third millennium bc
+[529] 58:14	so with that said um
+[530] 58:20	basically um abraham was probably purchased those camels from traders that
+[531] 58:25	were passing through you know bought a camel off of a trader as they as they were passing through you know
+[532] 58:31	you know who knows he might have bought the the camel and all the goods too you know
+[533] 58:36	because uh if they got the goods you know they don't really need the camel anymore
+[534] 58:42	so you know just abraham might have just bought the goods and the camels well
+[535] 58:47	i mean he was wealthy enough he could package deal yeah package deal yeah i'll buy all that uh that um that grain
+[536] 58:55	you're carrying there and the camel leave it on the camel
+[537] 59:00	[Laughter] don't even have to unpack it just leave the camel too
+[538] 59:10	and it also wasn't uncommon also for for um say um
+[539] 59:16	nomadic tribes to pack a camel they would also do this they'd pack the
+[540] 59:23	camel you know and sometimes they they'd have you know the male camel and the female camel
+[541] 59:29	and also tie the offspring on the back so that the offspring would be still
+[542] 59:36	nursing off of the female camel so it wouldn't be uncommon either to for
+[543] 59:42	for nomadic tribe to go through to traders essentially and basically
+[544] 59:48	sell off the offspring so you know that wasn't uncommon either
+[545] 59:54	at that point the offspring was sold the um the traders didn't have to feed
+[546] 1:00:00	it anymore so you know at that point it's someone else's problem so
+[547] 1:00:06	uh we don't exactly know where he got it because because the text doesn't exactly say for sure but it was probably from
+[548] 1:00:11	some nomadic groups that were using it as as animals for um
+[549] 1:00:17	for carrying uh goods so anyway thank you very much for the super chat very much appreciate i hope
+[550] 1:00:23	that answered your question at least as best as we can okay
+[551] 1:00:28	twitch it here okay and go back to the beginning here
+[552] 1:00:34	okay let's see here
+[553] 1:00:42	i'm going to take this question it's a non-super chat but we're going to take it anyway uh fei of duat asks
+[554] 1:00:49	where did you get your countdown in intro music um a relatively little known artist called
+[555] 1:00:55	velocirabbit they do essentially kind of instrumental
+[556] 1:01:01	music they have a few you can listen to them on on youtube
+[557] 1:01:07	licensed it from them um in return i did a couple some work for them like some artwork and some um
+[558] 1:01:14	photographs uh for one of their music videos but yeah that's where i get it from it's from a
+[559] 1:01:21	group called velocirabbit so anyway i hope that answers your question i think great stuff
+[560] 1:01:27	so anna thank you for the uh interesting question very much appreciate it
+[561] 1:01:33	okay and now we've got a very generous super chat from uh sinaiticus apologia
+[562] 1:01:40	for 100 thank you very much for that very generous super chat uh those super chats are really really
+[563] 1:01:46	helpful for us they really um you know make ends meet and help us to
+[564] 1:01:52	basically bring this content to you and uh we really appreciate it and we
+[565] 1:01:57	are so grateful that we have such a generous benefactor okay and he asks
+[566] 1:02:03	what are your thoughts on the jewish and christian mystical literature that suggests that
+[567] 1:02:08	enoch and elijah ascend to heaven to become angels metatron and
+[568] 1:02:15	uh sandalphon okay um
+[569] 1:02:21	they're taking a half truth they're taking a half truth and they're
+[570] 1:02:26	extrapolating on it okay
+[571] 1:02:31	um there are there's biblical texts
+[572] 1:02:36	that suggest that both enoch and elijah were taken up to heaven without actually
+[573] 1:02:42	dying uh you know enoch in genesis 5 elijah i
+[574] 1:02:49	believe it's in first first kings i believe but don't quote me on it
+[575] 1:02:55	um so there is there is a in the case of elijah you know he's taken up in a fiery
+[576] 1:03:01	chariot in the case of enoch he just disappears poof he's gone
+[577] 1:03:08	so the suggestion in both those texts is that they went to heaven without actually physically dying
+[578] 1:03:14	now the fate of them is what sort of of these
+[579] 1:03:20	is what this mystical literature is uh alluding to now they're not angels okay
+[580] 1:03:28	the thing with angels is i mean even though the term angel is kind of a job description what the mystical
+[581] 1:03:34	literature is suggesting with metatron and uh south assembling is that um
+[582] 1:03:41	that those two were basically transformed into these divine beings
+[583] 1:03:49	but angels aren't humans except maybe when
+[584] 1:03:54	when god uses uh in the sort of extended sense that any human can be
+[585] 1:04:00	an angel by virtue of being a messenger because that's what the word angelos means and
+[586] 1:04:07	even malachi those are those are uh those are essentially
+[587] 1:04:12	um the word is messenger so with a word like this there's both a
+[588] 1:04:19	restricted sense and a broad sense the broad sense
+[589] 1:04:25	anyone can be a messenger anyone can be an angel an email sent to you can be a messenger
+[590] 1:04:31	or an angel okay so in a very very broad sense you know enoch and elijah could be messengers and
+[591] 1:04:38	therefore could be angels but the mystical literature here is using it in the narrow sense
+[592] 1:04:45	which is um by essence or ontology they have become angelic beings
+[593] 1:04:52	and i think that misses the mark because angelic beings are not human
+[594] 1:04:57	and they don't have human-like traits so i would sort of depart at that point
+[595] 1:05:04	from it and basically say that metatron and xenophon are
+[596] 1:05:13	imaginative speculations as to what became of
+[597] 1:05:19	enoch and elijah so i don't place much stock in that
+[598] 1:05:26	so at that point it's like this is where i sort of depart from the mystical literature here and i basically say okay
+[599] 1:05:32	we've got to look at what is the biblical definition as far as the narrow view of what is an angel and does
+[600] 1:05:39	that match what we find in the mystical literature and i think the answer to that is no especially given that most of the angels
+[601] 1:05:46	in the narrow sense are beings like cherubim and seraphim
+[602] 1:05:52	or even principalities and high powers even if you extend it a little broader
+[603] 1:05:58	that are um definitely not of this world definitely not of this world
+[604] 1:06:05	not human-like in any respect so anyway i hope that answers your question
+[605] 1:06:11	thank you very much for that tremendously generous super chat
+[606] 1:06:16	very interesting question i don't get much question on mystical literature very often uh i hope that uh addressed
+[607] 1:06:22	your question and uh very very much appreciate that super chat it it's so helpful to our channel and
+[608] 1:06:28	does keep us going so thank you so very much
+[609] 1:06:35	okay
+[610] 1:06:41	uh biblical brainstorm for 499. thank you very much for the super chat post a question in a above in chat okay let's
+[611] 1:06:48	see if i can find it here there it is okay and he asks what was moses doing with
+[612] 1:06:56	the bronze serpent being lifted up to heal did they really depict yahweh as the
+[613] 1:07:01	snake occasionally or is there something else going on in the text before the new testament parallel yes there is
+[614] 1:07:07	something else going on in text before the new testament parallel okay
+[615] 1:07:15	now what is the bronze serpent we answer that it almost sort of answers
+[616] 1:07:20	itself most likely it was a kind of euras
+[617] 1:07:27	basically a um a serpent amulet and you see these in
+[618] 1:07:32	egyptian um uh egyptian um architecture and uh amulets all the time you know
+[619] 1:07:40	when you look at say the the burial mask of king tut he's got two amulets on his forehead one of a uh vulture that's the neck bet
+[620] 1:07:48	but he has a ureas on the other side and that's a cobra god
+[621] 1:07:53	the urease is also the analogical symbol of the seraphim
+[622] 1:07:59	the kind of burning angel and they're known for
+[623] 1:08:05	not just um they're they're sort of the ones they are the kind of angel
+[624] 1:08:11	and egyptian goddess that spits out fire
+[625] 1:08:18	and they spit out fire to purify
+[626] 1:08:24	they spit out fire to purify so with that being the context of the
+[627] 1:08:31	bronze serpent lifted up people would be bit by the snake the snakes in in the sand in the weeds
+[628] 1:08:40	uh because it is savannah and um they're poisoned
+[629] 1:08:46	they look up at the aureus this bronze serpent and they're made well
+[630] 1:08:51	they're made whole again okay so
+[631] 1:08:57	it's not the portrayal of yahweh we gotta be very careful about the bronze serpent
+[632] 1:09:03	that moses lifts up is not a portrayal of yahweh it's a portrayal of a lesser
+[633] 1:09:10	semi-divine being not a god in in the strict sense but of an angelic
+[634] 1:09:17	being that god is using to drive out the poison from the people
+[635] 1:09:25	okay so but it's also a symbol of healing
+[636] 1:09:34	and it ultimately in the new testament because also this is the symbol of of
+[637] 1:09:39	say the lifted up messiah the crucified christ
+[638] 1:09:44	and it's viewed by the new testament writers as say the um that um
+[639] 1:09:51	symbol of you know the broken messiah you the messiah lifted up on the cross
+[640] 1:09:57	and you look up to him and you are healed so that's really what's going on here
+[641] 1:10:03	with with the uh with the whole bronze serpent there's there's a lot of say um
+[642] 1:10:10	um cultural ideas here that are that underlie us as
+[643] 1:10:16	i said there's some antecedent to uh to egyptian culture here with the urayus
+[644] 1:10:21	and then that that transposition onto the seraphim and then the seraphim as the agent of
+[645] 1:10:27	god making people well through that purification
+[646] 1:10:32	so i hope that answered your question it's a great question it's a wonderful question this is one of those questions
+[647] 1:10:38	that you know if i do a book on the exodus i'm going to be writing fairly extensively on this because i think this is one of the best
+[648] 1:10:44	most interesting parts of the sinai wandering in the sinai that doesn't get
+[649] 1:10:50	enough attention from an ancient near eastern
+[650] 1:10:55	perspective so any thank you very much for the super chat very much appreciate an excellent
+[651] 1:11:00	question okay
+[652] 1:11:15	lion farm uh for two dollars thank you very much for the super chat uh and he asks
+[653] 1:11:22	do you know what dynasty abraham went into egypt yes we do uh he went into don
+[654] 1:11:27	uh egypt during dynasty 13. uh before he he entered uh egypt before the
+[655] 1:11:35	hicks dynasty of dynasty 15 and before even the the 14th dynasty so
+[656] 1:11:40	he was there during dynasty 15 and one of the reasons we know this is because we have
+[657] 1:11:47	um with war of kings and hammerfell uh amerfell a shinar is a really another
+[658] 1:11:54	name for um what's his name um
+[659] 1:12:00	hammurabi okay and there's actually a synchronism
+[660] 1:12:06	between hammurabi and nefer hotep the first so we do know that um that abraham was
+[661] 1:12:14	alive during the reign of effort hotep the first and that falls roughly in the middle of dynasty 13.
+[662] 1:12:22	now we don't know what rain unfortunately abraham went to egypt
+[663] 1:12:27	and that's because there's about 30 kings that make up the 13th dynasty they're incredibly
+[664] 1:12:32	short reigning kings most kings of the 13th dynasty don't rain longer than 10 years
+[665] 1:12:39	and many only rained like two two or three years so they're incredibly
+[666] 1:12:44	short rain uh reigning kings we don't know why that is maybe it's since uh instability of the
+[667] 1:12:50	government maybe they're assassinating each other we don't know the reason
+[668] 1:12:56	but uh we do know that it was dynasty 13 we do know that it was roughly the middle
+[669] 1:13:01	of dynasty 13. and that he was alive he overlaps with the reign of never hope
+[670] 1:13:06	that the first so nate uh great question thank you very much for the super chat very much
+[671] 1:13:12	appreciate and yeah we do actually know so this time we get lucky
+[672] 1:13:20	all right all right uh five dollar super chat from
+[673] 1:13:25	jamie russell thank you very much for the super chat uh good to see you here tonight uh why are the ten commandments still
+[674] 1:13:31	valid asking that way on purpose why um
+[675] 1:13:37	why questions are really tricky why questions are very very tricky
+[676] 1:13:42	and they're usually not good ways to formulate the question
+[677] 1:13:47	i because one of the things that's very very difficult to answer is why something happened
+[678] 1:13:53	so historians tend to generally avoid the why question because we often don't
+[679] 1:13:59	know the why because that speaks to reason
+[680] 1:14:04	a better way usually to um ask a why question is
+[681] 1:14:09	in what ways and in this case would be in what ways are the ten commandments still valid
+[682] 1:14:16	okay and that's pretty easy to answer you know why
+[683] 1:14:22	you can't really answer ask the reason why they're still valid but you can ask in what ways are they
+[684] 1:14:28	still valid and they're valid for a number of reasons
+[685] 1:14:34	um they're still valid because um they are
+[686] 1:14:39	applied to first of all their school teacher you know without the ten commandments we
+[687] 1:14:45	cannot be made aware of our sin you know it's an unkeepable standard the ten commandments cannot be kept
+[688] 1:14:51	perfectly but because it can't be kept perfectly they make us aware of our shortcomings
+[689] 1:14:58	and our sin and our need for repentance the second reason is
+[690] 1:15:04	all the ten commandments except the sabbath and there's a special reason why not the sabbath is affirmed in the new testament
+[691] 1:15:11	it's affirmed by the apostolic writings it's it's deferred by the words of jesus himself
+[692] 1:15:17	so they reiterate each and every one of those commandments as something that's still something that
+[693] 1:15:23	should be practiced as far as you know to love your neighbor don't steal
+[694] 1:15:30	you know if you love your neighbor you know don't accuse them of false things
+[695] 1:15:36	you know uh if you love god you know there's uh you know don't worship any
+[696] 1:15:43	other gods these are all in the ten commandments and these are pretty common sense
+[697] 1:15:50	now in the case of the sabbath the sabbath is just a little different than the other commandments because it's also the cash bucket of the sacrificial
+[698] 1:15:56	system now i'm not opposed to to keeping the sabbath i think keeping the sabbath is a great idea
+[699] 1:16:03	it's also in some respects though christ has fulfilled the sabbath because it also encounters the entire
+[700] 1:16:10	sacrificial law we're not required to keep the entire sacrificial law because christ fulfilled
+[701] 1:16:15	it and that also includes the um the keeping of the actual sabbath
+[702] 1:16:21	itself okay so in that respect it's one of those the sabbath is it becomes one of those laws
+[703] 1:16:27	where it's a good idea it's an excellent idea do it
+[704] 1:16:32	okay but it's also not necessary either it's not a crime
+[705] 1:16:40	um and frankly we are when we're talking about um you know keeping um
+[706] 1:16:47	um the ten commandments we are talking about something here that's a moral
+[707] 1:16:54	falling a moral crime and a sin okay like for example thou shalt not covet
+[708] 1:17:00	you know any of your neighbor's stuff don't covet his donkey don't cover his wife don't cover its house don't covet
+[709] 1:17:07	his maidservant don't cover his manservant not even his donkey don't cover any stuff your neighbor has
+[710] 1:17:15	you know so that's an internal sin that's a sin of thought and conscience
+[711] 1:17:24	but it is a sin uh that that does point out our unrighteousness
+[712] 1:17:29	by you know not coveting you know not by not coveting we understand that
+[713] 1:17:36	if we do covet that we have fallen from the glory that is you know the highest ideal of god himself
+[714] 1:17:47	so there we got at least two respects there you know that the ten commandments
+[715] 1:17:52	in really three you know one um it's an expression of how we love
+[716] 1:17:58	love our neighbor um two it's a
+[717] 1:18:04	you know it's there they're affirmed by the new testament authors
+[718] 1:18:10	and also it's just you know uh in john 15 uh christ says if you love
+[719] 1:18:15	me you'll keep my commandments he's not talking about the single
+[720] 1:18:20	commandment of if you um you know love your i'm give you a new commandment uh love love love
+[721] 1:18:28	each other as i have loved you you know that's sort of the new commandment of christ but he uses in john 15 the plural
+[722] 1:18:35	commandments well what other commandments did he give
+[723] 1:18:40	you he reiterated the the ten commandments so you should keep the commandments if you
+[724] 1:18:47	love god and if you love people you know the two great commandments you know thou
+[725] 1:18:54	shalt love the lord thy god with all thy heart with all thy soul with all the mind and all thy strength and the second is life wise to love your
+[726] 1:19:00	neighbor as yourself love god first four commandments love men
+[727] 1:19:06	you know the remaining remaining um five with the sabbath being covered by the
+[728] 1:19:12	lord himself you know so in those respects the ten commandments are still valid
+[729] 1:19:19	now we don't become righteous by the commandments okay they don't make us righteous we
+[730] 1:19:26	cannot be saved by following commandments but they are evidence of good works
+[731] 1:19:35	and james says you know you show me your faith without works i'll show you my faith by my works
+[732] 1:19:42	the fruit of righteousness should fall in line with the ten commandments
+[733] 1:19:50	though it's still an impossible standard to keep so you're not saved by works
+[734] 1:19:56	you know ephesians chapter 2 says you are saved by grace through faith unto good works
+[735] 1:20:05	the telos of being saved is not eternal life in ephesians chapter
+[736] 1:20:11	2 the purpose of you being saved by grace through
+[737] 1:20:16	faith is so that you live a life of good works that god has prepared for
+[738] 1:20:23	you in advance how do we express that
+[739] 1:20:28	well don't steal from your neighbor don't don't lie don't cheat on your
+[740] 1:20:34	exams don't take performance-enhancing drugs when you go
+[741] 1:20:40	to the olympics you know don't take performance-enhancing drugs when you take an exam either you know that's
+[742] 1:20:46	probably more common these days um you know don't cheat on your taxes give
+[743] 1:20:53	the caesar with caesars live a right life that is pleasing to
+[744] 1:21:00	god and that's how that's how it's done
+[745] 1:21:05	so anyway i hope that answered your question uh thank you very much for the super chat um we did have to rephrase
+[746] 1:21:10	this a little because why why is not a precise precise enough word here unfortunately
+[747] 1:21:16	to actually capture the sort of answer i think you're
+[748] 1:21:22	wanting to get so i hope that improved upon it and gave you a satisfactory answer so thank you very much jamie it
+[749] 1:21:28	was good to see you tonight
+[750] 1:21:36	uh we got a very generous uh super chat here for uh
+[751] 1:21:41	sixty dollars australian from bc well uh good to see you here tonight i'm glad to
+[752] 1:21:46	have you here and thank you for that very generous super chat uh shabbat shalom dr falk well shabbat
+[753] 1:21:53	shalom to you too many thanks and blessings for all the great work you do
+[754] 1:21:58	well thank you very much we love the blessings also do you have a preferred payment method
+[755] 1:22:04	for regular donations um well uh we do have a gofundme account uh
+[756] 1:22:11	you know we we're not the greatest fans of gofundme but there isn't any alternative at the moment
+[757] 1:22:16	um we do have cryptocurrency wallets that you can make a donation to
+[758] 1:22:24	um we also have patreon so uh for regular donations if it's a
+[759] 1:22:29	regular monthly thing probably patreon's best if it's
+[760] 1:22:37	patreon takes something but it's not that bad um the tax man takes a lot about a
+[761] 1:22:42	patreon okay um if um
+[762] 1:22:47	if you do not uh donate through gofundme it goes to a specific project and that's
+[763] 1:22:53	considered a gift so the tax man takes nothing out of that one so
+[764] 1:22:58	uh so the gofundme is preferred if it's a one-time or say um you want to help us
+[765] 1:23:04	with say say a tax-free gift um at least for us so your gift goes farther if you go
+[766] 1:23:11	through gofundme but we also we also uh do patreon as well and uh the cryptocurrencies are really really good
+[767] 1:23:18	for um for people who um say want say more privacy or you know
+[768] 1:23:25	have have you know consumer concerns with gofundme is privacy
+[769] 1:23:30	so so it depends on what we've got enough uh um channels that you can donate that uh
+[770] 1:23:38	that um it will suit your needs whatever they are so anyway um
+[771] 1:23:44	uh we don't have we don't prefer one or the other but you know those are the options those are the options that that
+[772] 1:23:49	that exist and you can see those and i believe they're in the description if
+[773] 1:23:54	they're not i can actually put them back there so they can get sometimes we have to cut out the um
+[774] 1:24:00	the donation methods in the description but if you look at any of our monday videos they're all there they're all
+[775] 1:24:05	there in our regular videos so anyway thank you very much for that really generous super chat very very much
+[776] 1:24:12	appreciated thank you so much and have a great night
+[777] 1:24:31	all right uh angel vwm for five dollars thank you very much for that super chat really appreciate it
+[778] 1:24:37	uh do you think it's possible to date the book of job or locate ancient ooze spoken of in the book wow
+[779] 1:24:45	yeah we don't exactly know where ooze is now dating the book is actually a bit
+[780] 1:24:51	easier and uh the reason why is it makes reference to the aramians
+[781] 1:24:58	and the era means are an iron age culture okay
+[782] 1:25:04	so essentially what happens is um after the matani empire falls apart
+[783] 1:25:12	and um it falls apart at the end of the late bronze age
+[784] 1:25:19	um it becomes a bunch of sort of fractured states that then gets sort of picked up by the
+[785] 1:25:26	hittites the hittites take over uh the remnants of the matani empire for
+[786] 1:25:32	a while and then in say um the 12th century
+[787] 1:25:39	the hittite empire itself falls apart this leaves the um
+[788] 1:25:48	this leaves the the remaining states to basically form
+[789] 1:25:53	as the kingdom of aram okay so
+[790] 1:25:59	when we when we by the time we get to the um the state of aram
+[791] 1:26:05	this is where we get the word aramium from okay we are looking at this point at
+[792] 1:26:13	basically the um the late 11th early 10th century
+[793] 1:26:20	already so once we get this people group that's being recognized as aramians
+[794] 1:26:26	they are we're already into iron age okay so we're definitely iron age at that point
+[795] 1:26:32	so it looks to me very very likely that um that the book of job is not an early
+[796] 1:26:39	book i mean early early bible expositors thought job was the earliest book in the bible
+[797] 1:26:46	they thought it it was even earlier than genesis and these days most almost
+[798] 1:26:52	scholars almost entirely across the board now will basically recognize that the book of job is actually a much later
+[799] 1:26:57	book now as far as ooze goes i don't think
+[800] 1:27:04	anyone has identified where ooze is but um but joe my my guess is
+[801] 1:27:11	uh the book of job dates to my my guess is somewhere
+[802] 1:27:19	before the assyrian og conquest and so i'd say roughly around iron age two
+[803] 1:27:25	that's roughly where i would date the book of job but i'm not an expert on the book of job either
+[804] 1:27:30	so so that's where that's where i'd place
+[805] 1:27:36	the book of job i think it's definitely iron age um i don't think it's um
+[806] 1:27:42	i mean it could be even later though and i have to be honest about that it's it is it is possible that it's even later
+[807] 1:27:51	so there's no necessity for it to be an early book but i'd say no earlier than i arranged
+[808] 1:27:57	too um so anyway i hope that answers your question thank you very much for the
+[809] 1:28:03	super chat very much appreciated okay
+[810] 1:28:14	uh linguist ammo for five dollars thank you very much good to see you here tonight uh it's been a while
+[811] 1:28:19	all right greetings friend no question tonight just support the screen well thank you very much
+[812] 1:28:25	i very very much appreciate that um it's always good to see a friend on the
+[813] 1:28:30	channel here um love the fact that you just dropped by it was really good to see you tonight
+[814] 1:28:36	now for those who uh i don't have the luxury normally to go through the chat and greet everyone
+[815] 1:28:43	individually wish i did um you know and um just for
+[816] 1:28:49	for everyone to uh to keep abreast of the situation
+[817] 1:28:54	we do have a a social forum now with with um our new discord server our new
+[818] 1:29:00	discord server has been going now for about two weeks um it's proven to be a very very
+[819] 1:29:06	interesting and interactive community and it's sort of keeping on sort of the same sort of uh vibe that we have here
+[820] 1:29:13	in the live chat going on in the discord uh the live the the um link to the
+[821] 1:29:19	discord should be in the description so uh if you want to join us on discord for
+[822] 1:29:24	social time so it's for basically for friendship and for fellowship and uh
+[823] 1:29:30	so i'd like to invite everyone to come onto our discord server but anyway
+[824] 1:29:37	um glad you want just to support us we really appreciate it you know um small
+[825] 1:29:42	donations help us too and we really really appreciative for everybody who
+[826] 1:29:47	supports our channel uh we couldn't do this without you you know it's just it's just
+[827] 1:29:54	making things stretch is just um um
+[828] 1:30:00	you know very very difficult in in this expensive area where we live and um
+[829] 1:30:05	it's as i said it would be very difficult to do this without your support so very much appreciate it
+[830] 1:30:12	thank you so very much okay
+[831] 1:30:25	uh mind ben 256 for five dollars thank you very much for the super chat
+[832] 1:30:30	what are the differences between hennotheism monolatry and monarchial henotheism okay
+[833] 1:30:37	let's take monologury first okay monotree is the idea that
+[834] 1:30:45	you only worship one god okay you owe your allegiance to one god
+[835] 1:30:51	okay now that covers both hanuthism and monarchical
+[836] 1:30:59	monotheism both hand atheism and monarchical monotheism are
+[837] 1:31:04	manola trees basically mono meaning one lattery or latrus meaning to worship
+[838] 1:31:12	so you only worship one god okay now
+[839] 1:31:18	henotheism says there are many gods
+[840] 1:31:23	it's cut it's it's it's metaphysics are kind of like polytheism polytheism says you've got
+[841] 1:31:30	many gods and you can worship any of them okay henotheism says
+[842] 1:31:37	there are many gods but you only owe your allegiance to one of them
+[843] 1:31:43	so basically if you had monolithrose polytheism that's hennotheism
+[844] 1:31:51	so in henotheistic systems you've got many gods running around that are fully gods
+[845] 1:31:58	but you owe your allegiance typically to the king of the gods unless you there's a special case god that you prefer
+[846] 1:32:05	okay now these differ from monarchical monotheism
+[847] 1:32:13	now monotheism there's two types of monotheism monolithic monotheism
+[848] 1:32:19	and monarchical monotheism now
+[849] 1:32:24	uh monolithic monotheism basically says that there's
+[850] 1:32:30	one god just one god but there's no other spiritual beings
+[851] 1:32:36	no lesser spiritual beings so you've got the one god and you've got
+[852] 1:32:42	the creatures of earth and that's it so no angels no demons
+[853] 1:32:49	no principalities or high powers nothing like that that's monolithic monotheism
+[854] 1:32:56	now monarchical monotheism says that there's one god but below him
+[855] 1:33:04	are lesser spiritual beings so there's one supreme god
+[856] 1:33:09	but underneath him could be um angels spirits
+[857] 1:33:15	imps uh you know
+[858] 1:33:21	bsd demons [Laughter] beasty
+[859] 1:33:26	[Laughter] uh even up to say lesser gods
+[860] 1:33:32	so basically [Music] beings that aren't god by nature but make themselves out to be god
+[861] 1:33:39	so that's monarchy old monotheism so here basically these are talking about very very similar categories those
+[862] 1:33:47	three that you say it comes down to mostly though metaphysics
+[863] 1:33:52	except monologue monologue can be applied to other religious systems too like for example
+[864] 1:33:58	uh autism the religion of of king akhenaten of egypt
+[865] 1:34:03	you know where he worships the sun god it's actually a monologist pantheism
+[866] 1:34:09	so you can actually apply monologue to just about any kind of religious system
+[867] 1:34:15	it might change it slightly by making it a monotree but you can add that to uh just about any religious system
+[868] 1:34:21	you know you know you know it might even sound a little ridiculous but
+[869] 1:34:27	you could even have conceivably a monologist atheism now even that's conceivable
+[870] 1:34:33	you know where so you put self-worship first and you worship only yourself
+[871] 1:34:38	you know you might not believe there's a god out there congratulations you've got a monologist atheism
+[872] 1:34:45	monologue means you only worship one being whatever that being is
+[873] 1:34:52	so both monarchical monotheism and henotheism are manola trees
+[874] 1:34:57	but the difference between hamilthism and monarchical monotheism comes down to metaphysics of what does it mean to be a
+[875] 1:35:03	god in henotheism there are many gods
+[876] 1:35:08	and they're all ontologically a god there's not one that's ontologically or
+[877] 1:35:15	by essence or is superior to the others in case of mono monarchy monotheism you have one
+[878] 1:35:21	supreme god that by its essence and scientology is
+[879] 1:35:27	supreme over everything else so i hope that explained the difference it's a great question
+[880] 1:35:33	thank you very much for the super chat very much appreciated
+[881] 1:35:44	uh sentinel apologetics for five dollars australian good to see you tonight i hope you're feeling better
+[882] 1:35:50	um thank you so much uh um he says daddy folk i made it much
+[883] 1:35:56	love to you i'm on the mend great praise god praise god you're on the mend but so
+[884] 1:36:02	far so good hope you're well uh so thoughts on hofmeier's akhenaten book okay
+[885] 1:36:09	um i'm a great fan of half meyer i'm going to put that straight out there
+[886] 1:36:15	i'm a less a fan of this book okay i think he's a very very good scholar
+[887] 1:36:23	i think he's done i mean i was trained by hoffmeyer i mean i'm i'm a student of hoffmeyer
+[888] 1:36:30	um i was essentially uh when i went to ted's i was um
+[889] 1:36:36	i was basically a student of hoffman i took every class he taught every class that i could take i i taught him i took
+[890] 1:36:41	from him so you know my my cv is full of hoffmeier okay
+[891] 1:36:48	so um i i am biased here i am biased here but
+[892] 1:36:54	i don't i think he sort of misses the mark on the akhenaten book
+[893] 1:36:59	and the reason why i say he misses the mark on the akhenaten book is
+[894] 1:37:05	he's basically pursuing an older theory where the idea is that monotheism gets its
+[895] 1:37:13	start in akhenaten akhenaten's uh otton religion
+[896] 1:37:19	and when i read akhenathan's text i just don't get that i get pantheism i don't get monotheism
+[897] 1:37:27	now i think he's right akanden is definitely doing a monologue
+[898] 1:37:32	but he goes a little farther than that he's basically ascribing monotheism to akhenaten and basically saying that that
+[899] 1:37:39	sort of is a precursor to israel like monotheism and i and i don't
+[900] 1:37:44	see that i i don't think there's a there's a i don't think the connection there is warranted
+[901] 1:37:51	i think akhenaten's pantheism leads the way provides a foundation that
+[902] 1:37:56	collapses into monotheism i think that's true but i don't think akhenaten's uh
+[903] 1:38:03	athenism was monotheism per se i think there are better books on akhenaten
+[904] 1:38:10	um i think aiden dodson's book on akhenaten is probably the best one that's
+[905] 1:38:15	available i think he's done three books on atonism um they're all good i think
+[906] 1:38:20	he's done was it amarna sunrise sunset there's one other two
+[907] 1:38:25	but aidan dodson's books on on akanaton i think are the best right now
+[908] 1:38:31	this is not to say that uh um hoffmeyer's book on akkad is bad
+[909] 1:38:38	i just think it's not as good as it could be i think there's a lot better
+[910] 1:38:43	out there and um i get what he's trying to do with it i just don't agree with it
+[911] 1:38:49	and you know you can't agree with your teacher on everything you know
+[912] 1:38:56	so as far as as far as a place to disagree with him on you know this is a perfectly respectable place to disagree with him
+[913] 1:39:02	on so so anyway i'm glad you're on the mend um we have been praying for you
+[914] 1:39:08	and uh we really really appreciate that you told us how you're doing so i'm glad you showed up tonight just to let us
+[915] 1:39:15	know so anyway thank you very much for the super chat um and it's a good question too
+[916] 1:39:21	and i'm so glad you're on the mend so we will keep you on our prayers however so thank you very much and have a great
+[917] 1:39:27	night
+[918] 1:39:43	okay uh slim 2k for two dollars thank you very much for the super chat is a kings and priests the proper
+[919] 1:39:50	translation for revelation 1 6 uh kjv well let's take a look let's take a look
+[920] 1:39:56	at what does the greek say uh first i'm gonna take a look at the text here
+[921] 1:40:09	one six
+[922] 1:40:18	okay pull it up now i'm going to read from the nasb here because it's a good wooden literal
+[923] 1:40:24	translation um a formal a good formal equivalence uh
+[924] 1:40:30	translation here so and he has made us to be they translated as kingdom
+[925] 1:40:36	priests to his god and father to be the glory and the dominion forever and ever amen so let's take a look at greek here
+[926] 1:40:42	let's see what greek says
+[927] 1:40:53	okay us
+[928] 1:40:58	well it does say kingdom it's not kings
+[929] 1:41:03	it's the word here i'm going to highlight the word
+[930] 1:41:11	basilan okay [Music] it
+[931] 1:41:16	is it's a noun and it's in the accusative which means it's the object
+[932] 1:41:24	and it's a feminine singular okay so it's not kings
+[933] 1:41:30	okay so and it's singular so what what this means is it means a
+[934] 1:41:35	kingdom okay it's not kings so the
+[935] 1:41:41	translation in at least for revelation 1 6 in the kjv is wrong at this point
+[936] 1:41:47	um and then the next one is eros
+[937] 1:41:53	or erase this one here is in uh it's also a noun
+[938] 1:41:59	an accusative um it is also in but it's in the masculine plural
+[939] 1:42:06	so there's many priests one kingdom many priests
+[940] 1:42:11	so that's the sense here so he is made for uh he has made us a kingdom and priests
+[941] 1:42:21	okay so that's the crude translation of the greek here
+[942] 1:42:28	so um we do have to keep in mind that
+[943] 1:42:33	kjv was a great translation for 1611
+[944] 1:42:38	but like all translators they have their particular points of view and perspectives
+[945] 1:42:43	uh they have limits to what they know about say cultural context and
+[946] 1:42:49	and say translational method and i think here
+[947] 1:42:55	it's not kings it's definitely not kings it is a kingdom it's a kingdom and it's priest
+[948] 1:43:01	so so when we say go back to say you know the nasb
+[949] 1:43:08	which is help if i get the right window
+[950] 1:43:15	so um the only the only the only change i'd make here to the
+[951] 1:43:21	nesb's translation is and he's made us to be a kingdom
+[952] 1:43:28	and priests so that's what i would would probably the only difference i'd be make here
+[953] 1:43:34	to his god and father etc so it's not singular like i think let's
+[954] 1:43:41	look at the kjv i'll just flip the kjtv just for sake of comparison here
+[955] 1:43:51	okay yeah the king kjv has it in the plural okay so it's made us kings and priests
+[956] 1:43:58	kings it's it's it's definitely wrong here um
+[957] 1:44:03	priests is correct so and priest is correct in the kjv
+[958] 1:44:10	and the kings isn't it is a kingdom so anyway uh thank you very much for that
+[959] 1:44:16	super chat i hope that answered your question so next one
+[960] 1:44:28	destiny night 77 for 9.99 well thank you very much for that super chat very much appreciated shalom dr falk well shalom
+[961] 1:44:35	to you too are you familiar with the translational debates behind exodus 6 2-3 i was
+[962] 1:44:41	wondering if you had any thoughts of the use of god's name yahweh from the patriarchs to the time of moses
+[963] 1:44:47	okay let me grab that text
+[964] 1:44:59	and we shall see here now
+[965] 1:45:18	exodus
+[966] 1:45:26	six
+[967] 1:45:32	all right pull up the bible here okay uh god spoke further to moses and said i
+[968] 1:45:39	am the lord and i appear to abraham isaac and jacob as god almighty i think it's el elyon if i'm correct here
+[969] 1:45:48	uh oh el shaddai sorry i should die uh but by my name lord i did not make
+[970] 1:45:54	myself known to them okay
+[971] 1:45:59	um yes i am somewhat familiar with this now no this particular
+[972] 1:46:04	uh translational controversy and so it goes back to to genesis
+[973] 1:46:11	and what we have for example with from the patriarchs is the genesis does seem to um
+[974] 1:46:19	use the word yahweh in some of its texts especially in dialogue
+[975] 1:46:25	but we also know too that uh the markers the linguistic markers that we find in genesis seem to indicate that it was
+[976] 1:46:31	written no earlier than say um the late bronze age so roughly at the same time
+[977] 1:46:37	as um as the israelites are coming out of egypt
+[978] 1:46:44	so with that said you know we got to keep in mind that
+[979] 1:46:50	that there could be some retrojection happening where they're updating certain texts in
+[980] 1:46:56	genesis to make certain pedagogical points so
+[981] 1:47:01	that's sort of been my sort of my take on this recently which is that there is
+[982] 1:47:06	um that there is um
+[983] 1:47:12	um oh what's called now um that they're updating it to to try to i
+[984] 1:47:17	they're updating the dialogue the writer genesis is updating the dialogue to sort of show that the god of abraham is
+[985] 1:47:25	yahweh so that's what i think is happening in the genesis texts
+[986] 1:47:32	now michael heiser has um takes this uh for example verse 3
+[987] 1:47:38	of exodus 6 1 and he's not comfortable he's not comfortable with the retrojection view
+[988] 1:47:44	of um of genesis he basically takes a different approach
+[989] 1:47:50	and he basically takes that last um phrase
+[990] 1:47:55	of verse three and turns it into a question
+[991] 1:48:00	um basically says by my name lord did i not make myself
+[992] 1:48:08	known to them okay now the problem with that
+[993] 1:48:15	is there's a couple problems with that and i'm really not comfortable with that solution i'm really not comfortable with
+[994] 1:48:20	that solution for a couple of reasons um
+[995] 1:48:26	first hebrew does have interrogative markers
+[996] 1:48:32	they do have ways of marking the text so you know it's a question
+[997] 1:48:39	and those interrogative markers are not present here
+[998] 1:48:44	now that doesn't preclude it from being a a um being a question
+[999] 1:48:50	there are some cape instances in hebrew where it's a question
+[1000] 1:48:56	you can tell it's a question by the context
+[1001] 1:49:01	that context if if this is a question the context doesn't make it obvious
+[1002] 1:49:08	the other reason i'm i'm really uncomfortable with his solution here
+[1003] 1:49:13	is you could take any biblical text turn it into a question and negate it
+[1004] 1:49:23	okay that gets really dicey
+[1005] 1:49:29	you can basically invert almost the entire biblical text by turning it all into questions
+[1006] 1:49:36	you know in the beginning did god create the heavens and the earth well the implied answer would be no
+[1007] 1:49:46	just by turning it into a question you've inverted the text
+[1008] 1:49:52	you know verse two you know did god speak to moses further
+[1009] 1:49:57	to moses and say to him i am the lord well
+[1010] 1:50:03	no now that's a really irresponsible thing to
+[1011] 1:50:09	do to the text but it does open the gateway for this
+[1012] 1:50:15	so i don't like hyzer solution here i don't like the hyzer solution at all
+[1013] 1:50:22	um i think a much better solution as i said is a retrojection
+[1014] 1:50:28	of the dialogue to basically show that yahweh is el shaddai
+[1015] 1:50:36	elohim el elyon etc so that's what i think is happening in
+[1016] 1:50:42	genesis and and that's sort of where i sort of sit here is that you know the
+[1017] 1:50:47	jew the ancient israelites weren't opposed to all making slight modifications to the text
+[1018] 1:50:54	to make certain points this wasn't considered to be dishonest this wasn't considered to be tinkering
+[1019] 1:51:00	with the text it's trying to show the absolute with the text absolutely means
+[1020] 1:51:08	what's the real truth here you know not necessarily being a wooden
+[1021] 1:51:14	you know tape recording of what actually happened so this is why also sometimes events in
+[1022] 1:51:23	um in say like the book of judges and uh joshua are out of order too
+[1023] 1:51:30	you know they're out of order because it's not it because it's it's not it's not done in chronological order
+[1024] 1:51:36	and it's not done in chronolog uh written in chronological order because it's trying to to teach
+[1025] 1:51:43	something here from the best to the worst of whatever in in the case of joshua
+[1026] 1:51:50	the best tribe to the worst you know tribe of judah to the tribe of dam
+[1027] 1:51:58	in the case of judges the best judge to the worst judge which is samson
+[1028] 1:52:05	bad judge very very bad judge um by the way i want to give a shout out
+[1029] 1:52:10	here to um uh inspiring philosophy's latest video
+[1030] 1:52:16	here on um ravi zacharias but it really his video talks more about samson and it's
+[1031] 1:52:21	actually a really good look at samson and i think he's pretty much dead on
+[1032] 1:52:26	here so um samson was a bad bad guy
+[1033] 1:52:33	and he was the worst of the 12 judges of israel really bad judge
+[1034] 1:52:40	scoundrel absolute scumbag okay but god used that scumbag for greater
+[1035] 1:52:47	glory likewise he's not chronologically at the end of the judges but it's pretty close
+[1036] 1:52:54	and he's one of the worst so um
+[1037] 1:52:59	here's why so my thinking here on the uh reference of yahweh in the patriarchs is that it's it's a retrojection that's
+[1038] 1:53:06	written uh during the time of moses to point his
+[1039] 1:53:11	is the israelites towards yahweh as god so anyway thank you very much for the
+[1040] 1:53:16	super chat very much appreciate it okay
+[1041] 1:53:29	okay uh super chat from mr phil fox good to see you tonight here friend for twenty dollars thank you very much for
+[1042] 1:53:35	that super chat my dear brother blessings and prayers for you and your family
+[1043] 1:53:41	love the stream and i want to be like you when i grow up oh you don't want to grow up don't do
+[1044] 1:53:48	that you'll be old and creaky and hurt like i do
+[1045] 1:53:54	put up that growing up for as long as possible you don't want to go there
+[1046] 1:54:01	age isn't kind [Laughter]
+[1047] 1:54:06	anyway it's great to see you here tonight um i'm glad i'm glad you could be with us tonight and uh i i so much uh
+[1048] 1:54:14	appreciate that generous super chat uh thank you so very much um you know my brother here uh mr phil fox has a great
+[1049] 1:54:21	live stream um he does great work in his community i highly highly recommend his channel go
+[1050] 1:54:28	and subscribe to his channel because it's fantastic it's a really great channel and i love him dealer dearly as a
+[1051] 1:54:35	brother so um it's really great to see it tonight uh thank you so much for being here and
+[1052] 1:54:41	thank you for that wonderful super chat okay um i think we're actually at the
+[1053] 1:54:47	end of the super chats here so we've got a little bit of time we're almost at the two hour mark
+[1054] 1:54:55	so we are going to take a couple of non-super chats
+[1055] 1:55:01	uh
+[1056] 1:55:07	let's see what we got here
+[1057] 1:55:26	see here
+[1058] 1:55:37	um actually this one's kind of interesting
+[1059] 1:55:42	okay uh from sam rosenstock says in the old testament period did god
+[1060] 1:55:47	punish people based upon their breaking of the law if someone served god right but broke the sabbath in ancient israel why were
+[1061] 1:55:54	they punished okay everyone broke the law you couldn't keep
+[1062] 1:56:00	the law the law is ultimately unkeepable okay however you were supposed to make
+[1063] 1:56:06	atonement you were supposed to do you know bring your sacrifices your sin offerings to
+[1064] 1:56:11	the temple you were supposed to be purified by the priests you were there was uh remediation
+[1065] 1:56:19	now in ancient uh israel culture there was you know three kinds of law a speaker sorry
+[1066] 1:56:25	three kinds of sin iniquity trespass and rebellion okay
+[1067] 1:56:31	um iniquity is slow drift where you sort of drift away from doing something you know let's say you don't go to church one one
+[1068] 1:56:38	week and then turns into two weeks and three weeks and four weeks and so on and so on and so on that that's drifter you
+[1069] 1:56:43	slowly drift away from the rightness there's a trespass
+[1070] 1:56:49	where you do something wrong by mistake uh let's say you were you know getting
+[1071] 1:56:56	ready for a temple you go out into the barn
+[1072] 1:57:01	and you you accidentally touch a
+[1073] 1:57:08	uh the body of a dead animal not realizing it's dead give go put on your clothes best uh
+[1074] 1:57:16	sabbath day clothes go to temple now you you're richly contaminated with being unclean you've come into the temple
+[1075] 1:57:22	grounds you've you've created trespass you weren't intending to sin
+[1076] 1:57:29	here and to bring rich ritual impurity into the temple but you did anyway okay
+[1077] 1:57:35	in the case of both iniquity and trespass those could be um resolved any time of the year
+[1078] 1:57:44	okay they were they were sort of the lesser tier of offenses
+[1079] 1:57:51	and god didn't typically punish those because most israelites were were used
+[1080] 1:57:56	to doing this on a very very you know regular basis you know being richly purified and all that
+[1081] 1:58:03	the third category of sin which is called which is a hata or trespass
+[1082] 1:58:08	not trespass story um rebellion rebellion this is the worst of the worst
+[1083] 1:58:14	these are sins that were in direct violation you went out of your way to do these
+[1084] 1:58:21	you know like murder cheating a brother you know um lying and knowingly lying you know
+[1085] 1:58:28	that's those those are the big sins those were only those were not forgivable throughout the year
+[1086] 1:58:35	those could only be forgiven during yom kippur so you carried your wife of that sin for
+[1087] 1:58:41	the entire year now getting back to your question here
+[1088] 1:58:47	um in typically god didn't actually punish people
+[1089] 1:58:52	directly for just breaking the law but they did he did often punish or
+[1090] 1:58:59	leave the people to be punished if you could put it that way for abandoning the law
+[1091] 1:59:07	this is basically iniquity run amok where
+[1092] 1:59:12	you've drifted so far away that you're really not in the orbit of god's people
+[1093] 1:59:18	anymore and that point he might let you do it to let god you know let let the world you know
+[1094] 1:59:25	drive you back the prodigal son
+[1095] 1:59:31	um uh if you if you set aside i mean the prodigal son was a kind to this
+[1096] 1:59:36	is the kind of this although the prodigal son if we take that uh parable in its proper context is actually
+[1097] 1:59:42	talking about gentiles it's actually talking about gentiles gentiles and jews so that's what the
+[1098] 1:59:47	prodigal son is actually about but you can get the same sort of hint from the prodigal son it is using that that
+[1099] 1:59:53	um that paradigm of sin and iniquity and rebellion um but
+[1100] 2:00:00	applying it to the gentiles and then you know the repentance that that can
+[1101] 2:00:05	you know and restoration now the sabbath is a particularly different
+[1102] 2:00:12	case in the case of israel the sabbath was was actively punished for a couple reasons
+[1103] 2:00:19	one of those reasons is because it is actually the sign of the everlasting covenant
+[1104] 2:00:24	the sinai covenant one of the things that we read in the um sinai covenant
+[1105] 2:00:30	is that
+[1106] 2:00:38	that the everlasting sign of the covenant is that they keep the sabbath
+[1107] 2:00:43	that's the everlasting sign of that's that's uh in the covenant language of the suzerainty of the sinai covenant
+[1108] 2:00:53	there's the stipulation is they have to keep the sign of the sabbath as a sign that they are keeping the law
+[1109] 2:00:59	okay now later on in the christian era that's no
+[1110] 2:01:05	longer needed so it's no longer the sign but for for ancient israelites
+[1111] 2:01:12	keeping the sabbath was important because it was their way of showing that
+[1112] 2:01:18	they were keeping the rest the law and when they had when they ignored the
+[1113] 2:01:25	sabbath it usually followed suit that they were ignoring the rest of the law too
+[1114] 2:01:32	so when they were essentially um
+[1115] 2:01:37	you know let's say let's say for example you are a head of a house and you ignore the sabbath you ignore the sabbath
+[1116] 2:01:45	and you make all your you make your slave and uh your slave man your slave
+[1117] 2:01:51	you know made it work on the sabbath because you don't want to hold the
+[1118] 2:01:57	sabbath yourself well you're also stealing their time
+[1119] 2:02:04	you know the sabbath is is was was made for man so in breaking the sabbath in that way
+[1120] 2:02:11	you're also breaking other commandments you know
+[1121] 2:02:16	you know you're not trusting god for the increase
+[1122] 2:02:23	so you know you know you're not worshiping the lord with all your heart and with all your
+[1123] 2:02:28	soul all your mind you know there's there's deficits when
+[1124] 2:02:33	you start when when the israelites started breaking the sabbath in that way
+[1125] 2:02:40	and that led to further problems in fact you know
+[1126] 2:02:45	um when one of uh christ's disciples comes up to christ and he says
+[1127] 2:02:52	you know uh how many times should my my brother sins against me he
+[1128] 2:02:58	goes off and then comes back and repents and he does this seven times how many times should i forgive
+[1129] 2:03:06	my brother and christ says 70 times seven
+[1130] 2:03:12	well that's a euphemism that's a euphemism that's a euphemism for
+[1131] 2:03:18	how often um israel itself broke
+[1132] 2:03:23	the um the jubilee yeah you know 490 years
+[1133] 2:03:30	and then exile and then forgiveness and restoration
+[1134] 2:03:35	as a way of christ saying you always forgive you always forgive
+[1135] 2:03:41	but that jubilee was a kind sabbath and the israelites
+[1136] 2:03:47	broke it frequently frequently
+[1137] 2:03:53	so um so that's why it was so that's where the
+[1138] 2:04:00	sabbath was seen as such an important law in ancient egypt or sorry in ancient israel because it was connected with the
+[1139] 2:04:06	covenant faithfulness to the sinai covenant so that's why it often got punished more
+[1140] 2:04:12	severely than say other crimes although other crimes were definitely severely
+[1141] 2:04:18	punished also so i i hope that answered your question it's a great question it's an interesting question and thank you very
+[1142] 2:04:24	much for that question okay i see a really really important question here
+[1143] 2:04:31	right at the bottom muhammad kareem question les paul or
+[1144] 2:04:36	strat oh boy neither um
+[1145] 2:04:42	i don't care for the uh strats um honestly um
+[1146] 2:04:48	the the thing i don't like about the les paul is the body is so deep
+[1147] 2:04:53	and and i don't like i don't like deep bodied guitars um they i just don't i don't feel
+[1148] 2:04:59	comfortable with a deep body guitar i like the body of a strat i do like the body of a strat but i like
+[1149] 2:05:06	prefer the double double pickups uh on the les paul
+[1150] 2:05:11	that's kind of why i have an sg i have an sg because it's sort of between it's got
+[1151] 2:05:18	kind of the body of a strat but the double pickups of a les paul
+[1152] 2:05:25	but the only thing i don't like about the sg is the neck dive which is why i have mine strung up so that strung up
+[1153] 2:05:32	more like a classical guitar because that alleviates the neck dive so i i do prefer i do prefer uh say sg's
+[1154] 2:05:40	over say les pauls just because i don't like it i don't like the deep body of the les paul
+[1155] 2:05:46	um and i do like the body of the strap but i hate the signal pickups it just does it rings sort of tinny on my ear
+[1156] 2:05:54	so i can i can sort of hear that that um with the double pickups
+[1157] 2:06:01	uh the interference is cancelled um and i and i do like that the crisp
+[1158] 2:06:07	deep tones of say double humbuckers
+[1159] 2:06:13	and the strat just doesn't do it for me that just doesn't do it for me i hate the single pickups
+[1160] 2:06:22	now in the case of my sg here um
+[1161] 2:06:27	i can i can convert my uh my double humbuckers into into singles
+[1162] 2:06:33	so if i want that versatility of being more like a strat i can do that i can do that too
+[1163] 2:06:39	so that does um that does um
+[1164] 2:06:45	that is a compensator and i do like that so um
+[1165] 2:06:51	yeah i just as i say i just don't like i mean i never did classical guitar i
+[1166] 2:06:56	don't care for classical guitar really i say i just don't like the deep bodies
+[1167] 2:07:01	on the guitars i don't like where they sort of sit on my body so it just doesn't don't really care for them all that much
+[1168] 2:07:08	so anyway i had to answer that really important question thank you very much for that question very much appreciated
+[1169] 2:07:17	okay
+[1170] 2:07:24	uh mr bob did you explain the name of the stream i don't know if you did yes i did it's the bsd demon
+[1171] 2:07:31	explained it right at the very beginning
+[1172] 2:07:37	um yes it's it's the name of the demons which are uh in unix uh
+[1173] 2:07:44	jargon a daemon is a basically a program that runs all the
+[1174] 2:07:50	time doing doing automated tasks so that's what a demon is in
+[1175] 2:07:55	eunuch's technical jargon in the bsd world
+[1176] 2:08:02	the demons are anthropomorphized by the drawing of beastie
+[1177] 2:08:09	which is the little red demon with the pitchfork you'll see on the thumbnail to my latest video on the spirit world so
+[1178] 2:08:17	when i say beastie under the hood but that's because i basically my my home network here is a
+[1179] 2:08:23	unix shop we've got a lot of linux here and um i know there's some other
+[1180] 2:08:29	varieties too but so um that's what i meant by beasty under the hood is we are essentially a
+[1181] 2:08:35	eunuch shop yes ancient egypt and the bible runs on unix so
+[1182] 2:08:40	anyway uh thank you very much for the question
+[1183] 2:08:48	damon not demon people yes um well you know it's it's essentially the same
+[1184] 2:08:54	thing as as far as um as the words go now in the unix world it
+[1185] 2:09:00	is it is spelled demon okay it's not spelled demon
+[1186] 2:09:06	but it's not demon as in fallen angel it's not that sort of demon
+[1187] 2:09:11	it's a game on and a daemon being meaning a a agent that does a piece of work or
+[1188] 2:09:17	task so no unix is not demonic
+[1189] 2:09:23	but it has demons or demons so
+[1190] 2:09:29	i hope that clears that up okay a couple more
+[1191] 2:09:36	super chats and a non-super chats and then we will call it a night because i'm getting hungry
+[1192] 2:09:43	i've got a roast a pot roast that's waiting for me here so
+[1193] 2:09:53	see
+[1194] 2:10:01	hmm
+[1195] 2:10:06	i'll take bc's uh non-super chat here uh it says here it is appointed for men to
+[1196] 2:10:11	die once and then the judgment could it be that since enoch and elijah did not die yet maybe they will be the two
+[1197] 2:10:18	witnesses in revelation who are finally killed yes that's really a that's many people have uh speculated that
+[1198] 2:10:25	uh while it doesn't say for sure that they are enoch and elijah it's it's
+[1199] 2:10:32	not an unreasonable um speculation it's not unreasonable at all
+[1200] 2:10:38	but we don't know for sure okay we don't know for sure if the two witnesses are going to be enoch and
+[1201] 2:10:44	elijah that are finally killed possible it's possible
+[1202] 2:10:50	um it is there is some reference to elijah coming again in the last days
+[1203] 2:10:57	okay so it is there's it's it's it's it's a possibility and
+[1204] 2:11:04	it's a good possibility so but it is still there is still a speculative aspect to this so any it's a
+[1205] 2:11:10	good question thank you very much for the question okay
+[1206] 2:11:16	let's see here um
+[1207] 2:11:33	i will take probably one more and then maybe call it a night
+[1208] 2:11:45	um rohan samuel writes dr falk would you consider making a
+[1209] 2:11:52	video exposing ron wyatt i see many people sharing his articles as archaeological facts we've already done
+[1210] 2:12:00	two videos um that talk about ron wyatt okay uh one is on his chariot wheels at
+[1211] 2:12:09	the bottom of the so-called red sea that sort of exposed those as a fraud
+[1212] 2:12:16	we also did a video uh uh we also uh did a popcorn video
+[1213] 2:12:23	on uh his uh what was it now let me see if i can find that popcorn video
+[1214] 2:12:30	um let's see one of the one of our popcorn videos was on this two
+[1215] 2:12:38	um video playlists
+[1216] 2:12:48	see here let's see which one was this [Music]
+[1217] 2:13:00	yeah we did a reaction video that was called
+[1218] 2:13:07	uh he had done a video ron wyde did a video um called um
+[1219] 2:13:12	joseph the architect of the first pyramid and what we did was we um we did a
+[1220] 2:13:19	popcorn review of that video and and it covers up
+[1221] 2:13:24	basically he had done a trip to saqqara where he visited the steppe pyramid
+[1222] 2:13:31	and you know showed a machine that was used to lift
+[1223] 2:13:36	supposedly stone blocks up the great pyramid and you know he did this back in the day
+[1224] 2:13:43	when one could still get away with doing experimental archaeology on a pyramid they wouldn't let you do that anymore no
+[1225] 2:13:50	um that would be totally a no-go today but
+[1226] 2:13:57	you know back then you could you could show up with in egypt with a uh roll of uh 50 bills and pretty much buy
+[1227] 2:14:04	your way to do anything back then but uh um
+[1228] 2:14:09	but essentially he had done this video where he had taken a trip to egypt and you know try to show joseph as the
+[1229] 2:14:16	builder uh the architect of the pyramids and he interprets the the text in some
+[1230] 2:14:22	crazy crazy ways uh the egyptian texts anyway
+[1231] 2:14:27	so yeah we've we've done we've done two videos on ron wyatt um unless uh if you can suggest a video
+[1232] 2:14:34	that we think we should review we're always open to to suggest uh to
+[1233] 2:14:40	suggestions in fact all our popcorn reviews come from subscriber or patreon uh suggestions
+[1234] 2:14:46	um obviously if it comes from patreon we'll give it a higher priority than say um and consideration
+[1235] 2:14:53	say maybe a a random subscriber but but every everything comes from subscribers
+[1236] 2:14:58	uh the thing with doing um um our popcorn reviews is they sort of have
+[1237] 2:15:04	to fit a certain format uh that format is they have to be
+[1238] 2:15:10	usually between 30 to 50 minutes not much longer not much
+[1239] 2:15:16	shorter um they have to be something that we can you know use in a popcorn review without
+[1240] 2:15:23	getting uh swatted uh by
+[1241] 2:15:29	copyright strike so it has to be something that's that's either you know out of copyright or
+[1242] 2:15:34	where the copyright holder is not enforcing his rights so
+[1243] 2:15:39	that way because of that it can't be like fiction it has to be as a real documentary by a
+[1244] 2:15:46	content creator that's not going to enforce their copyrights like the history channel
+[1245] 2:15:54	um just make a note youtube does not honor yeah
+[1246] 2:16:00	it should be noted that youtube does not honor fair use okay it will not it youtube gets paid
+[1247] 2:16:06	to protect uh media companies um copyright claims
+[1248] 2:16:13	so it will not it will not usually find in the favor of a content creator
+[1249] 2:16:19	who's using it for educational teaching purposes it just won't it just won't find it in favor of them
+[1250] 2:16:25	and doesn't have to doesn't have to okay um the other thing is it can't be
+[1251] 2:16:31	somebody who is litigious because we don't have deep enough
+[1252] 2:16:36	pockets to fight lawsuits so we do get a lot of people asking us for um to do
+[1253] 2:16:43	popcorn reviews of simka yakovich's um
+[1254] 2:16:49	exodus videos and we're not touching those we are not touching those at all
+[1255] 2:16:54	uh yakovovich is is a notorious frivolous lawsuit um
+[1256] 2:17:03	litigator and we just don't want any involvement in that sort of mess
+[1257] 2:17:08	so so uh we do sometimes make calls for um
+[1258] 2:17:17	request for suggestions and we'll usually post that in the community tab
+[1259] 2:17:22	uh but we'll really take suggestions anytime if we find something that's really interesting oh the other thing is
+[1260] 2:17:27	it the video also has to have there has to be some educational purpose to this you know we're not just doing it
+[1261] 2:17:34	for laughs you know we're not doing this to tear down other channels and other um other
+[1262] 2:17:40	creators or other ministries it really has to have has to be something that's edu that ends up being
+[1263] 2:17:46	educational and important to the community at large now in the case of ron wyatt's videos
+[1264] 2:17:52	there are people who are still as you say still distributing him um you know
+[1265] 2:17:57	i mean people are still basing their faith on this huckster you know i mean wrong why it's a huckster
+[1266] 2:18:04	um it might also be you also have might have psychological difficulties too i'm
+[1267] 2:18:10	not going to say because i'm not a psychiatrist and so not a psychologist and i'm not qualified to gauge his mental health
+[1268] 2:18:16	but um either way that what he's peddling out there is
+[1269] 2:18:22	is pretty bad info it's pretty bad info so what i would suggest is if you have a
+[1270] 2:18:28	suggestion you know leave it in the comments section and we'll look at it we won't guarantee we'll do it
+[1271] 2:18:34	but if it fits our criteria and if it's our broadcast schedule absolutely we will consider it so anyway thank you very
+[1272] 2:18:41	much for that question and uh very much appreciate okay
+[1273] 2:18:47	i see a warrior of the most high and
+[1274] 2:18:55	um
+[1275] 2:19:02	so warrior most high he goes how hard is it studying philosophy in
+[1276] 2:19:07	college um that's a difficult question
+[1277] 2:19:12	um some things uh some aspects of philosophy was pretty easy
+[1278] 2:19:18	um the the hardest thing about philosophy in college is keeping up with reading
+[1279] 2:19:24	it's a lot of reading you're reading every night many hours you spend many hours reading
+[1280] 2:19:30	and you end up having to read the same text over and over and over and over and over and over again to get the most meaning out of it
+[1281] 2:19:37	so that's the most difficulty but the difficult thing about studying philosophy is
+[1282] 2:19:44	structuring your day in such a way that you've got enough time to read
+[1283] 2:19:52	so as far as the content of philosophy it depends on on the philosopher you know
+[1284] 2:19:59	some some philosophers write very lucidly and it's very easy to to understand what they're reading
+[1285] 2:20:05	others it's quite cryptic uh like emmanuel kant he's he can be
+[1286] 2:20:11	quite cryptic at times um
+[1287] 2:20:17	it's not philosophical reading is not something you can skim
+[1288] 2:20:22	so you have to pay a very very it's a very sort of um exhausting thing to do philosophical
+[1289] 2:20:29	reading because you are having to pay attention you have to be a mindful reader as you read it
+[1290] 2:20:37	so without said however there are some other aspects of
+[1291] 2:20:43	philosophy that can be quite difficult too like symbolic logic
+[1292] 2:20:48	for somebody who's used to the humanities and doing a lot of reading symbolic logic provides a different
+[1293] 2:20:53	challenge because it's almost more like mathematics in its symbolic treatment of logical premises
+[1294] 2:21:00	so that can be very challenging to people who are not um who've never done
+[1295] 2:21:06	symbolic logic before so um that's that's that's that's sort of the uh
+[1296] 2:21:11	class that most philosophers dread is the symbolic logic class
+[1297] 2:21:17	so um so it's it'll be depend uh it'll depend
+[1298] 2:21:22	and it'll also depend too if you've got the mindset for it if you've got the mindset for it it can be relatively easy
+[1299] 2:21:29	if you don't have the mindset for it it can be relatively difficult so it's really going to depend depend on
+[1300] 2:21:35	what your where your strengths and your weaknesses are so anyway i hope that answered your question
+[1301] 2:21:40	i'm going to do one more scan because i say i am hungry
+[1302] 2:22:29	all right i'm going to take this question and it's going to be the last question of the night okay
+[1303] 2:22:34	uh muhammad kharam uh did the egyptians ever see uh varus and p ramses to be one
+[1304] 2:22:40	and the same no they didn't okay they never saw him to be one in the same city
+[1305] 2:22:49	and there's actually some really important geographical reasons why they never saw them to be the same okay
+[1306] 2:22:56	uh the first reason is they were actually separated by two kilometers now
+[1307] 2:23:03	two kilometers doesn't seem much to us today and that's because our
+[1308] 2:23:08	our mental and spatial geography has changed with the modern times
+[1309] 2:23:15	we are in many sense as a victim of rapid transit
+[1310] 2:23:21	we get into a car and we zip along two kilometers goes
+[1311] 2:23:27	you know you know 30 seconds later you're past two kilometers already i mean you just
+[1312] 2:23:32	zipping through and it's that's 30 seconds that's nothing at all walking two kilometers is different
+[1313] 2:23:40	okay you know you walk two kilometers and that's
+[1314] 2:23:46	maybe a 12 minute walk that's a still a good long walk you know and if you're you know carrying stuff maybe i have 20
+[1315] 2:23:52	minutes that's long enough to know that there's a difference between where you are and where you're going
+[1316] 2:23:59	okay the thing is in the ancient world many towns were
+[1317] 2:24:05	that close and was still seen as different towns you know up the city of david versus jerusalem
+[1318] 2:24:13	you know bethlehem is definitely different than jerusalem even though they're physically very close together
+[1319] 2:24:19	geography the perception of geography in the ancient world was such that even if it's relatively close if there's
+[1320] 2:24:27	any substantial difference that separates them they're seen as different towns
+[1321] 2:24:34	and two kilometers is more than enough to establish that okay
+[1322] 2:24:39	now that's the first reason they didn't seem the same second reason they didn't say them the same was that avarice was on the south bank
+[1323] 2:24:46	of the palesiac branch of the nile it's on the southern bank perramsis was
+[1324] 2:24:52	actually on an island so
+[1325] 2:24:57	p ramses was surrounded by water 365 days a year
+[1326] 2:25:03	okay it was geographically isolated okay so that's the second
+[1327] 2:25:11	reason they didn't consider it the same because it actually wasn't the same site there was no sort of physical transition
+[1328] 2:25:18	between one and the other the third reason was that they were actually co-current
+[1329] 2:25:24	cities at concurrent cities at one point uh during uh dynasty 19 early dynasty 19
+[1330] 2:25:33	uh avarus was fully occupied as was p ramses
+[1331] 2:25:39	so they were considered to be uh you know concurrent cities okay
+[1332] 2:25:45	fourth reason is after pauronsis was abandoned the
+[1333] 2:25:50	port sorry after avarus was abandoned the port adavarus was still in operation
+[1334] 2:25:58	it was the major seaport for both avarice and p ramses
+[1335] 2:26:04	and when you look at say late dynasty 20 this is long after of the major part of
+[1336] 2:26:10	the city of avars had been abandoned uh so into dynasty um 20
+[1337] 2:26:17	they're still calling the port edivarus the port of avarus
+[1338] 2:26:22	okay it's not being referred to as the port of ramses it's being still talked about as the port of avarus
+[1339] 2:26:30	so even as late as as dynasty the end of dynasty 20. you know they're still
+[1340] 2:26:35	talking about avarus as being separate from parramsees
+[1341] 2:26:42	so there's no way there's just i mean it's it's just not they weren't ever seen as one in the
+[1342] 2:26:49	same you know and there's there's plenty of evidence to show that that they weren't
+[1343] 2:26:54	ever considered to be the same place so anyway i hope that answered your question uh it is a question i get
+[1344] 2:27:00	fairly frequently especially given the tall tales given by
+[1345] 2:27:06	david roll and douglas petrovich you know but
+[1346] 2:27:12	geographically they're separated and in the egyptian mind they're separate also so
+[1347] 2:27:19	anyway thank you very much for that question and with that we are going to end tonight's uh live stream
+[1348] 2:27:25	um i want to thank everyone for joining us tonight uh wow what a great set of questions
+[1349] 2:27:31	tonight like always uh just we had a we had actually a surplus of questions tonight a lot of questions
+[1350] 2:27:37	and we always love seeing your questions uh i wanna again invite everyone to come
+[1351] 2:27:43	on to our discord server and continue the conversation um
+[1352] 2:27:49	i flirt in and out of the uh of the discord i don't engage anything
+[1353] 2:27:54	every conversation and i don't answer questions on discord uh but
+[1354] 2:28:00	oh you can get some my anime recommendations there and uh you can i'll enter some conversations
+[1355] 2:28:08	i want to also thank everyone who joined the live chat tonight and you know our
+[1356] 2:28:13	fridays this is the highlight of our week this is uh we kind of consider our live streams to be
+[1357] 2:28:19	um kind of a party and we love having you guys here and we love everyone who participates in the in
+[1358] 2:28:26	the uh the live chat we also want to thank our subscribers who watch our stuff uh you know
+[1359] 2:28:32	faithfully you know we're really really lucky that we have as engaged as subscriber base as
+[1360] 2:28:38	we do because you know they watch our videos and you know the more you watch the more
+[1361] 2:28:44	you hit the like button the more you hit the subscribe button the more youtube promotes the videos
+[1362] 2:28:49	so we're really really grateful to our subscribers thank you to the super chats because you guys keep us financially going and thank
+[1363] 2:28:56	you to the patreon supporters who help upgrade our equipment from time to time when it breaks which is more often than
+[1364] 2:29:01	i'd care to care to care to acknowledge um
+[1365] 2:29:08	yeah i need to get another usb router too so it's my last usb router died last week so it's
+[1366] 2:29:15	okay yeah so thank you patreon supporters you're buying me a new usb router
+[1367] 2:29:22	hub actually it's a hub so um so anyway uh i want to thank uh everyone who's participated in this and
+[1368] 2:29:29	and supports the ministry and um i will see you next time uh have
+[1369] 2:29:34	a great night everyone and i'll see you next time on ancient egypt and the bible
+[1370] 2:29:40	[Music]
+[1371] 2:30:39	you

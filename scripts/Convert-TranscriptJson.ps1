@@ -12,6 +12,9 @@ The TXT output contains one transcript segment per line:
 
     [22] 3:58    okay um how prevalent were the gnostics in egypt
 
+YouTube transcript exports can include non-transcript chapter/header markers in
+the same list as transcript rows. Those markers are skipped.
+
 Use TSV output when you need structured columns such as StartSeconds, StartMs,
 EndMs, Text, and direct YouTube timestamp links.
 
@@ -53,7 +56,7 @@ Converts multiple JSON files supplied through the pipeline.
 
 [CmdletBinding()]
 param(
-    [Parameter(Mandatory = $true, Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]
+    [Parameter(Mandatory = $true, Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, ValueFromRemainingArguments = $true)]
     [Alias('FullName')]
     [string[]] $Path,
 
@@ -107,38 +110,91 @@ begin {
         return '{0}:{1:00}' -f $span.Minutes, $span.Seconds
     }
 
-    function Get-TranscriptSegments {
-        param([pscustomobject] $JsonDocument)
+    function Get-ObjectPropertyValue {
+        param(
+            [object] $InputObject,
+            [string] $Name
+        )
 
-        $segments = @(
-            foreach ($action in @($JsonDocument.actions)) {
-                $panel = $action.updateEngagementPanelAction
+        if ($null -eq $InputObject) {
+            return $null
+        }
+
+        $property = $InputObject.PSObject.Properties[$Name]
+        if ($null -eq $property) {
+            return $null
+        }
+
+        return $property.Value
+    }
+
+    function Get-NestedObjectPropertyValue {
+        param(
+            [object] $InputObject,
+            [string[]] $PropertyPath
+        )
+
+        $current = $InputObject
+        foreach ($propertyName in $PropertyPath) {
+            $current = Get-ObjectPropertyValue -InputObject $current -Name $propertyName
+            if ($null -eq $current) {
+                return $null
+            }
+        }
+
+        return $current
+    }
+
+    function Get-TranscriptSegmentRenderer {
+        param([object] $Segment)
+
+        return Get-ObjectPropertyValue -InputObject $Segment -Name 'transcriptSegmentRenderer'
+    }
+
+    function Get-TranscriptSegmentEntries {
+        param([object] $JsonDocument)
+
+        $entries = @(
+            foreach ($action in @(Get-ObjectPropertyValue -InputObject $JsonDocument -Name 'actions')) {
+                $panel = Get-ObjectPropertyValue -InputObject $action -Name 'updateEngagementPanelAction'
                 if ($null -eq $panel) {
                     continue
                 }
 
-                $list = $panel.content.transcriptRenderer.content.transcriptSearchPanelRenderer.body.transcriptSegmentListRenderer
-                if ($null -ne $list -and $null -ne $list.initialSegments) {
-                    $list.initialSegments
+                $list = Get-NestedObjectPropertyValue -InputObject $panel -PropertyPath @(
+                    'content'
+                    'transcriptRenderer'
+                    'content'
+                    'transcriptSearchPanelRenderer'
+                    'body'
+                    'transcriptSegmentListRenderer'
+                )
+                $initialSegments = Get-ObjectPropertyValue -InputObject $list -Name 'initialSegments'
+                if ($null -ne $initialSegments) {
+                    $initialSegments
                 }
             }
         )
 
-        if ($segments.Count -eq 0) {
+        if ($entries.Count -eq 0) {
             throw 'No transcript segments found. Expected YouTube transcript JSON with actions[].updateEngagementPanelAction...initialSegments.'
         }
 
-        return $segments
+        return $entries
     }
 
     function Get-TranscriptText {
-        param([pscustomobject] $Renderer)
+        param([object] $Renderer)
 
-        if ($null -ne $Renderer.snippet.runs) {
-            $text = ($Renderer.snippet.runs | ForEach-Object { $_.text }) -join ''
+        $snippet = Get-ObjectPropertyValue -InputObject $Renderer -Name 'snippet'
+        $runs = Get-ObjectPropertyValue -InputObject $snippet -Name 'runs'
+        $simpleText = Get-ObjectPropertyValue -InputObject $snippet -Name 'simpleText'
+
+        if ($null -ne $runs) {
+            $text = ($runs | ForEach-Object { Get-ObjectPropertyValue -InputObject $_ -Name 'text' }) -join ''
         }
-        elseif ($null -ne $Renderer.snippet.simpleText) {
-            $text = $Renderer.snippet.simpleText
+        elseif ($null -ne $simpleText) {
+            $text = $simpleText
         }
         else {
             $text = ''
@@ -147,24 +203,50 @@ begin {
         return ($text -replace '[\r\n\t]+', ' ').Trim()
     }
 
+    function Get-YouTubeVideoIdFromUrl {
+        param([string] $Url)
+
+        if ([string]::IsNullOrWhiteSpace($Url)) {
+            return ''
+        }
+
+        if ($Url -match '^[A-Za-z0-9_-]{8,}$') {
+            return $Url
+        }
+
+        if ($Url -match 'youtu\.be/([^?&/]+)') {
+            return $Matches[1]
+        }
+
+        if ($Url -match '[?&]v=([^?&]+)') {
+            return $Matches[1]
+        }
+
+        if ($Url -match 'youtube\.com/(?:embed|live|shorts)/([^?&/]+)') {
+            return $Matches[1]
+        }
+
+        return ''
+    }
+
     function Get-VideoId {
         param(
             [object[]] $Segments,
             [string] $Url
         )
 
-        if (-not [string]::IsNullOrWhiteSpace($Url)) {
-            if ($Url -match 'youtu\.be/([^?&/]+)') {
-                return $Matches[1]
-            }
-
-            if ($Url -match '[?&]v=([^?&]+)') {
-                return $Matches[1]
-            }
+        $videoIdFromUrl = Get-YouTubeVideoIdFromUrl -Url $Url
+        if (-not [string]::IsNullOrWhiteSpace($videoIdFromUrl)) {
+            return $videoIdFromUrl
         }
 
         foreach ($segment in $Segments) {
-            $targetId = $segment.transcriptSegmentRenderer.targetId
+            $renderer = Get-TranscriptSegmentRenderer -Segment $segment
+            if ($null -eq $renderer) {
+                continue
+            }
+
+            $targetId = Get-ObjectPropertyValue -InputObject $renderer -Name 'targetId'
             if ([string]::IsNullOrWhiteSpace($targetId)) {
                 continue
             }
@@ -184,34 +266,48 @@ begin {
             [string] $ResolvedVideoId
         )
 
-        $rows = for ($i = 0; $i -lt $Segments.Count; $i++) {
-            $renderer = $Segments[$i].transcriptSegmentRenderer
-            if ($null -eq $renderer) {
-                continue
-            }
+        $rowIndex = 0
+        $rows = @(
+            foreach ($segment in $Segments) {
+                $renderer = Get-TranscriptSegmentRenderer -Segment $segment
+                if ($null -eq $renderer) {
+                    continue
+                }
 
-            $startMs = [int64] $renderer.startMs
-            $endMs = if ($null -ne $renderer.endMs) { [int64] $renderer.endMs } else { $null }
-            $startSeconds = [int] [Math]::Floor($startMs / 1000)
-            $timestamp = $renderer.startTimeText.simpleText
-            if ([string]::IsNullOrWhiteSpace($timestamp)) {
-                $timestamp = Convert-SecondsToTimestamp -Seconds $startSeconds
-            }
+                $startMsValue = Get-ObjectPropertyValue -InputObject $renderer -Name 'startMs'
+                if ([string]::IsNullOrWhiteSpace($startMsValue)) {
+                    throw 'Transcript segment is missing startMs.'
+                }
 
-            $link = ''
-            if (-not [string]::IsNullOrWhiteSpace($ResolvedVideoId)) {
-                $link = "https://youtu.be/${ResolvedVideoId}?t=$startSeconds"
-            }
+                $startMs = [int64] $startMsValue
+                $endMsValue = Get-ObjectPropertyValue -InputObject $renderer -Name 'endMs'
+                $endMs = if (-not [string]::IsNullOrWhiteSpace($endMsValue)) { [int64] $endMsValue } else { $null }
+                $startSeconds = [int] [Math]::Floor($startMs / 1000)
+                $timestamp = Get-NestedObjectPropertyValue -InputObject $renderer -PropertyPath @('startTimeText', 'simpleText')
+                if ([string]::IsNullOrWhiteSpace($timestamp)) {
+                    $timestamp = Convert-SecondsToTimestamp -Seconds $startSeconds
+                }
 
-            [pscustomobject] @{
-                Index        = $i
-                Timestamp    = $timestamp
-                StartSeconds = $startSeconds
-                StartMs      = $startMs
-                EndMs        = $endMs
-                Text         = Get-TranscriptText -Renderer $renderer
-                Link         = $link
+                $link = ''
+                if (-not [string]::IsNullOrWhiteSpace($ResolvedVideoId)) {
+                    $link = "https://youtu.be/${ResolvedVideoId}?t=$startSeconds"
+                }
+
+                [pscustomobject] @{
+                    Index        = $rowIndex
+                    Timestamp    = $timestamp
+                    StartSeconds = $startSeconds
+                    StartMs      = $startMs
+                    EndMs        = $endMs
+                    Text         = Get-TranscriptText -Renderer $renderer
+                    Link         = $link
+                }
+                $rowIndex++
             }
+        )
+
+        if ($rows.Count -eq 0) {
+            throw 'No transcript rows found. The JSON contained transcript metadata but no transcriptSegmentRenderer entries.'
         }
 
         return @($rows)
@@ -267,7 +363,7 @@ process {
         }
 
         $document = Get-Content -LiteralPath $resolvedPath -Raw | ConvertFrom-Json
-        $segments = Get-TranscriptSegments -JsonDocument $document
+        $segments = Get-TranscriptSegmentEntries -JsonDocument $document
         $videoId = Get-VideoId -Segments $segments -Url $VideoUrl
         $rows = Convert-TranscriptRows -Segments $segments -ResolvedVideoId $videoId
 

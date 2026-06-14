@@ -37,14 +37,14 @@ src/
   transcripts/
     json/                     Raw YouTube transcript JSON exports
     txt/                      Generated working transcript text files
-    tsv/                      Optional generated TSV files, created on demand
+    tsv/                      Optional generated TSV files, created only when needed
 ```
 
 ## File Types
 
 `src/transcripts/json/` contains raw YouTube transcript exports. Treat these as the source of record when rebuilding or auditing transcript-derived files.
 
-`src/transcripts/txt/` contains generated working transcripts. Each line has a segment index, display timestamp, and transcript text. These files are optimized for fast `rg`, `Select-String`, and Codex-assisted review.
+`src/transcripts/txt/` contains generated working transcripts. Each line has a segment index, display timestamp, and transcript text. These files are optimized for fast `rg`, `Select-String`, and Codex-assisted review. They are the preferred working files for curating `docs/questions/` pages.
 
 `src/transcripts/tsv/` is optional generated output for structured processing. TSV rows include columns such as `Timestamp`, `StartSeconds`, `Text`, and `Link`.
 
@@ -66,11 +66,12 @@ For structured processing, generate TSV instead:
 pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/14-fourteen-pieces-of-osiris.json -Format Tsv
 ```
 
-The script can also process multiple files from the pipeline:
+The script can also process multiple explicit files:
 
 ```powershell
-Get-ChildItem src/transcripts/json/14-*.json,src/transcripts/json/15-*.json |
-    pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1
+pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 `
+    src/transcripts/json/14-fourteen-pieces-of-osiris.json `
+    src/transcripts/json/15-and-other-taboo-jewish-numbers.json
 ```
 
 ## How to Use This Reference
@@ -81,28 +82,30 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 
 ## Current Status
 
-The archive contains raw JSON transcript data for many livestreams through episode 208. Curated Markdown pages currently cover episodes 1-13, plus a super-chat-focused page for episode 208. Generated TXT working transcripts currently exist for episodes 12, 14, and 15.
+The repository has JSON transcript files for episodes 1-208. Of those, 206 contain transcript segments and have generated TXT working transcripts. Curated Markdown pages currently cover episodes 1-13, plus a super-chat-focused page for episode 208.
 
 Curated pages should be treated as reference aids, not full replacements for the original video or transcript.
 
-Known transcript gaps:
+Known transcript gaps and blocked placeholders:
 
-- Episode 118 has an empty JSON placeholder: [118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks.json](src/transcripts/json/118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks.json)
-- Episode 162 has an empty JSON placeholder: [162-king-for-a-day.json](src/transcripts/json/162-king-for-a-day.json)
-- Episode 209 and newer still need transcript pulls.
+- Episode 118 has an empty JSON placeholder and no generated TXT file: [118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks.json](src/transcripts/json/118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks.json)
+- Episode 162 has an empty JSON placeholder and no generated TXT file: [162-king-for-a-day.json](src/transcripts/json/162-king-for-a-day.json)
+- `src/live-stream-list.md` includes episode 209, but no transcript JSON for that episode is present in this repository yet.
 
 ## Contributing Notes
 
 When converting transcripts:
 
 - Keep raw YouTube JSON exports under `src/transcripts/json/`.
-- Generate TXT working files with `scripts/Convert-TranscriptJson.ps1` when a matching TXT file is missing.
+- Prefer the generated TXT files under `src/transcripts/txt/` for transcript inspection and Q&A curation.
+- Generate TXT working files with `scripts/Convert-TranscriptJson.ps1` when a matching TXT file is missing and the JSON source is non-empty.
 - Use TSV output only when structured columns are needed for a processing task.
 - Do not hand-edit generated TXT or TSV files unless the goal is explicitly to repair generated output.
 
 When adding or improving a curated page:
 
 - Keep the episode number and title clear at the top.
+- Use `docs/questions/<slug>-questions.md` for ordinary episode pages, unless the slug already ends in `questions`; in that case use `docs/questions/<slug>.md`.
 - Prefer tables for question lists, topic indexes, and timestamp references.
 - Link timestamps directly to YouTube with the `?t=` parameter.
 - Use short, factual answer summaries when the transcript supports them.
