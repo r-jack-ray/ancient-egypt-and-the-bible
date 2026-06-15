@@ -35,6 +35,38 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 - [Episode 26: I Can't Believe We've Been Doing This For 6 Months](docs/questions/26-i-cant-believe-weve-been-doing-this-for-6-months-questions.md)
 - [Episode 27: Number of New Testament Books](docs/questions/27-number-of-new-testament-books-questions.md)
 - [Episode 28: The Popcorn Must Flow](docs/questions/28-the-popcorn-must-flow-questions.md)
+- [Episode 29: A Copper Penny For Your Thoughts](docs/questions/29-a-copper-penny-for-your-thoughts-questions.md)
+- [Episode 30: Full Moon on Saturday](docs/questions/30-full-moon-on-saturday-questions.md)
+- [Episode 31: Twas the Night Before the Night Before Christmas](docs/questions/31-twas-the-night-before-the-night-before-christmas-questions.md)
+- [Episode 32: Last Stream for 2021](docs/questions/32-last-stream-for-2021-questions.md)
+- [Episode 33: Twenty-Twenty Too](docs/questions/33-twenty-twenty-too-questions.md)
+- [Episode 34: Nothing Keeps a Sock Puppet Down, Could Be](docs/questions/34-nothing-keeps-a-sock-puppet-down-could-be-questions.md)
+- [Episode 35: Pyramids Versus Tetrahedrons](docs/questions/35-pyramids-versus-tetrahedrons-questions.md)
+- [Episode 36: Sum of the Integers of the Beast](docs/questions/36-sum-of-the-integers-of-the-beast-questions.md)
+- [Episode 37: Normal Temp Before Mummification](docs/questions/37-normal-temp-before-mummification-questions.md)
+- [Episode 38: A Doctorate for Every Bunny](docs/questions/38-a-doctorate-for-every-bunny-questions.md)
+- [Episode 39: Master of the Sock Puppets](docs/questions/39-master-of-the-sock-puppets-questions.md)
+- [Episode 40: The Indefinite Extended Idiom](docs/questions/40-the-indefinite-extended-idiom-questions.md)
+- [Episode 41: Celebrating 5000 Subs](docs/questions/41-celebrating-5000-subs-questions.md)
+- [Episode 42: Answer to the Ultimate Question of Life, the Universe, and Everything](docs/questions/42-answer-to-the-ultimate-question-of-life-the-universe-and-everything-questions.md)
+- [Episode 43: Discovering the Rediscovered Exodus](docs/questions/43-discovering-the-rediscovered-exodus-questions.md)
+- [Episode 44: Voted Most Likely to Become an Atheist by Atheists](docs/questions/44-voted-most-likely-to-become-an-atheist-by-atheists-questions.md)
+- [Episode 45: Amulets and Rumors of Amulets](docs/questions/45-amulets-and-rumors-of-amulets-questions.md)
+- [Episode 46: God Is Our Refuge and Strength](docs/questions/46-god-is-our-refuge-and-strength-questions.md)
+- [Episode 47: Passover 2022](docs/questions/47-passover-2022-questions.md)
+- [Episode 48: Good Friday Orthodox Style](docs/questions/48-good-friday-orthodox-style-questions.md)
+- [Episode 49: Counting the Omer](docs/questions/49-counting-the-omer-questions.md)
+- [Episode 50: Terminator Edition](docs/questions/50-terminator-edition-questions.md)
+- [Episode 51: Manna Machines Over Area 51](docs/questions/51-manna-machines-over-area-51-questions.md)
+- [Episode 52: One Year Streaming, We Can't Believe It Either](docs/questions/52-one-year-streaming-we-cant-believe-it-either-questions.md)
+- [Episode 53: Harmony and Discord](docs/questions/53-harmony-and-discord-questions.md)
+- [Episode 54: Amun-Re Dumps Amonet](docs/questions/54-amun-re-dumps-amonet-questions.md)
+- [Episode 55: Beastie Under the Hood](docs/questions/55-beastie-under-the-hood-questions.md)
+- [Episode 56: Celebrating Like a Statistician: 6000 +/- 10 Subs](docs/questions/56-celebrating-like-a-statistician-6000-10-subs-questions.md)
+- [Episode 57: This Business Is Our Fifty-Seven](docs/questions/57-this-business-is-our-fifty-seven-questions.md)
+- [Episode 58: Is Like the Luckiest Number Ever](docs/questions/58-is-like-the-luckiest-number-ever-questions.md)
+- [Episode 59: No Space Like Home](docs/questions/59-no-space-like-home-questions.md)
+- [Episode 60: Early Alphabetic Inscriptions in Funnel Cakes](docs/questions/60-early-alphabetic-inscriptions-in-funnel-cakes-questions.md)
 - [Episode 208: Hysterical Context Error](docs/questions/208-hysterical-context-error-questions.md)
 
 ## Repository Layout
@@ -96,7 +128,7 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 
 ## Current Status
 
-The repository has JSON transcript files for episodes 1-208. Of those, 206 contain transcript segments and have generated TXT working transcripts. Curated Markdown pages currently cover episodes 1-13 and 208, plus a super-chat-focused special page for episode 208.
+The repository has JSON transcript files for episodes 1-208. Of those, 206 contain transcript segments and have generated TXT working transcripts. Curated Markdown pages currently cover episodes 1-60 and 208.
 
 Curated pages should be treated as reference aids, not full replacements for the original video or transcript.
 
