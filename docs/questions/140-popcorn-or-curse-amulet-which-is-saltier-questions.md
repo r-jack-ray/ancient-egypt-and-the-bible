@@ -1,0 +1,17 @@
+# Questions in Livestream 140
+
+Live Stream #140: Popcorn or Curse Amulet, which is Saltier?
+
+Time links open the YouTube video at the relevant timestamp. The links use HTML anchors so GitHub can render them with `target="_blank"`.
+
+| Time | Question | Short answer / answer direction |
+|---:|---|---|
+| <a href="https://youtu.be/X3LyU6SOsNM?t=436" target="_blank" rel="noopener noreferrer">7:16</a> | why do early daters and super early daters tend to revise Egyptian chronology in opposite directions early d push it 20 to 30 years back and super... | centuries forward okay it comes down to what ideological acts are they trying to grind that's what it comes down to in the case of early daters they're |
+| <a href="https://youtu.be/X3LyU6SOsNM?t=667" target="_blank" rel="noopener noreferrer">11:07</a> | you often hear gnostics that speak of from a Christian view saying that the Old Testament God is evil and the New Testament God is good | okay we'll get into that in a moment are there any groups which claim the reverse I.E the New Testament God is evil and the old Testament God... |
+| <a href="https://youtu.be/X3LyU6SOsNM?t=1021" target="_blank" rel="noopener noreferrer">17:01</a> | do you think the pyramids were built using filler materials oh yeah we do have evidence of filler materials being used in pyramids now the best pyr... | okay for example we do find some filler materials in say the pyramids of cfru uh the mom pyramid they would put like solid stone |
+| <a href="https://youtu.be/X3LyU6SOsNM?t=1532" target="_blank" rel="noopener noreferrer">25:32</a> | was not sinful to get intoxicated how would you interpret 1 Corinthians 610 and Galatians 59 to 21 | okay now both of these passages use the same word so we'll just pick 1 Corinthians 6:10 here because that's probably the simplest let's pull up our bbal... |
+| <a href="https://youtu.be/X3LyU6SOsNM?t=1821" target="_blank" rel="noopener noreferrer">30:21</a> | is that accurate yeah that'd be accurate it would be it would be kind of the alcoholism where and really even | sort of that that alcoholism where you are sort of out of control dysfunctional willful alcoholism dysfunctional willful alcoholism that's how I would Define that's would be probably... |
+| <a href="https://youtu.be/X3LyU6SOsNM?t=4488" target="_blank" rel="noopener noreferrer">1:14:48</a> | did Jesus go to hell after he died | okay you only find that in the Latin version of the Creeds now you don't find that in the Bible you don't find that in the Greek version... |
+| <a href="https://youtu.be/X3LyU6SOsNM?t=5073" target="_blank" rel="noopener noreferrer">1:24:33</a> | did Adam see the face of God uh | probably yeah probably but again in a sinless state there would have been no fear of Holiness there would have been no trauma he could have easily seen... |
+| <a href="https://youtu.be/X3LyU6SOsNM?t=9734" target="_blank" rel="noopener noreferrer">2:42:14</a> | are you saying that you only need to believe to be saved | yes it always has been Abraham was saved by faith this is what true of the Patriarchs this was true of the Israelites it's true of the Christians... |
+| <a href="https://youtu.be/X3LyU6SOsNM?t=14916" target="_blank" rel="noopener noreferrer">4:08:36</a> | is the internet and social media a net good or net bad for the gospel it's a net neutral I'll say it's got good sides and bad sides um it does Reac... | illegal like we did have um some people times people ask us now why do you accept cryptocurrency for donation okay |
