@@ -207,7 +207,7 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 
 ## Current Status
 
-The repository has JSON transcript files for episodes 1-208. Of those, 206 contain transcript segments and have generated TXT working transcripts. Curated Markdown pages currently cover episodes 1-117, 119-140, and 208.
+The repository has JSON transcript files for episodes 1-208. Of those, 206 contain transcript segments and have generated TXT working transcripts. Curated Markdown pages currently cover episodes 1-117, 119-161, and 163-208.
 
 Curated pages should be treated as reference aids, not full replacements for the original video or transcript.
 

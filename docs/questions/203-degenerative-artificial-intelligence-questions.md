@@ -1,0 +1,14 @@
+# Questions in Livestream 203
+
+Live Stream #203: Degenerative Artificial Intelligence
+
+Time links open the YouTube video at the relevant timestamp.
+
+| Time | Question | Short answer / answer direction |
+|---:|---|---|
+| <a href="https://youtu.be/6DKyKGhC8Q4?t=693" target="_blank" rel="noopener noreferrer">11:33</a> | How can a late-date Exodus view handle Merneptah's campaign overlapping Joshua's era? | He said the overlap is not fatal because Merneptah targeted places like Gezer while Israel was still concentrated farther inland around Shiloh. |
+| <a href="https://youtu.be/6DKyKGhC8Q4?t=1285" target="_blank" rel="noopener noreferrer">21:25</a> | Why do you favor the conspiracy-assassination reading of Ay and Horemheb's succession? | He pointed especially to the Dakhamunzu affair as the reason he leans that way. |
+| <a href="https://youtu.be/6DKyKGhC8Q4?t=1636" target="_blank" rel="noopener noreferrer">27:16</a> | What does it mean to incorporate a Christian worldview into fiction? | He argued for embedding a moral vision in the story itself rather than turning fiction into a sermon. |
+| <a href="https://youtu.be/6DKyKGhC8Q4?t=2004" target="_blank" rel="noopener noreferrer">33:24</a> | Are there Egyptian texts that treat Ramesses and Avaris as separate sites, and what would that imply? | Yes. He said they are genuinely separate places, divided by both distance and water, which matters for Exodus-site arguments. |
+| <a href="https://youtu.be/6DKyKGhC8Q4?t=2520" target="_blank" rel="noopener noreferrer">42:00</a> | In Luke 23:43, does "today" mean immediately, soon, or just someday? | He treated the saying as pointing to immediate postmortem fellowship rather than an indefinite someday. |
+| <a href="https://youtu.be/6DKyKGhC8Q4?t=3600" target="_blank" rel="noopener noreferrer">1:00:00</a> | If ancient Hebrew originally wrote mainly consonants, how do we know how names were pronounced? | He said the issue is not a total absence of vowels but how vocalization is recovered through tradition, comparative evidence, and language history. |
