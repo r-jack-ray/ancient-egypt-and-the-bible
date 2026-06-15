@@ -20,6 +20,10 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 - [Episode 11: Questions at the Eleventh Hour](docs/questions/11-questions-at-the-eleventh-hour-questions.md)
 - [Episode 12: The Quorum of the Twelve](docs/questions/12-the-quorum-of-the-twelve-questions.md)
 - [Episode 13: Triskaidekaphobia](docs/questions/13-triskaidekaphobia-questions.md)
+- [Episode 14: Fourteen Pieces of Osiris](docs/questions/14-fourteen-pieces-of-osiris-questions.md)
+- [Episode 15: And Other Taboo Jewish Numbers](docs/questions/15-and-other-taboo-jewish-numbers-questions.md)
+- [Episode 16: Questions from the East](docs/questions/16-questions-from-the-east-questions.md)
+- [Episode 17: Back to Prime Time](docs/questions/17-back-to-prime-time-questions.md)
 - [Episode 208: Hysterical Context Error](docs/questions/208-hysterical-context-error-questions.md)
 
 ## Repository Layout
