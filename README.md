@@ -24,6 +24,17 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 - [Episode 15: And Other Taboo Jewish Numbers](docs/questions/15-and-other-taboo-jewish-numbers-questions.md)
 - [Episode 16: Questions from the East](docs/questions/16-questions-from-the-east-questions.md)
 - [Episode 17: Back to Prime Time](docs/questions/17-back-to-prime-time-questions.md)
+- [Episode 18: For the Good Life](docs/questions/18-for-the-good-life-questions.md)
+- [Episode 19: The First of Octember](docs/questions/19-the-first-of-octember-questions.md)
+- [Episode 20: What's Your Twenty?](docs/questions/20-whats-your-twenty-questions.md)
+- [Episode 21: The Weight of the Soul](docs/questions/21-the-weight-of-the-soul-questions.md)
+- [Episode 22: The Catch-22 of Questions](docs/questions/22-the-catch-22-of-questions-questions.md)
+- [Episode 23: The 23 Enigma](docs/questions/23-the-23-enigma-questions.md)
+- [Episode 24: The 24 Thrones](docs/questions/24-the-24-thrones-questions.md)
+- [Episode 25: The Canonical Age For Levitical Priests](docs/questions/25-the-canonical-age-for-levitical-priests-questions.md)
+- [Episode 26: I Can't Believe We've Been Doing This For 6 Months](docs/questions/26-i-cant-believe-weve-been-doing-this-for-6-months-questions.md)
+- [Episode 27: Number of New Testament Books](docs/questions/27-number-of-new-testament-books-questions.md)
+- [Episode 28: The Popcorn Must Flow](docs/questions/28-the-popcorn-must-flow-questions.md)
 - [Episode 208: Hysterical Context Error](docs/questions/208-hysterical-context-error-questions.md)
 
 ## Repository Layout
