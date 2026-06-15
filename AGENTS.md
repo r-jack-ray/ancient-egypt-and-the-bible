@@ -70,7 +70,7 @@ If a matching TXT file does not exist and the JSON source is non-empty, generate
 pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/<slug>.json
 ```
 
-If the converter reports that no transcript segments were found, treat the JSON as an empty placeholder and do not create a fabricated curated page. The known empty placeholders are episodes 118 and 162.
+If the converter reports that no transcript segments were found, treat the JSON as an empty placeholder and do not create a fabricated curated page.
 
 Backlog note: curated Markdown reference pages still need to be filled in for livestream episodes 14 through 207, with episodes 118 and 162 currently blocked by empty JSON placeholders. When the user asks for the "next two episodes" in this repository, interpret that as the next two missing episode Markdown pages in ascending episode order from that backlog that have transcript data; note blocked placeholder episodes if encountered. Once episodes 14 through 207 are complete or explicitly accounted for, remove this backlog note from `AGENTS.md`.
 
