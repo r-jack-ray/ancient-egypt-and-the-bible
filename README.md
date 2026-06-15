@@ -67,6 +67,12 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 - [Episode 58: Is Like the Luckiest Number Ever](docs/questions/58-is-like-the-luckiest-number-ever-questions.md)
 - [Episode 59: No Space Like Home](docs/questions/59-no-space-like-home-questions.md)
 - [Episode 60: Early Alphabetic Inscriptions in Funnel Cakes](docs/questions/60-early-alphabetic-inscriptions-in-funnel-cakes-questions.md)
+- [Episode 61: Understanding Hell, There Will Be a Test](docs/questions/61-understanding-hell-there-will-be-a-test-questions.md)
+- [Episode 62: Kernels of Truth](docs/questions/62-kernels-of-truth-questions.md)
+- [Episode 63: Wash and Wear Charioteer Gear](docs/questions/63-wash-and-wear-charioteer-gear-questions.md)
+- [Episode 64: A Flock of Horus Birds](docs/questions/64-a-flock-of-horus-birds-questions.md)
+- [Episode 65: The Storage City of Popcorn](docs/questions/65-the-storage-city-of-popcorn-questions.md)
+- [Episode 66: Osiris, Vampires, and Other Undead Playas.](docs/questions/66-osiris-vampires-and-other-undead-playas-questions.md)
 - [Episode 208: Hysterical Context Error](docs/questions/208-hysterical-context-error-questions.md)
 
 ## Repository Layout
@@ -128,7 +134,7 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 
 ## Current Status
 
-The repository has JSON transcript files for episodes 1-208. Of those, 206 contain transcript segments and have generated TXT working transcripts. Curated Markdown pages currently cover episodes 1-60 and 208.
+The repository has JSON transcript files for episodes 1-208. Of those, 206 contain transcript segments and have generated TXT working transcripts. Curated Markdown pages currently cover episodes 1-66 and 208.
 
 Curated pages should be treated as reference aids, not full replacements for the original video or transcript.
 
