@@ -20,6 +20,8 @@ The public-facing Markdown output belongs under `docs/questions/`.
 
 Keep raw transcript source data under `src/`.
 
+A master list of live streams is in `src/live-stream-list.md`.
+
 ## Source Files
 
 Use `src/transcripts/json/*.json` as the source of record.
@@ -34,6 +36,8 @@ src/transcripts/txt/12-the-quorum-of-the-twelve.txt
 The generated TXT corpus currently covers all non-empty JSON transcript exports.
 
 If the TXT file does not exist for a target JSON file, generate it before curating:
+
+If the JSON and TXT transcripts do not exist, report and do not continue processing for that request.
 
 ```powershell
 pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/12-the-quorum-of-the-twelve.json
