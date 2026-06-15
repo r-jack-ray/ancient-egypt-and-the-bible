@@ -33,11 +33,9 @@ src/transcripts/json/12-the-quorum-of-the-twelve.json
 src/transcripts/txt/12-the-quorum-of-the-twelve.txt
 ```
 
-The generated TXT corpus currently covers all non-empty JSON transcript exports.
-
-If the TXT file does not exist for a target JSON file, generate it before curating:
-
-If the JSON and TXT transcripts do not exist, report and do not continue processing for that request.
+If JSON is missing, report the blocker and stop for that stream.
+If JSON exists but TXT is missing, generate TXT.
+If conversion reports no transcript segments, treat it as an empty placeholder.
 
 ```powershell
 pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/12-the-quorum-of-the-twelve.json
@@ -174,9 +172,7 @@ When the transcript TXT line has only the display timestamp, convert it to secon
 
 Pages under `docs/questions/` are public-facing GitHub Pages content.
 
-When adding new pages, update `README.md` if it is maintaining an explicit episode-link list. `docs/index.html` searches `docs/questions/` dynamically and usually does not need a per-page link update.
-
-For a large number of pages, prefer a grouped Markdown index under `docs/questions/`, leaving the existing `docs/index.html` search page intact unless the search UI itself needs to change:
+When adding new pages, update `README.md` if it is maintaining an explicit episode-link list.
 
 ```text
 docs/questions/index.md
@@ -203,3 +199,11 @@ If adding a new curated episode page, ensure the README file links to the new pa
 If a TXT file was generated for the episode, verify it exists under `src/transcripts/txt/` and that its line count matches the transcript segment count reported by the converter.
 
 If migrating old generated pages, move them from `src/md/` to `docs/questions/` and update any README, index, or search-page references that still point at `src/md/`.
+
+Done means:
+- output is under docs/questions/
+- timestamp links use ?t=seconds
+- questions are supported by transcript text
+- table renders correctly
+- README explicit episode list/status is updated if needed
+- no new references point to src/md/ or transcripts/livestreams/md/
