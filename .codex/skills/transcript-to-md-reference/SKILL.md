@@ -31,7 +31,7 @@ src/transcripts/json/12-the-quorum-of-the-twelve.json
 src/transcripts/txt/12-the-quorum-of-the-twelve.txt
 ```
 
-The generated TXT corpus currently covers all non-empty JSON transcript exports through episode 208. Episodes 118 and 162 are known empty JSON placeholders and should not produce TXT files or curated pages until real transcript data is added.
+The generated TXT corpus currently covers all non-empty JSON transcript exports.
 
 If the TXT file does not exist for a target JSON file, generate it before curating:
 

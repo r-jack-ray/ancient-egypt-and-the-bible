@@ -5,8 +5,9 @@ Converts a YouTube transcript JSON export into a plain TXT or TSV working transc
 
 .DESCRIPTION
 Use this script from the repository root to create generated transcript files for
-Codex or manual transcript review. By default it reads a JSON file from
-src/transcripts/json/ and writes a matching TXT file to src/transcripts/txt/.
+Codex or manual transcript review. If no input path is provided, it reads every
+JSON file currently present in src/transcripts/json/ and writes matching TXT
+files to src/transcripts/txt/.
 
 The TXT output contains one transcript segment per line:
 
@@ -19,7 +20,8 @@ Use TSV output when you need structured columns such as StartSeconds, StartMs,
 EndMs, Text, and direct YouTube timestamp links.
 
 .PARAMETER Path
-One or more transcript JSON files to convert.
+One or more transcript JSON files to convert. If omitted, all *.json files in
+src/transcripts/json/ are converted.
 
 .PARAMETER Format
 Output format. Use Txt for readable working transcripts or Tsv for structured
@@ -39,6 +41,12 @@ Fails if the output file already exists. Without this switch, generated output
 is overwritten so repeated processing stays simple.
 
 .EXAMPLE
+pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1
+
+Converts all JSON files in src/transcripts/json/ to TXT files in
+src/transcripts/txt/.
+
+.EXAMPLE
 pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/12-the-quorum-of-the-twelve.json
 
 Creates src/transcripts/txt/12-the-quorum-of-the-twelve.txt.
@@ -56,9 +64,9 @@ Converts multiple JSON files supplied through the pipeline.
 
 [CmdletBinding()]
 param(
-    [Parameter(Mandatory = $true, Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, ValueFromRemainingArguments = $true)]
+    [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, ValueFromRemainingArguments = $true)]
     [Alias('FullName')]
-    [string[]] $Path,
+    [string[]] $Path = @(),
 
     [ValidateSet('Txt', 'Tsv')]
     [string] $Format = 'Txt',
@@ -73,6 +81,7 @@ param(
 begin {
     Set-StrictMode -Version Latest
     $ErrorActionPreference = 'Stop'
+    $inputPaths = [System.Collections.Generic.List[string]]::new()
 
     function Resolve-RepositoryRoot {
         param([string] $StartPath)
@@ -97,6 +106,38 @@ begin {
         }
 
         throw "Could not find repository root from '$StartPath'. Expected src/transcripts/json."
+    }
+
+    function Resolve-DefaultRepositoryRoot {
+        $candidateStartPaths = @((Get-Location).Path)
+        if (-not [string]::IsNullOrWhiteSpace($PSScriptRoot)) {
+            $candidateStartPaths += $PSScriptRoot
+        }
+
+        foreach ($startPath in ($candidateStartPaths | Select-Object -Unique)) {
+            try {
+                return Resolve-RepositoryRoot -StartPath $startPath
+            }
+            catch {
+                continue
+            }
+        }
+
+        throw 'Could not find repository root from the current location or script path. Expected src/transcripts/json.'
+    }
+
+    function Get-DefaultTranscriptJsonPaths {
+        $repoRoot = Resolve-DefaultRepositoryRoot
+        $jsonRoot = Join-Path -Path $repoRoot -ChildPath 'src/transcripts/json'
+        $jsonFiles = @(Get-ChildItem -LiteralPath $jsonRoot -Filter '*.json' -File | Sort-Object -Property Name)
+
+        if ($jsonFiles.Count -eq 0) {
+            throw "No transcript JSON files found in $jsonRoot."
+        }
+
+        foreach ($jsonFile in $jsonFiles) {
+            $jsonFile.FullName
+        }
     }
 
     function Convert-SecondsToTimestamp {
@@ -340,7 +381,21 @@ begin {
 }
 
 process {
-    foreach ($inputPath in $Path) {
+    foreach ($inputPath in @($Path)) {
+        if (-not [string]::IsNullOrWhiteSpace($inputPath)) {
+            [void] $inputPaths.Add($inputPath)
+        }
+    }
+}
+
+end {
+    if ($inputPaths.Count -eq 0) {
+        foreach ($defaultPath in @(Get-DefaultTranscriptJsonPaths)) {
+            [void] $inputPaths.Add($defaultPath)
+        }
+    }
+
+    foreach ($inputPath in $inputPaths) {
         $resolvedPath = (Resolve-Path -LiteralPath $inputPath).Path
         $repoRoot = Resolve-RepositoryRoot -StartPath $resolvedPath
 
