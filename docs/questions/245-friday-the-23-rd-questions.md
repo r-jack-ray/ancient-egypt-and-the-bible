@@ -1,0 +1,20 @@
+# Questions in Livestream 245
+
+Live Stream #245: Friday The 23rd
+
+Time links open the YouTube video at the relevant timestamp.
+
+| Time | Question | Short answer / answer direction |
+|---:|---|---|
+| <a href="https://youtu.be/Qs-d4ght8aU?t=888" target="_blank" rel="noopener noreferrer">14:48</a> | If Ramesses later called for kidnapped Nubian labor, was that because the Hebrews had already left? | He says corvee labor from Nubia and Canaan was a normal New Kingdom practice and not necessarily a response to replacing Hebrews. |
+| <a href="https://youtu.be/Qs-d4ght8aU?t=1072" target="_blank" rel="noopener noreferrer">17:52</a> | How should one answer claims that Lorenzo Nigro has not shown the Jericho outer mudbrick wall is Late Bronze rather than Middle Bronze III? | He dismisses that pushback strongly and says the style of massive mudbrick fortifications fits Middle Bronze conventions, not the proposed revision. |
+| <a href="https://youtu.be/Qs-d4ght8aU?t=1241" target="_blank" rel="noopener noreferrer">20:41</a> | What does he think of Richard Steiner's recent Merneptah-related exodus proposal? | He rejects it outright as chronologically and textually untenable. |
+| <a href="https://youtu.be/Qs-d4ght8aU?t=1537" target="_blank" rel="noopener noreferrer">25:37</a> | Is Christ's resurrected body physically somewhere in heaven, or in some unseen dimension? | He says heaven appears able to accommodate embodied humans, pointing to Enoch and Elijah as examples of bodily presence there. |
+| <a href="https://youtu.be/Qs-d4ght8aU?t=1839" target="_blank" rel="noopener noreferrer">30:39</a> | Are donations to the channel tax deductible, and is PayPal better than Super Chat? | He says PayPal is better for the channel because it loses less to fees and is treated as a gift, while the donations are generally not tax deductible. |
+| <a href="https://youtu.be/Qs-d4ght8aU?t=2082" target="_blank" rel="noopener noreferrer">34:42</a> | Should Christians claim tithes on their taxes when the law allows it? | Yes; he says believers should pay what they owe without cheating, but they should not overpay by refusing lawful deductions. |
+| <a href="https://youtu.be/Qs-d4ght8aU?t=2260" target="_blank" rel="noopener noreferrer">37:40</a> | What is the context of Leiden 348, and why is it not talked about more? | He says the text in question is not the sensational "Habiru built Ramesses" proof some claim, and he starts by identifying it more carefully before drawing conclusions. |
+| <a href="https://youtu.be/Qs-d4ght8aU?t=2892" target="_blank" rel="noopener noreferrer">48:12</a> | Is there legitimacy to the dual-causality principle in the Old Testament and ancient Near Eastern literature? | He says he is not really qualified to answer the philosophical side and treats his response as limited rather than definitive. |
+| <a href="https://youtu.be/Qs-d4ght8aU?t=3799" target="_blank" rel="noopener noreferrer">1:03:19</a> | What does it mean to "work out your salvation" in Philippians 2:12-13 if believers are already saved? | He says the passage is about living out salvation's implications with proper nuance, not denying that believers already belong to Christ. |
+| <a href="https://youtu.be/Qs-d4ght8aU?t=4859" target="_blank" rel="noopener noreferrer">1:20:59</a> | How accurate are the reconstructed rules of Senet? | He says they are not accurate at all because nobody actually knows how Senet was played. |
+| <a href="https://youtu.be/Qs-d4ght8aU?t=6576" target="_blank" rel="noopener noreferrer">1:49:36</a> | Do ghosts tend to haunt places where witchcraft or occult practice has happened? | No; he says hauntings are not limited to occult sites and could reportedly occur in places with no such connection. |
+| <a href="https://youtu.be/Qs-d4ght8aU?t=6827" target="_blank" rel="noopener noreferrer">1:53:47</a> | When were angels created? | He says the answer depends on whether "angel" means any good spirit or specifically a messenger, and that "when were spirit beings created?" is the clearer question. |

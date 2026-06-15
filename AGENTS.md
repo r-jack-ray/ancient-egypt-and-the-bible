@@ -72,8 +72,6 @@ pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/<s
 
 If the converter reports that no transcript segments were found, treat the JSON as an empty placeholder and do not create a fabricated curated page.
 
-Backlog note: curated Markdown reference pages still need to be filled in for livestream episodes 14 through 207, with episodes 118 and 162 currently blocked by empty JSON placeholders. When the user asks for the "next two episodes" in this repository, interpret that as the next two missing episode Markdown pages in ascending episode order from that backlog that have transcript data; note blocked placeholder episodes if encountered. Once episodes 14 through 207 are complete or explicitly accounted for, remove this backlog note from `AGENTS.md`.
-
 ### Notes Placement and Configuration
 
 Use `./task-notes/` for transient in-project task notes, including AI session summaries and temporary task documentation. Create the directory if it does not exist. Do not place generated transcript TXT/TSV files here; those belong under `src/transcripts/`.

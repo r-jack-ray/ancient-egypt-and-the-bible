@@ -1,0 +1,20 @@
+# Questions in Livestream 262
+
+Live Stream #262: The Vancouver Victory Stela
+
+Time links open the YouTube video at the relevant timestamp.
+
+| Time | Question | Short answer / answer direction |
+|---:|---|---|
+| <a href="https://youtu.be/NzsZlN6phQo?t=811" target="_blank" rel="noopener noreferrer">13:31</a> | If the Exodus is so heavily alluded to in the Prophets and Writings, how do minimalist scholars account for that? | He said they usually treat the Exodus tradition as an earlier oral myth that circulated before the Pentateuch was written. |
+| <a href="https://youtu.be/NzsZlN6phQo?t=861" target="_blank" rel="noopener noreferrer">14:21</a> | What does the supplementary hypothesis explain better than the documentary hypothesis? | He said it better accounts for core Mosaic materials, later editing without constant wholesale rewriting, and early Exodus references. |
+| <a href="https://youtu.be/NzsZlN6phQo?t=1049" target="_blank" rel="noopener noreferrer">17:29</a> | In Exodus 20:13, is "murder" a better translation than "kill"? | Yes. He treated the commandment as narrower than every possible taking of life, especially given other legal contexts in the Torah. |
+| <a href="https://youtu.be/NzsZlN6phQo?t=1570" target="_blank" rel="noopener noreferrer">26:10</a> | What were the purposes of the many trees in Eden? | He said they were not all reducible to one function; some served nourishment, some growth, and some broader formative purposes. |
+| <a href="https://youtu.be/NzsZlN6phQo?t=1671" target="_blank" rel="noopener noreferrer">27:51</a> | What would have happened if Adam and Eve had eaten from the tree of life first? | He said the forbidden fruit would then have had no hold, because the life-giving tree would have secured a different outcome first. |
+| <a href="https://youtu.be/NzsZlN6phQo?t=4881" target="_blank" rel="noopener noreferrer">1:21:21</a> | Does the Merneptah Stela require Merneptah to have directly encountered Israel, or could he just be reporting a disaster that struck them? | He treated the text as a military-boast context and did not read it as strong evidence for a merely indirect report of disaster. |
+| <a href="https://youtu.be/NzsZlN6phQo?t=7172" target="_blank" rel="noopener noreferrer">1:59:32</a> | What does he think of characters performing self-sacrificial acts to save another character? | He treated self-sacrifice as powerful when it is earned by the story and reflects genuine love rather than cheap manipulation. |
+| <a href="https://youtu.be/NzsZlN6phQo?t=8078" target="_blank" rel="noopener noreferrer">2:14:38</a> | Are there now video games that are substantially AI-generated? | Yes. He said AI use is already widespread in game production and increasingly hard to avoid entirely. |
+| <a href="https://youtu.be/NzsZlN6phQo?t=10365" target="_blank" rel="noopener noreferrer">2:52:45</a> | Is it still possible to make a unique video game when so much has already been published? | Yes. He argued that distinctiveness still exists, especially when a creator is willing to make something deliberately unusual instead of derivative. |
+| <a href="https://youtu.be/NzsZlN6phQo?t=11149" target="_blank" rel="noopener noreferrer">3:05:49</a> | Did Moses write the covenant materials in Exodus through Leviticus and Deuteronomy like a suzerain treaty, or were they written later? | He said the issue is debated, but he does not think the treaty-like structure by itself forces a late composition. |
+| <a href="https://youtu.be/NzsZlN6phQo?t=11935" target="_blank" rel="noopener noreferrer">3:18:55</a> | Would he support apostolic succession? | Yes, but only with qualifications. He accepted succession in a broad sense while resisting inflated claims built onto it. |
+| <a href="https://youtu.be/NzsZlN6phQo?t=13736" target="_blank" rel="noopener noreferrer">3:48:56</a> | Is Genesis 2 a repetition of Genesis 1, or a separate creation story? | He said it is neither; he treated Genesis 2 as a narrative continuation that zooms in rather than retelling from scratch. |
