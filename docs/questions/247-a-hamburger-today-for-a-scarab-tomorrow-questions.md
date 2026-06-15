@@ -1,0 +1,21 @@
+# Questions in Livestream 247
+
+Live Stream #247: A Hamburger Today For a Scarab Tomorrow
+
+Time links open the YouTube video at the relevant timestamp.
+
+| Time | Question | Short answer / answer direction |
+|---:|---|---|
+| <a href="https://youtu.be/hz1C0VPD310?t=564" target="_blank" rel="noopener noreferrer">9:24</a> | How much would someone have to change a question before it counts as a different question? | A lot; he says if he can still recognize it as the same question, it is too close to count as a new one. |
+| <a href="https://youtu.be/hz1C0VPD310?t=665" target="_blank" rel="noopener noreferrer">11:05</a> | What is happening in Deuteronomy 22:28-29 with the woman involved? | He says the passage has to be read in context and distinguishes a consensual discovered act from the earlier rape case where the woman cried out and no one could save her. |
+| <a href="https://youtu.be/hz1C0VPD310?t=1031" target="_blank" rel="noopener noreferrer">17:11</a> | Was fifty shekels enough to buy a slave in that period? | Yes, more than enough; he says it was a large amount of money. |
+| <a href="https://youtu.be/hz1C0VPD310?t=1192" target="_blank" rel="noopener noreferrer">19:52</a> | Why were the Serabit el-Khadim mines seasonal while Timna and Faynan could operate year-round? | He says the answer is mainly climate, with Serabit becoming brutally hot in summer and much harder to work. |
+| <a href="https://youtu.be/hz1C0VPD310?t=1597" target="_blank" rel="noopener noreferrer">26:37</a> | How did usurpers get military support to defect and help them seize the throne? | He says sidelined royal sons were often pushed into the military, where they could build the relationships and backing needed for a bid for power. |
+| <a href="https://youtu.be/hz1C0VPD310?t=2500" target="_blank" rel="noopener noreferrer">41:40</a> | Why did Egypt stop practicing royal human sacrifice early while Mesopotamia did not? | He credits the power of the Egyptian bureaucracy, which became strong enough to shut the practice down. |
+| <a href="https://youtu.be/hz1C0VPD310?t=2930" target="_blank" rel="noopener noreferrer">48:50</a> | Can he recommend a good Bible study on Revelation? | No; he says he wishes there were a good one and does not know one he can recommend. |
+| <a href="https://youtu.be/hz1C0VPD310?t=3376" target="_blank" rel="noopener noreferrer">56:16</a> | If a woman teaches biblical studies at a seminary, is she violating 1 Timothy 2:12? | He answers by stressing the passage's church-order context rather than treating every academic teaching role as identical. |
+| <a href="https://youtu.be/hz1C0VPD310?t=4527" target="_blank" rel="noopener noreferrer">1:15:27</a> | Is 1 Chronicles 7:25-27 an abbreviated genealogy? | No; he says it is doing something else, involving clan survival and a later tribal-chief framework rather than a shortened genealogy. |
+| <a href="https://youtu.be/hz1C0VPD310?t=5977" target="_blank" rel="noopener noreferrer">1:39:37</a> | Why was iron sometimes worth far more than gold in the Bronze Age? | Because it was scarce and largely meteoritic before iron smelting, making it much rarer than later people assume. |
+| <a href="https://youtu.be/hz1C0VPD310?t=8254" target="_blank" rel="noopener noreferrer">2:17:34</a> | Why do some people push for separate secular evidence of Joseph? | He says motives vary, including desperation, cherry-picking, poor method, and sometimes outright grifting. |
+| <a href="https://youtu.be/hz1C0VPD310?t=8547" target="_blank" rel="noopener noreferrer">2:22:27</a> | What does he think of the claim that there was no First Intermediate Period in Egypt? | He rejects it as nonsense and as chronology-shortening driven by prior commitments rather than the evidence. |
+| <a href="https://youtu.be/hz1C0VPD310?t=9923" target="_blank" rel="noopener noreferrer">2:45:23</a> | When does sin cut someone off from a state of grace? | He says the real dividing line is an unrepentant state of chronic sin, not a single isolated failure. |
