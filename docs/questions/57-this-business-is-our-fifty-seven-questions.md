@@ -1,0 +1,17 @@
+# Questions in Livestream 57
+
+Live Stream #57: This Business Is Our Fifty-Seven
+
+Time links open the YouTube video at the relevant timestamp. The links use HTML anchors so GitHub can render them with `target="_blank"`.
+
+| Time | Question | Short answer / answer direction |
+|---:|---|---|
+| <a href="https://youtu.be/b3ytxeDVHGg?t=515" target="_blank" rel="noopener noreferrer">8:35</a> | Does 2 Kings 19:35 conflict with Hezekiah still appearing as an Assyrian vassal, or is that a revision of the Bible? | No. He treated the event as historically complex rather than contradictory: Sennacherib failed to win cleanly, but the evidence does not let us reduce the whole episode to a simple reversal. |
+| <a href="https://youtu.be/b3ytxeDVHGg?t=807" target="_blank" rel="noopener noreferrer">13:27</a> | Is it true that we have actually found mummies of ancient Egyptian pharaohs? | Yes. He said many royal mummies survive, especially from Dynasties 17 through 19, with Ramesses II and Tutankhamun as famous examples. |
+| <a href="https://youtu.be/b3ytxeDVHGg?t=1044" target="_blank" rel="noopener noreferrer">17:24</a> | What can be said about the historical context of Jonah, the Assyrian Empire in that period, and its king? | He placed Jonah in a period when Assyria was still formidable but in relative decline, and said the biblical data can be tied to a specific historical window. |
+| <a href="https://youtu.be/b3ytxeDVHGg?t=1300" target="_blank" rel="noopener noreferrer">21:40</a> | Does early Hebrew use of modified hieratic numerals point to Israelite origins in Egypt? | Not necessarily by itself. He said it shows Egyptian influence, but that influence could also have come through later Egyptian-controlled Canaanite settings and garrison culture. |
+| <a href="https://youtu.be/b3ytxeDVHGg?t=1487" target="_blank" rel="noopener noreferrer">24:47</a> | Are the hailstones in Joshua 10:11 really plausible as a deadly battlefield event? | Yes. He argued that rare but severe hail could kill large numbers, especially against lightly protected Bronze Age troops. |
+| <a href="https://youtu.be/b3ytxeDVHGg?t=1837" target="_blank" rel="noopener noreferrer">30:37</a> | Are there ancient sources showing that `40 years` and `1,000 years` can function idiomatically rather than as strict literals? | Yes. He used the Mesha Stele for `40` as an idiomatic number and said both biblical and patristic usage support `1,000` as a figure for a very long span. |
+| <a href="https://youtu.be/b3ytxeDVHGg?t=2057" target="_blank" rel="noopener noreferrer">34:17</a> | Can a global-flood view be steel-manned in a way that still fits the pyramids? | He said American young-earth chronology runs into major historical problems with the pyramids, though broader or less rigid flood models are easier to reconcile. |
+| <a href="https://youtu.be/b3ytxeDVHGg?t=9341" target="_blank" rel="noopener noreferrer">2:35:41</a> | What are his biggest unanswered questions in biblical studies? | He highlighted early Hebrew paleography, identifying Abraham's Dynasty 13 pharaoh, clarifying the later Exodus route, the Ark's side decoration, and the flood's timing. |
+| <a href="https://youtu.be/b3ytxeDVHGg?t=12946" target="_blank" rel="noopener noreferrer">3:35:46</a> | Did the ancient Egyptians ever find dinosaur fossils or other prehistoric beasts? | Generally no. He said they clearly encountered fossil shells and brachiopods at places like Giza, but not the kinds of large dinosaur remains people usually imagine. |

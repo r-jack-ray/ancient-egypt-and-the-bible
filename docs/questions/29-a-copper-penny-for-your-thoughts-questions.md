@@ -1,0 +1,19 @@
+# Questions in Livestream 29
+
+Live Stream #29: A Copper Penny For Your Thoughts
+
+Time links open the YouTube video at the relevant timestamp. The links use HTML anchors so GitHub can render them with `target="_blank"`.
+
+| Time | Question | Short answer / answer direction |
+|---:|---|---|
+| <a href="https://youtu.be/x-ro6ZwbeMg?t=192" target="_blank" rel="noopener noreferrer">3:12</a> | What does he think about magic systems in fiction, such as the *Kane Chronicles*? | He said fictional magic systems vary: some are more compatible with a Christian worldview than others, depending on whether they work within creation's order or disrupt it. |
+| <a href="https://youtu.be/x-ro6ZwbeMg?t=385" target="_blank" rel="noopener noreferrer">6:25</a> | How annoying is it when historians argue Moses was invented because "Moses" is an Egyptian word? | Very annoying. He treated that argument as badly informed and almost joked it was a 9.5 out of 10 on the annoyance scale. |
+| <a href="https://youtu.be/x-ro6ZwbeMg?t=417" target="_blank" rel="noopener noreferrer">6:57</a> | Who was Darius the Mede? | He said the evidence is thin outside scripture, but he regarded the proposal that Darius the Mede was another name for Cyrus as at least plausible. |
+| <a href="https://youtu.be/x-ro6ZwbeMg?t=558" target="_blank" rel="noopener noreferrer">9:18</a> | Is the James ossuary good evidence, and could it really be tied to Jesus or the Talpiot tomb? | He was very skeptical. Because of provenance and forgery concerns, he said it is not reliable evidence and is not needed to establish Jesus as a historical person. |
+| <a href="https://youtu.be/x-ro6ZwbeMg?t=731" target="_blank" rel="noopener noreferrer">12:11</a> | How would he answer the claim that Ezekiel falsely prophesied about Nebuchadnezzar destroying Tyre? | He rejected that criticism. He argued the case ignores both Phoenician and cuneiform evidence that Tyre was in fact subdued by Babylon. |
+| <a href="https://youtu.be/x-ro6ZwbeMg?t=1044" target="_blank" rel="noopener noreferrer">17:24</a> | Did Egypt lose contact with Nubia after dynasty 20, and how could Shishak recruit Kushites? | He said Egypt never fully lost contact with Kush. The biblical Cushites are not simply "Nubians," and contact with Kush continued long after dynasty 20. |
+| <a href="https://youtu.be/x-ro6ZwbeMg?t=1257" target="_blank" rel="noopener noreferrer">20:57</a> | What were the plagues in Genesis 12:17, who was that pharaoh, and did he wrong Abraham? | The text does not specify the plagues. He said the pharaoh's personal name is unknown and treated the king in that story as acting more righteously than Abram. |
+| <a href="https://youtu.be/x-ro6ZwbeMg?t=1511" target="_blank" rel="noopener noreferrer">25:11</a> | What is his view of Israel Finkelstein's work? | He said Finkelstein's older work was influential, but he thinks his minimalist skepticism has been overtaken by later archaeology. |
+| <a href="https://youtu.be/x-ro6ZwbeMg?t=1653" target="_blank" rel="noopener noreferrer">27:33</a> | What is his take on radiocarbon dating? | He said it can still be useful for relative dating, but he does not trust it as a precise absolute dating tool in the ancient Near East. |
+| <a href="https://youtu.be/x-ro6ZwbeMg?t=1913" target="_blank" rel="noopener noreferrer">31:53</a> | How far did Ramesses III campaign in the Levant, and would that have affected Israel during the judges period? | He said Ramesses III's campaigns were largely coastal and would not have directly affected the Israelite tribes in the Judean foothills. |
+| <a href="https://youtu.be/x-ro6ZwbeMg?t=2092" target="_blank" rel="noopener noreferrer">34:52</a> | Did the Canaanite pantheon begin as one god with many titles? | He said he was not persuaded. In his view, the evidence still looks more like real polytheism or at least henotheism than an original single-god system. |
