@@ -1,0 +1,4 @@
+interface:
+  display_name: "Transcript Question Page Audit"
+  short_description: "Audit existing Q&A Markdown against transcript sources"
+  default_prompt: "Use $transcript-question-page-audit to audit and repair an existing livestream Q&A Markdown page against its matching TXT and JSON transcript sources."
