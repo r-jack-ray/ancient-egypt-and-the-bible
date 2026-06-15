@@ -75,6 +75,8 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 - [Episode 66: Osiris, Vampires, and Other Undead Playas.](docs/questions/66-osiris-vampires-and-other-undead-playas-questions.md)
 - [Episode 67: Ignorance of the Incredulously Fallacious.](docs/questions/67-ignorance-of-the-incredulously-fallacious-questions.md)
 - [Episode 68: Uncultured as a Philistine.](docs/questions/68-uncultured-as-a-philistine-questions.md)
+- [Episode 69: They Might Be Giants.](docs/questions/69-they-might-be-giants-questions.md)
+- [Episode 70: For those in the Know](docs/questions/70-for-those-in-the-know-questions.md)
 - [Episode 208: Hysterical Context Error](docs/questions/208-hysterical-context-error-questions.md)
 
 ## Repository Layout
@@ -136,7 +138,7 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 
 ## Current Status
 
-The repository has JSON transcript files for episodes 1-208. Of those, 206 contain transcript segments and have generated TXT working transcripts. Curated Markdown pages currently cover episodes 1-68 and 208.
+The repository has JSON transcript files for episodes 1-208. Of those, 206 contain transcript segments and have generated TXT working transcripts. Curated Markdown pages currently cover episodes 1-70 and 208.
 
 Curated pages should be treated as reference aids, not full replacements for the original video or transcript.
 
