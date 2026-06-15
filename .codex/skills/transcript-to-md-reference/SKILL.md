@@ -33,8 +33,8 @@ src/transcripts/json/12-the-quorum-of-the-twelve.json
 src/transcripts/txt/12-the-quorum-of-the-twelve.txt
 ```
 
-If JSON is missing, report the blocker and stop for that stream.
-If JSON exists but TXT is missing, generate TXT.
+If JSON is missing, report the blocker and stop for that stream.  
+If JSON exists but TXT is missing, generate TXT.  
 If conversion reports no transcript segments, treat it as an empty placeholder.
 
 ```powershell
