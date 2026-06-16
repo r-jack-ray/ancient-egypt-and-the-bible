@@ -1,0 +1,3819 @@
+[0] 0:09	[music]
+[1] 0:35	Heat. Heat.
+[2] 1:35	Heat.
+[3] 1:53	Heat.
+[4] 4:35	>> [music]
+[5] 4:40	>> Hello and welcome to this our 235th live
+[6] 4:43	stream. Trick or treaty. [laughter]
+[7] 4:47	This is of course a reference to our
+[8] 4:49	Monday video on sutheran treaties. And
+[9] 4:51	if you haven't watched that video,
+[10] 4:53	please go back after the live stream and
+[11] 4:54	take a look. It's very interesting.
+[12] 4:56	Okay. So, welcome to our
+[13] 5:00	our live stream where we take your uh
+[14] 5:03	questions on ancient Egypt and the
+[15] 5:05	Bible. Uh first, some channel news like
+[16] 5:08	always. Uh if you're going to be in the
+[17] 5:10	Vancouver area tomorrow around Burnaby
+[18] 5:14	at the BCIT campus, I will be at the
+[19] 5:18	2025 connection speculative fiction
+[20] 5:20	convention. Uh, I'm going to be a guest
+[21] 5:23	there and I'm going to be doing several
+[22] 5:25	panels where I'll get to talk about
+[23] 5:28	things such as my book, uh, constructed
+[24] 5:31	languages,
+[25] 5:33	the power of names, all that stuff. So,
+[26] 5:39	>> oh, could do that, couldn't I? Yeah.
+[27] 5:44	Uh,
+[28] 5:46	could I? [laughter]
+[29] 5:48	>> Where is it?
+[30] 5:48	>> It's already packed away.
+[31] 5:52	Uh but I can show it on screen. So let
+[32] 5:55	me just uh get that up there and I will
+[33] 5:58	show you something super cool. Uh if you
+[34] 6:02	have you might have been wondered what
+[35] 6:05	uh uh in my books uh particularly in
+[36] 6:10	the second book
+[37] 6:12	um all the stars as angels
+[38] 6:16	we talk about a language called nako 32
+[39] 6:20	nako 32 is not a fake language it's a
+[40] 6:24	real constructed language and I can show
+[41] 6:26	you the font for it though it's a real
+[42] 6:30	real constructed language I did see I
+[43] 6:34	see what I can do here. Uh let's go to
+[44] 6:39	uh Acrobat
+[45] 6:42	properties.
+[46] 6:44	Okay. Um,
+[47] 6:47	first here,
+[48] 6:51	take me a moment to pull up, but
+[49] 6:59	angels
+[50] 7:01	32 script.
+[51] 7:04	Okay, uh, this is going to be one of the
+[52] 7:06	examples that I use uh, doing this
+[53] 7:08	tutorial on how to create constructed
+[54] 7:11	languages.
+[55] 7:13	Just
+[56] 7:14	you will get to see
+[57] 7:20	this is
+[58] 7:22	an actual
+[59] 7:28	around 90.
+[60] 7:30	All right. Right about there. I will
+[61] 7:32	pull that up here and you can all see
+[62] 7:35	what NCO 32 actually looks like.
+[63] 7:46	is okay. Here we go.
+[64] 7:52	See it?
+[65] 7:58	So that
+[66] 8:01	is what NCO 32 the actual written script
+[67] 8:05	looks like. So this is actually a a
+[68] 8:09	constructed language and we have an al a
+[69] 8:12	um a biliteral script for it and it was
+[70] 8:16	a language that I did create as sort of
+[71] 8:17	the world building exercise behind all
+[72] 8:21	the stars as angels.
+[73] 8:23	So it's one of those sort of little cool
+[74] 8:26	things that we can also do. So
+[75] 8:30	so yes uh it's a little bit token to
+[76] 8:33	making your own languages for things.
+[77] 8:35	Uh, it doesn't have a cursive. Okay. Uh,
+[78] 8:40	see here.
+[79] 8:44	What about a cursive? It doesn't have a
+[80] 8:46	cursive, but it has a hexadimal.
+[81] 8:48	Okay. So, it does have two scripts. It
+[82] 8:51	has a hexadeimal script, which is just a
+[83] 8:53	string of hexodimal numbers, and it has
+[84] 8:56	a because this is a machine language, it
+[85] 8:59	doesn't use a cursive, but it also has a
+[86] 9:01	block script. So, um, this is this is
+[87] 9:05	one of the interesting little things
+[88] 9:07	that we that goes kind of behind the
+[89] 9:10	scenes in these these these writing
+[90] 9:12	projects is sometimes you just want to
+[91] 9:13	make the the the world building a little
+[92] 9:16	more rich. So, what you do is you invent
+[93] 9:19	the language, how they would communicate
+[94] 9:21	in that language, what it sounds like.
+[95] 9:24	Like for example, the language has no
+[96] 9:26	first person single pronoun. It doesn't
+[97] 9:29	have the pronoun I in it. That's why uh
+[98] 9:32	every every android in that series goes
+[99] 9:36	this unit. There is no I because they're
+[100] 9:40	a collective.
+[101] 9:42	So that collective nature feeds back
+[102] 9:46	into their into their language. So,
+[103] 9:52	it's little details like that um that
+[104] 9:57	sort of feed into this
+[105] 10:00	dark blade goes. It looks like a hybrid
+[106] 10:02	between Hangul and Chinese characters.
+[107] 10:05	Actually the the inspiration for it
+[108] 10:09	was actually Korean
+[109] 10:12	where Korean actually has sort of
+[110] 10:16	multiple syllification into
+[111] 10:19	crammed into say the space of a single
+[112] 10:21	character. So,
+[113] 10:24	so
+[114] 10:26	that's uh so so the inspiration for this
+[115] 10:29	script was Korean
+[116] 10:31	but the syllabocation was based upon
+[117] 10:34	more along um oh Korean space is hungul.
+[118] 10:39	Yeah, I wouldn't I wouldn't have known
+[119] 10:41	that. Okay,
+[120] 10:43	but um
+[121] 10:46	but that's that's basically where I got
+[122] 10:48	the inspiration from. Now the
+[123] 10:50	syllocation is something I got from
+[124] 10:52	Aadia where it's a a biliteral
+[125] 10:57	um biliteral script as it were. So
+[126] 11:06	okay, awesome.
+[127] 11:09	Now I've seen Korean all the time. I
+[128] 11:11	didn't know what the formal name of the
+[129] 11:12	script was. So that's cool.
+[130] 11:16	I've never actually studied Korean. It's
+[131] 11:17	one language I've never studied, but
+[132] 11:20	I've I used to go to the Korean market
+[133] 11:22	all the time and um you know, I would
+[134] 11:25	see how the the script looked and then a
+[135] 11:29	one of the checkout ladies said, "Oh,
+[136] 11:31	it's real easy to learn Korean script
+[137] 11:33	because it's basically a main character
+[138] 11:35	with a bunch of little tiny um extra
+[139] 11:38	characters just crushed in there." It's
+[140] 11:40	like, "Cool. What a great idea."
+[141] 11:43	>> So,
+[142] 11:46	>> oh yeah,
+[143] 11:46	>> did the right Yeah, you can learn new
+[144] 11:48	languages or things about new languages
+[145] 11:51	by going to the right grocery store.
+[146] 11:53	[laughter]
+[147] 11:57	Okay, so that's our first announcement.
+[148] 11:59	If you're going to be in the Burnaby
+[149] 12:00	area tomorrow, uh I will be at
+[150] 12:02	Connections the science fiction or
+[151] 12:04	speculative uh fiction convention. I'd
+[152] 12:07	love to meet you and see you in person
+[153] 12:09	and um that would be fantastic. Now,
+[154] 12:12	second uh second piece of of um channel
+[155] 12:17	business is uh the uh writing contest.
+[156] 12:20	And we got a little video for that.
+[157] 12:35	[music]
+[158] 12:39	>> [music]
+[159] 12:45	[music]
+[160] 12:53	>> Okay. And the final piece of channel
+[161] 12:55	business is uh for those of you who are
+[162] 12:57	participating in next week's uh D&D game
+[163] 13:01	at um at ETSs. Uh I need your character
+[164] 13:05	sheets in tomorrow at the very latest.
+[165] 13:09	If I don't have those sheets in
+[166] 13:10	tomorrow, I can't print them off. I
+[167] 13:11	can't bring them with me and you can't
+[168] 13:13	play. So, um it's it's
+[169] 13:17	uh it's absolutely imperative if you're
+[170] 13:18	going to participate in this year's D
+[171] 13:20	and D contest that you get those
+[172] 13:21	character sheets to me on Discord by
+[173] 13:24	tomorrow. No exceptions on this one cuz
+[174] 13:27	just I I can't I can't manage a speed
+[175] 13:31	game without your character sheets. All
+[176] 13:33	right. So, absolutely would love you to
+[177] 13:37	those who who've who've um thrown their
+[178] 13:39	hat in to to join us, but I do need
+[179] 13:42	those sheets. All right. Okay. So, with
+[180] 13:44	that said, uh let's start the rules here
+[181] 13:47	and then get into the questions. Okay.
+[182] 13:51	Oh, one other thing. Please pray for us
+[183] 13:53	at uh as we go to that uh convention
+[184] 13:55	tomorrow. Uh it is very secular. It's
+[185] 14:00	can be very woke.
+[186] 14:02	So, um it's it is like walking right
+[187] 14:05	into enemy territory there. So, please
+[188] 14:08	do help and by praying for us. We would
+[189] 14:10	really appreciate that.
+[190] 14:13	Um
+[191] 14:15	the the questions are as follows. Uh
+[192] 14:17	super chats have priority. No question
+[193] 14:20	there. Next. We do take non-super chat
+[194] 14:22	questions, but you have to put a Q and a
+[195] 14:25	colon in front of them. No Q and no
+[196] 14:27	colon. E.
+[197] 14:30	We don't see them. Uh only post
+[198] 14:33	non-super chats once. Uh question
+[199] 14:37	spamming will get your your question
+[200] 14:39	squalified for the night.
+[201] 14:41	If it is a verse of the Bible, we do
+[202] 14:43	need some context. So that means we need
+[203] 14:46	you to give us what book it's in, what
+[204] 14:48	chapter, and what verse. Don't forget
+[205] 14:50	the verse because we're not going to go
+[206] 14:53	hunting hunt the verse. Takes way too
+[207] 14:55	long.
+[208] 14:57	Uh you are allowed to sponsor another
+[209] 15:00	person's uh question, but we just ask
+[210] 15:02	that you put the copy the question into
+[211] 15:04	your super chat so we don't again don't
+[212] 15:06	have to go hunting for it. And then
+[213] 15:08	finally, one question per chat. Uh
+[214] 15:12	question stacking will not be permitted
+[215] 15:14	or it'll get like the most tur answer
+[216] 15:16	that you can imagine just because is
+[217] 15:18	just not fair. All right, with that
+[218] 15:20	said, let's get in the questions. And
+[219] 15:23	we're starting the uh
+[220] 15:26	um questions here with some non-s super
+[221] 15:28	chats.
+[222] 15:29	First one here is from dark blade
+[223] 15:34	and he asks
+[224] 15:37	windows adjusted here. Thoughts on Pope
+[225] 15:40	Pius I 12th in
+[226] 15:43	um if I can read that manifentus
+[227] 15:47	deos paragraph 12 saying the assumption
+[228] 15:49	of Mary is a truth revealed by God. Oh I
+[229] 15:53	know what that is. Yeah that's
+[230] 15:55	Montinism.
+[231] 16:02	That's exactly what monism is. Special
+[232] 16:05	special private revelation for doctrine
+[233] 16:09	to the church. That's Montanism.
+[234] 16:15	Oh boy. Catholics are going to hate me
+[235] 16:18	tonight. [laughter]
+[236] 16:20	I mean, it's not revealed in scripture.
+[237] 16:23	It's not revealed in scripture at all.
+[238] 16:26	So then how is it a truth revealed by
+[239] 16:29	God? By theological reflection and
+[240] 16:33	personal spiritual
+[241] 16:35	um revelation by the pope.
+[242] 16:42	Well, Pentecostalism has been accused of
+[243] 16:45	modernism as well.
+[244] 16:46	>> Oh yeah,
+[245] 16:47	>> it's totally the Catholics are so
+[246] 16:52	[laughter]
+[247] 16:54	anybody
+[248] 16:56	We can we can get everyone to hate me
+[249] 16:58	tonight.
+[250] 17:02	[laughter]
+[251] 17:06	Yeah, Ryan. Uh, at least they're not
+[252] 17:07	saying she's a co- redemptric anymore.
+[253] 17:10	You know, that that term wasn't so bad
+[254] 17:12	except in the in the sense that it was a
+[255] 17:17	special title. Only her could be a
+[256] 17:19	co-redemptric.
+[257] 17:21	If it had been if they had just sort of
+[258] 17:23	kept that at the um co-redemptrics as in
+[259] 17:27	every Christian woman is a co-redemptric
+[260] 17:29	and every Christian man is a co-redeemer
+[261] 17:32	that would have been fine. But because
+[262] 17:34	they made it a special title only
+[263] 17:37	applicable to her that's where the
+[264] 17:39	problem was. So,
+[265] 17:43	uh,
+[266] 17:47	so yeah. Um,
+[267] 17:50	yeah. Again, but I'm glad they I'm glad
+[268] 17:52	they actually made that that turnaround
+[269] 17:54	for this that that they took away the
+[270] 17:57	the the stopped doing the co-
+[271] 17:59	redemptrics thing because you did get
+[272] 18:02	some some Catholics that were starting
+[273] 18:04	to call Mary the fourth person of the
+[274] 18:07	Trinity. So that's that's not good.
+[275] 18:11	Um all our adoration is focused upon
+[276] 18:15	Jesus Christ. All of it. He he's a he is
+[277] 18:19	the origin and the perfector of our
+[278] 18:21	faith.
+[279] 18:24	So even if Mary does a helping role like
+[280] 18:27	some say the saints do, that's fine.
+[281] 18:30	Even but all that she is comes from
+[282] 18:34	Christ.
+[283] 18:36	And that's the issue.
+[284] 18:41	So,
+[285] 18:44	so yeah, um unfortunately I think I
+[286] 18:47	think Pope Pius I 12's declaration is um
+[287] 18:51	is very Montistic
+[288] 18:53	in its um in its base fundamentals. And
+[289] 18:56	I'm not talking about early Montism
+[290] 18:57	here, okay? I'm not saying Montinism as
+[291] 19:00	it was practiced by by Montist. I'm
+[292] 19:03	saying Montanism as it later became
+[293] 19:05	after the death of Montinism and his two
+[294] 19:08	propheticistes. Okay. So just want to
+[295] 19:11	clarify that late Montism not early
+[296] 19:14	Montism. Okay. So
+[297] 19:19	that said, let's move on to the next
+[298] 19:20	question.
+[299] 19:22	We're off to a banger. [laughter]
+[300] 19:25	What a great start.
+[301] 19:29	Ah, good times. Good times.
+[302] 19:34	Okay, the next next uh question here is
+[303] 19:38	from Mobius.
+[304] 19:40	Good to see you, Mobius.
+[305] 19:43	Um, we hear Jerusalem means the city of
+[306] 19:46	peace. Doesn't it mean city of
+[307] 19:48	Jebusites? No, it doesn't. Um, okay.
+[308] 19:52	There is a city called um
+[309] 19:56	one of the titles of Jerusalem means
+[310] 19:59	city of the Jebusites. That's Jabus.
+[311] 20:02	Okay. Jabus is the city that refers to
+[312] 20:05	its ethnicity. Okay. But
+[313] 20:10	um the origins of of of the um of the
+[314] 20:17	name Jerusalem comes from a Canaanite uh
+[315] 20:21	phrase Uru Shalm.
+[316] 20:23	Uru being the Canaanite for city. Shalom
+[317] 20:27	being the the god uh Shalom which is a
+[318] 20:30	god of peace. Okay. So so that's what
+[319] 20:36	the whole the the city of peace is is
+[320] 20:39	more accurate
+[321] 20:41	but it's the it's it's technically the
+[322] 20:43	city of the god of peace.
+[323] 20:46	Okay. So or the peace god.
+[324] 20:49	So that's sort of where the uh where
+[325] 20:52	Jerusalem gets its name from.
+[326] 20:55	Um but it was also called by other names
+[327] 20:58	too. It was also called Salem or Shalam.
+[328] 21:01	It was also called Jabus. And Jabus is
+[329] 21:06	the name it got because of its ethnicity
+[330] 21:08	as being inhabited by the Jebusites
+[331] 21:11	which is a
+[332] 21:13	which is a um basically a local local
+[333] 21:18	affectation for certain Amorites.
+[334] 21:21	Okay. So that's that's the origin of the
+[335] 21:25	name. Hope that helped. Thank you very
+[336] 21:27	much for the for the question.
+[337] 21:31	And the third question here is Dark
+[338] 21:34	Blade asks, "What's your take on the
+[339] 21:37	quote rewriting history? Egypt's new
+[340] 21:39	kingdom started later than we thought
+[341] 21:41	posted on Scitec Daily on November
+[342] 21:44	November 10th of this year." I think
+[343] 21:46	that I think that article is rubbish.
+[344] 21:50	Now, here's the thing. Um it's based on
+[345] 21:53	the uh research of Hrix Bruins.
+[346] 21:57	Now Hrix Bruins
+[347] 22:01	is a dendrochronology maximalist.
+[348] 22:05	He's a he's a dendrochronology maximist
+[349] 22:08	maximalist.
+[350] 22:09	And
+[351] 22:11	he bases every date. He doesn't go with
+[352] 22:15	he doesn't go with say say say say say
+[353] 22:16	say say say say say say say say say say
+[354] 22:16	say say say say say say say say say say
+[355] 22:17	say say say say say say say say say say
+[356] 22:17	say say say say say say d d d d d d d d
+[357] 22:17	d d d d d d d d d d d d d d d d d d d d
+[358] 22:17	d d d d d d d d d d d dates found in
+[359] 22:18	history like dates done by chronology
+[360] 22:21	proper. He only depends upon
+[361] 22:24	dendrochronology
+[362] 22:26	for his dating. The problem is he's
+[363] 22:29	taking
+[364] 22:31	um basically his samples from the area
+[365] 22:35	around Avarus
+[366] 22:38	and these these this this carbon 14 in
+[367] 22:41	that area is exceptionally unreliable
+[368] 22:44	because of various factors that that
+[369] 22:47	that cause the dates of of radiocarbon
+[370] 22:50	to skew and skew badly.
+[371] 22:54	So
+[372] 22:56	uh I was I was sitting in
+[373] 22:59	uh a lecture between Hendrick's Bruins
+[374] 23:02	and uh Montford BTOC
+[375] 23:06	and
+[376] 23:08	he was going on at that point he was
+[377] 23:10	going on that the um new kingdom was um
+[378] 23:15	uh you had already started down this
+[379] 23:18	road of that um that the third
+[380] 23:21	intermediate period ended a hundred
+[381] 23:24	years after. So for him that's he's
+[382] 23:29	saying that the the the
+[383] 23:31	sorry the second intermediate period
+[384] 23:33	ended
+[385] 23:34	100 years later
+[386] 23:36	and
+[387] 23:39	um I thought to myself wow that would
+[388] 23:42	come quite quite a surprise to Akmos the
+[389] 23:45	first. So, I mean, he's thinking that
+[390] 23:48	that the the second intermediate period
+[391] 23:50	ended in the 1450s.
+[392] 23:54	Like, what? What? Huh?
+[393] 23:59	I mean, that's during the time of Tamos
+[394] 24:01	III.
+[395] 24:08	No, I think I think Bruin stuff is
+[396] 24:09	hogwash. I've always thought it was
+[397] 24:11	hogwash.
+[398] 24:13	Um, Botox thinks it's hogwash. Um, the
+[399] 24:17	fact is he's got a hammer and all the
+[400] 24:19	the only problem he sees is a nail.
+[401] 24:25	So, he's not taking the fullness of the
+[402] 24:27	data. He's just he's got this tool. He's
+[403] 24:30	got a deadroinology lab and he's going
+[404] 24:32	to use it. So, so I I I
+[405] 24:37	don't think I don't think there's
+[406] 24:38	anything to this. Um, and Scitec Daily
+[407] 24:42	doesn't, it's kind of like live science.
+[408] 24:45	It doesn't critically review these these
+[409] 24:47	discoveries. It just kind of sees them
+[410] 24:50	going off at like a conference somewhere
+[411] 24:52	and just reports on them. So, yeah, just
+[412] 24:57	ridiculous.
+[413] 25:00	Ryan Cohen crap. Tremendous.
+[414] 25:03	Lovely. Lovely.
+[415] 25:08	Yeah.
+[416] 25:12	Okay. So, that's our third non-s super
+[417] 25:15	chat here. Let's get to the super chats
+[418] 25:19	because one of the things Oh, I should
+[419] 25:20	should say we're going to start stop at
+[420] 25:22	12 sharp tonight because I do have an
+[421] 25:24	early morning uh tomorrow. So, uh if we
+[422] 25:28	don't get to your super chat, we
+[423] 25:30	apologize in advance. But from the rest
+[424] 25:33	of the night, we're going to take the
+[425] 25:34	super chats, give them priority, and try
+[426] 25:36	to get through all of them. All right,
+[427] 25:38	so let's get to it. Uh, Camilar for $5.
+[428] 25:42	Is King Arch of Eleazar synonymous with
+[429] 25:45	Ericu Ridden Sim of Larsa? I'll do a
+[430] 25:49	quick check here of that those dates.
+[431] 25:53	Um the problem is
+[432] 25:58	um
+[433] 25:59	rinsing of Larsa
+[434] 26:02	I believe is in the right time frame
+[435] 26:13	where I do Larsa here.
+[436] 26:16	Larsa. Yeah, it's in the right time
+[437] 26:17	frame.
+[438] 26:20	Um here's the problem is the there's a
+[439] 26:22	lot of arios at that time.
+[440] 26:25	So and then he asks completes areas
+[441] 26:28	eleas are related to lenosura and arroch
+[442] 26:32	to aruk
+[443] 26:36	from the mari archives. It's really hard
+[444] 26:38	to say. It's really hard to say. As I
+[445] 26:40	said the problem is there's a lot of
+[446] 26:41	arroch running around at that time. So I
+[447] 26:45	have not been able to sort of narrow it
+[448] 26:46	down myself.
+[449] 26:48	So,
+[450] 26:50	um it's really difficult to tell. Um
+[451] 26:53	don't know. I don't think there's any
+[452] 26:57	king of Mari at that time.
+[453] 27:00	That's Aruk. Um
+[454] 27:04	no. So Mari doesn't have a king by that
+[455] 27:07	name. Uh Leon Sura.
+[456] 27:13	So yeah, this is going to be a really
+[457] 27:15	really difficult thing to sort of nail
+[458] 27:17	down.
+[459] 27:18	So unfortunately I can't give you
+[460] 27:20	guidance on this because there's a lot
+[461] 27:22	of names that are similar and there were
+[462] 27:24	a lot of lot of kings that were sort of
+[463] 27:26	went by names really close to this at
+[464] 27:29	this time. So it's really hard. Okay. So
+[465] 27:32	unfortunately
+[466] 27:36	uh
+[467] 27:38	uh that's the best I can give you on
+[468] 27:39	this one. We just don't know for sure.
+[469] 27:41	Okay. So thank you very much for the
+[470] 27:43	super chat. Very much appreciated.
+[471] 27:48	Next super chat here
+[472] 27:52	is from Chowi for uh 15 and he asks,
+[473] 27:58	"Why is the logos uh translated as word
+[474] 28:01	rather than the reason
+[475] 28:04	in John 3:16?
+[476] 28:06	Could it more accurately be translated
+[477] 28:08	as sensience?" Uh
+[478] 28:15	I wouldn't I wouldn't connect it to to
+[479] 28:19	um
+[480] 28:20	the problem with with logos when we talk
+[481] 28:23	about John 3:16
+[482] 28:25	is in Greek literature it is a
+[483] 28:29	uh is a loaded word. It's really loaded
+[484] 28:33	and it carries a lot of epistemological
+[485] 28:37	language from uh Greek philosophy.
+[486] 28:41	So
+[487] 28:43	while it can mean in in an extended
+[488] 28:46	sense reason,
+[489] 28:49	it's it's sort of the kernel of
+[490] 28:52	thinking, not sort of sensience itself.
+[491] 28:57	Um
+[492] 29:01	so um in in literal sense it does
+[493] 29:04	translate to word. It can also mean
+[494] 29:07	reason. uh it could be extended to logic
+[495] 29:13	um um higher thought
+[496] 29:16	um but those sorts of things but
+[497] 29:18	sensience is probably not a good
+[498] 29:21	equivalence to this.
+[499] 29:23	So um I would say that that sensience is
+[500] 29:28	not the best best choice here but reason
+[501] 29:31	is is is is
+[502] 29:35	a good translation.
+[503] 29:38	um uh law the the the the the
+[504] 29:42	higher thought is might be a good
+[505] 29:44	translation but sensience would not
+[506] 29:47	itself be it. Okay. So hope that helps.
+[507] 29:51	Thank you for the super chat. Very much
+[508] 29:52	appreciate it.
+[509] 29:58	Okay. Next one from Xiao Yi here
+[510] 30:01	uh for 60. Thank you for super chat. Is
+[511] 30:04	there
+[512] 30:06	any connection between the Old Testament
+[513] 30:08	nephesh and the New Testament logos? No,
+[514] 30:10	there isn't. Uh, are they
+[515] 30:12	interchangeable?
+[516] 30:14	Uh, no, they're not. They're not
+[517] 30:16	interchangeable. Did the Old Testament
+[518] 30:18	writers and the ancient Neareastern
+[519] 30:20	society associate the ability to speak
+[520] 30:22	and reason to having a soul and being a
+[521] 30:25	mo day? No, not necessarily. uh they did
+[522] 30:29	things they did associate things
+[523] 30:33	sometimes that couldn't speak or
+[524] 30:35	couldn't reason with having a soul too.
+[525] 30:38	So um the imo day
+[526] 30:44	is not really from Greek philosophy
+[527] 30:46	anyway. Um it comes more from from
+[528] 30:49	Hebrew thought. So um
+[529] 30:59	so um the closer to say nephesh
+[530] 31:04	uh in in say um
+[531] 31:09	um uh in
+[532] 31:15	uh Greek thought would either be
+[533] 31:16	something like noose
+[534] 31:19	which is um a mind or emotion
+[535] 31:23	or or possibly Numatoss
+[536] 31:27	spirit. So
+[537] 31:30	um
+[538] 31:32	so um yeah uh so it's it's probably it's
+[539] 31:35	probably a better a better alternative
+[540] 31:37	would probably be Numatoss
+[541] 31:39	but but Logos is not an equivalent for
+[542] 31:43	Nefesh. Okay, so hope that helps. Thank
+[543] 31:46	you for the super chat. Very much
+[544] 31:47	appreciate it.
+[545] 31:50	All right, let's do the countdown here
+[546] 31:52	for 18 at Ministries questions.
+[547] 31:57	Next one here is Where did it go? Come
+[548] 32:00	on back.
+[549] 32:06	There we go. It's back. Okay. May you
+[550] 32:10	explain 1st Samuel 21:5? Okay. 1st
+[551] 32:13	Samuel 215. Let's bring up our Bible
+[552] 32:15	here.
+[553] 32:18	for Samuel.
+[554] 32:23	Uh 21.
+[555] 32:27	All right.
+[556] 32:31	Um
+[557] 32:33	Okay. This is uh they they go to the
+[558] 32:35	chapel and they eat of the consecrated
+[559] 32:37	bread.
+[560] 32:38	And David answered the priest and said
+[561] 32:40	to him, "Surely women have been kept
+[562] 32:42	from us as previously when we set out
+[563] 32:44	and the vessels of the young men were
+[564] 32:46	holy, though it was an ordinary journey.
+[565] 32:50	How much more than today will their
+[566] 32:52	vessels be holy?" Okay. And what he's
+[567] 32:56	saying is they they're following
+[568] 32:57	military discipline.
+[569] 32:59	And part of military discipline at the
+[570] 33:01	time was that uh young men conscripted
+[571] 33:04	to war didn't fool around.
+[572] 33:08	Okay, that was sort of the normal um
+[573] 33:11	sort of normal military protocol of
+[574] 33:14	their day. So, um the fact that they
+[575] 33:18	weren't on a particular holy crusade as
+[576] 33:20	such didn't change the fact that they
+[577] 33:23	were still following the the protocols
+[578] 33:25	of of normal war. So, so they were
+[579] 33:29	following the war protocols of war. They
+[580] 33:32	were had not been tainted ritually.
+[581] 33:36	therefore they could partake in the holy
+[582] 33:38	bread. So,
+[583] 33:40	uh that's sort of what's going on there.
+[584] 33:43	Hope that helps. Thank you very much for
+[585] 33:45	the super chat. Very much appreciate it.
+[586] 33:52	Next one here,
+[587] 33:55	1 Samuel 22
+[588] 33:57	opportunists want sell the closed. I
+[589] 34:00	don't know. See what's 222 says. 22.
+[590] 34:06	Uh,
+[591] 34:12	all right. Uh, let's let's take that
+[592] 34:14	back to verse one. So, David departed
+[593] 34:16	from there and escaped to the cave of
+[594] 34:18	Adelim. And when his brothers and all
+[595] 34:21	his father household heard it, they went
+[596] 34:22	down there to him. And everyone who was
+[597] 34:25	in distress, everyone who was in debt,
+[598] 34:27	everyone who was discontented gathered
+[599] 34:29	to him. and he became captain over them.
+[600] 34:32	Now there were about 400 men with them.
+[601] 34:35	Okay. Uh were these opportunists who
+[602] 34:38	wanted Saul uh deposed?
+[603] 34:42	Um these were probably people who feared
+[604] 34:45	Saul. We have to understand that Saul in
+[605] 34:47	his day was not was a was like a your
+[606] 34:51	basic tyrannical king of of the ancient
+[607] 34:54	near east. Okay? He was not a nice guy.
+[608] 34:57	Kings aren't nice people. Sorry to break
+[609] 35:00	that to you, but but yeah, they're not
+[610] 35:03	nice people. They do terrible things to
+[611] 35:07	make sure their throne is secure.
+[612] 35:09	Uh including deal harshly with certain
+[613] 35:13	crimes.
+[614] 35:14	Uh in this case, uh there were some who
+[615] 35:18	were say
+[616] 35:20	um bitter over Saul's rule. as it says,
+[617] 35:24	everyone who is discontented. That's
+[618] 35:26	those are people who would be dis
+[619] 35:28	disaffected
+[620] 35:30	by Saul's rule. But also people who were
+[621] 35:32	in debt.
+[622] 35:35	Apparently
+[623] 35:36	there were debtors that were on Saul's
+[624] 35:39	bad side.
+[625] 35:41	There were some who were in distress.
+[626] 35:45	Okay. So there's sort of a mixed group
+[627] 35:48	here of people who was
+[628] 35:51	uh who feared Saul and probably with
+[629] 35:55	just cause.
+[630] 35:57	So
+[631] 36:00	David was able to gather a large
+[632] 36:02	following to him because of say Saul's
+[633] 36:07	treatment of others. So we're not
+[634] 36:10	talking about here somebody who was a
+[635] 36:12	wise magnanimous king. He was a
+[636] 36:15	treacherous king. He was a volatile
+[637] 36:18	king. He was a harsh king.
+[638] 36:21	Uh he was a king of war.
+[639] 36:24	So yeah, there's
+[640] 36:27	there was good reason to to fear Saul.
+[641] 36:31	So
+[642] 36:33	So hope that helps. Thank you for super
+[643] 36:35	chat. Yeah, some of them wanted probably
+[644] 36:38	wanted Saul deposed. That's very
+[645] 36:41	possible because there were some that
+[646] 36:43	were as I said
+[647] 36:46	discontented
+[648] 36:48	basically bitter against soul. Okay. So
+[649] 36:55	next one
+[650] 36:58	uh what is a o a ba and a ca? Okay. Uh I
+[651] 37:03	think you mean a here not a ha. Okay.
+[652] 37:05	[laughter]
+[653] 37:08	Um these are these are different aspects
+[654] 37:11	of the human person in Egyptian um in
+[655] 37:15	Egyptian metaphysics. All right. Now the
+[656] 37:19	cause that's your your living spirit.
+[657] 37:21	Your cause is your living spirit similar
+[658] 37:23	to a nephesh in in Hebrew. Okay. So it's
+[659] 37:26	your living spirit or your ruach. It's
+[660] 37:28	your ruach. Right? Your ba is your
+[661] 37:31	emotional center. It's your personality.
+[662] 37:34	So,
+[663] 37:37	so that's that's the BA. The BA is your
+[664] 37:39	personality, your emotions, your seat of
+[665] 37:43	who you are as a as a living being as
+[666] 37:46	such a as as this is your your the
+[667] 37:49	dynamic part of you. And the O is your
+[668] 37:52	intellect. It's your heads smarts. It's
+[669] 37:56	your ability to memorize stuff to reason
+[670] 37:59	to to to
+[671] 38:02	um to um rationalize things. Okay. So
+[672] 38:08	those are the three components of the
+[673] 38:10	person the mental life of the human
+[674] 38:12	being within Egyptian mythology. So
+[675] 38:16	again the o is your your intellect the
+[676] 38:19	ba is your personality or um or
+[677] 38:23	excessive u amount of personality and
+[678] 38:26	the cause your spirit your living
+[679] 38:28	spirit. Okay.
+[680] 38:31	So
+[681] 38:40	uh dark blade asks the followup here.
+[682] 38:43	Uh so for cause the one I encountered
+[683] 38:47	the most such as a four-legg for the co
+[684] 38:49	of sendi the justified literally true of
+[685] 38:52	voice. Yes, that's a that's a that's a
+[686] 38:54	um that's a meat offering and that's a
+[687] 38:57	very the the u stella of of sendi is a
+[688] 39:00	very famous stila that frankly you can
+[689] 39:03	give to a first year um um uh Egyptian
+[690] 39:07	middle Egyptian student and they can
+[691] 39:09	translate this but that four-legg to the
+[692] 39:12	call of for the call of of senbi is a
+[693] 39:15	sort of it's a meat offering to sustain
+[694] 39:17	the spirit so hope that helps
+[695] 39:27	Mama asks,
+[696] 39:30	"So they're intelligence, charisma, and
+[697] 39:32	wisdom stats in a way actually more like
+[698] 39:35	the intelligence,
+[699] 39:37	charisma, and hit points."
+[700] 39:42	Okay.
+[701] 39:44	The cause is more like your hit points.
+[702] 39:47	[laughter]
+[703] 39:48	It's the spirit that keeps you alive.
+[704] 39:54	We can reduce everything to D and D.
+[705] 39:56	[laughter]
+[706] 39:59	Constitution. Yeah. Okay. Maybe
+[707] 40:01	constitution. You could maybe do that.
+[708] 40:02	Constitution because constitution
+[709] 40:04	affects your hit points directly.
+[710] 40:07	So yeah. Yeah, I can go with that. Yeah.
+[711] 40:10	Intelligence,
+[712] 40:12	a charisma, and hit points. There you
+[713] 40:15	go. for the o ball and car. [laughter]
+[714] 40:20	Good times. Good times.
+[715] 40:24	Okay.
+[716] 40:28	Uh, next one we'll go here.
+[717] 40:35	Oh boy. Uh, follows the shepherd for $2.
+[718] 40:40	Asking a weird question. Thoughts on
+[719] 40:42	xenotransplantation?
+[720] 40:45	Okay. Uh, xenotransplantation is
+[721] 40:47	basically taking organs from an animal
+[722] 40:51	or materials from an animal and
+[723] 40:53	transplanting them in a human being.
+[724] 40:56	Now,
+[725] 40:57	I have a different view on this than say
+[726] 40:59	Mrs. Producer
+[727] 41:01	who is a bioethicist.
+[728] 41:03	Okay? She has her own opinion on this,
+[729] 41:07	but my thoughts on this are I don't
+[730] 41:10	actually mind this if it saves human
+[731] 41:13	life. Okay.
+[732] 41:16	Like for example, if or if it increases
+[733] 41:18	the quality of human life.
+[734] 41:21	Uh right. Okay. So not from a xenomorph.
+[735] 41:25	I should hope not, [laughter]
+[736] 41:28	but that would be exciting if it was.
+[737] 41:34	So um let's say you have your you're
+[738] 41:38	missing part of your uh missing your
+[739] 41:40	ear. Okay. They can take cartilage from
+[740] 41:44	a pig
+[741] 41:45	and reconstruct a new human ear from
+[742] 41:49	that cartilage. Okay, that's a
+[743] 41:52	reconstructive use of say uh tissue from
+[744] 41:58	an animal that can improve the quality
+[745] 42:02	of human life.
+[746] 42:04	They have used sort of sometimes they've
+[747] 42:06	used like pig hearts to provide
+[748] 42:08	temporary
+[749] 42:10	um hearts in the case where somebody has
+[750] 42:13	a has a immediate need for a heart
+[751] 42:17	transplant but isn't on the waiting
+[752] 42:20	list.
+[753] 42:22	So they've done stuff like pig hearts as
+[754] 42:24	a temporary solution
+[755] 42:27	to to that. Now like um it is a very
+[756] 42:32	risky procedure. These are risky
+[757] 42:34	procedures.
+[758] 42:38	Um there was a a child uh way back in
+[759] 42:42	the 1980s. I forget the name of the
+[760] 42:43	child um who had received a baboon heart
+[761] 42:49	and
+[762] 42:51	the surgery was successful but she died
+[763] 42:55	because
+[764] 42:56	the surgeon they forgot to do one small
+[765] 42:59	thing which was check the blood type.
+[766] 43:04	it that they forgot to check the blood
+[767] 43:06	type of the of the um of the um of the
+[768] 43:13	baboon. So yeah.
+[769] 43:18	Yeah, that was a that was a big mistake.
+[770] 43:25	So
+[771] 43:27	um I do think uh in in lie of say u
+[772] 43:32	artificially grown human organs and I
+[773] 43:34	think there is a place for artificially
+[774] 43:36	grown human organs.
+[775] 43:39	Yeah. Obama says that is such a basic
+[776] 43:40	thing. Yeah. I mean that that was such a
+[777] 43:44	basic thing. That was why everyone was
+[778] 43:45	was face palming after that. It was just
+[779] 43:47	like cuz it was such a It was such a
+[780] 43:52	highp profofile
+[781] 43:54	surgery. It had been
+[782] 43:56	>> Yeah.
+[783] 43:57	>> It had been videoed. It had been I mean
+[784] 44:00	there was news stories over it. And to
+[785] 44:02	find out that they all they did the the
+[786] 44:05	big mistake was not checking the blood
+[787] 44:07	type.
+[788] 44:09	So So
+[789] 44:13	yeah, there's there was some issues with
+[790] 44:15	that. It was such a basic mistake and it
+[791] 44:18	probably would have been successful at
+[792] 44:20	least given her a few more years of life
+[793] 44:22	if they had just checked the blood type
+[794] 44:28	pulling [clears throat] card before the
+[795] 44:29	baboon. Yeah. Well, that's one way of
+[796] 44:32	putting it.
+[797] 44:34	So,
+[798] 44:37	uh Francis Dodd says avoids the problem
+[799] 44:40	and horror of human organ harvesting. It
+[800] 44:42	Yeah, it does. and human organ or organ
+[801] 44:45	harvesting is not without its problems.
+[802] 44:48	Okay, we uh artificially grown uh
+[803] 44:52	organs, okay, that you can do ethically.
+[804] 44:56	Human organ harvesting has some issues.
+[805] 45:00	Probably the most the most uh
+[806] 45:05	>> Yeah.
+[807] 45:06	>> biggest
+[808] 45:06	>> Yeah. The biggest problem is that the
+[809] 45:08	person still has to be generally alive
+[810] 45:11	when they harvest.
+[811] 45:13	>> The body is supposed to be alive.
+[812] 45:16	>> Yeah, the body is supposed to be alive,
+[813] 45:18	but the person is supposed to be dead.
+[814] 45:22	Um,
+[815] 45:24	yeah, that's that's probably the still
+[816] 45:26	the biggest issue with human organ
+[817] 45:28	harvesting is assuring that the person
+[818] 45:30	is really really the person is dead
+[819] 45:34	while the body is still alive.
+[820] 45:36	because a dead organ is is of no use to
+[821] 45:38	anyone with the exception of maybe
+[822] 45:41	cornea transplants. They can do that
+[823] 45:43	postmortem. But um everything else, you
+[824] 45:46	know, everything else has to be alive
+[825] 45:48	for it to be of any use. So
+[826] 45:53	yeah. Yeah.
+[827] 45:56	So, um I'm much more in favor of
+[828] 45:59	xenotransplantation
+[829] 46:01	than I am say of um pulling the pulling
+[830] 46:07	the plug early to get the organs.
+[831] 46:14	>> Oh, yeah. A lot of us, as Mrs. Producer
+[832] 46:17	just reminded me, a lot of us are still
+[833] 46:18	old enough to remember the movie movie
+[834] 46:20	Coma.
+[835] 46:28	Messianic Telmmet blood types are always
+[836] 46:30	checked prior to child birth, major
+[837] 46:32	surgical positions, transfusions, and
+[838] 46:34	transplants. How did they miss that? Cuz
+[839] 46:36	no one was checking for a baboon.
+[840] 46:40	It was that it's that that simple.
+[841] 46:44	No one checked for a baboon.
+[842] 46:49	Well, here's one of the things is that
+[843] 46:52	um even though they probably checked
+[844] 46:54	now, uh it used to be thought that you
+[845] 46:57	could use pig skin very easily for uh
+[846] 47:00	burn transplantation
+[847] 47:02	because of uh the blood type uh blood of
+[848] 47:07	say pigs is compatible with most humans.
+[849] 47:11	So, uh there isn't that need to check it
+[850] 47:13	in the same way. But no one had thought
+[851] 47:16	to check the blood type for baboon or
+[852] 47:18	even research that. So
+[853] 47:22	it's a problem.
+[854] 47:26	So
+[855] 47:32	faith from facts coma is a classic.
+[856] 47:35	Yeah, it was a classic. Scary. Oh yeah,
+[857] 47:38	scary film. Of course, now it's been
+[858] 47:40	done that that that premise has been
+[859] 47:41	done to death, but um at its time it was
+[860] 47:45	really a chilling it's a chilling book,
+[861] 47:48	too. I read the book.
+[862] 47:50	>> The general public
+[863] 47:53	>> Yeah, the general public had no concept
+[864] 47:55	of it at the time. Yeah, terrifying
+[865] 47:58	book.
+[866] 47:59	All right, let's move on to the next one
+[867] 48:01	here. Uh Tom Manek has a member question
+[868] 48:05	here. So many folks say 1st Samuel 13:14
+[869] 48:11	implies David was spiritually close to
+[870] 48:13	God, but Golden Gay says it just means
+[871] 48:15	David God chose David out of his own
+[872] 48:17	will thoughts. All right, first let's
+[873] 48:20	move bring the text up.
+[874] 48:24	Yeah, it was a Michael Chryen book, I
+[875] 48:26	believe. I think it was one of his early
+[876] 48:27	ones,
+[877] 48:29	but I'm not sure.
+[878] 48:38	Okay. 1st Samuel
+[879] 48:41	13
+[880] 48:44	verse 14.
+[881] 48:48	H okay. And it says here, "But your now
+[882] 48:51	your kingdom shall not endure. The Lord
+[883] 48:54	has sought out for himself a man after
+[884] 48:56	his own heart." This is talking to Saul.
+[885] 48:59	"And the Lord has appointed him as ruler
+[886] 49:01	over his people. because you have not
+[887] 49:03	kept what the Lord commanded you. Okay.
+[888] 49:07	I I don't think this is that David was
+[889] 49:09	so spiritually close to God. I don't
+[890] 49:10	think that's I but I also don't think
+[891] 49:13	that this is a statement that God chose
+[892] 49:17	David out of his own will. But I think
+[893] 49:20	it's somewhere else in between this more
+[894] 49:23	that David will serve
+[895] 49:26	God's purpose
+[896] 49:28	that that David's
+[897] 49:30	purpose and God's purpose were in
+[898] 49:32	alignment.
+[899] 49:34	Not that David was close to God, but
+[900] 49:37	that
+[901] 49:39	that that David would do the things that
+[902] 49:42	God would want him to do generally. Not
+[903] 49:45	always as we saw, but uh but it's more
+[904] 49:49	it's not it's not that David was
+[905] 49:51	spiritually close to God and it's not
+[906] 49:53	that God chose David, but that the two
+[907] 49:55	were in alignment.
+[908] 49:57	So because they were in alignment, God
+[909] 50:00	chose him over Saul because David will
+[910] 50:04	ultimately accomplish God's purposes.
+[911] 50:07	So that's what I think is going on here
+[912] 50:10	by this term, a man after his own heart.
+[913] 50:13	Okay. So, hope that helps. Thank you for
+[914] 50:16	the uh member question. Really
+[915] 50:18	appreciate it.
+[916] 50:20	And
+[917] 50:28	all right, next one here
+[918] 50:32	is we are going back to
+[919] 50:39	here. And the next one is from at
+[920] 50:44	uh was Elizabeth a Levite or a Judahite?
+[921] 50:48	Okay,
+[922] 50:51	this is how things work.
+[923] 50:55	Um Elizabeth was a cousin.
+[924] 50:59	She could have been either. Okay. Now,
+[925] 51:02	she was married to a Levite, which makes
+[926] 51:05	her a Levite
+[927] 51:08	is this is one of the things about
+[928] 51:10	marriage in in a clan-based society.
+[929] 51:15	When you are you might be as a woman
+[930] 51:19	born a Judahite, but if you marry a
+[931] 51:22	Levite, you become a Levite. Now,
+[932] 51:25	your a man can't change his clan
+[933] 51:28	affiliation. a woman does through
+[934] 51:31	marriage.
+[935] 51:33	So,
+[936] 51:35	so if she had been a Judahite, if if her
+[937] 51:37	parents had been Judahites and she
+[938] 51:39	married a Levite, she's now a Levite.
+[939] 51:43	The way that's just the way this stuff
+[940] 51:45	works. And
+[941] 51:48	yeah, it's it can be confusing
+[942] 51:51	sometimes, but she could start off a
+[943] 51:53	Judahite and then a Belvite by marrying
+[944] 51:55	the right guy. And that's what happened.
+[945] 51:57	So, uh, we don't know if she started off
+[946] 51:59	as a Judite or maybe her parents were
+[947] 52:02	Levites. They could have gotten married
+[948] 52:05	and become Levites, too. Like, for
+[949] 52:08	example, her her father's
+[950] 52:11	sister might have married a Levite,
+[951] 52:15	which means she was born a Levite.
+[952] 52:18	So, so
+[953] 52:23	sort of that's how it works.
+[954] 52:26	Okay. So, it was Robin Cook who um
+[955] 52:28	>> Yeah.
+[956] 52:29	>> Okay.
+[957] 52:30	>> loved it and he
+[958] 52:32	>> he wrote the screenplay. So, he So,
+[959] 52:34	Kiteon wrote the screenplay. Robin Cook
+[960] 52:37	wrote the novel. Awesome.
+[961] 52:40	Awesome. Thank you for looking that up.
+[962] 52:46	Okay.
+[963] 52:51	Uh, John Febec asks, "If a woman gets
+[964] 52:53	divorced or widowed, does she go back to
+[965] 52:56	her original tribe?" Uh,
+[966] 53:00	widowed, no.
+[967] 53:02	It there's a lot of circumstances here.
+[968] 53:04	Divorced maybe.
+[969] 53:07	It depends upon say the the
+[970] 53:09	circumstances behind the divorce.
+[971] 53:12	Um, but widow, no. No, she would not go
+[972] 53:14	back to her original because she might
+[973] 53:16	have children
+[974] 53:18	and because her children would be still
+[975] 53:20	in that clan, she would stay within the
+[976] 53:22	clan. So, widows don't generally go back
+[977] 53:24	to their old clan.
+[978] 53:27	They can change again with a new
+[979] 53:29	marriage. If they get remarried after
+[980] 53:32	after being widowed,
+[981] 53:34	their clan can change again,
+[982] 53:38	but they don't normally just go back.
+[983] 53:40	They don't default go back to the
+[984] 53:41	original tribe. In the case of a
+[985] 53:44	divorce, that's different. Uh because
+[986] 53:47	often she will go back to her parents
+[987] 53:49	after a divorce. So um in that case,
+[988] 53:53	they the the parents would accept her
+[989] 53:55	back into the clan.
+[990] 54:02	Okay. So, next one here,
+[991] 54:10	uh, 1st Samuel 25:22.
+[992] 54:13	Did David break an oath here? 1 Samuel
+[993] 54:19	25,
+[994] 54:22	verse 22,
+[995] 54:27	uh, verse 21. Let's go back to verse
+[996] 54:28	one. Now David said, "Surely in vain I
+[997] 54:30	have guarded all that this man has in
+[998] 54:32	the wilderness so that nothing was
+[999] 54:34	missed, all that belonged to him, and he
+[1000] 54:37	has returned me evil for good." Who is
+[1001] 54:40	this talking about? Oh, this is Nibal.
+[1002] 54:43	Okay.
+[1003] 54:45	Okay.
+[1004] 54:47	So,
+[1005] 54:49	basically, David said that when he's out
+[1006] 54:51	in the wilderness, he was defending
+[1007] 54:53	Nabal's shepherds.
+[1008] 54:55	So, this is what's going on. He's in the
+[1009] 54:57	wilderness with his men and they drive
+[1010] 55:00	off raiders who are trying to take uh
+[1011] 55:03	Nibal's shepherd's stuff
+[1012] 55:06	and Nibal basically says, "Who's this
+[1013] 55:08	David? I've never heard of him." Yeah.
+[1014] 55:10	Don't feed him. Don't give him bread and
+[1015] 55:12	wine.
+[1016] 55:15	Yeah.
+[1017] 55:17	Yeah. Yeah. He was the fool for trying
+[1018] 55:20	to save us.
+[1019] 55:22	Verse 22. May God do so to the enemies
+[1020] 55:25	of David and more also if by morning I
+[1021] 55:28	leave as much as one male of anyone who
+[1022] 55:31	belongs to him. Okay. Did he break an
+[1023] 55:35	oath here? Now did he make an oath here?
+[1024] 55:40	Um the fact is that
+[1025] 55:45	um
+[1026] 55:47	he is really basically vowing vengeance
+[1027] 55:49	here but he doesn't have to go through
+[1028] 55:52	with it either.
+[1029] 55:59	Uh Timmy interesting point the mail's
+[1030] 56:01	verse is an idiom.
+[1031] 56:06	Yeah it is an idiom. It is an idiom that
+[1032] 56:08	means um
+[1033] 56:10	it it [clears throat] means to urinate.
+[1034] 56:14	Okay, it is an idiom. It means to
+[1035] 56:17	urinate. Thank you for bringing that up,
+[1036] 56:19	Tim. Always making a show more classy.
+[1037] 56:28	Yes. Yes, we get that. The one who
+[1038] 56:31	pisses on the wall, a male. Yep.
+[1039] 56:34	Thank you, Tim. Always adding class.
+[1040] 56:37	Always adding class.
+[1041] 56:41	I'm sure it was one of his favorite
+[1042] 56:43	books.
+[1043] 56:47	Yeah. So, um,
+[1044] 56:53	now basically he's he's swearing to
+[1045] 56:56	himself, so he doesn't actually have to
+[1046] 56:57	keep this. Okay. You know, you know, may
+[1047] 57:01	God this is a curse more than anything.
+[1048] 57:05	um you know so you know
+[1049] 57:09	he's basically saying may God do so to
+[1050] 57:11	the enemies of David and more so if by
+[1051] 57:15	morning I leave as much as one male of
+[1052] 57:17	anyone who belongs to him. Now
+[1053] 57:22	there's
+[1054] 57:24	there's a whole lot here so that you
+[1055] 57:27	know David doesn't have to actually keep
+[1056] 57:28	this you know cuz there is this idea of
+[1057] 57:31	say the the the
+[1058] 57:33	um the sort of the slight is repealed as
+[1059] 57:38	it were. Um verse 23. And ab when
+[1060] 57:41	Abigail saw David, she hurried and
+[1061] 57:43	dismounted her donkey and fell on her
+[1062] 57:44	face before David and bowed him herself
+[1063] 57:48	on the ground and she fell at his feet
+[1064] 57:50	and said, "On me alone, my lord, the be
+[1065] 57:53	the blame. And please let your maid
+[1066] 57:55	servant." So she's taken the place.
+[1067] 57:58	She's taken Nibal's place. Please let
+[1068] 58:01	your maid servant speak to you and
+[1069] 58:02	listen to the words of your your
+[1070] 58:04	maidervant. Please do not let my lord
+[1071] 58:06	pay attention to this worthless man
+[1072] 58:08	Nibbal. For as [snorts] his name is, so
+[1073] 58:11	is he. He is a man. He is Nabal is his
+[1074] 58:15	name and folly is a Now Nibal means
+[1075] 58:18	fool.
+[1076] 58:20	Nibal is a name being fool. Now that was
+[1077] 58:22	probably not his real name. That was
+[1078] 58:25	probably a name given to him by the
+[1079] 58:26	biblical author here. But just to show
+[1080] 58:28	you what kind of man he is.
+[1081] 58:31	So
+[1082] 58:31	>> kind of thing your neighbors thing your
+[1083] 58:34	neighbors give you. [laughter]
+[1084] 58:36	>> So your neighbors give you.
+[1085] 58:39	>> Okay.
+[1086] 58:42	Uh verse 26. So now therefore, my lord,
+[1087] 58:44	as the Lord lives, as your soul lives,
+[1088] 58:46	since the Lord has restrained you from
+[1089] 58:48	shedding blood and from avenging
+[1090] 58:49	yourself by your own hand, now let your
+[1091] 58:52	enemies and those who seek evil against
+[1092] 58:55	my Lord be as nabal.
+[1093] 58:57	Be fools.
+[1094] 59:00	So you know she intercedes here. She
+[1095] 59:02	intercedes on behalf of of the household
+[1096] 59:06	and
+[1097] 59:08	David exercises mercy. He he exercises
+[1098] 59:11	mercy here. So he is not compelled to
+[1099] 59:14	complete this oath but God does complete
+[1100] 59:19	it. Okay.
+[1101] 59:22	The the where he completes it is
+[1102] 59:25	may God do so to the enemies of David
+[1103] 59:28	and more so if by morning I leave as
+[1104] 59:32	much as one man who belongs to him.
+[1105] 59:35	Well,
+[1106] 59:38	it's a curse. This is a curse. Okay,
+[1107] 59:40	this is not an oath. This is a curse.
+[1108] 59:44	Okay, this is a curse. There's a
+[1109] 59:46	difference here between an oath and a
+[1110] 59:47	curse. an orthodist I swear to do this
+[1111] 59:52	but a curse is if if let's say for in
+[1112] 59:55	this case if I don't do this may God do
+[1113] 59:58	this
+[1114] 1:00:01	this is a curse and curses are different
+[1115] 1:00:04	than oaths
+[1116] 1:00:06	okay so what has he's left all these
+[1117] 1:00:08	males dead or sorry left all these males
+[1118] 1:00:11	alive so may God do so to the enemies of
+[1119] 1:00:16	David
+[1120] 1:00:18	God struck Nibal dead.
+[1121] 1:00:22	It's a curse and it's a curse that came
+[1122] 1:00:24	true.
+[1123] 1:00:27	So that's what's going on here.
+[1124] 1:00:32	>> Yeah. It's a fleshing out of Venice's
+[1125] 1:00:34	mind, sayeth the Lord.
+[1126] 1:00:37	>> Yeah.
+[1127] 1:00:39	Yeah. So
+[1128] 1:00:41	David left it up to God and God carried
+[1129] 1:00:45	out the curse.
+[1130] 1:00:47	Uh, and we see that in verse 38. And
+[1131] 1:00:51	about 10 days later, it happened that
+[1132] 1:00:52	the Lord struck Nabal and he died.
+[1133] 1:00:57	Dead fool.
+[1134] 1:00:59	There's no fool like a dead fool.
+[1135] 1:01:04	Fool of a duke. [laughter]
+[1136] 1:01:08	Yeah. So,
+[1137] 1:01:10	so that's what's going on here is
+[1138] 1:01:13	David's made a curse that says, "May God
+[1139] 1:01:17	do to the to my enemies if I don't take
+[1140] 1:01:20	action against every male." He doesn't
+[1141] 1:01:23	take action against every male.
+[1142] 1:01:25	Therefore, God did to his enemies. And
+[1143] 1:01:27	he did it to Nabal. Struck him dead.
+[1144] 1:01:31	So,
+[1145] 1:01:33	David didn't break an oath here.
+[1146] 1:01:36	God just fulfilled the curse. That's it.
+[1147] 1:01:39	Okay.
+[1148] 1:01:41	Next one here.
+[1149] 1:01:44	1st Samuel 25:30.
+[1150] 1:01:50	And the text says, "And it shall come
+[1151] 1:01:52	about when the Lord shall do for my Lord
+[1152] 1:01:54	according to all the good that he has
+[1153] 1:01:56	spoken concerning you and shall appoint
+[1154] 1:01:59	you ruler over Israel." All right.
+[1155] 1:02:03	Um,
+[1156] 1:02:05	now who's this? Who's speaking here? Oh,
+[1157] 1:02:08	this is Mabal.
+[1158] 1:02:10	Um yeah, this is uh
+[1159] 1:02:16	this is Abigail speaking. So, um
+[1160] 1:02:19	apparently it had already gotten around
+[1161] 1:02:22	that Samuel had anointed him king.
+[1162] 1:02:26	This is um
+[1163] 1:02:30	the the actions of prophets weren't
+[1164] 1:02:32	private.
+[1165] 1:02:34	They were public.
+[1166] 1:02:36	Okay. Uh we have to we have to this is
+[1167] 1:02:38	one of the the things we kind of have to
+[1168] 1:02:40	understand about sort of the words of
+[1169] 1:02:41	prophets. Um
+[1170] 1:02:44	when David is appointed king, it's not
+[1171] 1:02:46	in private.
+[1172] 1:02:48	Everybody knows.
+[1173] 1:02:51	Everybody knows because these acts were
+[1174] 1:02:53	public.
+[1175] 1:02:56	So yeah, even though this took place in
+[1176] 1:02:58	the house of Jesse,
+[1177] 1:03:00	everybody knows, his brothers knew,
+[1178] 1:03:05	Jesse's servants knew,
+[1179] 1:03:08	the entourage of Samuel knew.
+[1180] 1:03:13	>> The nosy neighbors knew.
+[1181] 1:03:16	Th knew.
+[1182] 1:03:20	everybody
+[1183] 1:03:21	it got around that he had gotten the
+[1184] 1:03:24	anointing of Samuel to be the next king.
+[1185] 1:03:29	So
+[1186] 1:03:31	yeah, everyone knew it was a terribly
+[1187] 1:03:34	terribly guarded secret, [laughter]
+[1188] 1:03:39	but that was how how prophets worked.
+[1189] 1:03:41	Prophets worked in public, not in
+[1190] 1:03:43	private.
+[1191] 1:03:46	And
+[1192] 1:03:48	you got this. I mean,
+[1193] 1:03:52	I always sort of hate these these sort
+[1194] 1:03:54	of prophets toour
+[1195] 1:03:57	who say, "I've got a private prophecy
+[1196] 1:03:59	for you."
+[1197] 1:04:02	No, that's not how prophecy works.
+[1198] 1:04:04	Prophecies are public.
+[1199] 1:04:09	You find out the pro false prophets.
+[1200] 1:04:12	That's why they're public.
+[1201] 1:04:14	you to judge be so you're able to judge
+[1202] 1:04:16	the prophet
+[1203] 1:04:23	uh gas Octavius. Why didn't he try to
+[1204] 1:04:25	kill him sooner?
+[1205] 1:04:27	Because he was a war hero.
+[1206] 1:04:31	He was handing Saul victories.
+[1207] 1:04:35	He was useful.
+[1208] 1:04:37	You know, they when he was then they
+[1209] 1:04:38	marched into Jerusalem together. They
+[1210] 1:04:41	praise Saul for his thousands and
+[1211] 1:04:43	David's for his tens of thousands
+[1212] 1:04:46	war casualties. Okay, let's be straight
+[1213] 1:04:49	about that. So,
+[1214] 1:04:53	so David was useful. Saul needed him for
+[1215] 1:04:56	his wars.
+[1216] 1:05:02	So that's why Saul didn't dispatch him
+[1217] 1:05:05	earlier. But eventually his jealousy got
+[1218] 1:05:07	the best of him and you know and
+[1219] 1:05:10	everyone was looking at David as this is
+[1220] 1:05:12	the next king.
+[1221] 1:05:14	So
+[1222] 1:05:16	rather than you know make the best of of
+[1223] 1:05:19	that situation you know Saul went full
+[1224] 1:05:22	aggro and you know David had to flee to
+[1225] 1:05:26	the Philistines. So yeah that's why he
+[1226] 1:05:28	didn't try to kill him sooner.
+[1227] 1:05:30	Okay,
+[1228] 1:05:34	next one going to be
+[1229] 1:05:39	uh from the camel leopard for $2. Money
+[1230] 1:05:41	short question too long. Look below.
+[1231] 1:05:44	Okay,
+[1232] 1:05:46	we've all been there. Um,
+[1233] 1:05:49	Gamma Leopard says, "With the ages in
+[1234] 1:05:52	Genesis not representing actual
+[1235] 1:05:54	biological age, could Abram's disbelief
+[1236] 1:05:56	in Genesis 17:17 be due to her being
+[1237] 1:06:00	Sarah having recently gone through
+[1238] 1:06:02	menopause?" Um, that could be part of
+[1239] 1:06:05	it. I mean, it's very clear that she had
+[1240] 1:06:07	gone through through menopause, but she
+[1241] 1:06:09	was also an elderly woman. If she was
+[1242] 1:06:12	exactly that age, we can't be sure. But
+[1243] 1:06:16	she was already an elderly woman. And
+[1244] 1:06:20	u the disbelief we have to keep in a
+[1245] 1:06:22	little bit circumspect too because um
+[1246] 1:06:25	those um it is it is clear that she was
+[1247] 1:06:29	beyond childbearing age and
+[1248] 1:06:33	he was kind of beyond interest in sex.
+[1249] 1:06:36	So
+[1250] 1:06:37	uh
+[1251] 1:06:41	so there was there was something going
+[1252] 1:06:43	on there that uh where age was a factor.
+[1253] 1:06:46	So
+[1254] 1:06:49	but it's also probable that the uh the
+[1255] 1:06:52	whole lifespan of Abraham
+[1256] 1:06:54	um being 180 years probably was more
+[1257] 1:06:58	than one individual too. So,
+[1258] 1:07:02	so yeah, it is it is
+[1259] 1:07:05	um
+[1260] 1:07:07	they did say it it does say in the text
+[1261] 1:07:11	that
+[1262] 1:07:12	um who ever conceived a child at that
+[1263] 1:07:15	age.
+[1264] 1:07:17	Okay, so it does sort of throw you back
+[1265] 1:07:22	out of the text and go, "Hey, wait.
+[1266] 1:07:26	Uh, Tara was 135,
+[1267] 1:07:29	supposedly older,
+[1268] 1:07:32	130. He was 130, supposedly older than
+[1269] 1:07:36	Abraham and Sarah when they gave birth
+[1270] 1:07:38	to to Abram. So, you know, you really
+[1271] 1:07:42	can't you really have to to sort of take
+[1272] 1:07:46	these little paricopies into into the
+[1273] 1:07:49	sort of what's the current going on in
+[1274] 1:07:52	the moment there because the the the
+[1275] 1:07:55	broader text will talk about things in a
+[1276] 1:07:58	different way.
+[1277] 1:08:00	though.
+[1278] 1:08:02	Uh,
+[1279] 1:08:07	yeah. Well, maybe Terara's wife was
+[1280] 1:08:09	young, but you know, Tara himself, huh?
+[1281] 1:08:14	But there was lots of patriarchs that
+[1282] 1:08:15	that supposedly gave birth at tremendous
+[1283] 1:08:18	ages.
+[1284] 1:08:26	At least their wives did. Yeah.
+[1285] 1:08:28	So,
+[1286] 1:08:35	okay, let's let's move on here.
+[1287] 1:08:42	Uh, Louis Sandville for 199. Thank you
+[1288] 1:08:44	for the super chat. Why is God absent in
+[1289] 1:08:47	the book of Esther?
+[1290] 1:08:52	He's not, but he is. You never find the
+[1291] 1:08:57	name God in the book of Esther. He's
+[1292] 1:09:00	never mentioned. Yahweh is not mentioned
+[1293] 1:09:02	once in the book of Esther. But what you
+[1294] 1:09:05	have in the book of Esther is miracle of
+[1295] 1:09:08	timing after miracle of timing after
+[1296] 1:09:10	miracle of timing after miracle of
+[1297] 1:09:12	timing.
+[1298] 1:09:14	Okay.
+[1299] 1:09:16	Yeah. Yeah. Absolutely, Ryan. He's not
+[1300] 1:09:18	absent. He's just not mentioned. Yeah.
+[1301] 1:09:22	like the whole fact that Hmon rolls the
+[1302] 1:09:26	dice that happens to be on the day
+[1303] 1:09:31	that is of particular significance.
+[1304] 1:09:34	Uh there's there's a lot of lot of
+[1305] 1:09:36	coincidences, little coincidences,
+[1306] 1:09:40	little uh miracles of timing. Esther
+[1307] 1:09:42	gets s um uh selected to be a minor
+[1308] 1:09:46	queen. She's a minor. Okay, let's be
+[1309] 1:09:47	very honest about this. Esther is not
+[1310] 1:09:50	the great queen.
+[1311] 1:09:53	She's not the great queen of Harash Ro.
+[1312] 1:09:56	Okay.
+[1313] 1:09:58	Um the great queen would have been a
+[1314] 1:10:00	royal person, a political marriage.
+[1315] 1:10:04	She's a minor queen.
+[1316] 1:10:11	She's the I need someone that that looks
+[1317] 1:10:14	pretty on my arm when I do this thing.
+[1318] 1:10:16	Okay. So,
+[1319] 1:10:21	so that's so that's what's going on
+[1320] 1:10:24	there. Okay. So, she's Esther's a minor
+[1321] 1:10:28	queen
+[1322] 1:10:30	and but she's in the right place at the
+[1323] 1:10:32	right time. Coincidence or providence?
+[1324] 1:10:38	Uh, Hmon rolls the dice. exactly the
+[1325] 1:10:42	result that is going to be needed to
+[1326] 1:10:44	give the Israelites time to save
+[1327] 1:10:46	themselves. Coincidence
+[1328] 1:10:49	or providence?
+[1329] 1:10:52	Hmon built a scaffold to hang the Jews
+[1330] 1:10:54	and has a big hanging on it himself,
+[1331] 1:10:56	which is really scaffold is not for
+[1332] 1:10:59	hanging from the neck, by the way. It's
+[1333] 1:11:01	impaling. All right. Coincidence or
+[1334] 1:11:04	providence?
+[1335] 1:11:09	The king walks in when Hmon falls and
+[1336] 1:11:12	lands on Esther's dress. The hem of
+[1337] 1:11:14	Esther's dress.
+[1338] 1:11:17	Coincidence or providence?
+[1339] 1:11:20	Providence all the way through.
+[1340] 1:11:26	Uh Ryan Cohen camp. So, how many total
+[1341] 1:11:29	queens are we talking about here?
+[1342] 1:11:30	Hundreds.
+[1343] 1:11:32	Hundreds.
+[1344] 1:11:35	So she was part of the herum.
+[1345] 1:11:39	Why she didn't have permission to go
+[1346] 1:11:43	address the king?
+[1347] 1:11:45	Because as a herum, you don't have
+[1348] 1:11:47	standing to go and address the king. One
+[1349] 1:11:51	of the things about the Esther story is
+[1350] 1:11:53	she took her
+[1351] 1:11:56	um she took her life in her hands by
+[1352] 1:12:00	approaching the court, approaching the
+[1353] 1:12:03	king on his throne without an
+[1354] 1:12:06	invitation.
+[1355] 1:12:09	So, and she could have been executed for
+[1356] 1:12:12	that act
+[1357] 1:12:15	cuz she did something out of the
+[1358] 1:12:18	protocol.
+[1359] 1:12:20	So
+[1360] 1:12:23	imagine the wedding bills.
+[1361] 1:12:26	Imagine the cost of keeping them um in
+[1362] 1:12:29	clothed and fed. Params weren't cheap.
+[1363] 1:12:33	They were not cheap.
+[1364] 1:12:39	[laughter] This is why the foreign kings
+[1365] 1:12:41	were happy to send their daughters other
+[1366] 1:12:42	kings. It kept them in check. [laughter]
+[1367] 1:12:47	>> Well, it did. It kept
+[1368] 1:12:48	>> Oh, yeah. financial.
+[1369] 1:12:50	>> Oh yeah.
+[1370] 1:12:51	>> unable to
+[1371] 1:12:53	>> Oh yeah. Yeah. I mean you have to
+[1372] 1:12:55	understand that the exchange of of of
+[1373] 1:12:57	royal wives, you know, was not just
+[1374] 1:13:00	something to secure alliances. It also
+[1375] 1:13:05	zapped the um the coffer the royal
+[1376] 1:13:09	coffers of your potential opposition.
+[1377] 1:13:12	So
+[1378] 1:13:19	uh Dark Blade, does this her being a
+[1379] 1:13:21	minor wife resolve historical objections
+[1380] 1:13:24	like it's impossible for this to have
+[1381] 1:13:25	happened? I think so. Um the fact is
+[1382] 1:13:29	when when people go, "Oh, you know, we
+[1383] 1:13:31	don't find any record of Esther in
+[1384] 1:13:33	history." Well, no. The names of of the
+[1385] 1:13:37	minor queens weren't recorded. They
+[1386] 1:13:38	weren't important enough.
+[1387] 1:13:41	So,
+[1388] 1:13:52	Yeah, we won't repeat that Solomon
+[1389] 1:13:54	remark.
+[1390] 1:13:55	Okay.
+[1391] 1:13:57	Uh, next one here,
+[1392] 1:14:01	uh, from Louis Sandaval. Can angels
+[1393] 1:14:03	affect their surroundings? Daniel 3:25.
+[1394] 1:14:06	All right. Let's look at Daniel 3:25 and
+[1395] 1:14:08	then I'll comment.
+[1396] 1:14:13	Daniel
+[1397] 1:14:15	3
+[1398] 1:14:18	25
+[1399] 1:14:22	uh verse 24 we'll start with. Then
+[1400] 1:14:24	Nebuchadnezzar the king was astounded
+[1401] 1:14:26	and stood up in haste. He responded and
+[1402] 1:14:28	said to his high officials, "Was it not
+[1403] 1:14:30	three men we cast bound into the midst
+[1404] 1:14:32	of the fire?" And they answered to the
+[1405] 1:14:34	king, "Certainly, oh king." He answered
+[1406] 1:14:36	and said, "Look, I see four men loosed
+[1407] 1:14:39	and walking about in the midst of the
+[1408] 1:14:41	fire without harm." And the appearance
+[1409] 1:14:44	of the fourth is like a son of the gods.
+[1410] 1:14:47	Okay,
+[1411] 1:14:49	the answer to this is yes, angels can
+[1412] 1:14:52	affect their surroundings. Uh they can
+[1413] 1:14:54	interact with the physical world. Uh we
+[1414] 1:14:59	have um we know that demons can do this.
+[1415] 1:15:03	They can levitate objects.
+[1416] 1:15:05	Um they can interact with um uh human
+[1417] 1:15:10	bodies. Uh there's there they could
+[1418] 1:15:12	definitely affect their surroundings.
+[1419] 1:15:13	There's no there's no question they can
+[1420] 1:15:15	do this. Um so
+[1421] 1:15:19	so yeah, for this this is this is this
+[1422] 1:15:21	is a uh easy for for angels to do. So
+[1423] 1:15:24	and depending on the power of the angel
+[1424] 1:15:27	uh they can do a lot more than this.
+[1425] 1:15:30	um you know they can they can bring down
+[1426] 1:15:35	um all sorts of wrath and judgment if if
+[1427] 1:15:39	unleashed to do so.
+[1428] 1:15:42	So so absolutely this is within the
+[1429] 1:15:45	purview of an angel's ability to affect
+[1430] 1:15:48	their physical surroundings. They're not
+[1431] 1:15:51	just they're they're not spirit just
+[1432] 1:15:53	spirit critters. their spirit critters
+[1433] 1:15:55	with power
+[1434] 1:15:57	and that power allows them to do other
+[1435] 1:16:00	things including manifest similacro
+[1436] 1:16:03	bodies and to um to affect the
+[1437] 1:16:06	environment around them. All right, so
+[1438] 1:16:08	hope that helps. Thank you for the super
+[1439] 1:16:10	chat. Very much appreciate it.
+[1440] 1:16:18	Dark Blade goes, "One angel was half
+[1441] 1:16:20	ready to off balum." Oh yeah.
+[1442] 1:16:23	Yep. He was ready to do it.
+[1443] 1:16:28	[laughter]
+[1444] 1:16:29	>> It was It was his donkey who saved him.
+[1445] 1:16:32	>> That's got to be
+[1446] 1:16:33	>> Yeah, that's got to be embarrassing.
+[1447] 1:16:34	[laughter]
+[1448] 1:16:39	I'll take this question from mama here
+[1449] 1:16:40	that just popped up. It comes up here.
+[1450] 1:16:45	Mama asks, "Can animals see spirit
+[1451] 1:16:47	critters like on the regular?"
+[1452] 1:16:50	Sometimes. [snorts]
+[1453] 1:16:51	Yes. Yes. animals for some reason can
+[1454] 1:16:54	see spirit critters.
+[1455] 1:16:56	Um if you've ever
+[1456] 1:17:00	there there have been times when say
+[1457] 1:17:06	um animals can perceive that something
+[1458] 1:17:11	isn't right
+[1459] 1:17:13	and they they freak out. They freak out.
+[1460] 1:17:16	They're afraid and they hide for for no
+[1461] 1:17:20	good reason.
+[1462] 1:17:22	when everything else seems perfectly
+[1463] 1:17:24	normal.
+[1464] 1:17:26	Uh we do know that Balam's donkey could
+[1465] 1:17:28	see the angel when Balum himself
+[1466] 1:17:31	couldn't.
+[1467] 1:17:34	So
+[1468] 1:17:35	animals, some animals in particular,
+[1469] 1:17:37	seem to be acutely sensitive to the
+[1470] 1:17:41	presence of spirit critters.
+[1471] 1:17:43	So,
+[1472] 1:17:45	um I hope that helps. Thank you for that
+[1473] 1:17:47	follow-up question.
+[1474] 1:17:50	All
+[1475] 1:17:51	right, next one here
+[1476] 1:17:55	is from
+[1477] 1:18:00	uh at Ministries. Thank you for the
+[1478] 1:18:02	super chat. 1st Samuel 27:10. David
+[1479] 1:18:05	lied.
+[1480] 1:18:07	Yes, he did.
+[1481] 1:18:10	We'll see what happens here.
+[1482] 1:18:16	1st Samuel
+[1483] 1:18:19	27 verse 10
+[1484] 1:18:28	ah and we'll start verse 9. And David
+[1485] 1:18:30	attacked the land and did not leave a
+[1486] 1:18:32	man or woman alive. And he took away the
+[1487] 1:18:34	sheep, the cattle, the donkeys, the
+[1488] 1:18:36	camel, and the clothing. And he returned
+[1489] 1:18:38	and came to Akish. Akish is a
+[1490] 1:18:41	Philistine. Now Akish said, "Where have
+[1491] 1:18:44	you made a raid today?" And David said,
+[1492] 1:18:48	"Against the negative of Judah, against
+[1493] 1:18:50	the negative of the Germite Jeremites,
+[1494] 1:18:54	and against the uh negative of the
+[1495] 1:18:57	Kennites,
+[1496] 1:19:00	busy day."
+[1497] 1:19:02	When verse 8, it says, "David and his
+[1498] 1:19:05	men went up and raided the Jezerites and
+[1499] 1:19:08	the Girasites and the Amalachites,
+[1500] 1:19:11	for they were inhabitants of the land
+[1501] 1:19:13	from ancient times, as you came to
+[1502] 1:19:16	shore, even as far as the land of
+[1503] 1:19:18	Egypt." Okay.
+[1504] 1:19:20	Now, did David lie? Yes. Yes, he did.
+[1505] 1:19:26	He did because frankly
+[1506] 1:19:29	the Philistines were at war with the
+[1507] 1:19:31	Israelites. They were not at war with
+[1508] 1:19:34	the Jesserites or the gear uh gear
+[1509] 1:19:38	gearites or the Amalachites.
+[1510] 1:19:42	Um
+[1511] 1:19:43	so David sort of pummeled the enemies of
+[1512] 1:19:46	the Israelites
+[1513] 1:19:47	which
+[1514] 1:19:50	uh probably would not have sat well with
+[1515] 1:19:52	Achen or Akish. So, Akish would probably
+[1516] 1:19:55	have not been happy that his guy was
+[1517] 1:19:59	going off and potentially starting wars
+[1518] 1:20:02	with [laughter]
+[1519] 1:20:04	with with nations that the Philistines
+[1520] 1:20:07	were not at war with.
+[1521] 1:20:09	That would have not have been a good
+[1522] 1:20:10	look for someone that Akish had taken
+[1523] 1:20:14	under his protection. Because we got to
+[1524] 1:20:16	remember at this point in time, David
+[1525] 1:20:18	fled Saul and had become a mercenary for
+[1526] 1:20:23	the Philistines.
+[1527] 1:20:26	He's supposed to be picking battles
+[1528] 1:20:28	against Israelites,
+[1529] 1:20:30	not against uh geisherites or
+[1530] 1:20:33	Amalachites or Gearsites. Okay?
+[1531] 1:20:37	So to maintain good relations with his
+[1532] 1:20:41	benefactor, he lied.
+[1533] 1:20:45	He plundered these other nations which
+[1534] 1:20:47	were supposed to be driven out anyway
+[1535] 1:20:49	and
+[1536] 1:20:51	basically killed them and took their
+[1537] 1:20:54	stuff and gave it to the Philistines.
+[1538] 1:20:59	So that's that's pretty much what went
+[1539] 1:21:02	on there.
+[1540] 1:21:10	Okay, next one here. 2 Samuel 5:14. Is
+[1541] 1:21:14	this Nathan the prophet?
+[1542] 1:21:17	There's two Nathans, I believe, in
+[1543] 1:21:20	scripture, but let's go and see which
+[1544] 1:21:21	one this is. 54.
+[1545] 1:21:30	Okay. Uh verse 13. Meanwhile, David took
+[1546] 1:21:33	more concubines and wives from Jerusalem
+[1547] 1:21:35	after he came from Hebron, and more sons
+[1548] 1:21:37	and daughters were born to David. Now
+[1549] 1:21:39	these are the name of those who are born
+[1550] 1:21:41	to him in Jerusalem. Shamua,
+[1551] 1:21:46	Shabbab, Nathan, Solomon,
+[1552] 1:21:49	uh, Ibar, Elushia, and so on. Okay. Uh,
+[1553] 1:21:52	this is probably not the same. This is
+[1554] 1:21:54	not the same Nathan. Uh, this is
+[1555] 1:21:56	Nathan's son of David. Okay. So,
+[1556] 1:22:00	u not the same Nathan.
+[1557] 1:22:04	uh the Nathan was a prophet and we're
+[1558] 1:22:07	not exactly sure what is but it's
+[1559] 1:22:09	probably Nathan would have probably have
+[1560] 1:22:11	already been an elderly man by the time
+[1561] 1:22:14	because Nathan's uh sorry um David
+[1562] 1:22:18	reigns in Jerusalem
+[1563] 1:22:20	for over 20 years while he's in uh while
+[1564] 1:22:25	he's in his 50s when the Bashiba
+[1565] 1:22:28	incident happens
+[1566] 1:22:30	um
+[1567] 1:22:32	his his children at that point. Um, you
+[1568] 1:22:37	know, they're they're sort of they're
+[1569] 1:22:39	sort of in their late teens, early 20s
+[1570] 1:22:41	already. Uh, but that would not have
+[1571] 1:22:43	been the prophet that would have
+[1572] 1:22:45	prophesied against uh David for his his
+[1573] 1:22:48	indiscretion against
+[1574] 1:22:51	um Uriah. So,
+[1575] 1:22:56	so I don't think this is the same same
+[1576] 1:22:58	Nathan.
+[1577] 1:23:06	Um,
+[1578] 1:23:13	yeah.
+[1579] 1:23:19	Uh, so did David purposely name his son
+[1580] 1:23:21	after Nathan the prophet? No, it's a
+[1581] 1:23:23	common name. Uh, Nathan is a pro common
+[1582] 1:23:26	was a common name back then. So, uh, it
+[1583] 1:23:30	it's it's it's not that that that big a
+[1584] 1:23:33	deal there. So, it's just it's just a
+[1585] 1:23:35	very common name among Israelites at
+[1586] 1:23:37	that time. So,
+[1587] 1:23:44	next one
+[1588] 1:23:46	is
+[1589] 1:23:50	uh 2 Samuel 5'8. David hated the
+[1590] 1:23:53	handicapped.
+[1591] 1:23:55	Let's I don't think that was what was
+[1592] 1:23:57	going on here, but
+[1593] 1:24:03	verse seven.
+[1594] 1:24:04	Nevertheless, David captured the
+[1595] 1:24:06	stronghold of Zion. That's Jerusalem.
+[1596] 1:24:09	And that is the city of David. And David
+[1597] 1:24:12	said on that day, whoever would strike
+[1598] 1:24:14	the Jebusites, let him reach the lame
+[1599] 1:24:17	and the blind who are hated by David's
+[1600] 1:24:19	soul through the tunnel of water.
+[1601] 1:24:23	Therefore, they say the blind or the
+[1602] 1:24:25	lame shall not come into the house.
+[1603] 1:24:28	Okay. Now, the idea here going on is
+[1604] 1:24:33	it's not that he hates the handicapped.
+[1605] 1:24:37	it's that it's and and exedites are
+[1606] 1:24:42	are divided as to
+[1607] 1:24:46	what exactly this means. Now there are a
+[1608] 1:24:48	few exedites that do say that that this
+[1609] 1:24:52	is a this is a ab ableist
+[1610] 1:24:56	prejudice of David. Okay. But there's
+[1611] 1:24:58	other exodates that basically say that
+[1612] 1:25:02	um
+[1613] 1:25:04	the Jebusites when they were invaded
+[1614] 1:25:07	tried to escape Jerusalem through the
+[1615] 1:25:10	tunnel, the water tunnel that went from
+[1616] 1:25:14	um uh from the spring uh I think it's
+[1617] 1:25:18	spring of Saleom to Jerusalem and they
+[1618] 1:25:20	tried to escape through the tunnel and
+[1619] 1:25:22	got caught there. Okay. And then David
+[1620] 1:25:25	just killed them. Okay. So these are not
+[1621] 1:25:28	um these are not basically
+[1622] 1:25:31	people who are naturally lame or blind
+[1623] 1:25:34	but they were caught in the tunnel as
+[1624] 1:25:36	they tried to escape
+[1625] 1:25:38	and
+[1626] 1:25:40	and uh David just dealt with them as
+[1627] 1:25:43	even though they were able perfectly
+[1628] 1:25:44	able-bodied Jebusites. So,
+[1629] 1:25:49	so,
+[1630] 1:25:52	uh, Scott Worthan says, "Handicapped men
+[1631] 1:25:54	are unrecruitable in Isa's army." Yeah,
+[1632] 1:25:57	but he he didn't kill everybody in
+[1633] 1:25:58	Jerusalem anyway, but there were those
+[1634] 1:25:59	who tried to flee. So,
+[1635] 1:26:03	um,
+[1636] 1:26:05	it it's it's it's more of an insult,
+[1637] 1:26:08	and I agree with you with these exodies
+[1638] 1:26:09	that that that basically that this is an
+[1639] 1:26:11	insult to the strong men of of of Jabus,
+[1640] 1:26:16	okay? The strong men of the Jebusites,
+[1641] 1:26:19	you know, that they are like the lame
+[1642] 1:26:22	and the blind
+[1643] 1:26:25	because it says, "Whoever would strike
+[1644] 1:26:27	the Jebusites, let him reach the lame
+[1645] 1:26:29	and the blind." So this is basically a a
+[1646] 1:26:31	kind of mockery.
+[1647] 1:26:34	You you want to go kill a Jebusite,
+[1648] 1:26:35	you're going to reach the blame in the
+[1649] 1:26:37	blind because they're useless. Okay? You
+[1650] 1:26:39	know, so it's putting down the strong
+[1651] 1:26:42	warriors of the Jebisites.
+[1652] 1:26:46	So that's what's going on there. It's
+[1653] 1:26:48	it's not that that this these are guys
+[1654] 1:26:50	that that that they're going to get
+[1655] 1:26:52	recruit cuz that's it's going to take
+[1656] 1:26:55	time for Jebusites to become assimilated
+[1657] 1:26:59	into the normal population.
+[1658] 1:27:02	But it's David more or less putting down
+[1659] 1:27:05	the Jebusites finest warriors
+[1660] 1:27:11	Ryan Co camp. That's so lame. It's kind
+[1661] 1:27:15	of like that. It's It's kind of like
+[1662] 1:27:18	that.
+[1663] 1:27:22	Lame. Lame. Lame.
+[1664] 1:27:26	Yeah.
+[1665] 1:27:28	Yeah. David is basically insulting the
+[1666] 1:27:29	Jebusite's finest. Say, "Okay." Yeah.
+[1667] 1:27:33	You're going to reach them. They're
+[1668] 1:27:34	going to run. They're going to run and
+[1669] 1:27:36	they're going to hide in the tunnels.
+[1670] 1:27:39	They're going to catch him there and
+[1671] 1:27:41	they're going to act like cowards like
+[1672] 1:27:42	just as if they were lame and blind. And
+[1673] 1:27:45	then you could do
+[1674] 1:27:47	do your thing.
+[1675] 1:27:50	Okay,
+[1676] 1:27:56	next one here
+[1677] 1:28:00	is from
+[1678] 1:28:06	uh Baron Salvator for $5. Thank you for
+[1679] 1:28:08	the super chat.
+[1680] 1:28:10	Why do you think Christianity has spread
+[1681] 1:28:12	well in places like China? as hasn't
+[1682] 1:28:14	spread well in places like China or
+[1683] 1:28:16	Japan compared to other countries. Okay,
+[1684] 1:28:20	two very different countries there with
+[1685] 1:28:23	two very different reasons why
+[1686] 1:28:26	Christianity hasn't taken root. Now,
+[1687] 1:28:29	let's start with Japan.
+[1688] 1:28:31	Uh because the history of Japan and
+[1689] 1:28:33	Christianity is complicated.
+[1690] 1:28:35	It actually spread like wildfire
+[1691] 1:28:40	uh I believe during the 17th century
+[1692] 1:28:43	during the samurai period. Okay.
+[1693] 1:28:46	uh during the shogunate
+[1694] 1:28:49	and
+[1695] 1:28:51	uh
+[1696] 1:28:53	what was what was so distinct about
+[1697] 1:28:56	Japan during the this shogunate was this
+[1698] 1:29:00	idea of loyalty to one's master above
+[1699] 1:29:04	everything else.
+[1700] 1:29:08	Japanese samurai understood this.
+[1701] 1:29:12	This is something that resonated.
+[1702] 1:29:15	They also understood that human masters
+[1703] 1:29:19	were fallible.
+[1704] 1:29:22	Okay.
+[1705] 1:29:25	So when when the Jesuits brought
+[1706] 1:29:28	Christianity to Japan, it actually
+[1707] 1:29:32	initially spread like wildfire.
+[1708] 1:29:36	Uh in as little as 50 years, there were
+[1709] 1:29:39	200,000
+[1710] 1:29:41	Christians in Japan.
+[1711] 1:29:45	It spread so fast
+[1712] 1:29:48	and the Japanese feudal lords, the
+[1713] 1:29:50	daimos,
+[1714] 1:29:52	they basically got scared.
+[1715] 1:29:55	Who is if we if if we can't command
+[1716] 1:29:58	loyalty to us
+[1717] 1:30:01	daimos and
+[1718] 1:30:04	these samurai are now pledging their
+[1719] 1:30:06	fieldy to a god.
+[1720] 1:30:09	How can we control that?
+[1721] 1:30:14	This is a this is a really difficult
+[1722] 1:30:16	problem for the Japanese who want to
+[1723] 1:30:18	maintain control. They want maintain
+[1724] 1:30:22	absolute control over their society.
+[1725] 1:30:28	So they outlaw Christianity and they
+[1726] 1:30:33	brutally stamp it out.
+[1727] 1:30:36	Brutally. There are some rebels that
+[1728] 1:30:37	will go underground,
+[1729] 1:30:39	but overall Japan as a Christian culture
+[1730] 1:30:45	is practically extinct
+[1731] 1:30:48	50 years after that. So a 100 years
+[1732] 1:30:50	after they arrive, Christianity is
+[1733] 1:30:53	practically extinct once again in Japan.
+[1734] 1:30:59	Now the the issue here is going to be
+[1735] 1:31:04	that between that sort of the Christian
+[1736] 1:31:07	century of Japan
+[1737] 1:31:10	and the Maji restoration,
+[1738] 1:31:13	Japan does a cultural sea change. You
+[1739] 1:31:16	get the restoration of the emperor
+[1740] 1:31:20	and a focus not so much on
+[1741] 1:31:24	say fieldy to your lord
+[1742] 1:31:28	buddo
+[1743] 1:31:30	but you're going to get
+[1744] 1:31:33	cohesive loyalty to your society and to
+[1745] 1:31:37	the emperor after at the end of world
+[1746] 1:31:39	war II emperor is reduced to more or
+[1747] 1:31:42	less a figure head and But that that
+[1748] 1:31:47	loyalty to your society that that
+[1749] 1:31:49	conformity
+[1750] 1:31:51	that remains and the conformist culture
+[1751] 1:31:54	in Japan has made it very very difficult
+[1752] 1:31:57	for Christianity to take root again. Now
+[1753] 1:32:01	there are Christians in Japan but they
+[1754] 1:32:02	aren't very many. Um they account for I
+[1755] 1:32:06	think Z.5%
+[1756] 1:32:08	or something like really really small
+[1757] 1:32:11	numbers. Okay. So that's why it didn't
+[1758] 1:32:15	take root in Japan. Now in the case of
+[1759] 1:32:18	China, it's different. In the case of
+[1760] 1:32:22	China,
+[1761] 1:32:25	China has had missionaries going back to
+[1762] 1:32:28	the fifth century AD. There's been a lot
+[1763] 1:32:32	of missionaries that have gone to China
+[1764] 1:32:34	over time.
+[1765] 1:32:38	One of the problems with China though
+[1766] 1:32:41	and why it never sort of took root and
+[1767] 1:32:44	resonated with the Chinese
+[1768] 1:32:47	is a culturalism but it's a different
+[1769] 1:32:49	cultural reason and what and that
+[1770] 1:32:52	cultural reason is that
+[1771] 1:32:57	um China does not have a strong
+[1772] 1:33:01	definition of sin. Okay. So converting
+[1773] 1:33:07	having Chinese convert to Christianity
+[1774] 1:33:10	is really really difficult if you cannot
+[1775] 1:33:13	articulate
+[1776] 1:33:15	easily to a population the notion of
+[1777] 1:33:17	sin.
+[1778] 1:33:20	So while China
+[1779] 1:33:23	has had
+[1780] 1:33:24	1,500 years of evangelization,
+[1781] 1:33:29	it could never get that traction just
+[1782] 1:33:32	because it could never secure
+[1783] 1:33:36	a a standing definition of sin among the
+[1784] 1:33:39	population.
+[1785] 1:33:40	Whereas, as I said in Japan, the issue
+[1786] 1:33:43	then is is more that
+[1787] 1:33:48	um conformist culture
+[1788] 1:33:52	prevents strong expressions of religion.
+[1789] 1:33:55	In fact, in Japan, religion is feared
+[1790] 1:34:00	and religion is associated with
+[1791] 1:34:02	terrorism.
+[1792] 1:34:05	So, uh because religion is said to upset
+[1793] 1:34:08	culture in Japan.
+[1794] 1:34:11	So this is one of the reasons why
+[1795] 1:34:16	um okay uh Dark Blade says Christianity
+[1796] 1:34:19	is also making the rounds in Korea
+[1797] 1:34:21	before being exterminated 70. Yes, but
+[1798] 1:34:24	here's one of the things interesting
+[1799] 1:34:25	things of the this is why Korea is the
+[1800] 1:34:27	interesting exception.
+[1801] 1:34:30	Um, Korea
+[1802] 1:34:33	uh stamped out Christianity in 1785, but
+[1803] 1:34:38	it allowed it back in the 1850s.
+[1804] 1:34:42	And in Korea,
+[1805] 1:34:44	Korea's different, and this is what's
+[1806] 1:34:46	really fascinating about Korea. Korea
+[1807] 1:34:48	had in the 1850s
+[1808] 1:34:51	started
+[1809] 1:34:52	um
+[1810] 1:34:54	allowed missionaries back in who who
+[1811] 1:34:56	made these little schools and churches
+[1812] 1:34:58	and all that. and it didn't get a lot of
+[1813] 1:35:00	traction.
+[1814] 1:35:02	Then World War II
+[1815] 1:35:05	and World War II, the Japanese invaded
+[1816] 1:35:08	Korea.
+[1817] 1:35:10	And what the Imperial Japanese did in
+[1818] 1:35:12	Korea
+[1819] 1:35:14	was
+[1820] 1:35:15	it
+[1821] 1:35:18	closed the schools, closed the churches,
+[1822] 1:35:22	and made it a crime to practice
+[1823] 1:35:24	Christianity. [snorts]
+[1824] 1:35:28	And this the Koreans saw this saw
+[1825] 1:35:32	becoming Christian as a way to stick it
+[1826] 1:35:34	to the Japanese.
+[1827] 1:35:38	So it be being becoming a Christian in
+[1828] 1:35:41	Korea was a sign of rebellion
+[1829] 1:35:45	to the imperial Japanese.
+[1830] 1:35:49	So this is why today
+[1831] 1:35:54	>> the motivation
+[1832] 1:35:54	>> well it might not be the most pure
+[1833] 1:35:55	motivation but it is a motivation.
+[1834] 1:35:59	So today you the the the country that
+[1835] 1:36:03	sends the most missionaries per capita
+[1836] 1:36:07	in the world after the United States is
+[1837] 1:36:10	Korea, South Korea.
+[1838] 1:36:17	So,
+[1839] 1:36:19	um,
+[1840] 1:36:21	so yeah, it was it was one of those
+[1841] 1:36:23	things where,
+[1842] 1:36:25	um, the the Japanese are directly
+[1843] 1:36:27	responsible for South Korea
+[1844] 1:36:31	having a large part of their population
+[1845] 1:36:33	be Christian. Very large. It's probably
+[1846] 1:36:37	the the the Christian hot spot of East
+[1847] 1:36:39	Asia.
+[1848] 1:36:41	And that's saying something. So,
+[1849] 1:36:45	okay. So, I think we've we've we've
+[1850] 1:36:47	explained that nicely. Uh, thank you
+[1851] 1:36:50	very much for that uh that super chat,
+[1852] 1:36:52	Baron. Uh, really appreciate it.
+[1853] 1:36:57	Next one here, Louisis Sandaval for 199.
+[1854] 1:37:00	Did Jesus teleport in John 2019 to 26?
+[1855] 1:37:04	Okay. And I know exactly what you're
+[1856] 1:37:05	talking about here. We'll just get to
+[1857] 1:37:07	the passage here.
+[1858] 1:37:10	Um John
+[1859] 1:37:13	20
+[1860] 1:37:14	verse 19.
+[1861] 1:37:18	When therefore it was evening on that
+[1862] 1:37:20	day and this is after the resurrection
+[1863] 1:37:23	and and the and the disciples are all
+[1864] 1:37:24	hiding out in the upper room
+[1865] 1:37:27	the first day of the week when the doors
+[1866] 1:37:29	were shut where the disciples were. Now
+[1867] 1:37:31	they're hiding for the fear of the Jews.
+[1868] 1:37:35	Jesus came and stood in their midst and
+[1869] 1:37:37	say, "Peace be with you." Okay, so
+[1870] 1:37:40	they're hiding in that upper room. The
+[1871] 1:37:42	room's locked. Nobody can get in and
+[1872] 1:37:45	they're just hole hauling down there.
+[1873] 1:37:50	Did Jesus teleport into the room? We
+[1874] 1:37:53	don't know.
+[1875] 1:37:56	Did he walk through the door? Maybe.
+[1876] 1:37:59	Did he teleport inside? Maybe.
+[1877] 1:38:03	text doesn't tell us. The text tells us
+[1878] 1:38:06	the door was locked.
+[1879] 1:38:10	They were inside
+[1880] 1:38:12	with the key [laughter]
+[1881] 1:38:16	and Jesus came and stood in their midst.
+[1882] 1:38:17	That's all we're told. We don't tell how
+[1883] 1:38:19	this happened. We're just told that it
+[1884] 1:38:22	happened.
+[1885] 1:38:25	The Bible doesn't tell us how everything
+[1886] 1:38:27	happens. It just sort of sometimes just
+[1887] 1:38:29	lets us know that it happened.
+[1888] 1:38:33	Mama says, "Sneaky, sneaky, sir."
+[1889] 1:38:35	[laughter]
+[1890] 1:38:37	Yeah. So, unfortunately, that's the best
+[1891] 1:38:40	we can say because we just don't know.
+[1892] 1:38:42	But we do know that the door was locked
+[1893] 1:38:45	and
+[1894] 1:38:46	somehow Jesus found his way in
+[1895] 1:38:49	[laughter] the sight the lock.
+[1896] 1:38:52	>> Well, this is why I think it's so
+[1897] 1:38:54	ridiculous when um when the Muslims
+[1898] 1:38:56	bricked up the eastern gate.
+[1899] 1:38:59	Uh so because because uh the Messiah is
+[1900] 1:39:02	supposed to enter the you know at at at
+[1901] 1:39:05	the second coming through the Jerusalem
+[1902] 1:39:08	gate. Yeah. He he made it through a
+[1903] 1:39:10	locked door. You think a brick wall is
+[1904] 1:39:12	going to stop him? Doubt it.
+[1905] 1:39:18	Boy. [laughter]
+[1906] 1:39:22	Yeah. It's not going to stop him. They
+[1907] 1:39:24	put they put a graveyard in front of the
+[1908] 1:39:26	eastern gate and bricked up the eastern
+[1909] 1:39:28	gate. This way Jesus will never walk
+[1910] 1:39:30	through. Yeah, right. Sh.
+[1911] 1:39:38	Ryan,
+[1912] 1:39:39	guys, the window is unlocked. Amateurs.
+[1913] 1:39:42	Well,
+[1914] 1:39:45	yeah. If Jesus wants in, he can get in.
+[1915] 1:39:51	Was a creative try. Yeah.
+[1916] 1:39:56	Okay.
+[1917] 1:39:58	Louis Sandaval for 199. Does first kings
+[1918] 1:40:01	1911 to313 imply two persons of Yahweh.
+[1919] 1:40:06	All right. We will look at that.
+[1920] 1:40:12	First Kings
+[1921] 1:40:16	19
+[1922] 1:40:19	11-13.
+[1923] 1:40:21	So he said, "Go forth and stand on the
+[1924] 1:40:23	mountain before the Lord. Behold, the
+[1925] 1:40:25	Lord was passing by." And a great stone,
+[1926] 1:40:28	a great and strong wind was rending the
+[1927] 1:40:30	rocks and breaking in pieces the rocks
+[1928] 1:40:32	before the Lord,
+[1929] 1:40:34	but the Lord was not in the wind. After
+[1930] 1:40:37	the wind, an earthquake, but the Lord
+[1931] 1:40:39	was not in the earthquake. And after the
+[1932] 1:40:42	earthquake, a fire, but the Lord was not
+[1933] 1:40:43	in the fire. And after the fire, a sound
+[1934] 1:40:46	of a gentle blowing.
+[1935] 1:40:49	And it came about when Elijah heard it
+[1936] 1:40:51	that he wrapped his face in his mantle.
+[1937] 1:40:53	And when he stood out in the entrance of
+[1938] 1:40:55	the cave, and behold, a voice came to
+[1939] 1:40:57	him and said, "What are you doing here,
+[1940] 1:40:59	Elijah?" Okay, now
+[1941] 1:41:03	there are verses that imply two persons
+[1942] 1:41:06	of Yahweh.
+[1943] 1:41:08	Uh Isaiah 44:6 is probably the the most
+[1944] 1:41:11	famous one. This one, I don't think
+[1945] 1:41:14	does. Um I think you can see this from
+[1946] 1:41:17	either a twoerson or a or a single
+[1947] 1:41:20	person view as such. Um but I don't I
+[1948] 1:41:24	don't think this applies to persons per
+[1949] 1:41:26	se.
+[1950] 1:41:28	Um Isaiah 44:6 is actually much stronger
+[1951] 1:41:31	than that.
+[1952] 1:41:34	44:6
+[1953] 1:41:38	uh thus says the Lord the King of Israel
+[1954] 1:41:41	and his redeemer is being possessive
+[1955] 1:41:47	the Yahweh of hosts. So thus says Yahweh
+[1956] 1:41:50	king of Israel and his redeemer the
+[1957] 1:41:52	Yahweh the hosts.
+[1958] 1:41:54	I am the first, I am the last. There is
+[1959] 1:41:56	no God besides me. So we got two
+[1960] 1:41:59	persons, one in possession of the other
+[1961] 1:42:04	that then says there's no god besides
+[1962] 1:42:06	me. So this is a much stronger verse. Um
+[1963] 1:42:12	and I I have seen seen seen people try
+[1964] 1:42:14	to reduce this to say a oh well this is
+[1965] 1:42:21	thus says the lord king of Israel who is
+[1966] 1:42:24	the redeemer and the lord of hosts. It
+[1967] 1:42:27	makes it makes complete gibberish of the
+[1968] 1:42:29	sentence if you do that. So,
+[1969] 1:42:34	um I I I know that there there people
+[1970] 1:42:38	who try to force Isaiah 44:6 into a
+[1971] 1:42:42	oneperson Yahweh mode, but it really, as
+[1972] 1:42:47	I said, it makes it makes a mish mash of
+[1973] 1:42:49	the text. So,
+[1974] 1:42:52	um, but yeah, 446 is a much better verse
+[1975] 1:42:56	for showing the the two persons because
+[1976] 1:42:58	it shows it directly. It shows it. It
+[1977] 1:43:00	doesn't even it doesn't even pretend. It
+[1978] 1:43:02	it it doesn't even imply it. It actually
+[1979] 1:43:04	states it [laughter] through the use of
+[1980] 1:43:07	of the possessive pronoun. So,
+[1981] 1:43:12	um, but first Kings 191133, you can
+[1982] 1:43:15	interpret that either way, I think.
+[1983] 1:43:16	Okay. So, I hope that helps. Thank you
+[1984] 1:43:18	for the super chat.
+[1985] 1:43:21	All right. Next one here from
+[1986] 1:43:26	18 Ministries is 2 Samuel 2 12-6. What
+[1987] 1:43:31	just happened? Okay, let's find out what
+[1988] 1:43:33	just happened.
+[1989] 1:43:36	2 Samuel
+[1990] 1:43:38	2
+[1991] 1:43:40	12.
+[1992] 1:43:43	Okay.
+[1993] 1:43:49	Well, go back to verse 11. And the ti
+[1994] 1:43:51	and the time that David was king in
+[1995] 1:43:53	Hebron over the house of Judah was 7
+[1996] 1:43:55	years and 6 months. Now Abner son of Nur
+[1997] 1:43:58	went out from Mahanayam to Gibian with
+[1998] 1:44:01	the servants of Ishboseth son of Saul.
+[1999] 1:44:05	And Joab the son of Zeriah and the
+[2000] 1:44:08	servants of David went out and met them
+[2001] 1:44:10	by the pool of Gibian. And they sat
+[2002] 1:44:13	down, one on one side of the pool and
+[2003] 1:44:16	the other on the other side. Then Abner
+[2004] 1:44:19	said to Joab, "Now let the young men
+[2005] 1:44:21	arise and hold a contest before us." And
+[2006] 1:44:23	Joab said, "Let them arise."
+[2007] 1:44:26	So they arose and went over by court, I
+[2008] 1:44:29	count 12 for Benjamin and Ishbth, the
+[2009] 1:44:32	son of Saul, and 12 the servants of
+[2010] 1:44:34	David.
+[2011] 1:44:35	Each one seized his opportunity by the
+[2012] 1:44:38	head and thrust his sword in his
+[2013] 1:44:40	opponent's side. So they fell down
+[2014] 1:44:42	together. So this was called place was
+[2015] 1:44:45	called Helkah Hazaram which is in
+[2016] 1:44:47	Gibian. Okay, this is what's going on.
+[2017] 1:44:52	Okay,
+[2018] 1:44:55	when there's a there's a this is the
+[2019] 1:44:57	start of a civil war.
+[2020] 1:45:00	Uh David is king in Hebron already,
+[2021] 1:45:03	but there are claimants there are sons
+[2022] 1:45:07	of of Saul that are still alive
+[2023] 1:45:12	and they're claiming the throne.
+[2024] 1:45:15	Ishboseth is one of them. He's a
+[2025] 1:45:17	claimment to the throne after the death
+[2026] 1:45:19	of Saul.
+[2027] 1:45:21	So even though the prophet has already
+[2028] 1:45:23	anointed David to be Saul's successor,
+[2029] 1:45:28	Ishbth disagrees with the prophet.
+[2030] 1:45:32	So Abner joins Ishbettth's team and Joab
+[2031] 1:45:37	Jo joins team David
+[2032] 1:45:40	and they're going to meet in the middle
+[2033] 1:45:44	here to sort of duke it out.
+[2034] 1:45:47	Okay. So one side, one has one has one
+[2035] 1:45:51	army on one side, the other has the
+[2036] 1:45:52	other army on the other side.
+[2037] 1:45:55	And
+[2038] 1:45:56	what the way that these armies normally
+[2039] 1:45:59	go to war is there's usually a contest
+[2040] 1:46:04	that happens
+[2041] 1:46:07	before the battle. Okay? We saw this
+[2042] 1:46:09	with David and Goliath.
+[2043] 1:46:12	David, because here's the thing, no one
+[2044] 1:46:13	wants to die.
+[2045] 1:46:16	Okay?
+[2046] 1:46:18	Soldiers are afraid to go out there and
+[2047] 1:46:20	get killed.
+[2048] 1:46:22	Yeah. Ryan Camp says, "So, just like
+[2049] 1:46:24	David and Goliath, exactly like David
+[2050] 1:46:26	and Goliath,
+[2051] 1:46:27	you get here, but here in this case, you
+[2052] 1:46:31	get 12 champions on one side, 12 on the
+[2053] 1:46:34	other,
+[2054] 1:46:37	and they fight it out as a kind of David
+[2055] 1:46:41	and Goliath contest. And this is to
+[2056] 1:46:44	whoever wins is will give courage to
+[2057] 1:46:49	their side to win the conflict.
+[2058] 1:46:53	So
+[2059] 1:46:55	So that's that's generally how these
+[2060] 1:46:58	contests work. They're they're basically
+[2061] 1:47:00	a way of of emboldening your side to win
+[2062] 1:47:04	the fight.
+[2063] 1:47:06	Now, here's the problem with this
+[2064] 1:47:07	particular contest.
+[2065] 1:47:10	Uh, everybody in the contest dies.
+[2066] 1:47:17	They actually kill each other.
+[2067] 1:47:21	Okay, nobody has win this thing.
+[2068] 1:47:26	And what happens is
+[2069] 1:47:29	um verse 17, and that day the battle was
+[2070] 1:47:33	very severe and Abnner and the men of
+[2071] 1:47:35	Israel were beaten before the servants
+[2072] 1:47:37	of David. So
+[2073] 1:47:40	there's a
+[2074] 1:47:42	Joab's and David's side win, but it's at
+[2075] 1:47:46	a huge cost.
+[2076] 1:47:48	Okay, it's at a huge cost that this
+[2077] 1:47:51	happens.
+[2078] 1:47:54	So
+[2079] 1:48:00	Mama says, "If we could avoid killing
+[2080] 1:48:03	and dying, that would be great. How can
+[2081] 1:48:05	we make that happen?" Well, basically
+[2082] 1:48:07	it's kind of it's think of it this way.
+[2083] 1:48:08	These contests are a little bit of a
+[2084] 1:48:10	divine test.
+[2085] 1:48:12	Okay? It's a divine test to see if
+[2086] 1:48:15	you're going to probably live this
+[2087] 1:48:16	thing.
+[2088] 1:48:18	If your guy on your side lives that
+[2089] 1:48:20	little challenge,
+[2090] 1:48:22	okay, God may be on our is is probably
+[2091] 1:48:25	on our side and we're probably going to
+[2092] 1:48:26	live through the day.
+[2093] 1:48:29	If your guy dies, well, I still got to
+[2094] 1:48:33	go out there and fight, but it's not
+[2095] 1:48:34	looking so good for me going home and
+[2096] 1:48:36	eating dinner tonight. Okay.
+[2097] 1:48:41	So,
+[2098] 1:48:43	um, so that's what these were. These
+[2099] 1:48:46	were kind of divine tests. These were
+[2100] 1:48:49	divine tests to see what the outcome of
+[2101] 1:48:53	what the battle was probably going to
+[2102] 1:48:55	be.
+[2103] 1:48:57	And it did serve the practical purpose
+[2104] 1:48:59	of if you won that contest,
+[2105] 1:49:02	your your your side was emboldened
+[2106] 1:49:06	and would you know and this is what
+[2107] 1:49:09	happens in the day David and Goliath
+[2108] 1:49:11	contest.
+[2109] 1:49:13	David wins
+[2110] 1:49:15	the Israelites sides embolden and they
+[2111] 1:49:17	go route the Philistines. It's an
+[2112] 1:49:19	absolute route
+[2113] 1:49:21	here. It's a tie.
+[2114] 1:49:25	It's a tie.
+[2115] 1:49:28	AB. Yeah. Well, it's a tie, which means
+[2116] 1:49:31	they both lose badly. You can have a tie
+[2117] 1:49:34	where both lose badly. Uh, technically
+[2118] 1:49:37	Abner loses,
+[2119] 1:49:39	but it's at the cost of most of of of
+[2120] 1:49:44	David's army here. So,
+[2121] 1:49:53	so anyway, I hope that helps. Thank you
+[2122] 1:49:55	very much for the super chat. Very much
+[2123] 1:49:56	appreciate it. Next one here.
+[2124] 1:50:02	2 Samuel 279. So the Judah Israel divide
+[2125] 1:50:05	predates the actual divided monarchy
+[2126] 1:50:07	period. Um
+[2127] 1:50:12	no not quite.
+[2128] 1:50:14	Uh 79. Okay. Um 2 Samuel
+[2129] 1:50:19	verse two.
+[2130] 1:50:24	Um
+[2131] 1:50:27	now
+[2132] 1:50:29	uh 79 says now therefore let your hands
+[2133] 1:50:32	be strong and be valiant for Saul is is
+[2134] 1:50:35	Saul your lord is dead also the house of
+[2135] 1:50:37	Judah has anointed me king over them but
+[2136] 1:50:40	Abnner's son commander of Saul's army
+[2137] 1:50:42	has taken Ishbth son of Saul and brought
+[2138] 1:50:45	him over to Mahanayam
+[2139] 1:50:48	and
+[2140] 1:50:49	and made him king over Gilead over the
+[2141] 1:50:51	Asherites over Jezrael, over Ephraim,
+[2142] 1:50:53	over Benjamin, and even all of Israel.
+[2143] 1:50:56	Okay? Now, it's not it's not so much the
+[2144] 1:51:00	Judah, it's not the same as the divided
+[2145] 1:51:03	monarchy period. The divided monarchy
+[2146] 1:51:06	period is the tribe of Judah plus
+[2147] 1:51:10	Benjamin against the other 10 tribes.
+[2148] 1:51:12	Okay? So that's the divided monarchy
+[2149] 1:51:14	period and it happens after the reign of
+[2150] 1:51:17	of of Solomon.
+[2151] 1:51:20	The um this is the civil war over the
+[2152] 1:51:24	over who gets the throne
+[2153] 1:51:27	and
+[2154] 1:51:29	it's really the forces of Saul the
+[2155] 1:51:32	Benjaminites mostly these are mostly
+[2156] 1:51:34	Benjaminites
+[2157] 1:51:37	um
+[2158] 1:51:39	and some Ephraimmites
+[2159] 1:51:42	etc. and Ashites, but a lot a lot of the
+[2160] 1:51:46	Israelites sort of sat this one out.
+[2161] 1:51:50	Okay,
+[2162] 1:51:51	so even though Abnner made Ishboseth
+[2163] 1:51:56	king over Israel,
+[2164] 1:51:59	his control over the clans was
+[2165] 1:52:04	iffy.
+[2166] 1:52:06	Iffy. He had a very tenuous grip over
+[2167] 1:52:09	the clans.
+[2168] 1:52:12	um whereas David had an absolute
+[2169] 1:52:16	uh power over over Judah.
+[2170] 1:52:20	So given that Ishbth I mean Ishbth was
+[2171] 1:52:24	not a popular choice
+[2172] 1:52:26	to be king over Israel
+[2173] 1:52:29	um a lot of a lot of people had already
+[2174] 1:52:32	seen um Ishbath is kind of a coward.
+[2175] 1:52:37	Okay.
+[2176] 1:52:39	Uh Ishbth the name is means man of
+[2177] 1:52:42	shame.
+[2178] 1:52:43	Probably not his original name like
+[2179] 1:52:45	Nabal.
+[2180] 1:52:47	Yeah. Ishbth means man of shame.
+[2181] 1:52:50	The question was always that that
+[2182] 1:52:52	lingered over Ishbth's head was why
+[2183] 1:52:56	wasn't he there with Saul on the
+[2184] 1:52:58	battlefield when Saul died? Saul's other
+[2185] 1:53:02	two sons were.
+[2186] 1:53:05	Where was Ishbath?
+[2187] 1:53:07	And that sort of thing,
+[2188] 1:53:10	that sort of reputation as a coward
+[2189] 1:53:14	lingered over Ishboseth.
+[2190] 1:53:17	So
+[2191] 1:53:18	while Abner was an extremely respected
+[2192] 1:53:21	general among the Israelites, Ishboseth
+[2193] 1:53:24	wasn't he wasn't respected. He was seen
+[2194] 1:53:28	as a cowardly figure.
+[2195] 1:53:31	So
+[2196] 1:53:33	not a lot of the Israelite clans were
+[2197] 1:53:35	willing to fight for him.
+[2198] 1:53:38	So,
+[2199] 1:53:41	so you know that's that's that's sort of
+[2200] 1:53:43	the reputation he had gathered here is
+[2201] 1:53:47	that yeah he's a he's a cowardly figure
+[2202] 1:53:50	no one is willing to to put their skin
+[2203] 1:53:52	on the line for him.
+[2204] 1:53:55	So
+[2205] 1:53:57	while people would have gone and fight
+[2206] 1:53:58	fought for Saul against the Philistines
+[2207] 1:54:01	cuz Saul was respected,
+[2208] 1:54:03	he might have been hated.
+[2209] 1:54:06	Uh he was volatile,
+[2210] 1:54:10	uh jealous,
+[2211] 1:54:12	but Saul was certainly respected.
+[2212] 1:54:15	Ishbth wasn't,
+[2213] 1:54:17	and the clans of Israel were not going
+[2214] 1:54:19	to put their skin on the line for him.
+[2215] 1:54:26	My mama says, "Oh, good question, Doc. I
+[2216] 1:54:29	never caught that."
+[2217] 1:54:31	Andrew Graham says, "Not diamond or
+[2218] 1:54:33	dying for that shameful man." Yeah.
+[2219] 1:54:36	So, Ishbas army was not as powerful as
+[2220] 1:54:40	salts
+[2221] 1:54:42	cuz
+[2222] 1:54:44	uh a lot of a lot of the clans just
+[2223] 1:54:46	said, "I'm I'm I'm sticking this one
+[2224] 1:54:47	out. I'm I'm I'm stepping out of this
+[2225] 1:54:50	one. Whoever wins this thing is is going
+[2226] 1:54:52	to be king.
+[2227] 1:54:54	So
+[2228] 1:54:58	while Ish was king of Israel in name,
+[2229] 1:55:03	he wasn't necessarily in practice.
+[2230] 1:55:08	So
+[2231] 1:55:11	So this divide was really more of, as I
+[2232] 1:55:13	say, a a struggle over the throne. Who
+[2233] 1:55:18	was going to be king, actual king of
+[2234] 1:55:19	Israel? Ishbth or David. And it took
+[2235] 1:55:23	seven years to resolve this.
+[2236] 1:55:27	So, it wasn't really a divided monarchy
+[2237] 1:55:29	period. It's more of a a dynastic
+[2238] 1:55:33	struggle than anything else. Okay. So, I
+[2239] 1:55:36	hope that helped. Thank you for the
+[2240] 1:55:37	super chat. Very much appreciate it.
+[2241] 1:55:40	And the final one here from AT
+[2242] 1:55:42	Ministries. And then we finally got to
+[2243] 1:55:44	the end of [laughter]
+[2244] 1:55:48	166 questions from him.
+[2245] 1:55:52	is in John 1:18 the Greek says monogan
+[2246] 1:55:56	theos ho hon
+[2247] 1:56:00	does that mean the monoga ganess and hon
+[2248] 1:56:04	in exodus uh 3:1 septuagent who resides
+[2249] 1:56:08	with the father okay now this one's all
+[2250] 1:56:11	let me see here
+[2251] 1:56:16	let me take a look at first John
+[2252] 1:56:25	John and then we'll go to the
+[2253] 1:56:27	Septuagent.
+[2254] 1:56:32	John 1:18.
+[2255] 1:56:37	All right. And
+[2256] 1:56:42	uh no man has seen God at any time. the
+[2257] 1:56:44	only begotten
+[2258] 1:56:46	now um theos God
+[2259] 1:56:51	um the one who is in the bosom of the
+[2260] 1:56:53	father.
+[2261] 1:57:01	Okay.
+[2262] 1:57:02	So the one who is in let's me just take
+[2263] 1:57:04	a look at the Greek here to make sure
+[2264] 1:57:06	I'm on track with you here.
+[2265] 1:57:09	mostology. I need the Spencer
+[2266] 1:57:15	New Testament. Okay.
+[2267] 1:57:19	John
+[2268] 1:57:21	118.
+[2269] 1:57:25	Uh the Urios uh
+[2270] 1:57:29	um
+[2271] 1:57:32	monogen Theos
+[2272] 1:57:38	uh the one
+[2273] 1:57:42	the one who is
+[2274] 1:57:44	in the culpen of the father. Okay.
+[2275] 1:57:50	The Quran.
+[2276] 1:57:52	So the theos who is in okay now we'll
+[2277] 1:57:56	try to remember that as we go to the
+[2278] 1:57:58	Septuagent
+[2279] 1:58:03	Septuagent
+[2280] 1:58:06	Exodus
+[2281] 1:58:10	3:14
+[2282] 1:58:14	uh Kenos
+[2283] 1:58:17	Moses a go Amy.
+[2284] 1:58:20	Okay.
+[2285] 1:58:22	The one
+[2286] 1:58:25	and speak
+[2287] 1:58:30	Israel the one
+[2288] 1:58:33	I am to send. Okay. Uh
+[2289] 1:58:41	yeah. The um the one who is uh
+[2290] 1:58:52	I would not
+[2291] 1:58:55	I wouldn't sort of draw this uh
+[2292] 1:58:58	comparison here. Um the grammar here is
+[2293] 1:59:01	too generic.
+[2294] 1:59:06	Now Ralph's does say the being it's the
+[2295] 1:59:09	one who
+[2296] 1:59:11	okay
+[2297] 1:59:13	um this is Ralph's transl uh Ralph's
+[2298] 1:59:16	translation of the Septuagent here. Um
+[2299] 1:59:19	but I would necessarily draw that
+[2300] 1:59:21	conclusion just based upon Hon
+[2301] 1:59:26	is too generic. It can be used for all
+[2302] 1:59:28	sorts of things. The one who drives a
+[2303] 1:59:30	car. Okay. The one who who who plays
+[2304] 1:59:34	Skyrim. Okay.
+[2305] 1:59:38	So,
+[2306] 1:59:39	um while that may be tempting to to make
+[2307] 1:59:43	that immediate comparison based, but to
+[2308] 1:59:46	base it on a
+[2309] 1:59:49	a um an article plus the popular verb is
+[2310] 1:59:54	is too generic.
+[2311] 1:59:56	So,
+[2312] 1:59:58	um
+[2313] 2:00:00	so I I I I think that that's that's a
+[2314] 2:00:02	stretch. I think that's a stretch here.
+[2315] 2:00:05	uh stretch a grammar. It might be exog
+[2316] 2:00:07	it might be it might be actually correct
+[2317] 2:00:10	but it's a stretch to do it based upon
+[2318] 2:00:12	this grammar. Okay,
+[2319] 2:00:18	so I hope that helps. Thank you very
+[2320] 2:00:19	much for those 166 questions and your
+[2321] 2:00:22	support of the channel. We really
+[2322] 2:00:23	appreciate it.
+[2323] 2:00:26	Okay,
+[2324] 2:00:30	next one here
+[2325] 2:00:33	is from Striding Hermit
+[2326] 2:00:36	uh for Thank you for the super chat.
+[2327] 2:00:38	Good evening. I know this isn't a
+[2328] 2:00:40	salvific qu issue, but to what degree
+[2329] 2:00:43	does circumcision still matter?
+[2330] 2:00:47	H
+[2331] 2:00:51	well, it's not a salvific question.
+[2332] 2:00:53	First of all, um the new uh circumcision
+[2333] 2:00:56	means that you are under the Abrahamic
+[2334] 2:00:58	covenant. Okay? So, it's it was an
+[2335] 2:01:01	important thing for Israelites
+[2336] 2:01:06	uh because of their their relationship
+[2337] 2:01:09	with Abraham. Okay?
+[2338] 2:01:13	So, um if you're not an Israelite, well,
+[2339] 2:01:17	first of all, never apply to you. Okay?
+[2340] 2:01:20	Now, there's still a health issue with
+[2341] 2:01:23	circumcision. Okay? Uh people who are
+[2342] 2:01:26	circumcised
+[2343] 2:01:28	are less likely to contract
+[2344] 2:01:32	sexually transmitted diseases.
+[2345] 2:01:35	And this may have been why say the
+[2346] 2:01:37	Egyptians did circumcision is to prevent
+[2347] 2:01:39	disease transmission.
+[2348] 2:01:42	So in that respect as a as a health
+[2349] 2:01:46	issue it's still it's still maybe a an
+[2350] 2:01:50	issue but apart from that it doesn't
+[2351] 2:01:53	have a it does not have a significant
+[2352] 2:01:56	religious um
+[2353] 2:01:59	um significance anymore. So
+[2354] 2:02:03	um it really doesn't matter. It's more
+[2355] 2:02:05	the circumcision of your heart matters
+[2356] 2:02:08	more than the circumcision of your
+[2357] 2:02:09	nether parts. Okay. So, I hope that
+[2358] 2:02:12	helps. Thank you for the super chat.
+[2359] 2:02:14	Very much appreciated.
+[2360] 2:02:19	All right. Starting her for $5. Thank
+[2361] 2:02:21	you, the super chat. Why was the Lord so
+[2362] 2:02:24	angry with Miriam and Aram? Numbers 12
+[2363] 2:02:26	1-10. Okay. We've actually had this one
+[2364] 2:02:29	before. We'll go through it again. It's
+[2365] 2:02:31	always good to go through it again.
+[2366] 2:02:35	Yeah. Yeah. Okay. Now,
+[2367] 2:02:42	here is the here's what's going on.
+[2368] 2:02:44	There's a there's a background that's
+[2369] 2:02:45	that's going on. And let me get out of
+[2370] 2:02:47	Septuagent here. Let's get back to the
+[2371] 2:02:48	NSP.
+[2372] 2:02:51	All right. Uh
+[2373] 2:02:57	All right.
+[2374] 2:03:02	Now, let's talk a little bit about the
+[2375] 2:03:04	background here because there's some
+[2376] 2:03:06	background information you need to make
+[2377] 2:03:08	sense of this this passage. Uh, the
+[2378] 2:03:11	first thing to understand is that Moses
+[2379] 2:03:15	had been previously married.
+[2380] 2:03:18	He was married to a Midianite G woman, a
+[2381] 2:03:21	Midianite woman named Zipper.
+[2382] 2:03:25	This is not Zipper,
+[2383] 2:03:28	okay? This is already
+[2384] 2:03:31	years after the Exodus. Okay, probably
+[2385] 2:03:34	about 2 years. Okay, so you're talking 2
+[2386] 2:03:37	years in to the Exodus and Zipper is no
+[2387] 2:03:41	longer in the picture for whatever
+[2388] 2:03:42	reason. We don't know why she's not in
+[2389] 2:03:44	the picture anymore.
+[2390] 2:03:47	So,
+[2391] 2:03:49	this is going to lead to an issue,
+[2392] 2:03:53	a political issue.
+[2393] 2:03:56	And that political issue is one about
+[2394] 2:03:58	clan
+[2395] 2:04:00	um clan treaties.
+[2396] 2:04:03	Okay.
+[2397] 2:04:05	Um
+[2398] 2:04:09	as long as as Moses doesn't remarry,
+[2399] 2:04:12	let's say let's say Zra died just for
+[2400] 2:04:14	the sake of argument. If if if Zipper
+[2401] 2:04:17	was still alive, this is not an issue.
+[2402] 2:04:20	But if she's passed along,
+[2403] 2:04:23	Moses remarries someone who's not a
+[2404] 2:04:25	Midianite.
+[2405] 2:04:26	that alliance is broken. That treaty is
+[2406] 2:04:30	no longer in effect.
+[2407] 2:04:32	So Moses had a a a a treaty by marriage
+[2408] 2:04:38	with the Midianites. Okay? That's why
+[2409] 2:04:41	his standing with his father-in-law was
+[2410] 2:04:42	so good and and his brother-in-law was
+[2411] 2:04:44	so good, that sort of thing.
+[2412] 2:04:46	But as soon as he marries outside of the
+[2413] 2:04:49	Minionites again
+[2414] 2:04:52	and there's no sort of marriage tri
+[2415] 2:04:55	those those ties are cut
+[2416] 2:04:58	now.
+[2417] 2:05:01	So that's that's sort of the background
+[2418] 2:05:02	here. If if he marries if if Zipper is
+[2419] 2:05:05	dead and he marries again, that seems to
+[2420] 2:05:08	be what's going on here then
+[2421] 2:05:12	um then that's that's going to be an
+[2422] 2:05:15	issue.
+[2423] 2:05:17	So numbers 12 verse1 then Miriam and
+[2424] 2:05:21	Aaron spoke against Mosen because of the
+[2425] 2:05:24	Kushite woman who he had married for he
+[2426] 2:05:26	had carried a Kushite woman. Okay, that
+[2427] 2:05:28	prey married Kushite woman was is
+[2428] 2:05:30	probably a gloss but Kushite.
+[2429] 2:05:35	All right. This is a woman of Kush.
+[2430] 2:05:38	Basically, the region south of this is
+[2431] 2:05:40	not Kish.
+[2432] 2:05:42	This is Kush.
+[2433] 2:05:44	Okay.
+[2434] 2:05:46	So, Kush is this region south of
+[2435] 2:05:49	thieves. And we have to remember the
+[2436] 2:05:52	mixed multitude that came out of Egypt.
+[2437] 2:05:54	Kushites, Nubians, Magi,
+[2438] 2:05:59	Amorites, Libyans, a whole huge
+[2439] 2:06:01	diversity of people.
+[2440] 2:06:04	And those people had to be integrated
+[2441] 2:06:07	into the tribes into the clans. And how
+[2442] 2:06:10	they got integrated into the clans is
+[2443] 2:06:12	they got married with the sons of
+[2444] 2:06:14	Israel. That's how they integrated.
+[2445] 2:06:18	So marriage was an important vector
+[2446] 2:06:21	that got into that that that had to to
+[2447] 2:06:25	integrate into. So any eligible man
+[2448] 2:06:28	probably had to marry a non-Israelite
+[2449] 2:06:33	just to integrate them properly into the
+[2450] 2:06:36	clan structure.
+[2451] 2:06:40	So
+[2452] 2:06:42	sauce for the goose, sauce for the
+[2453] 2:06:44	gander.
+[2454] 2:06:46	Moses now eligible with zipper dead.
+[2455] 2:06:49	He's got to marry a cush. He's got to
+[2456] 2:06:51	marry somebody from the mixed multitude.
+[2457] 2:06:56	And
+[2458] 2:06:57	this would probably have been uh this
+[2459] 2:06:59	would this was probably that bride, a
+[2460] 2:07:01	Kushite,
+[2461] 2:07:03	not a Kishite, not a Midianite.
+[2462] 2:07:06	Anyone I I've heard people try to
+[2463] 2:07:08	justify that that he married a Midianite
+[2464] 2:07:10	here. And I think this is that this is
+[2465] 2:07:12	zipper and I think this is complete
+[2466] 2:07:13	hogwash. The text does not support that
+[2467] 2:07:17	in any way.
+[2468] 2:07:22	So then uh verse two, and they said,
+[2469] 2:07:25	"Has the Lord indeed spoken only through
+[2470] 2:07:28	Moses?
+[2471] 2:07:30	And has he not also spoken through us as
+[2472] 2:07:33	well?" And the Lord heard it.
+[2473] 2:07:36	Okay, now there's a problem here.
+[2474] 2:07:40	Um,
+[2475] 2:07:44	and suddenly the Lord said to Moses and
+[2476] 2:07:46	Aaron and Miriam, "You three, come out
+[2477] 2:07:49	of the tent of meetings." So the three
+[2478] 2:07:51	came out. Okay, now here's what's
+[2479] 2:07:55	happening.
+[2480] 2:07:56	They don't like the fact Moses married a
+[2481] 2:07:59	Kushite, which breaks the treaty with
+[2482] 2:08:02	the Midionites.
+[2483] 2:08:05	So they're going to challenge Moses's
+[2484] 2:08:08	authority.
+[2485] 2:08:10	Offense number one.
+[2486] 2:08:13	And then Miriam is in the tent of
+[2487] 2:08:16	meeting. Offense number two.
+[2488] 2:08:20	Miriam is now set up for summary
+[2489] 2:08:22	judgement. Okay, that's a double
+[2490] 2:08:24	offense. And double offenses almost
+[2491] 2:08:26	always get summary judgement.
+[2492] 2:08:29	She's a woman. She's not permitted in
+[2493] 2:08:31	the tenta meeting. What is she doing
+[2494] 2:08:34	there?
+[2495] 2:08:37	She's got no business in the tent of
+[2496] 2:08:39	meeting.
+[2497] 2:08:43	It says, even though the text says come
+[2498] 2:08:45	out to the tent of meeting, it says come
+[2499] 2:08:47	out of the tent of meeting in the
+[2500] 2:08:49	Hebrew.
+[2501] 2:08:52	Okay. So, the three of them came out.
+[2502] 2:08:56	It's not come into the tent of meeting.
+[2503] 2:08:59	It's come out of.
+[2504] 2:09:03	So Miriam's on the inside. She shouldn't
+[2505] 2:09:06	be on the inside.
+[2506] 2:09:09	And the Lord basically says, "Okay, you
+[2507] 2:09:12	come out.
+[2508] 2:09:13	All three of you come out."
+[2509] 2:09:18	The Lord came down in a pillar of cloud
+[2510] 2:09:20	and stood in the doorway of the tent.
+[2511] 2:09:22	And he called Aaron and Miriam. And when
+[2512] 2:09:25	they both came forward, he said, "Hear
+[2513] 2:09:28	now my words. If there is a prophet
+[2514] 2:09:29	among you, I the Lord shall make myself
+[2515] 2:09:32	known to him in a vision. I shall speak
+[2516] 2:09:34	with him in a dream. Not so with Mo, my
+[2517] 2:09:38	servant Moses. He is faithful in all my
+[2518] 2:09:40	household. With him I shall speak
+[2519] 2:09:43	mouthto mouth." This is face to face.
+[2520] 2:09:46	Okay? Even openly and not in dark
+[2521] 2:09:50	sayings. And he beholds the form of the
+[2522] 2:09:52	Lord. Why then were you not afraid to
+[2523] 2:09:55	speak against my servant, against Moses?
+[2524] 2:10:00	Okay,
+[2525] 2:10:02	so the anger of the Lord burned against
+[2526] 2:10:04	them and he departed. But when the cloud
+[2527] 2:10:06	had withdrawn from over the tent, Miriam
+[2528] 2:10:09	was lepous, as white as snow. And Aaron
+[2529] 2:10:14	turned towards Miriam, and behold, she
+[2530] 2:10:16	was lepous.
+[2531] 2:10:21	Snow White movie. our next Snow White.
+[2532] 2:10:23	[laughter]
+[2533] 2:10:26	Then Aaron said to Moses, "Oh my Lord, I
+[2534] 2:10:28	beg you, do not account this sin to us
+[2535] 2:10:31	in which we have acted foolishly and in
+[2536] 2:10:33	which we have sinned. Oh, do not let her
+[2537] 2:10:36	be like one dead whose flesh is
+[2538] 2:10:38	halfeaten away when he comes from his
+[2539] 2:10:40	mother's womb."
+[2540] 2:10:42	Okay, so
+[2541] 2:10:45	uh she does the double. Here's the
+[2542] 2:10:48	thing. Aaron does one
+[2543] 2:10:51	one offense by by uh by questioning
+[2544] 2:10:55	God's word and God's judgment.
+[2545] 2:10:58	Miriam does two offenses. That's why
+[2546] 2:11:01	he's got he Aaron sort of gets away with
+[2547] 2:11:04	this, but Miriam is given summary
+[2548] 2:11:06	judgment. It's the two offense thing.
+[2549] 2:11:08	And we see this all through scripture
+[2550] 2:11:10	where you can get away with one offense
+[2551] 2:11:12	to the Lord and still survive. But two
+[2552] 2:11:16	offenses,
+[2553] 2:11:17	Aaron's sons did two offenses, did that
+[2554] 2:11:20	double offense and were burned by fire.
+[2555] 2:11:23	Uh, Usuza's uh, nephew of David, two
+[2556] 2:11:25	offenses, gets killed when he touches
+[2557] 2:11:27	the ark. So, so this is why the Lord was
+[2558] 2:11:32	so angry. Okay, there's a double offense
+[2559] 2:11:36	and they're they're they're questioning
+[2560] 2:11:38	they're questioning God's judgment and
+[2561] 2:11:41	God's selection of his his prophet.
+[2562] 2:11:51	Ah, John. So, uh, God is tough. Well,
+[2563] 2:11:54	you know what? Police do this, too. This
+[2564] 2:11:56	whole double judge, this whole double
+[2565] 2:11:58	offense thing. Yeah, p police do this
+[2566] 2:12:01	also. you know, if you get charged with
+[2567] 2:12:03	a crime, you don't usually get charged
+[2568] 2:12:04	with just one crime because they know if
+[2569] 2:12:07	if they bring one crime to a judge, you
+[2570] 2:12:12	know, and a prosecutor, they're going to
+[2571] 2:12:13	go easy on the guy. If they bring two
+[2572] 2:12:15	crimes, well, you must be guilty of one
+[2573] 2:12:16	of them.
+[2574] 2:12:18	So,
+[2575] 2:12:20	you know, you know, this is why if you
+[2576] 2:12:22	ever if you're if you're if you're
+[2577] 2:12:23	speeding, you're usually charged with
+[2578] 2:12:25	speeding and illegal lane change.
+[2579] 2:12:28	Makes it harder to get out of the
+[2580] 2:12:29	ticket.
+[2581] 2:12:33	If you are if you do assault and
+[2582] 2:12:35	battery, you usually get assault and a
+[2583] 2:12:37	battery, two offenses.
+[2584] 2:12:40	Okay? Or if you are interfering within
+[2585] 2:12:44	uh a police investigation, you also get
+[2586] 2:12:47	interference and obstruction to justice.
+[2587] 2:12:50	Okay? This is not an accident. This is
+[2588] 2:12:54	the way justice works.
+[2589] 2:12:56	And God is holy and he's just.
+[2590] 2:13:00	So
+[2591] 2:13:02	yeah, he's he's tough because he knows
+[2592] 2:13:07	the two offense thing is something he
+[2593] 2:13:10	his justice cannot overlook.
+[2594] 2:13:13	So
+[2595] 2:13:16	So yeah, that's that's that's why he's
+[2596] 2:13:18	so angry with them questioning the
+[2597] 2:13:21	judgment. But Miriam gets the worst
+[2598] 2:13:22	judgment because she's the double
+[2599] 2:13:24	offender.
+[2600] 2:13:28	Okay, next one here from striding hermit
+[2601] 2:13:31	uh $5. Thank you for the question. Uh
+[2602] 2:13:33	super chat. Can this passage be
+[2603] 2:13:35	attributed to the Holy Spirit? Numbers
+[2604] 2:13:37	11:24-29.
+[2605] 2:13:39	Okay, let's see. numbers 11
+[2606] 2:13:46	24
+[2607] 2:13:50	uh to uh 11:24 to 24 to 29.
+[2608] 2:13:56	Let's see. So Moses went out and told
+[2609] 2:13:58	the people the words of the Lord. So he
+[2610] 2:14:00	gathered 70 men of the elders of the
+[2611] 2:14:02	people and stationed them around the
+[2612] 2:14:03	tent. Then the Lord came down in a cloud
+[2613] 2:14:07	and spoke to him. And he took the spirit
+[2614] 2:14:10	who was with who was upon him and placed
+[2615] 2:14:12	him upon the 70 elders. And it came
+[2616] 2:14:14	about that when the spirit rested upon
+[2617] 2:14:16	them, they prophesied, but they did not
+[2618] 2:14:18	do it again.
+[2619] 2:14:21	But two men had remained in the camp.
+[2620] 2:14:23	The name of one was Eldad, the name of
+[2621] 2:14:24	the other was Mad. And the spirit rest
+[2622] 2:14:27	upon them. And they prophesied in the
+[2623] 2:14:30	camp.
+[2624] 2:14:32	So the young man,
+[2625] 2:14:35	so a young man ran and told Moses said,
+[2626] 2:14:37	"Elad and my dad are prophesying in the
+[2627] 2:14:39	camp. Then Joshua son of the attendant
+[2628] 2:14:42	of Moses from his youth answered and
+[2629] 2:14:44	said, Moses, my lord, restrain them."
+[2630] 2:14:46	But Moses said to them, "Are you jealous
+[2631] 2:14:48	for my sake? Would all that the Lord's
+[2632] 2:14:51	people were prophets that the Lord would
+[2633] 2:14:53	put his spirit upon them?" Uh, yes, you
+[2634] 2:14:56	can attribute this to the Holy Spirit.
+[2635] 2:14:57	This is this is the spirit of prophecy.
+[2636] 2:15:00	um you know it's coming down upon men.
+[2637] 2:15:03	Yeah, this is definitely the Holy
+[2638] 2:15:05	Spirit. So yeah, you can definitely
+[2639] 2:15:06	attribute this the Holy Spirit quite
+[2640] 2:15:08	safely and people who sold to the to the
+[2641] 2:15:12	multiple powers in heaven would also do
+[2642] 2:15:14	this as well. So yeah, you're you're
+[2643] 2:15:16	safe doing this.
+[2644] 2:15:20	All right, next one.
+[2645] 2:15:23	Uh for $5. Thank you for the super chat.
+[2646] 2:15:27	Writing question. How thin is the line
+[2647] 2:15:30	that separates a hero from a champion?
+[2648] 2:15:33	Oo.
+[2649] 2:15:36	Okay. Um,
+[2650] 2:15:41	a champion always overcomes the
+[2651] 2:15:44	struggle.
+[2652] 2:15:46	Whatever whatever whatever stakes are,
+[2653] 2:15:48	he always overcomes them. Okay?
+[2654] 2:15:51	And will often represent a second party.
+[2655] 2:15:54	Okay? Or a third party.
+[2656] 2:15:57	uh a hero
+[2657] 2:15:59	doesn't necessarily overcome.
+[2658] 2:16:03	There are many kinds of heroism.
+[2659] 2:16:05	You know, there's the heroism of the
+[2660] 2:16:07	lost cause.
+[2661] 2:16:10	There's there's heroism of
+[2662] 2:16:12	self-sacrifice
+[2663] 2:16:15	uh where the hero does not overcome
+[2664] 2:16:18	but brings about a result that results
+[2665] 2:16:21	in say many others being saved. Now we
+[2666] 2:16:25	don't usually talk about champions in
+[2667] 2:16:27	writing.
+[2668] 2:16:28	This is more of a uh champ we talk about
+[2669] 2:16:31	champions more in say uh the analysis of
+[2670] 2:16:34	myth where these are these are more uh
+[2671] 2:16:38	defined concepts. So um it's not
+[2672] 2:16:41	something we often talk about when we
+[2673] 2:16:43	talk about say writing. writing is more
+[2674] 2:16:46	concerned with protagonists and heroes
+[2675] 2:16:49	than it is say um
+[2676] 2:16:52	than it is say with champions.
+[2677] 2:16:55	But
+[2678] 2:16:58	your hero can be a champion.
+[2679] 2:17:01	That's definitely possible. Uh like in
+[2680] 2:17:04	Rocky 3,
+[2681] 2:17:06	Rocky Balboa is a hero and a champion.
+[2682] 2:17:10	Okay.
+[2683] 2:17:12	He overcomes the odds. to win
+[2684] 2:17:17	that make turns him just from from a
+[2685] 2:17:19	hero to a champion. Okay. So, keeps
+[2686] 2:17:24	learning. Heroes can be dead. Yeah,
+[2687] 2:17:27	absolutely. Heroes can be dead,
+[2688] 2:17:30	but champions usually have to survive
+[2689] 2:17:34	at least at least in sort of the victor
+[2690] 2:17:36	sense of it. Uh in the just the the the
+[2691] 2:17:40	representative sense, no, not so much.
+[2692] 2:17:42	But so there's a there's a
+[2693] 2:17:45	representative sense of a champion and
+[2694] 2:17:48	there's also a victor sense. So it
+[2695] 2:17:50	depends on which one you're you're
+[2696] 2:17:52	you're specifically talking about too.
+[2697] 2:17:55	Like for example, uh Hector was champion
+[2698] 2:17:58	of the um of um
+[2699] 2:18:04	oh um
+[2700] 2:18:07	now I can't remember the name of the
+[2701] 2:18:08	city. Hittite city. Uh, the Iliad.
+[2702] 2:18:14	Why can't I remember? Um,
+[2703] 2:18:19	Troy. Thank you. Thank you, Scott. Yeah,
+[2704] 2:18:22	Troy. Okay. Hector of Troy.
+[2705] 2:18:25	He's a champion for for for
+[2706] 2:18:28	the um for the Trojans.
+[2707] 2:18:31	Um, he doesn't win, he loses.
+[2708] 2:18:37	Um, in fact, the guy who kills Achilles
+[2709] 2:18:40	is a coward. Paris.
+[2710] 2:18:44	Paris kills kills Achilles
+[2711] 2:18:47	with a sneaky arrow attack.
+[2712] 2:18:51	So,
+[2713] 2:18:55	you got two champions that go out and do
+[2714] 2:18:57	that sort of fighting contest, that
+[2715] 2:19:00	contest of the gods. You got Achilles of
+[2716] 2:19:04	of uh from the Greek archipelico uh from
+[2717] 2:19:07	um
+[2718] 2:19:10	um I can't remember which one it is now.
+[2719] 2:19:12	Um and you got uh Hector of Troy and
+[2720] 2:19:17	they fight and the gods determine which
+[2721] 2:19:19	one wins and that predicts the outcome
+[2722] 2:19:21	of the battle. The Greeks are going to
+[2723] 2:19:22	win this thing.
+[2724] 2:19:26	Uh but Achilles doesn't get away
+[2725] 2:19:28	scot-free. Paris assassinates him with a
+[2726] 2:19:31	poison arrow to the Achilles uh to the
+[2727] 2:19:34	to the heel.
+[2728] 2:19:38	Great shot though. We'll have to say
+[2729] 2:19:40	that Paris for a coward was an excellent
+[2730] 2:19:42	archer.
+[2731] 2:19:44	[laughter]
+[2732] 2:19:46	>> Yeah. Well, it was the bow was
+[2733] 2:19:48	considered to be a coward's weapon among
+[2734] 2:19:49	the Greeks. So,
+[2735] 2:19:58	okay. So, I hope that helps. Thank you
+[2736] 2:19:59	for the super chat. Very much appreciate
+[2737] 2:20:01	it. Uh, starting her for $9. Thank you
+[2738] 2:20:04	very much for the super chat.
+[2739] 2:20:07	Writing uh question. What is your
+[2740] 2:20:09	favorite hero trope?
+[2741] 2:20:14	Um,
+[2742] 2:20:17	I my view on tropes
+[2743] 2:20:21	uh I have a particular
+[2744] 2:20:24	love of inverting tropes. Okay.
+[2745] 2:20:29	I'm kind of a sneaky author. Okay,
+[2746] 2:20:34	some of you may have noticed reading my
+[2747] 2:20:36	books that I'm a bit of a sneaky author.
+[2748] 2:20:40	Okay,
+[2749] 2:20:41	uh I don't I take I love to take a trope
+[2750] 2:20:45	and invert it. Okay, so let's take one
+[2751] 2:20:49	of the most classic tropes that people
+[2752] 2:20:51	love.
+[2753] 2:20:53	Lovers to or sorry, enemies to lovers.
+[2754] 2:20:57	I like inverting that. Lovers to
+[2755] 2:20:59	enemies.
+[2756] 2:21:02	Much more interesting.
+[2757] 2:21:05	You know, take that trope and invert it.
+[2758] 2:21:08	Ooh. Oh, can you do just an incredibly
+[2759] 2:21:12	interesting story from lovers to
+[2760] 2:21:14	enemies?
+[2761] 2:21:17	[laughter]
+[2762] 2:21:18	Mama says, "You are a very sneaky
+[2763] 2:21:21	author."
+[2764] 2:21:25	You know, the second chance trope, you
+[2765] 2:21:28	know, second chance at love. Well, why
+[2766] 2:21:31	not? Why can't you do a second chance at
+[2767] 2:21:32	failure?
+[2768] 2:21:36	[laughter]
+[2769] 2:21:39	Warrior of the most high and much more
+[2770] 2:21:41	hurtful. Yeah. Oh, yeah.
+[2771] 2:21:49	>> No. So, I like my one of the things I
+[2772] 2:21:52	love to do as an author
+[2773] 2:21:54	is I love to take a trope and invert it.
+[2774] 2:22:00	Love trope adversion. It's It's such a
+[2775] 2:22:04	great Because here's the thing. You're
+[2776] 2:22:05	respecting the trope,
+[2777] 2:22:08	but you're completely flipping it on its
+[2778] 2:22:10	head,
+[2779] 2:22:12	>> which means you have a greater
+[2780] 2:22:14	understanding in depth of what the
+[2781] 2:22:17	>> Mhm.
+[2782] 2:22:19	Yeah.
+[2783] 2:22:20	>> Yeah. You do have to understand the
+[2784] 2:22:21	trope. I mean, you're not you're not
+[2785] 2:22:24	disrespecting the trope. You're fully
+[2786] 2:22:26	acknowledging the trope, but you're also
+[2787] 2:22:29	basically
+[2788] 2:22:31	um um using it in a new and interesting
+[2789] 2:22:36	way. And some of the most hated tropes
+[2790] 2:22:41	can become absolutely
+[2791] 2:22:44	fascinating
+[2792] 2:22:46	when inverted.
+[2793] 2:22:49	Um,
+[2794] 2:22:51	at the end of book three, which I will
+[2795] 2:22:53	not give spoilers,
+[2796] 2:22:55	there's a trope inversion.
+[2797] 2:23:00	Um,
+[2798] 2:23:02	that happens on the last chapter.
+[2799] 2:23:04	There's a trope inversion.
+[2800] 2:23:08	So, I'm not going to give spoilers, but
+[2801] 2:23:10	I love doing trope inversions. They're
+[2802] 2:23:14	so so awesome.
+[2803] 2:23:19	Mama says, "I love trope inversion." Oh,
+[2804] 2:23:22	yeah.
+[2805] 2:23:24	[laughter]
+[2806] 2:23:30	Mama says, "Just stabbed me now by Jill
+[2807] 2:23:32	Jill Beerup is a fantastic with a trope
+[2808] 2:23:35	inversion." Yeah, it is. Mama says, "Not
+[2809] 2:23:38	yet." That Oh, man. [laughter]
+[2810] 2:23:41	I love trope inversions because some of
+[2811] 2:23:44	the worst um
+[2812] 2:23:47	I mean um Oh yeah,
+[2813] 2:23:52	Scott Worth and my favorite Shakespeare
+[2814] 2:23:53	trope reversal. Romeo dies by womanly
+[2815] 2:23:56	poison. Juliet dies by weapon fit for
+[2816] 2:23:58	war. Yeah, it is. It was a trope
+[2817] 2:24:00	inversion of his time. Yeah, absolutely.
+[2818] 2:24:02	Tyler Lot, I have to read these books.
+[2819] 2:24:05	What are you waiting for? Uh please,
+[2820] 2:24:07	please buy this is the first book.
+[2821] 2:24:11	Please buy my book and leave a review on
+[2822] 2:24:13	Amazon. The best thing you can guys can
+[2823] 2:24:15	do if you've read this book is to leave
+[2824] 2:24:17	a review on Amazon. It really helps me a
+[2825] 2:24:20	lot when you guys leave reviews on
+[2826] 2:24:22	Amazon.
+[2827] 2:24:24	Oh, by the way, the audio book is now
+[2828] 2:24:25	available, too. So, but still, leave a
+[2829] 2:24:28	review on Amazon. That's really what
+[2830] 2:24:29	helps us the most.
+[2831] 2:24:32	So, um but yeah, trope inversions are
+[2832] 2:24:35	great. And you know, um,
+[2833] 2:24:41	you know,
+[2834] 2:24:42	there's some things like, for example,
+[2835] 2:24:44	the the mysterious book trope. I love
+[2836] 2:24:48	take the mysterious book, turn it into a
+[2837] 2:24:50	common book, common everyday book.
+[2838] 2:24:55	It's like, yeah, absolutely. There's
+[2839] 2:24:59	just so many great tropes out there that
+[2840] 2:25:02	you can flip on its head just to and and
+[2841] 2:25:07	and make really really interesting
+[2842] 2:25:10	stories.
+[2843] 2:25:13	So any trope is a good trope as long as
+[2844] 2:25:16	you invert it.
+[2845] 2:25:19	So [laughter]
+[2846] 2:25:21	it's probably going to be quoted. Any
+[2847] 2:25:23	trope is a good trope as long as it's
+[2848] 2:25:24	inverted.
+[2849] 2:25:30	But yeah, it's absolutely fascinating to
+[2850] 2:25:32	be able to invert a trope because uh
+[2851] 2:25:35	there's there's a lot of tropes that
+[2852] 2:25:36	people hate. Oh, absolutely. Hate with a
+[2853] 2:25:39	vengeance that if you only inverted it,
+[2854] 2:25:43	it becomes so much more interesting.
+[2855] 2:25:52	How do you uh invert a Hallmark movie?
+[2856] 2:25:54	>> Oh,
+[2857] 2:25:55	>> kills her dolphin.
+[2858] 2:25:58	He kills her dog.
+[2859] 2:26:00	He's the bad guy. There you go. Just
+[2860] 2:26:04	inverted.
+[2861] 2:26:06	Or even worse, he eats her dog.
+[2862] 2:26:12	[laughter]
+[2863] 2:26:13	You'll never see that on Hallmark,
+[2864] 2:26:15	right?
+[2865] 2:26:20	[laughter]
+[2866] 2:26:22	Yeah. Yeah. in a jack race is invert the
+[2867] 2:26:26	mcguffin. Yeah, sure.
+[2868] 2:26:30	Uh there actually I'll tell you one that
+[2869] 2:26:33	does the invert the the mcguffin really
+[2870] 2:26:35	really well. Kung fu panda. The first
+[2871] 2:26:39	kung fu panda. They're all um uh Taiong
+[2872] 2:26:44	and and and and uh Poe are fighting to
+[2873] 2:26:48	have the scroll of the dragon warrior.
+[2874] 2:26:51	They open it and there's nothing inside.
+[2875] 2:26:55	That's an inversion of the mcguffin.
+[2876] 2:27:01	Uh they do this so uh kung fu the
+[2877] 2:27:03	original kung fu panda inverts the
+[2878] 2:27:05	mcguffin so well.
+[2879] 2:27:18	[laughter]
+[2880] 2:27:19	Mama says no. The hall movies guy who
+[2881] 2:27:21	has the dog. The woman has an
+[2882] 2:27:23	introverted trope. Uh the would be the
+[2883] 2:27:26	one that lives in a small New England
+[2884] 2:27:29	town with a dog and is secretly rich.
+[2885] 2:27:31	Yeah, probably.
+[2886] 2:27:36	>> They've done that, too.
+[2887] 2:27:39	Yeah, that one's that one's not so
+[2888] 2:27:40	interesting. But, you know, there there
+[2889] 2:27:42	there's a ways to invert that still. You
+[2890] 2:27:45	know, the guy maybe have has a dog.
+[2891] 2:27:47	Well, what if he he has a raccoon?
+[2892] 2:27:50	He walks a raccoon
+[2893] 2:27:53	and he's a weird guy. [laughter]
+[2894] 2:27:57	He has a pet skunk.
+[2895] 2:28:03	>> Messianic helmet. The That first film
+[2896] 2:28:05	was great. Yeah. Oh yeah. Kung Fu Panda.
+[2897] 2:28:07	The original Kung Fu Panda was
+[2898] 2:28:08	excellent. Even the second one was good.
+[2899] 2:28:11	It was really good.
+[2900] 2:28:15	Uh, you know, Shen was a was a really
+[2901] 2:28:19	nasty villain, you know.
+[2902] 2:28:26	Shen was a very interesting villain.
+[2903] 2:28:31	But yeah, that's that's what we do.
+[2904] 2:28:33	That's what great writing does is it
+[2905] 2:28:36	respects the tropes.
+[2906] 2:28:38	Respects the tropes. It acknowledges the
+[2907] 2:28:40	tropes and then inverts them.
+[2908] 2:28:43	And this is this is what gives good
+[2909] 2:28:46	fiction a twist.
+[2910] 2:28:48	You don't see it coming.
+[2911] 2:28:51	Or even better, you have it in plain
+[2912] 2:28:53	sight. You have it in plain sight. And
+[2913] 2:28:58	>> but the inversion has to
+[2914] 2:29:00	>> Oh, yeah. The inversion has to be
+[2915] 2:29:01	believable. It can't be forced. You have
+[2916] 2:29:04	to you have to you have to set the stage
+[2917] 2:29:06	for an inversion. So that's just that's
+[2918] 2:29:08	just good writing. But you have to set
+[2919] 2:29:09	the stage for any of this stuff.
+[2920] 2:29:15	Oh,
+[2921] 2:29:19	>> well, what I kind of dis dislike is the
+[2922] 2:29:22	forced romances, the enemy to lovers
+[2923] 2:29:24	where they're not rarely not really
+[2924] 2:29:27	enemies,
+[2925] 2:29:28	and it's just like, okay, this isn't
+[2926] 2:29:31	believable. Not in the slightest.
+[2927] 2:29:35	So, lovers to enemies is probably more
+[2928] 2:29:37	realistic. Um I mean the the the idea
+[2929] 2:29:41	that like for example another inverted
+[2930] 2:29:43	trope is your good your sense of
+[2931] 2:29:45	goodness will come out in the end you
+[2932] 2:29:48	know converting you know the the the
+[2933] 2:29:50	villain has this realization that and an
+[2934] 2:29:53	epiphany that they're just misunderstood
+[2935] 2:29:55	and they come to realize that they were
+[2936] 2:29:57	really basically the the the Anakin
+[2937] 2:30:00	moment. You know the Darth Vader moment
+[2938] 2:30:02	where he realizes he's not a bad guy and
+[2939] 2:30:04	decides to help his son.
+[2940] 2:30:07	That's not
+[2941] 2:30:08	>> not
+[2942] 2:30:09	>> That's so not believable. More It's more
+[2943] 2:30:12	likely that he's going to just go worse,
+[2944] 2:30:14	not better.
+[2945] 2:30:26	A warrior most high says, "If you watch
+[2946] 2:30:28	inversion a lot, the normal trope feels
+[2947] 2:30:30	like a breath of fresh air. Laugh out
+[2948] 2:30:32	loud."
+[2949] 2:30:33	Except it doesn't. Um the fact is that
+[2950] 2:30:35	normal tropes are normal.
+[2951] 2:30:38	There's very few people that are
+[2952] 2:30:40	actually doing trope inversions. Very
+[2953] 2:30:42	few people.
+[2954] 2:30:44	>> But even then if trope is done in a
+[2955] 2:30:47	fresh
+[2956] 2:30:49	way with characters.
+[2957] 2:30:52	>> Yeah. If it's done with fresh characters
+[2958] 2:30:55	and in an interesting way, a normal
+[2959] 2:30:56	trope
+[2960] 2:30:58	um can feel, you know, interesting at
+[2961] 2:31:01	least. It may not be unusual, but it at
+[2962] 2:31:04	least be interesting. Um, the problem is
+[2963] 2:31:09	um it takes more skill to invert a
+[2964] 2:31:12	trope.
+[2965] 2:31:14	This is one of the reasons why you find
+[2966] 2:31:15	more trope in fiction than inverted
+[2967] 2:31:18	tropes. It's more difficult to write an
+[2968] 2:31:21	inverted trope.
+[2969] 2:31:23	So,
+[2970] 2:31:26	[laughter] mama says
+[2971] 2:31:29	watch Hallmark channel today. see if
+[2972] 2:31:31	trope was still going. Yep. In two
+[2973] 2:31:34	minutes, I saw there was a small town
+[2974] 2:31:36	guy who was secretly rich, a city girl
+[2975] 2:31:38	apologizing, and New York was mentioned.
+[2976] 2:31:41	Oh boy.
+[2977] 2:31:45	Oh boy.
+[2978] 2:31:47	Yeah, Hallmark Hallmark has only two
+[2979] 2:31:49	plots, but what can I tell you?
+[2980] 2:31:54	Or they're they're they're working on a
+[2981] 2:31:56	second plot. Maybe I should That's a
+[2982] 2:31:58	better way of saying it. They're working
+[2983] 2:31:59	on their second plot.
+[2984] 2:32:03	Okay, let's go on to the next one here.
+[2985] 2:32:06	Uh,
+[2986] 2:32:08	>> you notice the guy never
+[2987] 2:32:13	[laughter]
+[2988] 2:32:16	>> Yeah. Yeah. Yeah. The um
+[2989] 2:32:19	There's never a cat lady on a Hallmark
+[2990] 2:32:21	film. Just
+[2991] 2:32:24	[laughter]
+[2992] 2:32:25	mama I've died laughing.
+[2993] 2:32:29	I bet.
+[2994] 2:32:33	Okay.
+[2995] 2:32:35	Next uh super chat here is from BC for
+[2996] 2:32:37	$5 Australian. Thank you so much. What
+[2997] 2:32:40	are a couple examples of fulfilled
+[2998] 2:32:42	prophecy where the evidence shows
+[2999] 2:32:44	writing before the event but secular
+[3000] 2:32:46	scholars refuse to acknowledgement? Uh I
+[3001] 2:32:48	would say if anything here you can just
+[3002] 2:32:50	go to the prophecies of Christ. I'm not
+[3003] 2:32:53	an expert on those. So, it's hard uh for
+[3004] 2:32:56	me to really delineate those. Um I'm not
+[3005] 2:33:00	I'm not that big on the study of
+[3006] 2:33:01	prophecy anyway. So, for me, it's But
+[3007] 2:33:03	you could use say the Isaiah chapter 9
+[3008] 2:33:05	prophecy of um Emanuel.
+[3009] 2:33:10	Um the
+[3010] 2:33:13	um and I think I think most most secular
+[3011] 2:33:17	scholars I mean all secular scholars are
+[3012] 2:33:19	going to pretty much refuse to uh
+[3013] 2:33:21	acknowledge
+[3014] 2:33:23	um uh fulfillment of prophecy anyway.
+[3015] 2:33:25	That's not within their um framework of
+[3016] 2:33:29	study. So that's just going to be just
+[3017] 2:33:31	one thing you're just going to have to
+[3018] 2:33:34	>> Yeah. It's a materialistic methodology
+[3019] 2:33:36	and they're going to come out with a
+[3020] 2:33:37	materialistic point of view on this. So
+[3021] 2:33:41	um Alexa says second temple destruction
+[3022] 2:33:43	policy prophecy. Um yes although there
+[3023] 2:33:47	are secular scholars that will uh
+[3024] 2:33:49	contest that even though we do have uh
+[3025] 2:33:53	ample evidence now that the gospels some
+[3026] 2:33:55	of the go at least some of the gospels
+[3027] 2:33:56	were written prior to the destruction of
+[3028] 2:33:59	the temple in 70 AD.
+[3029] 2:34:02	Emily Toescu says anti-supnaturalism
+[3030] 2:34:05	bias is rampant. It is. Yeah.
+[3031] 2:34:09	So,
+[3032] 2:34:10	uh, so if you want to go for for
+[3033] 2:34:14	prophecy that you can prove by by
+[3034] 2:34:17	writings that predate the event, uh, you
+[3035] 2:34:20	probably need to go to the New Testament
+[3036] 2:34:22	for that. So, I hope that helps. Thank
+[3037] 2:34:24	you very much for the super chat. Very
+[3038] 2:34:25	much appreciate it.
+[3039] 2:34:31	Mama says, "Might as well ask an
+[3040] 2:34:33	astronomer how to tailor a wedding
+[3041] 2:34:34	dress." Yeah.
+[3042] 2:34:36	Erin
+[3043] 2:34:41	Richard for $10. Thank you for the super
+[3044] 2:34:43	chat.
+[3045] 2:34:45	And he says,
+[3046] 2:34:48	"Uh, why would biblical writers insert
+[3047] 2:34:51	binding of of Isaac in Genesis 22?"
+[3048] 2:34:56	I don't know. Why would they?
+[3049] 2:35:00	Genesis
+[3050] 2:35:03	22.
+[3051] 2:35:05	Um,
+[3052] 2:35:10	I don't I don't see an necessarily an
+[3053] 2:35:14	insert there.
+[3054] 2:35:16	Um, other than other than that the
+[3055] 2:35:19	biblical writers want to know that
+[3056] 2:35:23	Abraham trusted the Lord, you know. Um,
+[3057] 2:35:26	I don't really get what the what the
+[3058] 2:35:28	question is here. Um, I don't I don't
+[3059] 2:35:30	hold to the idea that that that there
+[3060] 2:35:33	were redactors that inserted portions
+[3061] 2:35:35	into the text. I except maybe some
+[3062] 2:35:37	scribal glosses, but this is clearly not
+[3063] 2:35:40	a scribal glosses part of the normal
+[3064] 2:35:42	narrative. Uh, so, you know, I don't I
+[3065] 2:35:46	don't see that as an insert as such. So,
+[3066] 2:35:48	unfortunately, that's probably the best
+[3067] 2:35:50	I can tell you here. Um I know there
+[3068] 2:35:53	might be scholars who think that but
+[3069] 2:35:55	there's scholars who think that every
+[3070] 2:35:57	portion of the Bible was inserted by
+[3071] 2:35:58	some school of redactor. I don't happen
+[3072] 2:36:00	to hold that view. So anyway, thank you
+[3073] 2:36:03	very much for the super chat. Very much
+[3074] 2:36:04	appreciated.
+[3075] 2:36:16	Aaron uh Richard says, "Sorry." I meant
+[3076] 2:36:18	the writing, right? The binding of
+[3077] 2:36:20	Isaac's story. Well, I think it's a it's
+[3078] 2:36:22	a matter of um to show um Abraham's
+[3079] 2:36:26	faithfulness. That's that's really the
+[3080] 2:36:28	purpose of the binding of the Isaac
+[3081] 2:36:30	story. It's to show Abraham's um
+[3082] 2:36:33	faithless. Now, whether you're of that,
+[3083] 2:36:35	this is this is a very debated passage
+[3084] 2:36:37	anyway. Um it's probably the most
+[3085] 2:36:40	debated passage in say um among Jewish
+[3086] 2:36:44	scholars. Um some say that um it's about
+[3087] 2:36:50	you know um
+[3088] 2:36:52	um Abraham misunderstanding. Other
+[3089] 2:36:54	scholars think that that this was an
+[3090] 2:36:57	intent to to sacrifice
+[3091] 2:36:59	um where God stayed his hand. Uh
+[3092] 2:37:03	um it's clear that Abraham understood
+[3093] 2:37:05	this as child sacrifice.
+[3094] 2:37:09	But to say that um that was God's
+[3095] 2:37:12	intent, that's that's what's really at
+[3096] 2:37:14	issue is what is God's intent here. Is
+[3097] 2:37:17	God's intent to um sacrifice the
+[3098] 2:37:20	promised son or is the intent to show
+[3099] 2:37:23	Abraham's faithfulness? And I think I
+[3100] 2:37:26	think that um that the idea of of it is
+[3101] 2:37:31	to show Abraham's faithfulness. So
+[3102] 2:37:33	that's that's basically the purpose of
+[3103] 2:37:35	the story. So, um,
+[3104] 2:37:39	so I hope that helps. Thank you for the
+[3105] 2:37:41	super chat.
+[3106] 2:37:52	Okay, next one here is from Oscar Filo
+[3107] 2:37:54	for um uh $10. I think that's Romanian.
+[3108] 2:37:58	Thank you for for the super chat. Uh,
+[3109] 2:38:00	God bless your ministry. Please pray for
+[3110] 2:38:02	my reverend and for my sins. Um,
+[3111] 2:38:06	okay. Uh, I would I would encourage you
+[3112] 2:38:09	to become part of our Discord community
+[3113] 2:38:11	where you can put prayer requests in one
+[3114] 2:38:13	of the channels and that way you get um
+[3115] 2:38:16	prayers from more than just me and and
+[3116] 2:38:19	the community listening to this right
+[3117] 2:38:20	now. So, um, hey community, you want to
+[3118] 2:38:23	pray for Oscar, we would really
+[3119] 2:38:25	appreciate it. So, thank you very much
+[3120] 2:38:27	for that super chat, we really
+[3121] 2:38:28	appreciate it.
+[3122] 2:38:37	Uh, Messianic Talbed
+[3123] 2:38:39	um, for $5. Thank you for the super
+[3124] 2:38:41	chat. Your thoughts on Egyptian
+[3125] 2:38:43	alabaster jars containing opium.
+[3126] 2:38:47	I saw that article and
+[3127] 2:38:50	10 years ago
+[3128] 2:38:53	I I was in a student presentation
+[3129] 2:38:57	talking about these opium jars already.
+[3130] 2:39:00	This isn't new.
+[3131] 2:39:03	Okay. I I don't understand why everyone
+[3132] 2:39:06	thinks this is new. This is not new.
+[3133] 2:39:09	I mean, uh, in
+[3134] 2:39:12	2011,
+[3135] 2:39:15	early 2011, as I said, I heard a student
+[3136] 2:39:18	presentation on this.
+[3137] 2:39:21	Um
+[3138] 2:39:24	uh these are these are what are called
+[3139] 2:39:26	these these jars are basically um are
+[3140] 2:39:30	are basically poppy they're they're
+[3141] 2:39:33	little um they're little bulbous jars
+[3142] 2:39:35	with a small with a long um
+[3143] 2:39:39	uh uh neck on them. They're very small.
+[3144] 2:39:42	They're very fragile and they're
+[3145] 2:39:45	basically
+[3146] 2:39:47	um
+[3147] 2:39:49	they contained um the when they did the
+[3148] 2:39:52	the test of the residues on them, they
+[3149] 2:39:54	found opium mixed with either honey or
+[3150] 2:39:56	wine
+[3151] 2:39:58	and they were a trade good from Cyprus.
+[3152] 2:40:02	So Cypress would
+[3153] 2:40:05	had this production of of manufacturing
+[3154] 2:40:07	opium and they would sell it in
+[3155] 2:40:13	basically
+[3156] 2:40:14	uh mixed with honey and and uh or wine
+[3157] 2:40:18	and they would sell them in these tiny
+[3158] 2:40:20	tiny jars.
+[3159] 2:40:22	So I don't understand why they they
+[3160] 2:40:24	claim that this is a new thing. It's not
+[3161] 2:40:26	a new thing. Um, this is this is well
+[3162] 2:40:30	known and um I I don't understand why
+[3163] 2:40:33	this is making the the press now. So,
+[3164] 2:40:38	uh, Alexis for drinking. No, for pain
+[3165] 2:40:40	relief.
+[3166] 2:40:42	Uh, they weren't getting high on this
+[3167] 2:40:44	stuff. Okay, this is this is your this
+[3168] 2:40:47	is your equivalent of aspirin in the
+[3169] 2:40:50	Bronze Age. This is your Bronze Age
+[3170] 2:40:52	equivalent of aspirin
+[3171] 2:40:54	or Tylenol number threes.
+[3172] 2:40:57	Okay,
+[3173] 2:40:59	that's what this is.
+[3174] 2:41:03	Um, they did not use this is this was
+[3175] 2:41:06	not opium to get high.
+[3176] 2:41:08	This was opium to drink to for pain
+[3177] 2:41:12	relief. Uh, Andrew Graham goes opium
+[3178] 2:41:15	still used in some pain meds. Oh yeah.
+[3179] 2:41:18	um a codin which is a d a derivative of
+[3180] 2:41:22	morphine
+[3181] 2:41:24	um which comes from opium.
+[3182] 2:41:27	It's um you know it's still used in a
+[3183] 2:41:30	lot of pain relievers like um like
+[3184] 2:41:33	Tylenol, number threes, number ones,
+[3185] 2:41:36	etc.
+[3186] 2:41:38	Yeah, it's ancient medicine. That's
+[3187] 2:41:39	exactly what it is. It's ancient
+[3188] 2:41:40	medicine. Um people in Egypt when they
+[3189] 2:41:43	wanted to get high
+[3190] 2:41:45	they would use uh lily essentially liy
+[3191] 2:41:49	juice uh the the juice of the blue lily
+[3192] 2:41:52	and they would put it in wine and then
+[3193] 2:41:54	they would drink that and they would
+[3194] 2:41:56	they would go on a magic magic uh uh
+[3195] 2:42:00	rainbow trip at that point. Okay.
+[3196] 2:42:04	So,
+[3197] 2:42:07	so um
+[3198] 2:42:10	yeah,
+[3199] 2:42:12	yeah, at that point the elephant starts
+[3200] 2:42:13	speaking. Um
+[3201] 2:42:16	yeah, mar magic carpet ride. Exactly.
+[3202] 2:42:19	But um but opium was not used for it was
+[3203] 2:42:26	not used as a as a way to get high. uh
+[3204] 2:42:30	fact that people get high off a opium is
+[3205] 2:42:32	usually done through smoking it or
+[3206] 2:42:35	injection and those were not methods of
+[3207] 2:42:37	delivery at that time. So most of unless
+[3208] 2:42:41	you really ODed on it
+[3209] 2:42:44	and they were in very small containers
+[3210] 2:42:47	very small containers.
+[3211] 2:42:49	So, um, but these were these were they
+[3212] 2:42:54	were multi-dosese containers, but they
+[3213] 2:42:56	were they were not meant to be cuz it
+[3214] 2:42:58	was expensive. It was an imported good.
+[3215] 2:43:03	So, it was very very expensive to import
+[3216] 2:43:06	opium
+[3217] 2:43:08	um just because of the way it had to be
+[3218] 2:43:10	shipped. So, um,
+[3219] 2:43:14	so it was generally for pain relief.
+[3220] 2:43:15	This was for pain relief. And there was
+[3221] 2:43:17	a lot of pain going around Egypt. Okay,
+[3222] 2:43:20	let's be honest about that.
+[3223] 2:43:23	Uh, Alexis says, "Who sold them again?"
+[3224] 2:43:25	The Criates.
+[3225] 2:43:27	Greeks. Yeah, the Greeks from Cyprus
+[3226] 2:43:31	basically
+[3227] 2:43:32	sold them in Egypt. And we find them
+[3228] 2:43:36	these these bottles going all the way
+[3229] 2:43:38	back to the 11th dynasty. So, this is
+[3230] 2:43:41	this is was a was a was an ongoing trade
+[3231] 2:43:44	with the Greeks.
+[3232] 2:43:45	for
+[3233] 2:43:47	gez like two three millennia. I mean it
+[3234] 2:43:51	was really
+[3235] 2:43:54	um
+[3236] 2:43:55	something that uh you know that that
+[3237] 2:43:58	they just continue to do.
+[3238] 2:44:00	Um they they they started around the
+[3239] 2:44:03	11th dynasty um uh which is about 2,000
+[3240] 2:44:07	BC and they continue almost right almost
+[3241] 2:44:10	right up until the Islamic
+[3242] 2:44:13	um invasion. Okay. Once the uh once
+[3243] 2:44:16	Islam came into Egypt, that battle
+[3244] 2:44:18	stopped. They put an end to it right
+[3245] 2:44:21	there.
+[3246] 2:44:22	So,
+[3247] 2:44:28	but it was your common pain reliever,
+[3248] 2:44:31	okay? Because it was effective. It
+[3249] 2:44:34	worked.
+[3250] 2:44:36	And as I said, there's a lot of pain in
+[3251] 2:44:38	Egypt. A lot of pain.
+[3252] 2:44:41	So,
+[3253] 2:44:44	Okay, next one here.
+[3254] 2:44:47	Messianic uh Talmet for $5. Do we have
+[3255] 2:44:51	an exact uh definition of what the Milo
+[3256] 2:44:53	is in in Jerusalem? Uh
+[3257] 2:44:59	you didn't leave a verse.
+[3258] 2:45:02	Would have been really really helpful to
+[3259] 2:45:03	have left a verse.
+[3260] 2:45:08	Going have to find one here.
+[3261] 2:45:15	All right. It's a citadel of some sort.
+[3262] 2:45:18	Um
+[3263] 2:45:22	um Milo
+[3264] 2:45:27	and David lived in the stronghold and
+[3265] 2:45:29	called it the city of David. And David
+[3266] 2:45:31	built all around from the Milo and
+[3267] 2:45:34	inwards. Um there's a several sections
+[3268] 2:45:36	of the city that are sort of debated.
+[3269] 2:45:40	I'm not really sure what the Milo was
+[3270] 2:45:42	supposed to be here. I'd have to
+[3271] 2:45:44	probably look that up.
+[3272] 2:45:46	Um, there was building uh David did
+[3273] 2:45:49	build a palace um against the wall of
+[3274] 2:45:53	Jerusalem
+[3275] 2:45:55	and into the city of David. Okay. Um, so
+[3276] 2:45:59	I'm not exactly sure what the Milo is
+[3277] 2:46:02	supposed to be here.
+[3278] 2:46:04	Don't house
+[3279] 2:46:07	the Milo and the wall of Jerusalem.
+[3280] 2:46:10	Uh, he built the Milo.
+[3281] 2:46:14	Yeah, that's not going to help us.
+[3282] 2:46:22	Okay.
+[3283] 2:46:25	House of Milo. So, there's a House of
+[3284] 2:46:27	Milo that
+[3285] 2:46:30	Joash. Yeah, I'd have to look this one
+[3286] 2:46:32	up to see what what the commentators
+[3287] 2:46:35	say.
+[3288] 2:46:39	So, I can't answer that one because I'd
+[3289] 2:46:41	have to look at the um geography of
+[3290] 2:46:43	Jerusalem to see what's what's going on
+[3291] 2:46:44	there. Okay. So, sorry about that, but
+[3292] 2:46:47	that's the best I can do right now. But,
+[3293] 2:46:49	thank you for the super chat. We really
+[3294] 2:46:50	appreciate it.
+[3295] 2:46:54	Uh Messianic Talmud for $5. Thank you
+[3296] 2:46:56	very much for the super chat. Your
+[3297] 2:46:59	thoughts on who is being depicted on the
+[3298] 2:47:01	Fance heads found in the ancient near
+[3299] 2:47:02	east, kings, nobles, or anyone who is
+[3300] 2:47:05	rich? Um, without context, it's hard to
+[3301] 2:47:09	say. Uh, we kings are a definite
+[3302] 2:47:12	possibility.
+[3303] 2:47:15	Um, Theance was a technology that we
+[3304] 2:47:18	know goes back to at least the third
+[3305] 2:47:20	dynasty of of Egypt. It's a very popular
+[3306] 2:47:23	way of decorating things.
+[3307] 2:47:25	Uh it could have been deities, it could
+[3308] 2:47:29	have been kings, could be nobles, it's
+[3309] 2:47:31	or generic peoples like for example um
+[3310] 2:47:35	uh Egypt did do fance figures of of the
+[3311] 2:47:39	enemies of Egypt like the seven bows. So
+[3312] 2:47:43	it could be it doesn't necessarily need
+[3313] 2:47:46	to be kings or nobles. It could be the
+[3314] 2:47:49	enemies too. Like for example, if
+[3315] 2:47:51	they're used in a in a um inlay in a
+[3316] 2:47:54	foottool, you're going to put the
+[3317] 2:47:56	enemies there.
+[3318] 2:47:59	So absolutely it could. We don't know.
+[3319] 2:48:03	We don't know who those heads belong to
+[3320] 2:48:04	because we don't have those heads in
+[3321] 2:48:06	context. Context really matters to
+[3322] 2:48:09	interpreting what were the use of these
+[3323] 2:48:11	these these figurines. So I hope that
+[3324] 2:48:14	helps, but unfortunately we don't have
+[3325] 2:48:16	more information. Thank you very much
+[3326] 2:48:17	for the super chat. Really appreciate
+[3327] 2:48:19	it.
+[3328] 2:48:20	Al uh Alexis, what is fance? Oh, great
+[3329] 2:48:24	question. I've got examples of fiance.
+[3330] 2:48:29	Lots of examples of
+[3331] 2:48:32	Okay, I'm going to show you some
+[3332] 2:48:34	examples of fance.
+[3333] 2:48:37	Okay,
+[3334] 2:48:41	I've got a handful of scarabs here and
+[3335] 2:48:43	try to show them here. Okay,
+[3336] 2:48:47	these scarabs
+[3337] 2:48:49	are made
+[3338] 2:48:51	of fants,
+[3339] 2:48:53	particularly this one.
+[3340] 2:48:55	We have this one here, this one here,
+[3341] 2:48:57	and this one here. Okay. Now, you'll
+[3342] 2:49:01	notice that the unfired side here is is
+[3343] 2:49:04	kind of rough. It's And this scarab is
+[3344] 2:49:07	green.
+[3345] 2:49:09	And this one is
+[3346] 2:49:13	blue. Okay. And this one is brown. Okay.
+[3347] 2:49:19	What the is, it is a self glazing
+[3348] 2:49:24	pottery. Okay. So,
+[3349] 2:49:29	uh, basically it's a kind of ceramic
+[3350] 2:49:32	that when you fire it creates its own
+[3351] 2:49:35	shiny glaze. That's fance. the the
+[3352] 2:49:39	outside actually um
+[3353] 2:49:42	um turns into a form of glass
+[3354] 2:49:46	and that glass creates the shiny uh
+[3355] 2:49:51	texture
+[3356] 2:49:52	very smooth shiny texture on the outside
+[3357] 2:49:55	of whatever you're firing. Okay.
+[3358] 2:49:59	It makes excellent jewelry. The
+[3359] 2:50:01	Egyptians have used it for for tiles on
+[3360] 2:50:03	tombs since the third dynasty. Um,
+[3361] 2:50:08	beautiful stuff. It's beautiful stuff.
+[3362] 2:50:11	And as I said, it's self glazing
+[3363] 2:50:13	ceramics.
+[3364] 2:50:16	And that is fance. And it comes in a
+[3365] 2:50:19	variety of colors. So you can make it
+[3366] 2:50:22	out of you can make them blue, uh,
+[3367] 2:50:25	various colors of blue, um, brown,
+[3368] 2:50:28	yellow, green. Um, very very nice stuff.
+[3369] 2:50:34	Okay.
+[3370] 2:50:40	Uh, sing a great song. Impressive. Well,
+[3371] 2:50:42	it is. I mean, it's nice stuff. I mean,
+[3372] 2:50:44	um, beautiful to work with, too.
+[3373] 2:50:51	Alexis says, "That is so pretty. Why is
+[3374] 2:50:54	this the first time I'm hear about
+[3375] 2:50:55	this?" I don't know. Uh, they Egyptians
+[3376] 2:50:59	even made shapy figures out of fyons.
+[3377] 2:51:01	So, they'll have like like like whole
+[3378] 2:51:03	Shappy figures. Um, these are the like
+[3379] 2:51:05	the workers that the proxy workers that
+[3380] 2:51:07	they put in tombs that um
+[3381] 2:51:15	[laughter]
+[3382] 2:51:16	uh Mrs. Producer says she wants a set of
+[3383] 2:51:19	uh fy shabby workers for Christmas.
+[3384] 2:51:22	[laughter]
+[3385] 2:51:24	Uh
+[3386] 2:51:26	Scott Claus writes, "Hello from Papa New
+[3387] 2:51:28	Guinea. Thank you, Dr. Folk, for
+[3388] 2:51:30	everything you do." Well, thank you for
+[3389] 2:51:32	joining us tonight. Uh, we didn't
+[3390] 2:51:34	realize we had someone here from Pawpo
+[3391] 2:51:35	New Guinea. Uh, welcome to to the live
+[3392] 2:51:38	stream. We um appreciate you being here.
+[3393] 2:51:44	Okay, next one here
+[3394] 2:51:51	from Matthew Herell for499. Thank you
+[3395] 2:51:53	very much for the super chat. Hi, Mr.
+[3396] 2:51:55	and Mrs. Folk and Mr. EC. I still
+[3397] 2:51:57	appreciate you. Here's my money. Well,
+[3398] 2:51:59	thank you very much. We really
+[3399] 2:52:01	appreciate that.
+[3400] 2:52:03	Oh, by the way, um I will be at uh at u
+[3401] 2:52:08	ETS and Azor uh next week. Uh which is
+[3402] 2:52:12	why we're doing the video uh sorry, the
+[3403] 2:52:14	D and D game. But if you happen to be at
+[3404] 2:52:16	ETS in Boston, please come by and say
+[3405] 2:52:19	hello. I'd love to meet you. So if you
+[3406] 2:52:21	can't come by and say hello tomorrow at
+[3407] 2:52:23	uh Connections,
+[3408] 2:52:25	uh Speculative Fiction Connection, you
+[3409] 2:52:27	can see me in Boston. I will be at
+[3410] 2:52:30	Boston all week. Uh, from the 17th until
+[3411] 2:52:34	the 20ome 3rd, I think
+[3412] 2:52:37	this is 23rd. Let me just double check
+[3413] 2:52:39	when I'm coming back. I don't know when
+[3414] 2:52:41	I'm coming back. Am I coming back?
+[3415] 2:52:44	Yes. Mrs. Producer says, "Yes, I'm
+[3416] 2:52:46	coming back."
+[3417] 2:52:53	She wants me back. Surprising. Yeah.
+[3418] 2:52:56	23rd I return.
+[3419] 2:52:59	So, I'll be there from roughly the 5ifth
+[3420] 2:53:01	uh from this the the 17th to the 22nd.
+[3421] 2:53:05	So, if you do see me, come by and say
+[3422] 2:53:08	hi. Uh it's amazing who I have met in at
+[3423] 2:53:10	the halls of of of ETSs Nazor. So,
+[3424] 2:53:13	that's been really really cool.
+[3425] 2:53:16	All right, next one here.
+[3426] 2:53:25	uh Scott Warin uh for $10. Thank you
+[3427] 2:53:28	very much for the super chat. Which
+[3428] 2:53:30	Revelations verse mentions along Paxs
+[3429] 2:53:33	promised in Hosea 2:18, Isaiah 2 2:4,
+[3430] 2:53:38	Micah 4:3 are Ramban and Christian
+[3431] 2:53:41	esquetologies even compatible? I'd say
+[3432] 2:53:43	not. Um where does the second end of
+[3433] 2:53:46	days timeline differ? Okay. Uh where do
+[3434] 2:53:49	the two end of days timelines differ? Um
+[3435] 2:53:54	the fact is that uh Rambam is going to
+[3436] 2:53:57	uh basically go to um not a um an
+[3437] 2:54:02	escaton of of a revived Israel. So
+[3438] 2:54:07	basically a restored and triumphant
+[3439] 2:54:09	Israel. Okay. Um so that's that's
+[3440] 2:54:12	basically where say Jewish esquetology
+[3441] 2:54:14	is going to significantly differ from
+[3442] 2:54:16	say Christian esquetology which sees the
+[3443] 2:54:19	return of Christ as its it's its
+[3444] 2:54:23	consummation.
+[3445] 2:54:25	Now in the case of Hosea 2,
+[3446] 2:54:31	Hosea 2 18
+[3447] 2:54:36	to 23.
+[3448] 2:54:38	Uh, in that day I will make a covenant
+[3449] 2:54:40	for them with the beasts of the field,
+[3450] 2:54:42	the birds of the sky, and the creeping
+[3451] 2:54:43	things of the ground. And I will abolish
+[3452] 2:54:45	the bow and the sword and war from the
+[3453] 2:54:48	land, and we will make them lie down
+[3454] 2:54:50	safely. Okay, this is a metaphor
+[3455] 2:54:52	basically saying that there's going to
+[3456] 2:54:53	be peace in the land. And I will betro
+[3457] 2:54:56	you to me forever. Yes, I will betro you
+[3458] 2:54:59	to me in righteousness and justice and
+[3459] 2:55:01	in loving kindness and compassion. And I
+[3460] 2:55:04	will betro you to me in faithfulness,
+[3461] 2:55:06	and you will know the Lord. Okay. In
+[3462] 2:55:10	revelations, this would be the
+[3463] 2:55:11	millennial kingdom. Okay. So, this is
+[3464] 2:55:13	talk will be the the the the thousand
+[3465] 2:55:15	years as such
+[3466] 2:55:17	when Christ rules in peace.
+[3467] 2:55:22	Isaiah 2
+[3468] 2:55:25	2:4.
+[3469] 2:55:27	Now it will come out about in the last
+[3470] 2:55:28	days the mountain of the house of the
+[3471] 2:55:30	Lord will be established as chief of the
+[3472] 2:55:32	mountains and will be raised above the
+[3473] 2:55:34	hills and all the nations will stream to
+[3474] 2:55:35	it and many peoples will come saying
+[3475] 2:55:37	come let us go to the mountain of the
+[3476] 2:55:39	Lord to the house of the God of Jacob
+[3477] 2:55:41	and he will teach us concerning his ways
+[3478] 2:55:43	and and that we may walk in his paths
+[3479] 2:55:46	from the law will go from Zion and the
+[3480] 2:55:49	word of the Lord from Jerusalem again
+[3481] 2:55:51	that's probably the millennial reign
+[3482] 2:55:55	and then in Micah
+[3483] 2:55:59	four
+[3484] 2:56:02	um 3 to 4.
+[3485] 2:56:05	And he will judge between many peoples
+[3486] 2:56:07	and render decisions for the mighty
+[3487] 2:56:09	distant nations. And they will hammer
+[3488] 2:56:10	their swords into plowshares. That's a
+[3489] 2:56:12	sign of peace right there. Um the
+[3490] 2:56:15	turning of of plowshares and uh swords
+[3491] 2:56:17	into plowshares. That's that's a symbol
+[3492] 2:56:19	of of peace. So that's the metaphor that
+[3493] 2:56:21	would use in the piece. And their spears
+[3494] 2:56:23	into pruning hooks. So basically from
+[3495] 2:56:26	weapons of war to farming implements,
+[3496] 2:56:30	nation will not lift up sword against
+[3497] 2:56:32	nation and never again will they train
+[3498] 2:56:34	for war. Okay. So then we look at then
+[3499] 2:56:38	say the book of revelation.
+[3500] 2:56:43	That's not you. Revelation please.
+[3501] 2:56:47	And
+[3502] 2:56:57	Thousand years. Let me just find
+[3503] 2:56:58	thousand years. That's probably easier.
+[3504] 2:57:05	Tanks and detractors. Yeah, exactly. If
+[3505] 2:57:08	you want a more Absolutely. Uh,
+[3506] 2:57:11	sing a bright song. Yeah, tanks and
+[3507] 2:57:12	detractors.
+[3508] 2:57:16	Yeah, they for a while they were doing
+[3509] 2:57:17	that in Ukraine.
+[3510] 2:57:21	Okay. Um,
+[3511] 2:57:26	and Revelation 20. And he who laid hold
+[3512] 2:57:29	of the dragon and the serpent who is the
+[3513] 2:57:31	devil and Satan and bound him for a
+[3514] 2:57:32	thousand years and threw him into abyss
+[3515] 2:57:35	and said it and shielded over him so
+[3516] 2:57:37	that he should not deceive the nations
+[3517] 2:57:38	any longer until a thousand years were
+[3518] 2:57:40	completed.
+[3519] 2:57:42	And I saw thrones and they sat upon them
+[3520] 2:57:44	and judgment was given to them. This is
+[3521] 2:57:46	again judging the nations. I saw the
+[3522] 2:57:48	souls of those who had been beheaded
+[3523] 2:57:50	because of the testimony of Christ
+[3524] 2:57:53	and they came to life and reigned with
+[3525] 2:57:55	Christ for a thousand years. The rest of
+[3526] 2:57:58	the dead did not come to life until the
+[3527] 2:58:00	thousand years were completed.
+[3528] 2:58:02	Uh verse six, blessed and holy is the
+[3529] 2:58:04	one part of the first resurrection. Over
+[3530] 2:58:06	these the second death has no power, but
+[3531] 2:58:08	they will be priests of God and of
+[3532] 2:58:10	Christ and will reign with him for a
+[3533] 2:58:12	thousand years. So again, there's this
+[3534] 2:58:14	focus on Jerusalem as being the center
+[3535] 2:58:17	of of Christ's return
+[3536] 2:58:21	and there will be a thousand years
+[3537] 2:58:23	completed and then Satan will be
+[3538] 2:58:24	released. Okay. So, so that's where
+[3539] 2:58:28	you're going to get that um that's where
+[3540] 2:58:31	you're going to get that difference is
+[3541] 2:58:33	that Rambam is going to see a a a the
+[3542] 2:58:38	return of of of Israel and dominant over
+[3543] 2:58:43	say the nations the world but at the
+[3544] 2:58:46	same time too Christian esquetology is
+[3545] 2:58:49	going to see the the millennial kingdom
+[3546] 2:58:51	as being the fulfillment of these
+[3547] 2:58:52	prophecies. Okay, so I hope that helps.
+[3548] 2:58:54	Thank you very much for the super chat.
+[3549] 2:58:56	Very much appreciated.
+[3550] 2:59:10	Ah, Paul for 1999. Thank you for the
+[3551] 2:59:12	super chat. Thoughts on Susini's uh the
+[3552] 2:59:16	first silver coffin? Um, it's pretty
+[3553] 2:59:18	amazing. That's my thoughts. Uh, it's
+[3554] 2:59:21	it's really um
+[3555] 2:59:24	really very interesting because if
+[3556] 2:59:27	you've ever worked in silver,
+[3557] 2:59:30	silver can be really really difficult to
+[3558] 2:59:32	work in large pieces.
+[3559] 2:59:37	It's horrible to work with in large
+[3560] 2:59:38	pieces. Let's be honest here, okay? Um,
+[3561] 2:59:44	gold is is one of the things as a as a
+[3562] 2:59:47	jeweler uh was that I love working in
+[3563] 2:59:50	gold. Gold was so simple to work in.
+[3564] 2:59:54	It's flexible. It's it's malleable. A
+[3565] 2:59:58	little bit of of a brush from a a a
+[3566] 3:00:00	torch and you can work it some more. It
+[3567] 3:00:03	was so easy to work with. Silver's not.
+[3568] 3:00:08	Silver work hardens. Gold never work
+[3569] 3:00:10	hardens. I like that about gold. Gold's
+[3570] 3:00:14	easy. Any idiot can work with gold. Also
+[3571] 3:00:17	expensive. Uh but
+[3572] 3:00:21	>> just so we generally don't work in gold.
+[3573] 3:00:24	But silver work hardens and if you don't
+[3574] 3:00:27	anneal it every so often, it breaks.
+[3575] 3:00:31	So these guys who managed to to do an
+[3576] 3:00:34	entire coffin of of silver. Yeah. You
+[3577] 3:00:38	know, it doesn't look as as good as say
+[3578] 3:00:42	some of the stuff that you find in Tuts
+[3579] 3:00:43	tomb, but when you realize that they're
+[3580] 3:00:46	working in gold or sorry, we're working
+[3581] 3:00:48	in silver. Yeah, it's a major
+[3582] 3:00:50	achievement. Those coffins were a major
+[3583] 3:00:53	major technical achievement.
+[3584] 3:00:56	And silver was really really big with
+[3585] 3:01:00	the um the kings of the um third
+[3586] 3:01:04	intermediate period because there's
+[3587] 3:01:07	still sort of this after
+[3588] 3:01:10	the third intermediate when it starts
+[3589] 3:01:12	with is coincides with the mining
+[3590] 3:01:16	operations of silver before then silver
+[3591] 3:01:19	was kind of an accident you just found.
+[3592] 3:01:22	So silver was rare prior to the third
+[3593] 3:01:24	intermediate period but during the third
+[3594] 3:01:26	intermediate period uh silver becomes a
+[3595] 3:01:29	a hot commodity. They actually start
+[3596] 3:01:33	actually intentionally mining it.
+[3597] 3:01:37	Though this this this idea of silver
+[3598] 3:01:40	being a very very special and important
+[3599] 3:01:44	me uh metal uh was really um um was
+[3600] 3:01:51	really something that was um
+[3601] 3:01:55	uh extolled
+[3602] 3:01:58	at the time of the of the third enemy of
+[3603] 3:02:01	kings. though, but it's also technically
+[3604] 3:02:05	more difficult to work.
+[3605] 3:02:08	Much much much more difficult to work.
+[3606] 3:02:12	Okay.
+[3607] 3:02:14	So, the idea that they were able to make
+[3608] 3:02:17	a complete coffin from a silver is just
+[3609] 3:02:20	an amazing technical achievement.
+[3610] 3:02:22	Amazing technical achievement.
+[3611] 3:02:24	And and this was before people fully
+[3612] 3:02:27	understood how to work it.
+[3613] 3:02:30	So um and and you can actually if you
+[3614] 3:02:34	look at it really closely you can see
+[3615] 3:02:36	some of the places where the silver was
+[3616] 3:02:38	stressed or sometimes it would fracture
+[3617] 3:02:41	from work hardening. So they they didn't
+[3618] 3:02:44	do it comp the fact that they were able
+[3619] 3:02:47	to do it at all is an incredible
+[3620] 3:02:49	achievement.
+[3621] 3:02:51	So um
+[3622] 3:02:54	Andrew Graham did you work with bronze?
+[3623] 3:02:56	I did work with a little bit of bronze.
+[3624] 3:02:58	Um,
+[3625] 3:03:00	it was okay. Didn't care for it that
+[3626] 3:03:02	much. Um, the keeping fire scale off
+[3627] 3:03:06	bronze can be really difficult,
+[3628] 3:03:11	but I did work with bronze. It wasn't my
+[3629] 3:03:14	favorite. Not by a long shot. Gold I
+[3630] 3:03:16	love. I mean, gold is just so so fun to
+[3631] 3:03:19	to to
+[3632] 3:03:22	um to work with. It's just [laughter]
+[3633] 3:03:24	it's hard not to enjoy working with
+[3634] 3:03:26	gold.
+[3635] 3:03:28	because it's just so easy. Just so easy.
+[3636] 3:03:33	Um, bronze bronze can can suffer from
+[3637] 3:03:37	really bad paracity if you don't get the
+[3638] 3:03:40	temperatures and the flux just right.
+[3639] 3:03:43	And I do not like dealing with paracity.
+[3640] 3:03:46	Oh my gosh, I hate paracity.
+[3641] 3:03:51	So
+[3642] 3:03:55	anyway, uh, hope that helps. Um, thank
+[3643] 3:03:57	you very much for that very generous
+[3644] 3:03:58	super chat, Paul. But that's sort of the
+[3645] 3:04:00	history there on on Cecini's silver
+[3646] 3:04:03	coffin. Beautiful work. I mean, it it
+[3647] 3:04:05	has it has the uh it's a has the face of
+[3648] 3:04:07	the horse bird on it. So, I mean, really
+[3649] 3:04:10	interesting. Really really interesting.
+[3650] 3:04:13	All right, next one here.
+[3651] 3:04:27	Uh, we want to thank Jack Ray for 20
+[3652] 3:04:29	gifting the channel 20 ancient Egypt in
+[3653] 3:04:31	the Bible memberships. Thank you so much
+[3654] 3:04:33	for your support of the channel, Jack.
+[3655] 3:04:34	We really appreciate it. Uh, thank you
+[3656] 3:04:37	so very much. We can't do this without
+[3657] 3:04:39	you. So, we really appreciate your
+[3658] 3:04:40	support.
+[3659] 3:04:49	Okay, next one's from the Camelopard for
+[3660] 3:04:51	499. Thank you for the super chat.
+[3661] 3:04:54	I've
+[3662] 3:04:56	easier in the past, but who do you
+[3663] 3:04:59	believe was Pharaoh of Abraham and the
+[3664] 3:05:01	Pharaoh of Joseph? Uh, okay. Um,
+[3665] 3:05:06	Abraham, it's impossible to to narrow
+[3666] 3:05:08	this down.
+[3667] 3:05:09	It is one of the kings in the uh 13th
+[3668] 3:05:13	dynasty. The problem is there was such a
+[3669] 3:05:15	turnover of kings in the 13th dynasty.
+[3670] 3:05:18	Uh we can't say we do know that Abraham
+[3671] 3:05:22	was contemporary with Nefoteep the first
+[3672] 3:05:25	but there's a lot of kings before and
+[3673] 3:05:27	after Nephote the first. So uh it's
+[3674] 3:05:31	impossible to say.
+[3675] 3:05:33	Now, in the case of of um
+[3676] 3:05:39	of uh Joseph, that one is easier to
+[3677] 3:05:43	narrow down
+[3678] 3:05:45	because we know that Joseph had to
+[3679] 3:05:47	arrive in Egypt. He arrives during
+[3680] 3:05:50	dynasty 15,
+[3681] 3:05:53	but after 1666 when the Hixos introduce
+[3682] 3:05:59	the chariot. Okay, but that still leaves
+[3683] 3:06:04	five, six kings. It could be
+[3684] 3:06:08	um my thought on this is it's probably
+[3685] 3:06:12	either Sarah Dean,
+[3686] 3:06:15	uh Benanu or Apakharian.
+[3687] 3:06:18	Okay,
+[3688] 3:06:20	so um those are my thoughts as to who
+[3689] 3:06:24	the probable kings of uh of Joseph were.
+[3690] 3:06:28	and they're the kings of the beginning
+[3691] 3:06:30	of the 15th dynasty essentially.
+[3692] 3:06:33	So, so that would be probably the king
+[3693] 3:06:36	of Joseph. Um, just uh just to clarify
+[3694] 3:06:39	though, uh, the king of Egypt, uh,
+[3695] 3:06:42	Pharaoh was not a term that was used
+[3696] 3:06:44	until the reign of of Tutmos III. So,
+[3697] 3:06:47	back in the days of Joseph and and
+[3698] 3:06:49	Abraham, the king of Egypt would not
+[3699] 3:06:51	have been called a pharaoh. that only
+[3700] 3:06:54	happens during the mid18th dynasty with
+[3701] 3:06:56	Tutmoses III and onward. So until that
+[3702] 3:07:00	point they're just called the king of
+[3703] 3:07:01	Egypt. But collo colloquially we can
+[3704] 3:07:04	still call him pharaohs. Okay, we all
+[3705] 3:07:06	understand that that's really a
+[3706] 3:07:07	reference to the king of Egypt even
+[3707] 3:07:08	though it's kind of an anacronistic
+[3708] 3:07:10	term. But anyway, I hope that helps.
+[3709] 3:07:12	Thank you very much for the super chat.
+[3710] 3:07:14	Very much appreciate it.
+[3711] 3:07:24	Okay. And that seems to be our final
+[3712] 3:07:26	super chat.
+[3713] 3:07:28	Uh we are probably going to call it a
+[3714] 3:07:30	little early tonight, but if we have a
+[3715] 3:07:32	couple of non-s super chats, we'll take
+[3716] 3:07:34	it.
+[3717] 3:07:36	I've answered most of them. Okay.
+[3718] 3:07:40	Um
+[3719] 3:07:42	let's take one. And do we have anyone?
+[3720] 3:07:48	We would like to call it early anyway
+[3721] 3:07:49	because uh we got to be get up early
+[3722] 3:07:51	tomorrow.
+[3723] 3:07:54	So
+[3724] 3:08:19	Nah.
+[3725] 3:08:22	Okay.
+[3726] 3:08:25	Um, there was one actually there is one
+[3727] 3:08:29	really early on.
+[3728] 3:08:31	See if I can find it.
+[3729] 3:08:38	Okay. Uh 12:04.
+[3730] 3:08:41	Okay. Uh we'll take this one from Golden
+[3731] 3:08:44	Wind. And this will probably be the last
+[3732] 3:08:45	question of the night then. Um
+[3733] 3:08:49	and uh he asks uh did the second person
+[3734] 3:08:53	of the Trinity assume a human soul along
+[3735] 3:08:56	with a body or just a body? If assumed a
+[3736] 3:09:00	human soul, would that create two
+[3737] 3:09:01	persons? Okay, that's a bit of a
+[3738] 3:09:03	category here. Now um
+[3739] 3:09:08	the trinity is a
+[3740] 3:09:11	is God becoming flesh. Okay. So the the
+[3741] 3:09:18	the spirit of God
+[3742] 3:09:22	takes on the attributes of a human soul
+[3743] 3:09:25	as well. So God is adding an attribute
+[3744] 3:09:28	to himself.
+[3745] 3:09:30	Okay. So with the incarnation,
+[3746] 3:09:34	what's going on is not that he has a
+[3747] 3:09:36	human soul plus a divine essence, but
+[3748] 3:09:39	the human soul is added to the divine
+[3749] 3:09:42	essence.
+[3750] 3:09:44	So Christ is both an embodied being,
+[3751] 3:09:49	fully divine,
+[3752] 3:09:51	and has a human soul as part of his
+[3753] 3:09:55	divine essence. Okay. So it's the the
+[3754] 3:09:59	the divine the human soul is a quality
+[3755] 3:10:03	that is added. So it's not that he has a
+[3756] 3:10:07	soul that's separate from his divine
+[3757] 3:10:10	essence. That would be um that would
+[3758] 3:10:13	start you'd start to get sort of into
+[3759] 3:10:15	weird notorian territory there.
+[3760] 3:10:18	It's also not that he has the divine
+[3761] 3:10:20	mind and a human body because then you
+[3762] 3:10:24	get into a pollinarian
+[3763] 3:10:26	problems there.
+[3764] 3:10:28	It's that more that that the that um the
+[3765] 3:10:32	divine essence uptakes the attributes of
+[3766] 3:10:36	a human soul and it becomes one person.
+[3767] 3:10:41	One person, one person with the
+[3768] 3:10:44	qualities of human soul,
+[3769] 3:10:46	divine essence and a human body making
+[3770] 3:10:50	one complete person but only one person.
+[3771] 3:10:55	Okay.
+[3772] 3:10:56	So, I hope that helps explain this. It's
+[3773] 3:10:59	a good question. It's a question that's
+[3774] 3:11:01	often asked about the incarnation.
+[3775] 3:11:04	Thank you very much for the uh for the
+[3776] 3:11:06	question and we really appreciate that.
+[3777] 3:11:08	Okay. Uh it is a quarter after 12. We're
+[3778] 3:11:12	going to call this one a little early
+[3779] 3:11:15	um because uh as I said, I've got to get
+[3780] 3:11:18	up really early tomorrow to to go to
+[3781] 3:11:21	that um that uh speculative fiction
+[3782] 3:11:25	conference. Um so uh we're going to
+[3783] 3:11:28	again call it a night at this point
+[3784] 3:11:30	here. I want to thank uh all our super
+[3785] 3:11:33	chatters who who basically support us
+[3786] 3:11:36	keep us fed as such. Uh thank you also
+[3787] 3:11:39	to those who contribute to us through
+[3788] 3:11:42	PayPal. We really really appreciate that
+[3789] 3:11:45	because those are not connected to super
+[3790] 3:11:47	chats and we really really makes our
+[3791] 3:11:48	dollar stretch farther. We also want to
+[3792] 3:11:51	thank those who support us through
+[3793] 3:11:54	Patreon and through um uh through
+[3794] 3:11:57	YouTube membership. You guys keep the
+[3795] 3:12:00	lights on. You pay for the uh equipment
+[3796] 3:12:02	upgrades and the equipment. We really
+[3797] 3:12:05	are thankful for that. We also want to
+[3798] 3:12:08	thank our regular subscribers who watch
+[3799] 3:12:10	our videos, hit that like and subscribe
+[3800] 3:12:12	button and share our URLs with other
+[3801] 3:12:15	social media platforms. You guys get the
+[3802] 3:12:17	message out there. That said, thank you
+[3803] 3:12:20	so much for watching. We're glad you
+[3804] 3:12:22	could join us. We'll see you next time
+[3805] 3:12:23	on Ancient Egypt and the Bible. Oh, one
+[3806] 3:12:26	other thing, one thing, one thing, one
+[3807] 3:12:27	thing. Just a note, next week's Friday's
+[3808] 3:12:32	uh live stream. Note the time change.
+[3809] 3:12:34	It's a time change on next Friday's live
+[3810] 3:12:37	stream. It's at 700 p.m. Eastern time.
+[3811] 3:12:42	That's 4 o'clock Western, 4 o'clock
+[3812] 3:12:45	Pacific. Okay? So, just want to keep
+[3813] 3:12:48	that in mind that next week's live
+[3814] 3:12:50	stream is at a different time. All
+[3815] 3:12:53	right. So, again, thank you very much
+[3816] 3:12:55	for watching. We'll see you next time on
+[3817] 3:12:57	Ancient Egypt and the Bible. Good night,
+[3818] 3:13:00	everyone.
