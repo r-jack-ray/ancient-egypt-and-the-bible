@@ -236,4 +236,8 @@ These files provide a historical record of transcript acquisition runs.
     -TimeoutSeconds 45
 ```
 
+```
+.\Get-YouTubeTranscriptJson.ps1 -MissingOnly -DelaySeconds 60 -TimeoutSeconds 45
+```
+
 This is the preferred command for filling transcript gaps while minimizing issues with YouTube rate limiting.
