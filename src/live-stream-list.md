@@ -1,4 +1,5 @@
 # 📺 Ancient Egypt and the Bible – Livestream Archive
+- [Live Stream #266: Three Major Questions](https://www.youtube.com/watch?v=3lcFL2Atyps) `266-three-major-questions`
 - [Live Stream #265: The Pharaoh of Swing](https://www.youtube.com/watch?v=wEZ5Ds5lLAE) `265-the-pharaoh-of-swing`
 - [Live Stream #264: The Shasu of Vancouver](https://www.youtube.com/watch?v=vcMbdIAWPX0) `264-the-shasu-of-vancouver`
 - [Live Stream #263: The Live Streamer's Gambit](https://www.youtube.com/watch?v=xR30tlUVWoo) `263-the-live-streamer-s-gambit`
