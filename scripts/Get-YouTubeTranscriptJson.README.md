@@ -236,7 +236,7 @@ These files provide a historical record of transcript acquisition runs.
     -TimeoutSeconds 45
 ```
 
-```
+```powershell
 .\Get-YouTubeTranscriptJson.ps1 -MissingOnly -DelaySeconds 60 -TimeoutSeconds 45
 ```
 
