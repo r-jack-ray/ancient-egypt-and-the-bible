@@ -247,6 +247,9 @@ PASS / NEEDS FIX / STRUCTURAL ISSUE
 - Use read-only subagents only for batch audits; main agent applies edits.
 - Avoid loading full transcripts for every file. Use candidate searches first.
 
+## Audit and Fix Tracking
+- create or update an audit log in src/transcript-audit.log Log ISO 8601 full local time, audited file short name and extension, AI model and effort level used, question count change +/-, note if the audited file could use further inspection.
+
 ## Done Checklist
 
 Finish only when relevant items are true:
