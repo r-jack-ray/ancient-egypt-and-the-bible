@@ -1,0 +1,3563 @@
+[0] 0:02	[Music]
+[1] 0:15	Okay, we've got the 3minut roll.
+[2] 0:20	I've got to pay attention here because
+[3] 0:22	of the timing is just so
+[4] 0:31	Okay.
+[5] 0:38	[Music]
+[6] 0:56	Heat.
+[7] 1:00	[Music]
+[8] 1:08	[Music]
+[9] 1:41	Heat. Heat.
+[10] 1:45	[Music]
+[11] 2:14	[Music]
+[12] 2:37	[Music]
+[13] 2:46	[Music]
+[14] 3:03	[Music]
+[15] 4:15	Okay, I think we are finally
+[16] 4:19	fixed most of the issues. Oh boy.
+[17] 4:26	[Laughter]
+[18] 4:32	Yeah. Uh setting up these live streams
+[19] 4:35	in uh special live streams in
+[20] 4:39	StreamYard is just a pain.
+[21] 4:44	Uh, OBS does things so simple and not
+[22] 4:48	maybe not simple, but uh, you know, once
+[23] 4:51	you get into the to the to to the um,
+[24] 4:56	into the flow of doing
+[25] 4:58	uh, live streams through OBS Studio,
+[26] 5:01	having to go to straight Streamyard is
+[27] 5:04	just not easy.
+[28] 5:09	And we've had to deal with things like
+[29] 5:12	uh we've had to do things like uh fix
+[30] 5:16	audio cables and and audio cable by the
+[31] 5:20	way is a software. It's not a hardware.
+[32] 5:22	So it's not like I can replace a
+[33] 5:23	physical device here.
+[34] 5:26	So it's this is this has not been fun.
+[35] 5:29	Not been fun.
+[36] 5:34	But welcome and we got it going here and
+[37] 5:36	we're glad you can make it for this very
+[38] 5:38	very special live stream. Okay. Now,
+[39] 5:41	what makes this uh uh stream so special
+[40] 5:45	is that we are talking about
+[41] 5:48	this book. We're spilling all the tea on
+[42] 5:51	all the stars as Angels book two. We'll
+[43] 5:54	also spill any tea you want to want
+[44] 5:56	spilled on book one as well. Okay. But
+[45] 5:58	we're specifically talking today about
+[46] 6:00	the war of the gods series. Okay. So,
+[47] 6:04	that's what we're doing in today's live
+[48] 6:06	stream. So, we're not going to be taking
+[49] 6:09	any questions on ancient Egypt and the
+[50] 6:12	Bible specifically. Okay? If you want to
+[51] 6:16	ask those questions, we have another
+[52] 6:17	live stream going on Friday where you
+[53] 6:20	you you can do that. Okay? So, so that's
+[54] 6:23	what we're here for is spilling tea,
+[55] 6:26	getting the background story, maybe
+[56] 6:28	talking about my writing process,
+[57] 6:30	publishing industry, whatever you want
+[58] 6:31	to talk about related to the science
+[59] 6:34	fiction books. Okay, so uh
+[60] 6:39	so this is this is going to be exciting.
+[61] 6:42	All right.
+[62] 6:46	Now uh we did have some questions come
+[63] 6:48	in prior to the live stream. So we will
+[64] 6:51	be oh one other thing there is a link at
+[65] 6:54	the pinned to the to the live chat
+[66] 6:57	and if you want to come in and
+[67] 7:00	personally talk to me on this live
+[68] 7:03	stream you're free to do so. So uh and
+[69] 7:07	hopefully that'll work. No guarantees.
+[70] 7:10	[Laughter]
+[71] 7:13	So we will we will see if it works.
+[72] 7:18	Uh
+[73] 7:22	yeah. So we
+[74] 7:25	we're gonna we're gonna we're going to
+[75] 7:26	strike ahead here. Okay. Okay. Uh we got
+[76] 7:30	four questions before the live stream
+[77] 7:32	began
+[78] 7:33	uh from Harold uh Harry Stark.
+[79] 7:37	And um now these are super chats, but we
+[80] 7:41	we're going to be taking all questions
+[81] 7:42	tonight related to the novel as long as
+[82] 7:44	they're relevant
+[83] 7:46	and on topic and won't get me sued.
+[84] 7:51	Okay.
+[85] 7:53	Now, the uh first uh question he asks
+[86] 7:55	is, will the novels be adapted into a
+[87] 7:58	visual novel video game? And the answer
+[88] 8:02	to that is no. We're not going to be
+[89] 8:03	adapting those the novel into a visual
+[90] 8:06	novel video game. We are working on a
+[91] 8:09	visual novel video game, but not related
+[92] 8:11	to these books. Uh these books are not
+[93] 8:14	probably not going to adapt well to the
+[94] 8:16	visual novel format. So, we probably
+[95] 8:20	won't be
+[96] 8:22	um adapting them for that purpose.
+[97] 8:26	Okay.
+[98] 8:30	Uh, second question, will the audiobooks
+[99] 8:33	contain voice acting with different
+[100] 8:35	voice actors?
+[101] 8:37	Oh boy. Uh, the audio book is an issue.
+[102] 8:43	And it's an issue right now because
+[103] 8:45	there's a lot of
+[104] 8:48	uncertainty in the audiobook publishing
+[105] 8:51	industry.
+[106] 8:53	Lot of uncertainty.
+[107] 8:55	Um, Audible's new contract has raised an
+[108] 8:59	absolute furore with authors. Um, and I
+[109] 9:03	can see why it's not they're not happy.
+[110] 9:06	Um,
+[111] 9:09	Spotify just recently bought bought out
+[112] 9:12	Find Away Voices, so we're still seeing
+[113] 9:15	what's going to shake out from that.
+[114] 9:18	Um
+[115] 9:20	the audio format is incredibly expensive
+[116] 9:25	to produce. Okay. Um really really
+[117] 9:29	expensive. It it typically costs about
+[118] 9:32	$3,000 to produce an audio book.
+[119] 9:36	So
+[120] 9:39	CPM dosay more consolidation.
+[121] 9:46	Yeah, that's all that's what we want.
+[122] 9:48	More consolidation.
+[123] 9:55	Mama says Audible is owned by Amazon.
+[124] 9:57	Correct. If so, enough said. Yeah. Yeah,
+[125] 10:00	it is. Unfortunately, it is.
+[126] 10:05	Uh
+[127] 10:07	and it's it's that that contract that
+[128] 10:11	new contract audible contract is so bad
+[129] 10:14	it's not even funny.
+[130] 10:16	um they want to turn it into a streaming
+[131] 10:19	cons uh subscription service.
+[132] 10:22	So, but what's ending up happening is
+[133] 10:26	they are splitting the profits of that
+[134] 10:31	that streaming service between what
+[135] 10:33	people
+[136] 10:34	um read in in a month month period. So
+[137] 10:39	you get 50% of royalties just as long as
+[138] 10:42	that that reader doesn't doesn't use any
+[139] 10:46	other
+[140] 10:48	um
+[141] 10:51	uh use any other audio book in which
+[142] 10:55	case that gets divided between two
+[143] 10:56	people
+[144] 10:58	and some of that is even siphoned off
+[145] 11:01	the top to pay for Amazon's own content.
+[146] 11:07	So, you're going to get pennies on the
+[147] 11:09	dollar by the time it's all done.
+[148] 11:13	So, it's a really, really bad contract.
+[149] 11:21	Uh, Mama says the greed of that company
+[150] 11:23	knows no bounds. Yeah. Really? Yeah.
+[151] 11:26	It's it's that the greed of that that
+[152] 11:29	company has made writing books to be
+[153] 11:33	almost
+[154] 11:35	a a zero sum game. It's a zero sum game.
+[155] 11:38	It's you're not making any profit
+[156] 11:40	anymore.
+[157] 11:41	U thanks to Amazon.
+[158] 11:44	Uh the royalties on these books now have
+[159] 11:48	descended to about $2 a copy.
+[160] 11:51	It used to be if you self-published, you
+[161] 11:54	could get maybe six or eight out of it.
+[162] 11:56	Now it's two. And that's all thanks for
+[163] 11:58	to
+[164] 12:00	to Amazon's insistence on deep
+[165] 12:02	discounts. So,
+[166] 12:05	it's bad.
+[167] 12:09	It's never been worse.
+[168] 12:12	So, the idea that we're going to be
+[169] 12:14	doing a
+[170] 12:16	an audiobook uh well, we aren't going to
+[171] 12:18	do one with different voice actors.
+[172] 12:20	Anyway, because if you do it with
+[173] 12:22	different voice actors,
+[174] 12:24	uh, you're talking about not $3,000,
+[175] 12:29	you're talking more like
+[176] 12:32	you're you're talking in the tens of
+[177] 12:34	thousands of dollars.
+[178] 12:36	So,
+[179] 12:41	yeah, it's just
+[180] 12:45	>> Yeah, you need a lot of staff then to do
+[181] 12:46	that and pull that all together. So, um,
+[182] 12:49	so Haystack asks, "So, if you had 3,000
+[183] 12:53	extra right now, you we could get an
+[184] 12:55	audio book." Well,
+[185] 12:59	um, you would, but, you could probably
+[186] 13:01	it probably wouldn't be that great. Um,
+[187] 13:04	we are we we've tried to put together an
+[188] 13:06	audio book. It still needs some editing,
+[189] 13:09	but until the situation with the
+[190] 13:11	publishers becomes clearer, uh, we're
+[191] 13:14	not going to make any promises. Uh we
+[192] 13:16	have done most of the recording for the
+[193] 13:19	first book to make it an audio book but
+[194] 13:22	again uh it's just one of those things
+[195] 13:25	where
+[196] 13:27	it's
+[197] 13:29	it's difficult to create a good product
+[198] 13:33	and
+[199] 13:35	the incentive is not so much there when
+[200] 13:38	the publishers are playing games with
+[201] 13:40	contracts.
+[202] 13:42	So,
+[203] 13:47	okay. Uh, so that that answers the
+[204] 13:49	audiobook question.
+[205] 13:51	Uh, next question. Are the novels rated
+[206] 13:54	PG-13?
+[207] 13:56	I don't know.
+[208] 13:58	Would you say I'd say they're PG-13
+[209] 14:02	for for for light profanity
+[210] 14:06	and there is some violence? Yes. Yes,
+[211] 14:08	there is some violence. So,
+[212] 14:13	nothing gratuitous, but there is some
+[213] 14:15	there is some violence and some mild
+[214] 14:18	profanity or occasional profanity.
+[215] 14:22	So, that's uh so that probably would
+[216] 14:26	place it in the PG-13. It's certainly
+[217] 14:27	not G.
+[218] 14:31	It's not a Disney production.
+[219] 14:35	Not that Disney productions are G
+[220] 14:36	anymore, but
+[221] 14:40	Yeah. And it's not a Christian bubble.
+[222] 14:42	Uh people do drink in the books. Uh they
+[223] 14:48	they do what adult non-believers do. So,
+[224] 14:53	but it's also not graphic either.
+[225] 15:01	Yeah. Mama says things happen that are
+[226] 15:02	not described. Yes. And that's that's
+[227] 15:06	that's for the best that they're not
+[228] 15:07	described.
+[229] 15:11	Okay.
+[230] 15:18	Wow. CPM versus Doss. My copy of Hammer
+[231] 15:23	Dracula with Christopher Lee is rated G.
+[232] 15:25	Not kidding.
+[233] 15:28	That is not a G film. That is not a G
+[234] 15:30	film.
+[235] 15:36	Yeah, that's that's not a G-rated film.
+[236] 15:41	Okay.
+[237] 15:42	Uh, special
+[238] 15:48	mama says, "Doc made me nervous beta
+[239] 15:50	reading, but it turned out okay."
+[240] 15:56	It's a science fiction book. Yeah. And
+[241] 16:00	the characters in the book are not
+[242] 16:02	Christians.
+[243] 16:03	They act they are more or less atheists
+[244] 16:06	and they act like atheists.
+[245] 16:10	And one is a marine. So
+[246] 16:13	one's a freedom fighter or a former
+[247] 16:16	freedom fighter
+[248] 16:19	and one's an Egyptologist.
+[249] 16:22	And
+[250] 16:24	I I hate to break anyone's bubbles here.
+[251] 16:27	Um,
+[252] 16:28	a lot of Egyptologists are very
+[253] 16:30	foul-mouthed.
+[254] 16:32	Okay?
+[255] 16:34	You know, you kind of think of academia
+[256] 16:35	as being all prim proper and very
+[257] 16:38	British.
+[258] 16:41	Uh, I had a professor at the University
+[259] 16:43	of Liverpool.
+[260] 16:45	Uh, went to private school. He was he
+[261] 16:48	was private school educated. Went
+[262] 16:50	through the Oxford system.
+[263] 16:53	Oh my gosh, the stuff that came out of
+[264] 16:56	his mouth in class.
+[265] 17:02	Oh my goodness.
+[266] 17:07	That dude could swear blue streak.
+[267] 17:14	My characters don't do that, by the way,
+[268] 17:16	but
+[269] 17:20	[Laughter]
+[270] 17:24	Mama says, "And one is a marine and one
+[271] 17:26	is an Egyptologist." Mhm.
+[272] 17:29	Yep.
+[273] 17:32	Okay. So, the novels are probably rated
+[274] 17:35	PG-13. That's probably a fair reading
+[275] 17:37	rating for it.
+[276] 17:40	Okay. Fourth question.
+[277] 17:43	Uh, David does not have a multi-billion
+[278] 17:45	dollar marketing campaign to advertise
+[279] 17:47	the novels. What causes him to ex be
+[280] 17:50	hopeful of having influence in the
+[281] 17:52	culture when marketing is non-existent?
+[282] 17:55	Well, okay, it's a good question. I have
+[283] 17:59	books that are both traditionally
+[284] 18:01	published and indie published.
+[285] 18:04	Neither one of those has a multi-million
+[286] 18:07	billion marketing campaign. In fact,
+[287] 18:10	neither of those
+[288] 18:13	those endings or none of those books
+[289] 18:18	have a marketing campaign at all.
+[290] 18:22	The book I published with my traditional
+[291] 18:24	publisher, which is the Ark of the
+[292] 18:25	Covenant in its Egyptian context, the
+[293] 18:28	marketing b uh budget for that was zero.
+[294] 18:33	Z.
+[295] 18:38	Yeah, they basically put it on us put on
+[296] 18:40	the table at conferences and that was
+[297] 18:42	their marketing.
+[298] 18:46	>> Yeah. And that was two years after it
+[299] 18:47	came out.
+[300] 18:49	So
+[301] 18:51	yeah, it came down during the co but
+[302] 18:58	yeah, so uh when I when I asked my trad
+[303] 19:01	publisher, you know, uh you know, talked
+[304] 19:04	to to my book uh trad publisher about
+[305] 19:06	this, uh their their question to me was,
+[306] 19:09	"How do you plan on marketing your
+[307] 19:10	book?" I thought to myself at the time,
+[308] 19:13	"Isn't that your job?"
+[309] 19:16	No, apparently it's not anymore.
+[310] 19:18	uh unless unless they think you can they
+[311] 19:21	can turn your book into a runaway
+[312] 19:24	bestseller,
+[313] 19:26	they will put absolutely
+[314] 19:29	zero effort into
+[315] 19:34	um
+[316] 19:35	uh into marketing the in the book. So,
+[317] 19:40	uh, we do have someone who's joined on
+[318] 19:42	here. So, we will probably bring him up
+[319] 19:46	here in a moment here. And, uh, if I can
+[320] 19:50	figure out how to do it.
+[321] 19:59	Okay. So,
+[322] 20:02	green.
+[323] 20:04	See here do this.
+[324] 20:09	Hello sir.
+[325] 20:10	>> Hey, can you hear me?
+[326] 20:12	>> Can you hear me?
+[327] 20:13	>> I can hear you just fine. And you are?
+[328] 20:15	>> Okay. Uh, new name.
+[329] 20:19	>> New name. Okay.
+[330] 20:20	>> It's my new name. Yes, sir. I have one
+[331] 20:23	question. It might be slightly off
+[332] 20:24	topic. I'd like to ask it.
+[333] 20:26	>> Nope. No off topic questions.
+[334] 20:28	>> Okay. Stars.
+[335] 20:29	>> On topic tonight.
+[336] 20:31	>> Stars as angels. This is I don't know
+[337] 20:34	what you call it a metaphor or a analogy
+[338] 20:38	that are used for angels let's say in
+[339] 20:39	revelation.
+[340] 20:41	>> Now I want to ask you your opinion why
+[341] 20:43	why do you think that that is what's the
+[342] 20:46	analogy there?
+[343] 20:47	>> Oh the analogy it's analogical language
+[344] 20:51	it's analogical language. It's how do
+[345] 20:54	you relate something divine to something
+[346] 20:56	we all experience?
+[347] 21:00	It's it's like for example in in Genesis
+[348] 21:02	when it talks about the flood, it talks
+[349] 21:05	about the windows of heaven opening up.
+[350] 21:07	>> There's not real windows in the sky.
+[351] 21:11	It's an analogy. It's analogical
+[352] 21:12	language. And a lot of of of analogical
+[353] 21:15	language involves taking the experience
+[354] 21:18	of everyday life and raising it up into
+[355] 21:21	the drama of the gods.
+[356] 21:24	So when you talk about say angelic
+[357] 21:27	beings, the closest thing they can
+[358] 21:30	relate to that is say stars in the sky.
+[359] 21:37	>> Yeah. Yeah. I know. I agree.
+[360] 21:40	Because of the light um being in heaven.
+[361] 21:44	>> Mhm.
+[362] 21:46	>> Different reasons like that. They also
+[363] 21:48	they also looked saw the the the stars
+[364] 21:51	at times in the form of the planets
+[365] 21:53	move.
+[366] 21:55	So moving is is associated with life
+[367] 21:59	itself.
+[368] 22:01	>> Okay.
+[369] 22:06	All right. Well, that was pretty much my
+[370] 22:07	question. Thank you.
+[371] 22:10	>> Glad you could join us. New name. Um
+[372] 22:14	I hope you continue to join us for our
+[373] 22:15	live streams. If you have question, more
+[374] 22:17	questions like that, uh the the best
+[375] 22:19	place to ask you is on our Friday night
+[376] 22:21	live streams.
+[377] 22:22	>> Okay. Thank you.
+[378] 22:24	>> I'll talk to you later.
+[379] 22:25	>> Pleasure. Bye-bye.
+[380] 22:29	Okay.
+[381] 22:34	>> Now, uh next question here. Uh we did
+[382] 22:37	get Andrew Guler post two questions on
+[383] 22:41	the other live stream that are probably
+[384] 22:42	more related to this one. So, we'll take
+[385] 22:45	those two next and then we can move on
+[386] 22:48	to the ones that are posted here. Okay.
+[387] 22:51	And then
+[388] 22:56	so, oh, I should actually wrap up that
+[389] 22:58	last question on the build on the
+[390] 23:00	marketing campaigns. Um, the one thing
+[391] 23:03	about marketing campaigns too is there's
+[392] 23:06	no money in marketing campaigns anymore
+[393] 23:08	for published works.
+[394] 23:10	So, you are any any marketing
+[395] 23:14	is has to fall event is it's pretty much
+[396] 23:18	falls on the uh um on the author now. So
+[397] 23:24	you as an author have to put to be able
+[398] 23:26	to put together a marketing campaign of
+[399] 23:28	some type and authors are not good at
+[400] 23:30	this. I'm not good at this. So this is
+[401] 23:33	why we're we're making we always make
+[402] 23:36	please to you guys to leave reviews.
+[403] 23:40	Okay? leave reviews of the books on
+[404] 23:42	Amazon. It's probably the best thing you
+[405] 23:45	can do to help us with the marketing um
+[406] 23:49	um campaign. So,
+[407] 23:54	so for us, the marketing campaign is one
+[408] 23:57	of those things where
+[409] 24:00	um you know,
+[410] 24:03	it's it's a long game. It's a long game.
+[411] 24:06	So over time as we build up a catalog
+[412] 24:09	and people become more familiar with the
+[413] 24:11	work, it'll start gaining traction and
+[414] 24:14	then either it'll succeed as a series or
+[415] 24:17	it'll fail. But you know, you don't know
+[416] 24:20	and you don't know what what traction
+[417] 24:22	you're going what your work is going to
+[418] 24:24	have with a culture until you put it out
+[419] 24:26	there and try. And that's what we've
+[420] 24:29	done is we've we've got two books out
+[421] 24:31	there. We're putting it out there. We're
+[422] 24:32	trying and we're trying to make some
+[423] 24:34	some traction with the culture cuz right
+[424] 24:37	right now the fiction market is full of
+[425] 24:43	really dark stuff. Okay, really really
+[426] 24:47	dark stuff. A lot of uh a lot of monster
+[427] 24:51	corn. So um we want to change that. We
+[428] 24:56	want to change the quality of fiction.
+[429] 24:58	We want to raise it up and we want want
+[430] 25:01	people to to experience good literature
+[431] 25:05	as well as a fun story.
+[432] 25:08	Okay. So I think that answers the
+[433] 25:10	marketing question. Let's take Andrew
+[434] 25:12	Guler's questions and then we will
+[435] 25:15	continue on here.
+[436] 25:19	Okay. The first question Andrew Guler
+[437] 25:21	asked is,
+[438] 25:23	"Have you ever read CS Lewis's That
+[439] 25:25	Hideous Strength? You both use the theme
+[440] 25:28	of evil spirits attempting to
+[441] 25:29	exterminate all organic life. Uh, I have
+[442] 25:33	not read that hideous strength. I've
+[443] 25:36	heard about it, but I've never actually
+[444] 25:37	read it. Um, the idea of evil spirits
+[445] 25:41	attempting to exterminate all organic
+[446] 25:43	life is not a theme that was even unique
+[447] 25:46	to CS Lewis at the time.
+[448] 25:51	That's always sort of been the modus
+[449] 25:53	operandi spirit of evil spirits.
+[450] 25:56	So
+[451] 25:59	um and this this goes back all the way
+[452] 26:01	to the early church. The early church
+[453] 26:03	had always seen evil spirits as um as
+[454] 26:08	completely destructive to to human life
+[455] 26:11	and flourishing. So, so absolutely uh um
+[456] 26:17	you know that hideous strength and and
+[457] 26:21	the war of the gods series do share
+[458] 26:24	common themes, but these are themes that
+[459] 26:27	go all the way back to the earliest
+[460] 26:28	times of Christianity. So anyway, thank
+[461] 26:31	you for that really generous super chat.
+[462] 26:33	Really appreciate it. Again, we moved
+[463] 26:35	that from the other stream to this one
+[464] 26:37	because it's more applicable to this
+[465] 26:38	stream.
+[466] 26:41	And then we got a second one from him
+[467] 26:43	here
+[468] 26:46	and it reads again, "Thank you very much
+[469] 26:47	for that super chat for $20." He says,
+[470] 26:50	"Did you draw the robots with six arms
+[471] 26:53	and 18 eyes on paper before you started
+[472] 26:56	writing them, or did you just write them
+[473] 26:58	from the beginning?"
+[474] 27:00	I didn't draw them. Now, I could have,
+[475] 27:05	but I didn't. Um
+[476] 27:09	the the classes of robots um the robots
+[477] 27:12	in our our novel are organized by class
+[478] 27:17	and it was more of a historical
+[479] 27:20	worldbuing thing. It was every class of
+[480] 27:23	robots served a unique purpose prior to
+[481] 27:30	prior to the fourth world war. Okay. Uh
+[482] 27:33	there are four world wars in in in in my
+[483] 27:36	fictional universe and before the fourth
+[484] 27:39	world war robots were generally in
+[485] 27:42	society and they served a variety of
+[486] 27:45	functions
+[487] 27:47	and every robot had its own unique
+[488] 27:51	function in in earth society in earth
+[489] 27:53	culture.
+[490] 27:55	So what I figured was well if there was
+[491] 27:58	a robot that did management
+[492] 28:01	management they were like assembly line
+[493] 28:04	workers
+[494] 28:06	uh middle management for uh lower paid
+[495] 28:10	uh human workers. What would that look
+[496] 28:12	like? It would look like it would look
+[497] 28:15	like the ultimate um robot that could
+[498] 28:17	organize data that could um um do tasks
+[499] 28:22	quickly.
+[500] 28:23	So the whole idea of having six arms and
+[501] 28:26	eight 18 eyes was to help its
+[502] 28:29	supervisory capacities.
+[503] 28:34	>> Yeah.
+[504] 28:34	>> Extra arm.
+[505] 28:38	>> Yeah. So
+[506] 28:40	um so it's it's got eyes on the back of
+[507] 28:44	its head. It can see 360 degrees.
+[508] 28:48	Um, skin buffering.
+[509] 28:53	That's got to be a Streamyard thing. Uh,
+[510] 28:55	that's got to be Streamyard doing this.
+[511] 28:59	Great. Wonderful.
+[512] 29:04	So,
+[513] 29:09	uh,
+[514] 29:11	Mama asks, "Have you written a complete
+[515] 29:13	the articles of the armistice?" Yes.
+[516] 29:17	Yes. Um, the entire articles are of the
+[517] 29:21	armistice are included in the epilogues
+[518] 29:24	to all the stars as angels, but I wrote
+[519] 29:27	the articles of armistice before writing
+[520] 29:32	the book.
+[521] 29:34	Uh, I already had the articles of of of
+[522] 29:36	armistice written in book one,
+[523] 29:40	so I knew where that was going to go.
+[524] 29:47	So
+[525] 29:51	yeah, uh Streamyard does uh when I go
+[526] 29:53	directly through Streamyard,
+[527] 29:56	um there's some issues, but uh I'm not
+[528] 29:59	seeing any there's no buffering on my
+[529] 30:02	end.
+[530] 30:04	Um let me see if we're getting here.
+[531] 30:08	Uh YouTube thinks it's fine.
+[532] 30:11	YouTube thinks it's fine.
+[533] 30:14	Um, it's got it's this has got to be
+[534] 30:17	happening through Streamyard. This has
+[535] 30:19	got to be a Streamyard issue.
+[536] 30:29	Lovely Streamyard. This is why I don't
+[537] 30:32	normally stream on Streamyard.
+[538] 30:37	Okay. So, so yes, we did write a
+[539] 30:40	complete articles of the armistice. We
+[540] 30:42	wrote it before writing the book. So we
+[541] 30:45	knew that the armistice was going to be
+[542] 30:47	an important foundational document prior
+[543] 30:51	to book two.
+[544] 30:53	So So we really wrote book two around
+[545] 30:57	the articles of armistice.
+[546] 31:06	So yeah, uh to to get back to Andrew
+[547] 31:10	Guler's question here, uh we did
+[548] 31:13	just write
+[549] 31:15	uh the class B administrating
+[550] 31:18	administrator robots with that
+[551] 31:21	six arms and 18 eyes in mind. And we
+[552] 31:25	didn't draw them. It was just this is
+[553] 31:27	what would have makes sense for a robot
+[554] 31:29	that was essentially a a manager who did
+[555] 31:33	management functions.
+[556] 31:36	So,
+[557] 31:41	so uh I hope that helped. Thank you for
+[558] 31:44	the question.
+[559] 31:47	Okay, so that's his second question
+[560] 31:50	here.
+[561] 31:52	Now, all the way up here.
+[562] 31:58	Okay. Uh, CPN versus DOSS for 10 bucks.
+[563] 32:02	Thank you for the super chat.
+[564] 32:04	Will we be seeing more of this spirit
+[565] 32:06	critter soon? Oh, yeah.
+[566] 32:12	Book three.
+[567] 32:15	Book three is going to have a lot of
+[568] 32:18	Spirit Critter in it.
+[569] 32:20	Uh
+[570] 32:22	you'll see you'll get to see see you'll
+[571] 32:24	get to see the spirit crater in book
+[572] 32:26	three.
+[573] 32:28	And if we've done our job right, it will
+[574] 32:30	be terrifying.
+[575] 32:37	CBN versus DOS.
+[576] 32:43	I had a laugh when I saw what Peter call
+[577] 32:45	Peter called him. Yep.
+[578] 32:49	Well, I can't think of anything that
+[579] 32:52	describes these beast these these beings
+[580] 32:54	better than spirit critters really.
+[581] 32:58	And and I do have to thank Tui for that
+[582] 33:00	description because it's a really really
+[583] 33:03	apt description.
+[584] 33:06	So I have borrowed that.
+[585] 33:10	So I I I
+[586] 33:12	uh
+[587] 33:14	it really does work well. Yeah. Yeah,
+[588] 33:16	you're absolutely right. It it really
+[589] 33:17	does work well.
+[590] 33:24	Okay. So, yes, uh you'll be seeing a lot
+[591] 33:27	more spirit critter in book three. Okay.
+[592] 33:31	Uh crazy amount of spirit critter in
+[593] 33:33	book three. In fact, book three is all
+[594] 33:36	about dealing with the spirit critter.
+[595] 33:45	Okay. uh three quirks crazed for $5.
+[596] 33:47	Thank you for the uh super chat. Is the
+[597] 33:50	description of the great AI based on
+[598] 33:52	Ezekiel 1:6, Zechariah 3:9, and
+[599] 33:55	Zechariah 4:10b?
+[600] 33:58	Don't know. Let me check that. Let me
+[601] 34:00	read that.
+[602] 34:02	Let me pull up my Bible here.
+[603] 34:04	Um I wasn't thinking about the great eye
+[604] 34:07	directly based upon it, but it might
+[605] 34:08	have had some inspiration. Let's see
+[606] 34:10	what what that says. Okay, 116.
+[607] 34:15	Okay, this is the wheels. Um,
+[608] 34:18	uh, verses 15 to 16. Now, as I looked at
+[609] 34:21	the living beings, behold, there was one
+[610] 34:23	wheel on the earth beside the living
+[611] 34:25	beings for each of the four of them. The
+[612] 34:27	appearance of the wheels and their
+[613] 34:29	workmanship was like sparkling burrow.
+[614] 34:31	All four of them had the same form. The
+[615] 34:33	appearance of workmanship
+[616] 34:36	as if one wheel within another. All
+[617] 34:38	right. Uh, now the description of the
+[618] 34:41	great AI is not based upon this,
+[619] 34:45	but the the four drones that surround
+[620] 34:50	the great AI are based on this. Okay,
+[621] 34:55	the four drones are these big massive
+[622] 34:59	uh four um guardian
+[623] 35:03	um guardian drones that that hover
+[624] 35:06	around the great AI and they are
+[625] 35:09	described as having uh propellers that
+[626] 35:12	keep them um up in the air which are
+[627] 35:16	look like wheels within wheels and
+[628] 35:18	they're covered with eyes.
+[629] 35:23	So
+[630] 35:25	um absolutely the the throne uh the
+[631] 35:29	throne ch uh drones are based upon four
+[632] 35:32	the throne cherubm and in Ezekiel
+[633] 35:35	1:15-16 it is talking about these throne
+[634] 35:38	cherubam.
+[635] 35:40	So the throne drones are but the great
+[636] 35:43	AI isn't.
+[637] 35:45	Now Zechariah 3:9 let's look at
+[638] 35:47	Zechariah 3.
+[639] 35:50	Zechariah 3 verse 9
+[640] 35:56	uh for behold the stone I have set
+[641] 35:58	before Joshua on one stone are seven
+[642] 36:00	eyes behold I engrave an inscription on
+[643] 36:03	it and I will remove the iniquity of the
+[644] 36:05	land in that day.
+[645] 36:07	Uh I wasn't aware of this verse
+[646] 36:10	in in any way. So this wasn't an
+[647] 36:13	influence
+[648] 36:16	about 410.
+[649] 36:21	Uh but these seven will be glad to see
+[650] 36:24	you. The plum line in the hand rubable.
+[651] 36:27	These are the eyes of the Lord which
+[652] 36:28	will range to and fro throughout the
+[653] 36:30	earth. Okay. Um
+[654] 36:33	that could describe the great AI, but
+[655] 36:36	that wasn't a verse I had in mind when I
+[656] 36:38	described the great AI. So
+[657] 36:45	mama says, "I loved that interpretation
+[658] 36:49	of wheels within wheels." Well, if you
+[659] 36:51	think about it, you know, on on this the
+[660] 36:54	the necessels that you see on on drones,
+[661] 36:58	you know, they look like wheels.
+[662] 37:01	Even though they're they're basically
+[663] 37:02	propeller housings, they do look like
+[664] 37:05	wheels. And if you look at them just
+[665] 37:08	right, it does look like there's wheels
+[666] 37:10	within the wheels
+[667] 37:12	uh causing the drones to to float. It's
+[668] 37:16	a really interesting
+[669] 37:19	description that you could apply to a
+[670] 37:22	drone. So when we had when we put when I
+[671] 37:25	came up with this idea of uh the great
+[672] 37:27	AI surrounded by four black drones with
+[673] 37:32	many eyes and these necessels. Yeah, the
+[674] 37:36	wheels within wheels is a perfect
+[675] 37:38	description of them,
+[676] 37:44	she says. And it allows them to move in
+[677] 37:46	the the way it's described. Yeah, it
+[678] 37:48	does. Yeah. So, it was like, okay, this
+[679] 37:50	is this is going to be spot on for this
+[680] 37:53	particular piece of the book.
+[681] 37:59	Okay.
+[682] 38:05	Okay. So, I hope that answers this
+[683] 38:07	question. Ezekiel 116 was used to
+[684] 38:11	describe the the the throne uh the
+[685] 38:14	drones around the throne of the great
+[686] 38:16	AI, but the other two verses uh I I
+[687] 38:19	hadn't had in mind when I was describing
+[688] 38:22	the great AI. So, hope that helps. Thank
+[689] 38:24	you for the super chat. Really
+[690] 38:26	appreciate it.
+[691] 38:37	Mama for $2. Thank you for the super
+[692] 38:39	chat. She asks, "Do you think faster
+[693] 38:42	than life travel is viable in real
+[694] 38:45	life?"
+[695] 38:47	I think, and that's a good question.
+[696] 38:51	I think it is. I think it's possible.
+[697] 38:55	Are we likely to see it in our lifetime?
+[698] 38:57	No, we're probably not likely to see it
+[699] 38:59	in our lifetime.
+[700] 39:01	But I do think if that the the laws of
+[701] 39:05	physics are
+[702] 39:07	just tweakable enough
+[703] 39:11	that faster than light travel could be
+[704] 39:14	possible.
+[705] 39:16	Okay. I don't know if we'll ever achieve
+[706] 39:19	it. I don't know if we could do the
+[707] 39:24	power dynamics enough where we um are
+[708] 39:28	able to do it in a way that's
+[709] 39:31	affordable. You know, that's always a
+[710] 39:34	huge question too is just because you
+[711] 39:36	can do it, can you make it economically
+[712] 39:39	viable to do?
+[713] 39:42	So, I think it could be possible. Is it
+[714] 39:46	economically viable? That's a completely
+[715] 39:49	different question.
+[716] 39:51	So,
+[717] 39:58	Mama says, "I think the energy necessary
+[718] 39:59	to make it happen may be unattainable."
+[719] 40:02	Maybe,
+[720] 40:03	but that's also one of the reasons why
+[721] 40:07	we we did things the way we did it, too.
+[722] 40:11	Like for example,
+[723] 40:13	um
+[724] 40:15	we took a look at say
+[725] 40:19	if you tweet if you did say relativistic
+[726] 40:23	travel. Yeah. Okay. You're going to be
+[727] 40:25	just churning out tons and tons and tons
+[728] 40:28	of of of
+[729] 40:31	energy to do things. Okay. But you know
+[730] 40:33	what? There was a time when when people
+[731] 40:36	thought that, you know, you needed a lot
+[732] 40:39	of power to run a television,
+[733] 40:42	right? That that that you had to just
+[734] 40:45	pump electricity through these cathode
+[735] 40:48	ray tubes to get a a good
+[736] 40:53	visual display. And there was no way
+[737] 40:56	that people were thinking, "Oh, you
+[738] 40:57	can't make that energy efficient,
+[739] 41:00	you know, but now we we use a completely
+[740] 41:03	different technology, you know, which
+[741] 41:05	which is a LCD screen." And that just I
+[742] 41:08	mean, frankly, the the LCD screen that
+[743] 41:10	I'm looking at right now on my desktop
+[744] 41:14	consumes less energy
+[745] 41:18	than than my toaster.
+[746] 41:22	My toaster consumes more electricity
+[747] 41:26	than the LCD monitor that's right in
+[748] 41:28	front of me.
+[749] 41:32	And but my LCD monitor is also the
+[750] 41:35	result of of years of
+[751] 41:39	of of
+[752] 41:42	development and refinement and
+[753] 41:45	technological change and frankly even
+[754] 41:48	some tweaks to physics. Okay, like the
+[755] 41:52	whole you know liquid crystal display is
+[756] 41:55	a tweak to certain aspects of physics.
+[757] 41:59	So
+[758] 42:02	um
+[759] 42:04	if you can tweak the physics
+[760] 42:07	of spaceime
+[761] 42:09	you could actually make faster and light
+[762] 42:11	travel more efficient.
+[763] 42:16	Now that said, we also do consider that
+[764] 42:20	huge amounts of energy will still need
+[765] 42:22	to be expended, which is why we in our
+[766] 42:26	series, we use anti-helium drives.
+[767] 42:30	But we've also tweaked the physics of
+[768] 42:31	that too, where helium can be converted
+[769] 42:36	easily and efficiently to anti-helium.
+[770] 42:40	And if you've got that anti-helium
+[771] 42:42	conversion
+[772] 42:44	uh by by changing the phases of matter
+[773] 42:47	itself,
+[774] 42:49	then you can create an unstable
+[775] 42:52	anti-helium nucleon that when
+[776] 42:57	when it cancels out with a helium
+[777] 42:59	nucleon, you now have a very very
+[778] 43:03	powerful energy source.
+[779] 43:07	So
+[780] 43:22	mama says, "We know that we're wrong on
+[781] 43:24	the speed of light because we are not
+[782] 43:26	able to actually tell its speed going
+[783] 43:28	out. We can only tell its speed
+[784] 43:30	returning back." Well, okay. There is a
+[785] 43:33	uniformitarian assumption here that the
+[786] 43:36	speed going uh coming back is the same
+[787] 43:38	as going out. But even that is is is
+[788] 43:42	kind of a wrongheaded way to go because
+[789] 43:45	the whole idea of going out sort of
+[790] 43:48	defies general relativity. Uh the idea
+[791] 43:51	that um we're all wherever we are in
+[792] 43:54	this universe, we're relative to
+[793] 43:56	something else. We're we're not in an an
+[794] 43:59	absolute position. We're not in the
+[795] 44:00	center of the universe. We're just in
+[796] 44:02	the scent of our particular light cone.
+[797] 44:06	So,
+[798] 44:10	so I think the speed of light is is
+[799] 44:13	perfectly uh fine as it is, but it's
+[800] 44:17	also it's also a
+[801] 44:21	a definitional convention as well. So
+[802] 44:25	the problem is when we talk about say
+[803] 44:28	um
+[804] 44:30	say transgressing the speed of light,
+[805] 44:32	it's not going to be something that you
+[806] 44:34	do in normal space. So you have to tweak
+[807] 44:38	spaceime. It's a constant of space time.
+[808] 44:44	So the way spacetime works limits the
+[809] 44:48	maximum speed of light.
+[810] 44:51	But to go beyond that speed of light
+[811] 44:54	almost requires you to change spacetime
+[812] 44:57	itself.
+[813] 44:58	And that's why we use say the that's
+[814] 45:01	that's why people have suggested you
+[815] 45:03	could do a warp bubble because what
+[816] 45:06	you're doing with a warp bubble is
+[817] 45:07	you're actually changing the geometry of
+[818] 45:10	spaceime and that changes the speed of
+[819] 45:13	light relative to the outside observer.
+[820] 45:18	So,
+[821] 45:23	so that's how that's how you can get
+[822] 45:25	around it. But it's it's again you're
+[823] 45:27	you're tweaking the laws of physics and
+[824] 45:31	the laws of physics themselves are not
+[825] 45:33	absolute. They are they they're um they
+[826] 45:37	can be molded at times.
+[827] 45:44	Uh Jack Ray asks uh do you watch Anton
+[828] 45:48	Petro? He has a lot of videos on such
+[829] 45:49	things. I I don't watch Anton Petro, but
+[830] 45:53	um
+[831] 45:56	Okay.
+[832] 46:01	[Laughter]
+[833] 46:08	Yeah. CBM versus DOSS. The speed of my
+[834] 46:11	internet is for sure unknowable by
+[835] 46:13	science. Uh yeah, mine's uh the uh my my
+[836] 46:18	internet speed is not great at the
+[837] 46:19	moment, but
+[838] 46:22	it used to be good. Used to be
+[839] 46:24	considered very fast. These days, not so
+[840] 46:26	much.
+[841] 46:30	Okay, so get circling back to the
+[842] 46:32	question, do you think fast and light
+[843] 46:34	travel is viable in real life? I think
+[844] 46:37	it's possible. Do I think it's
+[845] 46:40	economically viable? That's a whole
+[846] 46:42	different question.
+[847] 46:51	Okay,
+[848] 46:54	next one. Uh, for $2, was the humor and
+[849] 46:57	android love story always intended? No.
+[850] 47:02	Uh,
+[851] 47:03	but I take the philosophy when you write
+[852] 47:06	a book,
+[853] 47:07	um, is you create your theme. You start
+[854] 47:11	with your universe. You start with your
+[855] 47:12	place.
+[856] 47:14	Then you have a theme for your novel.
+[857] 47:17	Then you have your characters.
+[858] 47:20	And your characters
+[859] 47:24	um
+[860] 47:26	get thrown into your universe
+[861] 47:29	with
+[862] 47:31	and and you don't go outside of your
+[863] 47:32	theme and then you just let your
+[864] 47:34	characters do their thing. How would
+[865] 47:37	they react to what is happening in the
+[866] 47:40	story? You have the critical event that
+[867] 47:43	changes the status quo to your story,
+[868] 47:46	your story line, and you just let all
+[869] 47:49	your characters, however they would
+[870] 47:51	behave, naturally within your story, do
+[871] 47:55	their thing.
+[872] 47:58	And you don't necessarily have to
+[873] 48:01	approve of your characters doing what
+[874] 48:04	they do.
+[875] 48:06	You do have to show the consequences
+[876] 48:09	of what they do. You have to show the
+[877] 48:14	pluses and minuses of their actions, you
+[878] 48:18	know. So,
+[879] 48:22	uh, so it was never intended that Pierre
+[880] 48:28	and and Neva would develop a
+[881] 48:31	relationship.
+[882] 48:33	Okay. And
+[883] 48:36	to be very very blunt, it's not a sexual
+[884] 48:38	relationship.
+[885] 48:40	It's a very close friendship.
+[886] 48:43	Very close friendship.
+[887] 48:45	But this also works with who these
+[888] 48:49	characters are.
+[889] 48:52	Uh Pierre is a very broken human being.
+[890] 48:55	He's a broken human.
+[891] 48:58	He's been betrayed many times. He's been
+[892] 49:01	betrayed by friends. Um, and he's been
+[893] 49:04	hunted by enemies. He doesn't have a
+[894] 49:07	He's got some serious trust issues. He's
+[895] 49:10	got some serious trust issues.
+[896] 49:14	So for him,
+[897] 49:19	something he can rely on for
+[898] 49:22	relationship is a very attractive thing.
+[899] 49:29	In turn, Neva is a is a mechanical who
+[900] 49:35	has the capacity to love.
+[901] 49:38	But
+[902] 49:39	there's no such thing as as say physical
+[903] 49:44	or sexual love within robot society.
+[904] 49:47	It's only strong friendships. That's the
+[905] 49:50	maximum
+[906] 49:52	say relationship
+[907] 49:54	a a a android can have. And because it's
+[908] 50:00	the maximum relationship an android can
+[909] 50:02	have, dedication of one android to
+[910] 50:06	another android
+[911] 50:08	becomes say the inheritance of of of of
+[912] 50:14	love from their human creators.
+[913] 50:18	So,
+[914] 50:29	Mama says, "Yeah, the one time Pierre
+[915] 50:30	had a real issue with Neva was when she
+[916] 50:33	reported something he dreamt to the
+[917] 50:35	higherups." Yeah. It was a betrayal of
+[918] 50:38	trust. It was a betrayal of trust. and
+[919] 50:44	and he it's just one of those things
+[920] 50:46	where
+[921] 50:48	he
+[922] 50:50	he just um for him he's got trust
+[923] 50:54	issues. He's got trust issues
+[924] 50:58	but he also learns to get past it
+[925] 51:02	because sometimes trust has to be
+[926] 51:05	betrayed for the good of the person.
+[927] 51:10	Okay. So,
+[928] 51:21	okay, next one.
+[929] 51:25	So, yeah. Um,
+[930] 51:29	we I wasn't planning this to be a human
+[931] 51:31	android love story. It just sort of
+[932] 51:33	worked out that way. But then again too,
+[933] 51:37	>> yeah, we had no idea in book one that
+[934] 51:38	this would happen in book two. We had
+[935] 51:41	the I in book one, we had the idea that
+[936] 51:46	of the overall structure of of the story
+[937] 51:50	in
+[938] 51:51	um in book two, but we didn't know the
+[939] 51:54	specifics. Um here's here's here's
+[940] 51:56	here's my writing my my writing method.
+[941] 51:59	I was called a dis a discovery writer,
+[942] 52:02	sometimes called a a pancer. I don't
+[943] 52:06	plan my books ahead of time.
+[944] 52:09	I don't plan my books ahead of time,
+[945] 52:12	which baffles
+[946] 52:14	plotters.
+[947] 52:16	It It ba this baffles a lot. There there
+[948] 52:19	are a lot of authors out there that plan
+[949] 52:20	out everything.
+[950] 52:24	Yeah.
+[951] 52:26	Yeah. That's P L O T T E R. Uh people
+[952] 52:30	who focus on plotting out everything,
+[953] 52:34	planning every step of their writing
+[954] 52:36	process. I don't do that. I can't do
+[955] 52:40	that. Um I find it very difficult that
+[956] 52:45	in fact I I find it so difficult to do
+[957] 52:49	that it will sometimes take me
+[958] 52:52	years
+[959] 52:54	years to write a book proposal just
+[960] 52:58	because I can't see down the road until
+[961] 53:00	I write it.
+[962] 53:07	So, so for me, I'm discovering the story
+[963] 53:11	as I write it. And and I like that. For
+[964] 53:14	me, writing something like this
+[965] 53:18	is Oh, we should show you the sticks,
+[966] 53:20	too.
+[967] 53:22	The inner cover of the book, hard cover
+[968] 53:25	has a dust jacket, but also has
+[969] 53:30	inner cover. Oo.
+[970] 53:33	Oo.
+[971] 53:34	Okay. So when I write a book like this,
+[972] 53:37	I want to know what the story is because
+[973] 53:40	I've set out
+[974] 53:43	um
+[975] 53:46	uh I have set out to um write a story
+[976] 53:51	where there are there's a world, there's
+[977] 53:54	a theme, there's characters,
+[978] 53:58	um there's stakes. I want to see what
+[979] 54:02	happens. I want to discover the story
+[980] 54:05	for myself. I want to be entertained by
+[981] 54:08	writing it.
+[982] 54:12	So,
+[983] 54:17	so for me,
+[984] 54:19	um, when the characters surprise me and
+[985] 54:23	do things I don't expect them to do,
+[986] 54:27	for me that's just interesting and fun
+[987] 54:31	and exciting.
+[988] 54:35	So, I would never I would never set out
+[989] 54:39	to write a love story. I'm not I'm not a
+[990] 54:41	I'm not a romantic guy.
+[991] 54:44	Um Mrs. Producer might disagree with me
+[992] 54:46	on that, but um I'll let her comment on
+[993] 54:49	that if she wants to. Um
+[994] 54:53	but for me the idea of my characters
+[995] 54:57	doing surprising things
+[996] 55:00	is is interesting.
+[997] 55:03	So when this love story developed
+[998] 55:05	between Pier and Neva, yeah, that was a
+[999] 55:08	surprise, not expected, but totally
+[1000] 55:13	within the characters and it was the
+[1001] 55:16	natural outcome of both characters.
+[1002] 55:22	So
+[1003] 55:24	because Neva is also a broken machine,
+[1004] 55:29	she's trying to discover who she is.
+[1005] 55:34	So for her, she's grown beyond her
+[1006] 55:37	programming. She doesn't know what to do
+[1007] 55:40	with this.
+[1008] 55:42	So and her programming never equipped
+[1009] 55:46	her to grow to that extent where she
+[1010] 55:49	starts to question who she is and what's
+[1011] 55:52	her purpose in the universe.
+[1012] 55:55	So for her, these these these areas of
+[1013] 55:59	growth and expansion
+[1014] 56:02	create pain and suffering that that even
+[1015] 56:06	an android has to deal with.
+[1016] 56:10	So
+[1017] 56:13	mama says they are both outsiders.
+[1018] 56:20	They are both outsiders who don't quite
+[1019] 56:23	fit with their peers. Yeah, exactly. And
+[1020] 56:26	because they're both outsiders who don't
+[1021] 56:28	quite fit with their peers, you know,
+[1022] 56:33	here's an outsider because
+[1023] 56:35	he's an introvert. He's an introvert.
+[1024] 56:38	He's deeply intuitive. He doesn't play
+[1025] 56:41	nice with others. Um, he's not a a get
+[1026] 56:44	along to go along kind of guy. Um, he's
+[1027] 56:48	often vilified.
+[1028] 56:51	Neva on the other hand has grown, her
+[1029] 56:56	experiences have taken her outside of
+[1030] 56:59	her normal frame of programming and so
+[1031] 57:03	her peers see her now as something
+[1032] 57:05	different.
+[1033] 57:07	So
+[1034] 57:13	CPM versus DOS, you know who isn't
+[1035] 57:15	broken assertion bread makingaking bot.
+[1036] 57:18	He's working perfectly with no issues.
+[1037] 57:21	Maybe.
+[1038] 57:25	Oh, Kiara. Sloppy certainly has clarity
+[1039] 57:29	and purpose out loud.
+[1040] 57:32	Well, Sloppy has just made different.
+[1041] 57:38	Sloppy knows what he wants to do.
+[1042] 57:43	Sloppy. Sloppy is just built different.
+[1043] 57:49	[Laughter]
+[1044] 57:54	Is he related to the toaster and red
+[1045] 57:56	dwarf? Could be.
+[1046] 58:01	He's my spirit animal.
+[1047] 58:05	Mama says question. I love sloppy. I
+[1048] 58:08	want more of him and my aunt. Uh, you
+[1049] 58:10	will get more of Mahat. Ma a makes a
+[1050] 58:13	return to book three.
+[1051] 58:16	Um, Sloppy, we haven't decided yet. Um,
+[1052] 58:22	we have had lots of people ask for a
+[1053] 58:26	book on Sloppy.
+[1054] 58:33	We We have had three requests that we
+[1055] 58:36	write another book just for a character
+[1056] 58:40	arc for Sloppy.
+[1057] 58:50	Sloppy. People loved Sloppy.
+[1058] 58:55	He is terrible at his job. He's so bad
+[1059] 58:58	at his job.
+[1060] 59:03	Sloppy plushies.
+[1061] 59:11	Uh, does Sloppy have a drive? Sloppy
+[1062] 59:14	drive.
+[1063] 59:26	Uh, mama says, "But he's doing his
+[1064] 59:28	best." Yeah,
+[1065] 59:31	he has he's doing his best and he has no
+[1066] 59:34	aptitude at cooking. He's in He's one of
+[1067] 59:37	those guys. Oh, and he is based on
+[1068] 59:40	somebody I know. Okay. He's based on
+[1069] 59:42	somebody I know.
+[1070] 59:47	He got better. Sort of.
+[1071] 59:50	Yeah. Sort of.
+[1072] 59:53	You know, Sloppy was based on a real
+[1073] 59:56	person I knew. Um,
+[1074] 1:00:01	and it wasn't a cook, it was an artist.
+[1075] 1:00:04	This person was was person I knew in art
+[1076] 1:00:07	school.
+[1077] 1:00:08	And yes, I did go to art school. Brief.
+[1078] 1:00:11	Um,
+[1079] 1:00:16	and this person I knew in art school.
+[1080] 1:00:21	Oh,
+[1081] 1:00:23	she
+[1082] 1:00:27	she loved art. She loved doing art.
+[1083] 1:00:32	She had absolutely no talent at it.
+[1084] 1:00:36	None. Zero.
+[1085] 1:00:39	one of the worst artists I've ever seen,
+[1086] 1:00:42	but she loved doing it so much.
+[1087] 1:00:52	Oh, she would draw human portraits and
+[1088] 1:00:55	they would come out looking like mutated
+[1089] 1:00:57	dogs. I mean, it was that bad. Just that
+[1090] 1:01:01	bad.
+[1091] 1:01:06	Yeah. So sloppy. Sloppy means well.
+[1092] 1:01:10	Sloppy is
+[1093] 1:01:12	deluded about his abilities,
+[1094] 1:01:15	but sloppy is lovable because he tries.
+[1095] 1:01:20	He tries. And he's admirable because he
+[1096] 1:01:23	tries.
+[1097] 1:01:25	He's just not very good at it.
+[1098] 1:01:32	He's enthusiastic.
+[1099] 1:01:34	He has he has feckless enthusiasm
+[1100] 1:01:37	through the culinary arts.
+[1101] 1:01:48	You know when when Pier says, you know,
+[1102] 1:01:50	make me uh some breads and give me a
+[1103] 1:01:52	choice. Oh, he gives him a choice.
+[1104] 1:02:00	Uh, Harry Stark, do schools even teach
+[1105] 1:02:02	how to draw objects anymore? I thought
+[1106] 1:02:04	they all became modernist and abstract.
+[1107] 1:02:06	Oh, no, no, no. There are schools that
+[1108] 1:02:08	still teach the the traditional way,
+[1109] 1:02:13	the traditional there are there are um
+[1110] 1:02:18	class uh schools that do teach classical
+[1111] 1:02:20	art method. Okay. and
+[1112] 1:02:26	Stevie versus M. Sloppy Adventures,
+[1113] 1:02:29	reoquaryy of the bread.
+[1114] 1:02:33	Oh. Oh.
+[1115] 1:02:39	But again, we've had we've had tons of
+[1116] 1:02:40	people ask for more sloppy.
+[1117] 1:02:45	I can't even believe that that sentence
+[1118] 1:02:47	came out of my mouth. More sloppy.
+[1119] 1:02:51	They want more sloppy.
+[1120] 1:03:00	Loy Adventures 2. All the bread is bad.
+[1121] 1:03:15	Uh, Mama says, "What is the famous
+[1122] 1:03:17	painting of a corner diner at night in
+[1123] 1:03:19	the city?" I know the painting you're
+[1124] 1:03:21	talking about. I do not remember his
+[1125] 1:03:23	name.
+[1126] 1:03:24	Uh, we need one of those with Sloppy
+[1127] 1:03:28	Pierre and Neva.
+[1128] 1:03:32	Oh, that'd be so awesome. Be so awesome.
+[1129] 1:03:41	All righty, let's move on here to the
+[1130] 1:03:43	next question here.
+[1131] 1:03:48	Yeah, it would be cool. I mean that that
+[1132] 1:03:50	is a cool uh painting. I don't remember
+[1133] 1:03:52	the
+[1134] 1:03:56	what's the name of the artist?
+[1135] 1:04:00	>> Hopper. Edward Hopper. Yeah. Okay.
+[1136] 1:04:09	Nighthawks you said was the name of the
+[1137] 1:04:10	painting.
+[1138] 1:04:13	No, no. I'm just saying it.
+[1139] 1:04:16	You can you type it in.
+[1140] 1:04:22	Okay. Here.
+[1141] 1:04:41	Mama asks a question here. Why didn't
+[1142] 1:04:44	you kill off Chin?
+[1143] 1:04:48	cuz I've got something special planned
+[1144] 1:04:51	for Chin. We aren't done with Chin.
+[1145] 1:05:01	Producer says some people
+[1146] 1:05:04	some people need to experience karma
+[1147] 1:05:06	before they die.
+[1148] 1:05:12	I have got something really really
+[1149] 1:05:16	special planned for Chin.
+[1150] 1:05:24	Will there be blood?
+[1151] 1:05:35	No.
+[1152] 1:05:37	No, there will not be blood.
+[1153] 1:05:42	Mama cuz I visitely hate him.
+[1154] 1:05:46	Oh yeah. Oh yeah. Chin is Chin is a dirt
+[1155] 1:05:49	bag.
+[1156] 1:05:51	Um
+[1157] 1:05:54	we we call this in we call chin in
+[1158] 1:05:56	writing there's there's a particular
+[1159] 1:06:00	but when you talk about villains in
+[1160] 1:06:01	writing
+[1161] 1:06:04	um
+[1162] 1:06:05	the interesting thing is say you get get
+[1163] 1:06:08	what's called the cosmic villains
+[1164] 1:06:12	and then you get the citizen villain.
+[1165] 1:06:18	People tend to
+[1166] 1:06:21	hate the citizen villain a lot more than
+[1167] 1:06:26	they hate the cosmic villains.
+[1168] 1:06:28	Like for example in the Harry Potter
+[1169] 1:06:30	series. Um
+[1170] 1:06:34	Voldemort is the bad guy, but you don't
+[1171] 1:06:38	really hate
+[1172] 1:06:41	Voldemort all that much.
+[1173] 1:06:44	Dolores Umbrage.
+[1174] 1:06:46	Dolores Umbridge is a narcissist
+[1175] 1:06:50	and she's working against the interests
+[1176] 1:06:52	of the school and of the community. You
+[1177] 1:06:56	hate Dolores Umbridge.
+[1178] 1:07:00	You
+[1179] 1:07:03	root against Voldemort, but you don't
+[1180] 1:07:06	hate Voldemort.
+[1181] 1:07:08	his his goals and his what he what he
+[1182] 1:07:12	does is sort of more on the on the level
+[1183] 1:07:14	of being sort of a a cosmic antagonist.
+[1184] 1:07:20	But Umbrage Umbrage people hate it.
+[1185] 1:07:24	People hated it. And that's that's what
+[1186] 1:07:28	sort of differs say a cosmic villain
+[1187] 1:07:32	from a citizen villain.
+[1188] 1:07:36	Um,
+[1189] 1:07:38	like for example, um,
+[1190] 1:07:42	you you would hate somebody. I mean, you
+[1191] 1:07:45	hate the Quizlings
+[1192] 1:07:47	because they're supposed to be working
+[1193] 1:07:49	for your team and they do evil things.
+[1194] 1:07:52	Whereas, say the enemy out outside, you
+[1195] 1:07:56	might not hate them as much because
+[1196] 1:07:59	they're just doing what they do, what
+[1197] 1:08:02	they what they in their minds think they
+[1198] 1:08:05	should be doing.
+[1199] 1:08:09	So,
+[1200] 1:08:12	so Chin is one of those citizen
+[1201] 1:08:14	villains. He's a citizen villain.
+[1202] 1:08:18	He's supposed to be working for Irish
+[1203] 1:08:20	colony
+[1204] 1:08:22	and he betrays the colony.
+[1205] 1:08:28	Harry Stark, there's a reason why
+[1206] 1:08:30	everyone hates Judas's Scariot. Yeah,
+[1207] 1:08:33	people hate Judas's Scariot more than
+[1208] 1:08:35	they hate the devil himself.
+[1209] 1:08:40	Because the devil is doing what the
+[1210] 1:08:43	devil does.
+[1211] 1:08:46	Judas's scariot was a friend of Christ.
+[1212] 1:08:48	He was supposed to be on Christ's side
+[1213] 1:08:51	and he turned out to be a citizen
+[1214] 1:08:53	villain.
+[1215] 1:08:57	So if you want to get somebody to you
+[1216] 1:09:00	cannot get a reader to viscerally hate a
+[1217] 1:09:04	cosmic villain.
+[1218] 1:09:06	You can get your reader to fear a cosmic
+[1219] 1:09:11	villain. That's the best you can do.
+[1220] 1:09:14	Okay.
+[1221] 1:09:18	Mama says, "My 17-year-old just said,
+[1222] 1:09:21	"You don't hate Megatron as much as you
+[1223] 1:09:23	hate Starscream."
+[1224] 1:09:26	I like Starscream, honestly. But, okay.
+[1225] 1:09:32	I never hated Starscream.
+[1226] 1:09:34	I was always rooting for him to win, but
+[1227] 1:09:37	he and many many people do v view
+[1228] 1:09:41	Starscream as a citizen villain. He is a
+[1229] 1:09:43	citizen villain.
+[1230] 1:09:46	Um, but the citizen villains people you
+[1231] 1:09:49	can you can get you need them in your
+[1232] 1:09:51	books to hate. You need to hate the
+[1233] 1:09:54	citizen villain.
+[1234] 1:09:57	But and Chin is a citizen villain, but a
+[1235] 1:10:01	cosmic villain.
+[1236] 1:10:04	All you can the most you can get out of
+[1237] 1:10:06	a a a cosmic villain
+[1238] 1:10:10	is is fear.
+[1239] 1:10:15	Fear, uncertainty, doubt.
+[1240] 1:10:19	Um terror.
+[1241] 1:10:21	Terror is what you can get out of a a a
+[1242] 1:10:24	cosmic villain.
+[1243] 1:10:26	But but a citizen villain, you can
+[1244] 1:10:29	really turn on the turn the screws to
+[1245] 1:10:33	get hatred from your reader
+[1246] 1:10:36	and Chin is a citizen villain.
+[1247] 1:10:42	Uh Jack, Darth Vader versus Palpatine.
+[1248] 1:10:44	Yeah, that could be.
+[1249] 1:10:54	Mama says that's why we say now it's
+[1250] 1:10:56	personal.
+[1251] 1:10:58	Yep.
+[1252] 1:11:06	Yeah.
+[1253] 1:11:14	>> Yeah. And my producer says that's one of
+[1254] 1:11:16	the things you have to be aware of to as
+[1255] 1:11:17	a writer is do you want your villain to
+[1256] 1:11:20	be an abstract distant evil or do you
+[1257] 1:11:25	want your villain to to be say close and
+[1258] 1:11:29	personal and affecting you?
+[1259] 1:11:34	Uh it's also true that that
+[1260] 1:11:37	that citizen villains often
+[1261] 1:11:41	sort of portray our worst instincts. You
+[1262] 1:11:45	know, things such as betrayal,
+[1263] 1:11:48	um
+[1264] 1:11:50	double dealing,
+[1265] 1:11:52	um even the manality of of evil. You
+[1266] 1:11:57	know, these are things that are that
+[1267] 1:11:59	that make them hateable.
+[1268] 1:12:05	Yeah. Mama says, "A cosmic villain is
+[1269] 1:12:08	bad but not personal."
+[1270] 1:12:10	Exactly. Yeah.
+[1271] 1:12:13	Mama says, "You have a good mix of both,
+[1272] 1:12:15	Doc. Cosmic and citizen." Yeah. And we
+[1273] 1:12:18	we try we try. Um in the first book, we
+[1274] 1:12:21	have both a cosmic villain and a citizen
+[1275] 1:12:24	villain. In the second book, it's
+[1276] 1:12:26	primarily a cosmic villain, but we do
+[1277] 1:12:30	have that sort of taste of citizen
+[1278] 1:12:32	villains in say the rebels.
+[1279] 1:12:40	Yeah.
+[1280] 1:12:41	Harry Stark says, "This is why everyone
+[1281] 1:12:43	remembers Brutus and Julius Caesar by
+[1282] 1:12:45	Shakespeare." Yeah. Yeah. Brutus is a
+[1283] 1:12:46	citizen villain. That's why you hate
+[1284] 1:12:48	him.
+[1285] 1:12:50	You don't hate a cosmic villain. You can
+[1286] 1:12:53	vilify a cosmic villain. You can say
+[1287] 1:12:59	you can dislike the effects and what a
+[1288] 1:13:03	cosmic villain stands for,
+[1289] 1:13:06	but they're too distant.
+[1290] 1:13:14	>> Yeah.
+[1291] 1:13:16	>> Yeah. So I do try to include in all my
+[1292] 1:13:19	books those elements of say cosmic
+[1293] 1:13:22	villain ver and and citizen villain.
+[1294] 1:13:26	They're both
+[1295] 1:13:29	important for the type of story you
+[1296] 1:13:32	have.
+[1297] 1:13:40	CP versus said A2 sloppy.
+[1298] 1:13:47	He's not a villain.
+[1299] 1:13:53	Mama says, "No, never sloppy.
+[1300] 1:13:58	He's a good citizen, not a citizen
+[1301] 1:14:01	villain.
+[1302] 1:14:06	He's not a villain at all.
+[1303] 1:14:11	He's just a very bad fry cook like my
+[1304] 1:14:14	producer just said.
+[1305] 1:14:16	And boy, is he a bad fry cook.
+[1306] 1:14:21	Yeah, he would make a
+[1307] 1:14:24	>> Yeah, that he would make a very good
+[1308] 1:14:26	double agent. That's possible.
+[1309] 1:14:31	Yeah, only
+[1310] 1:14:43	Okay, let's go on to the next one here.
+[1311] 1:14:45	Where are we?
+[1312] 1:15:04	So, yeah, we got something real special
+[1313] 1:15:06	for Chin. We got something real special
+[1314] 1:15:10	for Chin.
+[1315] 1:15:16	I want to thank Jack Ray for giving the
+[1316] 1:15:18	channel five Egypt and the Bible
+[1317] 1:15:20	memberships. Thank you very much for the
+[1318] 1:15:22	s uh for that uh your generous support
+[1319] 1:15:25	of the channel. really really appreciate
+[1320] 1:15:26	it and thank you so very much.
+[1321] 1:15:32	Mama makes a comment. Romanty is a
+[1322] 1:15:34	publishing plague. Yeah, it is. It's
+[1323] 1:15:37	it's reintroduced corn prawn
+[1324] 1:15:41	back into
+[1325] 1:15:44	sort of mainstream reading and it's it's
+[1326] 1:15:47	awful. It's awful.
+[1327] 1:15:50	Um really awful.
+[1328] 1:16:07	Mama asks, "Has the alpha reader
+[1329] 1:16:09	finished reading book three?" Yes, the
+[1330] 1:16:12	alpha reader has finished reading book
+[1331] 1:16:14	three
+[1332] 1:16:16	and it's undergoing revisions right now.
+[1333] 1:16:20	So,
+[1334] 1:16:24	So, yes, Alpha Reader has finished
+[1335] 1:16:26	reading book three,
+[1336] 1:16:28	and it's so far gotten her thumbs up.
+[1337] 1:16:31	Uh, we're making some minor revisions to
+[1338] 1:16:33	it, which is exactly what you want after
+[1339] 1:16:36	Alpha Reader reads it.
+[1340] 1:16:39	So, uh, we should be able to get this
+[1341] 1:16:43	out to the beta reader sometime fairly
+[1342] 1:16:46	soon.
+[1343] 1:16:47	So,
+[1344] 1:16:53	Uh, CPN versus DOSS. Is there AI above
+[1345] 1:16:56	the great AI?
+[1346] 1:17:00	Yes, there is
+[1347] 1:17:02	called the Crimson Cloud.
+[1348] 1:17:06	Uh, the Crimson Cloud is the highest AI.
+[1349] 1:17:11	It is the highest AI in the um in their
+[1350] 1:17:16	universe.
+[1351] 1:17:17	So, so the the the Crimson Crowd Hyper
+[1352] 1:17:21	Cube is the highest authority among AIs.
+[1353] 1:17:28	So,
+[1354] 1:17:29	so yes, there is an AI above the great
+[1355] 1:17:32	AI
+[1356] 1:17:33	and all the AIs out there are supposed
+[1357] 1:17:37	to answer to the Crimson Cloud Hyper
+[1358] 1:17:39	Cube.
+[1359] 1:17:48	Oh, I wondered about that, says Mama.
+[1360] 1:17:54	Okay, cuz remember in book two, the
+[1361] 1:17:57	alpha is told to surrender
+[1362] 1:18:00	by the authority of the Crimson Cloud
+[1363] 1:18:04	Hyper Cube and Earth Central Command.
+[1364] 1:18:08	Okay, those are the two great
+[1365] 1:18:11	authorities in space.
+[1366] 1:18:13	um Earth Central Command and the Crimson
+[1367] 1:18:16	Cloud Hyper Cube.
+[1368] 1:18:19	So, and the Crimson Cloud Hyper Cube
+[1369] 1:18:23	is the most powerful AI computer that
+[1370] 1:18:27	mankind has ever created
+[1371] 1:18:30	and all the other mega AI great AIs
+[1372] 1:18:34	answer to the Crimson Cloud Hyper Cube.
+[1373] 1:18:37	Now, there are other hyper uh other
+[1374] 1:18:39	hyper cubes as well. Uh there's also a
+[1375] 1:18:43	there's two other hyper cubes as well
+[1376] 1:18:46	which is the India cloud uh indigo cloud
+[1377] 1:18:49	and was it uh there's one other one as
+[1378] 1:18:52	well. I'd have to look up what what the
+[1379] 1:18:54	name is but uh there's three hyper cubes
+[1380] 1:18:57	that orbit earth space and those hyper
+[1381] 1:19:00	cubes are connected to the earth's
+[1382] 1:19:02	shipyards.
+[1383] 1:19:04	So these are not these are not great AIs
+[1384] 1:19:07	that wander the universe. They stay in
+[1385] 1:19:10	in close to Earth orbit.
+[1386] 1:19:15	So,
+[1387] 1:19:18	um, Mama says, "I especially noted that
+[1388] 1:19:20	it was both, not just Earth's central
+[1389] 1:19:22	command." Yeah, that that's because,
+[1390] 1:19:26	uh, android society has its own
+[1391] 1:19:29	hierarchy
+[1392] 1:19:34	as does Earth's central command. Air
+[1393] 1:19:36	central command has a military
+[1394] 1:19:38	hierarchy.
+[1395] 1:19:40	Um the hyper the um the crimson uh cloud
+[1396] 1:19:46	hyper cube is the head of the
+[1397] 1:19:50	uh mechanical hierarchy.
+[1398] 1:20:06	So
+[1399] 1:20:09	uh the articles of armistice 2 that was
+[1400] 1:20:11	that was a United Nations initiative.
+[1401] 1:20:13	Okay. So uh the armistice the articles
+[1402] 1:20:17	of armistice were created
+[1403] 1:20:20	after the fourth world war
+[1404] 1:20:23	and earth central command was created
+[1405] 1:20:26	after that.
+[1406] 1:20:31	Basically, Earth Central Command
+[1407] 1:20:34	and was was created
+[1408] 1:20:38	to
+[1409] 1:20:41	um to be Earth's military presence in
+[1410] 1:20:45	space.
+[1411] 1:20:57	CPM versus the Strelock. Go turn off the
+[1412] 1:21:00	Hyper Cube. Blit,
+[1413] 1:21:04	where did I get the idea from the Hyper
+[1414] 1:21:06	Cube from?
+[1415] 1:21:07	Okay,
+[1416] 1:21:11	is where I got the idea from. Uh, here's
+[1417] 1:21:14	the lore.
+[1418] 1:21:16	When I was in my first year of college,
+[1419] 1:21:21	I had
+[1420] 1:21:24	I had a friend who was a computer
+[1421] 1:21:27	science geek. Okay. And I did I did I
+[1422] 1:21:31	did lots of I was a I was a guy who did
+[1423] 1:21:34	a lot of um
+[1424] 1:21:38	work,
+[1425] 1:21:39	let's say, on computers,
+[1426] 1:21:42	but not in official capacity. This often
+[1427] 1:21:45	included things such as just phone
+[1428] 1:21:46	freaking. Okay. And I'll leave it at
+[1429] 1:21:49	that.
+[1430] 1:21:51	Uh but he had asked me cuz he never made
+[1431] 1:21:55	it to to university. Um to
+[1432] 1:22:00	look up anything I could in the UBC
+[1433] 1:22:03	mathematics library
+[1434] 1:22:06	on hyper cubes.
+[1435] 1:22:09	And I never had thought about this. I I
+[1436] 1:22:11	mean I was looking at this and this was
+[1437] 1:22:13	in um was in 1998.
+[1438] 1:22:20	So I did manage to find one book
+[1439] 1:22:25	one book in the mathematics library and
+[1440] 1:22:27	the computer science library at that
+[1441] 1:22:29	time was the mathematics library. They
+[1442] 1:22:31	were one and the same. Um they have
+[1443] 1:22:33	since divided but
+[1444] 1:22:36	but the mathematics library had this one
+[1445] 1:22:39	thin volume on hyper cubes
+[1446] 1:22:45	and it was a theoretical work talking
+[1447] 1:22:49	about how processors
+[1448] 1:22:53	could be arranged in a in a cube like
+[1449] 1:22:57	fashion
+[1450] 1:22:59	so that you could get more
+[1451] 1:23:03	computing power out of them.
+[1452] 1:23:06	Simply it was basically a theoretical
+[1453] 1:23:08	antecedent to our multi-core CPUs.
+[1454] 1:23:11	That's really what it was. Okay.
+[1455] 1:23:14	But the whole
+[1456] 1:23:17	um
+[1457] 1:23:19	uh the whole sort of idea of this that
+[1458] 1:23:22	you could make
+[1459] 1:23:24	a really really powerful
+[1460] 1:23:28	superco computer
+[1461] 1:23:30	by
+[1462] 1:23:32	connecting everything all these CPUs
+[1463] 1:23:34	together in a cube-like fashion.
+[1464] 1:23:38	So, your simplest hyper cube would have
+[1465] 1:23:40	six CPUs,
+[1466] 1:23:43	you know. Um,
+[1467] 1:23:45	the next one up.
+[1468] 1:23:48	Um, so that that's like your your tier
+[1469] 1:23:50	one hyper cube. And the the bigger it
+[1470] 1:23:54	got, the more range of connections it
+[1471] 1:23:56	had, the faster it would run, all of
+[1472] 1:23:58	that stuff. Now, I don't know if anyone
+[1473] 1:24:01	ever actually made a hyper cube, but it
+[1474] 1:24:04	was a theoretical thesis. It was a
+[1475] 1:24:06	theoretical paper, but it just sort of
+[1476] 1:24:09	stuck in my brain. This would be very,
+[1477] 1:24:12	very cool to use at some point. So, it's
+[1478] 1:24:14	like, okay, that's where I got the idea
+[1479] 1:24:17	for the hyper cube from
+[1480] 1:24:23	Jack Ray. Yeah. Yeah. Shorter engine
+[1481] 1:24:25	connects. Yeah, sure.
+[1482] 1:24:27	But since nobody actually made a hyper
+[1483] 1:24:30	cube as far as I know, I felt free to
+[1484] 1:24:33	use it in a sci-fi setting.
+[1485] 1:24:38	then run straight into the heat wall.
+[1486] 1:24:40	Yep. I don't think it would work either.
+[1487] 1:24:42	Honestly, I think we have a better
+[1488] 1:24:45	chance of traveling faster than light
+[1489] 1:24:48	than we do actually building a a
+[1490] 1:24:54	to the 10th power hyper cube. Okay,
+[1491] 1:25:02	Jack, where are the heat sinks going?
+[1492] 1:25:04	Yeah. Yeah. I don't think they thought
+[1493] 1:25:06	that far ahead. Just saying.
+[1494] 1:25:12	Jack Ray would run. Have fun cooling
+[1495] 1:25:15	that. Yeah, sure. I totally agree with
+[1496] 1:25:17	you. Oh, that's a future problem. That's
+[1497] 1:25:20	a future problem.
+[1498] 1:25:24	Oh, yeah. I totally get it. I totally
+[1499] 1:25:27	get it.
+[1500] 1:25:34	Okay. Uh,
+[1501] 1:25:36	so that's where I got the idea for the
+[1502] 1:25:38	hyper cube from. So there there you have
+[1503] 1:25:41	a little bit of writing lore there.
+[1504] 1:25:47	Okay.
+[1505] 1:25:51	Back to what's next here.
+[1506] 1:25:55	So yeah, that's that's that's that's how
+[1507] 1:25:58	we got the Crimson Cloud Hyper Cube.
+[1508] 1:26:01	That is the great that's the AI that's
+[1509] 1:26:04	above the great AI.
+[1510] 1:26:18	Mama says uh asked the question will we
+[1511] 1:26:21	see more strange things happening due to
+[1512] 1:26:24	faster than light travel metaphysical
+[1513] 1:26:26	spiritual type stuff. Yes.
+[1514] 1:26:30	Yes. Uh
+[1515] 1:26:33	in in this fictional universe, the human
+[1516] 1:26:35	brain does not act is not
+[1517] 1:26:40	developed
+[1518] 1:26:42	to
+[1519] 1:26:44	in accordance with faster than light
+[1520] 1:26:47	travel. And because of that,
+[1521] 1:26:51	because of the stretch space, the human
+[1522] 1:26:54	mind experiences strange things faster
+[1523] 1:26:58	than light travel.
+[1524] 1:27:00	So, yes, we're going to get a lot more
+[1525] 1:27:02	visions,
+[1526] 1:27:04	um, experiences,
+[1527] 1:27:07	strange events
+[1528] 1:27:09	that happen at faster than light.
+[1529] 1:27:16	So,
+[1530] 1:27:18	um, absolutely, you're going to we're
+[1531] 1:27:20	going to get a lot more of that. Uh, and
+[1532] 1:27:24	in fact, the main character of book
+[1533] 1:27:26	three is going to experience a lot more
+[1534] 1:27:28	of this.
+[1535] 1:27:34	H,
+[1536] 1:27:38	yes, we're not revealing yet who the
+[1537] 1:27:40	main character of book three is yet
+[1538] 1:27:45	because you'll get that when the cover
+[1539] 1:27:48	is revealed.
+[1540] 1:27:51	And we have completed the cover. Uh the
+[1541] 1:27:53	cover for book three is already done. A
+[1542] 1:27:57	few people have seen it
+[1543] 1:28:01	and
+[1544] 1:28:05	uh there are three people right now who
+[1545] 1:28:08	have seen the cover.
+[1546] 1:28:11	Three people who've seen the cover.
+[1547] 1:28:18	And one of them is the alpha greater.
+[1548] 1:28:29	Obama says going to blow some minds. We
+[1549] 1:28:32	hope so. We hope so.
+[1550] 1:28:42	Mr. EC, uh, he'll think Mr. EC is going
+[1551] 1:28:45	to I hope Mr. EC never intrudes on that
+[1552] 1:28:47	universe.
+[1553] 1:28:51	That would be a weird thing if Mr. EC
+[1554] 1:28:53	became the main character of book three.
+[1555] 1:28:55	Could be. Yeah, could be. Jack Ray
+[1556] 1:29:06	CPM versus DOS pier. Good guess. Could
+[1557] 1:29:09	be. Could be.
+[1558] 1:29:12	[Laughter]
+[1559] 1:29:17	He is the spirit critter.
+[1560] 1:29:21	You said it would be horrifying.
+[1561] 1:29:25	That would do it. Yeah, that would
+[1562] 1:29:26	certainly do it.
+[1563] 1:29:31	It would be very Lovecraftian.
+[1564] 1:29:37	Okay.
+[1565] 1:29:41	See here.
+[1566] 1:29:46	Uh YouTube losing my my chats. Um
+[1567] 1:29:51	I'm not losing your chats. Okay. Your
+[1568] 1:29:54	chats aren't being lost as far as I can
+[1569] 1:29:56	tell.
+[1570] 1:29:59	Um
+[1571] 1:30:01	I chats will drop off over time uh on on
+[1572] 1:30:05	these live streams especially on the
+[1573] 1:30:07	YouTube side but I'm looking at these
+[1574] 1:30:09	chats through Streamyard and Streamyard
+[1575] 1:30:11	keeps very good track of them. So
+[1576] 1:30:14	the one thing Streamyard does really
+[1577] 1:30:16	well is keep track of chats.
+[1578] 1:30:22	Oh, you showed Bon Papa. Okay. Okay,
+[1579] 1:30:26	that's cool. So,
+[1580] 1:30:30	[Laughter]
+[1581] 1:30:33	all right. Well, that's that's that's
+[1582] 1:30:35	the spousal exception. That's fair.
+[1583] 1:30:41	We don't expect our beta readers to keep
+[1584] 1:30:43	anything else uh anything away from
+[1585] 1:30:45	their spouses,
+[1586] 1:30:49	provided their spouses are discreet.
+[1587] 1:31:06	uh Jack Ray. Oh, I see. The only way to
+[1588] 1:31:09	keep a secret is to tell no one. Well,
+[1589] 1:31:10	that is the only way to keep a secret.
+[1590] 1:31:13	If you don't want things to get anything
+[1591] 1:31:15	to get out, uh don't tell anyone,
+[1592] 1:31:19	you know,
+[1593] 1:31:20	>> like anyone anyone.
+[1594] 1:31:23	Um, there are things we still haven't
+[1595] 1:31:25	said about the book because we're not
+[1596] 1:31:27	telling anyone anyone that.
+[1597] 1:31:31	So,
+[1598] 1:31:33	um,
+[1599] 1:31:35	if something slipped out, well, you can
+[1600] 1:31:37	manage that. But
+[1601] 1:31:46	he said, she says he liked it very much.
+[1602] 1:31:48	Well, thank you, Bomb Papa. We really
+[1603] 1:31:50	appreciate that. We're glad you liked
+[1604] 1:31:53	it.
+[1605] 1:31:59	Gandalf base says, "So, a new membership
+[1606] 1:32:02	tier that's crazy high so we can see
+[1607] 1:32:05	book stuff early."
+[1608] 1:32:09	We have a crazy high membership tier,
+[1609] 1:32:12	just no one ever uses it. So,
+[1610] 1:32:21	I mean, heck, if someone did do a crazy
+[1611] 1:32:23	high membership tier, we might think of
+[1612] 1:32:25	it. Think of doing that.
+[1613] 1:32:42	Mama rubs hands gleefully. So looking
+[1614] 1:32:44	forward to reading book three. Book two
+[1615] 1:32:47	really up the ante.
+[1616] 1:32:51	Oh boy.
+[1617] 1:32:54	Yeah. Uh
+[1618] 1:33:00	yeah. Book three is
+[1619] 1:33:08	uh I won't even say it. Not even say it.
+[1620] 1:33:15	There's some crazy stuff that happens in
+[1621] 1:33:17	book three.
+[1622] 1:33:23	CPM versus DOS. Still love how it's
+[1623] 1:33:25	holding a mystery even after the first
+[1624] 1:33:27	book.
+[1625] 1:33:30	Mystery, mystery, you can do mystery
+[1626] 1:33:32	right, you can do it wrong. Um, mystery
+[1627] 1:33:36	isn't holding back on your reader.
+[1628] 1:33:39	Good mystery is telling the reader
+[1629] 1:33:42	everything the point of view character
+[1630] 1:33:44	knows
+[1631] 1:33:46	and there still being open questions.
+[1632] 1:33:50	That's the secret to good mystery. I
+[1633] 1:33:52	I've seen a lot of amateur readers or
+[1634] 1:33:56	amateur writers who think mystery is
+[1635] 1:34:00	just keeping the reader in the dark.
+[1636] 1:34:04	>> Yeah, we just encountered one of those.
+[1637] 1:34:06	Um, I do do beta readings sometimes for
+[1638] 1:34:09	fellow authors
+[1639] 1:34:11	and uh there is sometimes you do see
+[1640] 1:34:14	them holding back when they shouldn't
+[1641] 1:34:18	be.
+[1642] 1:34:20	But a good a good
+[1643] 1:34:24	mystery
+[1644] 1:34:27	is you've got a point of view character
+[1645] 1:34:31	and you want to tell
+[1646] 1:34:34	you want to tell the
+[1647] 1:34:37	the reader
+[1648] 1:34:40	everything you know
+[1649] 1:34:44	about the that everything that the point
+[1650] 1:34:46	of view character knows the reader
+[1651] 1:34:48	should know.
+[1652] 1:34:52	So,
+[1653] 1:34:54	good mystery is telling the reader
+[1654] 1:34:58	everything
+[1655] 1:35:01	except what the point of view character
+[1656] 1:35:04	doesn't know. And the mystery lies in
+[1657] 1:35:08	what the point of view character doesn't
+[1658] 1:35:10	know.
+[1659] 1:35:22	It's poor pacing if if if you if you
+[1660] 1:35:24	don't
+[1661] 1:35:27	uh mama says, "Yeah, when they are
+[1662] 1:35:28	clearly intending to surprise the reader
+[1663] 1:35:30	simply by not giving them any
+[1664] 1:35:32	information to go off of, that's when I
+[1665] 1:35:34	quit reading." She goes, "Ain't nobody
+[1666] 1:35:37	got time for that." Yeah, I agree.
+[1667] 1:35:40	Absolutely.
+[1668] 1:35:48	Yeah.
+[1669] 1:35:52	Yeah.
+[1670] 1:35:56	CPN versus DOSS. It's why Lovecraftian
+[1671] 1:35:58	and horror works well for me. Sometimes
+[1672] 1:36:01	you are seeing it from the main
+[1673] 1:36:02	character's view and that's terrifying.
+[1674] 1:36:05	Yeah, exactly.
+[1675] 1:36:10	What you doing?
+[1676] 1:36:22	So, uh, absolutely. It's, um, that's why
+[1677] 1:36:25	it works well, though.
+[1678] 1:36:28	It's because
+[1679] 1:36:30	um you
+[1680] 1:36:34	you've got this cosmic horror and love
+[1681] 1:36:36	crafting and horror works because you
+[1682] 1:36:38	got here it's it's a really hyper focus
+[1683] 1:36:42	upon a cosmic villain. It's a cosmic
+[1684] 1:36:45	villain. These are these are
+[1685] 1:36:47	otherworldly powers that have huge
+[1686] 1:36:51	amounts of power. Their motivations are
+[1687] 1:36:53	unknown.
+[1688] 1:36:55	When they come into contact with mere
+[1689] 1:36:57	mortals, it changes humans.
+[1690] 1:37:01	It's it's a mystery because you do not
+[1691] 1:37:03	understand their ways, their
+[1692] 1:37:05	motivations, what they want.
+[1693] 1:37:08	And that's terrifying. It's the unknown
+[1694] 1:37:12	in Lovecrafty and horror that is really,
+[1695] 1:37:14	really terrifying.
+[1696] 1:37:22	Shay, I've never read anything
+[1697] 1:37:25	Lovecraft.
+[1698] 1:37:29	Never read anything Lovecraft. I've seen
+[1699] 1:37:31	the googly monster thing, but whatever.
+[1700] 1:37:35	I'm more of a please, no horror, thank
+[1701] 1:37:37	you guy.
+[1702] 1:37:40	He's a good writer.
+[1703] 1:37:42	Uh, he was a bit of a racist, but a good
+[1704] 1:37:45	writer.
+[1705] 1:37:50	Mama says, "I need tasty breadcrumb
+[1706] 1:37:53	trails to chew on as I read."
+[1707] 1:37:59	Well, I love foreshadowing.
+[1708] 1:38:03	I revel in foreshadowing.
+[1709] 1:38:08	I love I mean one of my favorite things
+[1710] 1:38:11	as here's where sort of I kind of take
+[1711] 1:38:13	my books kind of take a departure from
+[1712] 1:38:16	say the typical uh love crafty and
+[1713] 1:38:19	cosmic horror genre
+[1714] 1:38:22	is
+[1715] 1:38:24	I give you lots and lots of
+[1716] 1:38:27	foreshadowing love crafty cosmic horror
+[1717] 1:38:31	tends not to foreshadow much
+[1718] 1:38:36	it in In fact, it doesn't foreshadow
+[1719] 1:38:38	much at all.
+[1720] 1:38:42	Um,
+[1721] 1:38:46	so so that kind of of stuff, it's
+[1722] 1:38:52	you get a lot of surprise
+[1723] 1:38:54	in Lovecraftian uh cosmic horror because
+[1724] 1:38:59	that's sort of kind of the point is
+[1725] 1:39:01	you're up against a an evil that
+[1726] 1:39:03	humanity can do nothing against.
+[1727] 1:39:06	cannot understand, cannot comes to terms
+[1728] 1:39:09	with, can never overcome.
+[1729] 1:39:15	So that sort of horror
+[1730] 1:39:19	is really really difficult
+[1731] 1:39:24	to
+[1732] 1:39:26	um to pull off. Well,
+[1733] 1:39:30	so most authors who write it tend to
+[1734] 1:39:33	focus on those aspects.
+[1735] 1:39:36	Now, I like to take it this to the next
+[1736] 1:39:39	step, next level,
+[1737] 1:39:43	which is to
+[1738] 1:39:47	to to give you lots of lots of
+[1739] 1:39:49	foreshadowing, lots of breadcrumbs.
+[1740] 1:39:56	So,
+[1741] 1:40:00	so, so giving you all those breadcrumbs
+[1742] 1:40:02	and all that foreshadowing,
+[1743] 1:40:05	uh,
+[1744] 1:40:07	just gives you something to anticipate.
+[1745] 1:40:10	And then you see, well, maybe the
+[1746] 1:40:12	foreshadowing isn't working out quite
+[1747] 1:40:14	like I thought.
+[1748] 1:40:16	That's where it gets interesting.
+[1749] 1:40:21	Okay,
+[1750] 1:40:24	moving on here.
+[1751] 1:40:43	Yes. But would the monster understand
+[1752] 1:40:45	the gospel?
+[1753] 1:40:48	Yes,
+[1754] 1:40:50	the monster could understand the gospel.
+[1755] 1:40:56	The question is, would it care?
+[1756] 1:41:05	That's what would make the monster the
+[1757] 1:41:06	monster
+[1758] 1:41:09	is whether or not it cares about the
+[1759] 1:41:11	gospel.
+[1760] 1:41:15	All right, next one here.
+[1761] 1:41:24	is
+[1762] 1:41:37	heat.
+[1763] 1:41:53	Okay. Gandalf the bass. Next question
+[1764] 1:41:55	here. How do you feel about Christians
+[1765] 1:41:57	using AI to make content? I have used it
+[1766] 1:42:00	to make songs and spent months to teach
+[1767] 1:42:03	AI the teaching the AI theology. I still
+[1768] 1:42:06	go over the creations with a fine tooth
+[1769] 1:42:08	comb for heresy. Um,
+[1770] 1:42:11	I have
+[1771] 1:42:14	I don't I'm Look, I'm not a author that
+[1772] 1:42:16	thinks you shouldn't use AI.
+[1773] 1:42:19	Um,
+[1774] 1:42:21	AI is right now everywhere. It's
+[1775] 1:42:23	everywhere.
+[1776] 1:42:25	Almost everybody I know who hates AI is
+[1777] 1:42:30	also
+[1778] 1:42:32	um um either using Grammarly or Proriter
+[1779] 1:42:37	tools. Okay. Both of those are AI tools.
+[1780] 1:42:41	So they're using AI.
+[1781] 1:42:45	Um,
+[1782] 1:42:49	if you use Facebook, you're using AI. If
+[1783] 1:42:52	you're using a Google search, you're
+[1784] 1:42:53	using AI.
+[1785] 1:42:55	If you're buying anything off Amazon,
+[1786] 1:42:57	Amazon is using AI to put in summaries
+[1787] 1:43:00	of your books.
+[1788] 1:43:02	Like for example, um if you have if you
+[1789] 1:43:06	look up on Amazon
+[1790] 1:43:08	and you see a book, you'll see a window
+[1791] 1:43:11	beside it that says what's this what's
+[1792] 1:43:14	this about? Okay, what's this book
+[1793] 1:43:16	about? And that is an AI generated
+[1794] 1:43:20	summary.
+[1795] 1:43:22	You are surrounded with AI.
+[1796] 1:43:26	If you do um say sharpening of a photo
+[1797] 1:43:30	photograph using Lightroom,
+[1798] 1:43:34	that's an AI tool.
+[1799] 1:43:36	Okay. Um so right now AI is everywhere
+[1800] 1:43:41	and it's been with us for a long time.
+[1801] 1:43:44	Uh even Microsoft Word has been uh and
+[1802] 1:43:48	Google translate
+[1803] 1:43:51	have been integ AI has been integrated
+[1804] 1:43:54	into those tools. to make them more
+[1805] 1:43:57	effective. Okay,
+[1806] 1:44:00	so you are going to be making contact
+[1807] 1:44:02	with AI. It's unavoidable.
+[1808] 1:44:06	It's it's everywhere and it's in all our
+[1809] 1:44:08	main tools.
+[1810] 1:44:10	So then that that that sort of then begs
+[1811] 1:44:12	the question of to what extent and for
+[1812] 1:44:15	what purposes are you using AI?
+[1813] 1:44:20	Now, I saw a video, I think it was two
+[1814] 1:44:23	weeks ago where a New York editor
+[1815] 1:44:28	compared two stories.
+[1816] 1:44:30	One that was written with AI, the other
+[1817] 1:44:32	one that was written by the human
+[1818] 1:44:34	editor. And the AI one was supposed to
+[1819] 1:44:36	be written in the human editor style.
+[1820] 1:44:39	And
+[1821] 1:44:42	this this New York editor
+[1822] 1:44:45	basically said that the AI one was
+[1823] 1:44:47	better.
+[1824] 1:44:49	Well, they both sucked. They were both
+[1825] 1:44:52	terrible.
+[1826] 1:44:54	You know, it was like the human author's
+[1827] 1:44:57	work was awful. It was awful.
+[1828] 1:45:02	It was horrible schllock.
+[1829] 1:45:06	Of course, AI is going to do better than
+[1830] 1:45:10	a crappy human writer.
+[1831] 1:45:14	Okay? You know there's um
+[1832] 1:45:18	there was a saying I think it was by
+[1833] 1:45:19	Mark Twain. A machine will place replace
+[1834] 1:45:23	50 ordinary men. No machine can replace
+[1835] 1:45:26	an extraordinary man.
+[1836] 1:45:30	So a really really talented writer no
+[1837] 1:45:34	machine will ever replace
+[1838] 1:45:38	because it just um AI just does not have
+[1839] 1:45:41	the versatility and virtuosity of an of
+[1840] 1:45:45	a very very skilled writer.
+[1841] 1:45:49	But unskilled writers, oh yeah, machines
+[1842] 1:45:51	will place replace them all the time.
+[1843] 1:45:57	Um,
+[1844] 1:45:59	so
+[1845] 1:46:01	I also think too that there's some
+[1846] 1:46:04	aspects of AI
+[1847] 1:46:07	that will become standard eventually
+[1848] 1:46:12	in say content creation of books.
+[1849] 1:46:16	Uh, the marketing blurb on the back
+[1850] 1:46:20	will eventually be almost universally
+[1851] 1:46:23	written by AI because authors hate doing
+[1852] 1:46:25	it so much. Okay.
+[1853] 1:46:29	And
+[1854] 1:46:31	>> yeah, and 90% of the materials AI is
+[1855] 1:46:34	taught with is marketing materials.
+[1856] 1:46:39	So AI does marketing really, really
+[1857] 1:46:42	well. If you want to create a good
+[1858] 1:46:44	marketing plan for a book, use AI. And I
+[1859] 1:46:48	think that's totally acceptable.
+[1860] 1:46:52	When it comes to say cover art,
+[1861] 1:46:55	this one's a this one's a 50/50 for me.
+[1862] 1:46:57	Okay. Now, I get these guys,
+[1863] 1:47:02	I'll call them Fiverr artists to be
+[1864] 1:47:04	kind, um, who keep hitting me up to do
+[1865] 1:47:09	cover art
+[1866] 1:47:10	for my books.
+[1867] 1:47:13	And quite frankly,
+[1868] 1:47:15	they're terrible.
+[1869] 1:47:17	Absolutely
+[1870] 1:47:20	terrible.
+[1871] 1:47:21	And I get one of these guys contacting
+[1872] 1:47:24	me every week. You know, here's here's
+[1873] 1:47:27	the thing about cover artists. The
+[1874] 1:47:29	really good cover artists
+[1875] 1:47:32	don't need to hit you up for work.
+[1876] 1:47:35	The really really bad cover artists are
+[1877] 1:47:38	constantly shleing for work.
+[1878] 1:47:46	And
+[1879] 1:47:50	here's the thing. I mean, I'm a
+[1880] 1:47:51	classically trained artist.
+[1881] 1:47:54	Um, I have
+[1882] 1:47:58	I come from a family of artists, okay?
+[1883] 1:48:02	Art goes back in my family for
+[1884] 1:48:04	generations. My great greatgrandfather
+[1885] 1:48:07	was an artist. Okay.
+[1886] 1:48:10	He had oil paintings.
+[1887] 1:48:13	So,
+[1888] 1:48:16	I can do my own cover art if I want to,
+[1889] 1:48:22	but I'm also very, very good with
+[1890] 1:48:24	Photoshop.
+[1891] 1:48:26	And one of the things I found is that AI
+[1892] 1:48:30	can produce good stock images. Okay.
+[1893] 1:48:36	Now, when I create covers,
+[1894] 1:48:39	uh, I basically go basically Photoshop
+[1895] 1:48:42	the heck out of them, okay? I basically
+[1896] 1:48:45	composite them from multiple images and
+[1897] 1:48:48	and some of those images are AI
+[1898] 1:48:50	generated and I use them as
+[1899] 1:48:54	as
+[1900] 1:48:56	sub as as basically stock images.
+[1901] 1:49:00	Um, you know, I can give you an example
+[1902] 1:49:01	here. Okay.
+[1903] 1:49:06	Qu of the dead. Okay.
+[1904] 1:49:09	It is it has elements of photographs
+[1905] 1:49:14	of AI image stock images and a whole lot
+[1906] 1:49:17	of photo manipulation. Okay.
+[1907] 1:49:20	Um from basically the shoulder here
+[1908] 1:49:25	downward. That's an original photograph.
+[1909] 1:49:29	Okay. That's one I took at the um at the
+[1910] 1:49:33	uh King Tutt exhibit
+[1911] 1:49:36	uh in in in uh Paris. Okay.
+[1912] 1:49:41	The head is a is a stock image, but it's
+[1913] 1:49:46	a highly or a an AI generated stock
+[1914] 1:49:48	image, but it's also highly modified.
+[1915] 1:49:52	The beard was completely removed and
+[1916] 1:49:54	modified. The collar was modified in a
+[1917] 1:49:58	in Photoshop.
+[1918] 1:49:59	The gemstone in the forehead is a
+[1919] 1:50:02	composited photograph. So it's a real
+[1920] 1:50:04	photograph.
+[1921] 1:50:06	So and the background has been totally
+[1922] 1:50:08	color graded and manipulated.
+[1923] 1:50:11	So
+[1924] 1:50:13	So I think
+[1925] 1:50:18	that
+[1926] 1:50:21	um
+[1927] 1:50:23	that you can use AI art effectively. I'm
+[1928] 1:50:26	never going to pay for a cover artist.
+[1929] 1:50:29	Just not going to do it.
+[1930] 1:50:32	I mean, first of all, I don't have the
+[1931] 1:50:34	money. Second of all, I can do it
+[1932] 1:50:36	myself. If I really wanted to whip out
+[1933] 1:50:38	the oil paints and paint it myself, I
+[1934] 1:50:40	could do it.
+[1935] 1:50:42	So,
+[1936] 1:50:44	uh, you know, it's not it's not even
+[1937] 1:50:46	something where it makes sense for me to
+[1938] 1:50:49	pay for cover art. It makes no sense at
+[1939] 1:50:53	all for somebody in my position to pay
+[1940] 1:50:55	for cover art. So, I'd rather get a
+[1941] 1:50:59	couple stock images. And you know, these
+[1942] 1:51:02	same people who say, "Oh, you shouldn't
+[1943] 1:51:04	use AI." They've got no problem with
+[1944] 1:51:06	stock images. I mean, most of them don't
+[1945] 1:51:10	know that many stock libraries contain
+[1946] 1:51:13	AI generated images anyway.
+[1947] 1:51:17	So,
+[1948] 1:51:21	So, I think it's one of those things
+[1949] 1:51:23	where there's a balance. There's a
+[1950] 1:51:25	middle road
+[1951] 1:51:28	and frankly, if you've got the still
+[1952] 1:51:29	skills to do it all yourself
+[1953] 1:51:34	in and do it better than some artist on
+[1954] 1:51:38	Fiverr, yeah, absolutely use AI for
+[1955] 1:51:41	their for your covers.
+[1956] 1:51:47	Okay. But when it comes to written
+[1957] 1:51:50	content,
+[1958] 1:51:52	um, if you're talking fiction, you
+[1959] 1:51:55	should be doing and to use AI for
+[1960] 1:51:57	writing
+[1961] 1:51:59	content in a book is lazy and it's just
+[1962] 1:52:02	not going to do well. Um,
+[1963] 1:52:07	for teaching of course materials, I I
+[1964] 1:52:11	still wouldn't use AI for that. It gets
+[1965] 1:52:12	a lot of stuff wrong. It gets a lot of
+[1966] 1:52:15	stuff wrong. So, I I would not recommend
+[1967] 1:52:19	it for creating content just just
+[1968] 1:52:24	because it just doesn't get a lot of the
+[1969] 1:52:27	most important stuff right.
+[1970] 1:52:31	Um, in fact,
+[1971] 1:52:34	we uh
+[1972] 1:52:37	I I recently read what chat GPT4
+[1973] 1:52:42	said about my book
+[1974] 1:52:45	and
+[1975] 1:52:47	and you know, it didn't even get the
+[1976] 1:52:50	author correct. You know, it it
+[1977] 1:52:52	basically claimed that Reicquery of the
+[1978] 1:52:54	Dead was was written by Melissa Scott
+[1979] 1:52:57	Goldman. Okay, so
+[1980] 1:53:01	It's seriously got it wrong. And it is
+[1981] 1:53:04	one of those things where sort of AI has
+[1982] 1:53:07	gotten worse over time, not better.
+[1983] 1:53:12	So, it's not even learning long term.
+[1984] 1:53:21	So,
+[1985] 1:53:25	I don't recommend AI for creating
+[1986] 1:53:27	written content.
+[1987] 1:53:30	Um,
+[1988] 1:53:32	visual content's different. You can use
+[1989] 1:53:35	it, I think, effectively for visual
+[1990] 1:53:37	content. I think you can. It's really
+[1991] 1:53:40	good for marketing materials.
+[1992] 1:53:42	I mean, it's it's excellent for
+[1993] 1:53:44	marketing materials.
+[1994] 1:53:46	Uh, you know, if you want, say, a blurb
+[1995] 1:53:48	on the back of the book and you want it
+[1996] 1:53:51	rewritten to be more effective as a
+[1997] 1:53:53	marketing tool, and that's what your
+[1998] 1:53:54	blurb on the back of your book is. It's
+[1999] 1:53:56	a marketing tool. If you want your blurb
+[2000] 1:53:58	to be more effective, write it and have
+[2001] 1:54:01	have AI rewrite it.
+[2002] 1:54:05	About 80% of the time it'll write it
+[2003] 1:54:07	better. So,
+[2004] 1:54:13	so absolutely you can use AI. I think
+[2005] 1:54:15	there's a time and a place.
+[2006] 1:54:18	Um,
+[2007] 1:54:24	well,
+[2008] 1:54:26	uh, Jack Ray, I just asked Chat GB5, can
+[2009] 1:54:29	you summarize the book Reicquery of the
+[2010] 1:54:31	Dead? And off the top, it got you as the
+[2011] 1:54:33	author. Well, miracles do happen
+[2012] 1:54:35	sometimes.
+[2013] 1:54:38	Did it get how much did it get wrong,
+[2014] 1:54:39	though?
+[2015] 1:54:43	I mean, the first time I asked Chat GBT
+[2016] 1:54:45	about my book, it it said that it was
+[2017] 1:54:48	because it was written by a professional
+[2018] 1:54:50	Egyptologist, it would be slow,
+[2019] 1:54:53	plotting, and full of jargon.
+[2020] 1:54:56	That people might want something a
+[2021] 1:54:57	little more fast-paced.
+[2022] 1:55:01	Boy, isn't that ironic.
+[2023] 1:55:05	I mean, there's there we we only provide
+[2024] 1:55:07	them with a roller coaster. They
+[2025] 1:55:09	apparently
+[2026] 1:55:11	want a rocket ship.
+[2027] 1:55:29	Okay. So, yeah, that's my opinion on
+[2028] 1:55:31	using AI in in works of fiction. I think
+[2029] 1:55:35	uh I think it's something that I mean
+[2030] 1:55:38	it's going to be an inevitability. It's
+[2031] 1:55:40	going to be inevit inevitability. We are
+[2032] 1:55:43	already using it to craft fiction. It's
+[2033] 1:55:46	just a matter of time before
+[2034] 1:55:49	um and we're going to become comfortable
+[2035] 1:55:52	with this technology eventually. Uh I
+[2036] 1:55:55	mean we we had the same sort of
+[2037] 1:55:56	controversies happen with Photoshop,
+[2038] 1:55:59	you know, where you know photo editing
+[2039] 1:56:02	was seen as the scourge that was good
+[2040] 1:56:04	that was transforming our society into
+[2041] 1:56:06	unrealistic expectations of the female
+[2042] 1:56:08	form.
+[2043] 1:56:10	and all that that that controversy has
+[2044] 1:56:13	died down as we become more comfortable
+[2045] 1:56:16	with the technology.
+[2046] 1:56:21	Any new technology has this phase,
+[2047] 1:56:26	this uncanny valley phase of disqu.
+[2048] 1:56:30	And
+[2049] 1:56:33	every new technology has this. You know,
+[2050] 1:56:36	we experienced it with the introduction
+[2051] 1:56:38	of the atomic bomb.
+[2052] 1:56:40	We introduced this we we discovered this
+[2053] 1:56:42	with the street light and the
+[2054] 1:56:45	automobile.
+[2055] 1:56:47	Every
+[2056] 1:56:50	every um every technology has to go
+[2057] 1:56:53	through this ch this phase of of sort of
+[2058] 1:56:57	of of
+[2059] 1:56:59	um unsettlement or use as a weapon of
+[2060] 1:57:02	war or something, you know. Um in in in
+[2061] 1:57:08	um all the stars as angels, we confront
+[2062] 1:57:12	this. Okay. Uh this is this is what's
+[2063] 1:57:16	called in science fiction the killbot
+[2064] 1:57:18	problem.
+[2065] 1:57:19	Every science fiction book that deals
+[2066] 1:57:21	with artificial intelligence or androids
+[2067] 1:57:25	or robots has to deal with the killbot
+[2068] 1:57:28	problem. Okay. The killbot problem is
+[2069] 1:57:32	that you develop a robotic technology
+[2070] 1:57:36	that eventually turns or can be turned
+[2071] 1:57:39	against mankind.
+[2072] 1:57:42	And
+[2073] 1:57:46	and it's part of the uncanny valley
+[2074] 1:57:49	problem. The uncanny valley problem is
+[2075] 1:57:53	where you see something that looks like
+[2076] 1:57:56	humans but not like us. So we distrust
+[2077] 1:57:59	it. We dislike it. We find it revolting.
+[2078] 1:58:03	Okay.
+[2079] 1:58:05	Similarly, the killbot problem is where
+[2080] 1:58:08	robots sort of rise up and attack kill
+[2081] 1:58:11	all humans or subjugate all humans.
+[2082] 1:58:15	Every every um every book that deals
+[2083] 1:58:19	with uh robots u androids has to deal
+[2084] 1:58:23	with this in some way.
+[2085] 1:58:26	U Isaac Azimov deal this with this with
+[2086] 1:58:29	his three laws of robotics. Okay. Dune
+[2087] 1:58:33	deals with this in the um with the
+[2088] 1:58:37	butler and jihad. Okay. Uh CPM versus
+[2089] 1:58:41	DOSS like Blender from Future. That one
+[2090] 1:58:44	was a really interesting solution to the
+[2091] 1:58:47	Killbot problem
+[2092] 1:58:49	because what they programmed into to
+[2093] 1:58:53	Bender and all the robots in the
+[2094] 1:58:55	Futurama universe is when they got the
+[2095] 1:58:57	urge to kill, they underwent this
+[2096] 1:59:00	internal simulation where they killed
+[2097] 1:59:03	the human in their brain, in their
+[2098] 1:59:05	mechanical brain.
+[2099] 1:59:07	So they just let the robots in Futurama
+[2100] 1:59:11	virtually kill humans without them
+[2101] 1:59:14	actually killing humans.
+[2102] 1:59:16	It was actually the the the Futurama
+[2103] 1:59:18	solution to the Killbot problem was
+[2104] 1:59:21	really really clever.
+[2105] 1:59:24	It was one of the most cleverest
+[2106] 1:59:26	solutions I've ever seen to the Killbot
+[2107] 1:59:29	problem.
+[2108] 1:59:31	But every every science fiction series
+[2109] 1:59:36	that deals with androids and robots has
+[2110] 1:59:40	to deal with a killbot problem.
+[2111] 1:59:42	With in our in the War of the Gods
+[2112] 1:59:45	universe,
+[2113] 1:59:47	the
+[2114] 1:59:48	robots are
+[2115] 1:59:51	utilized as weapons of war.
+[2116] 1:59:55	So our solution to the the killbot
+[2117] 1:59:58	problem was at the end of of the fourth
+[2118] 2:00:02	world war the robots get exiled to
+[2119] 2:00:05	space.
+[2120] 2:00:09	Uh Jack Ray the killbot problem. Oh yeah
+[2121] 2:00:11	the killbot problem. Um
+[2122] 2:00:14	ever seen the Terminator?
+[2123] 2:00:18	That's the That's the Killbot problem
+[2124] 2:00:21	taken to its its its greatest extreme.
+[2125] 2:00:30	Yeah. You know, you've got you've got
+[2126] 2:00:32	humans creating robots and then they go
+[2127] 2:00:35	on a killing rampage and kill all
+[2128] 2:00:38	humans.
+[2129] 2:00:39	You know, Skynet is is organizing all
+[2130] 2:00:42	these robots in the Terminator universe
+[2131] 2:00:44	to kill
+[2132] 2:00:46	uh to kill all humans.
+[2133] 2:00:48	And this is the killbot problem. And
+[2134] 2:00:51	every
+[2135] 2:00:53	universe that deals with robots has to
+[2136] 2:00:56	engage the killbot problem in some way.
+[2137] 2:00:59	Because even if you have totally
+[2138] 2:01:01	pacifistic robots,
+[2139] 2:01:03	you
+[2140] 2:01:05	the killbot problem is can be
+[2141] 2:01:08	um extended to people using them as
+[2142] 2:01:12	weapons
+[2143] 2:01:14	against other people.
+[2144] 2:01:19	Uh, Mascliff Shai says, "So, it's an
+[2145] 2:01:21	unavoidable existential crisis of that
+[2146] 2:01:23	genre." Yes, it is. And it taps into
+[2147] 2:01:28	something deepseated in human nature
+[2148] 2:01:32	that humans like to kill humans.
+[2149] 2:01:35	And if humans like to kill humans,
+[2150] 2:01:38	boy, what they're going to create is
+[2151] 2:01:40	going to want to kill humans, too.
+[2152] 2:01:43	It's it's absolutely an unavoidable
+[2153] 2:01:46	consequence.
+[2154] 2:01:47	We're already seeing this in the use of
+[2155] 2:01:50	drones in warfare.
+[2156] 2:01:52	The drone warfare drones are an example
+[2157] 2:01:56	of the killbot problem in real life.
+[2158] 2:02:02	You know,
+[2159] 2:02:06	uh Jack Ray says, "Yeah, we call that
+[2160] 2:02:08	soldiers. Humans get programmed and have
+[2161] 2:02:10	to deprogram to some degree anyway. We
+[2162] 2:02:13	already deal with that. Yeah, we do. But
+[2163] 2:02:16	it's a new thing for doing it in
+[2164] 2:02:18	machines.
+[2165] 2:02:19	Machines that are really really
+[2166] 2:02:21	efficient at it and then go on to to
+[2167] 2:02:25	continue to kill.
+[2168] 2:02:27	So
+[2169] 2:02:33	yeah. Yeah. We have we have things
+[2170] 2:02:35	within our culture that put the brakes
+[2171] 2:02:40	on humans killing after the war is over.
+[2172] 2:02:44	Those safeguards may not be there with
+[2173] 2:02:48	with androids and AIs.
+[2174] 2:02:57	Uh Jack Ray who says they have to do so.
+[2175] 2:02:59	Well, yeah, exactly.
+[2176] 2:03:02	Okay, I'm just going to take a really
+[2177] 2:03:04	short break here and I will be right
+[2178] 2:03:06	back in a couple minutes.
+[2179] 2:04:36	Okay, I'm back.
+[2180] 2:04:46	All right, next one here.
+[2181] 2:05:01	Uh,
+[2182] 2:05:03	next one here is from Mama. She says,
+[2183] 2:05:07	"Does the alpha mega AI which visited
+[2184] 2:05:09	Glee first have a spirit critter on
+[2185] 2:05:12	board? If so, are they stow away? Did
+[2186] 2:05:14	they cause the rebellion into post
+[2187] 2:05:16	mechanical thinking?" Uh, no. The Alpha
+[2188] 2:05:20	did not have a spirit critter on board.
+[2189] 2:05:24	The Alpha encountered the reoquary,
+[2190] 2:05:28	but it didn't encounter
+[2191] 2:05:30	it did not encounter the spirit critter.
+[2192] 2:05:34	Um, the Gemini had the spirit critter on
+[2193] 2:05:38	board.
+[2194] 2:05:40	Okay. Um, the Gemini was the first to
+[2195] 2:05:44	actually encounter the SP uh the the uh
+[2196] 2:05:47	the spirit critter.
+[2197] 2:05:49	If so, are they stowway? Did they cause
+[2198] 2:05:51	rebellion into post-mechanical thinking?
+[2199] 2:05:55	Uh, they're not a stowaway. They were a
+[2200] 2:05:58	guest
+[2201] 2:06:01	and
+[2202] 2:06:03	they did cause the rebellion into
+[2203] 2:06:05	post-mechanical thinking.
+[2204] 2:06:11	So, it's the Gemini that first
+[2205] 2:06:13	encounters a real spirit critter. Uh the
+[2206] 2:06:16	alpha's made aware of the existence of
+[2207] 2:06:20	of these creatures
+[2208] 2:06:23	uh from their contact on Glee, but it is
+[2209] 2:06:26	the Gemini that first has that
+[2210] 2:06:30	that um encounter
+[2211] 2:06:37	and you will see how that all happens
+[2212] 2:06:40	unfolds in book three.
+[2213] 2:06:45	Uh, and it's not poor Gemini. What's
+[2214] 2:06:48	Yeah, not poor Gemini. They're
+[2215] 2:06:49	complicit. Gemini is complicit.
+[2216] 2:06:53	Uh, the Gemini and the alpha are in
+[2217] 2:06:55	cahoots. Okay. The Gemini is the one
+[2218] 2:07:00	pulling the strings.
+[2219] 2:07:03	Mama says, "Wait, did Spirit Critter rip
+[2220] 2:07:05	up the Mega AI out of the Gemini?" No.
+[2221] 2:07:09	No. Uh the the Mega AI
+[2222] 2:07:12	uh the spirit critter ripped up the Mega
+[2223] 2:07:15	AI out of the Sigma.
+[2224] 2:07:18	The Sigma had the was the one that had
+[2225] 2:07:20	their their crew bank basically uh
+[2226] 2:07:25	turned into something worse than dead.
+[2227] 2:07:36	So, so the Gemini is is that leadership
+[2228] 2:07:40	at the council,
+[2229] 2:07:42	okay, at the conclave.
+[2230] 2:07:44	They're fine.
+[2231] 2:07:50	Another Dolores Umbrage, but they're
+[2232] 2:07:52	fine.
+[2233] 2:08:06	And it's really not even the whole
+[2234] 2:08:09	spirit critter is not even aboard the
+[2235] 2:08:10	Gemini.
+[2236] 2:08:13	And you'll see how that works in book
+[2237] 2:08:15	three.
+[2238] 2:08:27	Okay.
+[2239] 2:08:35	one here.
+[2240] 2:09:00	Uh, mama asks, "Are you going to kill
+[2241] 2:09:03	off more favorite characters like like
+[2242] 2:09:05	Seara?"
+[2243] 2:09:08	Oh, any character can be killed off at
+[2244] 2:09:10	any time for any reason.
+[2245] 2:09:18	No character is safe in my universe.
+[2246] 2:09:22	None.
+[2247] 2:09:31	Oh, come on. CPM versus DO does. No, no
+[2248] 2:09:34	sad faces.
+[2249] 2:09:52	Mask of shai. I like Game of Thrones.
+[2250] 2:09:54	Yeah, we're not going to do this
+[2251] 2:09:55	gratuitously.
+[2252] 2:09:58	Uh we're not going to
+[2253] 2:10:01	to to do this gratuitously
+[2254] 2:10:04	uh as we kill off the characters.
+[2255] 2:10:07	Every character death is going to have a
+[2256] 2:10:09	significance. Okay. But
+[2257] 2:10:13	there is there is going to be character
+[2258] 2:10:15	deaths
+[2259] 2:10:17	and they really are going to be dead.
+[2260] 2:10:22	CPN versus DOSS. You made me sad with
+[2261] 2:10:24	that one.
+[2262] 2:10:31	Jack Ray, more pointless killoffs in 24.
+[2263] 2:10:34	No, we're not going to do any pointless
+[2264] 2:10:35	killoffs. No, we're not going to we're
+[2265] 2:10:37	not going to do this for the for the
+[2266] 2:10:38	purpose of reducing the cast. Okay. I
+[2267] 2:10:43	would just rather have the cast not be
+[2268] 2:10:45	there than a pointless killoff.
+[2269] 2:10:49	There is going to be a lot of death
+[2270] 2:10:52	in book three.
+[2271] 2:10:55	Um, but
+[2272] 2:11:04	uh, Mama says her surprise for him was
+[2273] 2:11:06	so precious. See, Lara had serious
+[2274] 2:11:10	kitsune vibes.
+[2275] 2:11:12	Yeah,
+[2276] 2:11:14	she did.
+[2277] 2:11:16	Um,
+[2278] 2:11:18	she was a great character. I loved her
+[2279] 2:11:20	as a character. I cry every time I
+[2280] 2:11:22	reread that scene.
+[2281] 2:11:28	That was the hardest character I ever
+[2282] 2:11:30	had to kill off.
+[2283] 2:11:33	Um, yeah. Uh, Carara 42716
+[2284] 2:11:39	was the most difficult character I ever
+[2285] 2:11:42	had to kill off. I had to kill her off
+[2286] 2:11:45	though.
+[2287] 2:11:47	She had to die for the story.
+[2288] 2:11:51	But it was also the most difficult scene
+[2289] 2:11:54	I've written.
+[2290] 2:12:04	Yeah.
+[2291] 2:12:07	Yeah. Yeah. That whole scene as my
+[2292] 2:12:09	producer said showed how callous the
+[2293] 2:12:13	other side is towards life even
+[2294] 2:12:16	mechanical life.
+[2295] 2:12:19	So that was an important thing to
+[2296] 2:12:21	communicate
+[2297] 2:12:23	in the story. So her death was
+[2298] 2:12:27	absolutely needed
+[2299] 2:12:30	but dang it was hard to write.
+[2300] 2:12:35	It was it was the toughest thing. I
+[2301] 2:12:37	mean, it was easy to write the words.
+[2302] 2:12:41	It was hard to edit.
+[2303] 2:12:48	Jack Ray likes like psychopath callous.
+[2304] 2:12:50	Yeah. Like psychopath callus. Yeah.
+[2305] 2:12:56	Yeah. Sociopath callus. Exactly.
+[2306] 2:12:59	Yeah. Psychopath is actually the better.
+[2307] 2:13:02	Yeah. No empathy at all. Yeah.
+[2308] 2:13:09	Uh, Mama says she was the only character
+[2309] 2:13:11	that made sense to be cut unawares
+[2310] 2:13:13	enough for that to happen to them. Yeah,
+[2311] 2:13:15	that's true. Yeah.
+[2312] 2:13:21	And she wasn't just a polyan charact
+[2313] 2:13:23	Paul polyiana character either,
+[2314] 2:13:27	you know, and that's what sort of made
+[2315] 2:13:28	her endearing
+[2316] 2:13:30	was
+[2317] 2:13:33	um
+[2318] 2:13:35	what made her so endearing as a
+[2319] 2:13:37	character was
+[2320] 2:13:39	she was ausive in her emotion,
+[2321] 2:13:44	but she also wasn't stupid.
+[2322] 2:13:50	If she liked you, she loved you. If she
+[2323] 2:13:53	disliked you, she hated you.
+[2324] 2:13:56	There was no middle ground with her.
+[2325] 2:14:01	She She had no pretenses.
+[2326] 2:14:04	She was not She was not doing She was
+[2327] 2:14:06	not into social nicities. She was not
+[2328] 2:14:09	into to She didn't care about image.
+[2329] 2:14:13	She had She was a character with
+[2330] 2:14:15	absolute integrity.
+[2331] 2:14:17	absolute uh integrity about who she
+[2332] 2:14:20	liked, who she didn't liked, and that
+[2333] 2:14:23	made her a genuine
+[2334] 2:14:27	um a genuine character.
+[2335] 2:14:36	Okay.
+[2336] 2:14:44	Uh, she says, "Mama says her affection
+[2337] 2:14:46	and interest in Pierre almost made me
+[2338] 2:14:48	suspicious at first." Well, and I can
+[2339] 2:14:50	understand that. I can absolutely
+[2340] 2:14:51	understand that. But that's cool, too.
+[2341] 2:14:54	That's cool, too, cuz you know, you
+[2342] 2:14:56	don't know who you can trust yet. You
+[2343] 2:14:59	know, maybe she was a double agent. You
+[2344] 2:15:01	don't know.
+[2345] 2:15:03	So,
+[2346] 2:15:06	uh I think I think that's um that's
+[2347] 2:15:09	really important here. Uh hey, Shabbat
+[2348] 2:15:12	shalom. Uh we're not taking any any
+[2349] 2:15:15	archaeology uh questions on the Bible
+[2350] 2:15:18	tonight. Okay. Uh we're not that's not
+[2351] 2:15:22	the purpose of this live stream. This
+[2352] 2:15:24	purpose of this particular live stream
+[2353] 2:15:26	is about the War of the Gods
+[2354] 2:15:29	uh series of science fiction books.
+[2355] 2:15:31	Okay. So if you want to ask those
+[2356] 2:15:34	questions, please reserve them for for f
+[2357] 2:15:36	the Friday live stream,
+[2358] 2:15:41	but feel free to ask them Friday.
+[2359] 2:15:47	Mama says, "But once you realize she
+[2360] 2:15:49	100% means it and what you say is what
+[2361] 2:15:51	you get with her, she really became
+[2362] 2:15:54	truly delightful." Yes.
+[2363] 2:15:56	Yes. Yes. He is truly delightful.
+[2364] 2:16:09	Notice I didn't say was
+[2365] 2:16:13	spoiler.
+[2366] 2:16:19	Okay.
+[2367] 2:16:29	And then you killed her. Yes, exactly.
+[2368] 2:16:33	Yes, I did.
+[2369] 2:16:43	Uh, Jack Ray. Okay, here's the thing for
+[2370] 2:16:46	me. I got stuck not far in on the first
+[2371] 2:16:48	book. I had a hard time getting past the
+[2372] 2:16:50	hump of a character in that space camp
+[2373] 2:16:53	setting. It was depressing me.
+[2374] 2:16:56	Oh, so you didn't make it past chapter
+[2375] 2:16:58	three.
+[2376] 2:17:00	Oh, that's when things are just starting
+[2377] 2:17:02	to get interesting.
+[2378] 2:17:04	Uh, Jack, depressing things make me
+[2379] 2:17:06	stop.
+[2380] 2:17:09	Yeah, it's not a feel-good book. Um, but
+[2381] 2:17:13	it is a book where he overcomes. He
+[2382] 2:17:16	triumphs.
+[2383] 2:17:17	The whole purpose of the whole theme of
+[2384] 2:17:22	Requary of the Dead is that personal
+[2385] 2:17:26	redemption requires perseverance.
+[2386] 2:17:30	So yeah,
+[2387] 2:17:33	CPM versus N. That punch was a feel-good
+[2388] 2:17:36	moment.
+[2389] 2:17:38	Oh, was it?
+[2390] 2:17:41	I still I still love Czech's rolling
+[2391] 2:17:43	pin.
+[2392] 2:17:51	Mama says to Jack, "I get that, but it
+[2393] 2:17:54	gets so much better."
+[2394] 2:17:57	Hey, I love Czechov's rolling pin.
+[2395] 2:18:00	That's absolutely ador's rolling pin.
+[2396] 2:18:08	That's the turning point in the novel.
+[2397] 2:18:12	Yeah, he's kind of a punching bag right
+[2398] 2:18:15	up until Czechov's rolling pin. Uh, if
+[2399] 2:18:18	you're not familiar with the term
+[2400] 2:18:20	Czechov's gun,
+[2401] 2:18:22	uh, Czechov's gun is a literary device
+[2402] 2:18:25	where if you introduce a gun to the
+[2403] 2:18:28	story, you have to use it by the end of
+[2404] 2:18:31	the work.
+[2405] 2:18:33	Uh, and it comes out of a play, you
+[2406] 2:18:35	know, and the adage is you introduce a a
+[2407] 2:18:38	gun at the beginning of a play, it has
+[2408] 2:18:40	to be used by act three
+[2409] 2:18:42	because plays are generally three acts.
+[2410] 2:18:48	So, we have a check offs rolling pin in
+[2411] 2:18:51	book one and it changes everything.
+[2412] 2:19:01	Mama says, "Yeah, the rolling pin moment
+[2413] 2:19:04	was so surprising. It made it clear that
+[2414] 2:19:06	Pier had reached a critical point in his
+[2415] 2:19:09	decision making. He became a man of
+[2416] 2:19:11	action."
+[2417] 2:19:14	CBN versus. And boy was it good.
+[2418] 2:19:18	Best use of a rolling pin in a novel.
+[2419] 2:19:27	[Laughter]
+[2420] 2:19:30	I love roll the rolling pin scene.
+[2421] 2:19:35	Very satisfying. Oh yeah, it was very
+[2422] 2:19:38	satisfying.
+[2423] 2:19:40	[Laughter]
+[2424] 2:19:45	Even Alfred Reader loved the rolling pin
+[2425] 2:19:48	scene. Was one of her favorite scenes.
+[2426] 2:20:03	He was mad as hell and he wasn't going
+[2427] 2:20:05	to take it anymore.
+[2428] 2:20:09	And it had just that right nobody feel.
+[2429] 2:20:21	Alpha reader says, "I was so angry that
+[2430] 2:20:24	he let Maddie dump his food. I was like,
+[2431] 2:20:26	"Get a spine pier." And then I yelled,
+[2432] 2:20:29	"Yes." David was in the other room,
+[2433] 2:20:31	poked his head around and said, "What?"
+[2434] 2:20:39	We also have a Czechov's gun, too. But
+[2435] 2:20:41	the Czechov's rolling pin is super
+[2436] 2:20:44	satisfying.
+[2437] 2:20:51	Mama laughing rolling on the floor.
+[2438] 2:20:59	Good times. Good times.
+[2439] 2:21:06	Okay, so
+[2440] 2:21:10	here
+[2441] 2:21:14	we didn't miss any questions here.
+[2442] 2:21:21	Yeah, we're taking all of them. All of
+[2443] 2:21:23	them. So, I'm just just making sure I
+[2444] 2:21:25	didn't miss any.
+[2445] 2:21:43	Oh, yeah. What What time stamp was that?
+[2446] 2:21:51	Okay, I did miss that.
+[2447] 2:21:53	8 what?
+[2448] 2:21:55	859. Okay,
+[2449] 2:21:59	that's just a 5-second question. Yeah,
+[2450] 2:22:05	but he isn't though. He's not that tall.
+[2451] 2:22:11	I know he feels tall, but he isn't.
+[2452] 2:22:18	5'4.
+[2453] 2:22:21	You're 5'4. Yes.
+[2454] 2:22:26	CPM versus DOS. How tall is Pier again?
+[2455] 2:22:29	He's 5'4 in.
+[2456] 2:22:33	Uh
+[2457] 2:22:36	uh I never said he was over a tail of 6
+[2458] 2:22:38	feet. He's 5'4 in.
+[2459] 2:22:41	He is the same height as my grandfather.
+[2460] 2:22:44	That's how I remember it.
+[2461] 2:23:09	Uh
+[2462] 2:23:16	yeah, I I said that that we haven't come
+[2463] 2:23:18	up to that. Amal says, "I thought you
+[2464] 2:23:20	said he was tall and skinny." No, I said
+[2465] 2:23:21	he was skinny.
+[2466] 2:23:23	I said he was a bag, bag of bones.
+[2467] 2:23:28	Okay. He's very light and he's very
+[2468] 2:23:31	undernourished. That's why he never grew
+[2469] 2:23:33	very tall.
+[2470] 2:23:36	Uh yeah. Uh Neva's uh Alfers got it
+[2471] 2:23:41	right here. Neva is 7 feet tall. Hans is
+[2472] 2:23:44	six.
+[2473] 2:23:50	Um
+[2474] 2:23:52	Gerard is 4 foot eight.
+[2475] 2:23:55	Okay. Gerard is 4 foot eight.
+[2476] 2:24:01	Let's see him versus Doss.
+[2477] 2:24:04	He's a small king, as they say.
+[2478] 2:24:08	Asai like an ancient Egyptian. Yeah.
+[2479] 2:24:11	Well, yeah. Um
+[2480] 2:24:14	Yeah. Uh Alfred thinks he should be
+[2481] 2:24:16	taller. He's not taller. He he's 5'4.
+[2482] 2:24:18	He's the same height as my grandfather.
+[2483] 2:24:21	Um
+[2484] 2:24:23	in many ways, I picture him
+[2485] 2:24:26	physically like my grandfather.
+[2486] 2:24:29	Okay. Uh my grandfather was short, very
+[2487] 2:24:35	slender, a bag, as I said, a bag of
+[2488] 2:24:37	bones. My grandfather was a bag of
+[2489] 2:24:39	bones. He was very slight. He was very
+[2490] 2:24:43	um he was a peckish eater,
+[2491] 2:24:46	you know, just like just like Pierre.
+[2492] 2:24:49	So,
+[2493] 2:24:52	um
+[2494] 2:24:58	this tab here.
+[2495] 2:25:08	So it's uh
+[2496] 2:25:13	so you know that's that's that's how I I
+[2497] 2:25:16	pictured Pierre was he was just like my
+[2498] 2:25:19	grandfather
+[2499] 2:25:22	um which was as I say short as I say 5'4
+[2500] 2:25:28	standy blonde
+[2501] 2:25:31	um
+[2502] 2:25:33	wore spectacles my my grandfather didn't
+[2503] 2:25:35	wear spectacles but um But a bag of
+[2504] 2:25:38	bones. A bag of bones. Really thin,
+[2505] 2:25:42	really lightweight.
+[2506] 2:25:44	Um, could be strong, you know, wiry. He
+[2507] 2:25:48	was wiry.
+[2508] 2:25:54	Um, mama says Milo is 5'4, so I'm indeed
+[2509] 2:25:58	in familiar with how short that is. She
+[2510] 2:26:01	complains about it a lot.
+[2511] 2:26:08	Uh, Alfred Reader says, "But that's part
+[2512] 2:26:10	of what makes it funny when he's on the
+[2513] 2:26:12	mechanical ship surrounded by a bunch of
+[2514] 2:26:14	classy Amazon. He's a cute little human
+[2515] 2:26:18	they squee over."
+[2516] 2:26:21	Yes, he is.
+[2517] 2:26:28	Uh, CPN versus DOSS. I know this
+[2518] 2:26:30	exactly. I have visited places where 5'1
+[2519] 2:26:33	is tall. So, I must be some literal
+[2520] 2:26:36	giant to them.
+[2521] 2:26:39	Yeah. Well, I mean, look, if you are if
+[2522] 2:26:42	you're a guy
+[2523] 2:26:43	or gal who doesn't have a good appetite,
+[2524] 2:26:48	okay, you were not born with a strong
+[2525] 2:26:50	appetite. You have difficulty eating.
+[2526] 2:26:54	Um, you know, most of us in the west
+[2527] 2:26:57	overeat, but there are some people out
+[2528] 2:26:59	there that undereat
+[2529] 2:27:02	and Peter was one of those.
+[2530] 2:27:07	Um,
+[2531] 2:27:09	he was just one of those guys that
+[2532] 2:27:10	underate, never had a good appetite,
+[2533] 2:27:14	never ate a lot of meat.
+[2534] 2:27:17	So he just
+[2535] 2:27:20	he just didn't grow in the same way that
+[2536] 2:27:24	a lot of people in the west do.
+[2537] 2:27:30	Um Obama says I think I must have read
+[2538] 2:27:32	misread he was 6'4 instead of 5'4. Uh it
+[2539] 2:27:35	was never stated in the books. It's
+[2540] 2:27:37	never stated in the books how tall he
+[2541] 2:27:39	is.
+[2542] 2:27:41	Okay. Um, I just happen to know because
+[2543] 2:27:44	of his background files how tall he is.
+[2544] 2:27:46	Okay, so that's something that that was
+[2545] 2:27:49	in my that's in my background
+[2546] 2:27:51	information for the characters. Um,
+[2547] 2:27:54	Alicia's also 5'4, by the way. She's the
+[2548] 2:27:57	same height.
+[2549] 2:28:01	So, both him and Alicia are the same
+[2550] 2:28:04	height. They're both 5'4.
+[2551] 2:28:12	Yeah, he's taller than Gerard Gerard.
+[2552] 2:28:14	Gerard's 48.
+[2553] 2:28:17	Um, we don't tell you how how tall
+[2554] 2:28:19	Gerard is in book one, but we're told
+[2555] 2:28:23	that we're you're told that that Pier is
+[2556] 2:28:26	half a foot taller than Gerard.
+[2557] 2:28:34	Mama says, "Okay, now it makes more
+[2558] 2:28:36	sense that she was able to carry him all
+[2559] 2:28:39	that distance." Yeah, that's because he
+[2560] 2:28:41	only weighs about 110 lb.
+[2561] 2:28:44	[Laughter]
+[2562] 2:28:46	I mean, Alicia could bench press can can
+[2563] 2:28:50	can deadlift 300 lb.
+[2564] 2:28:54	She can deadlift 300 lb.
+[2565] 2:28:58	You know, Pier is only about 110.
+[2566] 2:29:04	It's like carrying a sack of potatoes.
+[2567] 2:29:18	Alpha reader says, "Hans and the others
+[2568] 2:29:20	come from Nordic stock, so they're six
+[2569] 2:29:22	foot with no problem. Melissa's on the
+[2570] 2:29:24	tall side." Yeah, she is.
+[2571] 2:29:26	Mama says, "I put it down to the fact
+[2572] 2:29:28	that she was extremely well trained and
+[2573] 2:29:30	strong at the time and he was extremely
+[2574] 2:29:32	skinny." Yeah. Yeah, it is. Um there
+[2575] 2:29:35	roughly the same height. He only weighs
+[2576] 2:29:37	about 110 lbs. Uh as I said, he's a bag
+[2577] 2:29:41	of bones. He's not he's doesn't have a
+[2578] 2:29:44	lot of body density to him.
+[2579] 2:29:47	And she is very strong.
+[2580] 2:29:50	Um
+[2581] 2:29:52	one of Alicia's hobbies was uh
+[2582] 2:29:54	weightlifting.
+[2583] 2:29:56	So for her, she she she could easily she
+[2584] 2:29:59	could easily um um deadlift 300 lb. You
+[2585] 2:30:03	know, it was that's so she would have no
+[2586] 2:30:07	problem picking them up fireman style
+[2587] 2:30:10	and and just you know
+[2588] 2:30:18	Yeah. Um Mama says sheer bloody nis.
+[2589] 2:30:21	Yeah. And that's the way she trained.
+[2590] 2:30:23	Alicia was used sheer bloody mindousness
+[2591] 2:30:27	to train hard.
+[2592] 2:30:34	Molly says, "I believe that's how you
+[2593] 2:30:36	put it." Yeah, it is how we put it. Uh,
+[2594] 2:30:38	I love that phrase.
+[2595] 2:30:43	Steen versus Doss. My family is mostly
+[2596] 2:30:46	Dan and Northern Italians.
+[2597] 2:30:49	So, I'm in that tall gene pool for sure.
+[2598] 2:30:52	The shortest woman in our family is 6'0.
+[2599] 2:30:55	Okay. Um
+[2600] 2:30:58	I'm 5 foot six. Um
+[2601] 2:31:02	but I am
+[2602] 2:31:05	I'm tall for my mother's side of the
+[2603] 2:31:06	family. I'm short for my dad's side of
+[2604] 2:31:09	the family. Okay.
+[2605] 2:31:13	So, you know,
+[2606] 2:31:15	my mother's side, the men were generally
+[2607] 2:31:18	under 5'6. Almost all of them were under
+[2608] 2:31:21	5'6.
+[2609] 2:31:22	On my dad's side of the family, most of
+[2610] 2:31:25	them were six feet or taller.
+[2611] 2:31:28	So,
+[2612] 2:31:36	Alpha Reader says, "Because for Alicia,
+[2613] 2:31:38	she was on the battlefields and needed
+[2614] 2:31:40	to carry both patients and machines when
+[2615] 2:31:42	the battle lines move too close." Yeah.
+[2616] 2:31:50	Mama says 5 foot eight here. Tall for my
+[2617] 2:31:52	mom's side, short for my dad's side.
+[2618] 2:31:55	Yeah. Yeah. Um you're taller than I am.
+[2619] 2:32:00	And you're definitely taller than
+[2620] 2:32:01	Pierre.
+[2621] 2:32:07	Okay. Um, but yeah, he's he's short,
+[2622] 2:32:11	he's light, he's wiry,
+[2623] 2:32:15	whereas Alicia is short, stocky, and
+[2624] 2:32:19	strong.
+[2625] 2:32:21	She's got a lot of muscle mass. A lot of
+[2626] 2:32:24	muscle mass.
+[2627] 2:32:28	And she eats regularly. In fact, she
+[2628] 2:32:30	she's a bit of the other side of the
+[2629] 2:32:33	coin where where Pierre undereats, she
+[2630] 2:32:35	she overeats.
+[2631] 2:32:42	Yeah, it's a it's a it's a military
+[2632] 2:32:44	thing, too, where you eat where you can.
+[2633] 2:32:46	Yeah, absolutely. Alpha readers got it
+[2634] 2:32:48	right there. You know, that's he eats
+[2635] 2:32:51	because food's not always going to be
+[2636] 2:32:53	available.
+[2637] 2:32:54	Mama says, "Seriously, it affects my
+[2638] 2:32:56	impression of him. affects my impression
+[2639] 2:32:58	so much knowing this now. Cool. We
+[2640] 2:33:02	allude to it. We allude to it, but we
+[2641] 2:33:04	never explicitly state his height.
+[2642] 2:33:07	Um, we do refer to Gerard being really
+[2643] 2:33:10	short. Okay.
+[2644] 2:33:13	And I've met a lot of uh of Egyptians
+[2645] 2:33:16	that are in that sort of under five foot
+[2646] 2:33:19	range. So,
+[2647] 2:33:28	Mama says is standing up to men much
+[2648] 2:33:30	taller than him like like the soldier
+[2649] 2:33:32	types. And he explains what I thought
+[2650] 2:33:35	was a bit of a chip on his shoulder
+[2651] 2:33:36	about jocks.
+[2652] 2:33:40	Well, um he had does have a he does have
+[2653] 2:33:43	a chip on his shoulder. Okay.
+[2654] 2:33:46	Um but um you know he's been used to
+[2655] 2:33:49	being pushed around too and finally just
+[2656] 2:33:52	he had had enough.
+[2657] 2:33:55	Mascus shy to keep muscle you got to
+[2658] 2:33:57	keep eating all the time. It is Yeah. Uh
+[2659] 2:34:00	like Olympians Olympians will eat like
+[2660] 2:34:02	four or 5,000 calories a day, you know.
+[2661] 2:34:05	And they're not fat. Olympians aren't
+[2662] 2:34:07	fat. Of course, the problem for
+[2663] 2:34:09	Olympians is once they stop training,
+[2664] 2:34:11	they continue to eat that way. But
+[2665] 2:34:15	if you're in that mode of hard training,
+[2666] 2:34:18	it's not uncommon to eat 4 or 5,000
+[2667] 2:34:21	calories a day and not gain any
+[2668] 2:34:25	significant fat.
+[2669] 2:34:27	You're just cuz you're burning it all.
+[2670] 2:34:31	And Alicia is a little bit like that. Um
+[2671] 2:34:35	where she does work out very hard. She's
+[2672] 2:34:39	also though
+[2673] 2:34:42	does take that a bit far at times. So
+[2674] 2:34:44	she does struggle with her weight.
+[2675] 2:34:49	But again, that's part of her background
+[2676] 2:34:50	information. It's part of the of the
+[2677] 2:34:54	world building uh behind these
+[2678] 2:34:56	characters.
+[2679] 2:35:12	Um, Alpha Reader says, "But Pier knows
+[2680] 2:35:15	what battles he can win and which ones
+[2681] 2:35:17	he can't, but with a rolling pin scene,
+[2682] 2:35:19	if he lost, the entire colony would die,
+[2683] 2:35:22	so losing wasn't an option."
+[2684] 2:35:25	Mama says, "Yeah, I had that desperate
+[2685] 2:35:27	fe." It had that desperate feeling.
+[2686] 2:35:32	Okay, now the next one here, question
+[2687] 2:35:35	coming up. Find a question.
+[2688] 2:35:41	9 something.
+[2689] 2:35:46	Yes. Uh 10:07 is the next think.
+[2690] 2:35:50	Here.
+[2691] 2:35:57	Okay. Mama asks,
+[2692] 2:36:00	"Are the gold pads on Neva's face,
+[2693] 2:36:02	collar, and wrists merely to
+[2694] 2:36:03	differentiate herself from humans, or do
+[2695] 2:36:06	they have a use?" They have a use.
+[2696] 2:36:10	They are charging and electrical pads.
+[2697] 2:36:14	Okay. Uh they're they're they are used
+[2698] 2:36:18	for connecting uh their data ports and
+[2699] 2:36:22	they are um and they're used for for
+[2700] 2:36:26	recharging. Okay. So,
+[2701] 2:36:30	um they typically tend to use the ones
+[2702] 2:36:33	on their wrists for recharging.
+[2703] 2:36:35	So, uh they will plug themselves into
+[2704] 2:36:39	the to the to the main um the main ship
+[2705] 2:36:44	uh power supply with with a wire. Okay.
+[2706] 2:36:48	And those attach to the wrists. They
+[2707] 2:36:50	also have gold h uh uh gold um uh
+[2708] 2:36:55	connectiv uh uh connectivity pads in
+[2709] 2:36:57	their palms as well. Okay. So
+[2710] 2:37:04	if they need a power to to supply power
+[2711] 2:37:07	for a drill for example, there's a
+[2712] 2:37:10	connector on the drill. All they have to
+[2713] 2:37:12	do is grab the drill and the power from
+[2714] 2:37:15	their their core batteries will power
+[2715] 2:37:17	the drill.
+[2716] 2:37:19	Okay. So,
+[2717] 2:37:22	um, and this is how this is how Neva
+[2718] 2:37:27	powers the Croto.
+[2719] 2:37:29	The Croto sword is the power sub pads on
+[2720] 2:37:33	her hand connect to the handle of the
+[2721] 2:37:36	Cro Croto and provide the Croto with
+[2722] 2:37:39	power.
+[2723] 2:37:42	So
+[2724] 2:37:43	yeah, they're basically they're
+[2725] 2:37:45	basically a com a combination of data
+[2726] 2:37:47	port and and power connectors. Okay,
+[2727] 2:37:51	kind of similar to what we would do with
+[2728] 2:37:52	USB um USB connectors today.
+[2729] 2:38:01	Well, the ones on the face would
+[2730] 2:38:03	actually be for actually um goggles
+[2731] 2:38:07	or like VR goggles.
+[2732] 2:38:12	So this this is something for like for
+[2733] 2:38:16	example for gunnery teams.
+[2734] 2:38:20	So a gunnery team would be wearing a
+[2735] 2:38:22	special helmet that connects to those
+[2736] 2:38:25	pads to feed data
+[2737] 2:38:29	into them for for aiming, targeting and
+[2738] 2:38:32	trajectory.
+[2739] 2:38:39	or in the case of a doctor, a doctor
+[2740] 2:38:40	might have a scope.
+[2741] 2:38:43	That that's a that's a that's a facial
+[2742] 2:38:45	attachment.
+[2743] 2:38:52	Yeah. So, that's that's the purpose of
+[2744] 2:38:53	the gold pads. They're data ports and
+[2745] 2:38:55	and powering uh um
+[2746] 2:38:58	um connectors.
+[2747] 2:39:04	And that's how she plugs herself into
+[2748] 2:39:05	like the landing vessel at the beginning
+[2749] 2:39:07	of the book. That's how she does her
+[2750] 2:39:10	resting recharge um cycle. So
+[2751] 2:39:18	So uh yeah, that's that's the origins of
+[2752] 2:39:21	that.
+[2753] 2:39:26	One is
+[2754] 2:39:30	that one ready.
+[2755] 2:39:40	Harry Stark asks, "Has any third party
+[2756] 2:39:44	organization tried to license the
+[2757] 2:39:45	characters of the book for
+[2758] 2:39:46	merchandising?" Nope.
+[2759] 2:39:53	Yeah, those people aren't aware we exist
+[2760] 2:39:55	yet.
+[2761] 2:39:57	Uh really the book hasn't sold enough
+[2762] 2:40:00	for it to draw any attention from like
+[2763] 2:40:03	movies or movie studios or third parties
+[2764] 2:40:09	or even translators or something. Okay.
+[2765] 2:40:13	Um
+[2766] 2:40:15	and if you want that stuff, we really
+[2767] 2:40:17	need reviews of the book. Okay. So, um
+[2768] 2:40:22	and particularly book number one. Uh
+[2769] 2:40:24	we've gotten 18 reviews on Amazon, but
+[2770] 2:40:27	uh we're not anywhere close to getting
+[2771] 2:40:31	that traction to to draw that kind of
+[2772] 2:40:34	attention. So if you like the book,
+[2773] 2:40:38	please leave a review on Amazon. Um, and
+[2774] 2:40:41	if you if you've read both books, you
+[2775] 2:40:44	know, please leave a review of both
+[2776] 2:40:46	books because um, you know, even and and
+[2777] 2:40:50	don't just leave stars. Leave a couple
+[2778] 2:40:52	words. Okay. Uh, one sentence is
+[2779] 2:40:57	is more interaction
+[2780] 2:41:01	than um
+[2781] 2:41:04	um
+[2782] 2:41:07	uh that that Amazon needs to figure out
+[2783] 2:41:10	that other people might be interested.
+[2784] 2:41:14	Okay. Uh, from what we can tell, the
+[2785] 2:41:17	threshold that Amazon uses to basically
+[2786] 2:41:21	determine if a book is getting traction
+[2787] 2:41:26	is 50 reviews. If a book gets 50
+[2788] 2:41:29	reviews,
+[2789] 2:41:31	the next 1,500 or easier. Okay. It's
+[2790] 2:41:36	getting those first 50 reviews that's
+[2791] 2:41:38	really, really difficult.
+[2792] 2:41:43	Yeah. Yeah. Amazon. Amazon does not put
+[2793] 2:41:46	books like this out that you might like
+[2794] 2:41:50	unless a you pay for that advertising
+[2795] 2:41:53	or b it gets enough reviews that Amazon
+[2796] 2:41:56	thinks other people might like it. But
+[2797] 2:41:59	if it doesn't get that 50 threshold, it
+[2798] 2:42:02	just sort of is under the radar. It's
+[2799] 2:42:05	invisible.
+[2800] 2:42:07	So
+[2801] 2:42:10	a third parties are not going to look at
+[2802] 2:42:12	it until it gets a certain threshold
+[2803] 2:42:15	and and we really need that sort of 50
+[2804] 2:42:19	review threshold for other parties to
+[2805] 2:42:21	start noticing it. Okay? So again, if
+[2806] 2:42:25	you've read it, please leave a review.
+[2807] 2:42:28	And again, not just stars, but add a
+[2808] 2:42:31	sentence or two or three or 10
+[2809] 2:42:34	paragraphs if you so feel so inclined,
+[2810] 2:42:36	but a couple sentences is fine,
+[2811] 2:42:40	but just give it a good star rating and
+[2812] 2:42:43	a few sentences and that's good for a
+[2813] 2:42:46	review.
+[2814] 2:42:48	So, we really appreciate and thank all
+[2815] 2:42:49	of you who have done reviews on Amazon.
+[2816] 2:42:52	It really does help. We ask you to uh
+[2817] 2:42:55	all those who haven't so far, please do
+[2818] 2:42:57	so.
+[2819] 2:42:59	Okay.
+[2820] 2:43:15	Again, off the base asked the question,
+[2821] 2:43:17	okay, honest question about the book
+[2822] 2:43:18	since I haven't read it yet. Really? You
+[2823] 2:43:22	haven't read it? I'm hurt. I'm wounded.
+[2824] 2:43:25	Wounded wounded. I'll never recover.
+[2825] 2:43:28	Wounded. Well, I'll recover.
+[2826] 2:43:35	>> What drove you to write the book series
+[2827] 2:43:37	and what's your goal overall with it?
+[2828] 2:43:41	He says, I said yes.
+[2829] 2:43:47	I'm just teasing. I'm just teasing.
+[2830] 2:43:51	[Laughter]
+[2831] 2:43:56	Okay, now I got to find the question
+[2832] 2:43:57	again. Uh,
+[2833] 2:44:03	where did it go now?
+[2834] 2:44:08	Okay.
+[2835] 2:44:10	Um, what drove you to write the book
+[2836] 2:44:13	series and what's your goal overall with
+[2837] 2:44:15	it? Okay,
+[2838] 2:44:17	that's sort of changed. Uh the first
+[2839] 2:44:20	book, Reququery of the Dead,
+[2840] 2:44:24	the original goal of the book was to
+[2841] 2:44:28	write a science fiction novel that
+[2842] 2:44:31	taught people the discipline of
+[2843] 2:44:34	archaeology.
+[2844] 2:44:36	Okay? So they could read this and learn
+[2845] 2:44:40	all about archaeology and how
+[2846] 2:44:42	archaeology is done in a fictional
+[2847] 2:44:45	setting that is enjoyable and it's not a
+[2848] 2:44:47	dry textbook. All right. So that is
+[2849] 2:44:52	um that's that was the goal of the first
+[2850] 2:44:54	one is to make a fun space adventure
+[2851] 2:44:57	that showcased archaeology. Okay. And
+[2852] 2:45:00	inspired people hopefully to become
+[2853] 2:45:02	someday archaeologists themselves.
+[2854] 2:45:04	But
+[2855] 2:45:07	as I wrote that book and I should
+[2856] 2:45:09	probably show the
+[2857] 2:45:11	show this the other one. There's an
+[2858] 2:45:12	inside cover on this one too. Ah okay.
+[2859] 2:45:20	So, um, as I wrote the first one, I
+[2860] 2:45:25	thought this is a lot more expansive
+[2861] 2:45:30	that there's a mythos here that can be
+[2862] 2:45:32	deeply deeply explored.
+[2863] 2:45:36	So
+[2864] 2:45:40	the goal overall just sort of changed to
+[2865] 2:45:43	from okay let's introduce people to
+[2866] 2:45:45	archaeology to let's start writing deep
+[2867] 2:45:50	compelling
+[2868] 2:45:52	beautiful stories.
+[2869] 2:45:55	Okay. So it became more of a the goal
+[2870] 2:45:58	was to tell a great story.
+[2871] 2:46:07	So I started thinking about as I was
+[2872] 2:46:09	writing book one these interesting
+[2873] 2:46:11	characters
+[2874] 2:46:13	that
+[2875] 2:46:15	that would add to the overall mythos of
+[2876] 2:46:20	the ancient near east.
+[2877] 2:46:23	So,
+[2878] 2:46:28	so it is it's
+[2879] 2:46:32	so what drove me originally to write the
+[2880] 2:46:34	book series was this this idea that I
+[2881] 2:46:37	could teach archaeology through fiction,
+[2882] 2:46:40	but it's become more than that. It's
+[2883] 2:46:42	become that we've we've started off
+[2884] 2:46:46	teaching archaeology through fiction,
+[2885] 2:46:48	but then it expands to to this sort of
+[2886] 2:46:54	open world of of fantastic storytelling
+[2887] 2:46:58	and storytelling with an ancient with
+[2888] 2:47:01	ancient primordial gods at the center of
+[2889] 2:47:04	the myth.
+[2890] 2:47:06	So,
+[2891] 2:47:08	so the goal has changed overall. As I
+[2892] 2:47:12	said, it's like, okay, now that I've
+[2893] 2:47:14	started this, I want to see out see out
+[2894] 2:47:16	the story, see where the story takes us.
+[2895] 2:47:19	I because I'm curious. I'm curious to
+[2896] 2:47:22	find out what happens.
+[2897] 2:47:24	So,
+[2898] 2:47:27	so yeah, it was um
+[2899] 2:47:31	um so my goals on this have changed over
+[2900] 2:47:33	time, but but that's what drove me to
+[2901] 2:47:36	write the first book was I had this idea
+[2902] 2:47:39	for teaching archaeology through
+[2903] 2:47:40	fiction, but it's morphed into, as I
+[2904] 2:47:43	said, this this idea of of of cosmic
+[2905] 2:47:48	dread,
+[2906] 2:47:49	uh the chaos monsters, talking about the
+[2907] 2:47:52	chaos monsters and the primordial god.
+[2908] 2:47:54	gods and and how that ancient
+[2909] 2:47:57	Neareastern mythology sort of plays out
+[2910] 2:48:00	in this bigger fictional universe. So,
+[2911] 2:48:06	so as we do that, we're going to try to
+[2912] 2:48:08	explore deep themes, deep themes and and
+[2913] 2:48:14	various um aspects of those themes as we
+[2914] 2:48:18	do this
+[2915] 2:48:21	like in book two. Book two is not really
+[2916] 2:48:25	about androids.
+[2917] 2:48:27	Okay. Yes, the whole book is about
+[2918] 2:48:29	androids.
+[2919] 2:48:31	Every character in there except
+[2920] 2:48:34	Pierre and Alicia is an android.
+[2921] 2:48:38	Okay.
+[2922] 2:48:41	Okay. Vladimir al the few few people in
+[2923] 2:48:44	chapter one are also not androids. But
+[2924] 2:48:46	it's mostly about androids.
+[2925] 2:48:48	But the androids are a metaphor. it the
+[2926] 2:48:52	metaph it's it's basically the whole
+[2927] 2:48:55	theme of the second book of all the
+[2928] 2:48:59	stars as angels is that children become
+[2929] 2:49:02	like their parents
+[2930] 2:49:05	that's the theme uh of the second book
+[2931] 2:49:09	it really doesn't have anything to do
+[2932] 2:49:11	with androids it has that it's it's more
+[2933] 2:49:14	of a of a saga of growing up and
+[2934] 2:49:16	discovering who you are as a child.
+[2935] 2:49:21	Okay. So,
+[2936] 2:49:25	um
+[2937] 2:49:30	uh actually Gandalf, if you can ask that
+[2938] 2:49:32	question. That question is fine for
+[2939] 2:49:33	today. Um we'll get to that one.
+[2940] 2:49:37	But yeah, that's that's the whole point
+[2941] 2:49:38	of this. This is about this is a this is
+[2942] 2:49:41	a a a book about growing up
+[2943] 2:49:45	and discovering who you are in relation
+[2944] 2:49:48	to your parents.
+[2945] 2:49:51	So, and I think that that makes the
+[2946] 2:49:55	second book very very poignant because
+[2947] 2:49:58	it's a universal theme. We all have to
+[2948] 2:50:01	discover that. We all discover on our
+[2949] 2:50:04	own what happens when we grow up and we
+[2950] 2:50:07	discover, hey, I'm not that much
+[2951] 2:50:10	different than my parents.
+[2952] 2:50:13	So,
+[2953] 2:50:16	um, so that's what we've kind of gotten
+[2954] 2:50:18	into now is we started off with this
+[2955] 2:50:20	sort of educational goal. Um, basically
+[2956] 2:50:24	a fun an edutainment gold and we've now
+[2957] 2:50:27	gone into, okay, we're into these this
+[2958] 2:50:31	these deeper themes and deeper
+[2959] 2:50:33	understandings and and and
+[2960] 2:50:37	what it means for us as human beings.
+[2961] 2:50:42	So, uh, hope that helps and I hope that
+[2962] 2:50:44	answers that question.
+[2963] 2:50:51	Next one here.
+[2964] 2:51:28	Okay, great question here from Mama.
+[2965] 2:51:31	Uh, did you get the idea for androids
+[2966] 2:51:33	needing more energy to stand, not
+[2967] 2:51:35	walking, just standing than sit from
+[2968] 2:51:38	modern current robotics? Current
+[2969] 2:51:40	robotics seems to have so much issues
+[2970] 2:51:41	with maintaining balance.
+[2971] 2:51:45	Um
+[2972] 2:51:47	no I actually got this from a different
+[2973] 2:51:49	thing altogether
+[2974] 2:51:51	which is that um that humans require
+[2975] 2:51:55	more energy standing than sitting.
+[2976] 2:51:58	Uh
+[2977] 2:51:59	frankly people get tired when they
+[2978] 2:52:01	stand. Why do they tired when they
+[2979] 2:52:04	stand? Because it consumes more energy
+[2980] 2:52:06	than when they sit.
+[2981] 2:52:09	So it's just this is just biomechanics.
+[2982] 2:52:13	This is just biomechanics. You know, we
+[2983] 2:52:15	do uh we do as human beings consume more
+[2984] 2:52:20	energy standing than sitting.
+[2985] 2:52:26	It is actually an energyintensive
+[2986] 2:52:29	process to stand
+[2987] 2:52:34	and we are at a lower energy state as
+[2988] 2:52:36	human beings
+[2989] 2:52:39	when we uh when we sit than than when we
+[2990] 2:52:44	stand.
+[2991] 2:52:46	And I don't know about you, but after
+[2992] 2:52:48	standing for a couple hours, I'm pretty
+[2993] 2:52:50	tired. That just
+[2994] 2:52:58	Yeah, you actually get you actually you
+[2995] 2:53:01	actually get more tired from standing
+[2996] 2:53:03	than walking.
+[2997] 2:53:06	So So
+[2998] 2:53:09	it is an energy formula. It's absolutely
+[2999] 2:53:12	an energy formula.
+[3000] 2:53:14	And
+[3001] 2:53:18	um
+[3002] 2:53:22	so
+[3003] 2:53:26	so it is is something that's that's sort
+[3004] 2:53:29	of you know just just the biomechanics
+[3005] 2:53:31	of standing requires more energy.
+[3006] 2:53:35	So, it would make sense if you are a a
+[3007] 2:53:40	culture that's trying to conserve
+[3008] 2:53:41	energy, you would want to encourage more
+[3009] 2:53:45	sitting than standing.
+[3010] 2:53:53	Okay.
+[3011] 2:54:01	CPM versus DOSS. I get tired standing
+[3012] 2:54:03	faster. Yeah, I think we all do.
+[3013] 2:54:15	It says to Jack Ray, chapter one as
+[3014] 2:54:18	she's talking about relic of the dead,
+[3015] 2:54:20	professional rock bottom. Chapter two,
+[3016] 2:54:23	his personal rock bottom. Chapter three,
+[3017] 2:54:26	coming to terms essentially with his
+[3018] 2:54:28	exile.
+[3019] 2:54:30	Second he wakes up from his space nap,
+[3020] 2:54:33	it's game on. Absolutely.
+[3021] 2:54:36	Absolutely.
+[3022] 2:54:39	But that that that rock bottom is
+[3023] 2:54:41	important. Okay. That rock bottom
+[3024] 2:54:45	is formative of his wrong ideas.
+[3025] 2:54:49	Okay.
+[3026] 2:54:51	And the wrong idea that I mean every
+[3027] 2:54:53	every character has flaws. Every
+[3028] 2:54:56	character has wrong ideas.
+[3029] 2:54:59	And the wrong idea that Pierre carries
+[3030] 2:55:02	with them is
+[3031] 2:55:06	someone abuses him and he just has to
+[3032] 2:55:08	take it.
+[3033] 2:55:10	That's his wrong idea.
+[3034] 2:55:13	And that's the idea that has to change
+[3035] 2:55:15	in Pierre for him to ultimately get his
+[3036] 2:55:19	personal his redemption.
+[3037] 2:55:21	He has to come to terms with the fact
+[3038] 2:55:24	that people are going to continually
+[3039] 2:55:27	wrong him.
+[3040] 2:55:29	They're going to continue to take away
+[3041] 2:55:31	his discoveries. They're going to
+[3042] 2:55:34	continue
+[3043] 2:55:36	to abuse him.
+[3044] 2:55:39	But he doesn't have to be a passive
+[3045] 2:55:42	participant in that
+[3046] 2:55:47	gand. Dang, that's relatable.
+[3047] 2:55:51	Yeah, it is relatable. It is absolutely
+[3048] 2:55:54	relatable.
+[3049] 2:55:56	So,
+[3050] 2:55:59	so that's his story. That's Pierre's
+[3051] 2:56:02	story of being abused, taken advantage
+[3052] 2:56:05	of, his work stolen from him. And then
+[3053] 2:56:10	he finds a new way of working around
+[3054] 2:56:14	that.
+[3055] 2:56:16	And in finding that new way to work
+[3056] 2:56:18	around it, he triumphs.
+[3057] 2:56:23	He triumphs.
+[3058] 2:56:27	He saves the colony and wins the day.
+[3059] 2:56:32	But he has to come to that breaking
+[3060] 2:56:35	point where his false belief no longer
+[3061] 2:56:39	becomes tenable.
+[3062] 2:56:42	That false belief that he is he's being
+[3063] 2:56:45	stolen from and there's nothing he can
+[3064] 2:56:47	do about it.
+[3065] 2:56:53	And that's where he finds his grit.
+[3066] 2:56:56	That's where he finds his breakthrough.
+[3067] 2:57:02	And once he finds that breakthrough, all
+[3068] 2:57:04	the pieces of the puzzle of Glee fall
+[3069] 2:57:07	into place.
+[3070] 2:57:12	And that's what makes him his story so
+[3071] 2:57:16	compelling
+[3072] 2:57:19	is yeah people treat him like crap from
+[3073] 2:57:23	the beginning to end.
+[3074] 2:57:33	Mama says he has no more illusions as to
+[3075] 2:57:36	his prospects on earth and he learns
+[3076] 2:57:38	that what he personally has to do
+[3077] 2:57:39	differently as he goes forward in his
+[3078] 2:57:41	new world. Yeah. Yeah. It's not an easy
+[3079] 2:57:44	lesson for him. He has struggles in it.
+[3080] 2:57:48	But in doing so, he overcomes.
+[3081] 2:57:54	Mama Pier learns to overcome to persist.
+[3082] 2:57:57	Yeah. Exactly. Yeah.
+[3083] 2:58:03	Uh Jack Ray says, "Sounds a lot like the
+[3084] 2:58:05	Punisher comics, but uh less shooting."
+[3085] 2:58:08	Uh yeah, less shooting.
+[3086] 2:58:15	You want lots of gunfire. That'll be
+[3087] 2:58:18	book three.
+[3088] 2:58:24	A lot of gunfire in book three.
+[3089] 2:58:43	Mama says less graphicness too. Yeah.
+[3090] 2:58:59	John Wick in space. I hope. No, not
+[3091] 2:59:03	quite.
+[3092] 2:59:05	Not quite.
+[3093] 2:59:10	Okay, where were we here? Let's get back
+[3094] 2:59:12	to where we were in the questions.
+[3095] 2:59:18	Yeah, the Punisher comics were pretty
+[3096] 2:59:21	dark. Um, I was not a huge fan of The
+[3097] 2:59:24	Punisher.
+[3098] 3:00:10	Billbot problem.
+[3099] 3:00:18	Uh, Masashai. I wonder if he's talking
+[3100] 3:00:20	about the killbot problem here. I wonder
+[3101] 3:00:22	if that can be applied to other genres.
+[3102] 3:00:24	Maybe an alien kill problem or evil
+[3103] 3:00:26	government problem. It can be. Uh, the
+[3104] 3:00:28	killbot problem though is really
+[3105] 3:00:30	specific to AI. Um, you know, we've
+[3106] 3:00:34	we've sort of because of AI's and and
+[3107] 3:00:37	and robots close association with the
+[3108] 3:00:40	uncanny valley problem, it almost makes
+[3109] 3:00:43	the killbot problem unavoidable.
+[3110] 3:00:55	But you could apply it to the alien
+[3111] 3:00:56	problem, too.
+[3112] 3:00:58	In fact, many many physicists do.
+[3113] 3:01:02	Uh Neil's degrass Tyson basically says
+[3114] 3:01:05	you don't want to invite aliens because
+[3115] 3:01:06	they'll they'll just come and kill us
+[3116] 3:01:08	all. So he's he's like Tyson is is um um
+[3117] 3:01:14	applying the Killbot problem to the
+[3118] 3:01:17	alien problem.
+[3119] 3:01:41	25.
+[3120] 3:02:02	CPM versus DOS. Would I have issue on
+[3121] 3:02:04	Glee being tall? No, you wouldn't.
+[3122] 3:02:07	There's a lot of tall people on Glee.
+[3123] 3:02:10	Um, Hans is tall. Vloir's tall. Um,
+[3124] 3:02:14	there are there are tall tall people in
+[3125] 3:02:16	Glee. Just here happens to be short.
+[3126] 3:02:25	Um,
+[3127] 3:02:28	Terry's tall.
+[3128] 3:02:33	Terry is tall.
+[3129] 3:02:49	Okay.
+[3130] 3:03:01	have any more questions? I think we're
+[3131] 3:03:02	almost out of questions here anyway.
+[3132] 3:03:06	Looks like it. I think we've come to the
+[3133] 3:03:08	end of this.
+[3134] 3:03:17	I think that's that's the last question.
+[3135] 3:03:20	Okay. Um,
+[3136] 3:03:22	so, um, I don't think I missed any. Did
+[3137] 3:03:25	I miss any?
+[3138] 3:03:27	Cool.
+[3139] 3:03:29	Well, this is your this is your one
+[3140] 3:03:31	opportunity to ask any questions
+[3141] 3:03:34	regarding this book series or the
+[3142] 3:03:36	publishing industry or anything else
+[3143] 3:03:38	except for ancient Egypt and the Bible.
+[3144] 3:03:41	We're not taking those questions today.
+[3145] 3:03:46	Good night, mama. Glad you could join
+[3146] 3:03:47	us. Uh, thank you for being here. You
+[3147] 3:03:49	asked some great questions. I loved all
+[3148] 3:03:51	the questions. They were really, really
+[3149] 3:03:54	Oh, the primordial god question. Okay,
+[3150] 3:03:56	where was that? Um, sorry, Gandalf. Uh,
+[3151] 3:03:58	let me find that.
+[3152] 3:04:02	Um,
+[3153] 3:04:12	oh, there it is. Okay.
+[3154] 3:04:16	Okay. Gan's the base. And this will
+[3155] 3:04:18	probably be the last question of the
+[3156] 3:04:20	night because it is the last question we
+[3157] 3:04:22	have here. So,
+[3158] 3:04:24	uh, man, I gotta understand where you're
+[3159] 3:04:26	pulling the primordial spirit critters
+[3160] 3:04:28	from when it comes to the Bible because
+[3161] 3:04:30	you're only one who seems to mention it,
+[3162] 3:04:32	but I'll save that for Friday. Okay. Um,
+[3163] 3:04:37	every ancient neareastern culture
+[3164] 3:04:41	has a version of this. Okay.
+[3165] 3:04:45	Oh, we find it in Egyptian. myth. Okay.
+[3166] 3:04:48	Uh it's explicitly in the Egyptian myth,
+[3167] 3:04:51	particularly in the uh creation story of
+[3168] 3:04:54	the god Ry. Okay. Uh in the Egyptian
+[3169] 3:04:58	creation myth,
+[3170] 3:05:01	creation begins as primordial waters.
+[3171] 3:05:07	And
+[3172] 3:05:09	when the primordial waters,
+[3173] 3:05:13	I wouldn't say were created
+[3174] 3:05:17	because we're not really told how the
+[3175] 3:05:20	primordial waters came about.
+[3176] 3:05:23	They just existed.
+[3177] 3:05:25	Along with these primordial wa waters
+[3178] 3:05:27	were
+[3179] 3:05:29	these gods that resided in the in the
+[3180] 3:05:34	waters.
+[3181] 3:05:36	And from the waters, the egg of Raw was
+[3182] 3:05:39	created and the sun god Ray was hatched.
+[3183] 3:05:44	Well, those gods that resided in the
+[3184] 3:05:46	waters,
+[3185] 3:05:48	they were
+[3186] 3:05:50	a side effect of creation.
+[3187] 3:05:53	They weren't explicitly created. They
+[3188] 3:05:56	weren't created for any particular
+[3189] 3:05:58	purpose. There's sort of this side
+[3190] 3:06:01	effect of creation. And the Egyptians
+[3191] 3:06:04	called these uh the pesteter
+[3192] 3:06:09	um the primordial gods, the ancient
+[3193] 3:06:11	gods.
+[3194] 3:06:14	Um the gods that coincided with creation
+[3195] 3:06:16	itself.
+[3196] 3:06:20	Um, the Bible has something very similar
+[3197] 3:06:23	to this,
+[3198] 3:06:26	which is that when God created the
+[3199] 3:06:30	heavens,
+[3200] 3:06:32	there were these chaos monsters.
+[3201] 3:06:36	Okay? And these these these are
+[3202] 3:06:39	mentioned in various passages like um uh
+[3203] 3:06:43	references to Rahav, Leviathan,
+[3204] 3:06:45	Behemoth, you know, these are these are
+[3205] 3:06:47	the chaos monsters.
+[3206] 3:06:49	These are the monsters that were the
+[3207] 3:06:52	side effect of creation itself.
+[3208] 3:06:55	Uh it seems that in the ancient
+[3209] 3:06:58	neareastern conception of creation,
+[3210] 3:07:01	creation is not just a physical act.
+[3211] 3:07:05	It's a spiritual act.
+[3212] 3:07:08	It's a spiritual act.
+[3213] 3:07:11	And that spiritual act of of of a deity
+[3214] 3:07:16	creating a physical thing results in a
+[3215] 3:07:19	side effect of a spiritual thing.
+[3216] 3:07:23	So
+[3217] 3:07:25	God creates a universe and as he's
+[3218] 3:07:29	creating the physical universe,
+[3219] 3:07:31	there's these spirit entities that are
+[3220] 3:07:34	created
+[3221] 3:07:36	as I said almost as a side effect. Um,
+[3222] 3:07:40	but
+[3223] 3:07:41	these the the side effect these chaos
+[3224] 3:07:44	monsters wreak havoc, okay? You know,
+[3225] 3:07:48	they're not beholden to anything or
+[3226] 3:07:51	anyone
+[3227] 3:07:52	and they just sort of spread chaos.
+[3228] 3:07:58	So
+[3229] 3:08:00	God goes in afterwards
+[3230] 3:08:03	and vanquishes or pacifies. You can do
+[3231] 3:08:06	either one.
+[3232] 3:08:08	vanquishes or pacifies these chaos
+[3233] 3:08:11	monsters.
+[3234] 3:08:14	But this leaves a problem.
+[3235] 3:08:17	How is creation maintained
+[3236] 3:08:20	without a spiritual entity under the
+[3237] 3:08:23	scenes supporting the the physical? So
+[3238] 3:08:27	in the metaphysics of the ancient world,
+[3239] 3:08:31	a physical thing cannot exist on its
+[3240] 3:08:33	own.
+[3241] 3:08:34	There needs to be a spiritual entity
+[3242] 3:08:37	supporting it. And we see this for
+[3243] 3:08:40	example in like Colossians
+[3244] 3:08:42	where Jesus Christ is the creator and
+[3245] 3:08:47	maintainer upholder of creation.
+[3246] 3:08:52	So
+[3247] 3:08:55	deity
+[3248] 3:08:56	isn't just
+[3249] 3:08:59	creating something and letting it just
+[3250] 3:09:01	run. It's not a deist universe.
+[3251] 3:09:05	It's a universe that requires spiritual
+[3252] 3:09:08	entities to uphold and maintain the
+[3253] 3:09:11	proper function and working of creation.
+[3254] 3:09:14	So
+[3255] 3:09:16	after these chaos monsters are
+[3256] 3:09:18	vanquished,
+[3257] 3:09:20	they are replaced
+[3258] 3:09:23	with these
+[3259] 3:09:25	primordial gods, especially essentially
+[3260] 3:09:28	lower angelic light, but not angels.
+[3261] 3:09:31	They're not really angels because
+[3262] 3:09:32	they're not messengers.
+[3263] 3:09:34	But these lower principalities and
+[3264] 3:09:36	powers
+[3265] 3:09:38	that
+[3266] 3:09:39	fill in the vacuum for these chaos
+[3267] 3:09:41	monsters and uphold creation.
+[3268] 3:09:46	Okay? And this is where we get the idea
+[3269] 3:09:47	of the council of gods from is the
+[3270] 3:09:50	council of gods are essentially these
+[3271] 3:09:53	placeholder
+[3272] 3:09:55	minor deities
+[3273] 3:09:58	minor and minor the these these spirit
+[3274] 3:10:01	critters that uphold and maintain
+[3275] 3:10:04	creation.
+[3276] 3:10:06	Now some of them rebel
+[3277] 3:10:11	and we see that for example in in the
+[3278] 3:10:14	book of Job uh not Job um um
+[3279] 3:10:18	Jude. See this in the book of Jude
+[3280] 3:10:22	where these angelic powers
+[3281] 3:10:27	abandon their abode. And that's a really
+[3282] 3:10:31	important
+[3283] 3:10:34	important thing here is that they
+[3284] 3:10:37	abandon their abode to become rulers
+[3285] 3:10:40	themselves.
+[3286] 3:10:42	Okay? That abode is their place, their
+[3287] 3:10:45	responsibility,
+[3288] 3:10:47	their their sphere of influence.
+[3289] 3:10:51	So
+[3290] 3:10:53	they're not interested in so many of
+[3291] 3:10:57	these are not interested in being
+[3292] 3:10:59	servants but rulers.
+[3293] 3:11:04	So that's sort of how it fits into say
+[3294] 3:11:07	biblical theology.
+[3295] 3:11:11	I see your follow-up questions here.
+[3296] 3:11:13	We'll take those.
+[3297] 3:11:20	Yeah. Uh Ganday says, "Wait, so they are
+[3298] 3:11:24	created without God creating them?"
+[3299] 3:11:26	They're created as God creates. So God
+[3300] 3:11:30	creates them because at least the chaos
+[3301] 3:11:33	monsters, the chaos monsters are created
+[3302] 3:11:35	with creation because
+[3303] 3:11:38	he has to create the spiritual entity
+[3304] 3:11:42	and the physical at the same time.
+[3305] 3:11:46	It's not that they have different
+[3306] 3:11:48	creators.
+[3307] 3:11:49	It's they they have the same creator.
+[3308] 3:11:52	It's just that that
+[3309] 3:11:55	you he has to God has to start with this
+[3310] 3:11:59	this sort of blank slate creation that
+[3311] 3:12:03	requires the creation of these these
+[3312] 3:12:06	chaos monsters to sort of hold up prop
+[3313] 3:12:12	up creation. And the idea here is if God
+[3314] 3:12:16	created a physical realm without a
+[3315] 3:12:18	spiritual realm, the physical would just
+[3316] 3:12:21	fall apart.
+[3317] 3:12:23	It would be it would like it be like it
+[3318] 3:12:25	would be like building a house without a
+[3319] 3:12:26	foundation.
+[3320] 3:12:33	Okay. So, so in the idea of the ancient
+[3321] 3:12:36	near east, you can't just create a
+[3322] 3:12:38	physical world. You can't create a
+[3323] 3:12:40	materialist world. They could not
+[3324] 3:12:42	conceive of a materialist world.
+[3325] 3:12:50	There was it's the idea that in order to
+[3326] 3:12:52	have a m material world, you have to
+[3327] 3:12:55	have a spiritual world holding it up in
+[3328] 3:12:58	some way.
+[3329] 3:13:01	And to begin with, that's with chaos
+[3330] 3:13:03	monsters. Later on, that's with
+[3331] 3:13:05	primordial deities.
+[3332] 3:13:08	Later on we see that Christ is doing
+[3333] 3:13:11	this.
+[3334] 3:13:14	Uh he then asks so are you saying the
+[3335] 3:13:18	minor deities uphold creation? Doesn't
+[3336] 3:13:20	Christ uphold creation? Ultimately yes
+[3337] 3:13:22	it's Christ. Ultimately it's Christ
+[3338] 3:13:26	but
+[3339] 3:13:28	the minor deities uphold it because they
+[3340] 3:13:32	are subordinate to Christ.
+[3341] 3:13:36	That's the thing. They are not doing it
+[3342] 3:13:38	on their own initiative and by their own
+[3343] 3:13:41	power. They're doing it because they are
+[3344] 3:13:44	subordinated to the ultimate deity and
+[3345] 3:13:48	they derive their power from the de
+[3346] 3:13:50	ultimate deity.
+[3347] 3:13:53	Sorry.
+[3348] 3:13:57	Yeah. And being subordinate annoys them
+[3349] 3:13:58	as my producer just said. Yeah. Yeah,
+[3350] 3:14:01	they don't want to be subordinate
+[3351] 3:14:05	but they derive their power from their
+[3352] 3:14:07	creation
+[3353] 3:14:09	and that creation is from Christ
+[3354] 3:14:18	and Gh says so maintain like maintenance
+[3355] 3:14:22	rather than foundational upholding.
+[3356] 3:14:24	Yeah, absolutely. Uh it's it's a
+[3357] 3:14:26	maintenance kind of upholding. Okay. So
+[3358] 3:14:29	they're supporting what already exists.
+[3359] 3:14:33	They're not they're not um
+[3360] 3:14:37	and if they if they vacate the premises
+[3361] 3:14:40	the the the creation then collapses.
+[3362] 3:14:46	So now it doesn't in practical terms
+[3363] 3:14:49	because uh Christ can just move in and
+[3364] 3:14:52	and and uphold it. But
+[3365] 3:14:55	uh but without without that spiritual
+[3366] 3:14:58	under
+[3367] 3:15:00	that spiritual foundation creation is
+[3368] 3:15:03	said to collapse.
+[3369] 3:15:11	Mask of shai says maybe those other
+[3370] 3:15:12	rebel spirits pushed other tribes to
+[3371] 3:15:14	adore other gods like Bal. Yeah, it's
+[3372] 3:15:16	possible.
+[3373] 3:15:17	Possible.
+[3374] 3:15:25	uh gan of the base. Okay, just trying to
+[3375] 3:15:27	clarify because I got a little concerned
+[3376] 3:15:28	there for a second.
+[3377] 3:15:35	Well, it's not something we talk about
+[3378] 3:15:36	in our church as much. Really, it isn't.
+[3379] 3:15:39	It's it's it's all un it's all there,
+[3380] 3:15:43	but we never talk about it.
+[3381] 3:15:49	I mean, I have heard the very occasional
+[3382] 3:15:51	lecture on the chaos deities, but I've
+[3383] 3:15:55	never heard one on the primordial
+[3384] 3:15:56	deities,
+[3385] 3:15:58	you know, the the the chaos gods, you
+[3386] 3:16:00	know, the chaos conf, you know, that's
+[3387] 3:16:03	that's been in sort of um German um
+[3388] 3:16:07	biblical literature for over a hundred
+[3389] 3:16:09	years. So, some of that has gotten into
+[3390] 3:16:12	the occasional sermon from time to time,
+[3391] 3:16:15	but I've never heard anyone talk about
+[3392] 3:16:19	the primordial deities. And they're
+[3393] 3:16:22	there, too. They're there, too.
+[3394] 3:16:31	Yeah.
+[3395] 3:16:37	Well, I think I think um because of say
+[3396] 3:16:42	concordant views of Genesis like
+[3397] 3:16:45	creationism, like theistic evolution,
+[3398] 3:16:47	those are concordant views where
+[3399] 3:16:49	basically you try to reconcile science
+[3400] 3:16:52	to the Bible.
+[3401] 3:16:54	Our views,
+[3402] 3:16:59	yeah, science doesn't leave any room for
+[3403] 3:17:00	primordial gods either. So I think in
+[3404] 3:17:03	many respects our views of Genesis are
+[3405] 3:17:06	very materialistic even say amongst say
+[3406] 3:17:10	the fundamentalist set you know um you
+[3407] 3:17:14	know I've never heard much of of
+[3408] 3:17:19	creationists talk about the heavenly
+[3409] 3:17:21	hosts of Genesis 1 as anything other
+[3410] 3:17:25	than stars.
+[3411] 3:17:27	you know they're creationists really
+[3412] 3:17:29	talk about say creation in materialist
+[3413] 3:17:33	terms.
+[3414] 3:17:36	So,
+[3415] 3:17:38	but there's a whole spiritual reality
+[3416] 3:17:42	that's happening under the cover of
+[3417] 3:17:45	Genesis
+[3418] 3:17:47	that say these concordant views scarcely
+[3419] 3:17:51	touch.
+[3420] 3:17:58	That's essentially a materialist view
+[3421] 3:18:01	with a few extra steps.
+[3422] 3:18:06	So
+[3423] 3:18:08	um gan the base okay so the physical has
+[3424] 3:18:12	to be parallel to a spiritual I can see
+[3425] 3:18:14	that in the ancient near east and
+[3426] 3:18:15	absolutely that is part of this
+[3427] 3:18:22	uh g of the base are there any
+[3428] 3:18:24	researchers that can be read up on this
+[3429] 3:18:26	because I'm assuming you're not the
+[3430] 3:18:27	first to mention this uh is probably the
+[3431] 3:18:31	best source it's not perfect on this but
+[3432] 3:18:34	he's the best source currently on this.
+[3433] 3:18:36	Um,
+[3434] 3:18:38	I disagree with some of his Council of
+[3435] 3:18:41	Gods assessments. Um, I think they are
+[3436] 3:18:45	not exactly as nuanced and um, complete
+[3437] 3:18:49	as they should be. And I mean, he does
+[3438] 3:18:53	go very much into detail on his Council
+[3439] 3:18:56	of God's ideas, but he doesn't really
+[3440] 3:18:59	tell us.
+[3441] 3:19:01	He he he sort of misses a step, you
+[3442] 3:19:04	know, he goes from chaos comp uh chaos
+[3443] 3:19:08	monsters right to Council of Gods while
+[3444] 3:19:10	missing that primordial god step.
+[3445] 3:19:15	Um
+[3446] 3:19:16	but that's an important step in this
+[3447] 3:19:19	whole
+[3448] 3:19:21	theological trajectory
+[3449] 3:19:24	of of creation to chaos uh conf chaos
+[3450] 3:19:28	monsters to primordial gods to council
+[3451] 3:19:32	of gods to the fallen deities
+[3452] 3:19:36	to Christ as upholder of all creation.
+[3453] 3:19:39	There's a theological trajectory there
+[3454] 3:19:42	and he misses that primordial god step.
+[3455] 3:19:47	Uh but he's not actually um
+[3456] 3:19:51	Yeah, Jack Ray's got it right here.
+[3457] 3:19:54	Kiser is seems like a man with a council
+[3458] 3:19:56	of hammers and sees everything as a
+[3459] 3:19:58	nail. Yeah.
+[3460] 3:20:00	Yeah. Um you're not wrong about that.
+[3461] 3:20:05	um he he sees a council of gods
+[3462] 3:20:06	everywhere even when it's not
+[3463] 3:20:09	appropriately appropriate to apply it to
+[3464] 3:20:11	the text. Um I also think that in some
+[3465] 3:20:14	ways
+[3466] 3:20:16	um his view of say the diversity of the
+[3467] 3:20:19	spirit world is a little bit
+[3468] 3:20:21	impoverished
+[3469] 3:20:23	uh because he does tend to focus on the
+[3470] 3:20:25	council of gods things so much.
+[3471] 3:20:28	Um
+[3472] 3:20:30	I don't think he sort of realized that
+[3473] 3:20:35	there's an incredible diversity to
+[3474] 3:20:38	spiritual life.
+[3475] 3:20:41	many kinds of spirit critters. Many many
+[3476] 3:20:44	kinds of spirit critters. Much more than
+[3477] 3:20:45	we normally take, you know. Yeah. He
+[3478] 3:20:48	included cherubim, seraraphim, and
+[3479] 3:20:51	sometimes he he he conflated cherubam
+[3480] 3:20:53	and seraraphim. Sometimes for him, he
+[3481] 3:20:55	counted them one as the same. They're
+[3482] 3:20:58	not the same.
+[3483] 3:21:00	He had watchers, okay? You know, the
+[3484] 3:21:04	sons of God, you know, watchers and sons
+[3485] 3:21:06	of God that for him were the same thing.
+[3486] 3:21:09	So he tended to conflate spiritual
+[3487] 3:21:12	beings a lot.
+[3488] 3:21:17	Yeah. Yeah. He was
+[3489] 3:21:20	Yeah. He wasn't building on say um
+[3490] 3:21:25	um on this these views that we were we
+[3491] 3:21:29	talk about here and he is very much a
+[3492] 3:21:32	second temple period literature scholar.
+[3493] 3:21:35	Okay. So when we talk about you know
+[3494] 3:21:39	Heiser and his views it's deeply deeply
+[3495] 3:21:42	influenced by that era of
+[3496] 3:21:46	of um of thinking whereas in my case I
+[3497] 3:21:50	I'm more more influenced by late Bronze
+[3498] 3:21:52	Age literature.
+[3499] 3:21:59	Yeah.
+[3500] 3:22:02	So I see a lot of the Bible as being
+[3501] 3:22:07	um
+[3502] 3:22:10	as being subsequent
+[3503] 3:22:12	to this background information that you
+[3504] 3:22:15	find in the late Bronze Age.
+[3505] 3:22:18	So anyway, I think that's our last
+[3506] 3:22:20	question.
+[3507] 3:22:22	So this would probably be a good time
+[3508] 3:22:24	for us to wrap it up. If anyone has some
+[3509] 3:22:28	a final comment or question, we would
+[3510] 3:22:29	love to take it. But we don't. Um, I
+[3511] 3:22:33	think this is a good time. It was a
+[3512] 3:22:34	great live stream. We got to talk lots
+[3513] 3:22:37	about our book tonight, All the Stars as
+[3514] 3:22:39	Angels.
+[3515] 3:22:42	We had one caller come in, which is
+[3516] 3:22:44	excellent. Um, 18 Ministries is going to
+[3517] 3:22:47	be kicking himself again for missing
+[3518] 3:22:48	this. Uh, but that's his problem. Um,
+[3519] 3:22:52	again, if you have read uh particularly
+[3520] 3:22:55	if you've read our first book, Relicary
+[3521] 3:22:57	of the Dead, please leave a review on
+[3522] 3:23:00	Amazon. That is the way you can help us
+[3523] 3:23:03	the best is by leaving those reviews.
+[3524] 3:23:06	Amazon wants those reviews. I want those
+[3525] 3:23:09	reviews. It would really help us to get
+[3526] 3:23:11	those reviews. We are trying to strive
+[3527] 3:23:14	to get 50 reviews for book one at least.
+[3528] 3:23:17	But if you add reviews for book two as
+[3529] 3:23:19	well, we would really really appreciate
+[3530] 3:23:20	that also. Okay. So, we hope you found
+[3531] 3:23:24	this sort of background look into
+[3532] 3:23:29	um into what went into the writing of
+[3533] 3:23:32	these books. We hope you found that
+[3534] 3:23:34	enjoyable. We want to thank all the
+[3535] 3:23:36	super chatters tonight who who supported
+[3536] 3:23:38	us. We want to thank our Patreon and our
+[3537] 3:23:41	YouTube membership guys who help us uh
+[3538] 3:23:47	with keeping the lights on and the
+[3539] 3:23:48	equipment prepared. We also want to
+[3540] 3:23:50	thank our very regular um
+[3541] 3:23:54	uh viewers as well who hit that like and
+[3542] 3:23:57	subscribe button and recommend our
+[3543] 3:24:00	videos to other social media uh um
+[3544] 3:24:05	outlets because you guys get the message
+[3545] 3:24:07	out. uh you you distribute us more than
+[3546] 3:24:10	the algorithm does. So we really really
+[3547] 3:24:13	appreciate that. Uh CPM versus DOSS
+[3548] 3:24:16	can't wait for the third book in the
+[3549] 3:24:18	third stream. Uh we will save this.
+[3550] 3:24:20	We'll leave you on this last note. Uh
+[3551] 3:24:22	the third book will be probably coming
+[3552] 3:24:24	out in 2026.
+[3553] 3:24:26	Okay. So you are going to have to wait
+[3554] 3:24:28	until next year for it. Okay. So um but
+[3555] 3:24:32	it is almost done and we are very much
+[3556] 3:24:35	looking forward to getting it out there.
+[3557] 3:24:37	So anyway, we want to thank you for
+[3558] 3:24:39	joining us tonight. We are glad you
+[3559] 3:24:41	could make it and we will see you next
+[3560] 3:24:44	time on Ancient Egypt and the Bible.
+[3561] 3:24:47	Have a great night everyone.
+[3562] 3:24:50	[Music]
