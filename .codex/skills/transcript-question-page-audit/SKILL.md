@@ -248,7 +248,51 @@ PASS / NEEDS FIX / STRUCTURAL ISSUE
 - Avoid loading full transcripts for every file. Use candidate searches first.
 
 ## Audit and Fix Tracking
-- create or update an audit log in src/transcript-audit.log Log ISO 8601 full local time, audited file short name and extension, AI model and effort level used, question count change +/-, note if the audited file could use further inspection.
+
+Use `src/transcript-audit.log` as an append-only tracking record, not as transcript evidence.
+
+### Before Editing
+
+- Count the existing question data rows in the target page.
+- Store the count as `question_count_before`.
+- Count only actual question rows. Do not count the table header, separator row, or transcript notes.
+- Do not read or use previous audit-log entries before independently evaluating the page against the transcript.
+
+### After Editing And Validation
+
+- Count the final question data rows as `question_count_after`.
+- Calculate:
+
+```text
+question_count_change = question_count_after - question_count_before
+```
+
+- Confirm that the recorded counts and change agree.
+- After the independent audit is complete, search only for existing log entries matching the target filename when prior history may help identify unresolved concerns or compare earlier work.
+- Treat previous audit entries as clues and history, not as proof that a row, answer, or timestamp is correct.
+- Do not read or summarize the entire audit log merely to process one page.
+- Append exactly one new record. Preserve all existing records without rewriting or normalizing them.
+- Do not add or infer an `audit_pass` number. The existing log does not guarantee a complete audit sequence.
+
+Record:
+
+- ISO 8601 full local timestamp
+- audited file short name and extension
+- AI model
+- effort level
+- `question_count_before`
+- `question_count_after`
+- `question_count_change`, including `+` for positive changes
+- whether the file could use further inspection
+- a concise note describing important changes or remaining uncertainty
+
+Example:
+
+```text
+2026-06-21T12:34:56-05:00 108-the-many-views-of-heck-questions.md; model=gpt-5.5; effort=high; question_count_before=6; question_count_after=31; question_count_change=+25; could_use_further_inspection=no; added high-confidence missing questions and validated changed timestamps.
+```
+
+Existing records in older formats may remain unchanged.
 
 ## Done Checklist
 
@@ -262,5 +306,7 @@ Finish only when relevant items are true:
 - no outside facts were added
 - table rows render cleanly
 - no placeholder or legacy links remain
+- `question_count_before`, `question_count_after`, and `question_count_change` agree
+- the audit log was appended only after independent page analysis and validation
 - diff was reviewed
 - final response is minimal unless audit-only was requested
