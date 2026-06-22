@@ -1,0 +1,4352 @@
+[0] 0:06	foreign
+[1] 0:09	[Music]
+[2] 0:33	foreign
+[3] 0:36	[Music]
+[4] 1:01	[Music]
+[5] 1:11	[Music]
+[6] 1:20	foreign
+[7] 1:30	[Music]
+[8] 1:38	[Music]
+[9] 1:52	foreign
+[10] 2:14	[Music]
+[11] 2:21	[Music]
+[12] 2:26	foreign
+[13] 2:35	[Music]
+[14] 2:53	foreign
+[15] 3:16	[Music]
+[16] 3:24	foreign
+[17] 3:26	[Music]
+[18] 3:48	[Music]
+[19] 4:00	foreign
+[20] 4:05	[Music]
+[21] 4:30	foreign
+[22] 4:34	[Music]
+[23] 7:30	the track here
+[24] 7:33	testing testing testing
+[25] 7:39	right now
+[26] 7:43	we are not sure why this is not
+[27] 7:45	producing sound at the moment
+[28] 7:48	so I'm just trying to figure this out
+[29] 8:02	okay I'm going to disconnect and
+[30] 8:04	reconnect
+[31] 8:05	so
+[32] 8:13	be right back
+[33] 8:15	okay am I any sound now it's down now
+[34] 8:19	okay
+[35] 8:21	figured out wrong profile
+[36] 8:23	did some recording last week and didn't
+[37] 8:25	change the profile back okay we're good
+[38] 8:27	okay awesome all right
+[39] 8:30	well uh
+[40] 8:32	that was hard stopping
+[41] 8:37	hmm
+[42] 8:38	the problem with OBS Studio it's so
+[43] 8:40	complicated you can often uh
+[44] 8:43	uh make it make a switch and uh not
+[45] 8:47	realize that that settings aren't right
+[46] 8:49	for something else
+[47] 8:50	okay so uh sorry about that
+[48] 8:54	I want to welcome everyone today to our
+[49] 8:57	85th live stream
+[50] 8:58	which is uh Saint Nicholas versus Arius
+[51] 9:02	the cage match this time it's
+[52] 9:05	theological
+[53] 9:07	okay this is of course a reference to uh
+[54] 9:10	Christmas and I want to wish everyone
+[55] 9:12	here a very very Merry Christmas this is
+[56] 9:15	our last video before uh Christmas Eve
+[57] 9:18	and Christmas Day
+[58] 9:20	so
+[59] 9:22	um
+[60] 9:24	so I want to thank everyone who's joined
+[61] 9:26	us here tonight
+[62] 9:27	uh this is also an allusion to a little
+[63] 9:31	urban legend that's grown grown up
+[64] 9:33	around Saint Nicholas
+[65] 9:35	which is uh during the Council of nicaea
+[66] 9:40	it is said that
+[67] 9:42	Saint Nicholas went down from the stands
+[68] 9:44	and punched Aries in the mouth so
+[69] 9:48	um
+[70] 9:53	yes it is very true that that debates
+[71] 9:56	back then got exceptionally heated okay
+[72] 10:00	they weren't Beyond fisticuffs
+[73] 10:04	the early church was not genteel
+[74] 10:07	it's definitely not genteel
+[75] 10:11	uh these these the base got very very uh
+[76] 10:15	rancorous at times
+[77] 10:18	so
+[78] 10:19	um so this is tipping the hat to St
+[79] 10:21	Nicholas who is uh also say the patron
+[80] 10:24	saint of the Ukrainian Orthodox Church
+[81] 10:27	so um again a very very interesting
+[82] 10:30	character he was also said to have a
+[83] 10:33	very much
+[84] 10:34	um cared for children
+[85] 10:36	and this is where the whole idea of
+[86] 10:38	Saint Nick as a gift Giver came out
+[87] 10:41	so a fascinating character of church
+[88] 10:44	history well worth a uh look at if um
+[89] 10:47	you're not familiar with him
+[90] 10:49	so
+[91] 10:51	with that said we are going to get to
+[92] 10:53	your questions again it's the same as
+[93] 10:56	always which is that
+[94] 10:59	um
+[95] 11:00	we take a few non-super chats first then
+[96] 11:02	we give the super chats priority
+[97] 11:05	and then we go back and see if there's
+[98] 11:07	anything that catches my eye on the
+[99] 11:09	non-super chats
+[100] 11:11	now
+[101] 11:12	if you want to ask a question and it's
+[102] 11:14	not a super chat we ask that you put a Q
+[103] 11:16	and the colon at the beginning of the
+[104] 11:17	question so that I know it's addressed
+[105] 11:19	to me
+[106] 11:20	I also uh ask that if you do ask a
+[107] 11:25	question that you only post it once that
+[108] 11:29	way I can sort of keep track of it in
+[109] 11:32	the um twidget app that I use to sort of
+[110] 11:34	keep track of all the questions
+[111] 11:36	I also ask that if you do a verse out of
+[112] 11:39	the Bible or ask a question about a
+[113] 11:42	language that you give me the chapter
+[114] 11:44	book verse
+[115] 11:46	as a reference so I have some context
+[116] 11:48	and with the language tell me what
+[117] 11:50	language you think it is and what do you
+[118] 11:51	think it means
+[119] 11:52	so with that said let's get into the
+[120] 11:55	questions
+[121] 11:57	okay
+[122] 11:59	our first question of the night
+[123] 12:01	is actually from dark blade
+[124] 12:03	and he asks
+[125] 12:05	if the Egyptians generally didn't farm
+[126] 12:07	and raise pigs because of the effect on
+[127] 12:10	the Waterway can the lack of pig bones
+[128] 12:12	out of ours still be considered evidence
+[129] 12:14	of Semitic habitation
+[130] 12:17	okay
+[131] 12:18	and while they did Farm they did Farm
+[132] 12:20	Egyptians were were uh very much Farmers
+[133] 12:24	they were very this was an agrarian
+[134] 12:27	society so they did Farm
+[135] 12:29	they didn't tend to raise pigs
+[136] 12:33	um
+[137] 12:34	they
+[138] 12:36	they tend to raise more a cattle they
+[139] 12:39	were really a cattle culture than more
+[140] 12:41	than anything else
+[141] 12:43	but they also have a lot of crops as
+[142] 12:46	well such as Amber wheat
+[143] 12:49	uh barley they also grew vegetables too
+[144] 12:53	so they were they were they were quite
+[145] 12:55	uh Adept at farming
+[146] 12:57	now
+[147] 12:59	I would agree that the lack of pig bones
+[148] 13:02	out of ours is not considered evidence
+[149] 13:04	for Semitic habitation
+[150] 13:07	however
+[151] 13:09	this has a whole lot of other
+[152] 13:11	identifying marks of Semitic habitation
+[153] 13:14	it has Semitic pottery
+[154] 13:17	the medic iconographic designs
+[155] 13:20	systematic burials
+[156] 13:22	uh that's the famous Semitic four-room
+[157] 13:24	house
+[158] 13:26	so there's a lot of Semitic evidence out
+[159] 13:29	of ours there's really no question these
+[160] 13:31	people were submitting
+[161] 13:33	the lack of pig bones while not in and
+[162] 13:35	of itself evidence of Semitic habitation
+[163] 13:38	is certainly
+[164] 13:41	um
+[165] 13:42	um suggestive that say when the
+[166] 13:46	Israelites do go over to Canaan that
+[167] 13:48	they bring that with them
+[168] 13:51	is one of the things we have to
+[169] 13:52	understand is that
+[170] 13:54	um Pig the lack of pig bones alone is
+[171] 13:57	not itself
+[172] 14:00	evidence of Semitic habitation
+[173] 14:03	because the Canaanites that inhabit
+[174] 14:05	Canaan you know prior to the Israelites
+[175] 14:07	they they ate Pig
+[176] 14:10	all over the place you know that's sort
+[177] 14:13	of how we can tell say canine
+[178] 14:14	settlements from Israelite settlements
+[179] 14:16	is that the canine Settlements a pig but
+[180] 14:19	the Israelite settlements didn't
+[181] 14:22	so this always begs the question of well
+[182] 14:25	where the Israelites get this from
+[183] 14:27	well it makes sense if they're from a
+[184] 14:29	virus makes perfect sense they're
+[185] 14:32	bringing that that Egyptian culture that
+[186] 14:34	Egyptian tradition with them over into
+[187] 14:37	to Canaan
+[188] 14:40	so there is the lack of pig bones of
+[189] 14:42	divorce is not evidence of semantic
+[190] 14:45	habitation per se
+[191] 14:47	but it sure is suggestive of their
+[192] 14:50	Egyptian origin
+[193] 14:52	at least the Israelites origin
+[194] 14:55	and there's a lot of other things it of
+[195] 14:57	ours that are really Semitic
+[196] 15:00	unquestionably Semitic
+[197] 15:02	so when I I hope that answers your
+[198] 15:04	question thank you very much for the
+[199] 15:05	question fascinating question
+[200] 15:09	okay
+[201] 15:12	our next uh non-super chat here
+[202] 15:17	is from Mr hbob who writes in Greek
+[203] 15:25	foreign
+[204] 15:34	[Laughter]
+[205] 15:41	all right
+[206] 15:44	ah
+[207] 15:45	did Saint Nicholas not say
+[208] 15:50	ho ho ho ho
+[209] 15:52	of like substance
+[210] 15:56	okay
+[211] 15:59	no he did not say this
+[212] 16:05	[Laughter]
+[213] 16:07	is
+[214] 16:08	trying to get out yeah okay my
+[215] 16:12	pronunciation isn't great but my
+[216] 16:13	pronunciation isn't great in any
+[217] 16:15	language even English so you know
+[218] 16:17	there you go
+[219] 16:19	all right uh the whole the whole point
+[220] 16:22	here is that you know Saint Nicholas did
+[221] 16:24	not say homoi USIS
+[222] 16:26	uh he was he was a a proponent of homo
+[223] 16:29	uses
+[224] 16:30	of the same subject
+[225] 16:32	of the same uh substance
+[226] 16:35	the one of the big controversies at the
+[227] 16:38	Council of nicaea was you know even
+[228] 16:40	though everyone was in agreement that
+[229] 16:44	Arius was in the wrong
+[230] 16:46	and this we were talking about the
+[231] 16:48	council and Isaiah 325 A.D
+[232] 16:50	where Arius tried to argue
+[233] 16:54	that Christ
+[234] 16:56	uh was a separate creation he was
+[235] 17:00	essentially the first creation of God
+[236] 17:02	the Father
+[237] 17:06	of course that's that's heresy in in and
+[238] 17:09	it was very apparent at the council that
+[239] 17:11	it was heresy
+[240] 17:13	but it didn't
+[241] 17:14	then to well what is the relationship of
+[242] 17:17	the son to the father
+[243] 17:19	is he have same substance or is he of
+[244] 17:21	like substance now in the first I see in
+[245] 17:24	Council
+[246] 17:25	uh there was a lot of people who were
+[247] 17:27	really in favor of like substance
+[248] 17:31	because they thought that might have
+[249] 17:32	been a stronger statement of say the
+[250] 17:36	personhood of Christ versus the
+[251] 17:38	personhood of the father
+[252] 17:40	but it became readily apparent that like
+[253] 17:44	substance would eventually slip back
+[254] 17:47	into a kind of arianism bat again
+[255] 17:52	so it was a compromised position that
+[256] 17:54	really did not work
+[257] 17:56	so ultimately the Council of nicaea
+[258] 17:59	decided that the proper definition of
+[259] 18:02	the relationship of the father to the
+[260] 18:05	son was homo USIS the same substance
+[261] 18:10	so that's sort of the that's sort of the
+[262] 18:14	background here of of the whole Nicene
+[263] 18:17	council at least it's most important
+[264] 18:19	issue
+[265] 18:20	which was the determining of
+[266] 18:22	determination of the teaching of Arius
+[267] 18:26	so he did Saint Nicholas definitely did
+[268] 18:28	not say homoe USIS he said homo USIS so
+[269] 18:32	anyway thank you very much for the
+[270] 18:34	question it's a fun question and it was
+[271] 18:35	presented in a fun way
+[272] 18:37	even if my my Greek pronunciation is
+[273] 18:40	atrocious
+[274] 18:42	live with it
+[275] 18:46	yeah
+[276] 18:47	it's not it's not my primary work Greek
+[277] 18:49	is not my primary working language so
+[278] 18:51	you know you can't expect me to have
+[279] 18:53	perfect pronunciation here so
+[280] 18:56	okay our next non-super chat
+[281] 19:00	is from Dale McKenzie
+[282] 19:02	and he goes Dr Falk second chronicles 27
+[283] 19:06	29 outlines the Reigns of jotham ahaz
+[284] 19:09	and Hezekiah
+[285] 19:11	it appears that ahaz was nine when he
+[286] 19:14	when Hezekiah was born this seems
+[287] 19:16	unlikely do you think jotham could be
+[288] 19:19	hezekiah's father okay
+[289] 19:21	uh when you do the math
+[290] 19:26	it turns out that ahaz was actually 11
+[291] 19:29	not 9. so okay
+[292] 19:34	nine
+[293] 19:36	yeah that's kind of cutting it close on
+[294] 19:39	but 11
+[295] 19:41	um
+[296] 19:42	there were there are actually many
+[297] 19:44	several people in recorded in history
+[298] 19:47	that did father a child at age 11. it's
+[299] 19:52	biologically possible
+[300] 19:54	the the youngest um the youngest person
+[301] 19:57	on record
+[302] 19:58	to a father to child was age nine
+[303] 20:02	okay and this was it back in the 1850s
+[304] 20:07	so it is it is biologically possible for
+[305] 20:10	someone nine years old to father a child
+[306] 20:13	uh and actually it's even possible for a
+[307] 20:18	woman to bring a child to birth a year
+[308] 20:22	younger than that
+[309] 20:25	so it's it's it's within the Realms of
+[310] 20:29	human biology
+[311] 20:32	is it unusual yeah yeah sure absolutely
+[312] 20:34	it's unusual it's it doesn't happen that
+[313] 20:37	often
+[314] 20:38	but at the same time too it can and does
+[315] 20:40	happen
+[316] 20:42	uh especially at at
+[317] 20:44	with the particular circumstances here
+[318] 20:47	now the particular circumstances here is
+[319] 20:50	you know
+[320] 20:53	ahaz comes to the throne
+[321] 20:57	and the first thing you have to do
+[322] 21:01	um
+[323] 21:02	is
+[324] 21:04	you have to produce an error
+[325] 21:06	okay you have to produce an error
+[326] 21:09	so
+[327] 21:11	you know there's a lot of pressure you
+[328] 21:14	know even on a somebody who maybe not be
+[329] 21:17	emotionally mature enough
+[330] 21:19	to have a properly functional
+[331] 21:22	relationship
+[332] 21:23	in this particular context situation
+[333] 21:28	to marry at least for political purposes
+[334] 21:31	I mean you're running a kingdom here you
+[335] 21:34	have you're running a kingdom
+[336] 21:36	treaties in the ancient near East are
+[337] 21:38	sealed by a trade of of daughters
+[338] 21:43	so you know you're going to
+[339] 21:46	you're gonna have to you know
+[340] 21:48	man up and do the do the duty for the
+[341] 21:50	kingdom
+[342] 21:53	so
+[343] 21:56	um I do think I do think that there's
+[344] 21:58	um there's a lot here that
+[345] 22:01	um is based upon the context of what
+[346] 22:05	ahaz was living in you know he's a king
+[347] 22:08	he's a king age at a very young age
+[348] 22:12	and thus he has to start you know
+[349] 22:14	producing heirs
+[350] 22:15	or at least he's the prince at the time
+[351] 22:17	so you know he's getting married off
+[352] 22:19	he's having to produce heirs because
+[353] 22:22	this is how you perpetuate the the Royal
+[354] 22:24	Line
+[355] 22:26	and you know the fact is too we see this
+[356] 22:29	in other places as well where you know
+[357] 22:31	there are there are attempts of her very
+[358] 22:35	young kings to be married and to start
+[359] 22:38	producing heirs as soon as possible
+[360] 22:41	you know we know that for example King
+[361] 22:44	taught
+[362] 22:45	was you know he comes to the throne at
+[363] 22:47	age 10. and he's already married at that
+[364] 22:50	point he's got he's already married
+[365] 22:52	after the Moon
+[366] 22:54	and the couple is already trying to
+[367] 22:56	produce children
+[368] 22:58	you know while he's he's he's 10 and
+[369] 23:00	she's 11.
+[370] 23:02	you know so you know
+[371] 23:04	this this happened in in the ancient
+[372] 23:07	near East
+[373] 23:08	no one's saying it's ideal
+[374] 23:10	okay no one's saying it's ideal
+[375] 23:12	no one's saying it's a good thing
+[376] 23:15	but it is a political necessary
+[377] 23:17	necessity of that day and age
+[378] 23:21	so anyway I hope that answers your
+[379] 23:23	question thank you very much for the
+[380] 23:25	question very much appreciated and uh
+[381] 23:27	it's interesting it's also kind of
+[382] 23:29	unfortunate too but there you go
+[383] 23:32	all right now we're on to the uh super
+[384] 23:34	chats
+[385] 23:38	okay
+[386] 23:39	our first Super Chat here comes from 501
+[387] 23:42	Mobius for ten dollars thank you very
+[388] 23:44	much for the Super Chat
+[389] 23:46	uh
+[390] 23:49	numbers 2111 is confusing
+[391] 23:52	okay
+[392] 23:54	is
+[393] 23:59	facing Moab which is to the east or is
+[394] 24:02	or lie by Ibrahim to the east Zara
+[395] 24:06	should be on the border between Edom and
+[396] 24:09	Moab if you look at
+[397] 24:12	um let me look at bring up the Bible
+[398] 24:13	here
+[399] 24:16	because I'm not really sure what you're
+[400] 24:17	talking about here
+[401] 24:19	oh
+[402] 24:23	this is numbers
+[403] 24:29	and one
+[404] 24:33	or skeleven
+[405] 24:40	okay
+[406] 24:48	I'll get some context here
+[407] 24:53	foreign
+[408] 24:57	serpent narrative uh verse nine and
+[409] 25:00	Moses made a bronze Serpent and set it
+[410] 25:02	on the standard and it came about that
+[411] 25:03	if the serpent bit any man he when he
+[412] 25:05	looked at to the bronze serpent he lived
+[413] 25:08	now the sons of Israel moved out and
+[414] 25:10	kept at o both
+[415] 25:13	and they Journey from oboloth and camped
+[416] 25:15	at La abrim in the wilderness which is
+[417] 25:19	opposite Moab to the east
+[418] 25:23	okay opposite to Moab okay so it would
+[419] 25:26	probably be on the
+[420] 25:28	my guess this is probably on say uh to
+[421] 25:33	the east of of Moab because this is
+[422] 25:36	where they're they're they're doing
+[423] 25:37	these encampments uh this is this is
+[424] 25:40	before they enter the promised land so
+[425] 25:41	they're not in Judah yet
+[426] 25:44	so
+[427] 25:46	it should be
+[428] 25:49	it should be
+[429] 25:51	um from there they set out and what is a
+[430] 25:53	red I'd have to look up the watis red
+[431] 25:55	I'm not really that familiar with the
+[432] 25:57	geography of Moab
+[433] 25:58	so I'd have to I I'd have to do a little
+[434] 26:01	more uh reading on geography here to try
+[435] 26:04	to figure out exactly here what's going
+[436] 26:06	on
+[437] 26:07	but it would make sense if it was Easter
+[438] 26:10	Moab
+[439] 26:11	um or even potentially east of Edom
+[440] 26:14	but again without without without you
+[441] 26:16	know doing digging to the maps here of
+[442] 26:18	Moab it would be very difficult to sort
+[443] 26:21	of sort of piece this together
+[444] 26:23	so unfortunately that's probably all I
+[445] 26:26	can say here
+[446] 26:28	it's not it's not this is not an issue
+[447] 26:30	I've really looked into
+[448] 26:32	uh but again it's
+[449] 26:35	so there
+[450] 26:36	okay so they set out in Captain wiser ad
+[451] 26:39	there's 13. from there they journeyed
+[452] 26:42	and camped on the other side of the arm
+[453] 26:43	and now we know where that is
+[454] 26:45	okay uh which is on the Wilderness which
+[455] 26:48	comes out uh out of the borders of the
+[456] 26:51	amorites for Arne is the border of Mora
+[457] 26:53	between Moab and the amorites okay
+[458] 26:57	this is that region
+[459] 27:01	um that had been contested by the sons
+[460] 27:03	of Ammon
+[461] 27:04	so the RN stretches essentially from uh
+[462] 27:09	the Moab up in up through the territory
+[463] 27:12	of the ammonites and then into the
+[464] 27:15	heshban
+[465] 27:17	so that's uh so there there sounds like
+[466] 27:20	it sounds like at least it's this
+[467] 27:23	strongly indicates that
+[468] 27:25	uh
+[469] 27:27	um
+[470] 27:28	Lai ibrim is on I think it's just double
+[471] 27:33	check that in the hero
+[472] 27:35	okay I
+[473] 27:37	okay Aya Ibrahim
+[474] 27:41	wow interesting that's an interesting
+[475] 27:47	very interesting spelling on that
+[476] 27:52	because it's almost it sounds like it's
+[477] 27:54	a it sounds like it's a spring from the
+[478] 27:57	etymology of this
+[479] 27:59	so uh
+[480] 28:00	that's very interesting in itself I
+[481] 28:03	don't know if you'd be able to find this
+[482] 28:04	on the map then if it's uh if it's just
+[483] 28:07	a spring
+[484] 28:08	uh Springs tend to be very small sort of
+[485] 28:11	more or less way stations so very would
+[486] 28:14	be very difficult to sort of nail this
+[487] 28:16	down in a modern equivalent
+[488] 28:20	but I'll look into this a little more
+[489] 28:23	I'll look into this a little more and
+[490] 28:24	see what I can dig up okay
+[491] 28:27	so anyway I want to thank you very much
+[492] 28:28	for the Super Chat I very very much
+[493] 28:30	appreciate it and it's good to have you
+[494] 28:31	here tonight
+[495] 28:33	okay our next Super Chat
+[496] 28:37	is from the camp uh Camilla part for
+[497] 28:40	five dollars thank you very much for the
+[498] 28:41	Super Chat very much appreciated
+[499] 28:43	Shalom is the idea of an eternal Soul
+[500] 28:47	pagan what about a place of Eternal
+[501] 28:49	judgment punishment
+[502] 28:51	um okay
+[503] 28:53	uh good questions
+[504] 28:58	a place of Eternal judgment is not
+[505] 29:00	necessarily Pagan you don't actually see
+[506] 29:02	a lot of this in in Pagan literature
+[507] 29:05	uh you do see you do see some conception
+[508] 29:09	of of an eternal soul
+[509] 29:11	now I know there are people out there
+[510] 29:13	that say this comes from Hellenism no it
+[511] 29:15	doesn't no no uh a lot a lot of cultures
+[512] 29:18	believed in an eternal soul and it was
+[513] 29:20	not just the hell
+[514] 29:22	um the Greeks the Egyptians believed in
+[515] 29:24	Eternal Soul
+[516] 29:25	the Mesopotamians believed in Eternal
+[517] 29:27	Souls
+[518] 29:28	it's all it's likely too that the
+[519] 29:31	Canaanites is well
+[520] 29:33	it's not an idea that's an inherently
+[521] 29:35	pagan
+[522] 29:37	but it is an idea that comes out of the
+[523] 29:39	idea that this is not all that there is
+[524] 29:42	that life goes on even once you pass on
+[525] 29:48	so it's
+[526] 29:50	it's not it's not a pagan idea per se
+[527] 29:54	you do find it in paganism
+[528] 29:56	but you also find other things in
+[529] 29:58	paganism too that are not explicitly
+[530] 30:00	Pagan that we would accept as as say you
+[531] 30:03	know biblical truth but that are also
+[532] 30:06	found in Pagan literature
+[533] 30:08	so we have to be careful here that just
+[534] 30:09	because it's you know there's a there's
+[535] 30:12	a particular fallacy here
+[536] 30:14	that I think we need to be very aware of
+[537] 30:16	which is
+[538] 30:18	that
+[539] 30:21	it's often it's often
+[540] 30:24	um expressed like this just because
+[541] 30:26	Hitler brushes his teeth doesn't mean
+[542] 30:28	you shouldn't brush your teeth
+[543] 30:30	okay
+[544] 30:31	just because somebody Pagan affirms a
+[545] 30:35	true idea doesn't mean you should reject
+[546] 30:38	the idea
+[547] 30:44	yeah and then this is this has been
+[548] 30:46	noted by
+[549] 30:47	um by um
+[550] 30:49	The Luminaries of the church for you
+[551] 30:51	know 2000 years Thomas Aquinas you know
+[552] 30:54	even noted this
+[553] 30:55	so you know just because a somebody
+[554] 30:59	pagan
+[555] 31:00	you know believe something that happens
+[556] 31:02	to be true does not make it false
+[557] 31:06	so
+[558] 31:08	just because there are other Pagan
+[559] 31:10	cultures out there they believe in
+[560] 31:11	Eternal Soul does not mean it's not
+[561] 31:13	eternal
+[562] 31:15	it just it doesn't mean it's Pagan
+[563] 31:17	either
+[564] 31:19	you know it's hard to be 100 wrong it's
+[565] 31:21	hard to be 100 right
+[566] 31:24	you know just like it's it's difficult
+[567] 31:26	for you know theologians to nail
+[568] 31:28	everything down perfectly right
+[569] 31:31	it's also very very difficult for pagans
+[570] 31:33	to get everything 100 wrong too
+[571] 31:36	there's there's going to be a certain
+[572] 31:37	percentage that they get right
+[573] 31:40	so and I think this is one of them
+[574] 31:43	now
+[575] 31:45	said it's the fallacy of Association
+[576] 31:48	yeah it is the falcia of Association
+[577] 31:52	now the Palace of Eternal judgment uh
+[578] 31:54	punishment
+[579] 31:55	um we don't find this so much in Pagan
+[580] 31:57	literature it does kind of creep in a
+[581] 31:59	little bit at as you get closer to the
+[582] 32:01	to the Common Era
+[583] 32:03	but it it's not it's not something you
+[584] 32:07	do see a lot of in Pagan literature
+[585] 32:10	um only um if you were really really bad
+[586] 32:13	there might be a place for you like the
+[587] 32:16	Greeks had their version of Tartarus
+[588] 32:18	we're only the baddest of the bad went
+[589] 32:20	to
+[590] 32:22	you know everyone else went to the um
+[591] 32:25	the Elysium fields
+[592] 32:27	but you know there was a place where two
+[593] 32:29	humans were sent because they were so
+[594] 32:31	bad
+[595] 32:33	uh Sisyphus was one of them you know
+[596] 32:35	these were these were
+[597] 32:37	who the Greeks thought you know so bad
+[598] 32:39	that they couldn't even go anywhere even
+[599] 32:40	remotely good
+[600] 32:44	so it's not it's not some place it's not
+[601] 32:48	something you find a lot of in Pagan
+[602] 32:50	literature
+[603] 32:52	uh it seems to be more associated with
+[604] 32:55	with say early biblical literature than
+[605] 32:57	it is but say Pagan literature
+[606] 33:00	so anyway I hope that answers your
+[607] 33:02	questions thank you very much for Super
+[608] 33:04	Chat very very much appreciate it
+[609] 33:08	okay
+[610] 33:10	our next Super chess from mouthwash for
+[611] 33:12	five dollars thank you very much for the
+[612] 33:14	Super Chat
+[613] 33:21	and he says
+[614] 33:23	saw claim the ogduat is Noah's family
+[615] 33:27	Noah noon
+[616] 33:29	sham
+[617] 33:31	hey japheth Keck ham with wives
+[618] 33:36	do these names have similar meanings
+[619] 33:39	uh no no
+[620] 33:44	um
+[621] 33:45	oh boy uh
+[622] 33:47	yeah
+[623] 33:49	oh
+[624] 33:50	I'm one means to be hidden we have no
+[625] 33:53	idea what Shem actually means
+[626] 33:57	uh
+[627] 33:58	noon no
+[628] 34:01	yeah this is this is this I I would I
+[629] 34:03	don't place any stock in this
+[630] 34:05	okay
+[631] 34:06	uh this is just wishful it was wishful
+[632] 34:10	thinking this is wishful thinking okay
+[633] 34:11	this is just plain old wishful thinking
+[634] 34:18	the fact is too that um the ogdu ad is
+[635] 34:21	eight members it's eight members
+[636] 34:24	okay
+[637] 34:26	so you know once you start including all
+[638] 34:30	the Y's in that hell yeah okay you might
+[639] 34:33	have eight members but you know that's
+[640] 34:36	that's a problem that there's no way to
+[641] 34:38	equate that to do one-to-one equivalence
+[642] 34:41	with say the eight members of the ogdu
+[643] 34:43	ad and the family of Noah it just
+[644] 34:46	yeah this is this is wishful thinking
+[645] 34:49	and I I I can't say it any more than
+[646] 34:52	that
+[647] 34:55	Warrior the most high says I think I
+[648] 34:57	once saw that claim in a Creations
+[649] 34:58	article wouldn't surprise me
+[650] 35:01	it would not surprise me you see a lot
+[651] 35:04	of bizarre claims and creationist
+[652] 35:05	articles
+[653] 35:06	and I think that's really really
+[654] 35:08	unfortunate
+[655] 35:09	um because
+[656] 35:11	we
+[657] 35:12	we need to look we need to be credible
+[658] 35:15	we need to be credible in our
+[659] 35:17	scholarship
+[660] 35:18	you know theories like this are not
+[661] 35:20	credible they're not credible you when
+[662] 35:22	you start looking at say the Egyptians
+[663] 35:25	equivalents they just it just falls
+[664] 35:27	apart it just completely falls apart
+[665] 35:31	so
+[666] 35:32	um I don't know what else to say here
+[667] 35:33	other than this is this is just out out
+[668] 35:36	in left field this is out in left field
+[669] 35:38	so anyway thank you very much for the
+[670] 35:40	Super Chat very much appreciated but
+[671] 35:42	there's no credibility to this at all
+[672] 35:46	okay our next Super Chat here is from
+[673] 35:49	Zeo Bayo for 22 Euros thank you very
+[674] 35:52	much the Super Chat very much
+[675] 35:54	appreciated
+[676] 35:55	and he says I'm debating someone saying
+[677] 35:58	Hebrew in the Torah is post 1000 BC
+[678] 36:02	Canaanite language
+[679] 36:04	something about grammatical case and
+[680] 36:07	fricatives changing
+[681] 36:09	this is something to that there's
+[682] 36:11	something to that
+[683] 36:12	also they say there isn't enough data
+[684] 36:14	whether moabite and Edomite had Egyptian
+[685] 36:16	loanwords
+[686] 36:17	well this is a half truth okay
+[687] 36:20	let's sort of get into this let's let's
+[688] 36:22	sort of tease this apart
+[689] 36:24	now it is true that the Hebrew
+[690] 36:27	foundatorah has been updated
+[691] 36:29	okay
+[692] 36:30	now when we talk about symmetic
+[693] 36:32	languages we have to understand that
+[694] 36:34	early Semitic languages I mean Semitic
+[695] 36:36	languages that pre-date 1000 BC
+[696] 36:39	are very very similar to each other
+[697] 36:43	incredibly similar
+[698] 36:45	in fact they're so similar it would be
+[699] 36:47	almost impossible to say to tell apart
+[700] 36:51	um
+[701] 36:52	early Hebrew from early Edomite or early
+[702] 36:55	mobile bite they're that similar
+[703] 36:59	so
+[704] 37:01	you know there's there's a there's a
+[705] 37:03	there's some truth here that the Hebrew
+[706] 37:06	in the Torah is post 1000 BC
+[707] 37:09	because the Torah was updated with more
+[708] 37:14	conventional Hebrew spellings
+[709] 37:17	just to update the language to what had
+[710] 37:19	what it had turned into
+[711] 37:21	I don't think there's really anyone who
+[712] 37:23	really argues against that
+[713] 37:25	Okay so
+[714] 37:27	there is there is some updating
+[715] 37:31	but the same time too
+[716] 37:34	that's not the same as saying that the
+[717] 37:37	original authorship was post 1000 BC
+[718] 37:41	because one of the things we know about
+[719] 37:42	texts
+[720] 37:44	thanks to the very very long Traditions
+[721] 37:47	the textual traditions we have in Egypt
+[722] 37:50	is that scribes updated texts over time
+[723] 37:54	to fit the current conventions of
+[724] 37:57	grammar and spelling
+[725] 38:00	so just because a a text has a let's say
+[726] 38:04	a new kingdom spelling doesn't
+[727] 38:06	necessarily mean that that's a new
+[728] 38:08	kingdom text
+[729] 38:09	that text could have gone all the way
+[730] 38:11	back to the middle or even the Old
+[731] 38:12	Kingdom
+[732] 38:14	likewise just because the Hebrew in the
+[733] 38:17	Torah is post 1000 BC
+[734] 38:20	does not mean that the original text was
+[735] 38:24	post 1000 BC it doesn't follow
+[736] 38:28	okay
+[737] 38:30	now
+[738] 38:32	let's take the second part of this
+[739] 38:36	because in in some respects is there he
+[740] 38:38	is correct there isn't enough data to
+[741] 38:40	indicate whether moabite and Edomite had
+[742] 38:43	Egyptian loanwords absolutely true
+[743] 38:46	okay we don't even have to debate that
+[744] 38:48	you know but we have enough ugaritic
+[745] 38:52	and enough Aramaic
+[746] 38:55	to show that they didn't have each many
+[747] 38:58	Egyptian loanwords comparatively
+[748] 39:02	and that's the rub
+[749] 39:08	okay so there's the rub
+[750] 39:12	yes we don't have enough data from
+[751] 39:14	moabite or Edomite but we have enough
+[752] 39:16	data from eucharitic and from Aramaic
+[753] 39:21	and
+[754] 39:23	in the case of Aramaic we even have
+[755] 39:24	letters that are coming from Egypt
+[756] 39:27	written in Imperial Aramaic
+[757] 39:29	that have less
+[758] 39:31	uh less Egyptian long words on say a per
+[759] 39:36	from the word basis
+[760] 39:39	so
+[761] 39:42	the argument still stands
+[762] 39:44	that there must have been some really
+[763] 39:48	deep influence from of the Egyptians on
+[764] 39:51	they say the Israelite culture
+[765] 39:53	because where we have deep influence by
+[766] 39:57	the Egyptian culture
+[767] 39:59	we don't have the same amount of
+[768] 40:01	loanwords that we find in say the Torah
+[769] 40:05	so anyway
+[770] 40:07	I hope that helped thank you very much
+[771] 40:09	for the Super Chat we very much
+[772] 40:10	appreciate it and um fascinating
+[773] 40:12	question
+[774] 40:17	okay our next Super Chat here
+[775] 40:20	is again from Zeo bail for our 22 Euros
+[776] 40:23	thank you very much for the Super Chat
+[777] 40:26	thoughts on Genesis 7 2. clean and
+[778] 40:29	unclean animals with Noah
+[779] 40:31	Diddy anachronistically keep kosher law
+[780] 40:35	story if asked before Merry Christmas
+[781] 40:37	well Merry Christmas to you also and you
+[782] 40:39	haven't asked this before so we're cool
+[783] 40:42	not that as that's a problem I mean if
+[784] 40:43	you I mean people repeat questions all
+[785] 40:45	the time so we're more than happy to to
+[786] 40:48	answer questions on a repeated basis and
+[787] 40:51	part of the reason we are is because
+[788] 40:52	sometimes we add new insights we get new
+[789] 40:55	insights we add um you know details that
+[790] 40:58	we we learn along the way you know we're
+[791] 41:00	all in the learning process you know
+[792] 41:02	even I'm in a learning process
+[793] 41:04	you know yeah okay I have a PhD but I'm
+[794] 41:07	a I'm a Perpetual student I'm always
+[795] 41:09	learning you know I think it's important
+[796] 41:12	to always learn
+[797] 41:14	now
+[798] 41:16	did uh Noah keep anachronistically the
+[799] 41:20	kosher law no okay sorry
+[800] 41:24	um
+[801] 41:26	no he did not keep the kosher law
+[802] 41:28	but the kosher law is is important for
+[803] 41:31	the Israelites
+[804] 41:33	it's this is this is a this is a
+[805] 41:36	retrojection
+[806] 41:37	this is a way of showing the Israelites
+[807] 41:41	coming out of Egypt
+[808] 41:43	how they should be behaving
+[809] 41:45	because they what the last thing Moses
+[810] 41:47	wants to do is basically tell the story
+[811] 41:49	of Noah
+[812] 41:51	with basically no reference to how the
+[813] 41:55	Israelites are supposed to live going
+[814] 41:57	forward
+[815] 41:58	because invariably somebody is going to
+[816] 42:01	to look at the story and no one goes hmm
+[817] 42:03	he ate Pig
+[818] 42:06	why can't I eat pig
+[819] 42:10	okay
+[820] 42:12	so in in some respects Moses and his
+[821] 42:17	amenuensis
+[822] 42:18	they're they're not going they want to
+[823] 42:21	sort of nip that sort of thing in the
+[824] 42:23	butt
+[825] 42:24	so they're gonna they're gonna
+[826] 42:26	retrojectively uh
+[827] 42:29	include references to kosher law
+[828] 42:32	inside the no America narrative just so
+[829] 42:36	nobody gets the wrong idea
+[830] 42:38	essentially that's what's going on here
+[831] 42:42	so
+[832] 42:44	because the fact is that if you can make
+[833] 42:48	a case that the Covenant with Lo uh Noah
+[834] 42:52	supersedes
+[835] 42:53	uh any later Covenant there's there is
+[836] 42:56	there is some argument to be made there
+[837] 42:59	so
+[838] 43:01	because because there's there is the
+[839] 43:03	there is the conception in the ancient
+[840] 43:05	world that whatever is oldest is best
+[841] 43:09	not necessarily what is most current is
+[842] 43:12	was an effect
+[843] 43:15	so with that said
+[844] 43:18	I think that what we have here is that
+[845] 43:22	the writer who's recording the the story
+[846] 43:26	of Noah he is he is basically
+[847] 43:29	retrojecting the kosher laws upon Noah
+[848] 43:32	to
+[849] 43:34	basically show Israel this is the way
+[850] 43:37	you should be going
+[851] 43:39	so I think this was just just what's
+[852] 43:40	going on there
+[853] 43:42	so anyway I hope that helps thank you
+[854] 43:45	very much for the Super Chat very very
+[855] 43:46	much appreciate it and a great question
+[856] 43:52	okay our next Super Chat here is from
+[857] 43:55	Pablo Andres for 9.99 thank you very
+[858] 43:58	much for the Super Chat and he asks
+[859] 44:01	why does the Book of Daniel have so many
+[860] 44:03	critics regarding its date
+[861] 44:06	oh boy
+[862] 44:08	do you have an opinion of this yes I do
+[863] 44:12	who's your favorite prophet in the Old
+[864] 44:14	Testament oh boy
+[865] 44:19	uh we'll answer the first one first uh
+[866] 44:22	last last question first
+[867] 44:24	my favorite Old Testament Prophet is
+[868] 44:26	going to be Moses I mean it's going to
+[869] 44:28	be Moses straight up
+[870] 44:30	uh you can't dedicate your life to
+[871] 44:33	studying The Exodus and hate Moses so
+[872] 44:35	you know that's that's sort of a
+[873] 44:37	no-brainer for me
+[874] 44:41	now
+[875] 44:43	The Book of Daniel
+[876] 44:46	The Book of Daniel is very very
+[877] 44:47	controversial
+[878] 44:49	because
+[879] 44:52	it makes certain predictions
+[880] 44:55	that are
+[881] 44:57	that don't seem to be
+[882] 45:03	that almost if it seemed to be almost
+[883] 45:07	excellent to prophecy
+[884] 45:09	now what is X event to prophecy
+[885] 45:12	X event to Pro ex event to prophecy is
+[886] 45:16	prophecy that's written after the fact
+[887] 45:19	so an event happens
+[888] 45:23	and then you write
+[889] 45:25	a prophecy to explain the event
+[890] 45:30	this is very common in certainly these
+[891] 45:32	Eastern literature like in say the
+[892] 45:35	prophecy of Nefertiti
+[893] 45:37	where they're the writer the Egyptian
+[894] 45:39	writer is writing X of N2 prophecy to
+[895] 45:44	bolster politically the Middle Kingdom
+[896] 45:48	bureaucracy of Amanda the first
+[897] 45:52	however
+[898] 45:57	um
+[899] 45:59	I don't think all prophecy is
+[900] 46:01	necessarily X event too
+[901] 46:05	so
+[902] 46:07	because Daniel seems to be talking about
+[903] 46:11	things
+[904] 46:12	that
+[905] 46:14	only somebody who can perfectly predict
+[906] 46:16	the future can seem to grasp a lot of
+[907] 46:20	critics do think that the Book of Daniel
+[908] 46:23	was written late
+[909] 46:26	now I think those those critics
+[910] 46:30	um sort of grasp at straws when they try
+[911] 46:33	to look at the internal evidence and say
+[912] 46:35	oh this is a light date
+[913] 46:37	I mean I've heard some crazy arguments
+[914] 46:39	regarding Daniel really crazy arguments
+[915] 46:41	like I've I've heard that the Aramaic
+[916] 46:44	used in Daniel
+[917] 46:46	is was you know
+[918] 46:50	too late it's too late
+[919] 46:53	for it to be written at um during the um
+[920] 46:58	during the late six
+[921] 47:00	early 5th centuries BC
+[922] 47:04	and
+[923] 47:08	really air making go goes back even
+[924] 47:10	further than that so there's really no
+[925] 47:13	justification for that criticism
+[926] 47:17	keeps learning X event to prophecy okay
+[927] 47:20	uh just type in chat here x event two
+[928] 47:27	what is he
+[929] 47:30	okay
+[930] 47:31	so
+[931] 47:33	my opinion on Daniel is is it's it's
+[932] 47:37	pretty much written in the
+[933] 47:42	um
+[934] 47:43	the early 5th Century essentially
+[935] 47:46	so that's that's my opinion on when it's
+[936] 47:48	dated I don't think I don't think it's
+[937] 47:51	it's as late or as as early as the 6th
+[938] 47:55	Century BC or sorry the um yeah 6th
+[939] 47:59	Century BC but I do think it's fifth I
+[940] 48:01	do think it's fifth
+[941] 48:03	I certainly don't hold to say the um the
+[942] 48:06	critics that think it's I mean we some
+[943] 48:10	critics uh you know basically said it's
+[944] 48:13	as late as 150 BC
+[945] 48:16	I certainly don't hold to that I mean I
+[946] 48:19	think that's really out there
+[947] 48:24	so I've got some
+[948] 48:26	I've got some issues with how a lot of
+[949] 48:28	critics have been treating Daniel
+[950] 48:31	uh there was a very very good book that
+[951] 48:33	was edited by Wiseman and Fairman
+[952] 48:36	on which has a collection of of essays
+[953] 48:40	on The Dating of Daniel
+[954] 48:42	and I think it's very very interesting
+[955] 48:43	it's a very good book
+[956] 48:45	it's uh is out of print unfortunately
+[957] 48:48	but um IT addresses many of these issues
+[958] 48:51	and most of these issues are pretty easy
+[959] 48:54	to overcome when when it comes right
+[960] 48:56	down to it
+[961] 48:58	so anyway that's my uh that's my opinion
+[962] 49:01	on the Book of Daniel
+[963] 49:02	I hope that helps thank you very much
+[964] 49:04	for Super Chat very very much
+[965] 49:06	appreciated
+[966] 49:09	okay our next Super Chat here is from
+[967] 49:12	Billy ningan for ten dollars thank you
+[968] 49:13	very much for the Super Chat
+[969] 49:15	Merry Christmas Dr Falk and your family
+[970] 49:17	well Merry Christmas to you too
+[971] 49:20	he says if Genesis 111 has Mesopotamian
+[972] 49:24	context plus Acadian was still used well
+[973] 49:26	into the 6th Century BC yup true
+[974] 49:29	could the exilic dating be favored over
+[975] 49:33	Mosaic authorship
+[976] 49:37	well
+[977] 49:40	uh
+[978] 49:42	I don't think so
+[979] 49:44	I don't think so
+[980] 49:47	and part of the reason I don't think the
+[981] 49:49	exilic dating here is really
+[982] 49:52	um
+[983] 49:53	could be favored even though
+[984] 49:58	even though
+[985] 50:01	I think that there's a problem is the if
+[986] 50:03	Genesis 1 to 11 has a Mesopotamian
+[987] 50:06	context
+[988] 50:08	I think that's problematic right there
+[989] 50:10	there's a there's an assumption built
+[990] 50:12	into your protossus
+[991] 50:14	that I think has is need some work
+[992] 50:18	so the fact is Genesis 111 is not
+[993] 50:21	strictly Mesopotamian
+[994] 50:24	it's not strictly Mesopotamian
+[995] 50:27	it's really
+[996] 50:30	it's really
+[997] 50:33	ancient near Eastern in a more General
+[998] 50:35	way
+[999] 50:37	I mean we find references to Egyptian
+[1000] 50:39	myth in Genesis 1 11 2.
+[1001] 50:42	if this is a Mesopotamian context then
+[1002] 50:44	were they getting Egyptian myth from
+[1003] 50:47	so
+[1004] 50:49	it isn't it isn't just restricted to
+[1005] 50:51	Mesopotamia
+[1006] 50:53	so I think if you've got that that if if
+[1007] 50:55	you've got that if statement there and
+[1008] 50:58	you have to you have to look at this and
+[1009] 51:03	say okay
+[1010] 51:04	how much Egyptians in here
+[1011] 51:06	how much local cane lights in here
+[1012] 51:09	we do have certain aspects that do seem
+[1013] 51:12	to allude to Mesopotamian like for
+[1014] 51:15	example Gilgamesh you know Gilgamesh
+[1015] 51:17	seems to be alluded to in Genesis but we
+[1016] 51:19	find copies of Gilgamesh spread out from
+[1017] 51:22	Mesopotamia all the way over to you
+[1018] 51:24	Garrett
+[1019] 51:27	so you know it's a well well established
+[1020] 51:30	and well-copied story very very well
+[1021] 51:33	copied
+[1022] 51:34	there's even some suggestion that uh
+[1023] 51:37	Egyptians had access to these these
+[1024] 51:40	stories in Egypt
+[1025] 51:44	so
+[1026] 51:47	I don't think that you can just say that
+[1027] 51:50	because it has the context and plus
+[1028] 51:53	Acadian is still around that
+[1029] 51:56	you could necessarily favor exilic
+[1030] 51:59	authorship you should still run into
+[1031] 52:01	problems with that that whole idea
+[1032] 52:04	um but you would in order to maintain
+[1033] 52:06	that idea you would really have to
+[1034] 52:08	isolate Genesis 1 to 11. that's its own
+[1035] 52:12	separate literary unit that is has no
+[1036] 52:15	relation to the other texts
+[1037] 52:18	I think that's difficult
+[1038] 52:20	when you start chopping up the biblical
+[1039] 52:23	texts down to sections that are
+[1040] 52:25	favorable for your argument
+[1041] 52:28	that tells me that the argument's not
+[1042] 52:30	very strong
+[1043] 52:33	I think if it'd be much more compelling
+[1044] 52:36	if you had the entirety of Genesis
+[1045] 52:39	and then I could make the same argument
+[1046] 52:40	then then it might be a little more
+[1047] 52:42	compelling
+[1048] 52:44	but then you start running into real
+[1049] 52:45	problems
+[1050] 52:46	such as what do you do with the whole
+[1051] 52:48	Joseph narrative
+[1052] 52:50	and that's a huge portion of the text
+[1053] 52:54	so I think I think there's difficulties
+[1054] 52:56	when you have to isolate a certain text
+[1055] 52:59	separated from its the rest of the text
+[1056] 53:02	the surrounding texts to get to the
+[1057] 53:05	results you want
+[1058] 53:10	so anyway I hope that answers your
+[1059] 53:12	question thank you very much for the
+[1060] 53:14	Super Chat very much appreciated
+[1061] 53:16	it is it is a it is a controversial
+[1062] 53:18	subject it is definitely controversial
+[1063] 53:20	subject
+[1064] 53:22	and Scholars do disagree here
+[1065] 53:24	they do
+[1066] 53:26	um whether or not how strong that
+[1067] 53:29	Mesopotamian context is what were the
+[1068] 53:31	texts that were influencing say the
+[1069] 53:34	biblical writers
+[1070] 53:35	so you know there's there's a lot of
+[1071] 53:38	unanswered questions here
+[1072] 53:40	but anyway thank you very much for the
+[1073] 53:41	Super Chat very very much appreciated
+[1074] 53:45	okay
+[1075] 53:47	the next Super Chat is also from Billy
+[1076] 53:50	ningan for five dollars thank you very
+[1077] 53:51	much Super Chat
+[1078] 53:54	Dr Falk do you believe in the
+[1079] 53:56	possibility of vampires werewolves
+[1080] 53:58	Cyclops or cryptids in general oh
+[1081] 54:04	oh
+[1082] 54:10	hmm
+[1083] 54:13	interesting question
+[1084] 54:15	all right
+[1085] 54:18	let's rule out a couple possibilities
+[1086] 54:19	here I don't believe in cyclops
+[1087] 54:22	okay let's rule that one out right there
+[1088] 54:29	now
+[1089] 54:31	the others
+[1090] 54:33	are a whole different
+[1091] 54:35	whole different uh
+[1092] 54:37	kettle of fish as it were
+[1093] 54:42	generally I don't believe in these
+[1094] 54:44	things as being supernatural creatures
+[1095] 54:46	like for example I don't believe in
+[1096] 54:49	Vampires as being walking cadavers
+[1097] 54:52	okay I don't believe in that
+[1098] 54:54	but I do know that there are people out
+[1099] 54:57	there who think they're vampires who are
+[1100] 55:00	living people
+[1101] 55:01	who
+[1102] 55:03	are
+[1103] 55:07	um
+[1104] 55:08	not necessarily have Renfield syndrome
+[1105] 55:12	but we'll drink we'll drink blood and
+[1106] 55:15	think it's efficacious
+[1107] 55:19	and that's a hard argument not to make
+[1108] 55:23	because you know the scriptures tell us
+[1109] 55:24	the life is in the blood
+[1110] 55:27	and that you know we are to drain the
+[1111] 55:29	blood when we eat the meat
+[1112] 55:31	but we also practice the whole you know
+[1113] 55:35	the Eucharist
+[1114] 55:36	we practice the Eucharist
+[1115] 55:39	which is the body and the blood of
+[1116] 55:40	Christ you know we believe that that has
+[1117] 55:43	certain uh efficacy
+[1118] 55:47	so you know the vampires have something
+[1119] 55:49	there
+[1120] 55:50	at least the living ones
+[1121] 55:53	as far as werewolf
+[1122] 55:57	werewolves and like cancer be in general
+[1123] 55:59	lycanthropy is basically the idea that
+[1124] 56:02	humans can change into
+[1125] 56:04	animal-like forms
+[1126] 56:09	the the whole the whole issue of like
+[1127] 56:11	anthropy
+[1128] 56:13	is is one that's really interesting all
+[1129] 56:18	by itself
+[1130] 56:20	it's
+[1131] 56:25	it has actually
+[1132] 56:28	like in in Native American Myth there's
+[1133] 56:32	strong beliefs in the possibility of
+[1134] 56:35	lycanthropy
+[1135] 56:37	um by the way I just saw my video uh
+[1136] 56:40	monitor glitch here are we still on the
+[1137] 56:42	air can you guys still hear us
+[1138] 56:46	I
+[1139] 56:49	can we
+[1140] 56:52	are we still on
+[1141] 56:59	can everyone hear me
+[1142] 57:05	okay we're still good okay
+[1143] 57:09	so we'll just take that as a YouTube
+[1144] 57:10	glitch then
+[1145] 57:12	okay
+[1146] 57:15	all right
+[1147] 57:16	um
+[1148] 57:18	yeah it's done that now for two live
+[1149] 57:20	streams and it's really odd so I don't
+[1150] 57:22	know why YouTube has all of a sudden
+[1151] 57:24	decided to act up here
+[1152] 57:26	so uh as long as you can hear me as long
+[1153] 57:28	as you can still see me that
+[1154] 57:30	then we're okay we're good
+[1155] 57:33	so with that said
+[1156] 57:35	um
+[1157] 57:37	so werewolves getting back to werewolves
+[1158] 57:40	um there is a both a western uh
+[1159] 57:42	tradition of werewolf and a Native
+[1160] 57:44	American version of it we even have see
+[1161] 57:46	some some
+[1162] 57:48	uh uh Legends of lycanthropy in
+[1163] 57:51	Southeast Asia as well
+[1164] 57:54	so
+[1165] 57:55	uh we for example the North American
+[1166] 57:59	practice was basically among uh shamans
+[1167] 58:03	where they thought that they could
+[1168] 58:05	conjure a animal spirit that inhabited
+[1169] 58:08	them and turned them into say
+[1170] 58:12	animal-like forms
+[1171] 58:14	uh like
+[1172] 58:17	um the windigo and the uh Mana two so so
+[1173] 58:20	there's there's some
+[1174] 58:23	there is some I guess
+[1175] 58:26	anthropological work cultural
+[1176] 58:28	anthropology that should be done to
+[1177] 58:31	study this issue further
+[1178] 58:35	as far as
+[1179] 58:39	um
+[1180] 58:42	as far as uh Cryptids now Cryptids are
+[1181] 58:46	just ordinary animals that are just
+[1182] 58:48	hidden you know it comes from the word
+[1183] 58:50	crypto to mean to hide
+[1184] 58:52	so a Cryptid to say like an animal
+[1185] 58:54	that's you know
+[1186] 58:56	like Bigfoot or
+[1187] 58:59	um
+[1188] 59:00	what's another one uh Loch Ness Monster
+[1189] 59:05	generally I don't believe in Cryptids
+[1190] 59:09	okay
+[1191] 59:11	but I'm also not close to the
+[1192] 59:12	possibility that there are some Cryptids
+[1193] 59:14	out there
+[1194] 59:17	so I don't believe them but I'm not
+[1195] 59:20	close-minded to them either
+[1196] 59:23	yeah I mean people didn't believe in
+[1197] 59:26	gorillas when they were first described
+[1198] 59:28	in the 19th century I mean the whole
+[1199] 59:31	idea I mean no one had seen a gorilla in
+[1200] 59:33	in Europe the whole idea of a ape an
+[1201] 59:38	ape-like creature the size of a man or
+[1202] 59:40	larger
+[1203] 59:42	you know this was something that was
+[1204] 59:43	just seen as fantastic in Europe
+[1205] 59:47	yeah
+[1206] 59:49	size of a man human eye well they don't
+[1207] 59:52	have human eyes they they look like yeah
+[1208] 59:55	but they don't but yeah but they're big
+[1209] 59:58	hairy almost man-like so
+[1210] 1:00:01	so you know there's
+[1211] 1:00:04	and and we we have this there's things
+[1212] 1:00:06	in this world especially especially in
+[1213] 1:00:07	the Deep oceans
+[1214] 1:00:09	in the Deep oceans is where we're likely
+[1215] 1:00:11	to find the most hidden creatures
+[1216] 1:00:13	because you know while the land has been
+[1217] 1:00:16	mostly explored the deep deep oceans we
+[1218] 1:00:19	know more about old outer space
+[1219] 1:00:22	than we do about the Deep oceans
+[1220] 1:00:25	so there's a lot of stuff in the Deep
+[1221] 1:00:29	oceans that have yet to be discovered
+[1222] 1:00:32	now I'm not saying Megalodon is down
+[1223] 1:00:34	there I don't think there's any monster
+[1224] 1:00:36	sharks down there but I think we still
+[1225] 1:00:38	are going to see some pretty weird
+[1226] 1:00:40	animals
+[1227] 1:00:42	um
+[1228] 1:00:44	interestingly enough
+[1229] 1:00:47	uh I took a vacation once and I went to
+[1230] 1:00:50	this aquarium conference
+[1231] 1:00:53	and well at this aquarium conference
+[1232] 1:00:58	there was a you know deep sea Explorer
+[1233] 1:01:02	you know he's this guy was a was an
+[1234] 1:01:04	Explorer in waters and
+[1235] 1:01:06	he he had this interesting presentation
+[1236] 1:01:10	called
+[1237] 1:01:12	animals that are not currently in the
+[1238] 1:01:14	aquarium trade but should be
+[1239] 1:01:16	of course this is a this is all a this
+[1240] 1:01:18	is a conference for for aquarium and
+[1241] 1:01:21	coral reef keeper so you know we're all
+[1242] 1:01:22	interest deeply interested in this stuff
+[1243] 1:01:25	but he showed some some animals that I
+[1244] 1:01:28	had never seen in my life
+[1245] 1:01:30	is absolutely fascinating one of the
+[1246] 1:01:33	most interesting ones was a a cuttlefish
+[1247] 1:01:37	that was one inch long
+[1248] 1:01:39	you know a previously undiscovered
+[1249] 1:01:42	species
+[1250] 1:01:43	up to that year
+[1251] 1:01:45	but as I said it's a cuttlefish but only
+[1252] 1:01:47	one inch long I mean fascinating I
+[1253] 1:01:49	didn't know such an animal existed
+[1254] 1:01:52	but those are the sort of things that I
+[1255] 1:01:53	think will
+[1256] 1:01:54	sort of be discovered as things go along
+[1257] 1:01:58	it's not not necessarily the big
+[1258] 1:02:00	creatures the small ones small ones
+[1259] 1:02:05	like the
+[1260] 1:02:08	um
+[1261] 1:02:09	like things they they talk about the um
+[1262] 1:02:12	like 90 of bacteria have never been
+[1263] 1:02:14	properly cataloged
+[1264] 1:02:16	stuff like that
+[1265] 1:02:19	so I I do think there's there's some
+[1266] 1:02:21	possible lots of possibilities to to
+[1267] 1:02:25	um to discover new new animals new
+[1268] 1:02:28	Cryptids you know animals that have been
+[1269] 1:02:30	evaded mankind
+[1270] 1:02:32	uh but I also think we're getting to the
+[1271] 1:02:35	point where we're seeing the smaller and
+[1272] 1:02:36	smaller animals now that that we've
+[1273] 1:02:39	pretty much seen most of the big ones
+[1274] 1:02:40	we've discovered most of the big ones
+[1275] 1:02:42	but we're now getting to the small and
+[1276] 1:02:44	small ones and that's where I think the
+[1277] 1:02:45	really the sort of the Horizon of
+[1278] 1:02:47	Discovery is in say zoology
+[1279] 1:02:51	but I don't think I don't think
+[1280] 1:02:54	I I don't believe in like Loch Ness
+[1281] 1:02:55	monster or bigfooter or anything like
+[1282] 1:02:57	that so when we talk about Cryptids we
+[1283] 1:02:59	have to be very specific what we mean
+[1284] 1:03:01	here so um yeah I don't think there's a
+[1285] 1:03:04	Yeti either
+[1286] 1:03:05	although it would be very really cool if
+[1287] 1:03:07	there was a Yeti
+[1288] 1:03:09	[Laughter]
+[1289] 1:03:15	um I have I have known people that have
+[1290] 1:03:16	claimed to have seen seen you know some
+[1291] 1:03:19	pretty bizarre creatures
+[1292] 1:03:22	um but
+[1293] 1:03:24	I don't necessarily believe in myself
+[1294] 1:03:28	I do think that there are there's a lot
+[1295] 1:03:30	of strange stuff in this world though
+[1296] 1:03:32	a lot of strange stuff
+[1297] 1:03:35	and and I'm I think we need do need to
+[1298] 1:03:37	be open to a lot more possibilities than
+[1299] 1:03:40	we say are currently
+[1300] 1:03:43	um basically generally accepted say even
+[1301] 1:03:46	amongst say biblical Scholars or Society
+[1302] 1:03:48	at Large
+[1303] 1:03:50	because the more we learn the more we
+[1304] 1:03:52	the more we find out we don't know
+[1305] 1:03:55	the more we more the more we learn the
+[1306] 1:03:58	more we find out we don't know we have
+[1307] 1:04:00	to be humble to that fact
+[1308] 1:04:03	there's always something we don't know
+[1309] 1:04:06	so I think if we just want to be humbled
+[1310] 1:04:09	before the facts we have to say okay
+[1311] 1:04:10	yeah we don't know everything
+[1312] 1:04:15	so anyway
+[1313] 1:04:16	uh thank you very much for the Super
+[1314] 1:04:17	Chat very much appreciated and that's
+[1315] 1:04:19	sort of my opinion it's like well
+[1316] 1:04:20	depends what you mean by each one of
+[1317] 1:04:21	those
+[1318] 1:04:22	vampires the living ones yes the walking
+[1319] 1:04:26	cadavers no werewolves yeah there's
+[1320] 1:04:29	something that cultural anthropologists
+[1321] 1:04:30	do need to really study here
+[1322] 1:04:32	Cyclops no don't believe in Cyclops
+[1323] 1:04:35	Cryptids yeah possibly
+[1324] 1:04:39	by no means the big ones in general
+[1325] 1:04:42	so when I thank you very much the Super
+[1326] 1:04:43	Chat very very much appreciate and I
+[1327] 1:04:45	hope that you found that interesting
+[1328] 1:04:50	okay our next Super Chat here is again
+[1329] 1:04:52	from Billy ningan for five dollars thank
+[1330] 1:04:54	you very much Super Chat
+[1331] 1:04:56	Dr Falk was exorcism a thing in ancient
+[1332] 1:04:59	Israel or was it borrowed from Persia
+[1333] 1:05:03	oh
+[1334] 1:05:04	wow
+[1335] 1:05:06	we do know that the Israelites did
+[1336] 1:05:10	believe in at least possession
+[1337] 1:05:14	say possession by unclean spirits before
+[1338] 1:05:18	the exile
+[1339] 1:05:21	we do have a uh we have things like the
+[1340] 1:05:24	witch vendor
+[1341] 1:05:25	where which is calling up Samuel she's
+[1342] 1:05:28	not expecting Samuel
+[1343] 1:05:30	she's expecting a familiar spirit
+[1344] 1:05:33	we have things like Saul who is uh
+[1345] 1:05:38	possessed and oppressed by an unclean
+[1346] 1:05:40	spirit
+[1347] 1:05:42	so it does seem that the Israelites
+[1348] 1:05:45	believe in possession
+[1349] 1:05:48	and
+[1350] 1:05:49	I think that
+[1351] 1:05:52	anytime you see a culture that believes
+[1352] 1:05:56	in possession by spirits
+[1353] 1:05:59	you are gonna also as a consequence find
+[1354] 1:06:02	exorcism as an attempt to remove the
+[1355] 1:06:06	unclean spirits
+[1356] 1:06:10	so
+[1357] 1:06:12	so I don't think it was necessarily
+[1358] 1:06:14	borrowed from Persia
+[1359] 1:06:18	um although say Persia could have
+[1360] 1:06:20	influenced how exorcism was done that's
+[1361] 1:06:23	always possible
+[1362] 1:06:24	and we don't know enough about Persian
+[1363] 1:06:26	exorcism to really know
+[1364] 1:06:30	um
+[1365] 1:06:31	we actually have more information on
+[1366] 1:06:34	this from say Acadian records
+[1367] 1:06:38	like there's a whole lot of Acadian
+[1368] 1:06:39	medical text and this is something I
+[1369] 1:06:41	should look up and read a little more on
+[1370] 1:06:42	honestly
+[1371] 1:06:44	um there's a lot of good books published
+[1372] 1:06:46	on on Mesopotamian medicine
+[1373] 1:06:50	uh among which sbl uh published an
+[1374] 1:06:53	incredibly good one on
+[1375] 1:06:55	I have a copy of it but I haven't
+[1376] 1:06:56	actually gone through it and read it yet
+[1377] 1:06:58	I should
+[1378] 1:07:00	I should also go to through Papyrus uh
+[1379] 1:07:03	ebers as well and do the same sort of
+[1380] 1:07:05	study but
+[1381] 1:07:06	my copious free time and all that which
+[1382] 1:07:08	I don't have uh prevents me from reading
+[1383] 1:07:11	as much as I want to
+[1384] 1:07:16	but I think what we're dealing with here
+[1385] 1:07:18	as far as exorcism I do think this is a
+[1386] 1:07:21	pre
+[1387] 1:07:22	I think this is a pre-exile
+[1388] 1:07:28	um custom
+[1389] 1:07:30	but like all Customs They do change over
+[1390] 1:07:33	time
+[1391] 1:07:34	so there might have been exorcisms prior
+[1392] 1:07:36	to the exile
+[1393] 1:07:39	but it would be also equally true to say
+[1394] 1:07:41	that once they returned
+[1395] 1:07:44	from Babylon
+[1396] 1:07:46	those exorcisms would look very
+[1397] 1:07:48	different they wouldn't be the same
+[1398] 1:07:51	and I think by the time you're into say
+[1399] 1:07:53	the second temple period up until the
+[1400] 1:07:55	time of Christ they're very different
+[1401] 1:07:57	again
+[1402] 1:07:59	so
+[1403] 1:08:01	exorcism is not one of those sort of
+[1404] 1:08:03	Customs that's say the same at one time
+[1405] 1:08:06	it it does radically change over time
+[1406] 1:08:09	I mean for example
+[1407] 1:08:11	you look at the right of exorcism in the
+[1408] 1:08:14	Roman Catholic Church
+[1409] 1:08:16	it's exceptionally difficult from what
+[1410] 1:08:18	you find in the early church incredibly
+[1411] 1:08:21	different
+[1412] 1:08:23	uh they include a lot of things that
+[1413] 1:08:25	were just not included in the original
+[1414] 1:08:27	formulas for for exercise
+[1415] 1:08:30	uh stuff such as uh you know reciting
+[1416] 1:08:34	the uh Mary Mother of God you know ten
+[1417] 1:08:37	thousand times you know so you know
+[1418] 1:08:39	there's there's things you find in the
+[1419] 1:08:41	Roman Catholic right that you'll never
+[1420] 1:08:43	see and say more historical
+[1421] 1:08:46	um say early church or before exorcisms
+[1422] 1:08:50	so I think there's I think there's this
+[1423] 1:08:52	we have to we have to keep that in mind
+[1424] 1:08:54	that when we look at exorcism as a thing
+[1425] 1:08:58	it's not going to be the same from one
+[1426] 1:09:00	period of Time Versus the other but as
+[1427] 1:09:02	long as the culture recognizes that the
+[1428] 1:09:05	possibility of possession
+[1429] 1:09:07	then there's inevitably going to be
+[1430] 1:09:08	exorcism as well
+[1431] 1:09:10	so when I thank you very much for the
+[1432] 1:09:12	Super Chat very much appreciate and I
+[1433] 1:09:13	hope that helped
+[1434] 1:09:19	okay we've got an awesome super chat
+[1435] 1:09:21	here from Jack Ray thank you so much for
+[1436] 1:09:24	that very very generous Super Chat of a
+[1437] 1:09:26	hundred dollars
+[1438] 1:09:28	it's very much appreciated thank you so
+[1439] 1:09:30	very much
+[1440] 1:09:31	you know generosity like this really
+[1441] 1:09:33	helps keep this channel afloat
+[1442] 1:09:36	so I want to thank you so very much I
+[1443] 1:09:38	want to wish you a Merry Christmas and
+[1444] 1:09:40	he says merry Christmas as well uh
+[1445] 1:09:43	wow you've been a great supporter of
+[1446] 1:09:46	this Channel and we really really
+[1447] 1:09:47	appreciate it thank you so much and it's
+[1448] 1:09:50	great to have friends like you
+[1449] 1:09:51	supporting this channel
+[1450] 1:09:53	so God bless you have a great Christmas
+[1451] 1:09:56	and have a great new year as well
+[1452] 1:09:59	thank you very much
+[1453] 1:10:04	the next one here is from Angel wvm for
+[1454] 1:10:07	five dollars thank you much for the
+[1455] 1:10:08	Super Chat
+[1456] 1:10:11	and yes do you think the Bible excludes
+[1457] 1:10:14	the possibility of other people existing
+[1458] 1:10:16	outside the Garden of Eden hmm
+[1459] 1:10:20	hmm
+[1460] 1:10:23	[Laughter]
+[1461] 1:10:27	yeah not after they're thrown out
+[1462] 1:10:32	well the whole question is
+[1463] 1:10:36	uh the idea of people existing outside
+[1464] 1:10:39	of Eden before the fall
+[1465] 1:10:44	and that's that's the million dollar
+[1466] 1:10:47	question right there
+[1467] 1:10:50	my thoughts on this is that
+[1468] 1:10:55	the whole idea of Adam and Eve is that
+[1469] 1:10:58	they are made in the image of God and
+[1470] 1:11:00	his likeness to be in his Temple
+[1471] 1:11:04	okay the the whole the whole Genesis 1
+[1472] 1:11:07	to 3 thing is the idea that
+[1473] 1:11:13	God is creating creation to be his
+[1474] 1:11:16	Temple
+[1475] 1:11:17	and Mankind is to be his image within
+[1476] 1:11:20	the temple
+[1477] 1:11:23	so
+[1478] 1:11:25	this would necessarily exclude other
+[1479] 1:11:29	people existing outside of that the
+[1480] 1:11:33	confines of Eden
+[1481] 1:11:35	now we can always ask the question was
+[1482] 1:11:37	Adam and Eve alone in the garden
+[1483] 1:11:39	you know do they have any children
+[1484] 1:11:40	before and were they affected by Paul
+[1485] 1:11:43	but I would think it seems very very
+[1486] 1:11:48	implausible
+[1487] 1:11:50	that there would be other people outside
+[1488] 1:11:52	of the garden
+[1489] 1:11:53	just because of what the function of the
+[1490] 1:11:56	garden is its purpose within creation
+[1491] 1:12:00	the purpose of mankind
+[1492] 1:12:03	is the purpose of mankind is to reflect
+[1493] 1:12:05	that image God to God
+[1494] 1:12:09	so I don't think there's any real
+[1495] 1:12:12	possibility of people outside of the
+[1496] 1:12:14	garden outside of Eden before the fall
+[1497] 1:12:19	because that was that would throw forth
+[1498] 1:12:22	the entire purpose of mankind the garden
+[1499] 1:12:24	God's relationship with with men all of
+[1500] 1:12:28	that
+[1501] 1:12:30	now once the fall happens you only find
+[1502] 1:12:34	people outside of the Garden of Eden
+[1503] 1:12:39	doubt
+[1504] 1:12:40	they're all excluded
+[1505] 1:12:45	so
+[1506] 1:12:47	I do think I do think the Bible actually
+[1507] 1:12:49	excludes this possibility and I think it
+[1508] 1:12:52	excludes it not explicitly
+[1509] 1:12:54	but it does inherently have to exclude
+[1510] 1:12:59	it
+[1511] 1:12:59	for the rest of the narrative to make
+[1512] 1:13:02	any sense
+[1513] 1:13:04	so I hope that explains it thank you
+[1514] 1:13:07	very much for the Super Chat very much
+[1515] 1:13:08	appreciated and
+[1516] 1:13:10	um I do think it has to
+[1517] 1:13:13	it has to uh you do have to keep this in
+[1518] 1:13:16	mind that of the of the whole sort of
+[1519] 1:13:19	Telos
+[1520] 1:13:21	of that that Genesis narrative again
+[1521] 1:13:24	again works out to this this is a temple
+[1522] 1:13:27	narrative
+[1523] 1:13:28	it's man within God's Temple and within
+[1524] 1:13:31	his Sacred Space that man corrupts
+[1525] 1:13:34	so whether that a garden is a specific
+[1526] 1:13:37	place in Eden whether it's say Africa
+[1527] 1:13:41	wherever that's an open question
+[1528] 1:13:43	nope
+[1529] 1:13:44	that's a more open question
+[1530] 1:13:47	but inside the narrative
+[1531] 1:13:52	this is definitely you know there's no
+[1532] 1:13:55	people living outside of this that would
+[1533] 1:13:57	be considered to be human beings
+[1534] 1:14:01	at least not human beings created in the
+[1535] 1:14:03	image of God
+[1536] 1:14:04	so I think I think that we have to sort
+[1537] 1:14:07	of draw the lines there
+[1538] 1:14:10	if there are any uh anthropoid
+[1539] 1:14:13	organisms outside of it
+[1540] 1:14:16	they're not human beings
+[1541] 1:14:18	those are not made in the image of God
+[1542] 1:14:21	but we don't necessarily have a strict
+[1543] 1:14:27	confide either for where is the Garden
+[1544] 1:14:30	of Eden or how how expansive it was
+[1545] 1:14:35	so I hope that answers the question
+[1546] 1:14:36	thank you very much to the Super Chat
+[1547] 1:14:38	very very much appreciate it
+[1548] 1:14:40	okay
+[1549] 1:14:44	we have another Super Chat here from
+[1550] 1:14:47	Angel vwvm for five dollars thank you
+[1551] 1:14:50	very much for the Super Chat
+[1552] 1:14:52	and he asks what is the context of
+[1553] 1:14:55	second Samuel 18 8 when it says the
+[1554] 1:14:57	force devoured more than the sword
+[1555] 1:15:01	oh this is an interesting question
+[1556] 1:15:04	get up our Bible
+[1557] 1:15:08	this one's fascinating
+[1558] 1:15:11	okay second Samuel
+[1559] 1:15:17	18.
+[1560] 1:15:20	first let's start at verse seven or six
+[1561] 1:15:24	okay
+[1562] 1:15:28	verse six we'll start verse six
+[1563] 1:15:30	then the people went out into the field
+[1564] 1:15:32	against Israel
+[1565] 1:15:34	and the battle took place in the forest
+[1566] 1:15:36	of Ephraim
+[1567] 1:15:38	and the people of Israel were defeated
+[1568] 1:15:40	there before the Servants of David and
+[1569] 1:15:43	the slaughtered that day was great
+[1570] 1:15:45	twenty thousand men
+[1571] 1:15:47	where the battle was spread over the
+[1572] 1:15:49	whole Countryside and the forest
+[1573] 1:15:51	devoured more people than the sword
+[1574] 1:15:54	devoured
+[1575] 1:15:56	now Absalon verse 9 happened to meet the
+[1576] 1:16:00	Servants of David for Absalom was riding
+[1577] 1:16:02	on his mule and the mule went under a
+[1578] 1:16:05	thick branches of a Great Oak
+[1579] 1:16:07	and his head caught fast in the oak so
+[1580] 1:16:10	he was left hanging Between Heaven and
+[1581] 1:16:12	Earth while the MU under him kept going
+[1582] 1:16:15	okay
+[1583] 1:16:17	hmm
+[1584] 1:16:20	so what does it mean when the force
+[1585] 1:16:22	devoured more than a sword
+[1586] 1:16:24	this battle between absence forces and
+[1587] 1:16:29	the forces of David
+[1588] 1:16:31	are taking place uh in around near the
+[1589] 1:16:36	force of Ephraim
+[1590] 1:16:38	okay now this is back when Ephraim still
+[1591] 1:16:40	had for us okay they don't have them
+[1592] 1:16:42	today but back then they were forced in
+[1593] 1:16:44	Ephraim
+[1594] 1:16:46	and part of
+[1595] 1:16:48	being in a force of this nature was this
+[1596] 1:16:53	thick Thicket under brush
+[1597] 1:16:56	that's more like thorns and this
+[1598] 1:17:00	basically Thorn bushes I mean great big
+[1599] 1:17:03	Briars of thorns
+[1600] 1:17:09	it's like like a little bit like the
+[1601] 1:17:11	Alamo
+[1602] 1:17:12	okay
+[1603] 1:17:14	you know not like the Alamo or the
+[1604] 1:17:16	Mexican Army you know surrounds the
+[1605] 1:17:18	Alamo
+[1606] 1:17:19	and the few people that try to escape
+[1607] 1:17:23	the Alamo run into
+[1608] 1:17:26	acres of cactus
+[1609] 1:17:29	and they're more or less killed by the
+[1610] 1:17:30	cactus
+[1611] 1:17:33	same sort of deal here
+[1612] 1:17:36	so
+[1613] 1:17:39	answered
+[1614] 1:17:45	so essentially these people are running
+[1615] 1:17:47	away from the battle they're running
+[1616] 1:17:48	away from the battle and they're going
+[1617] 1:17:50	right into patches of thorns
+[1618] 1:17:56	so you know and and we see here even
+[1619] 1:17:59	even uh when Absalom flees
+[1620] 1:18:02	you know he gets his hair caught in in a
+[1621] 1:18:06	Oak Branch and is hung
+[1622] 1:18:08	you know by his hair
+[1623] 1:18:10	essentially
+[1624] 1:18:13	so this is this is underbrush that's so
+[1625] 1:18:15	thick
+[1626] 1:18:16	so dangerous that you know you try to
+[1627] 1:18:20	escape through there
+[1628] 1:18:21	you know you're gonna get skewered
+[1629] 1:18:24	and you'll probably bleed to death
+[1630] 1:18:26	essentially which is how you know
+[1631] 1:18:28	oftentimes these these sort of things go
+[1632] 1:18:30	down
+[1633] 1:18:31	that's what happened at the Alamo that's
+[1634] 1:18:34	probably what happened here
+[1635] 1:18:35	is that these guys try to to
+[1636] 1:18:38	push their way through thick thickets
+[1637] 1:18:40	and thorns and just got torn up
+[1638] 1:18:44	so this is what it means by the force
+[1639] 1:18:46	devoured more than the sword
+[1640] 1:18:48	so yeah they made a good their escape
+[1641] 1:18:50	from the Army Israel the David's Army
+[1642] 1:18:54	but they lost their life in other ways
+[1643] 1:18:57	so anyway I hope that explains it thank
+[1644] 1:19:00	you very much for the Super Chat it's uh
+[1645] 1:19:02	this was very interesting question it's
+[1646] 1:19:03	a very very interesting question
+[1647] 1:19:06	um and it's a good question too because
+[1648] 1:19:08	it's sort of you have to sort of think
+[1649] 1:19:10	okay what was that original Force like
+[1650] 1:19:12	what's the dangers of being in a force
+[1651] 1:19:14	like this
+[1652] 1:19:16	and and you know how do people die when
+[1653] 1:19:18	they flee into a forest
+[1654] 1:19:21	I mean I mean even the forests around
+[1655] 1:19:24	where I live here and we got some old
+[1656] 1:19:26	growth for us here there's some places
+[1657] 1:19:28	that are impassable
+[1658] 1:19:29	just because of the undergrowth
+[1659] 1:19:36	so anyway thank you very much to the
+[1660] 1:19:37	Super Chat very very much appreciated
+[1661] 1:19:39	and again fascinating question
+[1662] 1:19:42	okay well we're off to Twitch it here
+[1663] 1:19:45	just want to make sure here I didn't
+[1664] 1:19:47	lose anything in the transition
+[1665] 1:19:53	oh there's one more that we have to get
+[1666] 1:19:57	here
+[1667] 1:19:59	so I have to cut and paste this one
+[1668] 1:20:02	this will be just a second
+[1669] 1:20:08	okay
+[1670] 1:20:27	okay the next one here is from WQ for
+[1671] 1:20:30	five dollars thank you very much for the
+[1672] 1:20:31	Super Chat
+[1673] 1:20:33	and he asks was brother sister marriage
+[1674] 1:20:37	actually common among Egyptian rulers
+[1675] 1:20:39	the quick answer is no it wasn't
+[1676] 1:20:42	if so why do they do this all right
+[1677] 1:20:44	we'll get into that did the televised
+[1678] 1:20:47	practice incest for the same reasons not
+[1679] 1:20:49	quite okay
+[1680] 1:20:52	here's how it worked
+[1681] 1:20:55	brother sister marriage was not actually
+[1682] 1:20:58	very common among Egyptian rulers
+[1683] 1:21:01	uh Ernst cherny did a study of
+[1684] 1:21:07	500 couples in ancient Egypt
+[1685] 1:21:11	and discovered amongst those couples
+[1686] 1:21:13	only two couples were actually
+[1687] 1:21:17	co-sanguinous brother sister marriages
+[1688] 1:21:20	very very rare even in Egypt
+[1689] 1:21:22	very rare
+[1690] 1:21:26	um it does happen but it is
+[1691] 1:21:27	exceptionally rare
+[1692] 1:21:32	now what confuses the matter
+[1693] 1:21:36	is that
+[1694] 1:21:38	Egyptians use brother and sister as
+[1695] 1:21:41	Terms of Endearment
+[1696] 1:21:44	so whether or not they're related
+[1697] 1:21:46	by Blood
+[1698] 1:21:48	a husband will call his wife his sister
+[1699] 1:21:51	and the wife will call her husband her
+[1700] 1:21:54	brother
+[1701] 1:21:56	even though they are not blood related
+[1702] 1:22:00	so this confuses matters and it really
+[1703] 1:22:02	confused early egyptologists a lot
+[1704] 1:22:06	but we've now know today that it was
+[1705] 1:22:09	exceptionally uncommon
+[1706] 1:22:10	now why did they do this in the few
+[1707] 1:22:13	cases where they did
+[1708] 1:22:15	it usually happened during a succession
+[1709] 1:22:18	crisis
+[1710] 1:22:20	so the idea was if there was a
+[1711] 1:22:23	succession crisis it was believed that
+[1712] 1:22:26	the bloodline of a king wasn't strong
+[1713] 1:22:31	enough
+[1714] 1:22:32	to Bear healthy children
+[1715] 1:22:36	so what they did was they would pair off
+[1716] 1:22:39	the king
+[1717] 1:22:41	with a royal princess
+[1718] 1:22:43	the idea here is it's a form of
+[1719] 1:22:45	sympathetic Magic
+[1720] 1:22:47	the King has Royal Blood
+[1721] 1:22:49	the queen has Royal Blood together
+[1722] 1:22:52	it's got to be better
+[1723] 1:22:58	yeah this is the case where science
+[1724] 1:23:00	triumphs over magic this is why like for
+[1725] 1:23:03	example King Tut was married to his
+[1726] 1:23:06	half-sister
+[1727] 1:23:07	because
+[1728] 1:23:09	during the the reign of King Tut they
+[1729] 1:23:10	were going through a succession crisis
+[1730] 1:23:13	uh his predecessor simankari did not
+[1731] 1:23:16	bear a an error
+[1732] 1:23:19	now we have the last thief and Prince on
+[1733] 1:23:22	the throne
+[1734] 1:23:23	King Tut and he has no error
+[1735] 1:23:27	so at age 10 he's married off to his
+[1736] 1:23:29	half-sister
+[1737] 1:23:32	it couldn't have been worse
+[1738] 1:23:34	it couldn't have been a less
+[1739] 1:23:37	wise decision
+[1740] 1:23:40	but they didn't know they were
+[1741] 1:23:42	practicing sympathetic Magic
+[1742] 1:23:44	now the ptolema maze
+[1743] 1:23:48	the ptolemes didn't do quite do it for
+[1744] 1:23:50	the same reasons okay
+[1745] 1:23:53	uh
+[1746] 1:23:55	the ptolemes did it for a completely
+[1747] 1:23:57	different reason
+[1748] 1:23:58	and there's some suggestion that the
+[1749] 1:24:02	ptolemes
+[1750] 1:24:03	didn't practice incest in the same way
+[1751] 1:24:08	as say the consanguous marriages of of
+[1752] 1:24:11	earlier dynasties
+[1753] 1:24:16	like for example
+[1754] 1:24:19	a ptolema might be married off to a
+[1755] 1:24:24	Cleopatra
+[1756] 1:24:26	and there's lots of Cleopatra it's just
+[1757] 1:24:27	like there was lots of cold ptolemates
+[1758] 1:24:30	the idea here
+[1759] 1:24:33	was not so much
+[1760] 1:24:36	to
+[1761] 1:24:38	it wasn't so much
+[1762] 1:24:40	to produce new errors to produce new
+[1763] 1:24:43	strong errors that wasn't the point of
+[1764] 1:24:44	it
+[1765] 1:24:46	point of it was more
+[1766] 1:24:48	to prevent
+[1767] 1:24:51	um
+[1768] 1:24:54	nasty succession
+[1769] 1:24:57	uh fighting essentially
+[1770] 1:25:00	the idea is
+[1771] 1:25:03	you you take say two lines of the
+[1772] 1:25:07	tolomas
+[1773] 1:25:08	and you marry them together
+[1774] 1:25:10	so that you don't have rivalry for the
+[1775] 1:25:12	throne or Pretenders to the throne
+[1776] 1:25:16	so there's more for that it was more to
+[1777] 1:25:18	consolidate power
+[1778] 1:25:20	than it was really for for producing
+[1779] 1:25:23	errors
+[1780] 1:25:25	and the tollways would have other wives
+[1781] 1:25:27	as well
+[1782] 1:25:28	so you know that's that's really where
+[1783] 1:25:31	most of the errors that told me Dynasty
+[1784] 1:25:34	came from from those secondary wives not
+[1785] 1:25:36	from not from say the great Queen
+[1786] 1:25:40	so it wasn't done for the same reasons
+[1787] 1:25:42	During the ptolemaic period it was done
+[1788] 1:25:44	more for consolidation of power
+[1789] 1:25:47	and
+[1790] 1:25:48	there's even been some suggestion that
+[1791] 1:25:50	the ptolemes
+[1792] 1:25:53	in these consanguous marriages
+[1793] 1:25:56	did not really engage in a lot of um
+[1794] 1:26:02	conjugal visits
+[1795] 1:26:06	um
+[1796] 1:26:07	that that each each had their own
+[1797] 1:26:09	individual lovers
+[1798] 1:26:13	so it was really it was really more of a
+[1799] 1:26:16	marriage of a political marriage of
+[1800] 1:26:18	convenience
+[1801] 1:26:19	then it was say a a a marriage in the
+[1802] 1:26:24	truest sense
+[1803] 1:26:26	so the ptolemys are kind of an exception
+[1804] 1:26:29	here you don't find these sorts of say
+[1805] 1:26:32	political marriages at least in in the
+[1806] 1:26:36	most jaded way these were these were
+[1807] 1:26:38	political marriages in the most jaded
+[1808] 1:26:39	way
+[1809] 1:26:41	like for example Cleopatra the seventh
+[1810] 1:26:43	is married off
+[1811] 1:26:44	to a Ptolemy Prince
+[1812] 1:26:47	and
+[1813] 1:26:49	far from from it preventing
+[1814] 1:26:53	um a succession you know
+[1815] 1:26:57	uh rivaling a rival succession claims
+[1816] 1:27:01	it created Civil War
+[1817] 1:27:03	okay it created Civil War
+[1818] 1:27:08	you know you had told me the 12th you
+[1819] 1:27:10	know he's he's fighting Cleopatra the
+[1820] 1:27:12	seven that Cleopatra's calling in Julius
+[1821] 1:27:14	Caesar and and it turns into an ugly
+[1822] 1:27:17	Civil War so it completely defeats the
+[1823] 1:27:19	purpose
+[1824] 1:27:24	and things get ugly real fast
+[1825] 1:27:30	so yeah it was it was all done to
+[1826] 1:27:32	prevent rival claims that's that's
+[1827] 1:27:34	essentially the reason
+[1828] 1:27:37	so anyway I hope that answered your
+[1829] 1:27:39	question
+[1830] 1:27:40	um yeah uh brother sister marriage was
+[1831] 1:27:42	not that common
+[1832] 1:27:43	The Only Exception is during times of
+[1833] 1:27:45	succession crisis
+[1834] 1:27:47	and in the case of the ptolema mates it
+[1835] 1:27:49	was done to prevent rival claims to the
+[1836] 1:27:51	throne
+[1837] 1:27:52	so anyway I hope that answers your
+[1838] 1:27:54	question thank you very much for the
+[1839] 1:27:55	Super Chat very very much appreciate it
+[1840] 1:27:59	okay
+[1841] 1:28:00	we didn't miss any others here and then
+[1842] 1:28:02	we get on the next one here
+[1843] 1:28:05	okay good here so our next
+[1844] 1:28:12	Super Chat here is from go helpful for
+[1845] 1:28:15	with a very very generous Super Chat uh
+[1846] 1:28:17	49.99 thank you very much for the Super
+[1847] 1:28:19	Chat
+[1848] 1:28:21	what is your opinion on the missing
+[1849] 1:28:23	patriarch Clan situation where the two
+[1850] 1:28:26	Isaacs Jacobs Etc I know it's a touchy
+[1851] 1:28:29	subject okay
+[1852] 1:28:31	um I'll lay it out like this I don't
+[1853] 1:28:34	think that there were two Isaacs or
+[1854] 1:28:36	Jacobs
+[1855] 1:28:37	but I do think that there were
+[1856] 1:28:39	intermediaries that are not recorded
+[1857] 1:28:44	now in the case of Isaac
+[1858] 1:28:46	we don't know exactly when he would have
+[1859] 1:28:50	lived in relationship to say
+[1860] 1:28:53	um Abraham or or Jacob
+[1861] 1:28:57	um
+[1862] 1:28:58	that there's a possibility like with any
+[1863] 1:29:01	Clan situation the progender after whom
+[1864] 1:29:04	the clan is named could have been born
+[1865] 1:29:07	at the beginning of the clan starting
+[1866] 1:29:08	the clan you know in the proper uh
+[1867] 1:29:11	progenitor sense
+[1868] 1:29:13	which is you know you've got a a new
+[1869] 1:29:16	Dynamic powerful figure that rises up
+[1870] 1:29:19	and starts establishes his new Clan
+[1871] 1:29:22	so like what Abraham does
+[1872] 1:29:25	but it's also possible that these things
+[1873] 1:29:28	can happen at the end of the lineage of
+[1874] 1:29:33	a clan too
+[1875] 1:29:34	where the you have a very very powerful
+[1876] 1:29:38	person just before the clan destroys
+[1877] 1:29:42	itself or divides or or dies
+[1878] 1:29:47	and that particular individual is so
+[1879] 1:29:51	important to the history of the clan
+[1880] 1:29:53	that the whole clan is retrojectively
+[1881] 1:29:56	named after him going back in time
+[1882] 1:30:01	so either one of those is a possibility
+[1883] 1:30:03	and it's it's hard to sometimes tell
+[1884] 1:30:05	which one it is to be honest perfectly
+[1885] 1:30:07	honest
+[1886] 1:30:08	so in the case of Jake Isaac and Jacob
+[1887] 1:30:11	it's hard to know in the case of Isaac's
+[1888] 1:30:13	really hard to know
+[1889] 1:30:15	because we don't know exactly
+[1890] 1:30:18	how he relates
+[1891] 1:30:21	to
+[1892] 1:30:23	say
+[1893] 1:30:24	um
+[1894] 1:30:25	they um the birth of Jacob
+[1895] 1:30:30	uh we we have we have some clue here but
+[1896] 1:30:34	it's it could have been in the middle it
+[1897] 1:30:36	could have been at the end it's it's
+[1898] 1:30:37	really difficult to say
+[1899] 1:30:39	we
+[1900] 1:30:41	end with it's hard to know
+[1901] 1:30:43	exactly direct
+[1902] 1:30:46	um patrimony as well
+[1903] 1:30:48	like for example this is this is
+[1904] 1:30:49	possible
+[1905] 1:30:52	that
+[1906] 1:30:54	Abraham when he gives you know he he
+[1907] 1:30:56	begets you know Ishmael and Isaac you
+[1908] 1:30:59	know these people gets them both
+[1909] 1:31:01	that
+[1910] 1:31:03	the original person that he begot might
+[1911] 1:31:06	not have been named Isaac
+[1912] 1:31:07	that's a possibility it's a possibility
+[1913] 1:31:09	we have to consider here
+[1914] 1:31:11	that
+[1915] 1:31:12	that person
+[1916] 1:31:15	then becomes father of the Isaac so
+[1917] 1:31:18	that's that's becomes father of Jacob
+[1918] 1:31:20	Etc
+[1919] 1:31:23	so
+[1920] 1:31:25	it's really really difficult to say and
+[1921] 1:31:27	then
+[1922] 1:31:28	basically Abraham is given credit for
+[1923] 1:31:32	being the father of Isaac even though
+[1924] 1:31:35	directly it's only an indirect parentage
+[1925] 1:31:38	because in in Israelite circles the
+[1926] 1:31:43	your grandfather is your father
+[1927] 1:31:46	and your grandson is your son
+[1928] 1:31:50	and this is this is this is true all
+[1929] 1:31:52	through the history of of Israel
+[1930] 1:31:54	Israelite writing
+[1931] 1:31:56	so it's a very very difficult thing to
+[1932] 1:32:00	sometimes nail down exact
+[1933] 1:32:03	relationships in say Hebrew genealogies
+[1934] 1:32:06	it just very very difficult
+[1935] 1:32:10	so
+[1936] 1:32:14	it does a possibility could be to Isaacs
+[1937] 1:32:17	possible nothing but nothing excludes it
+[1938] 1:32:23	it's also possible that they one of
+[1939] 1:32:25	those members wasn't called Isaac and
+[1940] 1:32:27	then given say retrojective credit for
+[1941] 1:32:30	being called Isaac it's also possible
+[1942] 1:32:33	so
+[1943] 1:32:34	it's hard to know exactly which one it
+[1944] 1:32:36	is
+[1945] 1:32:37	we don't have enough data here
+[1946] 1:32:40	so anyway I hope that answers your
+[1947] 1:32:41	question at least the best we can given
+[1948] 1:32:43	the lack of information
+[1949] 1:32:45	but anyway uh that one thank you very
+[1950] 1:32:48	much for that very very generous Super
+[1951] 1:32:49	Chat very much appreciated and it's a
+[1952] 1:32:52	great question I wish we had more data
+[1953] 1:32:54	if we had more data then maybe we could
+[1954] 1:32:56	narrow it down but we don't so we can
+[1955] 1:32:59	always hope for no more data so anyway
+[1956] 1:33:01	thank you very much for the Super Chat
+[1957] 1:33:02	really really appreciate it
+[1958] 1:33:06	foreign
+[1959] 1:33:12	here is from Mystery flavor for twenty
+[1960] 1:33:15	dollars
+[1961] 1:33:17	he says in Genesis 30 37-42 is oh sorry
+[1962] 1:33:22	is Genesis 30 37-42 intended to be
+[1963] 1:33:27	understood as sympathetic Magic
+[1964] 1:33:29	or a unique miracle of God what are the
+[1965] 1:33:34	implications of both seeing
+[1966] 1:33:37	as it obviously worked okay let's take a
+[1967] 1:33:41	look at the passage and find out
+[1968] 1:33:48	so Genesis
+[1969] 1:33:56	30.
+[1970] 1:33:58	verse 37.
+[1971] 1:34:04	okay
+[1972] 1:34:09	interesting
+[1973] 1:34:12	okay verse 36 we'll start there
+[1974] 1:34:15	and he put a distance of three days
+[1975] 1:34:17	journey between himself and Jacob this
+[1976] 1:34:20	is Laban I bet
+[1977] 1:34:23	okay probably Laban
+[1978] 1:34:28	and Jacob fed the rest of laban's flocks
+[1979] 1:34:31	then Jacob took fresh rods of Poplar and
+[1980] 1:34:34	almond and plain trees and peeled The
+[1981] 1:34:37	White Stripes in them exposing white
+[1982] 1:34:39	which was in the rods
+[1983] 1:34:42	and he set the robs where she had peeled
+[1984] 1:34:45	in front of the flocks in the gutters
+[1985] 1:34:47	even in the watering trucks troughs
+[1986] 1:34:50	where flocks came to drink and they made
+[1987] 1:34:53	it when they came to drink
+[1988] 1:34:55	though the flocks mated by the rods and
+[1989] 1:34:58	the flocks brought forth uh
+[1990] 1:35:01	striped speckled and spotted
+[1991] 1:35:04	okay and Jacob separated the lamps and
+[1992] 1:35:08	made flocks to face towards the stripes
+[1993] 1:35:10	and all the black in the flock of Laban
+[1994] 1:35:15	and he put his own herds apart and did
+[1995] 1:35:18	not put them with laban's flocks
+[1996] 1:35:20	moreover when it came about whenever the
+[1997] 1:35:23	stronger of the flock were mating that
+[1998] 1:35:25	Jacob would place the rods in the sight
+[1999] 1:35:27	of the flocks in the gutters
+[2000] 1:35:30	so that they might meet by the rods
+[2001] 1:35:34	but when the flock was feeble he did not
+[2002] 1:35:36	put them in so the feebler were labans
+[2003] 1:35:39	and stronger Jacobs okay
+[2004] 1:35:46	what we have here
+[2005] 1:35:48	is not only sympathetic Magic
+[2006] 1:35:51	but applied pharmacology
+[2007] 1:35:55	okay
+[2008] 1:36:00	yeah practical chicanery
+[2009] 1:36:02	[Laughter]
+[2010] 1:36:05	this is as much this this is much
+[2011] 1:36:07	applied pharmacology as it is
+[2012] 1:36:10	um
+[2013] 1:36:11	sympathetic Magic
+[2014] 1:36:14	so what is he doing here
+[2015] 1:36:16	he's ensuring that the strongest flocks
+[2016] 1:36:20	the most attractive flocks are mating
+[2017] 1:36:25	okay
+[2018] 1:36:27	and
+[2019] 1:36:28	he's using the rods
+[2020] 1:36:33	and it says in verse 38.
+[2021] 1:36:35	it's the 37 70 okay the fresh wads are
+[2022] 1:36:39	popular and almond and plain trees and
+[2023] 1:36:43	peeled White Stripes in them exposing
+[2024] 1:36:45	the white which was in the rods and he
+[2025] 1:36:48	set the rods which he appealed in front
+[2026] 1:36:50	of the fox in the gutters even in the
+[2027] 1:36:54	watering troughs
+[2028] 1:36:57	this is important this is an important
+[2029] 1:36:59	detail okay
+[2030] 1:37:03	because one of the things that you find
+[2031] 1:37:06	in bark
+[2032] 1:37:09	is alkaloids
+[2033] 1:37:11	okay one of the most famous of these
+[2034] 1:37:13	alkaloids is aspirin
+[2035] 1:37:17	okay these alkaloids improve the health
+[2036] 1:37:22	of animals and people alike
+[2037] 1:37:27	so
+[2038] 1:37:29	you know there's there's there's some
+[2039] 1:37:31	interesting interesting alkaloids in
+[2040] 1:37:33	these barks
+[2041] 1:37:36	so he's sticking sticking this this this
+[2042] 1:37:38	wood that's been stripped of its bark
+[2043] 1:37:40	into the drinking water
+[2044] 1:37:43	of these flocks
+[2045] 1:37:45	and they're mating
+[2046] 1:37:48	some are producing very very beautiful
+[2047] 1:37:51	um you know white
+[2048] 1:37:54	uh Lambs
+[2049] 1:37:56	some are producing all black less
+[2050] 1:37:58	desirable much less desirable
+[2051] 1:38:01	and he's separating them
+[2052] 1:38:03	he's separating the less desirable to be
+[2053] 1:38:05	labens flocks
+[2054] 1:38:08	the weaker to labus flocks and the
+[2055] 1:38:11	stronger he's breeding
+[2056] 1:38:13	he's intentionally breeding and he's
+[2057] 1:38:16	only doing it so that
+[2058] 1:38:19	he's doing these rods in such a way
+[2059] 1:38:22	that it promotes the strong and the
+[2060] 1:38:25	Beautiful
+[2061] 1:38:28	though he's using applied pharmacology
+[2062] 1:38:34	and you know it's not immediately
+[2063] 1:38:37	obvious but yeah there might be a
+[2064] 1:38:39	sympathetic magic component to it as
+[2065] 1:38:40	well but there's also an applied
+[2066] 1:38:43	pharmacological component also
+[2067] 1:38:46	and I think that is exceptionally
+[2068] 1:38:49	interesting
+[2069] 1:38:52	so
+[2070] 1:38:55	um
+[2071] 1:38:56	yeah I mean we still do this we still do
+[2072] 1:38:58	this today you know you want to raise uh
+[2073] 1:39:01	chickens that are larger healthier
+[2074] 1:39:05	um than than other chickens feed them
+[2075] 1:39:08	tetracycline
+[2076] 1:39:10	you know feed them antibiotics one of
+[2077] 1:39:12	the things that we we know like from
+[2078] 1:39:14	from raising cattle and chickens is if
+[2079] 1:39:17	you treat them with antibiotics they
+[2080] 1:39:19	don't get sick as much if they don't get
+[2081] 1:39:22	sick as much they grow bigger
+[2082] 1:39:25	because sickness limits the size of your
+[2083] 1:39:27	growth
+[2084] 1:39:29	they do you can do the same thing with
+[2085] 1:39:31	with other
+[2086] 1:39:32	um with other phytochemicals as well
+[2087] 1:39:36	so anyway uh fascinating fascinating
+[2088] 1:39:40	little little piece of um of History
+[2089] 1:39:43	here so um I hope that answers your
+[2090] 1:39:46	question thank you very much the Super
+[2091] 1:39:48	Chat very much appreciate it and yeah as
+[2092] 1:39:50	I said very very interesting question
+[2093] 1:39:52	and as I said
+[2094] 1:39:54	some some
+[2095] 1:39:56	not just magic applied pharmacology
+[2096] 1:40:00	okay
+[2097] 1:40:05	our
+[2098] 1:40:07	hahaha
+[2099] 1:40:14	let's see you're so upset that comes up
+[2100] 1:40:17	soon
+[2101] 1:40:18	okay I have to stop and restart this
+[2102] 1:40:21	it stopped yeah responding so just a
+[2103] 1:40:24	second here
+[2104] 1:40:39	pretty quick switch it here
+[2105] 1:40:45	foreign
+[2106] 1:40:50	oh
+[2107] 1:40:53	a lot of all my super chats
+[2108] 1:40:56	okay
+[2109] 1:40:57	um
+[2110] 1:40:59	oh I had to restart twidget
+[2111] 1:41:02	installed my super jet so we're gonna
+[2112] 1:41:04	have to probably cut and paste a lot of
+[2113] 1:41:05	these but anyway
+[2114] 1:41:08	um I saw this comment by Warrior of the
+[2115] 1:41:10	most high how do you know these things
+[2116] 1:41:13	Dr Falk
+[2117] 1:41:16	I'm a very curious person I also have a
+[2118] 1:41:19	very very broad education
+[2119] 1:41:22	um
+[2120] 1:41:23	my my undergrad half my undergrad was in
+[2121] 1:41:26	Sciences so
+[2122] 1:41:28	um I did a uh two two years of my
+[2123] 1:41:32	undergrad program in Biochemistry
+[2124] 1:41:36	so that's how I know that particular
+[2125] 1:41:37	thing but I'm very very curious very
+[2126] 1:41:40	very curious I read widely
+[2127] 1:41:44	um so for me you know stuff like this is
+[2128] 1:41:47	just you know fascinating it's just
+[2129] 1:41:49	fascinating I'm very I mean there's
+[2130] 1:41:51	there's things I just you know
+[2131] 1:41:53	I want to know I want to learn
+[2132] 1:41:56	so for me you know I I try to pick up
+[2133] 1:41:58	new skills
+[2134] 1:42:00	um a new
+[2135] 1:42:02	um interesting you know little tidbits
+[2136] 1:42:05	of knowledge here and there so for me
+[2137] 1:42:07	this is you know this has this for me is
+[2138] 1:42:09	just as I said part of being a curious
+[2139] 1:42:12	person
+[2140] 1:42:15	and I don't own television
+[2141] 1:42:16	I don't watch in the way of movies I
+[2142] 1:42:18	don't have a Netflix subscription
+[2143] 1:42:21	so I could be very very ignorant about
+[2144] 1:42:23	say things like Cur and current events
+[2145] 1:42:26	or movies and that sort of thing but
+[2146] 1:42:28	that also forwards me the time
+[2147] 1:42:31	to really really explore things that
+[2148] 1:42:34	interest me
+[2149] 1:42:36	so that's how I know these things
+[2150] 1:42:39	okay let me go find it
+[2151] 1:42:42	yeah I'm gonna have to cut and paste
+[2152] 1:42:44	looks like
+[2153] 1:42:46	okay let me see if I find it here
+[2154] 1:42:52	okay
+[2155] 1:43:00	any chance at all bringing it back
+[2156] 1:43:07	nope all right so we are going to cut
+[2157] 1:43:09	and base here
+[2158] 1:43:11	all right and Britt will be next here so
+[2159] 1:43:15	I'm going to cut and paste this
+[2160] 1:43:17	unfortunately we do have a workaround to
+[2161] 1:43:19	some extent
+[2162] 1:43:22	okay so what's happening is I use a
+[2163] 1:43:25	a software
+[2164] 1:43:27	to
+[2165] 1:43:29	uh pull up super chats into obs
+[2166] 1:43:32	however it doesn't always work well
+[2167] 1:43:35	it'll sometimes stop and freeze
+[2168] 1:43:38	and that is a problem
+[2169] 1:43:42	so in those cases what I have to do is I
+[2170] 1:43:44	have to go in and cut and paste
+[2171] 1:43:49	to show Super Chat which is it's a
+[2172] 1:43:52	workaround it's not convenient but it is
+[2173] 1:43:54	a workaround
+[2174] 1:43:55	Channel visit here and our next Super
+[2175] 1:43:57	Chat is here is from cambrit for five
+[2176] 1:43:59	dollars thank you very much for the
+[2177] 1:44:01	Super Chat very much appreciate it
+[2178] 1:44:04	okay
+[2179] 1:44:05	and he asks was the birth of Ruth's son
+[2180] 1:44:08	miraculous and could Ruth for 15 to 14
+[2181] 1:44:12	to 15 be a Messianic prophecy of what
+[2182] 1:44:14	with a redeemer being born in Bethlehem
+[2183] 1:44:17	and of David
+[2184] 1:44:18	okay
+[2185] 1:44:20	um let's bring up Ruth and let's find
+[2186] 1:44:22	out what what do you mean by that
+[2187] 1:44:23	because I don't think that's miraculous
+[2188] 1:44:25	for some reason
+[2189] 1:44:30	Ruth chapter four
+[2190] 1:44:33	teen to Fifteen
+[2191] 1:44:37	okay 14.
+[2192] 1:44:40	I will start 13. so Boaz took Ruth and
+[2193] 1:44:43	she became his wife and he went into her
+[2194] 1:44:46	and the Lord enabled her to conceive and
+[2195] 1:44:49	she gave birth to a son
+[2196] 1:44:51	and the woman said to Naomi blessed is
+[2197] 1:44:54	the Lord who has not left you without a
+[2198] 1:44:56	redeemer today
+[2199] 1:44:58	and may his name become famous in Israel
+[2200] 1:45:01	may he also be to you a restorer of life
+[2201] 1:45:04	and sustainer of your old age for your
+[2202] 1:45:07	daughter-in-law who loves you and is
+[2203] 1:45:10	better than than seven sons has given
+[2204] 1:45:13	birth to him
+[2205] 1:45:15	okay
+[2206] 1:45:18	um yeah there is there is a Messianic
+[2207] 1:45:19	aspect to this
+[2208] 1:45:22	but one can say that too of the seat of
+[2209] 1:45:24	the woman two in Genesis 3 15.
+[2210] 1:45:27	so there is there is a redeemer aspect
+[2211] 1:45:29	to this
+[2212] 1:45:31	now I won't say this though it's not a
+[2213] 1:45:34	miraculous birth it's not a miraculous
+[2214] 1:45:36	birth
+[2215] 1:45:38	now contrary to what most people think
+[2216] 1:45:40	about the story of Ruth he's not a young
+[2217] 1:45:43	woman
+[2218] 1:45:44	David C cook always portrays her as a
+[2219] 1:45:46	young woman she's not
+[2220] 1:45:48	she's in her 30s
+[2221] 1:45:51	okay yeah that's gonna that's gonna
+[2222] 1:45:53	that's gonna kill a lot of sacred cows
+[2223] 1:45:55	for a lot of people uh because
+[2224] 1:45:59	my producer says I think she's young
+[2225] 1:46:05	yeah uh Ruth has already had one
+[2226] 1:46:07	marriage and two two children that died
+[2227] 1:46:11	she's not a spring chicken she's a widow
+[2228] 1:46:15	she's a widow
+[2229] 1:46:16	she's basically
+[2230] 1:46:19	um near the end of her reproductive
+[2231] 1:46:21	years
+[2232] 1:46:22	she's in her 30s
+[2233] 1:46:24	Boaz is in his 50s
+[2234] 1:46:27	you know this is this is a this is a
+[2235] 1:46:29	more of a business transaction marriage
+[2236] 1:46:31	than it is loved for sight
+[2237] 1:46:33	this is not romantic
+[2238] 1:46:35	this is good business
+[2239] 1:46:38	this is this is it's I mean the the
+[2240] 1:46:40	courtship here is more like oh this
+[2241] 1:46:42	marriage makes sense let's get married
+[2242] 1:46:46	no okay
+[2243] 1:46:49	really realistic thing to do sometimes
+[2244] 1:46:51	really realistic
+[2245] 1:46:54	you know a good match is a good match in
+[2246] 1:46:56	this in this culture
+[2247] 1:46:58	you know or survival depends upon it
+[2248] 1:47:01	so it's not miraculous
+[2249] 1:47:04	um it is it is definitely within the
+[2250] 1:47:06	confines of of normal uh childbirth
+[2251] 1:47:10	um maybe the most miraculous thing is
+[2252] 1:47:12	that she married at age 30 you know
+[2253] 1:47:16	[Laughter]
+[2254] 1:47:21	she's not a Sprint
+[2255] 1:47:23	she's not a spring chicken
+[2256] 1:47:25	she's a widow
+[2257] 1:47:27	he's a widow and she's not a spring
+[2258] 1:47:29	chicken
+[2259] 1:47:30	so
+[2260] 1:47:32	yeah
+[2261] 1:47:34	he's already she's already had two
+[2262] 1:47:36	children yes
+[2263] 1:47:37	so for as far as Boaz is concerned he's
+[2264] 1:47:40	burying somebody who's wise
+[2265] 1:47:43	okay he's marrying a woman who's wise
+[2266] 1:47:47	and he can see that he can see what what
+[2267] 1:47:51	he's got there
+[2268] 1:47:53	so
+[2269] 1:47:54	it's
+[2270] 1:47:56	and as I say it's that's going to kill a
+[2271] 1:47:58	whole lot of sacred cows and people are
+[2272] 1:47:59	probably gonna be upset with me that I
+[2273] 1:48:01	that I said that about her because you
+[2274] 1:48:03	know this is this is against the
+[2275] 1:48:05	prevailing culture of how we interpret
+[2276] 1:48:08	this passage
+[2277] 1:48:10	but I think this is really
+[2278] 1:48:13	um
+[2279] 1:48:14	and we have to I mean we have to also
+[2280] 1:48:16	understand that
+[2281] 1:48:18	to adjust the second part of your
+[2282] 1:48:20	question here
+[2283] 1:48:21	um Messianic Prophecy with a redeemer
+[2284] 1:48:23	being born in Bethlehem and of a David
+[2285] 1:48:26	yeah well indeed because Ruth is
+[2286] 1:48:30	the great grandmother of King David
+[2287] 1:48:34	so absolutely this is
+[2288] 1:48:36	this is part of that line of Jesse
+[2289] 1:48:40	and as we know Messiah comes from the
+[2290] 1:48:41	line of David
+[2291] 1:48:43	so ultimately Redeemer will have come
+[2292] 1:48:46	from the line of of Ruth and Boaz
+[2293] 1:48:51	and we see like an example in verse 17
+[2294] 1:48:53	here and the neighbor woman gave him a
+[2295] 1:48:56	name saying a son has been born to Naomi
+[2296] 1:48:59	so they named him Obed he is the father
+[2297] 1:49:02	of Jesse the father of David
+[2298] 1:49:06	so
+[2299] 1:49:07	there's also the other interesting thing
+[2300] 1:49:09	about this passage as well which I think
+[2301] 1:49:10	is really really fascinating
+[2302] 1:49:12	Ruth is a moabite
+[2303] 1:49:15	she's a moabite
+[2304] 1:49:18	the torawala says a son of a mole but I
+[2305] 1:49:21	cannot enter into the assembly for ten
+[2306] 1:49:23	Generations
+[2307] 1:49:24	and yet David does
+[2308] 1:49:28	after just four
+[2309] 1:49:30	that's fascinating right there
+[2310] 1:49:32	that God extended Grace to David to
+[2311] 1:49:36	allow him and his posterity to be
+[2312] 1:49:38	entered into the into the Assembly of of
+[2313] 1:49:41	the Israelites
+[2314] 1:49:43	so there's a lot of interesting stuff in
+[2315] 1:49:45	this passage
+[2316] 1:49:46	uh so anyway I think that sort of covers
+[2317] 1:49:49	the meat of this
+[2318] 1:49:50	and I want to thank you very much for
+[2319] 1:49:51	the Super Chat very very much
+[2320] 1:49:53	appreciated and uh great question
+[2321] 1:49:56	okay
+[2322] 1:50:01	the next one here is from the camel
+[2323] 1:50:03	apart
+[2324] 1:50:04	I've got to base this one too
+[2325] 1:50:10	okay
+[2326] 1:50:15	here next one
+[2327] 1:50:22	foreign
+[2328] 1:50:37	part for five dollars
+[2329] 1:50:40	thank you very much for the Super Chat
+[2330] 1:50:42	guys Octavius asks can you ex could you
+[2331] 1:50:46	explain monarchal trinitarianism and
+[2332] 1:50:49	what is the monarchy of what the
+[2333] 1:50:51	monarchy of the father is wow that's um
+[2334] 1:50:54	that's gonna get deep fast okay
+[2335] 1:50:59	um monarchical uh trinitarianism
+[2336] 1:51:03	is the idea that you have the Trinity
+[2337] 1:51:07	the three persons of the Trinity the
+[2338] 1:51:08	father Son and the Holy Spirit
+[2339] 1:51:10	but there's a hierarchy in that Trinity
+[2340] 1:51:14	okay
+[2341] 1:51:16	they are equal in substance
+[2342] 1:51:19	but not necessarily in rank
+[2343] 1:51:24	um some have called this
+[2344] 1:51:25	subordinationism
+[2345] 1:51:27	but it isn't really
+[2346] 1:51:30	um the whole idea is that between the
+[2347] 1:51:32	three persons of the trinity
+[2348] 1:51:35	that the father was elected
+[2349] 1:51:38	to
+[2350] 1:51:39	to lead the trinity
+[2351] 1:51:43	as the father
+[2352] 1:51:46	so that's generally what's meant by the
+[2353] 1:51:49	monarchial trinitarianism now
+[2354] 1:51:52	monarchial monotheism is the idea that
+[2355] 1:51:55	you have not just say this God the
+[2356] 1:51:59	existence of God but the existence of
+[2357] 1:52:00	many minor deities and subordinate
+[2358] 1:52:04	Spirits as well
+[2359] 1:52:05	so that's the monarchical aspect is that
+[2360] 1:52:09	that the Trinity is not alone it's not
+[2361] 1:52:12	alone but monarchical trinitarianism is
+[2362] 1:52:15	the idea that amongst say the Trinity
+[2363] 1:52:18	there is one person who has a higher
+[2364] 1:52:23	higher in rank
+[2365] 1:52:25	but even though the substance of the
+[2366] 1:52:29	father and the Son and the Holy Spirit
+[2367] 1:52:30	are equal and the same
+[2368] 1:52:34	one is just elected by the other two to
+[2369] 1:52:38	lead
+[2370] 1:52:39	or to be to to act in the role of the
+[2371] 1:52:42	father and judge Etc
+[2372] 1:52:44	so
+[2373] 1:52:46	it's more a matter of of who's been put
+[2374] 1:52:49	in that position now this is going to be
+[2375] 1:52:51	this is different than say
+[2376] 1:52:55	um say subordinationism where you have
+[2377] 1:52:59	um
+[2378] 1:53:00	say the father who is in that position
+[2379] 1:53:03	of being the monarch
+[2380] 1:53:06	because of of he is spinning off the
+[2381] 1:53:10	substance of the sun who and then
+[2382] 1:53:12	spinning off the substance the Holy
+[2383] 1:53:14	Spirit
+[2384] 1:53:15	foreign
+[2385] 1:53:17	I think I think this is an absolutely
+[2386] 1:53:21	um monarchical trinitarianism is a
+[2387] 1:53:23	correct approach as far as it's at the
+[2388] 1:53:26	idea that a position of the father is
+[2389] 1:53:28	elected by the other two members of the
+[2390] 1:53:30	trinity
+[2391] 1:53:31	but then again I'm an affirmation uh
+[2392] 1:53:33	trinitarian as well
+[2393] 1:53:35	which means I believe that all three
+[2394] 1:53:39	um persons of the Trinity existed before
+[2395] 1:53:41	the beginning of time
+[2396] 1:53:43	so
+[2397] 1:53:45	in order for me to to reconcile the
+[2398] 1:53:48	whole idea that there's a father son and
+[2399] 1:53:49	a holy spirit I have to also say that
+[2400] 1:53:53	that the
+[2401] 1:53:55	members of the Trinity came to a quorum
+[2402] 1:54:00	to anoint
+[2403] 1:54:02	or a point
+[2404] 1:54:03	uh one to the father to be the the
+[2405] 1:54:08	um the head of the trinity
+[2406] 1:54:11	so
+[2407] 1:54:12	I hope that answers the question
+[2408] 1:54:15	I thank you very much for that Super
+[2409] 1:54:16	Chat very very much appreciated uh it's
+[2410] 1:54:19	not it's not it's not a question I go
+[2411] 1:54:21	into very deeply very often because I'm
+[2412] 1:54:22	not usually engaged in uh
+[2413] 1:54:26	questions about trinitarianism
+[2414] 1:54:29	but it is it is I think it's an
+[2415] 1:54:32	important issue too that we understand
+[2416] 1:54:34	that
+[2417] 1:54:36	that
+[2418] 1:54:37	just because you have a trinity doesn't
+[2419] 1:54:41	explain all the interactions within the
+[2420] 1:54:43	trinity
+[2421] 1:54:44	so I think it's important to to engage
+[2422] 1:54:46	these questions as well
+[2423] 1:54:48	because once you've engaged them you can
+[2424] 1:54:50	sort of say okay this is how this is how
+[2425] 1:54:53	it could have possibly shaken out
+[2426] 1:54:59	oh and also thank you to the camel
+[2427] 1:55:01	leopard camel apart for sponsoring
+[2428] 1:55:04	another person's question we do really
+[2429] 1:55:05	really like when people do that so
+[2430] 1:55:08	anyway
+[2431] 1:55:09	thank you very much for the Super Chat
+[2432] 1:55:11	and thank you for sponsoring another
+[2433] 1:55:12	user's question
+[2434] 1:55:14	subscribers question thank you very very
+[2435] 1:55:16	much
+[2436] 1:55:17	okay the next one here
+[2437] 1:55:23	oh
+[2438] 1:55:27	oh dear
+[2439] 1:55:30	yeah okay
+[2440] 1:55:34	I need a cut and paste
+[2441] 1:55:57	okay
+[2442] 1:56:00	our next Super Chat here is from Ryan
+[2443] 1:56:02	Naylor for 20 thank you very much for
+[2444] 1:56:04	the Super Chat
+[2445] 1:56:06	correspondence between Doug petrovich
+[2446] 1:56:08	and my 14 year old son
+[2447] 1:56:11	why were the Israelites not wiped out in
+[2448] 1:56:14	the 14th or 13th century
+[2449] 1:56:17	nobody had a the balls and or B the
+[2450] 1:56:20	brawn
+[2451] 1:56:22	have you met some of the immortal
+[2452] 1:56:24	letters
+[2453] 1:56:26	oh
+[2454] 1:56:30	oh
+[2455] 1:56:37	yeah this is this isn't appropriate
+[2456] 1:56:42	um
+[2457] 1:56:45	not surprising I'm not I'm not actually
+[2458] 1:56:47	not surprised by by this reaction
+[2459] 1:56:52	um
+[2460] 1:56:54	yeah
+[2461] 1:56:55	this is this is very dougish
+[2462] 1:56:58	this is this is very much the way
+[2463] 1:57:00	petrovich will react to people who
+[2464] 1:57:03	who
+[2465] 1:57:04	um ask him
+[2466] 1:57:08	um
+[2467] 1:57:09	Ryan Naylor expounds on this and I'm
+[2468] 1:57:11	just going to take that
+[2469] 1:57:18	um a little snippet from a much longer
+[2470] 1:57:20	email response in which Doug derides my
+[2471] 1:57:23	son for posing difficulties some learned
+[2472] 1:57:26	from this channel
+[2473] 1:57:27	well I'll say this I'll say this good on
+[2474] 1:57:30	your son okay that's awesome
+[2475] 1:57:33	that is awesome
+[2476] 1:57:35	you know your son is is learning enough
+[2477] 1:57:37	to question
+[2478] 1:57:39	good good on you good on your son a plus
+[2479] 1:57:43	for good parenting
+[2480] 1:57:52	and that just got vested by a 14 year
+[2481] 1:57:55	old that got vested by a 14 year old
+[2482] 1:57:59	even better
+[2483] 1:58:06	um yeah
+[2484] 1:58:07	when Doug gets challenged by a very very
+[2485] 1:58:10	difficult questions he attacks the
+[2486] 1:58:12	questioner
+[2487] 1:58:13	you know I've seen this he I've seen
+[2488] 1:58:15	this even do this to live audiences
+[2489] 1:58:18	you know I've seen him do this too
+[2490] 1:58:21	I saw this in my 27 uh 2017 debate with
+[2491] 1:58:25	him you know somebody who was his one of
+[2492] 1:58:27	his fans one of his fans you know asked
+[2493] 1:58:30	hey you know
+[2494] 1:58:32	August raised an important objection you
+[2495] 1:58:35	know you should probably answer that
+[2496] 1:58:37	question and and you know petrovich just
+[2497] 1:58:41	turns on the guy and goes oh well why
+[2498] 1:58:44	are you defending why why are you taking
+[2499] 1:58:46	Focus side on this
+[2500] 1:58:48	well he wasn't taking my side he was
+[2501] 1:58:53	saying if you don't want to look stupid
+[2502] 1:58:54	you need to answer he was just saying
+[2503] 1:58:56	it's a good question you know what's
+[2504] 1:58:58	your answer
+[2505] 1:58:59	so
+[2506] 1:59:01	wow
+[2507] 1:59:03	foreign
+[2508] 1:59:05	continues here
+[2509] 1:59:07	he's 16 now and regular cost corresponds
+[2510] 1:59:10	with higher uh quality Scholars laugh
+[2511] 1:59:12	out loud well good for him
+[2512] 1:59:14	good for him that is so cool that is
+[2513] 1:59:19	that's awesome
+[2514] 1:59:21	and you know what Scholars love to get
+[2515] 1:59:23	these things you know because because
+[2516] 1:59:25	frankly this is our life's work this is
+[2517] 1:59:27	what we pour our passion into this is
+[2518] 1:59:30	what we pour our our focus our study our
+[2519] 1:59:34	energy so when we get these questions
+[2520] 1:59:36	you know from from you know Ordinary
+[2521] 1:59:39	People as it were you know it's it's an
+[2522] 1:59:43	opportunity for us to share
+[2523] 1:59:45	so this is fantastic I think I think
+[2524] 1:59:47	this is wonderful news this this is this
+[2525] 1:59:50	is just excellent
+[2526] 1:59:52	um it's encouraging to see children
+[2527] 1:59:55	being raised uh to to question the faith
+[2528] 1:59:59	uh what they're being told to to build
+[2529] 2:00:02	up their faith though it's stronger more
+[2530] 2:00:05	resistant
+[2531] 2:00:06	um
+[2532] 2:00:07	I'm just thrilled I'm just tickled pink
+[2533] 2:00:09	by all this this is this is this is
+[2534] 2:00:11	fantastic yes
+[2535] 2:00:15	oh thanks to you well oh this is my
+[2536] 2:00:19	deepest honor my deepest honor to do the
+[2537] 2:00:21	help to help out and that's all I'm
+[2538] 2:00:23	doing here is helping
+[2539] 2:00:25	he plans to study his seriology awesome
+[2540] 2:00:28	wow uh he'll love it he'll absolutely
+[2541] 2:00:32	love it
+[2542] 2:00:34	serology is awesome it really is
+[2543] 2:00:37	so um wow this is just really
+[2544] 2:00:41	encouraging really really encouraging
+[2545] 2:00:44	um just ignore Doug just ignore him
+[2546] 2:00:48	yeah he does this to everyone he he's
+[2547] 2:00:51	he's not gracious to those who question
+[2548] 2:00:53	him
+[2549] 2:00:54	so in terms yeah
+[2550] 2:00:59	and you know he'll he'll he'll he'll
+[2551] 2:01:01	even do this to guys like Alan Millard
+[2552] 2:01:04	um
+[2553] 2:01:06	you know Scholars that are much much
+[2554] 2:01:08	bigger Giants in the field than he he
+[2555] 2:01:09	ever will be
+[2556] 2:01:11	so you know if he does that then
+[2557] 2:01:16	historical strategy gaming
+[2558] 2:01:20	a powerful Sith he shall become
+[2559] 2:01:22	[Laughter]
+[2560] 2:01:37	I have to agree Ryan's son will become a
+[2561] 2:01:40	very very powerful Sith
+[2562] 2:01:45	excellent start he's off to an excellent
+[2563] 2:01:48	start and uh
+[2564] 2:01:52	[Laughter]
+[2565] 2:01:56	Mallard is the man I was a student of
+[2566] 2:01:59	Daniel block okay awesome awesome
+[2567] 2:02:02	um I'm actually friends with Millard uh
+[2568] 2:02:03	because I studied under Ken kitchen
+[2569] 2:02:06	uh Millard and kitchen are good friends
+[2570] 2:02:09	they're very good friends very close
+[2571] 2:02:11	friends so I got to see Mallard all the
+[2572] 2:02:14	time when I was in England
+[2573] 2:02:16	um wonderful man
+[2574] 2:02:18	wonderful man
+[2575] 2:02:20	a great
+[2576] 2:02:22	um
+[2577] 2:02:24	um
+[2578] 2:02:26	um defender of the faith
+[2579] 2:02:28	great defender of the faith
+[2580] 2:02:31	I have nothing but the highest respect
+[2581] 2:02:32	for Al Millard
+[2582] 2:02:34	uh and he he is all that yeah he is
+[2583] 2:02:38	definitely all that
+[2584] 2:02:39	uh so you know if your son can turn out
+[2585] 2:02:42	like Alan Millard you know you've won
+[2586] 2:02:44	you've you've you've raised a a great
+[2587] 2:02:48	great you know Soldier for the faith
+[2588] 2:02:51	so um I wanna thank you very much for
+[2589] 2:02:54	that Super Chat very much appreciate it
+[2590] 2:02:56	and um it's really really encouraging to
+[2591] 2:02:58	hear this about your son and just keep
+[2592] 2:03:00	encouraging him just keep encouraging
+[2593] 2:03:02	him It's A Hard Road It's A Hard Road
+[2594] 2:03:04	but it's worth it in the end
+[2595] 2:03:10	okay
+[2596] 2:03:12	next one here
+[2597] 2:03:15	will be from Lion green
+[2598] 2:03:20	okay
+[2599] 2:03:21	and
+[2600] 2:03:38	okay
+[2601] 2:03:44	okay the next one here is lime green
+[2602] 2:03:49	after five dollars thank you very much
+[2603] 2:03:50	for the Super Chat
+[2604] 2:03:52	okay what kind of grave goods were
+[2605] 2:03:55	ancient Israelites buried with does this
+[2606] 2:03:57	reflect Pagan beliefs about the
+[2607] 2:03:59	afterlife
+[2608] 2:04:01	oh
+[2609] 2:04:04	well that's an interesting question
+[2610] 2:04:08	um
+[2611] 2:04:09	because some of this will really depend
+[2612] 2:04:12	upon when we are talking about here
+[2613] 2:04:16	um
+[2614] 2:04:19	early Israelite Graves had more grave
+[2615] 2:04:22	goods and mostly pots
+[2616] 2:04:24	pots full of uh food and stuff
+[2617] 2:04:28	um
+[2618] 2:04:30	we're not exactly sure why they they did
+[2619] 2:04:34	that religiously
+[2620] 2:04:36	later on it's just a body
+[2621] 2:04:39	like in the post-exilic period they're
+[2622] 2:04:41	just they're just burying the body
+[2623] 2:04:45	um they'll they'll they'll post they'll
+[2624] 2:04:47	put them in these
+[2625] 2:04:48	um
+[2626] 2:04:50	Limestone tombs which will cause rapid
+[2627] 2:04:52	decomposition and in the year time
+[2628] 2:04:55	there's nothing left but bones and those
+[2629] 2:04:57	bones will then be collected into
+[2630] 2:04:58	ossuary boxes
+[2631] 2:05:00	so that's that's sort of the burial
+[2632] 2:05:02	style that we find during say the second
+[2633] 2:05:04	temple period
+[2634] 2:05:07	but during the first burial Temple
+[2635] 2:05:09	barrier um
+[2636] 2:05:10	first temple period
+[2637] 2:05:14	we find other kinds of burials
+[2638] 2:05:17	we do find burials with some grave Goods
+[2639] 2:05:19	like
+[2640] 2:05:21	um dishes bowls
+[2641] 2:05:24	um urns
+[2642] 2:05:26	there's also some evidence to cremation
+[2643] 2:05:31	uh especially amongst Kings
+[2644] 2:05:34	uh a lot of the Kings of Israel were
+[2645] 2:05:36	cremated they weren't buried
+[2646] 2:05:39	this is one of the reasons we don't find
+[2647] 2:05:40	many tombs of Israelite Kings
+[2648] 2:05:44	like we don't find any
+[2649] 2:05:46	it's it's it's the fact that that they
+[2650] 2:05:48	didn't bury the whole body they usually
+[2651] 2:05:50	cremated on funerary piers
+[2652] 2:05:55	so
+[2653] 2:05:57	they there's there's there's differences
+[2654] 2:06:00	in burial practices that stress over
+[2655] 2:06:02	time
+[2656] 2:06:03	but in in the case of say early
+[2657] 2:06:06	Israelite Graves they do seem to be more
+[2658] 2:06:10	similar to
+[2659] 2:06:12	um other Semitic kinds of burials
+[2660] 2:06:16	so they tend to be a kind of a a brick
+[2661] 2:06:19	Vault did very burial
+[2662] 2:06:22	with uh with grave Goods usually a small
+[2663] 2:06:25	number of grave Goods maybe a sacrificed
+[2664] 2:06:28	animal that sort of thing
+[2665] 2:06:31	so that's that's sort of reflective of
+[2666] 2:06:33	the kind of grave Goods we find in early
+[2667] 2:06:36	Israelite Graves
+[2668] 2:06:38	um and we don't know it does reflect
+[2669] 2:06:41	that they had some belief about an
+[2670] 2:06:43	afterlife
+[2671] 2:06:45	does this mean that it had the same
+[2672] 2:06:47	connotation as say Pagan beliefs like
+[2673] 2:06:49	for example
+[2674] 2:06:51	into
+[2675] 2:06:55	um the reason why for example the
+[2676] 2:06:56	Egyptians buried people with grave Goods
+[2677] 2:06:58	is because they thought the dead would
+[2678] 2:07:00	starve in the afterlife they needed food
+[2679] 2:07:02	to get them to the next destination
+[2680] 2:07:07	it's unclear if the Israelites thought
+[2681] 2:07:09	the same thing
+[2682] 2:07:12	or why they specifically you know buried
+[2683] 2:07:16	a person with grave Goods we're not
+[2684] 2:07:18	we're not exactly sure of the Israelite
+[2685] 2:07:20	justification for this
+[2686] 2:07:22	whether it's just something they picked
+[2687] 2:07:25	up along the way or if it's something
+[2688] 2:07:27	that they really thought about as they
+[2689] 2:07:29	did it we don't know we don't honestly
+[2690] 2:07:33	know why they did this
+[2691] 2:07:36	in the case in the case of the Egyptians
+[2692] 2:07:38	we know why they left us lots of texts
+[2693] 2:07:40	to tell us why they did it Israelites
+[2694] 2:07:42	not so clear
+[2695] 2:07:45	it's not so clear
+[2696] 2:07:47	and there was a change in practice as I
+[2697] 2:07:49	said
+[2698] 2:07:51	so hard to say really it's hard to say
+[2699] 2:07:55	um it could be an influence of pagan
+[2700] 2:07:57	belief it could be just that's the way
+[2701] 2:07:58	they've always done it
+[2702] 2:08:00	you know we have to understand that a
+[2703] 2:08:01	lot of Allah an awful lot of burial
+[2704] 2:08:05	Customs are just based upon
+[2705] 2:08:08	that's the way we've always done it
+[2706] 2:08:16	like for example you know we look at say
+[2707] 2:08:18	North American burial practices
+[2708] 2:08:22	why do we use a hearse
+[2709] 2:08:24	now why do we put go to a funeral home
+[2710] 2:08:28	do a visitation of the body
+[2711] 2:08:34	because the Ford pickup truck would be a
+[2712] 2:08:36	little tacky
+[2713] 2:08:38	you know you'll load the load the body
+[2714] 2:08:40	into a casket you put it into the back
+[2715] 2:08:42	of a hearse and you drive it slowly on
+[2716] 2:08:45	Parade to the cemetery
+[2717] 2:08:48	why do we do that
+[2718] 2:08:51	well it's a throwback to to burial
+[2719] 2:08:55	practices in the 19th century
+[2720] 2:08:58	you know where they put it into a long
+[2721] 2:09:00	Stagecoach
+[2722] 2:09:02	you know they had a special stage coach
+[2723] 2:09:03	for this purpose and they put the body
+[2724] 2:09:05	in the back of the stagecoach you get
+[2725] 2:09:07	horse and buggy it to the cemetery
+[2726] 2:09:12	we just updated it instead of using a
+[2727] 2:09:15	horse and buggy we're now using a
+[2728] 2:09:17	limousine
+[2729] 2:09:20	you know
+[2730] 2:09:22	uh you know why do we use cemeteries
+[2731] 2:09:24	instead of say our local a plot in the
+[2732] 2:09:28	backyard you know this there's a lot of
+[2733] 2:09:30	these these these Traditions that are in
+[2734] 2:09:34	our burial Customs that you know really
+[2735] 2:09:36	don't make a lot of sense practically
+[2736] 2:09:39	but it's the way we've always done it
+[2737] 2:09:42	or at least we think it's been always
+[2738] 2:09:43	done that way
+[2739] 2:09:45	you know that's
+[2740] 2:09:47	just years ago yeah
+[2741] 2:09:52	you know so there's there's there's a
+[2742] 2:09:54	lot to these things that are just that
+[2743] 2:09:56	are just sort of the results of of you
+[2744] 2:09:59	know that's the way people do things
+[2745] 2:10:01	that they don't really think about it
+[2746] 2:10:04	all that much
+[2747] 2:10:05	and I think this is one of those things
+[2748] 2:10:07	where I think that the Israelites are
+[2749] 2:10:09	burying people with great Goods without
+[2750] 2:10:13	really thinking about the implications
+[2751] 2:10:14	of why they're doing it that way
+[2752] 2:10:17	and this is this is particularly true on
+[2753] 2:10:20	on stuff that is sort of more cultural
+[2754] 2:10:22	than say theological
+[2755] 2:10:28	yeah we do the same thing though yeah as
+[2756] 2:10:31	my producer points out
+[2757] 2:10:32	you know we often you know bury the dead
+[2758] 2:10:36	with momentos
+[2759] 2:10:38	you know lockets trinkets
+[2760] 2:10:41	um baby teeth you know there's you know
+[2761] 2:10:46	morning cards cards of of morning
+[2762] 2:10:49	you know little messages
+[2763] 2:10:53	we dress the dead in their favorite
+[2764] 2:10:55	clothes whether they think they'd look
+[2765] 2:10:56	nice
+[2766] 2:10:59	you know none of this stuff is going to
+[2767] 2:11:00	serve the dead in the afterlife honestly
+[2768] 2:11:03	you know they're not going to look at
+[2769] 2:11:05	your your silver locket uh from from
+[2770] 2:11:07	from great grandma
+[2771] 2:11:09	you know they're just
+[2772] 2:11:12	but we do this for emotional reasons and
+[2773] 2:11:14	because it's cultural
+[2774] 2:11:17	so
+[2775] 2:11:19	so yeah I think we have to we have to we
+[2776] 2:11:21	have to be a little
+[2777] 2:11:23	a little understanding of them I mean
+[2778] 2:11:26	they're not thinking so theologically
+[2779] 2:11:28	when they're when they're when they're
+[2780] 2:11:29	doing this bearing grave Goods with
+[2781] 2:11:31	their dead
+[2782] 2:11:32	they're thinking emotionally
+[2783] 2:11:35	and that's not necessarily a bad thing
+[2784] 2:11:37	it's just we have to understand that
+[2785] 2:11:39	this is just the the sensitivity of The
+[2786] 2:11:42	Human Condition
+[2787] 2:11:44	so anyway uh I think it's a great
+[2788] 2:11:46	question
+[2789] 2:11:47	thank you very much for the Super Chat
+[2790] 2:11:49	and I hope that helped
+[2791] 2:11:51	okay
+[2792] 2:11:57	and
+[2793] 2:11:59	okay I see a 10 super chat here from I'm
+[2794] 2:12:03	gonna thank him for this but I'm gonna
+[2795] 2:12:04	just because I have to cut and paste it
+[2796] 2:12:07	I'm just going to take the question
+[2797] 2:12:30	okay our next Super Chat is from Moise
+[2798] 2:12:33	salsar for ten dollars now he had placed
+[2799] 2:12:36	a ten dollar Super Chat uh but without a
+[2800] 2:12:39	question but he has another question
+[2801] 2:12:40	below it so we're going to take that
+[2802] 2:12:42	question so anyway thank you very much
+[2803] 2:12:44	for that Super Chat and very tell you I
+[2804] 2:12:46	very very much appreciate it
+[2805] 2:12:48	okay and he asks when the enuma Elish uh
+[2806] 2:12:53	uh succeeded to be told it was after or
+[2807] 2:12:56	before the Israelites Exile in Babylon
+[2808] 2:12:58	Numa Elish is was was told it was
+[2809] 2:13:02	written down before the Babylonian exile
+[2810] 2:13:05	okay so it does predate Israel I don't
+[2811] 2:13:07	remember exactly by how much off the top
+[2812] 2:13:09	of my head but I as I recall it's at
+[2813] 2:13:13	least 500 years older than the Israelite
+[2814] 2:13:17	Exile so when the Israelites end up
+[2815] 2:13:19	going to Babylon they're already they've
+[2816] 2:13:23	already have a lot in all likelihood
+[2817] 2:13:25	been exposed to the enuma aylish
+[2818] 2:13:29	so
+[2819] 2:13:32	um that's the simple answer to the
+[2820] 2:13:33	question is that it's it's one of those
+[2821] 2:13:35	one of those older pieces of creation
+[2822] 2:13:37	literature
+[2823] 2:13:39	so I think I do believe it is Bronze Age
+[2824] 2:13:42	but I can't remember how exactly how old
+[2825] 2:13:45	it is I'd have to look that up
+[2826] 2:13:47	so anyway uh thank you very much for the
+[2827] 2:13:49	Super Chat very very much appreciated
+[2828] 2:13:51	so
+[2829] 2:13:53	um it's a very interesting it's a very
+[2830] 2:13:54	new English is a very interesting uh
+[2831] 2:13:57	work I do highly recommend reading it
+[2832] 2:14:00	especially if you want to sort of
+[2833] 2:14:02	understand the whole sort of
+[2834] 2:14:04	intertextuality of of Genesis
+[2835] 2:14:08	because the intertextuality here is it's
+[2836] 2:14:11	going to
+[2837] 2:14:13	um Genesis is in many ways are going to
+[2838] 2:14:16	be
+[2839] 2:14:19	focused on say the anti-mith that we
+[2840] 2:14:22	find in things like the inum ailish so
+[2841] 2:14:24	if you view the intimate ailish on that
+[2842] 2:14:26	level that Genesis is actually
+[2843] 2:14:29	responding to the enuma English not
+[2844] 2:14:32	copying it it makes a whole lot more
+[2845] 2:14:35	sense
+[2846] 2:14:36	so anyway thank you very much for the
+[2847] 2:14:38	Super Chat very very much appreciate it
+[2848] 2:14:44	oh no I didn't
+[2849] 2:14:46	that's that's the problem with doing
+[2850] 2:14:47	this by hand
+[2851] 2:14:49	is you do okay we will not forget it
+[2852] 2:14:53	though
+[2853] 2:15:09	okay
+[2854] 2:15:10	foreign
+[2855] 2:15:14	for five dollars thank you very much to
+[2856] 2:15:16	the Super Chat and sorry for skipping
+[2857] 2:15:17	this uh what in your most speculative
+[2858] 2:15:20	opinion and this is going to be
+[2859] 2:15:22	speculative
+[2860] 2:15:23	do you think the Star of Bethlehem was
+[2861] 2:15:25	all right
+[2862] 2:15:28	here's what I think the Star of
+[2863] 2:15:30	Bethlehem was
+[2864] 2:15:32	I think it was a conjunction
+[2865] 2:15:35	that happened possibly a comet
+[2866] 2:15:38	that occurred within a certain
+[2867] 2:15:40	constellation
+[2868] 2:15:42	that is then being referenced against an
+[2869] 2:15:45	interpretation book
+[2870] 2:15:48	that's what I think it is
+[2871] 2:15:51	because
+[2872] 2:15:53	when people did dream interpretations
+[2873] 2:15:55	astronomy
+[2874] 2:15:57	episcopy which is you know you basically
+[2875] 2:15:59	Slaughter an animal and look at the
+[2876] 2:16:00	organs
+[2877] 2:16:03	um they didn't they didn't do this
+[2878] 2:16:08	willy-nilly
+[2879] 2:16:10	they didn't do this willy-nilly
+[2880] 2:16:12	um I had a I had a a
+[2881] 2:16:14	um
+[2882] 2:16:15	a piece of text from uh Mesopotamia a
+[2883] 2:16:19	copy of it
+[2884] 2:16:21	and you opened it up and it's basically
+[2885] 2:16:23	a set of interpretations
+[2886] 2:16:26	for animal you know basically reading
+[2887] 2:16:30	the organs of a sacrificed animal
+[2888] 2:16:35	and it's very specific that's very
+[2889] 2:16:37	specific
+[2890] 2:16:38	so
+[2891] 2:16:41	and astrology was no different
+[2892] 2:16:44	astrology and dream interpretation was
+[2893] 2:16:46	no different which is they have these
+[2894] 2:16:48	these guide books
+[2895] 2:16:49	that basically told them how to
+[2896] 2:16:53	interpretate certain things
+[2897] 2:16:56	so I think what the Star of Bethlehem
+[2898] 2:16:58	was was It was a
+[2899] 2:17:00	fellow phenomena that happened inside a
+[2900] 2:17:03	certain constellation
+[2901] 2:17:06	and that that
+[2902] 2:17:08	conjunction of of the planets or the
+[2903] 2:17:12	comet inside the constellation
+[2904] 2:17:15	directed them to an interpretation in
+[2905] 2:17:18	one of their dream book or in one of
+[2906] 2:17:20	their interpretation books
+[2907] 2:17:22	and that's what led them to Jerusalem
+[2908] 2:17:25	first and then to Bethlehem
+[2909] 2:17:28	okay so that in my speculative opinion
+[2910] 2:17:32	is what the Star of Bethlehem is
+[2911] 2:17:34	I don't think necessarily people could
+[2912] 2:17:37	have looked up in the sky and saw
+[2913] 2:17:39	something all that compelling
+[2914] 2:17:42	but if you're sort of reading the Tea
+[2915] 2:17:46	Leaves of the Stars
+[2916] 2:17:49	yeah
+[2917] 2:17:50	you might notice it
+[2918] 2:17:53	and this is what the Magi Magi did was
+[2919] 2:17:56	they were reading the tea leaves and the
+[2920] 2:17:58	Stars they were astrologists
+[2921] 2:18:02	so their
+[2922] 2:18:05	seeing some phenomena they're comparing
+[2923] 2:18:07	it to what their their book of
+[2924] 2:18:09	interpretation says and then they're
+[2925] 2:18:10	acting on that
+[2926] 2:18:13	so that is my opinion of what the Star
+[2927] 2:18:15	of Bethlehem was not something
+[2928] 2:18:17	spectacular I mean I've heard people say
+[2929] 2:18:19	it was like a supernova or something
+[2930] 2:18:20	like this I don't necessarily think that
+[2931] 2:18:22	it could have been Supernova but
+[2932] 2:18:24	I don't think it necessarily was a
+[2933] 2:18:26	supernova it could have been very very
+[2934] 2:18:28	difficult to see that's very possible
+[2935] 2:18:34	yeah I I've heard I've heard the the
+[2936] 2:18:36	that that you know might be a
+[2937] 2:18:38	conjunction of Jupiter Saturn Mars and
+[2938] 2:18:40	that sort of thing
+[2939] 2:18:41	so I've heard that too
+[2940] 2:18:43	or Jupiter and Venus I've heard that as
+[2941] 2:18:45	well
+[2942] 2:18:46	or uh yeah Jupiter and Venus but you
+[2943] 2:18:49	know
+[2944] 2:18:51	I don't think that's necessarily the
+[2945] 2:18:52	case
+[2946] 2:18:54	I don't think it's necessarily the case
+[2947] 2:18:55	and
+[2948] 2:18:58	it lasts long enough for them to get to
+[2949] 2:19:00	Jerusalem
+[2950] 2:19:02	that's long enough for them to get to
+[2951] 2:19:03	Jerusalem
+[2952] 2:19:05	so I think that there's a lot here that
+[2953] 2:19:08	there's there's nothing here that says
+[2954] 2:19:10	that the star
+[2955] 2:19:13	was
+[2956] 2:19:18	um
+[2957] 2:19:19	right or or or or you know popped out of
+[2958] 2:19:24	you okay there's nothing saying that
+[2959] 2:19:27	all it says is that they
+[2960] 2:19:29	that you know they they read the stars
+[2961] 2:19:31	and that's where where led him
+[2962] 2:19:35	it didn't have to be any you know a big
+[2963] 2:19:38	big starter bleed him there it could
+[2964] 2:19:39	have been just a little one
+[2965] 2:19:41	you know barely noticeable except to an
+[2966] 2:19:43	astrologer and his interpretation book
+[2967] 2:19:47	so that's my speculation I don't
+[2968] 2:19:49	typically like to speculate but that's
+[2969] 2:19:51	my speculation regarding the Star of
+[2970] 2:19:52	Bethlehem thank you very much the Super
+[2971] 2:19:54	Chat uh very much appreciate it and I
+[2972] 2:19:56	hope that provided you a little insight
+[2973] 2:20:00	okay
+[2974] 2:20:02	and wow
+[2975] 2:20:04	very generous Super Chat here next
+[2976] 2:20:13	paste this one
+[2977] 2:20:33	foreign
+[2978] 2:20:43	for
+[2979] 2:20:45	199.99 wow
+[2980] 2:20:48	wow
+[2981] 2:20:51	what a generous Super Chat and he says
+[2982] 2:20:54	Merry Christmas Dr Falco Merry Christmas
+[2983] 2:20:56	to you thank you for your ministry you
+[2984] 2:20:59	have helped to strengthen both faith and
+[2985] 2:21:01	knowledge God bless well God bless you
+[2986] 2:21:03	too
+[2987] 2:21:04	thank you so very much for this really
+[2988] 2:21:05	generous Super Chat you've been very
+[2989] 2:21:07	generous tonight guys this is your
+[2990] 2:21:08	second Super Chat of the night you know
+[2991] 2:21:11	first you did the one for 50 and now 200
+[2992] 2:21:14	and wow that's very very generous we are
+[2993] 2:21:17	so grateful for your support uh it
+[2994] 2:21:20	really does help us a lot to have
+[2995] 2:21:23	supporters like you help us to basically
+[2996] 2:21:25	continue to answer questions and build
+[2997] 2:21:27	people's faith and that's why we're here
+[2998] 2:21:29	that's why we're here that's our mission
+[2999] 2:21:31	is to answer questions build people's
+[3000] 2:21:35	faith
+[3001] 2:21:36	help people become interested and
+[3002] 2:21:38	fascinated in in the ancient near East
+[3003] 2:21:40	and the Bible
+[3004] 2:21:42	we want to get people back to reading
+[3005] 2:21:44	the Bible
+[3006] 2:21:45	to really studying it
+[3007] 2:21:47	and really sort of squeezing the Bible
+[3008] 2:21:50	for what it will give them
+[3009] 2:21:52	and we we are just really really excited
+[3010] 2:21:54	when when it helps people
+[3011] 2:21:57	and we are so humbled when we get such
+[3012] 2:22:00	generous support like this from from you
+[3013] 2:22:02	and from others that that really help us
+[3014] 2:22:05	to do this so I want to again again I
+[3015] 2:22:08	want to thank you very much for the
+[3016] 2:22:09	Super Chat very very much appreciate it
+[3017] 2:22:11	and uh it really does help thank you so
+[3018] 2:22:14	very much
+[3019] 2:22:16	okay I'm going to the next one
+[3020] 2:22:21	okay you can go
+[3021] 2:22:26	okay
+[3022] 2:22:28	the next cut and paste here
+[3023] 2:23:07	okay our next Super Chat is from your
+[3024] 2:23:11	eshafra for ten dollars thank you very
+[3025] 2:23:13	much the Super Chat
+[3026] 2:23:16	I came across a claim by someone who
+[3027] 2:23:18	pauses that Jesus is a myth invented by
+[3028] 2:23:21	Christians by stealing from ancient
+[3029] 2:23:23	Egyptian beliefs what are your thoughts
+[3030] 2:23:27	in response to such a quote hypothesis
+[3031] 2:23:31	ah
+[3032] 2:23:39	uh I don't have much respect for for uh
+[3033] 2:23:42	for mythicists I I just don't
+[3034] 2:23:46	um I think I think mythicism boils down
+[3035] 2:23:49	to really really lazy thinking honestly
+[3036] 2:23:54	um
+[3037] 2:23:55	in fact we are probably going to be
+[3038] 2:23:57	doing another popcorn review in the not
+[3039] 2:24:01	too distant future
+[3040] 2:24:03	that may or may not
+[3041] 2:24:06	take a look at a particular mythicist
+[3042] 2:24:08	position
+[3043] 2:24:10	but the idea that Christians stole ideas
+[3044] 2:24:13	from ancient Egyptian beliefs is
+[3045] 2:24:16	preposterous
+[3046] 2:24:19	it is absolutely ridiculous
+[3047] 2:24:24	there's just no other way to put it
+[3048] 2:24:27	um it's lazy thinking
+[3049] 2:24:29	um it's not supported by data
+[3050] 2:24:32	you really have to stretch these
+[3051] 2:24:34	Egyptian beliefs to a ridiculous extreme
+[3052] 2:24:37	to to try to make these connections
+[3053] 2:24:42	I mean it's stupid I mean it's really
+[3054] 2:24:44	really dumb
+[3055] 2:24:46	even guys like even atheists like Bart
+[3056] 2:24:48	Airman think it's dumb
+[3057] 2:24:50	you know
+[3058] 2:24:52	you know if you've if you've got like uh
+[3059] 2:24:54	Bart Airman ragging on Richard carrier
+[3060] 2:24:56	in his position you know
+[3061] 2:25:03	but
+[3062] 2:25:05	because Bart Airman does not like
+[3063] 2:25:06	Christians he doesn't he does not like
+[3064] 2:25:08	he does not care for Christian ideas and
+[3065] 2:25:10	he certainly does not believe that Jesus
+[3066] 2:25:12	is the Messiah but he does believe that
+[3067] 2:25:14	that Jesus was a historic person not a
+[3068] 2:25:16	myth
+[3069] 2:25:19	so I think the whole the whole Jesus is
+[3070] 2:25:23	a myth thing is just a
+[3071] 2:25:25	terrible it's a it's terrible history
+[3072] 2:25:28	that's terrible history it's terrible
+[3073] 2:25:31	study of ancient religions
+[3074] 2:25:35	it's it's
+[3075] 2:25:37	methodologically bankrupt
+[3076] 2:25:40	it's methodologically bankrupt
+[3077] 2:25:43	so that's my thoughts
+[3078] 2:25:49	just don't I just don't have any
+[3079] 2:25:52	anything good to say about mythicus I I
+[3080] 2:25:54	have nothing good to say about them you
+[3081] 2:25:56	know they're just they're lazy thinkers
+[3082] 2:25:58	they're incredibly lazy thinkers
+[3083] 2:26:02	so anyway uh thank you very much for the
+[3084] 2:26:04	Super Chat uh very very much appreciate
+[3085] 2:26:07	it and um
+[3086] 2:26:09	that was my insight
+[3087] 2:26:15	s
+[3088] 2:26:17	yep
+[3089] 2:26:20	okay
+[3090] 2:26:22	all right we're back to twidget again
+[3091] 2:26:26	all right
+[3092] 2:26:28	uh our next Super Chat is for five
+[3093] 2:26:30	dollars from the camel apart
+[3094] 2:26:32	and he asks how would moshe's name have
+[3095] 2:26:36	been pronounced in Egyptian oh great
+[3096] 2:26:39	question
+[3097] 2:26:41	would it have been
+[3098] 2:26:43	um she or pronounced more like Moshe
+[3099] 2:26:46	okay
+[3100] 2:26:47	um it would have been pronounced
+[3101] 2:26:48	probably along the lines of M Shay now
+[3102] 2:26:51	there are two competing views on the
+[3103] 2:26:54	name of Moshe
+[3104] 2:26:57	um the typical one in in most Egyptians
+[3105] 2:27:00	egyptologist circles is that it comes
+[3106] 2:27:02	from the word mess
+[3107] 2:27:04	to be born or begotten from
+[3108] 2:27:09	um I don't take that view
+[3109] 2:27:11	I do take the view that it is from
+[3110] 2:27:15	um a theophoric name uh M Shay uh
+[3111] 2:27:19	basically it's the uh Owl and the
+[3112] 2:27:23	um the pool uh ideogram in Egyptian
+[3113] 2:27:27	and it means from the pool from the
+[3114] 2:27:29	water so that's a really really good
+[3115] 2:27:33	um comparison to Moshe and plus the
+[3116] 2:27:36	consonants are right too
+[3117] 2:27:39	so it would have been pronounced some
+[3118] 2:27:42	someone was along the lines of of M Shay
+[3119] 2:27:45	so like for example uh almond M Shay
+[3120] 2:27:49	so that's really how it would have
+[3121] 2:27:51	probably been pronounced
+[3122] 2:27:54	so if you
+[3123] 2:27:55	Lop off the theophoric element of almond
+[3124] 2:27:59	Montu or whatever it happens to be you
+[3125] 2:28:02	do get uh M Shay or Moshe
+[3126] 2:28:08	so it would be very similar to Moshe
+[3127] 2:28:11	very very similar to to how it is
+[3128] 2:28:14	pronounced in Hebrew
+[3129] 2:28:16	so I think that's a that that sort of
+[3130] 2:28:18	adds credibility to this as well is that
+[3131] 2:28:21	the the the pronunciation between Moshe
+[3132] 2:28:24	and M Shay is so close
+[3133] 2:28:27	that uh is more likely than not
+[3134] 2:28:31	so anyway
+[3135] 2:28:33	thank you
+[3136] 2:28:35	thank you very much for the Super Chat
+[3137] 2:28:37	very much appreciated and I hope that
+[3138] 2:28:39	helped
+[3139] 2:28:48	[Laughter]
+[3140] 2:28:51	how many
+[3141] 2:28:55	um
+[3142] 2:29:09	ah next uh Super Chat is from Sentinel
+[3143] 2:29:12	apologetics for two dollars Australian
+[3144] 2:29:14	hi Rob how's it going good to see you
+[3145] 2:29:17	here tonight
+[3146] 2:29:18	Merry Christmas Daddy Falk well Merry
+[3147] 2:29:21	Christmas to you too
+[3148] 2:29:23	um
+[3149] 2:29:25	I don't know how I lucked out but I
+[3150] 2:29:26	actually get Christmas Eve and Christmas
+[3151] 2:29:28	day off uh this year so I'm I'm really
+[3152] 2:29:32	really looking forward to this weekend
+[3153] 2:29:34	so
+[3154] 2:29:36	it's not it's not normal that I get two
+[3155] 2:29:38	days off in a row
+[3156] 2:29:39	so for me this is just
+[3157] 2:29:41	this is
+[3158] 2:29:42	I'm thrilled I'm thrilled to be uh to be
+[3159] 2:29:45	able to have this time off I didn't ask
+[3160] 2:29:47	for it
+[3161] 2:29:49	my employer just decided to give it to
+[3162] 2:29:51	me so it was it's a pleasant pleasant
+[3163] 2:29:54	change
+[3164] 2:29:55	so I'm very very happy about being able
+[3165] 2:29:57	to do
+[3166] 2:30:00	not have to work tomorrow
+[3167] 2:30:03	and be able to be home to actually
+[3168] 2:30:06	celebrate uh Christmas
+[3169] 2:30:09	so I hope you're well I hope uh things
+[3170] 2:30:12	are going good for you over there
+[3171] 2:30:15	uh again we we talked about a little bit
+[3172] 2:30:17	about doing a collaboration and I think
+[3173] 2:30:19	we should we should re readdress that in
+[3174] 2:30:21	the new year because I think I think a
+[3175] 2:30:23	collaboration would be good again
+[3176] 2:30:25	we need to do another one of those
+[3177] 2:30:29	so anyway
+[3178] 2:30:31	thank you very much for the Super Chat
+[3179] 2:30:32	very very much appreciated and uh have a
+[3180] 2:30:36	very very Merry Christmas and I'll talk
+[3181] 2:30:37	to you again in the new year
+[3182] 2:30:40	foreign
+[3183] 2:30:46	next one here is from Michael Letourneau
+[3184] 2:30:49	for five dollars Canadian thank you very
+[3185] 2:30:51	much for the Super Chat very much
+[3186] 2:30:53	appreciated Merry Christmas David can
+[3187] 2:30:55	you elaborate on what cursing your
+[3188] 2:30:58	parents means oh yes
+[3189] 2:31:01	okay
+[3190] 2:31:04	what is cursing your parents this is not
+[3191] 2:31:06	this is not using dirty language against
+[3192] 2:31:08	your parents okay
+[3193] 2:31:09	this is not this is this is not using
+[3194] 2:31:14	bad words or or implied or rude words or
+[3195] 2:31:18	dirty words against your parents
+[3196] 2:31:22	cursing your parents
+[3197] 2:31:24	is
+[3198] 2:31:26	wishing them death
+[3199] 2:31:29	or poverty or misfortune
+[3200] 2:31:32	it's putting a curse on your parents
+[3201] 2:31:37	that's what it is in a magical sense
+[3202] 2:31:40	okay that's what it is
+[3203] 2:31:43	and
+[3204] 2:31:46	the idea here is that
+[3205] 2:31:49	if you publicly say you wish your
+[3206] 2:31:51	parents were dead you're actually in a
+[3207] 2:31:54	sense enacting that as a magical formula
+[3208] 2:31:59	so
+[3209] 2:32:01	this is not being angry at your parents
+[3210] 2:32:03	this is not saying something nasty or
+[3211] 2:32:05	rude to your parents
+[3212] 2:32:06	this is wishing them death and harm
+[3213] 2:32:09	it's literally quite literally wishing
+[3214] 2:32:12	harm upon your parents
+[3215] 2:32:13	that's what cursing your parents means
+[3216] 2:32:17	okay
+[3217] 2:32:18	and
+[3218] 2:32:22	and
+[3219] 2:32:24	the other thing about this as well
+[3220] 2:32:27	is this is not a law against miners
+[3221] 2:32:32	I think it's really important
+[3222] 2:32:35	because
+[3223] 2:32:37	this is an extension of you shall honor
+[3224] 2:32:39	your father and mother
+[3225] 2:32:41	an extension of the Ten Commandments
+[3226] 2:32:45	thank you
+[3227] 2:32:46	the idea of that
+[3228] 2:32:49	that commandment is this a commandment
+[3229] 2:32:51	that's really focused on adults
+[3230] 2:32:57	these are adult children
+[3231] 2:32:59	the idea of cursing your parents
+[3232] 2:33:02	is a
+[3233] 2:33:05	it's a
+[3234] 2:33:08	it's a man that is focused again upon
+[3235] 2:33:13	adults
+[3236] 2:33:16	not necessarily miners not immature
+[3237] 2:33:20	children
+[3238] 2:33:22	okay because
+[3239] 2:33:25	like for example the uh the commandment
+[3240] 2:33:27	to honor your father and mother
+[3241] 2:33:29	well children are incapable of dependent
+[3242] 2:33:32	children aren't capable of honoring
+[3243] 2:33:33	their father and mother
+[3244] 2:33:37	honoring means that you're going to take
+[3245] 2:33:39	care of them in their old age
+[3246] 2:33:42	honoring means that you're not going to
+[3247] 2:33:44	leave your parents destitute when
+[3248] 2:33:47	the chips are down for them
+[3249] 2:33:49	you know honoring means that you're not
+[3250] 2:33:52	going to wish them harm
+[3251] 2:33:55	that you want the best for them
+[3252] 2:33:58	so
+[3253] 2:33:59	this is all this these this all has to
+[3254] 2:34:02	do with adults these are this these
+[3255] 2:34:04	these these laws have to do with adults
+[3256] 2:34:06	you know
+[3257] 2:34:08	cursing your parents wishing them dead
+[3258] 2:34:10	to collect the inheritance
+[3259] 2:34:13	now that's an example of cursing your
+[3260] 2:34:15	parents
+[3261] 2:34:18	helping the process along a bit
+[3262] 2:34:21	d
+[3263] 2:34:23	we do see this even today
+[3264] 2:34:26	you know there's there's adult children
+[3265] 2:34:27	today who try to accelerate the demise
+[3266] 2:34:31	of their parents to collect the
+[3267] 2:34:32	inheritance
+[3268] 2:34:36	you don't feed them right you don't give
+[3269] 2:34:37	them proper medications
+[3270] 2:34:39	you know you abuse them
+[3271] 2:34:41	you know that's cursing your parents
+[3272] 2:34:46	so
+[3273] 2:34:47	yeah it's
+[3274] 2:34:49	it's
+[3275] 2:34:51	very very it's as I said I said I think
+[3276] 2:34:54	I think the worst thing about this is
+[3277] 2:34:55	It's too often applied to minor children
+[3278] 2:34:59	and it has nothing generally I mean yes
+[3279] 2:35:02	you do get some evil children that will
+[3280] 2:35:05	you know knock off their parents but
+[3281] 2:35:09	it's generally for adult children
+[3282] 2:35:12	that's what these these Commandments are
+[3283] 2:35:14	primarily focused towards is adults
+[3284] 2:35:19	so it's adult children cursing their
+[3285] 2:35:23	adult parents
+[3286] 2:35:24	that's what it means
+[3287] 2:35:28	so anyway I hope that that put some
+[3288] 2:35:31	Enlightenment here
+[3289] 2:35:32	thank you very much for the Super Chat
+[3290] 2:35:34	very very much appreciated and I hope
+[3291] 2:35:36	you have a very very Merry Christmas and
+[3292] 2:35:38	thank you for joining us tonight
+[3293] 2:35:41	okay
+[3294] 2:35:47	uh we got another Super Chat here from
+[3295] 2:35:49	uh zayo Bayo for 11 Euro thank you very
+[3296] 2:35:53	much for the Super Chat
+[3297] 2:35:55	fell asleep I'm late
+[3298] 2:35:58	well you know what it is late it
+[3299] 2:36:01	honestly it is late
+[3300] 2:36:03	um my we had to uh start this the live
+[3301] 2:36:06	stream tonight at 8 30.
+[3302] 2:36:09	because of my my boss kind of extended
+[3303] 2:36:12	my hours you know this is this is sort
+[3304] 2:36:14	of the Christmas season so you know
+[3305] 2:36:16	everyone's working a bit later
+[3306] 2:36:18	but he says uh regarding Hebrew being
+[3307] 2:36:22	Canaanite can Israel's proximity to
+[3308] 2:36:25	Egypt explain more loanwords no it can't
+[3309] 2:36:29	really
+[3310] 2:36:30	how about having ruled the territory
+[3311] 2:36:32	before it's compared to Spain or an
+[3312] 2:36:35	Arabic rule okay I've heard this
+[3313] 2:36:37	argument said
+[3314] 2:36:39	I've heard
+[3315] 2:36:40	um
+[3316] 2:36:41	um Josh Bowen used this this sort of
+[3317] 2:36:44	argument
+[3318] 2:36:46	and it falls flat for a few reasons okay
+[3319] 2:36:50	it falls flat
+[3320] 2:36:53	because we do know that there are some
+[3321] 2:36:55	places that the Egyptians ruled quite
+[3322] 2:36:59	vigorously quite with a lot of strength
+[3323] 2:37:01	like you Garrett you know that region
+[3324] 2:37:04	was very heavily controlled by the
+[3325] 2:37:06	Egyptians
+[3326] 2:37:07	but yet we don't see the lone Wars
+[3327] 2:37:09	infiltrate there
+[3328] 2:37:12	um
+[3329] 2:37:13	you know their
+[3330] 2:37:15	um language
+[3331] 2:37:18	so the other thing too
+[3332] 2:37:21	is
+[3333] 2:37:24	the control over the territory of Canaan
+[3334] 2:37:27	by the Egyptians was more of a hegemony
+[3335] 2:37:31	and I've explained this before in other
+[3336] 2:37:32	videos where you know when people
+[3337] 2:37:34	confuse the idea between Empire and
+[3338] 2:37:36	hegemony
+[3339] 2:37:38	Egypt didn't have an Empire
+[3340] 2:37:41	Egypt did not have absolute control over
+[3341] 2:37:43	Canaan
+[3342] 2:37:46	Egypt had a hegemony
+[3343] 2:37:48	they basically had set up a few
+[3344] 2:37:51	um
+[3345] 2:37:52	a few Garrison towns to show that yeah
+[3346] 2:37:55	they're there to stay
+[3347] 2:37:57	but they didn't assert direct control
+[3348] 2:38:00	over Kanan itself
+[3349] 2:38:03	they were really just there to collect
+[3350] 2:38:05	tribute
+[3351] 2:38:07	as long as the little tribal Chieftains
+[3352] 2:38:09	and and and uh
+[3353] 2:38:12	Chiefs of the city-states paid their
+[3354] 2:38:13	tribute
+[3355] 2:38:14	Egypt didn't care one way or the other
+[3356] 2:38:16	how they behaved you know they let those
+[3357] 2:38:18	guys go to war against each other and
+[3358] 2:38:20	Egypt Sat by and looked as long as they
+[3359] 2:38:21	got their tribute
+[3360] 2:38:26	so one of the things we have to
+[3361] 2:38:28	understand about the Garrison towns in
+[3362] 2:38:30	Egypt or sorry in Canaan
+[3363] 2:38:33	is that the Garrison towns were kind of
+[3364] 2:38:35	insular they're very insular
+[3365] 2:38:38	you know
+[3366] 2:38:40	um they didn't go out much beyond the
+[3367] 2:38:43	confines unless they had to
+[3368] 2:38:46	you know Garrison towns were really
+[3369] 2:38:47	places to collect tribute
+[3370] 2:38:50	to provide some accounting and
+[3371] 2:38:53	administration
+[3372] 2:38:55	um it was also a place where
+[3373] 2:38:57	when the king went on campaign he could
+[3374] 2:39:00	sort of you know stop at these towns
+[3375] 2:39:02	have the whole Army stop at the towns
+[3376] 2:39:04	and sort of rest stops
+[3377] 2:39:09	like we know for example like uh
+[3378] 2:39:12	um patreon was a was an Egyptian
+[3379] 2:39:14	Garrison town
+[3380] 2:39:16	and
+[3381] 2:39:19	one of the things we know is when the
+[3382] 2:39:21	Israelites conquered Canaan
+[3383] 2:39:23	they didn't conquer bait Xi'an
+[3384] 2:39:26	but what happened to Beijing
+[3385] 2:39:29	was
+[3386] 2:39:31	it also became more and more
+[3387] 2:39:35	isolated
+[3388] 2:39:37	you know as the Israelites gained
+[3389] 2:39:39	further and further control over Kanan
+[3390] 2:39:42	the Egyptian the remaining Egyptian
+[3391] 2:39:45	Garrison towns became more and more
+[3392] 2:39:46	insulated more and more isolated more
+[3393] 2:39:48	and more withdrawn to themselves
+[3394] 2:39:51	foreign
+[3395] 2:39:55	and The Exodus and the conquest takes
+[3396] 2:39:59	place after
+[3397] 2:40:02	uh
+[3398] 2:40:04	basically more or less Egypt loses its
+[3399] 2:40:07	hegemonic control
+[3400] 2:40:10	so it really doesn't explain the
+[3401] 2:40:12	loanwords then
+[3402] 2:40:15	because
+[3403] 2:40:18	okay Hebrew is a Semitic language
+[3404] 2:40:19	Canaanite is a Semitic language
+[3405] 2:40:23	but it's not the same Semitic language
+[3406] 2:40:27	and they have different trajectories
+[3407] 2:40:32	so with Israel coming in from the
+[3408] 2:40:34	outside
+[3409] 2:40:37	um we would we we should expect some
+[3410] 2:40:39	more Egyptian vocabulary
+[3411] 2:40:41	inside of Canaan if it was just the
+[3412] 2:40:44	hegemony
+[3413] 2:40:46	that that caused the uh proliferation of
+[3414] 2:40:50	of
+[3415] 2:40:51	um loanwords
+[3416] 2:40:54	so
+[3417] 2:40:56	I don't think I don't think the hegemony
+[3418] 2:40:59	alone explains this you need more
+[3419] 2:41:03	just because of the way Egypt controlled
+[3420] 2:41:05	its territory
+[3421] 2:41:07	so anyway I hope that helps answer the
+[3422] 2:41:10	question thank you very much for the
+[3423] 2:41:11	Super Chat very very much appreciated
+[3424] 2:41:13	yeah but I've heard Bo and Josh Bowen
+[3425] 2:41:16	make this argument and it just doesn't
+[3426] 2:41:17	hold water when you really start
+[3427] 2:41:18	examining the details
+[3428] 2:41:21	also the fact is that some of those
+[3429] 2:41:22	loanwords too are date specific date and
+[3430] 2:41:24	time specific
+[3431] 2:41:26	so
+[3432] 2:41:28	with that said it's like like so for
+[3433] 2:41:32	example there's there's some of them
+[3434] 2:41:33	there specific to the Egyptian New
+[3435] 2:41:34	Kingdom
+[3436] 2:41:36	so if this is Canaanite uh and it is
+[3437] 2:41:40	about say hegemonic control you would
+[3438] 2:41:42	have some probably some differences too
+[3439] 2:41:45	and what words would gravitate to the
+[3440] 2:41:47	text other than what actually appears
+[3441] 2:41:49	there
+[3442] 2:41:50	so anyway
+[3443] 2:41:52	thank you very much for the Super Chat
+[3444] 2:41:54	very very much appreciated and I hope
+[3445] 2:41:56	that helped
+[3446] 2:41:58	foreign
+[3447] 2:42:07	okay we've got uh BC for two dollars
+[3448] 2:42:10	Australian thank you very much for the
+[3449] 2:42:11	Super Chat
+[3450] 2:42:13	were the three Magi Israelite Exiles or
+[3451] 2:42:17	Gentiles oh
+[3452] 2:42:20	we're not sure
+[3453] 2:42:22	we're not sure
+[3454] 2:42:24	they are probably zoroastrian yeah
+[3455] 2:42:26	probably zoroastrin and they are
+[3456] 2:42:28	probably Gentiles in all likelihood
+[3457] 2:42:30	there's some possibility they could have
+[3458] 2:42:32	been Israelite Exiles that's possible
+[3459] 2:42:36	um they could have been Israelite Exiles
+[3460] 2:42:38	from say uh even the northern tribes you
+[3461] 2:42:41	know ones that have been deported
+[3462] 2:42:43	earlier by the Assyrians
+[3463] 2:42:47	but
+[3464] 2:42:49	at that point were they really
+[3465] 2:42:51	Israelites anymore
+[3466] 2:42:53	the text doesn't tell us the text
+[3467] 2:42:55	honestly doesn't tell us
+[3468] 2:42:57	uh it does seem to almost assume they're
+[3469] 2:43:00	gentiles
+[3470] 2:43:03	but again we're not sure
+[3471] 2:43:06	we're just not sure
+[3472] 2:43:08	the text is silent on this and where the
+[3473] 2:43:10	text is selling it's safest always to be
+[3474] 2:43:12	silent ourselves
+[3475] 2:43:14	so uh that's that's about all we can say
+[3476] 2:43:17	about them we know very little about
+[3477] 2:43:19	them
+[3478] 2:43:22	we know that they were astrologers
+[3479] 2:43:26	we know that they are from the East
+[3480] 2:43:30	so most likely from Persia
+[3481] 2:43:34	oh yeah they know they got an Angelic
+[3482] 2:43:37	Vision yeah but that's after that's
+[3483] 2:43:39	after the they visit Herod
+[3484] 2:43:41	yeah they're in a pretty rarefied club
+[3485] 2:43:43	by with an Angelic Vision that's that's
+[3486] 2:43:45	for sure
+[3487] 2:43:49	but we don't know much more than that
+[3488] 2:43:52	the Bible doesn't amplify this
+[3489] 2:43:54	so anyway that's all we got on them
+[3490] 2:43:56	really
+[3491] 2:43:57	uh we know they gave three gifts
+[3492] 2:44:00	okay
+[3493] 2:44:02	this also doesn't mean that there's
+[3494] 2:44:04	three three wise men or three Magi just
+[3495] 2:44:07	three gifts
+[3496] 2:44:08	we don't know how many of them there
+[3497] 2:44:10	were
+[3498] 2:44:12	we they could have been many more there
+[3499] 2:44:14	could have been many less who or a few
+[3500] 2:44:15	less who knows
+[3501] 2:44:18	but we know there's more than one of
+[3502] 2:44:19	them
+[3503] 2:44:20	we don't know how many of them though
+[3504] 2:44:24	and we do know that they are on the
+[3505] 2:44:26	incense Road
+[3506] 2:44:29	that's also something we know
+[3507] 2:44:31	because the nature of their gifts
+[3508] 2:44:34	gold frankincense and myrrh
+[3509] 2:44:37	for the frankincense and murder they
+[3510] 2:44:39	would have had to have been on the trade
+[3511] 2:44:40	route of the incense of the incense uh
+[3512] 2:44:43	trade
+[3513] 2:44:45	so that would have uh gone from Africa
+[3514] 2:44:50	uh into Kanan and up into Mesopotamia
+[3515] 2:44:55	and ultimately probably as far as India
+[3516] 2:45:00	so
+[3517] 2:45:02	that is though they would have had to
+[3518] 2:45:04	have been on that incense trade route
+[3519] 2:45:07	for them to have uh access
+[3520] 2:45:10	the uh to those particular gifts
+[3521] 2:45:13	particularly the final consensus
+[3522] 2:45:17	so that's about all we can I can say
+[3523] 2:45:19	about this
+[3524] 2:45:20	um thank you very much for the Super
+[3525] 2:45:21	Chat very much appreciate and I hope
+[3526] 2:45:23	that helped
+[3527] 2:45:31	hmm
+[3528] 2:45:33	really really important question from
+[3529] 2:45:36	the Camilla part for five dollars thank
+[3530] 2:45:38	you very much for the Super Chat
+[3531] 2:45:40	is Mr empty conjectures first name empty
+[3532] 2:45:44	or does he have a double surname oh
+[3533] 2:45:47	expand the lore
+[3534] 2:45:49	hmm
+[3535] 2:45:57	wow that is a good question never
+[3536] 2:45:59	thought about that the double surname
+[3537] 2:46:01	yeah I think it's a double star name
+[3538] 2:46:04	I don't know what his first name is
+[3539] 2:46:07	oh wow hmm
+[3540] 2:46:10	never thought about this
+[3541] 2:46:13	yeah it's a that would be a double store
+[3542] 2:46:15	name
+[3543] 2:46:16	so that's that's what I'm gonna that's
+[3544] 2:46:18	what I'm gonna stick to
+[3545] 2:46:20	the empty conjecture is a double surname
+[3546] 2:46:23	so maybe we'll have a contest for for
+[3547] 2:46:26	what his first name should be who knows
+[3548] 2:46:30	or maybe we'll come up with one as part
+[3549] 2:46:32	of the lore
+[3550] 2:46:36	so
+[3551] 2:46:40	um that's not a question thank you very
+[3552] 2:46:42	much for the Super Chat and uh you
+[3553] 2:46:45	you've just expanded the lore
+[3554] 2:46:48	Mister is his first name
+[3555] 2:46:55	uh Mr is his first name like Mr Big or
+[3556] 2:47:00	Dr Pepper
+[3557] 2:47:05	[Laughter]
+[3558] 2:47:12	okay well thank you very much for the
+[3559] 2:47:14	Super Chat
+[3560] 2:47:16	that was funny
+[3561] 2:47:19	okay
+[3562] 2:47:25	wow uh another very very generous Super
+[3563] 2:47:28	Chat from Cole Walker for a hundred
+[3564] 2:47:30	dollars thank you so much for that
+[3565] 2:47:32	really really generous Super Chat wow
+[3566] 2:47:34	we're being blessed with Christmas
+[3567] 2:47:35	blessings this this this time oh wow
+[3568] 2:47:39	thank you so much and he says Merry
+[3569] 2:47:41	Christmas doctor and Mrs Falk well Merry
+[3570] 2:47:43	Christmas to you too
+[3571] 2:47:46	um as I said it's a great honor to be
+[3572] 2:47:48	here and to help uh you know answer some
+[3573] 2:47:51	questions to provide a little bit of
+[3574] 2:47:53	insight into the Bible
+[3575] 2:47:55	and that's our mission that's our
+[3576] 2:47:56	mission is to provide insight into the
+[3577] 2:47:58	Bible
+[3578] 2:47:59	to be able to basically show people that
+[3579] 2:48:01	hey you know there's some really good
+[3580] 2:48:03	stuff in this in the Bible and
+[3581] 2:48:06	and there's some good answers some
+[3582] 2:48:08	really good answers to these questions
+[3583] 2:48:10	so
+[3584] 2:48:12	um the super chess like this really do
+[3585] 2:48:15	help support our Channel
+[3586] 2:48:17	and we really can't do it without
+[3587] 2:48:18	support like this so we're so
+[3588] 2:48:21	appreciative of this help we are so
+[3589] 2:48:24	appreciative of your generosity
+[3590] 2:48:27	thank you very much and it really does
+[3591] 2:48:29	help us it helps put food on our table
+[3592] 2:48:33	um yes I have a day job but it doesn't
+[3593] 2:48:36	cover everything
+[3594] 2:48:37	so
+[3595] 2:48:39	you know generosity like this really
+[3596] 2:48:42	does help us and we really appreciate it
+[3597] 2:48:44	thank you so very much
+[3598] 2:48:57	Michael Letourneau uh and this is looks
+[3599] 2:48:59	like it's our last Super Chat here and
+[3600] 2:49:01	once we're done this we'll take some
+[3601] 2:49:02	non-super chat questions uh before
+[3602] 2:49:04	calling it a night
+[3603] 2:49:07	Michael eterno for five dollars Canadian
+[3604] 2:49:09	asks and thank you very much for that
+[3605] 2:49:12	Super Chat
+[3606] 2:49:13	is it possible that Adam and Eve were
+[3607] 2:49:16	allegorical figurative
+[3608] 2:49:19	I don't like the term allegorical or
+[3609] 2:49:21	figurative here
+[3610] 2:49:23	um
+[3611] 2:49:25	because allegorical has sort of the
+[3612] 2:49:28	implication built into it that they
+[3613] 2:49:30	weren't real people
+[3614] 2:49:35	I prefer the term
+[3615] 2:49:40	um
+[3616] 2:49:41	mythologized
+[3617] 2:49:43	or mythohist that they were part of
+[3618] 2:49:45	mythohistory
+[3619] 2:49:47	okay a mythohistorical that's probably
+[3620] 2:49:49	the best way I'd put it is
+[3621] 2:49:50	mythohistorical
+[3622] 2:49:52	now what do I mean by that there is a
+[3623] 2:49:55	historical
+[3624] 2:49:57	I think they were real people
+[3625] 2:49:58	I think Adam and Eve were real people
+[3626] 2:50:01	but I also think too that
+[3627] 2:50:05	that
+[3628] 2:50:06	the story of Adam and Eve has been
+[3629] 2:50:12	retold in a way that is supposed to be
+[3630] 2:50:16	pedagogical it's pedagogical so it's
+[3631] 2:50:20	supposed to teach something it's
+[3632] 2:50:21	supposed to teach something
+[3633] 2:50:24	you're not getting unvarnished history
+[3634] 2:50:27	you're getting history that's being told
+[3635] 2:50:30	as didactic literature
+[3636] 2:50:34	it's supposed to teach you about Sacred
+[3637] 2:50:36	Space about the Holiness of God about
+[3638] 2:50:39	the sinfulness of man
+[3639] 2:50:41	it's supposed to incorporate all these
+[3640] 2:50:44	different religious Concepts
+[3641] 2:50:47	though there is a sense in which Adam
+[3642] 2:50:51	and Eve are interacting with God himself
+[3643] 2:50:55	and with angels and other beings
+[3644] 2:51:00	though it's not allegorical per se and
+[3645] 2:51:03	it's not necessarily figurative
+[3646] 2:51:06	but it's also not pure History either
+[3647] 2:51:10	it's somewhere in between
+[3648] 2:51:13	thank you
+[3649] 2:51:16	yeah it's meant to it's meant to
+[3650] 2:51:17	communicate deeper truths than just a a
+[3651] 2:51:21	secular history
+[3652] 2:51:24	yeah it's not it's not a factual
+[3653] 2:51:26	recounting of History
+[3654] 2:51:28	it's it's a it's a theological
+[3655] 2:51:31	recounting of History
+[3656] 2:51:34	that makes sense it's meant to be it's
+[3657] 2:51:38	meant to to to give you religious
+[3658] 2:51:40	information
+[3659] 2:51:43	that applies to the beginning of mankind
+[3660] 2:51:47	and and our our core problem
+[3661] 2:51:50	which is of course sin
+[3662] 2:51:53	so
+[3663] 2:51:56	so I don't I don't I I tend to shy away
+[3664] 2:51:59	from allegorical and theater
+[3665] 2:52:00	interpretations and I'm not a huge fan
+[3666] 2:52:02	of allegory either honestly
+[3667] 2:52:07	um
+[3668] 2:52:09	I have I have issues with with
+[3669] 2:52:11	allegorical methods of reading most
+[3670] 2:52:14	things
+[3671] 2:52:15	uh I I again I think I think allegory
+[3672] 2:52:18	can be really poorly handled
+[3673] 2:52:21	um it does lead to sloppy interpretation
+[3674] 2:52:24	a lazy interpretation
+[3675] 2:52:27	so I I know allegory is one of the
+[3676] 2:52:30	methods historical methods of
+[3677] 2:52:32	interpretation throughout the history of
+[3678] 2:52:33	the Bible
+[3679] 2:52:34	but I don't care for it I really have
+[3680] 2:52:36	never I've never really cared for it I
+[3681] 2:52:39	don't like it as a category
+[3682] 2:52:41	of interpretation
+[3683] 2:52:45	I mean I think there's a I think I think
+[3684] 2:52:47	you know a text can have a literal
+[3685] 2:52:49	interpretation it can have a deeper
+[3686] 2:52:52	meaning interpretation it can have an in
+[3687] 2:52:54	some special cases it can have an
+[3688] 2:52:56	allegorical interpretation
+[3689] 2:52:58	you know I think all of that is
+[3690] 2:52:59	definitely possible
+[3691] 2:53:03	but it's not why we always default to
+[3692] 2:53:07	like I don't necessarily default
+[3693] 2:53:10	to a literal interpretation all the time
+[3694] 2:53:13	because I want the context to guide that
+[3695] 2:53:15	all the context to tell me what how I
+[3696] 2:53:20	should be reading the text
+[3697] 2:53:24	in the case of The Narrative of Adam and
+[3698] 2:53:26	Eve
+[3699] 2:53:28	the context is really really telling me
+[3700] 2:53:30	that this is theological literature
+[3701] 2:53:34	it's not algorical
+[3702] 2:53:36	and it's not purely hysterical
+[3703] 2:53:39	it's it's it's between that that that
+[3704] 2:53:44	those those two Realms of history and
+[3705] 2:53:47	Theology and it's sort of meeting us in
+[3706] 2:53:50	between
+[3707] 2:53:53	so
+[3708] 2:53:54	I mean I suppose it could be possible I
+[3709] 2:53:57	don't think it's very likely I don't
+[3710] 2:53:59	think it's that that plausible
+[3711] 2:54:01	especially given the fact that we that
+[3712] 2:54:05	that there is that whole
+[3713] 2:54:07	um
+[3714] 2:54:08	appeal
+[3715] 2:54:11	to the idea that these people thought
+[3716] 2:54:15	that they were writing a kind of History
+[3717] 2:54:16	it's a religious history but it's a kind
+[3718] 2:54:19	of History nonetheless
+[3719] 2:54:21	so
+[3720] 2:54:23	anyway I hope that clarified the issue
+[3721] 2:54:26	thank you very much for the Super Chat
+[3722] 2:54:28	very very much appreciated
+[3723] 2:54:30	okay
+[3724] 2:54:31	that's the last Super Chat
+[3725] 2:54:34	we have uh gone for almost three hours
+[3726] 2:54:38	now I will take some non-super chats and
+[3727] 2:54:41	then we're gonna call it a night because
+[3728] 2:54:42	it would be lovely if I got to go to bed
+[3729] 2:54:45	tonight
+[3730] 2:54:46	no I'm not going to do a six hour
+[3731] 2:54:49	stream
+[3732] 2:54:51	[Laughter]
+[3733] 2:54:56	okay
+[3734] 2:54:58	let's let's scan the uh this for some
+[3735] 2:55:04	some questions so I'm going through the
+[3736] 2:55:06	chat live stream live live chat looking
+[3737] 2:55:10	for questions
+[3738] 2:55:19	okay I'll take dark blades here
+[3739] 2:55:22	how many dirty socks does does mythicism
+[3740] 2:55:26	get
+[3741] 2:55:28	me sucks
+[3742] 2:55:37	oh laundry basket of dirty socks
+[3743] 2:55:40	oh yeah mysticism is just so outside the
+[3744] 2:55:43	academic mainstream you know it's it's
+[3745] 2:55:46	kind of it's It's a combination between
+[3746] 2:55:49	Henry Morris's review and and Ron
+[3747] 2:55:52	Wyatt's you know it's just like
+[3748] 2:55:54	they're just so out there it's just so
+[3749] 2:55:56	out there
+[3750] 2:55:58	um it's not even funny so yeah they get
+[3751] 2:56:00	a laundry basket at dirty socks lots of
+[3752] 2:56:04	dirty laundry there
+[3753] 2:56:07	but anyway I could not resist the
+[3754] 2:56:09	question
+[3755] 2:56:11	okay
+[3756] 2:56:14	oh
+[3757] 2:56:17	uh Saint Roman Mr amphi conjecture
+[3758] 2:56:19	versus Trash panda
+[3759] 2:56:22	who are you putting money on
+[3760] 2:56:27	yeah there there's there's a there's a
+[3761] 2:56:31	relationship there between empty Mr
+[3762] 2:56:33	empty conjecture and trash Panda so um
+[3763] 2:56:37	yeah like they're very much on the same
+[3764] 2:56:40	wavelength with each other so I don't
+[3765] 2:56:42	think exactly that
+[3766] 2:56:45	um
+[3767] 2:56:46	that they're uh uh competitors they're
+[3768] 2:56:50	not competitors
+[3769] 2:56:54	um thank you
+[3770] 2:56:58	oh The Suicide Squad yeah something
+[3771] 2:57:01	something like that
+[3772] 2:57:03	um for those of you not familiar with
+[3773] 2:57:05	trash Panda you know we will have some
+[3774] 2:57:08	some
+[3775] 2:57:09	subscribers here who are not familiar
+[3776] 2:57:12	with trash Panda to learn about trash
+[3777] 2:57:14	Panda you really have to go on our
+[3778] 2:57:15	Discord server
+[3779] 2:57:19	I do have a I did write a soft piece of
+[3780] 2:57:22	software for those who are not on our
+[3781] 2:57:24	Discord server that basically puts
+[3782] 2:57:28	um
+[3783] 2:57:29	comments
+[3784] 2:57:30	in inappropriate places
+[3785] 2:57:34	[Laughter]
+[3786] 2:57:38	uh and we call the trash panda
+[3787] 2:57:41	so
+[3788] 2:57:43	if you want to learn about trans trash
+[3789] 2:57:44	Panda you have to join us on the Discord
+[3790] 2:57:46	server so but uh Saint Ronan here is on
+[3791] 2:57:50	our Discord server so he knows about
+[3792] 2:57:52	trash panda
+[3793] 2:57:53	so and I thank you for the question
+[3794] 2:58:06	hahaha
+[3795] 2:58:11	okay I'll take this question from
+[3796] 2:58:12	Michael Letourneau did the Egyptians
+[3797] 2:58:14	booby trap their Pharaoh's tombs or is
+[3798] 2:58:16	that just Hollywood fluff that's mostly
+[3799] 2:58:19	Hollywood fluff
+[3800] 2:58:22	um
+[3801] 2:58:25	there is one tomb
+[3802] 2:58:27	that does have a legitimate booby trap
+[3803] 2:58:32	and
+[3804] 2:58:34	um I can't remember which one it is now
+[3805] 2:58:36	I I think it is I think it is the made
+[3806] 2:58:40	Doom pyramid that actually had a
+[3807] 2:58:42	legitimate booby trap it wasn't much of
+[3808] 2:58:45	a booby trap okay
+[3809] 2:58:48	but generally this is fluff
+[3810] 2:58:53	um part of the reason is fluff
+[3811] 2:58:55	is because
+[3812] 2:58:57	tombs in the ancient world were both had
+[3813] 2:59:01	public and private areas
+[3814] 2:59:04	the public areas were open to the public
+[3815] 2:59:06	to come
+[3816] 2:59:08	uh worship the the king
+[3817] 2:59:10	uh provide food offerings
+[3818] 2:59:13	and
+[3819] 2:59:15	um
+[3820] 2:59:17	and basically we do find like for
+[3821] 2:59:20	example you know right outside the
+[3822] 2:59:22	Temple of the mortuary Temple
+[3823] 2:59:25	of
+[3824] 2:59:27	um menkare you know there's a little
+[3825] 2:59:29	there's a on the outside of that temple
+[3826] 2:59:31	outside the walls of that Temple is a
+[3827] 2:59:34	little offering site and I saw it when I
+[3828] 2:59:37	was a a Giza um
+[3829] 2:59:40	and people used to present offerings to
+[3830] 2:59:43	mancari because outside the walls it
+[3831] 2:59:46	wasn't part of the official cult
+[3832] 2:59:49	but it was a public area and people
+[3833] 2:59:50	would come and make offerings there
+[3834] 2:59:54	this is also why you have tombs divided
+[3835] 2:59:56	into two sections
+[3836] 2:59:57	you have the section which has all the
+[3837] 3:00:00	reliefs of his life with the person's
+[3838] 3:00:02	life so you'll see what he did when he
+[3839] 3:00:05	was alive like he if he fished hunted
+[3840] 3:00:08	um he'll have his official biography
+[3841] 3:00:10	there
+[3842] 3:00:11	and then you've got the burial chamber
+[3843] 3:00:12	on the inside
+[3844] 3:00:14	where the king or
+[3845] 3:00:16	uh deceits was actually buried
+[3846] 3:00:21	the at the chamber which has the
+[3847] 3:00:24	biography that's public area people were
+[3848] 3:00:26	allowed to go in there
+[3849] 3:00:27	and read it and uh you know as I said
+[3850] 3:00:31	provided food offerings venerate the
+[3851] 3:00:33	king Etc
+[3852] 3:00:35	the burial chamber is private
+[3853] 3:00:39	um
+[3854] 3:00:40	It generally was more protected with
+[3855] 3:00:42	curses than anything else
+[3856] 3:00:45	so if you like for example this one tomb
+[3857] 3:00:49	that says if you enter this tomb in an
+[3858] 3:00:51	unworthy manner or an unclean and
+[3859] 3:00:54	unworthy matter may you be cursed
+[3860] 3:00:58	so you had stuff like that
+[3861] 3:01:00	but generally not booby traps you know
+[3862] 3:01:04	many times they they discovered pretty
+[3863] 3:01:06	quickly too that booby traps were pretty
+[3864] 3:01:08	ineffective
+[3865] 3:01:11	because the fact is that a lot of tombs
+[3866] 3:01:13	were just entered by tunneling
+[3867] 3:01:16	they didn't even bother finding the
+[3868] 3:01:18	entrance I just tunneled a new one
+[3869] 3:01:27	oh yeah
+[3870] 3:01:28	yeah many many of these tombs had both
+[3871] 3:01:33	um
+[3872] 3:01:34	the the robbers who are related to the
+[3873] 3:01:36	Tim builders
+[3874] 3:01:38	building a tunnel at the same time as
+[3875] 3:01:41	the original tombs were being built
+[3876] 3:01:44	so essentially
+[3877] 3:01:46	uh
+[3878] 3:01:47	once the once the uh King was buried you
+[3879] 3:01:51	know they only had the robbers only had
+[3880] 3:01:53	to finish the tunnel to to break in and
+[3881] 3:01:55	steal all the stuff
+[3882] 3:01:57	so
+[3883] 3:02:00	this you know these booby traps were not
+[3884] 3:02:02	effective they just weren't effective
+[3885] 3:02:04	because they were getting in by other
+[3886] 3:02:06	means
+[3887] 3:02:08	that if
+[3888] 3:02:11	uh not really I mean that's
+[3889] 3:02:14	well the the curse of the of the Mummy
+[3890] 3:02:17	was actually an invention of the
+[3891] 3:02:19	newspapers
+[3892] 3:02:20	okay
+[3893] 3:02:22	on the so-called
+[3894] 3:02:24	um
+[3895] 3:02:26	um so-called curse of the Mummy uh
+[3896] 3:02:28	especially during
+[3897] 3:02:30	it was was invented in the 1920s
+[3898] 3:02:33	uh essentially uh Howard Carter Lord
+[3899] 3:02:37	carnarvon had basically an exclusive
+[3900] 3:02:40	relationship with the times
+[3901] 3:02:42	which published photos of the uh of King
+[3902] 3:02:46	Tut's tomb and was being excavated
+[3903] 3:02:49	now
+[3904] 3:02:52	the thing with King Tut's tomb is it was
+[3905] 3:02:55	um it was it was a sensation absolute
+[3906] 3:02:57	sensation and there was
+[3907] 3:02:59	the fact is though
+[3908] 3:03:01	there were other newspapers that wanted
+[3909] 3:03:02	in on that
+[3910] 3:03:04	that
+[3911] 3:03:05	uh
+[3912] 3:03:07	that rage that didn't get any access
+[3913] 3:03:11	so one of these newspapers decided to
+[3914] 3:03:15	write a
+[3915] 3:03:17	piece that said that there was a curse
+[3916] 3:03:22	to sort of drive people away from the
+[3917] 3:03:25	tomb
+[3918] 3:03:26	to to scare them about the tomb
+[3919] 3:03:29	so
+[3920] 3:03:31	so it was entirely in an invention of
+[3921] 3:03:34	the newspapers you know fake news isn't
+[3922] 3:03:37	new you know people have been doing it
+[3923] 3:03:38	forever
+[3924] 3:03:40	and that was a piece of fake news in the
+[3925] 3:03:42	1920s
+[3926] 3:03:44	so in a very very interesting question
+[3927] 3:03:46	but yeah the whole booby trap thing is
+[3928] 3:03:48	is is just Hollywood fluff
+[3929] 3:03:51	so anyway thank you very much for the
+[3930] 3:03:52	question
+[3931] 3:03:57	okay
+[3932] 3:04:23	hmm
+[3933] 3:04:37	uh to keeps learning this question here
+[3934] 3:04:42	is it possible the Book of Job is just
+[3935] 3:04:44	novel fictional character in modern
+[3936] 3:04:47	sense that wanted to teach us wisdom
+[3937] 3:04:51	um
+[3938] 3:04:55	foreign
+[3939] 3:04:59	okay
+[3940] 3:05:00	now I'll say this
+[3941] 3:05:02	about the Book of Job I don't think it's
+[3942] 3:05:05	an indigenous
+[3943] 3:05:07	uh a piece of literature that's
+[3944] 3:05:09	indigenous to Israel
+[3945] 3:05:12	I think it was written outside of Israel
+[3946] 3:05:13	I think it was
+[3947] 3:05:17	um written in a ROM
+[3948] 3:05:19	and then brought into
+[3949] 3:05:22	the Canon of Israelite
+[3950] 3:05:25	literature
+[3951] 3:05:28	so that's where I think that's where I
+[3952] 3:05:29	think the origin of the Book of Job
+[3953] 3:05:30	comes from
+[3954] 3:05:33	but I also think too that it is
+[3955] 3:05:36	it's based on a real person
+[3956] 3:05:39	I don't think it's a novel first of all
+[3957] 3:05:41	because frankly fiction had not been
+[3958] 3:05:43	invented as a genre
+[3959] 3:05:45	it have was not invented as a genre
+[3960] 3:05:48	so
+[3961] 3:05:50	now you could make the claim as the
+[3962] 3:05:52	allegorical literature maybe but even
+[3963] 3:05:54	that you know we don't see extended long
+[3964] 3:05:57	pieces of allegorical literature
+[3965] 3:05:59	we do see mythologized Literature Like
+[3966] 3:06:02	Gilgamesh that we see
+[3967] 3:06:05	or Mythic history like say The Iliad
+[3968] 3:06:11	but
+[3969] 3:06:12	we don't see that
+[3970] 3:06:17	um
+[3971] 3:06:19	so much in say Israelite literature
+[3972] 3:06:25	the the genre of fiction had not been
+[3973] 3:06:28	invented
+[3974] 3:06:29	now they did have didactic literature
+[3975] 3:06:31	sure
+[3976] 3:06:33	um and they weren't Beyond changing
+[3977] 3:06:36	things to make it fit a teaching agenda
+[3978] 3:06:38	that that's certainly true
+[3979] 3:06:41	but they also did that too within a sort
+[3980] 3:06:43	of a framework of of say narrative
+[3981] 3:06:47	events
+[3982] 3:06:49	and
+[3983] 3:06:51	I think the book Book of Job is as I
+[3984] 3:06:55	said a kind of narrative events that
+[3985] 3:06:58	really sort of resonated with people
+[3986] 3:07:00	you know because it did show this one
+[3987] 3:07:03	guy's struggle of trying to understand
+[3988] 3:07:06	what was happening when his whole life
+[3989] 3:07:08	had gone to complete crud
+[3990] 3:07:11	you know
+[3991] 3:07:13	you know he had been faithful you know
+[3992] 3:07:16	it says I mean the Book of Job says you
+[3993] 3:07:17	know he was a good man
+[3994] 3:07:19	you know there was no no servant like
+[3995] 3:07:21	job none like him
+[3996] 3:07:25	sacrificed even for the sins of his kids
+[3997] 3:07:30	no he was a good dad
+[3998] 3:07:32	I was a good provider
+[3999] 3:07:35	he raised good children
+[4000] 3:07:39	Fox for it flourished
+[4001] 3:07:43	I mean he he did it because he was he
+[4002] 3:07:47	was obedient
+[4003] 3:07:48	and yet all this garbage happens to him
+[4004] 3:07:53	you know he loses his kids
+[4005] 3:07:55	he loses his health he loses his home
+[4006] 3:07:58	he keeps his nagging wife
+[4007] 3:08:00	um
+[4008] 3:08:04	[Laughter]
+[4009] 3:08:08	yeah I think it's kind of ironic but
+[4010] 3:08:11	that's the one thing he does get to keep
+[4011] 3:08:13	um
+[4012] 3:08:14	foreign
+[4013] 3:08:16	now
+[4014] 3:08:20	[Laughter]
+[4015] 3:08:25	yeah so um
+[4016] 3:08:27	my sense is that it's it's an it's an
+[4017] 3:08:30	account of and frankly it is it is
+[4018] 3:08:32	pointing to certain things and places
+[4019] 3:08:34	that I think uh anchor it within a
+[4020] 3:08:38	certain historical context as well
+[4021] 3:08:41	it does seem to be after the dissolution
+[4022] 3:08:43	of the matani empire
+[4023] 3:08:46	in northern Mesopotamia
+[4024] 3:08:49	uh as as far south as a ROM
+[4025] 3:08:54	it
+[4026] 3:08:56	it does seem to be
+[4027] 3:08:59	um within that sort of context of the
+[4028] 3:09:01	Arabians
+[4029] 3:09:04	so and and job himself that that name is
+[4030] 3:09:07	not an Israelite name
+[4031] 3:09:10	so there does seem to be a certain
+[4032] 3:09:12	context here that seems to indicate that
+[4033] 3:09:17	these are events being played out
+[4034] 3:09:21	within say that sort of again that mytho
+[4035] 3:09:24	history so there's a core history here
+[4036] 3:09:26	but there's also interaction with the
+[4037] 3:09:29	divine
+[4038] 3:09:30	done in Poetic form but again that's
+[4039] 3:09:33	very common
+[4040] 3:09:35	uh we do see a lot of of true events
+[4041] 3:09:38	that are done that are written in poetry
+[4042] 3:09:41	like the song of Deborah
+[4043] 3:09:43	through events written in poetry
+[4044] 3:09:45	uh
+[4045] 3:09:48	the song of Moses you know true events
+[4046] 3:09:50	done in poetry
+[4047] 3:09:53	and these are just
+[4048] 3:09:55	you know literary devices that are
+[4049] 3:09:59	used to amplify the meaning of the
+[4050] 3:10:02	literature
+[4051] 3:10:04	so I don't think it's I don't think it's
+[4052] 3:10:06	a novel
+[4053] 3:10:07	novels hadn't been invented yet
+[4054] 3:10:11	um but it is I think it is mythal
+[4055] 3:10:12	history
+[4056] 3:10:14	so anyway thank you very much for the
+[4057] 3:10:15	question I hope that helped
+[4058] 3:10:17	okay
+[4059] 3:10:24	I'll take a couple more questions and
+[4060] 3:10:26	then we'll call it a night
+[4061] 3:10:51	basically
+[4062] 3:11:00	okay I'll take that one that's a good
+[4063] 3:11:02	one
+[4064] 3:11:03	and then we'll take one more after this
+[4065] 3:11:04	and then we'll call it a night uh zayo
+[4066] 3:11:06	bail asks if Joe was written outside of
+[4067] 3:11:09	Israel then was it really Yahweh that
+[4068] 3:11:11	God job was worshiping
+[4069] 3:11:15	um yeah
+[4070] 3:11:17	yeah
+[4071] 3:11:20	you should just leave it at that and
+[4072] 3:11:21	keep you guessing
+[4073] 3:11:24	okay I won't do that I won't do that
+[4074] 3:11:29	um
+[4075] 3:11:31	well here's the thing here's the thing
+[4076] 3:11:36	um there's a strong possibility that
+[4077] 3:11:38	Yahweh was not exclusive to the
+[4078] 3:11:41	Israelites to begin with
+[4079] 3:11:45	that's a very interesting thing right
+[4080] 3:11:46	there
+[4081] 3:11:47	uh especially if you if you take the
+[4082] 3:11:52	kenite hypothesis which I think has some
+[4083] 3:11:54	some good possibilities that Yahweh
+[4084] 3:11:59	uh originated in Midian
+[4085] 3:12:04	as far as as being the first place where
+[4086] 3:12:06	he was worshiped under the name Yahweh
+[4087] 3:12:10	and then Moses living in Midian
+[4088] 3:12:14	encounters Yahweh and brings him back to
+[4089] 3:12:18	the Israelites
+[4090] 3:12:21	as a result of the canine hypothesis it
+[4091] 3:12:24	has also been suggested that
+[4092] 3:12:28	that both the Israelites and the
+[4093] 3:12:30	may have been worshiped both
+[4094] 3:12:33	worshiping Yahweh
+[4095] 3:12:35	and that
+[4096] 3:12:37	uh that the were in a sense
+[4097] 3:12:41	Yahweh worshipers even though you know
+[4098] 3:12:43	their their main God was called Kus but
+[4099] 3:12:45	we don't know who cus was we don't know
+[4100] 3:12:48	if that's a job title we don't know if
+[4101] 3:12:50	that's a functional title you know we
+[4102] 3:12:52	don't know if it's a name proper we just
+[4103] 3:12:55	don't know
+[4104] 3:12:57	so
+[4105] 3:12:59	there's a strong possibility that
+[4106] 3:13:02	already
+[4107] 3:13:03	uh in the late Bronze Age Yahweh was not
+[4108] 3:13:07	restricted to Israel but included Edom
+[4109] 3:13:09	as well
+[4110] 3:13:11	and if that's the case
+[4111] 3:13:13	then it is possible
+[4112] 3:13:16	that others outside the so-called
+[4113] 3:13:18	righteous Gentiles this is what's in
+[4114] 3:13:21	theology called the righteous Gentiles
+[4115] 3:13:23	our worshiping God
+[4116] 3:13:25	just not under the name of Yahweh the
+[4117] 3:13:28	same way that that Abraham would have
+[4118] 3:13:30	been worshiping Yahweh as El Elion or El
+[4119] 3:13:34	Shaddai
+[4120] 3:13:36	you know Abraham no I've been worshiping
+[4121] 3:13:38	Yahweh as Yahweh
+[4122] 3:13:40	even though there is some text that
+[4123] 3:13:42	retrojectively inject that name back
+[4124] 3:13:45	into his dialogue
+[4125] 3:13:47	in all likelihood Abraham and the
+[4126] 3:13:49	Patriarchs were worshiping El Shaddai
+[4127] 3:13:52	and Elian
+[4128] 3:13:54	it weren't directly worshiping Yahweh
+[4129] 3:13:57	so in that same sense then job is not
+[4130] 3:14:01	worshiping Yahweh directly
+[4131] 3:14:03	he is worshiping l
+[4132] 3:14:06	he's worshiping a you know a be God the
+[4133] 3:14:10	great God
+[4134] 3:14:11	whoever that is
+[4135] 3:14:14	and of course if you do that worshiping
+[4136] 3:14:17	the great God whoever it is
+[4137] 3:14:19	then that will lead you to Yahweh
+[4138] 3:14:22	ultimately
+[4139] 3:14:24	just because you are worshiping
+[4140] 3:14:26	according to the characteristics that
+[4141] 3:14:28	Yahweh has
+[4142] 3:14:30	even if you don't know him by his proper
+[4143] 3:14:33	name
+[4144] 3:14:34	so
+[4145] 3:14:37	so I'd say yes even even if it if even
+[4146] 3:14:40	if job was written outside of Israel
+[4147] 3:14:43	that does not preclude him from having
+[4148] 3:14:45	worshiped Yahweh even if it's not by
+[4149] 3:14:48	that name specifically
+[4150] 3:14:51	so
+[4151] 3:14:52	anyway I hope that answered the question
+[4152] 3:14:54	thank you very much for the question
+[4153] 3:14:55	interesting question it's a very
+[4154] 3:14:57	interesting question and it leads to
+[4155] 3:14:58	some very interesting issues such as you
+[4156] 3:15:00	know can you worship god without knowing
+[4157] 3:15:03	his name I think the answer here is yes
+[4158] 3:15:05	absolutely
+[4159] 3:15:07	you know
+[4160] 3:15:08	BC points out the comment uh remembering
+[4161] 3:15:13	also that Melchizedek the high priest of
+[4162] 3:15:15	Salem under Jerusalem Jerusalem is
+[4163] 3:15:17	likely a christophany so even in Canaan
+[4164] 3:15:21	early days Yahweh worship was going down
+[4165] 3:15:24	at the time of of Abraham or earlier now
+[4166] 3:15:29	in the case of of Melchizedek I don't
+[4167] 3:15:32	think he was a christophany
+[4168] 3:15:34	but he is a type of Christ
+[4169] 3:15:37	is a type of Christ
+[4170] 3:15:40	he was a high priest and a king
+[4171] 3:15:43	who's a pry priest Anakin he was king of
+[4172] 3:15:45	Salem
+[4173] 3:15:48	um
+[4174] 3:15:49	though we have to recognize too here
+[4175] 3:15:52	that you know
+[4176] 3:15:54	Melchizedek was probably not worshiping
+[4177] 3:15:57	Yahweh by name
+[4178] 3:15:58	you know he's in fact he's saying he's
+[4179] 3:16:00	he you know melchizedeks basically says
+[4180] 3:16:02	he's worshiping
+[4181] 3:16:06	that's who Melchizedek says he's
+[4182] 3:16:07	worshiping is El Elion he's not calling
+[4183] 3:16:10	him by Yahweh
+[4184] 3:16:14	so
+[4185] 3:16:16	you know Melchizedek is basically
+[4186] 3:16:19	being honored by Abraham
+[4187] 3:16:22	you know as a faithful priest and King
+[4188] 3:16:26	you know somebody who's who's worthy to
+[4189] 3:16:29	receive the tithe from Abraham
+[4190] 3:16:33	and yet he's worshiping El Elion
+[4191] 3:16:37	so there's a perfect Melchizedek is a
+[4192] 3:16:40	perfect example
+[4193] 3:16:42	of a righteous Gentile
+[4194] 3:16:45	he's a righteous Gentile that is also
+[4195] 3:16:49	becomes a type of Christ
+[4196] 3:16:53	so it's a great example it's a great
+[4197] 3:16:55	example
+[4198] 3:16:56	okay so thank you very much for that
+[4199] 3:16:58	question appreciate that I'm going to
+[4200] 3:17:00	take one more non-super chat and then
+[4201] 3:17:01	we're going to call it a night because
+[4202] 3:17:03	we have now gone past three hours
+[4203] 3:17:06	okay
+[4204] 3:17:17	I'm gonna go back to the beginning here
+[4205] 3:17:19	if I can
+[4206] 3:17:29	and the same rule applies if I don't
+[4207] 3:17:31	find something here that floats my boat
+[4208] 3:17:32	we'll just call it a night
+[4209] 3:17:35	oh
+[4210] 3:17:36	culinary question
+[4211] 3:17:41	what's
+[4212] 3:17:42	okay I think I think we'll make this the
+[4213] 3:17:44	last one for the night it's a personal
+[4214] 3:17:45	question
+[4215] 3:17:47	but you know what
+[4216] 3:17:49	I like this question
+[4217] 3:17:53	foreign
+[4218] 3:17:54	strategy gaming what is planned for
+[4219] 3:17:57	Christmas dinner
+[4220] 3:17:58	[Laughter]
+[4221] 3:18:02	okay
+[4222] 3:18:05	what we're doing for Christmas dinner is
+[4223] 3:18:07	Turkey
+[4224] 3:18:08	okay
+[4225] 3:18:09	I like turkey I like turkey a lot
+[4226] 3:18:12	no I don't do the Roman Norman Rockwell
+[4227] 3:18:15	turkey I don't do the whole bird
+[4228] 3:18:18	I I cook my turkey very very different
+[4229] 3:18:20	than most people okay
+[4230] 3:18:23	I
+[4231] 3:18:25	I essentially carve it up like a like a
+[4232] 3:18:27	chicken
+[4233] 3:18:29	I
+[4234] 3:18:30	yeah I mean I I basically dismantle my
+[4235] 3:18:33	turkey before cooking it
+[4236] 3:18:35	you know I basically chop it up into
+[4237] 3:18:37	basically pieces the same way like you
+[4238] 3:18:40	would dismantle a whole chicken for for
+[4239] 3:18:42	frying
+[4240] 3:18:44	and I cook the pieces individually
+[4241] 3:18:46	because I don't basically I want my CH
+[4242] 3:18:49	my my turkey to be evenly cooked and
+[4243] 3:18:52	tender
+[4244] 3:18:55	so I dismantle
+[4245] 3:18:57	all the bird laid on a tray and just
+[4246] 3:19:00	cook it evenly
+[4247] 3:19:02	at the same time
+[4248] 3:19:04	I and the meat comes out perfectly
+[4249] 3:19:08	it's it's baked in I mean and I can cook
+[4250] 3:19:11	a whole whole turkey in less than an
+[4251] 3:19:14	hour
+[4252] 3:19:16	unless I want to slow cook it if I slow
+[4253] 3:19:18	cook it I can just keep it you know I
+[4254] 3:19:21	can
+[4255] 3:19:21	have it going I've done that too
+[4256] 3:19:23	sometimes I've taken a turkey dismantled
+[4257] 3:19:26	it and then slow cooked it over several
+[4258] 3:19:29	hours like five six hours and that's
+[4259] 3:19:32	that's really good too
+[4260] 3:19:33	so
+[4261] 3:19:36	so
+[4262] 3:19:37	um it's gonna be turkey
+[4263] 3:19:39	I'm gonna also do dressing
+[4264] 3:19:42	um basically I have a recipe for for
+[4265] 3:19:44	bread stuffing that I just put in a
+[4266] 3:19:46	piece of tin foil
+[4267] 3:19:48	and cook it on the side
+[4268] 3:19:50	and then we do mashed potatoes gravy and
+[4269] 3:19:54	uh cranberry
+[4270] 3:19:56	and that's going to be Christmas dinner
+[4271] 3:19:58	so uh
+[4272] 3:20:03	Christmas dinner without eggnog
+[4273] 3:20:05	[Laughter]
+[4274] 3:20:14	well
+[4275] 3:20:16	if we want to we could make eggnog I
+[4276] 3:20:19	mean
+[4277] 3:20:19	eggnog is actually not that hard to make
+[4278] 3:20:23	uh funny enough
+[4279] 3:20:26	uh you know make some you make some
+[4280] 3:20:28	custard you know in a liquid form
+[4281] 3:20:30	and then add whipping cream to it and
+[4282] 3:20:33	some nutmeg and you've got you got a
+[4283] 3:20:36	really good eggnog
+[4284] 3:20:39	yes
+[4285] 3:20:40	definitely liquid custard when done
+[4286] 3:20:42	right
+[4287] 3:20:44	oh yeah home might be eggnog fabulous
+[4288] 3:20:47	don't get the commercial stuff I mean
+[4289] 3:20:49	that's all that's all um high fructose
+[4290] 3:20:52	corn syrup that's that's disgusting
+[4291] 3:20:53	that's really disgusting you know um
+[4292] 3:20:57	I I don't I can't I can't style it
+[4293] 3:21:00	stomach that's it but but the real stuff
+[4294] 3:21:02	oh yeah that's so good
+[4295] 3:21:05	uh as I said especially if you do it if
+[4296] 3:21:08	you've done the custard right oh
+[4297] 3:21:10	delicious absolutely delicious
+[4298] 3:21:15	um so
+[4299] 3:21:19	you know what they say
+[4300] 3:21:21	when life gives you eggs make some knock
+[4301] 3:21:24	[Laughter]
+[4302] 3:21:28	well it's a wonderful way to have eggs
+[4303] 3:21:30	I'll say that
+[4304] 3:21:31	uh you will have to uh I think uh deal
+[4305] 3:21:36	with whites you have to extract the
+[4306] 3:21:37	whites out and that you have to make
+[4307] 3:21:38	turn into something else but that's okay
+[4308] 3:21:40	all right so anyway I think we're gonna
+[4309] 3:21:44	wrap it up at this point
+[4310] 3:21:47	um
+[4311] 3:21:49	I want to thank everyone who joined us
+[4312] 3:21:51	tonight uh this was a wonderful night
+[4313] 3:21:53	and we had a great time a little few
+[4314] 3:21:56	technical problems to begin with but we
+[4315] 3:21:58	sorted that out so we're we're good
+[4316] 3:22:01	uh
+[4317] 3:22:03	I want to thank all the super Chatters
+[4318] 3:22:04	who were really super generous to us I
+[4319] 3:22:07	mean amazingly generous to us tonight
+[4320] 3:22:10	and we are so thankful and we're so
+[4321] 3:22:12	grateful
+[4322] 3:22:14	uh we also want to thank our patreon uh
+[4323] 3:22:18	supporters who do really help pay for
+[4324] 3:22:21	the equipment upgrades we are very very
+[4325] 3:22:24	appreciative of that uh because we do
+[4326] 3:22:26	get breakages more often than not
+[4327] 3:22:29	so I very much appreciate our patreon
+[4328] 3:22:32	supporters I also want to thank our
+[4329] 3:22:34	regular subscribers who leave comments
+[4330] 3:22:36	likes dislikes and basically uh post
+[4331] 3:22:41	URLs of the YouTube videos to other
+[4332] 3:22:44	social media sites you know that really
+[4333] 3:22:46	helps extend our reach in ways that I
+[4334] 3:22:49	can't do so I very I'm grateful to our
+[4335] 3:22:52	subscribers too who passed the message
+[4336] 3:22:54	along that this is a channel worth
+[4337] 3:22:56	watching
+[4338] 3:22:57	so anyway I want to wish you all a great
+[4339] 3:23:00	Christmas have a merry Merry Christmas
+[4340] 3:23:02	enjoy the day you know this is the day
+[4341] 3:23:05	that Christ incarnated into the flesh so
+[4342] 3:23:09	that he could be you could dwell with us
+[4343] 3:23:11	and redeem us uh from the sins of the
+[4344] 3:23:15	world
+[4345] 3:23:16	with that said have a very very great
+[4346] 3:23:19	night have a very merry Christmas
+[4347] 3:23:21	enjoy the day
+[4348] 3:23:23	God is great thank you very much for
+[4349] 3:23:25	watching and I will see you next time on
+[4350] 3:23:27	Ancient Egypt and the Bible
+[4351] 3:23:33	[Music]
