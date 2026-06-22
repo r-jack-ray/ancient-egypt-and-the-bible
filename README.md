@@ -214,6 +214,7 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 - [207 Root Of The Problem Questions](docs/questions/207-root-of-the-problem-questions.md)
 - [208 Hysterical Context Error Questions](docs/questions/208-hysterical-context-error-questions.md)
 - [209 One Meaning Flippancy Questions](docs/questions/209-one-meaning-flippancy-questions.md)
+- [210 Reading Into The Lines Questions](docs/questions/210-reading-into-the-lines-questions.md)
 - [244 Romani Ite Domum Questions](docs/questions/244-romani-ite-domum-questions.md)
 - [245 Friday The 23 Rd Questions](docs/questions/245-friday-the-23-rd-questions.md)
 - [246 Egyptian Royal Streaming Questions](docs/questions/246-egyptian-royal-streaming-questions.md)
@@ -299,7 +300,7 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 
 ## Current Status
 
-The repository currently has generated TXT working transcripts for 229 episode streams. Every episode stream that has a TXT transcript on disk also now has a curated Markdown page under `docs/questions/`.
+The repository currently has generated TXT working transcripts for 230 episode streams. Every episode stream that has a TXT transcript on disk also now has a curated Markdown page under `docs/questions/`.
 
 Known blocked numbered episodes remain:
 - Live Stream #118: transcript disabled / empty placeholder
