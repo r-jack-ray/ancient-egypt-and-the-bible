@@ -1,4 +1,4 @@
-# Beledarian LM Studio Tools — Recommended Settings
+# Beledarian LM Studio Tools — Recommended Settings (beledarians-lm-studio-tools)
 
 ## Plugin Settings
 
