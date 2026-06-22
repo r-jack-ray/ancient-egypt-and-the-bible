@@ -25,3 +25,6 @@ env/
 
 # Ignore the run summaries for pulling YT transcript JSON.
 scripts/Get-YouTubeTranscriptJson.run-summary*
+
+# Local AI wanted to install Python locally
+/Python/
