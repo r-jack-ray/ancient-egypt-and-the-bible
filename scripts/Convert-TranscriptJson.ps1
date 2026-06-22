@@ -83,22 +83,27 @@ begin {
     $ErrorActionPreference = 'Stop'
     $inputPaths = [System.Collections.Generic.List[string]]::new()
 
-    function Resolve-RepositoryRoot {
+    function Resolve-RepositoryRoot
+    {
         param([string] $StartPath)
 
         $current = (Resolve-Path -LiteralPath $StartPath).Path
-        if (Test-Path -LiteralPath $current -PathType Leaf) {
+        if (Test-Path -LiteralPath $current -PathType Leaf)
+        {
             $current = Split-Path -Path $current -Parent
         }
 
-        while ($current) {
+        while ($current)
+        {
             $jsonRoot = Join-Path -Path $current -ChildPath 'src/transcripts/json'
-            if (Test-Path -LiteralPath $jsonRoot -PathType Container) {
+            if (Test-Path -LiteralPath $jsonRoot -PathType Container)
+            {
                 return $current
             }
 
             $parent = Split-Path -Path $current -Parent
-            if ($parent -eq $current) {
+            if ($parent -eq $current)
+            {
                 break
             }
 
@@ -108,17 +113,22 @@ begin {
         throw "Could not find repository root from '$StartPath'. Expected src/transcripts/json."
     }
 
-    function Resolve-DefaultRepositoryRoot {
+    function Resolve-DefaultRepositoryRoot
+    {
         $candidateStartPaths = @((Get-Location).Path)
-        if (-not [string]::IsNullOrWhiteSpace($PSScriptRoot)) {
+        if (-not [string]::IsNullOrWhiteSpace($PSScriptRoot))
+        {
             $candidateStartPaths += $PSScriptRoot
         }
 
-        foreach ($startPath in ($candidateStartPaths | Select-Object -Unique)) {
-            try {
+        foreach ($startPath in ($candidateStartPaths | Select-Object -Unique))
+        {
+            try
+            {
                 return Resolve-RepositoryRoot -StartPath $startPath
             }
-            catch {
+            catch
+            {
                 continue
             }
         }
@@ -126,59 +136,70 @@ begin {
         throw 'Could not find repository root from the current location or script path. Expected src/transcripts/json.'
     }
 
-    function Get-DefaultTranscriptJsonPaths {
+    function Get-DefaultTranscriptJsonPaths
+    {
         $repoRoot = Resolve-DefaultRepositoryRoot
         $jsonRoot = Join-Path -Path $repoRoot -ChildPath 'src/transcripts/json'
         $jsonFiles = @(Get-ChildItem -LiteralPath $jsonRoot -Filter '*.json' -File | Sort-Object -Property Name)
 
-        if ($jsonFiles.Count -eq 0) {
+        if ($jsonFiles.Count -eq 0)
+        {
             throw "No transcript JSON files found in $jsonRoot."
         }
 
-        foreach ($jsonFile in $jsonFiles) {
+        foreach ($jsonFile in $jsonFiles)
+        {
             $jsonFile.FullName
         }
     }
 
-    function Convert-SecondsToTimestamp {
+    function Convert-SecondsToTimestamp
+    {
         param([int] $Seconds)
 
         $span = [TimeSpan]::FromSeconds($Seconds)
-        if ($span.TotalHours -ge 1) {
-            return '{0}:{1:00}:{2:00}' -f [int] $span.TotalHours, $span.Minutes, $span.Seconds
+        if ($span.TotalHours -ge 1)
+        {
+            return '{0}:{1:00}:{2:00}' -f [int]$span.TotalHours, $span.Minutes, $span.Seconds
         }
 
         return '{0}:{1:00}' -f $span.Minutes, $span.Seconds
     }
 
-    function Get-ObjectPropertyValue {
+    function Get-ObjectPropertyValue
+    {
         param(
             [object] $InputObject,
             [string] $Name
         )
 
-        if ($null -eq $InputObject) {
+        if ($null -eq $InputObject)
+        {
             return $null
         }
 
         $property = $InputObject.PSObject.Properties[$Name]
-        if ($null -eq $property) {
+        if ($null -eq $property)
+        {
             return $null
         }
 
         return $property.Value
     }
 
-    function Get-NestedObjectPropertyValue {
+    function Get-NestedObjectPropertyValue
+    {
         param(
             [object] $InputObject,
             [string[]] $PropertyPath
         )
 
         $current = $InputObject
-        foreach ($propertyName in $PropertyPath) {
+        foreach ($propertyName in $PropertyPath)
+        {
             $current = Get-ObjectPropertyValue -InputObject $current -Name $propertyName
-            if ($null -eq $current) {
+            if ($null -eq $current)
+            {
                 return $null
             }
         }
@@ -186,114 +207,136 @@ begin {
         return $current
     }
 
-    function Get-TranscriptSegmentRenderer {
+    function Get-TranscriptSegmentRenderer
+    {
         param([object] $Segment)
 
         return Get-ObjectPropertyValue -InputObject $Segment -Name 'transcriptSegmentRenderer'
     }
 
-    function Get-TranscriptSegmentEntries {
+    function Get-TranscriptSegmentEntries
+    {
         param([object] $JsonDocument)
 
         $entries = @(
-            foreach ($action in @(Get-ObjectPropertyValue -InputObject $JsonDocument -Name 'actions')) {
-                $panel = Get-ObjectPropertyValue -InputObject $action -Name 'updateEngagementPanelAction'
-                if ($null -eq $panel) {
-                    continue
-                }
-
-                $list = Get-NestedObjectPropertyValue -InputObject $panel -PropertyPath @(
-                    'content'
-                    'transcriptRenderer'
-                    'content'
-                    'transcriptSearchPanelRenderer'
-                    'body'
-                    'transcriptSegmentListRenderer'
-                )
-                $initialSegments = Get-ObjectPropertyValue -InputObject $list -Name 'initialSegments'
-                if ($null -ne $initialSegments) {
-                    $initialSegments
-                }
+        foreach ($action in @(Get-ObjectPropertyValue -InputObject $JsonDocument -Name 'actions'))
+        {
+            $panel = Get-ObjectPropertyValue -InputObject $action -Name 'updateEngagementPanelAction'
+            if ($null -eq $panel)
+            {
+                continue
             }
+
+            $list = Get-NestedObjectPropertyValue -InputObject $panel -PropertyPath @(
+                'content'
+                'transcriptRenderer'
+                'content'
+                'transcriptSearchPanelRenderer'
+                'body'
+                'transcriptSegmentListRenderer'
+            )
+            $initialSegments = Get-ObjectPropertyValue -InputObject $list -Name 'initialSegments'
+            if ($null -ne $initialSegments)
+            {
+                $initialSegments
+            }
+        }
         )
 
-        if ($entries.Count -eq 0) {
+        if ($entries.Count -eq 0)
+        {
             throw 'No transcript segments found. Expected YouTube transcript JSON with actions[].updateEngagementPanelAction...initialSegments.'
         }
 
         return $entries
     }
 
-    function Get-TranscriptText {
+    function Get-TranscriptText
+    {
         param([object] $Renderer)
 
         $snippet = Get-ObjectPropertyValue -InputObject $Renderer -Name 'snippet'
         $runs = Get-ObjectPropertyValue -InputObject $snippet -Name 'runs'
         $simpleText = Get-ObjectPropertyValue -InputObject $snippet -Name 'simpleText'
 
-        if ($null -ne $runs) {
+        if ($null -ne $runs)
+        {
             $text = ($runs | ForEach-Object { Get-ObjectPropertyValue -InputObject $_ -Name 'text' }) -join ''
         }
-        elseif ($null -ne $simpleText) {
+        elseif ($null -ne $simpleText)
+        {
             $text = $simpleText
         }
-        else {
+        else
+        {
             $text = ''
         }
 
         return ($text -replace '[\r\n\t]+', ' ').Trim()
     }
 
-    function Get-YouTubeVideoIdFromUrl {
+    function Get-YouTubeVideoIdFromUrl
+    {
         param([string] $Url)
 
-        if ([string]::IsNullOrWhiteSpace($Url)) {
+        if ( [string]::IsNullOrWhiteSpace($Url))
+        {
             return ''
         }
 
-        if ($Url -match '^[A-Za-z0-9_-]{8,}$') {
+        if ($Url -match '^[A-Za-z0-9_-]{8,}$')
+        {
             return $Url
         }
 
-        if ($Url -match 'youtu\.be/([^?&/]+)') {
+        if ($Url -match 'youtu\.be/([^?&/]+)')
+        {
             return $Matches[1]
         }
 
-        if ($Url -match '[?&]v=([^?&]+)') {
+        if ($Url -match '[?&]v=([^?&]+)')
+        {
             return $Matches[1]
         }
 
-        if ($Url -match 'youtube\.com/(?:embed|live|shorts)/([^?&/]+)') {
+        if ($Url -match 'youtube\.com/(?:embed|live|shorts)/([^?&/]+)')
+        {
             return $Matches[1]
         }
 
         return ''
     }
 
-    function Get-VideoId {
+    function Get-VideoId
+    {
         param(
             [object[]] $Segments,
             [string] $Url
         )
 
         $videoIdFromUrl = Get-YouTubeVideoIdFromUrl -Url $Url
-        if (-not [string]::IsNullOrWhiteSpace($videoIdFromUrl)) {
+        if (-not [string]::IsNullOrWhiteSpace($videoIdFromUrl))
+        {
             return $videoIdFromUrl
         }
 
-        foreach ($segment in $Segments) {
+        foreach ($segment in $Segments)
+        {
             $renderer = Get-TranscriptSegmentRenderer -Segment $segment
-            if ($null -eq $renderer) {
+            if ($null -eq $renderer)
+            {
                 continue
             }
 
             $targetId = Get-ObjectPropertyValue -InputObject $renderer -Name 'targetId'
-            if ([string]::IsNullOrWhiteSpace($targetId)) {
+            if ( [string]::IsNullOrWhiteSpace($targetId))
+            {
                 continue
             }
 
             $candidate = ($targetId -split '\.')[0]
-            if ($candidate -match '^[A-Za-z0-9_-]{8,}$') {
+            if ($candidate -match '^[A-Za-z0-9_-]{8,}$')
+            {
                 return $candidate
             }
         }
@@ -301,7 +344,8 @@ begin {
         return ''
     }
 
-    function Convert-TranscriptRows {
+    function Convert-TranscriptRows
+    {
         param(
             [object[]] $Segments,
             [string] $ResolvedVideoId
@@ -309,64 +353,81 @@ begin {
 
         $rowIndex = 0
         $rows = @(
-            foreach ($segment in $Segments) {
-                $renderer = Get-TranscriptSegmentRenderer -Segment $segment
-                if ($null -eq $renderer) {
-                    continue
-                }
-
-                $startMsValue = Get-ObjectPropertyValue -InputObject $renderer -Name 'startMs'
-                if ([string]::IsNullOrWhiteSpace($startMsValue)) {
-                    throw 'Transcript segment is missing startMs.'
-                }
-
-                $startMs = [int64] $startMsValue
-                $endMsValue = Get-ObjectPropertyValue -InputObject $renderer -Name 'endMs'
-                $endMs = if (-not [string]::IsNullOrWhiteSpace($endMsValue)) { [int64] $endMsValue } else { $null }
-                $startSeconds = [int] [Math]::Floor($startMs / 1000)
-                $timestamp = Get-NestedObjectPropertyValue -InputObject $renderer -PropertyPath @('startTimeText', 'simpleText')
-                if ([string]::IsNullOrWhiteSpace($timestamp)) {
-                    $timestamp = Convert-SecondsToTimestamp -Seconds $startSeconds
-                }
-
-                $link = ''
-                if (-not [string]::IsNullOrWhiteSpace($ResolvedVideoId)) {
-                    $link = "https://youtu.be/${ResolvedVideoId}?t=$startSeconds"
-                }
-
-                [pscustomobject] @{
-                    Index        = $rowIndex
-                    Timestamp    = $timestamp
-                    StartSeconds = $startSeconds
-                    StartMs      = $startMs
-                    EndMs        = $endMs
-                    Text         = Get-TranscriptText -Renderer $renderer
-                    Link         = $link
-                }
-                $rowIndex++
+        foreach ($segment in $Segments)
+        {
+            $renderer = Get-TranscriptSegmentRenderer -Segment $segment
+            if ($null -eq $renderer)
+            {
+                continue
             }
+
+            $startMsValue = Get-ObjectPropertyValue -InputObject $renderer -Name 'startMs'
+            if ( [string]::IsNullOrWhiteSpace($startMsValue))
+            {
+                throw 'Transcript segment is missing startMs.'
+            }
+
+            $startMs = [int64]$startMsValue
+            $endMsValue = Get-ObjectPropertyValue -InputObject $renderer -Name 'endMs'
+            $endMs = if (-not [string]::IsNullOrWhiteSpace($endMsValue))
+            {
+                [int64]$endMsValue
+            }
+            else
+            {
+                $null
+            }
+            $startSeconds = [int] [Math]::Floor($startMs / 1000)
+            $timestamp = Get-NestedObjectPropertyValue -InputObject $renderer -PropertyPath @('startTimeText', 'simpleText')
+            if ( [string]::IsNullOrWhiteSpace($timestamp))
+            {
+                $timestamp = Convert-SecondsToTimestamp -Seconds $startSeconds
+            }
+
+            $link = ''
+            if (-not [string]::IsNullOrWhiteSpace($ResolvedVideoId))
+            {
+                $link = "https://youtu.be/${ResolvedVideoId}?t=$startSeconds"
+            }
+
+            [pscustomobject]@{
+                Index = $rowIndex
+                Timestamp = $timestamp
+                StartSeconds = $startSeconds
+                StartMs = $startMs
+                EndMs = $endMs
+                Text = Get-TranscriptText -Renderer $renderer
+                Link = $link
+            }
+            $rowIndex++
+        }
         )
 
-        if ($rows.Count -eq 0) {
+        if ($rows.Count -eq 0)
+        {
             throw 'No transcript rows found. The JSON contained transcript metadata but no transcriptSegmentRenderer entries.'
         }
 
         return @($rows)
     }
 
-    function Format-TranscriptAsTxt {
+    function Format-TranscriptAsTxt
+    {
         param([object[]] $Rows)
 
-        foreach ($row in $Rows) {
+        foreach ($row in $Rows)
+        {
             '[{0}] {1}{2}{3}' -f $row.Index, $row.Timestamp, "`t", $row.Text
         }
     }
 
-    function Format-TranscriptAsTsv {
+    function Format-TranscriptAsTsv
+    {
         param([object[]] $Rows)
 
         'Index' + "`t" + 'Timestamp' + "`t" + 'StartSeconds' + "`t" + 'StartMs' + "`t" + 'EndMs' + "`t" + 'Text' + "`t" + 'Link'
-        foreach ($row in $Rows) {
+        foreach ($row in $Rows)
+        {
             @(
                 $row.Index
                 $row.Timestamp
@@ -381,61 +442,83 @@ begin {
 }
 
 process {
-    foreach ($inputPath in @($Path)) {
-        if (-not [string]::IsNullOrWhiteSpace($inputPath)) {
+    foreach ($inputPath in @($Path))
+    {
+        if (-not [string]::IsNullOrWhiteSpace($inputPath))
+        {
             [void] $inputPaths.Add($inputPath)
         }
     }
 }
 
 end {
-    if ($inputPaths.Count -eq 0) {
-        foreach ($defaultPath in @(Get-DefaultTranscriptJsonPaths)) {
+    if ($inputPaths.Count -eq 0)
+    {
+        foreach ($defaultPath in @(Get-DefaultTranscriptJsonPaths))
+        {
             [void] $inputPaths.Add($defaultPath)
         }
     }
 
-    foreach ($inputPath in $inputPaths) {
+    foreach ($inputPath in $inputPaths)
+    {
         $resolvedPath = (Resolve-Path -LiteralPath $inputPath).Path
         $repoRoot = Resolve-RepositoryRoot -StartPath $resolvedPath
 
-        if ([string]::IsNullOrWhiteSpace($OutputRoot)) {
-            $outputFolderName = if ($Format -eq 'Tsv') { 'tsv' } else { 'txt' }
+        if ( [string]::IsNullOrWhiteSpace($OutputRoot))
+        {
+            $outputFolderName = if ($Format -eq 'Tsv')
+            {
+                'tsv'
+            }
+            else
+            {
+                'txt'
+            }
             $targetRoot = Join-Path -Path $repoRoot -ChildPath "src/transcripts/$outputFolderName"
         }
-        else {
+        else
+        {
             $targetRoot = $OutputRoot
         }
 
         New-Item -ItemType Directory -Path $targetRoot -Force | Out-Null
 
-        $extension = if ($Format -eq 'Tsv') { '.tsv' } else { '.txt' }
+        $extension = if ($Format -eq 'Tsv')
+        {
+            '.tsv'
+        }
+        else
+        {
+            '.txt'
+        }
         $baseName = [IO.Path]::GetFileNameWithoutExtension($resolvedPath)
         $outputPath = Join-Path -Path $targetRoot -ChildPath "$baseName$extension"
 
-        if ((Test-Path -LiteralPath $outputPath) -and $NoClobber) {
-            throw "Output file already exists: $outputPath. Remove -NoClobber to overwrite generated output."
-        }
+        if (!((Test-Path -LiteralPath $outputPath) -and $NoClobber))
+        {
+            $document = Get-Content -LiteralPath $resolvedPath -Raw | ConvertFrom-Json
+            $segments = Get-TranscriptSegmentEntries -JsonDocument $document
+            $videoId = Get-VideoId -Segments $segments -Url $VideoUrl
+            $rows = Convert-TranscriptRows -Segments $segments -ResolvedVideoId $videoId
 
-        $document = Get-Content -LiteralPath $resolvedPath -Raw | ConvertFrom-Json
-        $segments = Get-TranscriptSegmentEntries -JsonDocument $document
-        $videoId = Get-VideoId -Segments $segments -Url $VideoUrl
-        $rows = Convert-TranscriptRows -Segments $segments -ResolvedVideoId $videoId
+            $outputLines = if ($Format -eq 'Tsv')
+            {
+                Format-TranscriptAsTsv -Rows $rows
+            }
+            else
+            {
+                Format-TranscriptAsTxt -Rows $rows
+            }
 
-        $outputLines = if ($Format -eq 'Tsv') {
-            Format-TranscriptAsTsv -Rows $rows
-        }
-        else {
-            Format-TranscriptAsTxt -Rows $rows
-        }
+            Set-Content -LiteralPath $outputPath -Value $outputLines -Encoding utf8NoBOM
 
-        Set-Content -LiteralPath $outputPath -Value $outputLines -Encoding utf8NoBOM
-
-        [pscustomobject] @{
-            Source   = $resolvedPath
-            Output   = $outputPath
-            Format   = $Format
-            Segments = $rows.Count
+            [pscustomobject]@{
+                Source = $resolvedPath
+                Output = $outputPath
+                Format = $Format
+                Segments = $rows.Count
+            }
         }
     }
 }
