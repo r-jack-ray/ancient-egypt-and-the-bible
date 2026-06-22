@@ -1,0 +1,4008 @@
+[0] 0:12	[Music]
+[1] 0:33	[Music]
+[2] 0:41	[Music]
+[3] 0:56	[Music]
+[4] 1:14	[Music]
+[5] 2:32	[Music]
+[6] 2:39	hello and welcome to this our 56 live
+[7] 2:41	stream
+[8] 2:43	uh
+[9] 2:44	celebrating like a statistician 6 000
+[10] 2:48	plus or minus 10 subs
+[11] 2:49	[Laughter]
+[12] 2:52	okay
+[13] 2:54	here's the joke behind that
+[14] 2:58	earlier in the week it looked like we
+[15] 2:59	were going to hit
+[16] 3:01	get close to 6 000 subs but we weren't
+[17] 3:04	quite sure we were going to make it
+[18] 3:08	our subscriber trend over the last
+[19] 3:10	several weeks has been well let's just
+[20] 3:12	say a little slower than normal
+[21] 3:15	so we figured you know we might hit
+[22] 3:18	you know
+[23] 3:19	six or seven short
+[24] 3:21	of six thousand
+[25] 3:24	so we were reminded of this old joke we
+[26] 3:26	heard
+[27] 3:27	about
+[28] 3:29	three statisticians that go duck hunting
+[29] 3:33	you know the first statistician takes a
+[30] 3:35	shot
+[31] 3:36	at um at a duck and duck flies in the
+[32] 3:39	air and he takes a shot and the bullet
+[33] 3:42	passes right in front of
+[34] 3:44	the duck
+[35] 3:45	okay
+[36] 3:46	the second statistician takes his his
+[37] 3:48	gun and takes a shot of the duck and it
+[38] 3:50	goes right behind
+[39] 3:52	the uh the duck
+[40] 3:54	and the third statistician goes
+[41] 3:56	doesn't take a shot and goes
+[42] 3:58	got him
+[43] 4:01	well we were kind of thinking that well
+[44] 4:03	we weren't quite sure we were gonna hit
+[45] 4:05	six thousand so i thought okay
+[46] 4:08	plus or minus ten
+[47] 4:11	well
+[48] 4:12	this week also uh we got a shout out
+[49] 4:15	from uh inspiring philosophy michael
+[50] 4:17	jones on david wood's channel
+[51] 4:21	and
+[52] 4:21	now we're looking at well we were off we
+[53] 4:24	were really off because uh it sort of
+[54] 4:27	sent us way over
+[55] 4:30	so came to be like
+[56] 4:32	six thousand plus or minus sixty
+[57] 4:36	so
+[58] 4:36	we will wear off even on our in our sort
+[59] 4:40	of statistical guess here
+[60] 4:43	so
+[61] 4:44	you know you sometimes you can get
+[62] 4:46	things way wrong
+[63] 4:48	so
+[64] 4:49	um
+[65] 4:50	we do have a few housekeeping matters
+[66] 4:54	first of all we are using a new
+[67] 4:57	uh we've made a lot of audio changes
+[68] 4:58	this week
+[69] 5:00	so
+[70] 5:01	um i i do have an audio bar here where
+[71] 5:03	i'm kind of looking at it
+[72] 5:05	um
+[73] 5:07	if there's something wrong with the
+[74] 5:08	audio we do need to know
+[75] 5:11	so
+[76] 5:12	if we're too loud we're too soft
+[77] 5:15	it cuts in and out
+[78] 5:16	um we're doing audio a very different
+[79] 5:19	way
+[80] 5:21	and the reason why we are doing it a
+[81] 5:23	different way is we have now
+[82] 5:25	incorporated a multi mic system
+[83] 5:28	um in both live streams and on taping
+[84] 5:32	uh our last video on the mount ebel
+[85] 5:35	inscription was our first sort of
+[86] 5:36	attempt to get that working
+[87] 5:38	didn't work all that great we learned a
+[88] 5:40	lot from that um
+[89] 5:44	the content was good the audio recording
+[90] 5:46	left something to be desired there was a
+[91] 5:47	lot of echo
+[92] 5:49	so
+[93] 5:50	um
+[94] 5:53	so i um
+[95] 5:54	so we learned a lot from that recording
+[96] 5:56	and uh hopefully uh
+[97] 5:59	our
+[98] 6:00	audio at this point sounds a lot better
+[99] 6:03	and
+[100] 6:04	we won't ever have that that nasty echo
+[101] 6:07	problem again
+[102] 6:08	okay but with that said too uh we've
+[103] 6:11	also
+[104] 6:12	clipping at hives i think okay
+[105] 6:16	um
+[106] 6:17	let's see if let's see if we can fix
+[107] 6:20	that a little
+[108] 6:23	um
+[109] 6:24	properties
+[110] 6:27	i can probably fix the clipping at the
+[111] 6:29	highs here
+[112] 6:34	does that sound any better
+[113] 6:37	okay he said uh bc said that the audio
+[114] 6:39	was a bit scratchy so i've turned it
+[115] 6:41	down a little
+[116] 6:43	so uh is that better
+[117] 6:46	okay um
+[118] 6:48	give me give me some feedback here is
+[119] 6:50	that look is that sounding a bit better
+[120] 6:53	so uh i'm
+[121] 6:55	hoping hoping that that'll work so i
+[122] 6:58	turned down the gain a bit
+[123] 7:00	um i think that's coming from the audio
+[124] 7:02	interface so we are as i said
+[125] 7:05	if it's still bad if it's still clipping
+[126] 7:07	at the highs
+[127] 7:08	okay better so far that's good excellent
+[128] 7:10	excellent good
+[129] 7:12	so uh with that said uh
+[130] 7:15	again we are going to uh take
+[131] 7:18	we're gonna do what we do every week
+[132] 7:19	here which is take your questions on
+[133] 7:20	ancient egypt in the bible
+[134] 7:23	uh super chats have priority oh
+[135] 7:26	the other
+[136] 7:26	the other um the other business we need
+[137] 7:29	to attend to
+[138] 7:30	uh next friday
+[139] 7:33	uh next friday the live stream is going
+[140] 7:34	to be a half hour later it's going to be
+[141] 7:36	at 8 30.
+[142] 7:39	um this is because uh
+[143] 7:42	the come something completely out of my
+[144] 7:44	control uh my employer has changed my
+[145] 7:46	work hours
+[146] 7:48	so he's keeping me later
+[147] 7:50	at the
+[148] 7:51	at the store to
+[149] 7:53	essentially to do janitorial work
+[150] 7:57	so there's that's nothing i can do about
+[151] 7:58	that so next week's live stream is going
+[152] 8:01	to be a half hour later
+[153] 8:05	so um
+[154] 8:07	again nothing i can do about that so
+[155] 8:09	next stream next week's live stream is
+[156] 8:11	going to be at 8 30 not eight o'clock
+[157] 8:15	so with that said let's get into this
+[158] 8:19	uh the rules are always the same which
+[159] 8:21	is um super chats have priority you want
+[160] 8:24	to ask a question that's not a super
+[161] 8:26	chat i ask you to put a q and a colon in
+[162] 8:28	front of it
+[163] 8:29	that i know it's being directed to me
+[164] 8:32	i ask that you ask the question only
+[165] 8:34	once
+[166] 8:35	so i know i've answered it or i've
+[167] 8:37	addressed it
+[168] 8:38	i also ask that if it has to do with a
+[169] 8:41	bible verse
+[170] 8:42	or a foreign word that you either tell
+[171] 8:44	me where that bible verse is found or
+[172] 8:46	what language you think it's from so i
+[173] 8:48	have a little bit of context to go off
+[174] 8:49	of
+[175] 8:50	okay
+[176] 8:52	so with that said
+[177] 8:53	let's get into it
+[178] 8:55	uh we're gonna start with actually five
+[179] 8:57	non-super chats tonight because we
+[180] 8:58	actually had some really interesting
+[181] 9:00	non-super chats leading up to this
+[182] 9:02	so let's get into that
+[183] 9:05	now the first suit known super chat is
+[184] 9:08	from grateful gert
+[185] 9:10	and he says
+[186] 9:13	hi there dr falk i was wondering what
+[187] 9:15	are your thoughts on ghosts or
+[188] 9:20	or disembodied human spirits and how if
+[189] 9:23	they exist they should be understood
+[190] 9:25	from a judeo-christian worldview
+[191] 9:27	okay
+[192] 9:30	now
+[193] 9:31	that is actually a really complicated
+[194] 9:34	question
+[195] 9:36	that's why actually i like it
+[196] 9:38	it's
+[197] 9:39	what we're talking about here when we
+[198] 9:41	talk about
+[199] 9:42	ghosts
+[200] 9:44	is a really complicated and diverse
+[201] 9:48	set of phenomena okay
+[202] 9:50	it's not there's not just one
+[203] 9:52	explanation that covers
+[204] 9:55	everything we know about say ghosts
+[205] 9:59	now
+[206] 10:01	when say parapsychologist talk about you
+[207] 10:05	know
+[208] 10:06	ghostly phenomena
+[209] 10:07	they basically divide it into two
+[210] 10:09	categories
+[211] 10:11	um
+[212] 10:12	one is apparitions and the others
+[213] 10:14	hauntings
+[214] 10:15	and they're they're they're defined
+[215] 10:17	differently
+[216] 10:19	now
+[217] 10:21	a
+[218] 10:21	haunting is kind of like a
+[219] 10:25	video tape recording
+[220] 10:27	that plays over and over and over again
+[221] 10:30	it's the same recording same phenomena
+[222] 10:32	happening frequently over and over and
+[223] 10:35	over again
+[224] 10:37	said
+[225] 10:39	hauntings don't really interact with its
+[226] 10:42	surrounding environment people see it
+[227] 10:44	people recognize it
+[228] 10:46	but they also don't um
+[229] 10:50	it doesn't change
+[230] 10:53	now an apparition on the other hand is
+[231] 10:56	something that interacts with the
+[232] 10:58	environment okay
+[233] 11:01	so for example a
+[234] 11:04	a you see
+[235] 11:06	a um
+[236] 11:08	a little girl walking down the hall
+[237] 11:10	and you see it at midnight every night
+[238] 11:12	that's a haunting
+[239] 11:15	a spirit that picks up stuff and throws
+[240] 11:18	things around
+[241] 11:19	that's an apparition
+[242] 11:22	so a poltergeist would be say which is
+[243] 11:25	defined as a spirit that throws objects
+[244] 11:28	or moves objects that is defined as an
+[245] 11:31	apparition
+[246] 11:33	a so-called shadow man
+[247] 11:36	basically a spirit
+[248] 11:37	that
+[249] 11:38	um
+[250] 11:39	appears as a shadow and you know
+[251] 11:42	interacts in the environment that's an
+[252] 11:44	apparition
+[253] 11:47	now
+[254] 11:48	interestingly enough
+[255] 11:50	there's even some sort of further
+[256] 11:51	breakdown when it comes to say
+[257] 11:54	apparitions
+[258] 11:56	and the reason why is because
+[259] 12:00	um there's there's not
+[260] 12:03	all apparitions are
+[261] 12:05	spirits of the deceased
+[262] 12:07	um there's actually a couple of very
+[263] 12:10	very large volumes that were published
+[264] 12:13	by the uk parasitological society
+[265] 12:16	um called the volumes were called
+[266] 12:19	phantasms of the living
+[267] 12:22	and these are documented cases of say
+[268] 12:25	apparitions of essentially people who
+[269] 12:28	are still alive
+[270] 12:31	and um those are very strange those are
+[271] 12:33	very strange um one of the and one of
+[272] 12:36	the subsets of that is say um distress
+[273] 12:39	apparitions where somebody may be in a
+[274] 12:41	coma
+[275] 12:42	and yet their spirit is appearing in say
+[276] 12:45	their childhood home
+[277] 12:48	and trying to communicate on that level
+[278] 12:50	okay
+[279] 12:52	so
+[280] 12:54	so the the takeaway with in the greater
+[281] 12:56	framework
+[282] 12:58	of um say um the christian world view
+[283] 13:03	is
+[284] 13:04	it's it's a very complex phenomenon
+[285] 13:07	now the christian worldview allows for
+[286] 13:09	this
+[287] 13:10	it allows the fact that that these
+[288] 13:12	things do this phenomenon does happen
+[289] 13:15	uh for example we see for example the
+[290] 13:17	witch of endor um conjures up the spirit
+[291] 13:21	of the prophet samuel and the text tells
+[292] 13:24	us that samuel
+[293] 13:26	actually appeared
+[294] 13:28	even though she was expecting her
+[295] 13:30	familiar spirit
+[296] 13:32	so she was expecting a different spirit
+[297] 13:35	but samuel appears
+[298] 13:37	that tells us a couple things there's a
+[299] 13:40	couple of very interesting things
+[300] 13:43	one it tells us that
+[301] 13:45	there are familiar spirits out there
+[302] 13:46	that masquerade
+[303] 13:49	as say
+[304] 13:50	ghosts or dismembered human spirits
+[305] 13:54	but at the same time too there are
+[306] 13:56	certain exceptions when human spirits do
+[307] 13:59	return
+[308] 14:01	uh in jewish lore
+[309] 14:04	we do see that um for example
+[310] 14:08	that
+[311] 14:09	it was believed in say jewish lore that
+[312] 14:11	the spirit of a deceased didn't actually
+[313] 14:13	go to shale which is the underworld
+[314] 14:17	until like three days had passed
+[315] 14:20	so there was there was some conception
+[316] 14:22	that the human spirit say lingered
+[317] 14:24	around this world for a while
+[318] 14:26	and then went to the grave
+[319] 14:30	so uh jewish uh thought has been in
+[320] 14:34	has been a lot more
+[321] 14:36	open
+[322] 14:37	to
+[323] 14:38	uh the idea of say ghosts as being human
+[324] 14:41	spirits
+[325] 14:44	um
+[326] 14:47	it's a mixed bag it's a mixed bag now
+[327] 14:52	on the other hand
+[328] 14:53	there is a prohibition against talking
+[329] 14:56	to the dead
+[330] 15:00	so
+[331] 15:02	trying to reach out and to communicate
+[332] 15:04	with those spirits is in a sense
+[333] 15:06	prohibited
+[334] 15:08	i'm going to set aside the whole
+[335] 15:10	sort of question of icons for the moment
+[336] 15:13	because there's there's there's a
+[337] 15:14	different question there
+[338] 15:16	so leaving that aside for setting out
+[339] 15:18	aside for the for the moment
+[340] 15:21	um
+[341] 15:23	reaching out to a spirit a disembodied
+[342] 15:26	human spirit is prohibited
+[343] 15:28	uh however
+[344] 15:30	um there's there are times too when say
+[345] 15:32	ghosts and disembodied
+[346] 15:34	human spirits force contact
+[347] 15:38	and in that particular case it's not
+[348] 15:40	necessarily wrong when the other side
+[349] 15:43	forces contact
+[350] 15:45	so
+[351] 15:47	um
+[352] 15:48	with that said
+[353] 15:51	okay
+[354] 15:52	it's a mixed bag it requires discernment
+[355] 15:55	it's i mean it did
+[356] 15:57	you know
+[357] 15:58	discerning what's a ghost
+[358] 16:00	of a human you know a human spirit
+[359] 16:03	what is a apparition of the living
+[360] 16:06	what is a
+[361] 16:08	say
+[362] 16:09	demonic power or a mimicking spirit of
+[363] 16:12	some kind
+[364] 16:14	all of that requires discernment
+[365] 16:16	and all of that is within the christian
+[366] 16:19	worldview
+[367] 16:21	in its entirety all of that is is
+[368] 16:23	accepted phenomena within the christian
+[369] 16:25	worldview
+[370] 16:26	okay
+[371] 16:28	so anyway i hope that answered your
+[372] 16:30	questions a fascinating question it's a
+[373] 16:32	question that one could talk about for a
+[374] 16:34	very very long time but as i said it's
+[375] 16:36	really really complicated and it's a
+[376] 16:38	it's a subject that requires intense
+[377] 16:42	discernment to
+[378] 16:44	to sort of
+[379] 16:45	go through the weeds on ready thank you
+[380] 16:47	for the question grateful gert excellent
+[381] 16:50	question
+[382] 16:51	wonderful question
+[383] 16:53	okay our second non-super chat of the
+[384] 16:55	night
+[385] 16:56	is from jacob uh jacob testa
+[386] 16:59	is it true that the genesis flood story
+[387] 17:01	is copied off of the gilgamesh flood
+[388] 17:03	story or do they both
+[389] 17:05	share a cultural tradition about a great
+[390] 17:08	flood that occurred
+[391] 17:10	um
+[392] 17:11	my thinking on this is it's the latter
+[393] 17:14	not the former
+[394] 17:15	okay
+[395] 17:16	now it's not a direct copy
+[396] 17:21	a sequence of events is different
+[397] 17:23	the only really the only real similarity
+[398] 17:26	between gilgamesh and the genesis flood
+[399] 17:29	story is actually the flood
+[400] 17:34	there's water
+[401] 17:35	that's
+[402] 17:36	that's the similarity
+[403] 17:39	um
+[404] 17:43	besides that there's there's really no
+[405] 17:45	similarity between the two stories
+[406] 17:48	okay there's a there's a boat too
+[407] 17:50	okay it's a boat too
+[408] 17:53	but that's it that's really the
+[409] 17:54	similarity
+[410] 17:56	there's no similar there's no other
+[411] 17:58	similarities in like um sentence
+[412] 18:00	structure
+[413] 18:02	or
+[414] 18:03	or syntax or
+[415] 18:05	or
+[416] 18:06	narrative form or or any of the other
+[417] 18:10	things that we would expect from
+[418] 18:12	from a direct copy
+[419] 18:15	so what we do have seem to have here is
+[420] 18:17	the a matter of intertextuality
+[421] 18:21	now intertextuality can can occur in a
+[422] 18:24	couple ways
+[423] 18:25	okay
+[424] 18:26	intercontextuality can occur in parallel
+[425] 18:30	essentially
+[426] 18:31	you could have it is possible that
+[427] 18:34	genesis was having uh was engaging
+[428] 18:38	the gilgamesh um flood
+[429] 18:41	as a concurrent text you know two texts
+[430] 18:43	that are you know similar in time
+[431] 18:46	there's also the possibility of
+[432] 18:48	intertextuality um
+[433] 18:51	um in series two
+[434] 18:53	where
+[435] 18:54	the genesis flood is harking back to an
+[436] 18:56	even earlier story than both accounts
+[437] 19:01	so
+[438] 19:02	we can't be a
+[439] 19:03	absolutely sure which which sort of
+[440] 19:05	intertextuality is happening here but
+[441] 19:07	there is there does seem to be inter
+[442] 19:09	actuality happening between the two
+[443] 19:11	texts
+[444] 19:13	but that's not the same as a copy
+[445] 19:17	we do see some texts that say are
+[446] 19:20	engaging a text that
+[447] 19:23	borrow a lot more like for example psalm
+[448] 19:25	104 is
+[449] 19:28	in a literary capacity borrowing a lot
+[450] 19:31	more from the hymn of the alatin
+[451] 19:33	um as it does its intertextuality then
+[452] 19:36	say for example the genesis flood
+[453] 19:39	okay
+[454] 19:40	so i think there is here there is a
+[455] 19:44	connection there is a tie there's
+[456] 19:46	something that's linking the two texts
+[457] 19:49	but we don't know exactly what and where
+[458] 19:52	it's happening
+[459] 19:53	because we have to remember that even as
+[460] 19:55	they're coming out of egypt
+[461] 19:57	flood stories are
+[462] 20:00	i mean flooding was a a yearly event in
+[463] 20:03	egypt
+[464] 20:05	okay so they're coming out of egypt
+[465] 20:08	and they have an idea of a flood
+[466] 20:10	narrative because you know egypt is
+[467] 20:12	replete with them
+[468] 20:15	so you know
+[469] 20:16	as a common theme
+[470] 20:18	egypt having floods
+[471] 20:21	then you have a flood
+[472] 20:23	uh narrative from mesopotamia
+[473] 20:26	where is it where's what's the source of
+[474] 20:27	this
+[475] 20:28	really hard to say
+[476] 20:31	so without say more to go on
+[477] 20:34	very very difficult
+[478] 20:36	to say one's copying from the other
+[479] 20:39	okay so anyway thank you very much for
+[480] 20:41	the
+[481] 20:42	question interesting question but
+[482] 20:44	there's a limits to what we know here
+[483] 20:48	okay
+[484] 20:50	third non-super chat from nashu matthew
+[485] 20:52	chanel
+[486] 20:54	uh were the ancient egyptians
+[487] 20:55	approaching a form of monotheism by
+[488] 20:59	attributing creation to raw if not would
+[489] 21:02	this have developed into a form of
+[490] 21:04	monotheism if
+[491] 21:06	ancient egyptian persisted longer
+[492] 21:09	um
+[493] 21:10	no i um
+[494] 21:14	okay monotheism
+[495] 21:17	requires a certain metaphysics for it to
+[496] 21:20	take place
+[497] 21:23	and we actually have seen this in in
+[498] 21:25	other religious traditions too so
+[499] 21:28	this is nothing surprising
+[500] 21:31	now one of those sort of uh predicates
+[501] 21:35	that has to take place
+[502] 21:37	force for monotheism to take place
+[503] 21:41	is the idea of transcendence
+[504] 21:45	and the idea of transcendence is that
+[505] 21:49	god makes the creation and is separate
+[506] 21:52	from it
+[507] 21:53	okay
+[508] 21:55	in the case of raw
+[509] 21:58	he makes his creation and then he dwells
+[510] 22:01	within it
+[511] 22:04	under those circumstances
+[512] 22:08	egypt would have never achieved
+[513] 22:10	monotheism
+[514] 22:13	and
+[515] 22:15	you know it might have achieved
+[516] 22:16	henotheism at some point
+[517] 22:18	but it never would have achieved true
+[518] 22:20	monotheism
+[519] 22:23	we do see for example in say um
+[520] 22:27	with artism which is probably as close
+[521] 22:29	as what we would have gotten to say
+[522] 22:32	um
+[523] 22:33	a monolith's
+[524] 22:35	uh raw cult
+[525] 22:38	so you could kind of think of it this
+[526] 22:39	way
+[527] 22:40	that
+[528] 22:41	the closest they say the religion of raw
+[529] 22:44	would have ever gotten
+[530] 22:46	to monotheism is actually something like
+[531] 22:48	the aton cult
+[532] 22:50	and in the earthen cult you have the sun
+[533] 22:52	god
+[534] 22:54	who is only worshipped as god
+[535] 22:57	but he's a pantheism because he's not
+[536] 22:59	transcendent
+[537] 23:02	he's in his creation just like the other
+[538] 23:04	egyptian gods
+[539] 23:06	okay
+[540] 23:08	so i don't think that they were ever
+[541] 23:11	approaching monotheism proper
+[542] 23:14	uh not in the way that say um
+[543] 23:17	the bible would define it
+[544] 23:20	so
+[545] 23:21	um
+[546] 23:23	yeah as i say the closest they ever got
+[547] 23:25	was autism and i think if you if if the
+[548] 23:27	admin cult hadn't existed
+[549] 23:29	i think the rock cult could have been
+[550] 23:33	could have become a form
+[551] 23:35	a occult like atomism
+[552] 23:38	but it would never have
+[553] 23:39	gone beyond that
+[554] 23:42	so that's just an opinion this is
+[555] 23:43	speculative at this point but it's an
+[556] 23:45	interesting question
+[557] 23:48	okay
+[558] 23:49	question number four
+[559] 23:52	mr rich bob
+[560] 23:55	what are some resources areas to
+[561] 23:57	research you would recommend for a
+[562] 23:59	pastor or someone considering the
+[563] 24:01	profession that is not or may not become
+[564] 24:03	highly educated other than say john
+[565] 24:06	walton
+[566] 24:07	um
+[567] 24:10	the the thing i think pastors really
+[568] 24:13	need to understand and you understand
+[569] 24:15	really well is the languages hebrew and
+[570] 24:18	greek
+[571] 24:21	you can go a long ways
+[572] 24:24	of that and critical commentaries
+[573] 24:27	if you've got critical commentaries
+[574] 24:29	and a good understanding of hebrew and
+[575] 24:32	greek
+[576] 24:33	you can go a long
+[577] 24:35	ways without becoming higher educated
+[578] 24:39	now
+[579] 24:40	on
+[580] 24:42	the the downside is it's really sort of
+[581] 24:44	hard to obtain hebrew and greek
+[582] 24:48	at a
+[583] 24:50	proficient level
+[584] 24:52	without some higher education
+[585] 24:56	okay
+[586] 24:58	but if you have say you're three years
+[587] 25:01	of greek and two years of hebrew
+[588] 25:04	you can actually go
+[589] 25:05	and you know you can sort of forego some
+[590] 25:08	of the rest
+[591] 25:09	and just then rely on commentaries and
+[592] 25:12	become an excellent pastor
+[593] 25:15	now when i say
+[594] 25:16	rely on commentaries i don't mean
+[595] 25:19	matthew henry's commentary that thing
+[596] 25:20	should be burned
+[597] 25:22	i don't mean strong's concordance either
+[598] 25:24	that too should be burned
+[599] 25:27	um
+[600] 25:30	how you really feel
+[601] 25:35	yes um
+[602] 25:36	those those are resources of you know
+[603] 25:39	two centuries ago and and they really
+[604] 25:41	are our subpar in every respect
+[605] 25:45	okay but what you can do is you can take
+[606] 25:49	um like for example if you're doing as a
+[607] 25:51	pastor and you're doing a series of john
+[608] 25:53	there's lots of really good commentaries
+[609] 25:56	on john
+[610] 25:57	you should be using
+[611] 25:59	i would recommend five commentaries
+[612] 26:02	you know there's libraries out there you
+[613] 26:04	know i mean i'm not recommending a poor
+[614] 26:06	pastor buy five commentaries per book
+[615] 26:09	but i am recommending that they have
+[616] 26:11	access to a library where they can look
+[617] 26:13	up their sermons in five
+[618] 26:15	commentaries
+[619] 26:17	you know um
+[620] 26:18	the the
+[621] 26:19	the distressing statistic
+[622] 26:22	is that the average pastor uses
+[623] 26:25	zero to one commentaries
+[624] 26:28	when doing the sermon
+[625] 26:30	okay
+[626] 26:31	that's the average which means your
+[627] 26:33	typical
+[628] 26:34	your typical sermon
+[629] 26:36	is crafted with no
+[630] 26:39	scholarly material whatsoever
+[631] 26:42	they're just reading the passage and
+[632] 26:44	sort of saying what they want from the
+[633] 26:45	passage
+[634] 26:48	the
+[635] 26:49	the biggest
+[636] 26:50	the biggest impediment
+[637] 26:53	to actually preaching well
+[638] 26:55	is understanding the text
+[639] 26:59	when i was doing a lot of preaching
+[640] 27:03	i would spend 20 hours to craft a sermon
+[641] 27:07	okay and that's that's not that's not an
+[642] 27:09	unreasonable figure
+[643] 27:11	you know 15 to 20 hours is a reasonable
+[644] 27:13	amount of time
+[645] 27:15	to put into a sermon
+[646] 27:18	now
+[647] 27:19	your first say 10 to 15 hours
+[648] 27:22	is just reading the text understanding
+[649] 27:25	the text
+[650] 27:27	going through it in the original
+[651] 27:29	language and understanding the text and
+[652] 27:31	all the nuances of the text it sort of
+[653] 27:34	takes that long to sort of get a grip on
+[654] 27:36	it all
+[655] 27:39	anyone who spends say less than 15 hours
+[656] 27:41	on a sermon is probably not
+[657] 27:44	understanding the text completely
+[658] 27:47	and then you go into the commentaries
+[659] 27:49	your remaining five hours of writing
+[660] 27:50	your of doing your sermon is actually
+[661] 27:52	writing it and rehearsing and doing that
+[662] 27:54	sort of stuff
+[663] 28:00	um so
+[664] 28:02	you wanna you wanna resort to proper
+[665] 28:06	um
+[666] 28:07	proper resources
+[667] 28:09	just commentaries
+[668] 28:11	um hello
+[669] 28:12	uh for the old testament as a lexicon
+[670] 28:17	um baghdad for the greek new testament
+[671] 28:21	um
+[672] 28:22	as i said
+[673] 28:24	there's a lot of great resources out
+[674] 28:25	there
+[675] 28:26	you know uh for um say you know
+[676] 28:30	in the new testament get yourself a good
+[677] 28:32	uh
+[678] 28:34	greek text
+[679] 28:36	um like nestle hollande
+[680] 28:39	uh for the hebrew text you know the bhs
+[681] 28:43	text
+[682] 28:44	great great hebrew text
+[683] 28:48	so there's a lot of good good resources
+[684] 28:50	today
+[685] 28:52	so um i've covered a wide swath of them
+[686] 28:54	here
+[687] 28:56	but sort of that's how you can do it say
+[688] 28:58	without being highly educated it's
+[689] 29:01	possible it's possible
+[690] 29:03	here's here's the short here's the
+[691] 29:05	there's them
+[692] 29:09	it's gonna take work okay
+[693] 29:13	you're not going to get out of the work
+[694] 29:16	and i want to make that clear
+[695] 29:18	you're just putting you're investing the
+[696] 29:21	work in a different way
+[697] 29:26	you're going to struggle more with the
+[698] 29:27	text than say someone who's highly
+[699] 29:29	educated
+[700] 29:32	there's no shortcuts
+[701] 29:35	absolutely no shortcuts to being a
+[702] 29:37	competent pastor
+[703] 29:39	no shortcuts at all
+[704] 29:43	you're either going to invest that time
+[705] 29:44	up front
+[706] 29:45	or you're going to in
+[707] 29:46	in on the front end or on the tail end
+[708] 29:50	so you're going to invest that time
+[709] 29:51	either not in an education
+[710] 29:54	or you're going to invest that time
+[711] 29:55	struggling with the text
+[712] 29:58	you can be competent in both ways
+[713] 30:04	but you're going to put in that time one
+[714] 30:06	way or the other
+[715] 30:08	so anyway i hope that helps i hope that
+[716] 30:11	gives you some practical advice and it
+[717] 30:13	does give you a huge number of resources
+[718] 30:15	that you can use here to um
+[719] 30:18	to basically uh
+[720] 30:20	you know do a competent pastoral
+[721] 30:22	ministry say
+[722] 30:24	you know while sidestepping most of
+[723] 30:27	higher education
+[724] 30:30	uh thank you very much for the question
+[725] 30:31	it's an interesting question
+[726] 30:33	um but again you're not gonna get out of
+[727] 30:35	the work you're just gonna
+[728] 30:36	put it in in a different manner okay
+[729] 30:40	so um
+[730] 30:41	our final non-super chat question comes
+[731] 30:44	from gabriel seem
+[732] 30:46	um
+[733] 30:47	which people events from adam to abraham
+[734] 30:50	have the best archaeological evidence
+[735] 30:52	for historicity
+[736] 30:53	um
+[737] 30:54	actually there is one person who really
+[738] 30:57	stands out
+[739] 30:58	and that's tara of of urkesh
+[740] 31:01	abraham's father
+[741] 31:04	possibly his grandfather he's possibly
+[742] 31:06	his grandfather
+[743] 31:09	but he's the guy that really stands out
+[744] 31:12	and um
+[745] 31:14	we do have several letters from him
+[746] 31:18	uh in the mari letters
+[747] 31:21	i think we have something like five
+[748] 31:22	letters from him
+[749] 31:24	so
+[750] 31:25	he is probably the best attested
+[751] 31:29	um
+[752] 31:31	person that's
+[753] 31:33	from the period of of abraham and pryor
+[754] 31:37	so um in fact i did a whole video on um
+[755] 31:40	ontario of urkesh um
+[756] 31:46	so definitely i definitely that's that's
+[757] 31:48	where um
+[758] 31:49	i would go for this
+[759] 31:51	um
+[760] 31:53	again five letters that's a lot of
+[761] 31:55	correspondence for somebody that
+[762] 31:57	we didn't even have any inkling existed
+[763] 32:00	you know say 20 years ago
+[764] 32:04	so
+[765] 32:06	uh i hope that answered your question
+[766] 32:08	but yeah this is this is really only one
+[767] 32:10	that really stands out that we have say
+[768] 32:13	direct attestation for
+[769] 32:15	and as i said that's terra
+[770] 32:17	okay thank you very much for the
+[771] 32:18	question very much appreciate it
+[772] 32:24	okay
+[773] 32:27	now let's get on to the super chats
+[774] 32:29	um
+[775] 32:30	first one is from pennies theologian for
+[776] 32:33	five euros
+[777] 32:35	where can the average joe
+[778] 32:37	find your articles thank you for your
+[779] 32:39	work and blessings from
+[780] 32:40	germany the
+[781] 32:41	place where you can go for my articles
+[782] 32:44	is
+[783] 32:45	academia.edu and let me see if i can put
+[784] 32:51	um
+[785] 32:51	the
+[786] 32:52	url
+[787] 32:57	and
+[788] 33:04	oh it would ask me for a password
+[789] 33:10	just a moment
+[790] 33:17	i will get you the url in just a second
+[791] 33:46	all right
+[792] 33:48	here is the url
+[793] 33:51	do my academia account and you can get
+[794] 33:54	and it's going to be in the live stream
+[795] 33:56	live chat there
+[796] 33:58	i just put it in there
+[797] 34:00	and you can get many of my articles um
+[798] 34:03	that i've published and i'm free to
+[799] 34:06	repost
+[800] 34:07	there
+[801] 34:08	so i hope that answered your uh super
+[802] 34:10	chat
+[803] 34:11	uh other than that um
+[804] 34:13	i have a couple books out
+[805] 34:15	for example uh the ark of the covenant
+[806] 34:17	and it's
+[807] 34:23	which is uh that book right there
+[808] 34:26	that's the uh that's my most recent book
+[809] 34:30	uh
+[810] 34:31	and you can find that
+[811] 34:34	ah
+[812] 34:35	through most uh book retailers
+[813] 34:37	okay
+[814] 34:38	so that should give you a start to find
+[815] 34:40	some of my work
+[816] 34:42	so anyway thank you very much for the
+[817] 34:43	super chat very much appreciated
+[818] 34:48	okay uh next super chat comes from cam
+[819] 34:50	brick for ten dollars thank you very
+[820] 34:52	much
+[821] 34:53	and he asks do verses like zechariah
+[822] 34:57	12 8 and malachi 3 1 connect the coming
+[823] 35:00	of the messiah with the angel of the
+[824] 35:01	lord could this be used to support the
+[825] 35:04	angel of the lord as a christophany
+[826] 35:06	thank you
+[827] 35:07	okay um
+[828] 35:08	let's take a look at those passages
+[829] 35:12	i will start with malachi 3-1 because i
+[830] 35:15	actually have that one up at the moment
+[831] 35:18	and it says uh behold i'm going to send
+[832] 35:20	my angel
+[833] 35:22	messenger
+[834] 35:24	and he will clear the way before me
+[835] 35:28	and the lord whom you seek
+[836] 35:30	will suddenly come to his temple and
+[837] 35:33	message a messenger of the covenant
+[838] 35:35	covenant in whom you delight behold he
+[839] 35:38	is coming says the lord of hosts
+[840] 35:41	okay
+[841] 35:42	so is it
+[842] 35:45	does it allude to a theophany possibly
+[843] 35:48	yeah possibly
+[844] 35:50	okay
+[845] 35:50	so in that sense
+[846] 35:53	yeah it's it is possible that this is a
+[847] 35:56	allusion to a theophany
+[848] 35:58	um or for the embodied messiah you know
+[849] 36:01	the incarnate messiah
+[850] 36:03	and the incarnate messiah is not
+[851] 36:05	necessarily a theophany it's not
+[852] 36:06	considered to be a theophany
+[853] 36:09	okay
+[854] 36:11	so
+[855] 36:12	in that respect i doubt in this
+[856] 36:14	particular case it's directly talking
+[857] 36:18	about a
+[858] 36:19	christophany as such now for those who
+[859] 36:21	are not familiar a christophany is a
+[860] 36:24	what's sometimes called a pre-incarnate
+[861] 36:28	manifestation of of of christ the second
+[862] 36:31	person of the trinity
+[863] 36:35	now most of the christophanies in the
+[864] 36:37	old testament are highly
+[865] 36:38	debated um while most people uh most
+[866] 36:42	theologians don't
+[867] 36:44	they go back and forth between what's a
+[868] 36:46	theophany basically
+[869] 36:48	god appearing
+[870] 36:50	versus a christophany christ appearing
+[871] 36:55	and it really comes down to a debate
+[872] 36:56	over which person of the trinity is
+[873] 36:59	manifesting himself
+[874] 37:01	the text is never really all that clear
+[875] 37:04	about this
+[876] 37:06	sometimes
+[877] 37:08	sometimes it alludes to it more than
+[878] 37:10	others
+[879] 37:12	now zechariah
+[880] 37:14	12 8.
+[881] 37:33	12.
+[882] 37:36	eight okay
+[883] 37:39	which says in that day the lord will
+[884] 37:41	defend the inhabitants of jerusalem
+[885] 37:43	and the one who is feeble among them in
+[886] 37:47	that day will be like david
+[887] 37:49	and the house of david will be like god
+[888] 37:51	like the angel of the lord before him
+[889] 37:54	okay
+[890] 37:57	now
+[891] 37:58	the
+[892] 38:00	the illusion here
+[893] 38:02	is that
+[894] 38:05	um the one who is feeble among them in
+[895] 38:07	that day will be like david
+[896] 38:09	and that is a that is another that is an
+[897] 38:11	allusion to the christ
+[898] 38:12	okay
+[899] 38:14	and the house of david will be like god
+[900] 38:17	like the angel of the lord before him
+[901] 38:20	so
+[902] 38:22	again
+[903] 38:23	is this a christophany or is this
+[904] 38:25	something
+[905] 38:26	or just an allusion
+[906] 38:28	to
+[907] 38:30	being like a theophany
+[908] 38:34	it's really hard to say
+[909] 38:39	if we be really honest about
+[910] 38:44	this um so
+[911] 38:50	so i think that um
+[912] 38:53	that
+[913] 38:55	that there is here a
+[914] 39:01	a um
+[915] 39:07	it's a possibility that it could be a
+[916] 39:09	[Music]
+[917] 39:10	um
+[918] 39:12	a christophany but there's also uh a
+[919] 39:15	lack of say direct support too
+[920] 39:19	so
+[921] 39:20	this is one of those that's sort of
+[922] 39:22	yeah maybe maybe not
+[923] 39:24	um it's suggestive
+[924] 39:26	it's definitely suggestive
+[925] 39:28	but again like all say
+[926] 39:31	whenever we talk about the theophany
+[927] 39:32	christophany debate
+[928] 39:34	it's finding that sort of direct link
+[929] 39:36	that's always going to be
+[930] 39:38	you know a little
+[931] 39:40	iffy okay
+[932] 39:43	so anyway
+[933] 39:44	uh thank you very much for the super
+[934] 39:45	chat very much appreciated okay
+[935] 39:49	on the next super chat
+[936] 39:51	is from uh suit anubis for ten dollars
+[937] 39:54	thank you very much for the super chat
+[938] 39:58	egypt has been described as the bread
+[939] 40:00	basket of rome
+[940] 40:01	if egypt had a surplus of food how is it
+[941] 40:04	that ancient egyptians so frequently
+[942] 40:06	face starvation as you have previously
+[943] 40:08	said
+[944] 40:09	okay the reason is
+[945] 40:12	because of uh diversity of agriculture
+[946] 40:17	now in ancient egypt we have to kind of
+[947] 40:20	understand
+[948] 40:22	that
+[949] 40:23	before the roman period
+[950] 40:27	not all land was used for food
+[951] 40:30	production
+[952] 40:32	some of it was used for growing linen
+[953] 40:34	some of it was kept as
+[954] 40:36	marsh uh because the marshlands were
+[955] 40:39	used for hunting
+[956] 40:41	they were used for
+[957] 40:43	the papyrus production of papyrus
+[958] 40:46	or fishing
+[959] 40:48	so
+[960] 40:48	the the delta served a whole lot of
+[961] 40:52	functions beyond just agriculture
+[962] 40:56	now when rome takes over
+[963] 41:00	uh they strip the linen fields
+[964] 41:02	they basically tear up all the linen
+[965] 41:04	fields
+[966] 41:07	so
+[967] 41:09	linen becomes a scarce commodity in
+[968] 41:11	egypt
+[969] 41:12	after rome takes over
+[970] 41:14	okay
+[971] 41:17	so and and it's done
+[972] 41:19	primarily to produce
+[973] 41:21	food
+[974] 41:23	okay
+[975] 41:24	so
+[976] 41:26	the cost of other commodities start
+[977] 41:28	skyrocketing as a result of
+[978] 41:32	rome's change in agriculture
+[979] 41:34	now after the islamic
+[980] 41:37	uh
+[981] 41:37	in invasion that reverses
+[982] 41:41	that reverses
+[983] 41:43	where
+[984] 41:44	um
+[985] 41:45	land for food is torn up
+[986] 41:48	and is then replaced with the production
+[987] 41:51	of say
+[988] 41:53	cotton and linen
+[989] 41:55	and when that happens people start
+[990] 41:58	starving on mass
+[991] 42:00	so it all is going to boil down to
+[992] 42:03	how like for example um these during the
+[993] 42:06	islamic rulership
+[994] 42:07	the they rip out all the papyrus
+[995] 42:10	as much of the papyrus in the delta as
+[996] 42:12	they can to make land for production of
+[997] 42:17	of of cloth that they can then trade
+[998] 42:21	uh into the east
+[999] 42:23	okay
+[1000] 42:26	so it does it is it all is all based
+[1001] 42:28	upon what is the mode of production here
+[1002] 42:31	how is the land being used
+[1003] 42:34	what considerations are being made
+[1004] 42:36	towards the native population
+[1005] 42:40	the fact is rome didn't care
+[1006] 42:42	rome didn't care if egyptians ran around
+[1007] 42:45	naked didn't care one bit
+[1008] 42:48	the islamic uh rulers did not care if
+[1009] 42:51	the local population starved didn't care
+[1010] 42:53	one bit
+[1011] 42:55	so
+[1012] 42:56	it's all going to depend upon modes of
+[1013] 42:58	production
+[1014] 43:00	so that's why we have for example
+[1015] 43:02	in in rome for rome you know
+[1016] 43:05	they exported two things from from from
+[1017] 43:08	egypt
+[1018] 43:10	uh
+[1019] 43:10	papyrus and food
+[1020] 43:14	essentially emmer wheat hammerweed and
+[1021] 43:16	barley
+[1022] 43:20	so
+[1023] 43:21	uh we do have to keep that in mind
+[1024] 43:24	that
+[1025] 43:25	uh in the case of of rome they just tore
+[1026] 43:27	up all the linen fields
+[1027] 43:29	so that's how they compensated
+[1028] 43:32	that's how they increased
+[1029] 43:34	uh food production
+[1030] 43:37	so anyway i hope that answers your
+[1031] 43:39	question thank you very much for the
+[1032] 43:40	super chat very much appreciated
+[1033] 43:46	okay
+[1034] 43:48	another oops that
+[1035] 43:51	should not be there let's see here
+[1036] 44:03	okay
+[1037] 44:04	something looks like it went missing
+[1038] 44:06	here
+[1039] 44:09	yes okay
+[1040] 44:25	all right another super chat from
+[1041] 44:28	pseudoanubis thank you very much for the
+[1042] 44:29	super chat
+[1043] 44:31	and he says would egyptian charioteers
+[1044] 44:34	have been primarily comprised of noble
+[1045] 44:37	hereditary warrior class similar to
+[1046] 44:40	later classical medieval cavalry
+[1047] 44:44	thank you very much for the super chat
+[1048] 44:45	great question
+[1049] 44:47	the quick answer to that is not
+[1050] 44:49	necessarily
+[1051] 44:51	now
+[1052] 44:52	um
+[1053] 44:54	it is possible for somebody of a lower
+[1054] 44:57	class to have
+[1055] 44:59	uh
+[1056] 45:00	basically
+[1057] 45:01	become a charioteer
+[1058] 45:04	now the thing with being a charioteer is
+[1059] 45:06	you just had to have the money to buy
+[1060] 45:08	the chariot
+[1061] 45:10	if you could scrape the money together
+[1062] 45:12	anybody could become it
+[1063] 45:15	because it because becoming a charioteer
+[1064] 45:18	in ancient egypt didn't require upon
+[1065] 45:21	upon say your your family or your
+[1066] 45:24	heritage
+[1067] 45:25	but it relied entirely upon what sort of
+[1068] 45:29	financial assets you
+[1069] 45:30	had and this is true with anybody in the
+[1070] 45:33	egyptian military
+[1071] 45:35	the egyptian military assigned rank
+[1072] 45:38	based upon what you could afford
+[1073] 45:43	as you have to understand
+[1074] 45:45	that in the egyptian military
+[1075] 45:47	people were not assigned rank
+[1076] 45:51	uh
+[1077] 45:52	were assigned rank based upon what
+[1078] 45:54	equipment you could buy because the
+[1079] 45:55	egyptian military didn't supply you with
+[1080] 45:57	equipment
+[1081] 45:59	they didn't supply you with anything
+[1082] 46:01	except if you had a chair they supplied
+[1083] 46:02	you with horses that's about all they
+[1084] 46:04	supplied you with
+[1085] 46:06	and they gave you food
+[1086] 46:08	but they didn't give you equipment
+[1087] 46:10	okay
+[1088] 46:12	so if you were poor
+[1089] 46:14	the best you could be was in archer
+[1090] 46:18	archers you know
+[1091] 46:20	were basically the poorest and the
+[1092] 46:22	lowest rank of the egyptian military
+[1093] 46:25	now if you could afford a bit better and
+[1094] 46:27	a shield and a bronze spear
+[1095] 46:30	you could become an infantryman
+[1096] 46:32	okay
+[1097] 46:33	if you could afford a chariot and those
+[1098] 46:36	weren't cheap
+[1099] 46:37	those were not cheap
+[1100] 46:39	then you became a
+[1101] 46:40	charioteer regardless of your family
+[1102] 46:43	status regardless of your competent even
+[1103] 46:45	your competency act to be honest
+[1104] 46:49	uh you could be a pretty
+[1105] 46:51	poor chariot driver and still you know
+[1106] 46:53	attain that rank just by being able to
+[1107] 46:55	buy that equipment
+[1108] 46:59	so that's basically how the egyptian
+[1109] 47:02	military worked
+[1110] 47:03	is
+[1111] 47:05	if you were able to afford it you could
+[1112] 47:08	become a charioteer and once you were a
+[1113] 47:11	charioteer you basically
+[1114] 47:14	at that point
+[1115] 47:16	favor of your commanders then
+[1116] 47:18	uh
+[1117] 47:19	decided
+[1118] 47:21	how high you rose in the ranks
+[1119] 47:27	so
+[1120] 47:29	anyway
+[1121] 47:30	thank you very much for the super chat
+[1122] 47:32	very much appreciate it and i hope that
+[1123] 47:34	answers your question
+[1124] 47:40	okay uh let's get to
+[1125] 47:43	twitch it up here
+[1126] 47:46	our next super chat
+[1127] 47:51	uh comes from the uh camel leopard for
+[1128] 47:53	ten dollars
+[1129] 47:55	and he says
+[1130] 47:57	shabbat shalom what is the significance
+[1131] 47:59	of kore being
+[1132] 48:03	a har ha elohim in exodus
+[1133] 48:07	3
+[1134] 48:08	uh
+[1135] 48:09	did have religious uh significance
+[1136] 48:12	before moshe what is
+[1137] 48:14	was it a polytheistic site
+[1138] 48:23	all right let's get up exodus 3 and
+[1139] 48:25	let's take a look at that
+[1140] 48:38	exodus three
+[1141] 48:40	okay horeb
+[1142] 48:42	um the mountain of god so essentially
+[1143] 48:45	it's just essentially um
+[1144] 48:49	significance of horeb
+[1145] 48:51	the mountain god now this is just a sort
+[1146] 48:53	of uh most exegete at this point
+[1147] 48:57	basically
+[1148] 49:00	basically say that this is just a a
+[1149] 49:02	synonym for mount sinai okay
+[1150] 49:06	um whether or not that's actually true
+[1151] 49:10	but most most will most will because
+[1152] 49:13	um
+[1153] 49:14	because it says in exodus or three verse
+[1154] 49:18	one
+[1155] 49:19	he led the flock to the west side of the
+[1156] 49:23	wilderness and came to horeb
+[1157] 49:26	okay
+[1158] 49:27	that west side indicates that
+[1159] 49:30	um that he is moving across the sinai
+[1160] 49:33	from the east to the west
+[1161] 49:37	so
+[1162] 49:38	i would sort of decide here with most
+[1163] 49:40	exegetes that basically said that horeb
+[1164] 49:42	is just
+[1165] 49:43	a another name
+[1166] 49:46	for sinai and the mountain of god is
+[1167] 49:48	used essentially as as basically a
+[1168] 49:51	epithet
+[1169] 49:53	to
+[1170] 49:54	connote
+[1171] 49:55	that this is mount sinai that's being
+[1172] 49:57	talked to here talked about here
+[1173] 49:59	again where mount sinai is we don't
+[1174] 50:02	exactly show
+[1175] 50:03	it is in the sinai peninsula somewhere
+[1176] 50:06	so
+[1177] 50:11	um to answer your second question here
+[1178] 50:13	was it a polytheistic site
+[1179] 50:15	i doubt it
+[1180] 50:18	um i don't think it got the foot traffic
+[1181] 50:20	really to be a polytheistic site
+[1182] 50:23	it might have been a revered site
+[1183] 50:25	you know we do see these sometimes like
+[1184] 50:27	for example
+[1185] 50:29	um we do see sites uh in the ancient
+[1186] 50:31	world would say there might be a shrine
+[1187] 50:33	set up
+[1188] 50:35	for temporary worship
+[1189] 50:37	so you know we do see that happen
+[1190] 50:40	so it's it's possibly a a revered sight
+[1191] 50:43	a temporary religious site of some kind
+[1192] 50:46	uh
+[1193] 50:48	but
+[1194] 50:50	really
+[1195] 50:51	it's hard to say now um
+[1196] 50:56	it did have religious significance to
+[1197] 50:58	moses
+[1198] 51:00	um
+[1199] 51:02	one of the interesting things about say
+[1200] 51:04	horup or mount sinai
+[1201] 51:06	we'll use them interchangeably because
+[1202] 51:07	as i say most exegetes do
+[1203] 51:10	uh seems to be that it does appear to be
+[1204] 51:13	a place where god establishes sacred
+[1205] 51:16	space
+[1206] 51:19	and in that respect it remains a holy
+[1207] 51:22	site
+[1208] 51:23	you know in the in the eyes of of of
+[1209] 51:26	moses
+[1210] 51:27	uh until the presence of god goes from
+[1211] 51:30	mount sinai onto
+[1212] 51:33	the um
+[1213] 51:34	the mercy seat of the ark of the
+[1214] 51:36	covenant between the wings of the
+[1215] 51:38	cherubim
+[1216] 51:40	so it does seem to be
+[1217] 51:42	now we don't know why
+[1218] 51:45	god chose that particular mountain
+[1219] 51:48	that particular mountain top
+[1220] 51:51	to establish his sacred space
+[1221] 51:55	we have no other indication you know
+[1222] 51:57	other that than that god chose it
+[1223] 52:00	there might be some reason there might
+[1224] 52:02	be some reason why it was chosen we
+[1225] 52:04	don't know why
+[1226] 52:06	so that's probably the best we can
+[1227] 52:07	answer this at the moment so anyway
+[1228] 52:10	thank you very much for the super chat
+[1229] 52:11	very much appreciated and um it's an
+[1230] 52:14	interesting question
+[1231] 52:16	and uh i wish wish we could answer more
+[1232] 52:18	on that because uh
+[1233] 52:20	uh it clearly has some significance
+[1234] 52:23	what exactly that significance is i
+[1235] 52:24	think will require further study so
+[1236] 52:27	thank you very much
+[1237] 52:30	hey next question comes from
+[1238] 52:36	uh sinaiticus apologia with a really
+[1239] 52:39	generous super chat thank you so much
+[1240] 52:42	for 100 super chat wow
+[1241] 52:44	thank you so much for that super chat it
+[1242] 52:46	really helps us to continue this
+[1243] 52:48	uh it supports us and it helps keep the
+[1244] 52:50	lights on so
+[1245] 52:52	very very appreciative and very very
+[1246] 52:54	grateful for your support of our channel
+[1247] 52:57	uh very much appreciated
+[1248] 52:59	okay he says
+[1249] 53:01	there's a common claim among mythicists
+[1250] 53:04	oh
+[1251] 53:05	dear
+[1252] 53:08	and alt history crowds
+[1253] 53:10	oh
+[1254] 53:12	no cain and abel's story
+[1255] 53:16	are
+[1256] 53:17	seth osiris and horus smith what truth
+[1257] 53:20	is here to this claim
+[1258] 53:22	uh absolutely none
+[1259] 53:25	um
+[1260] 53:28	not even close
+[1261] 53:32	i mean look uh
+[1262] 53:34	how do i say this mythicists look for
+[1263] 53:37	vague similarities
+[1264] 53:39	and then extrapolate on those uh
+[1265] 53:43	similarities with no regard to
+[1266] 53:46	the
+[1267] 53:47	either the
+[1268] 53:49	original texts
+[1269] 53:51	or the text they're trying to
+[1270] 53:52	mythologize
+[1271] 53:55	it's just
+[1272] 53:56	i mean it's some of the stuff that
+[1273] 53:58	methods has come with are cuckoo for
+[1274] 54:00	cocoa puffs
+[1275] 54:01	i mean it's just downright crazy
+[1276] 54:04	a lot of the stuff they they they try to
+[1277] 54:08	um
+[1278] 54:09	try to to mythicize it's just
+[1279] 54:12	i'm i'm actually really surprised that
+[1280] 54:15	there are still emphasis out there
+[1281] 54:18	i mean i'm really surprised i mean
+[1282] 54:21	it's an utterly
+[1283] 54:22	bankrupt historical method
+[1284] 54:25	it's an utterly bankrupt historical
+[1285] 54:26	method
+[1286] 54:28	i mean no no modern historian
+[1287] 54:31	of of any worth
+[1288] 54:34	and yes
+[1289] 54:35	i think richard carrier is is not a
+[1290] 54:40	is and robert price are not historians
+[1291] 54:42	of any worth
+[1292] 54:44	sorry
+[1293] 54:45	um
+[1294] 54:49	wow
+[1295] 54:52	yikes
+[1296] 54:55	okay
+[1297] 54:57	um
+[1298] 54:58	let's get back to the
+[1299] 55:00	the claim here because i think that's
+[1300] 55:01	worth it
+[1301] 55:02	um seth osiris and horus that whole
+[1302] 55:05	osiren myth
+[1303] 55:08	has to do with the unification wars of
+[1304] 55:10	ancient egypt that's what it has to do
+[1305] 55:11	with that's the purpose of that
+[1306] 55:15	um
+[1307] 55:16	osiris is the king of the gods
+[1308] 55:19	seth is the god of lower egypt
+[1309] 55:22	uh horus is the god of upper egypt
+[1310] 55:25	okay
+[1311] 55:27	uh
+[1312] 55:28	essentially
+[1313] 55:30	lower egypt knocks off the king of the
+[1314] 55:32	gods
+[1315] 55:33	king of gods is dead
+[1316] 55:37	and now
+[1317] 55:38	seth and horus fight over dominance over
+[1318] 55:42	egypt
+[1319] 55:43	you know and horus wins because he's up
+[1320] 55:46	for egypt and he unifies the country
+[1321] 55:48	once again
+[1322] 55:50	that's the entire purpose of the
+[1323] 55:52	assailant myth it's about the
+[1324] 55:54	unification wars
+[1325] 55:58	cain and abel and seth have nothing to
+[1326] 56:01	do with this whatsoever
+[1327] 56:05	it's it's crazy to even sort of
+[1328] 56:08	you know it's a whole
+[1329] 56:10	different narrative
+[1330] 56:12	you know the kane and abel story is as
+[1331] 56:15	much about agricultural methods
+[1332] 56:18	you know
+[1333] 56:20	kane is a sedentary farmer
+[1334] 56:22	abel is a pastoralist
+[1335] 56:25	kane
+[1336] 56:26	knocks off abel
+[1337] 56:28	and then seth is born as a replacement
+[1338] 56:32	basically to restore the clan
+[1339] 56:36	so
+[1340] 56:37	you have here plan politics
+[1341] 56:40	you have the um the extolling of
+[1342] 56:44	pastoralism
+[1343] 56:46	it's it's essentially a story to get
+[1344] 56:49	israelites in that mode of thinking of
+[1345] 56:52	becoming pastoralists and maintaining
+[1346] 56:54	clan unity and cohesion
+[1347] 56:59	theo cyber myth has nothing to do with
+[1348] 57:01	this
+[1349] 57:02	at all
+[1350] 57:03	because egypt was not a clan based
+[1351] 57:05	society
+[1352] 57:06	in any way
+[1353] 57:09	so
+[1354] 57:10	wow ah
+[1355] 57:12	yikes
+[1356] 57:14	so anyway i think that that pretty much
+[1357] 57:16	summarizes the truth of this claim i
+[1358] 57:18	mean it's just again a bankrupt
+[1359] 57:20	historical method
+[1360] 57:22	that just
+[1361] 57:23	makes no sense at all
+[1362] 57:26	okay
+[1363] 57:27	but i really appreciate the super chat
+[1364] 57:30	um
+[1365] 57:32	you were trying to yank my chain right
+[1366] 57:40	thank you very much for that very
+[1367] 57:42	generous super chat and giving me the
+[1368] 57:44	the
+[1369] 57:45	the uh
+[1370] 57:47	um
+[1371] 57:48	oh
+[1372] 57:49	the pretense to go on a rant
+[1373] 57:53	thank you so much and very much
+[1374] 57:54	appreciate it
+[1375] 57:57	okay
+[1376] 58:02	mouthwash for five dollars good to see
+[1377] 58:03	you tonight we haven't seen you in a
+[1378] 58:04	while very much appreciate the super
+[1379] 58:07	chat
+[1380] 58:08	okay
+[1381] 58:09	uh is it advisable to
+[1382] 58:12	is it egypt
+[1383] 58:13	is a wonderful place to visit uh i love
+[1384] 58:16	egypt
+[1385] 58:18	he says arbitrary arrests harassments
+[1386] 58:20	and confiscation there's plenty of
+[1387] 58:22	examples on youtube
+[1388] 58:23	see nightmare egypt food tour okay
+[1389] 58:28	egypt is an incredibly safe place to
+[1390] 58:30	visit
+[1391] 58:31	it's one of the it's probably the safest
+[1392] 58:33	country to visit
+[1393] 58:36	in the middle east
+[1394] 58:41	but
+[1395] 58:42	there are some precautions you have to
+[1396] 58:44	take you have to exercise common sense
+[1397] 58:48	okay don't climb the pyramids
+[1398] 58:52	if you see a pot chart on the ground
+[1399] 58:55	leave it in the ground
+[1400] 58:57	okay
+[1401] 58:58	taking antiquities out of the country
+[1402] 59:01	no no
+[1403] 59:02	very illegal
+[1404] 59:04	you're gonna get arrested you're gonna
+[1405] 59:06	get harassed there will be confiscations
+[1406] 59:09	okay
+[1407] 59:11	but
+[1408] 59:12	um
+[1409] 59:14	i see that kenny has just arrived
+[1410] 59:18	so
+[1411] 59:23	just alerting my my wife that kenny has
+[1412] 59:26	just entered the building
+[1413] 59:28	okay
+[1414] 59:29	um
+[1415] 59:30	again common sense common sense don't go
+[1416] 59:33	to the shady parts of cairo
+[1417] 59:36	cairo has bad bad sections just like any
+[1418] 59:38	city
+[1419] 59:40	now
+[1420] 59:41	watch your bags
+[1421] 59:43	okay
+[1422] 59:44	uh
+[1423] 59:44	you're not likely in egypt to be mugged
+[1424] 59:48	physical violence is very rare in egypt
+[1425] 59:51	okay
+[1426] 59:52	they will steal your bag however if you
+[1427] 59:54	leave it alone for a second
+[1428] 59:57	they'll steal anything that you don't
+[1429] 59:59	hang on to
+[1430] 1:00:02	but
+[1431] 1:00:04	uh it's it's one of the few places that
+[1432] 1:00:06	women can walk the streets without being
+[1433] 1:00:08	molested in the middle east
+[1434] 1:00:11	you know
+[1435] 1:00:12	you know they can they can go to women
+[1436] 1:00:13	can go to egypt without an escort
+[1437] 1:00:16	now they're safer with an escort male
+[1438] 1:00:18	escort
+[1439] 1:00:19	but it is one of the few countries that
+[1440] 1:00:21	a female can go to egypt without an
+[1441] 1:00:23	escort and not be
+[1442] 1:00:25	harassed okay
+[1443] 1:00:30	um
+[1444] 1:00:31	um i visited egypt several times i've
+[1445] 1:00:34	walked the streets of egypt in the
+[1446] 1:00:35	middle of the night
+[1447] 1:00:37	no one will bother you don't care
+[1448] 1:00:39	okay
+[1449] 1:00:40	so so yeah there's a i mean it's it's as
+[1450] 1:00:44	i say it's one of the safest places and
+[1451] 1:00:46	part of the reason it's so safe is
+[1452] 1:00:47	because
+[1453] 1:00:48	the tourist police will crack down on
+[1454] 1:00:51	their own people
+[1455] 1:00:52	if they get outlined
+[1456] 1:00:56	so um i highly recommend egypt
+[1457] 1:00:59	uh don't go in the western desert or the
+[1458] 1:01:01	sinai
+[1459] 1:01:02	because you've got insurgents there
+[1460] 1:01:04	um anyone who goes into the sinai or the
+[1461] 1:01:08	western desert is asking for trouble
+[1462] 1:01:10	they're asking for trouble
+[1463] 1:01:12	stay on the tourist paths stay in
+[1464] 1:01:14	tourist spots
+[1465] 1:01:15	if you have to travel
+[1466] 1:01:17	between
+[1467] 1:01:21	locations by car uh make sure you
+[1468] 1:01:25	arrange it through to your hotel
+[1469] 1:01:28	um you know
+[1470] 1:01:30	make sure you uh um
+[1471] 1:01:33	sufficient um
+[1472] 1:01:35	money on you to get yourself out of
+[1473] 1:01:36	trouble if you do get into trouble
+[1474] 1:01:38	so you know yeah
+[1475] 1:01:40	it's a safe place
+[1476] 1:01:42	but exercise common sense
+[1477] 1:01:44	so
+[1478] 1:01:45	thank you very much for the super chat
+[1479] 1:01:47	very much appreciated
+[1480] 1:01:52	okay our next super chat
+[1481] 1:01:55	is from
+[1482] 1:01:57	a squinter because or white on orange
+[1483] 1:01:58	and i can't see that very well
+[1484] 1:02:01	so
+[1485] 1:02:01	um
+[1486] 1:02:06	i hope i don't butcher this i so
+[1487] 1:02:08	apologize if i butcher this
+[1488] 1:02:11	um
+[1489] 1:02:12	brew
+[1490] 1:02:13	mccare i hope i got that right
+[1491] 1:02:16	uh
+[1492] 1:02:17	no vowels makes it kind of difficult to
+[1493] 1:02:19	pronounce uh but
+[1494] 1:02:20	um
+[1495] 1:02:22	you know i uh the ironic thing is i i
+[1496] 1:02:24	know the vowel system of hebrew so if i
+[1497] 1:02:25	see hebrew without vowels i'm i'm okay
+[1498] 1:02:29	but for some reason
+[1499] 1:02:31	um latin letters without vowels throws
+[1500] 1:02:33	me for a loop and i don't know why but
+[1501] 1:02:35	it does i can still usually read it but
+[1502] 1:02:37	um
+[1503] 1:02:38	yeah it can throw me for a loop so i
+[1504] 1:02:40	hope i pronounced that right
+[1505] 1:02:42	thank you very much for the 1999 super
+[1506] 1:02:45	chat
+[1507] 1:02:46	very much appreciate it and he says
+[1508] 1:02:48	thanks for the amazing com uh content
+[1509] 1:02:51	abraham well thank you abraham ah
+[1510] 1:02:55	wonderful uh
+[1511] 1:02:57	we do our best we try to bring um the
+[1512] 1:03:00	best ancient near eastern content we can
+[1513] 1:03:03	we have uh we try to make it a balanced
+[1514] 1:03:06	mix of of the bible and ancient egypt
+[1515] 1:03:09	and the ancient near east
+[1516] 1:03:10	um you know sometimes we lead
+[1517] 1:03:13	more to one side than the other
+[1518] 1:03:15	but we try to we try to do to um to have
+[1519] 1:03:19	say a broad spectrum of content that
+[1520] 1:03:21	sort of educates people on
+[1521] 1:03:24	say the context
+[1522] 1:03:27	uh
+[1523] 1:03:28	out of which the bible came
+[1524] 1:03:30	so you know if it's egypt we want to to
+[1525] 1:03:32	give you lots of contextual material so
+[1526] 1:03:35	you understand the culture
+[1527] 1:03:37	you know if it's if it's about
+[1528] 1:03:38	mesopotamia same deal we want you to
+[1529] 1:03:40	know about their context too so you can
+[1530] 1:03:43	understand you know when for example to
+[1531] 1:03:45	go to babylon or persia is in control we
+[1532] 1:03:48	want you to have that historical context
+[1533] 1:03:51	so this is why we've done this channel
+[1534] 1:03:54	is so
+[1535] 1:03:55	so you can understand you know the
+[1536] 1:03:57	ancient near east a lot better
+[1537] 1:04:00	so um
+[1538] 1:04:02	you know super chess like this are
+[1539] 1:04:03	really encouraging
+[1540] 1:04:05	thank you very much for that
+[1541] 1:04:06	encouragement um thank you very much for
+[1542] 1:04:08	that super chat we really appreciate it
+[1543] 1:04:17	jack gregory for two dollars thank you
+[1544] 1:04:19	very much for the super chat
+[1545] 1:04:22	put to death for cursing and getting
+[1546] 1:04:25	wood on the sabbath okay
+[1547] 1:04:28	yes
+[1548] 1:04:31	now
+[1549] 1:04:32	there's some things here that you have
+[1550] 1:04:34	to kind of understand about the
+[1551] 1:04:36	background
+[1552] 1:04:38	um cursing
+[1553] 1:04:41	in a biblical context isn't saying a
+[1554] 1:04:44	naughty word
+[1555] 1:04:45	that's not what it means
+[1556] 1:04:48	okay
+[1557] 1:04:50	it's putting a magical spell on someone
+[1558] 1:04:54	that's what it is it's it's essentially
+[1559] 1:04:56	a kind of of incantation
+[1560] 1:05:05	essentially
+[1561] 1:05:06	what occurs in the ancient context is
+[1562] 1:05:11	and we see this for example an example
+[1563] 1:05:12	of this is
+[1564] 1:05:14	in um
+[1565] 1:05:16	is uh with a jephthah you know where
+[1566] 1:05:18	they go out and they they they fight and
+[1567] 1:05:21	they bring these clay jars
+[1568] 1:05:24	and you they smash the clay jars
+[1569] 1:05:27	well that's an execration spell
+[1570] 1:05:31	uh basically what they would have done
+[1571] 1:05:32	in the ancient eras is they would have
+[1572] 1:05:34	put say um you know
+[1573] 1:05:38	may my enemy um get swallowed up by um
+[1574] 1:05:43	by a lion
+[1575] 1:05:45	and then they would take that jar and
+[1576] 1:05:46	they would smash it to affect the curse
+[1577] 1:05:49	that's an execration spell
+[1578] 1:05:52	so when you put when you did a curse
+[1579] 1:05:56	upon somebody
+[1580] 1:05:57	you were actually enacting a what what
+[1581] 1:06:01	they thought was a spell
+[1582] 1:06:04	to
+[1583] 1:06:04	to do harm to somebody
+[1584] 1:06:08	so as i said this is not just a dirty
+[1585] 1:06:10	word this is not calling somebody a bad
+[1586] 1:06:12	name
+[1587] 1:06:14	this is invoking magic
+[1588] 1:06:18	it's invoking magic
+[1589] 1:06:21	so in a theocratic state where
+[1590] 1:06:24	everyone's supposed to be monotheistic
+[1591] 1:06:28	invoking magic
+[1592] 1:06:30	is bad stuff
+[1593] 1:06:33	because it's invoking something that's
+[1594] 1:06:36	um either against god's nature
+[1595] 1:06:39	or
+[1596] 1:06:40	invoking pagan gods to do it
+[1597] 1:06:43	um either way that's not going to
+[1598] 1:06:47	that's just not going to fly
+[1599] 1:06:50	in say the theocratic state of israel
+[1600] 1:06:52	just isn't going to fly
+[1601] 1:06:55	now
+[1602] 1:06:57	so that's what happens when you did a
+[1603] 1:07:00	curse in ancient israel
+[1604] 1:07:02	now the getting wood on the sabbath
+[1605] 1:07:05	now the sabbath law
+[1606] 1:07:07	is was treated very very seriously for a
+[1607] 1:07:10	different reason
+[1608] 1:07:13	in the case of of getting wood at
+[1609] 1:07:15	breaking the sabbath
+[1610] 1:07:18	it comes down to the perpetual ordinance
+[1611] 1:07:20	of the sinai covenant
+[1612] 1:07:24	so in the sinai covenant every covenant
+[1613] 1:07:26	has a stipulation basically what they
+[1614] 1:07:28	call the sign of a covenant
+[1615] 1:07:30	and this is vast uh suzerain vassal
+[1616] 1:07:33	treaty language here
+[1617] 1:07:36	so in the case of the sinai covenant
+[1618] 1:07:39	um
+[1619] 1:07:41	this the stipulation was
+[1620] 1:07:44	yes you keep the ten commandments
+[1621] 1:07:46	but your sign that you're keeping the
+[1622] 1:07:49	law
+[1623] 1:07:50	is that is a perpetual covenant a
+[1624] 1:07:53	perpetual sign that you keep the sabbath
+[1625] 1:07:56	so again for the theocratic state of
+[1626] 1:07:58	israel
+[1627] 1:08:01	their
+[1628] 1:08:02	sort of
+[1629] 1:08:04	guarantee
+[1630] 1:08:06	that they're keeping
+[1631] 1:08:07	the law
+[1632] 1:08:08	is the keeping of the sabbath
+[1633] 1:08:13	now you get to to the end of deuteronomy
+[1634] 1:08:16	where you get the blessings and the
+[1635] 1:08:17	curses and basically they say
+[1636] 1:08:20	you know moses warns the people
+[1637] 1:08:22	if you keep the law
+[1638] 1:08:24	you will have blessing and protection
+[1639] 1:08:27	and prosperity
+[1640] 1:08:30	and
+[1641] 1:08:32	holiness and all that good stuff
+[1642] 1:08:35	if you don't keep the law
+[1643] 1:08:37	famine
+[1644] 1:08:38	and sword and pestilence
+[1645] 1:08:41	and exile
+[1646] 1:08:44	okay
+[1647] 1:08:45	so there was times
+[1648] 1:08:47	when
+[1649] 1:08:49	those who broke the sabbath
+[1650] 1:08:51	you know putting the whole community in
+[1651] 1:08:54	jeopardy
+[1652] 1:08:56	they're putting the whole community in
+[1653] 1:08:57	jeopardy by risking the community to the
+[1654] 1:09:00	curses of the covenant
+[1655] 1:09:04	so that was treated pretty seriously
+[1656] 1:09:08	you know it's treated pretty seriously
+[1657] 1:09:10	and we have to understand again this is
+[1658] 1:09:11	a clan culture this is a clan society
+[1659] 1:09:15	one person of the clan acts up
+[1660] 1:09:17	the whole clan's held responsible
+[1661] 1:09:21	that's the way clan politics works is on
+[1662] 1:09:24	a system of communal guilt
+[1663] 1:09:28	this is why too when say
+[1664] 1:09:32	a murder happens outside the town that
+[1665] 1:09:34	they don't know who
+[1666] 1:09:35	who did it
+[1667] 1:09:37	the closest town
+[1668] 1:09:39	takes an oxen out to the side of the
+[1669] 1:09:40	murder
+[1670] 1:09:41	breaks the neck uh of the oxen and
+[1671] 1:09:44	basically says we don't know who did it
+[1672] 1:09:47	it's not us
+[1673] 1:09:49	uh
+[1674] 1:09:50	we
+[1675] 1:09:51	uh we give the sacrifice so that the
+[1676] 1:09:54	clan is not held responsible for this
+[1677] 1:09:59	because there was such a strong concept
+[1678] 1:10:01	of communal guilt in the clan based
+[1679] 1:10:04	society of ancient israel
+[1680] 1:10:06	so
+[1681] 1:10:07	i hope that answers your questions you
+[1682] 1:10:09	actually had two questions there because
+[1683] 1:10:10	they are different
+[1684] 1:10:13	they are different and they're
+[1685] 1:10:14	predicated upon different grounds
+[1686] 1:10:17	thank you very much for the super chat
+[1687] 1:10:19	very much appreciated
+[1688] 1:10:27	okay
+[1689] 1:10:28	uh i think it's
+[1690] 1:10:30	oscar uh uh filo for um
+[1691] 1:10:33	was it 10 romanian i think
+[1692] 1:10:36	uh thank you very much for the super
+[1693] 1:10:38	chat very much appreciate it
+[1694] 1:10:40	um part of my english well
+[1695] 1:10:43	no pardon necessary my english is not
+[1696] 1:10:45	terrific
+[1697] 1:10:46	uh in second chronicles chapter 18
+[1698] 1:10:49	verses uh 20 to 22
+[1699] 1:10:52	the lord approves a spirit of lie i
+[1700] 1:10:56	can't uh i think you mean reconcile the
+[1701] 1:10:58	god of truth to the use of a lie
+[1702] 1:11:01	i can understand using a liar but not
+[1703] 1:11:04	this i'm dumb please be patient no don't
+[1704] 1:11:06	worry this confuses a lot of people so
+[1705] 1:11:08	let's pull that up
+[1706] 1:11:11	okay
+[1707] 1:11:18	so second chronicles
+[1708] 1:11:21	chapter 18.
+[1709] 1:11:28	20
+[1710] 1:11:30	22.
+[1711] 1:11:31	okay
+[1712] 1:11:34	now
+[1713] 1:11:36	verse 20 then a spirit came forward and
+[1714] 1:11:39	stood before the lord and said i will
+[1715] 1:11:42	entice him
+[1716] 1:11:44	and the lord said to him how
+[1717] 1:11:47	and he said i will go and be a deceiving
+[1718] 1:11:50	spirit in the mouth of all his
+[1719] 1:11:52	prophets and then he said you are to
+[1720] 1:11:56	entice him and prevail also go and do so
+[1721] 1:12:00	now therefore behold the lord has put a
+[1722] 1:12:02	deceiving spirit in the mouth of these
+[1723] 1:12:05	your prophets for the lord has
+[1724] 1:12:07	proclaimed disaster against you okay
+[1725] 1:12:11	now
+[1726] 1:12:13	when it comes down to stuff like this
+[1727] 1:12:18	we have to talk about what's primary and
+[1728] 1:12:20	secondary causes
+[1729] 1:12:25	and a primary cause is essentially
+[1730] 1:12:29	the idea that god has ordained something
+[1731] 1:12:33	and has decreed it he decrees it he
+[1732] 1:12:36	causes to be
+[1733] 1:12:37	and the direct responsibility for that
+[1734] 1:12:39	action comes from god himself
+[1735] 1:12:42	a secondary cause is when another agent
+[1736] 1:12:47	does something
+[1737] 1:12:48	with the permission of god
+[1738] 1:12:51	okay
+[1739] 1:12:53	so what we have in this text
+[1740] 1:12:56	is actually what's called is a secondary
+[1741] 1:12:59	cause
+[1742] 1:13:02	so what we have here
+[1743] 1:13:05	is a spirit
+[1744] 1:13:07	coming forward and volunteering
+[1745] 1:13:11	to deceive
+[1746] 1:13:13	now we don't know what kind of spirit
+[1747] 1:13:17	this is now
+[1748] 1:13:19	again
+[1749] 1:13:20	uh verse 19 who will entice
+[1750] 1:13:23	ahab
+[1751] 1:13:24	king of of israel to go and fall at
+[1752] 1:13:27	ramath gilead
+[1753] 1:13:30	and one said this while another said
+[1754] 1:13:32	that
+[1755] 1:13:33	okay essentially there's a debate going
+[1756] 1:13:36	on
+[1757] 1:13:38	now
+[1758] 1:13:39	in this here we can
+[1759] 1:13:41	you know defer to say
+[1760] 1:13:43	um
+[1761] 1:13:44	say michael heiser's conception of say
+[1762] 1:13:47	the divine counsel
+[1763] 1:13:48	where the divine counsel is not just
+[1764] 1:13:52	god's uh faithful spirits
+[1765] 1:13:56	but the unfaithful ones also
+[1766] 1:13:59	the evil spirits
+[1767] 1:14:02	because we do know that prior to the
+[1768] 1:14:04	resurrection of jesus christ
+[1769] 1:14:07	unfaithful spirits also had access
+[1770] 1:14:11	to
+[1771] 1:14:12	the divine council uh basically this
+[1772] 1:14:15	collection of angelic like and and
+[1773] 1:14:17	higher divine beings
+[1774] 1:14:20	okay
+[1775] 1:14:22	so here's the spirit
+[1776] 1:14:24	that volunteers he says
+[1777] 1:14:27	i don't mind bringing this guy to his
+[1778] 1:14:28	death
+[1779] 1:14:30	i'd get some some jollies out of it
+[1780] 1:14:34	and god said okay
+[1781] 1:14:36	yeah
+[1782] 1:14:36	go do it
+[1783] 1:14:37	go dude
+[1784] 1:14:39	but dude
+[1785] 1:14:41	there's a condition
+[1786] 1:14:42	you you're going to go do it
+[1787] 1:14:46	dude do it all the way
+[1788] 1:14:49	don't spare ahab
+[1789] 1:14:52	so what we have here
+[1790] 1:14:54	is sort of the the sovereignty of god
+[1791] 1:14:58	basically saying
+[1792] 1:15:00	that i'm not gonna cause him to to do it
+[1793] 1:15:03	myself
+[1794] 1:15:05	but if there's a volunteer amongst the
+[1795] 1:15:07	wicked spirits
+[1796] 1:15:10	go for it
+[1797] 1:15:12	and
+[1798] 1:15:12	you know and frankly no no spirit here
+[1799] 1:15:15	was compelled to do this no spirit was
+[1800] 1:15:16	compelled this is a volunteer
+[1801] 1:15:21	god didn't make him do it
+[1802] 1:15:24	but
+[1803] 1:15:25	if he was gonna do it
+[1804] 1:15:27	there's a stipulation
+[1805] 1:15:30	so this is the secondary cause of the
+[1806] 1:15:33	evil spirit doing what he's doing
+[1807] 1:15:37	within the other alter uh the the utter
+[1808] 1:15:41	sovereignty of god himself
+[1809] 1:15:43	so there's limits there's caveats
+[1810] 1:15:46	there's conditions
+[1811] 1:15:48	that
+[1812] 1:15:49	that that evil spirit has to operate
+[1813] 1:15:52	within
+[1814] 1:15:54	okay
+[1815] 1:15:57	so
+[1816] 1:16:00	god
+[1817] 1:16:01	is is basically there basically
+[1818] 1:16:05	do using
+[1819] 1:16:06	what say the evil spirits do
+[1820] 1:16:10	to
+[1821] 1:16:11	basically direct a greater purpose
+[1822] 1:16:14	and that greater purpose is the death of
+[1823] 1:16:16	a happen
+[1824] 1:16:19	do to get him where he's supposed to be
+[1825] 1:16:22	to for his ultimate fault judgment and
+[1826] 1:16:24	fall
+[1827] 1:16:25	okay
+[1828] 1:16:27	so um
+[1829] 1:16:30	it's it's not so much that god is is
+[1830] 1:16:34	is
+[1831] 1:16:35	he's not lying himself he's not the
+[1832] 1:16:36	primary cause
+[1833] 1:16:38	but he's allowing
+[1834] 1:16:40	the lie to happen
+[1835] 1:16:44	to
+[1836] 1:16:45	to affect this
+[1837] 1:16:54	the purpose of god here again verse 19.
+[1838] 1:16:57	i mean let's let's take that bill back a
+[1839] 1:16:59	bit
+[1840] 1:17:02	the the goal here was to entice ahab
+[1841] 1:17:05	that's the call that's what god wants
+[1842] 1:17:06	out of this is to entice ahab to go up
+[1843] 1:17:09	and fall at ramos gilead
+[1844] 1:17:11	that's that's the that's sort of the
+[1845] 1:17:14	the goal god is providing
+[1846] 1:17:17	and that that one said this well another
+[1847] 1:17:20	said that shows you that there's a
+[1848] 1:17:22	debate in the divine council so they're
+[1849] 1:17:24	debating means
+[1850] 1:17:26	they're demating means
+[1851] 1:17:28	and then the evil spirit basically then
+[1852] 1:17:30	suggests that he will entice and lie
+[1853] 1:17:34	okay
+[1854] 1:17:36	so
+[1855] 1:17:37	again god is not the author of this
+[1856] 1:17:40	god is not saying that that he
+[1857] 1:17:44	he um
+[1858] 1:17:45	he
+[1859] 1:17:46	would be necessarily the means that you
+[1860] 1:17:48	would use in a perfect say situation
+[1861] 1:17:51	but he is allowing the evil spirit to to
+[1862] 1:17:54	to function in his capacity of being an
+[1863] 1:17:56	evil deceiving spirit
+[1864] 1:17:59	as the secondary cause to ultimately
+[1865] 1:18:02	achieve
+[1866] 1:18:03	um
+[1867] 1:18:03	god's greater glory in all this
+[1868] 1:18:06	okay
+[1869] 1:18:07	so
+[1870] 1:18:08	i hope that explains it
+[1871] 1:18:11	it does it does throw a lot of people
+[1872] 1:18:13	for a loop
+[1873] 1:18:15	but again we have to break this down
+[1874] 1:18:17	into primary and secondary causes
+[1875] 1:18:20	god is not the author of evil
+[1876] 1:18:23	but
+[1877] 1:18:25	an evil agent does his thing it's done
+[1878] 1:18:28	under god's sovereignty
+[1879] 1:18:30	and it is done um um
+[1880] 1:18:33	with god's knowledge
+[1881] 1:18:35	even though not necessarily
+[1882] 1:18:39	what god would prefer
+[1883] 1:18:41	uh in this case what god would prefer
+[1884] 1:18:44	was that ahab be obedient
+[1885] 1:18:47	that's what god would prefer in this
+[1886] 1:18:48	situation
+[1887] 1:18:50	you know god
+[1888] 1:18:51	you know god would prefer ahab being a
+[1889] 1:18:53	righteous king that's what he prefers
+[1890] 1:18:57	but he wasn't
+[1891] 1:19:02	he was a wicked king
+[1892] 1:19:04	he was a bad
+[1893] 1:19:06	king so
+[1894] 1:19:09	god let another bad spirit
+[1895] 1:19:11	deal with a bad king
+[1896] 1:19:15	that happens you know
+[1897] 1:19:17	god let the babylonians deal with the
+[1898] 1:19:20	unfaithful uh judaites
+[1899] 1:19:23	god let the wicked assyrians
+[1900] 1:19:26	deal with the northern israelites
+[1901] 1:19:29	god does this
+[1902] 1:19:31	god does let evil people
+[1903] 1:19:33	act as his judgment and this is no
+[1904] 1:19:36	different than that
+[1905] 1:19:38	so anyway thank you very much for the
+[1906] 1:19:40	super chat i hope that answered your
+[1907] 1:19:41	question
+[1908] 1:19:42	very much appreciate it
+[1909] 1:19:45	okay
+[1910] 1:19:50	uh slim 2k for 20 thank you very much
+[1911] 1:19:54	for the super chat very much appreciated
+[1912] 1:19:56	he says hi dr f hi doctor want to follow
+[1913] 1:20:00	up on revelation 1 6. the texas receptus
+[1914] 1:20:03	uses kings bacillus and priests but
+[1915] 1:20:07	other translations use
+[1916] 1:20:09	bacillon and priest
+[1917] 1:20:11	uh what is correct in situations like
+[1918] 1:20:13	this do these translations mean the same
+[1919] 1:20:15	god bless no they don't unfortunately
+[1920] 1:20:18	um
+[1921] 1:20:20	it is probably true that the texas
+[1922] 1:20:22	receptus does use that
+[1923] 1:20:24	i don't have a copy of the texas
+[1924] 1:20:26	receptus uh on my um
+[1925] 1:20:30	uh on my bible software here so i can't
+[1926] 1:20:33	really look into that it's per se
+[1927] 1:20:36	now from what i gather
+[1928] 1:20:38	uh
+[1929] 1:20:39	the texas receptus does not it's it's
+[1930] 1:20:42	not what we find in either the majority
+[1931] 1:20:44	text
+[1932] 1:20:45	or in say
+[1933] 1:20:47	say the other text types like the
+[1934] 1:20:50	western text type or
+[1935] 1:20:53	say the alexandrian text type
+[1936] 1:20:56	so
+[1937] 1:20:59	i think most modern translations today
+[1938] 1:21:01	will prefer basilan over bacillus
+[1939] 1:21:07	so
+[1940] 1:21:10	um
+[1941] 1:21:12	so i think here that
+[1942] 1:21:14	in in a situation like this
+[1943] 1:21:18	i always prefer to use what is the best
+[1944] 1:21:22	particular
+[1945] 1:21:24	what's the best
+[1946] 1:21:26	reading so
+[1947] 1:21:30	in this case
+[1948] 1:21:31	with say most of the text sort of uh
+[1949] 1:21:34	falling towards basilan
+[1950] 1:21:37	and i believe even the majority text
+[1951] 1:21:39	does
+[1952] 1:21:41	um
+[1953] 1:21:43	that
+[1954] 1:21:45	you i mean and the majority text is
+[1955] 1:21:47	essentially most of say the
+[1956] 1:21:49	the byzantine text type
+[1957] 1:21:52	and the number of texts we have from the
+[1958] 1:21:54	byzantine text type outnumber all other
+[1959] 1:21:56	texts like
+[1960] 1:21:58	like 101 you know it's just
+[1961] 1:22:00	there's a huge number of byzantine texts
+[1962] 1:22:02	so
+[1963] 1:22:03	um they they
+[1964] 1:22:05	essentially what you're getting with the
+[1965] 1:22:06	majority text is say an aggregate of the
+[1966] 1:22:09	byzantine texts
+[1967] 1:22:11	with no weighing of other texts
+[1968] 1:22:14	i mean the other text types have such
+[1969] 1:22:16	little way it's in the majority text
+[1970] 1:22:18	it's not even funny
+[1971] 1:22:20	but
+[1972] 1:22:21	uh the eastern orthodoxy was
+[1973] 1:22:24	really made a lot of copies of the
+[1974] 1:22:26	byzantine text so we do have that to
+[1975] 1:22:28	fall back on at least as far as as far
+[1976] 1:22:31	as the majority texts go
+[1977] 1:22:34	so
+[1978] 1:22:35	um i think in this particular case
+[1979] 1:22:39	uh i think it's
+[1980] 1:22:41	it's preferred
+[1981] 1:22:42	to do vaseline given given what we find
+[1982] 1:22:45	in both the majority text
+[1983] 1:22:47	and say uh critical way critical text
+[1984] 1:22:50	like nestle hollande or the usb texts so
+[1985] 1:22:53	um
+[1986] 1:22:56	i i would definitely go for a kingdom
+[1987] 1:22:59	um use kingdom and priests
+[1988] 1:23:02	in this particular case
+[1989] 1:23:04	um
+[1990] 1:23:05	i i don't have a huge i don't have great
+[1991] 1:23:07	affinity for the king james version i'm
+[1992] 1:23:09	just just saying that out there
+[1993] 1:23:11	um
+[1994] 1:23:12	i mean it was my first bible it was my
+[1995] 1:23:14	first bible my first bible was a king
+[1996] 1:23:17	james version
+[1997] 1:23:18	but i just found that um
+[1998] 1:23:21	the more i learned about the bible
+[1999] 1:23:23	i just found that other texts were more
+[2000] 1:23:26	reliable more accurate and um
+[2001] 1:23:29	frankly
+[2002] 1:23:30	a lot easier to do
+[2003] 1:23:32	um bible study from
+[2004] 1:23:35	so
+[2005] 1:23:36	that's a that's personal preference from
+[2006] 1:23:38	vine
+[2007] 1:23:39	i know other people have different
+[2008] 1:23:41	opinions about the king james version of
+[2009] 1:23:43	texas receptus
+[2010] 1:23:44	um i actually think in some ways the
+[2011] 1:23:48	text this receptus
+[2012] 1:23:50	is a lot less controversial as far as
+[2013] 1:23:53	you know people
+[2014] 1:23:55	agreeing that it's kind of a mediocre
+[2015] 1:23:58	text than say the the translation the
+[2016] 1:24:00	king james version translation itself
+[2017] 1:24:06	a lot more people would basically cling
+[2018] 1:24:08	on to the king james version
+[2019] 1:24:10	as the only translation to read
+[2020] 1:24:14	over the texas receptus itself
+[2021] 1:24:17	so you know that tells you something
+[2022] 1:24:18	right there
+[2023] 1:24:23	so
+[2024] 1:24:24	um
+[2025] 1:24:28	but i think i think given the particular
+[2026] 1:24:31	um nuances of
+[2027] 1:24:34	say that that text
+[2028] 1:24:37	open it up quickly
+[2029] 1:24:40	pressure here
+[2030] 1:24:42	six
+[2031] 1:25:20	yeah basilan is the accusative
+[2032] 1:25:24	[Music]
+[2033] 1:25:25	so you got a double accusative there
+[2034] 1:25:29	so
+[2035] 1:25:31	um
+[2036] 1:25:33	i do think i do think it
+[2037] 1:25:36	given that they say the best texts
+[2038] 1:25:39	whether western or eastern
+[2039] 1:25:42	um
+[2040] 1:25:44	lead to bacilla in a kingdom
+[2041] 1:25:47	okay
+[2042] 1:25:48	kings is not a good
+[2043] 1:25:50	is not really a strong translation here
+[2044] 1:25:54	um
+[2045] 1:25:56	and then you know you followed up with
+[2046] 1:25:58	ir iris um
+[2047] 1:26:01	priests uh of god
+[2048] 1:26:05	so um
+[2049] 1:26:10	so you know
+[2050] 1:26:12	he made us a kingdom
+[2051] 1:26:14	priests
+[2052] 1:26:16	uh
+[2053] 1:26:17	creative yeah so priests for for god so
+[2054] 1:26:22	um
+[2055] 1:26:24	i do think here that um
+[2056] 1:26:28	that in a situation like that um you
+[2057] 1:26:31	have to go with again what's the best
+[2058] 1:26:33	text
+[2059] 1:26:35	um and then
+[2060] 1:26:36	once you have the best text
+[2061] 1:26:39	um and the texas receptors here seems
+[2062] 1:26:42	does seem to be in the minority position
+[2063] 1:26:44	once you have that then you translate
+[2064] 1:26:46	then you translate and then at that
+[2065] 1:26:48	point you decide
+[2066] 1:26:50	and ultimately it's going to come down
+[2067] 1:26:52	to
+[2068] 1:26:53	what's right for you as far as
+[2069] 1:26:55	um
+[2070] 1:26:57	as uh you know what sort of textual
+[2071] 1:27:00	traditions you think are appropriate for
+[2072] 1:27:02	you
+[2073] 1:27:06	the basically the text critical work
+[2074] 1:27:08	will will
+[2075] 1:27:09	will take you back to probably what's
+[2076] 1:27:11	pretty close to the original source text
+[2077] 1:27:15	but there's other factors involved in a
+[2078] 1:27:17	translation
+[2079] 1:27:19	there's you know people have their
+[2080] 1:27:20	traditions have their traditions and i
+[2081] 1:27:22	would never look down on those
+[2082] 1:27:24	traditions
+[2083] 1:27:25	but to say those traditions are
+[2084] 1:27:26	necessarily most accurate uh based on
+[2085] 1:27:30	the text is
+[2086] 1:27:31	that's
+[2087] 1:27:32	you're talking there say a subjective
+[2088] 1:27:34	evaluation versus an objective
+[2089] 1:27:35	evaluation
+[2090] 1:27:38	so
+[2091] 1:27:40	um
+[2092] 1:27:42	i would go
+[2093] 1:27:43	definitely here with kingdom
+[2094] 1:27:46	um
+[2095] 1:27:47	and it's basically a kingdom comma i
+[2096] 1:27:50	mean it's
+[2097] 1:27:51	the
+[2098] 1:27:52	priest is not in the genitive either so
+[2099] 1:27:54	it's not a kingdom of priests it's
+[2100] 1:27:56	kingdoms comma
+[2101] 1:27:58	priests for god
+[2102] 1:28:01	so
+[2103] 1:28:03	so anyway i hope that adds some
+[2104] 1:28:04	clarification on that
+[2105] 1:28:07	um
+[2106] 1:28:09	so i mean i agree with you probably the
+[2107] 1:28:11	the texas receptus does use um kings
+[2108] 1:28:16	but
+[2109] 1:28:16	again
+[2110] 1:28:17	what does the majority text say
+[2111] 1:28:19	what does the source uh what does the
+[2112] 1:28:21	weight critical text say
+[2113] 1:28:23	and then you have to translate from
+[2114] 1:28:24	there you have to make that that
+[2115] 1:28:25	determination and then translate from
+[2116] 1:28:27	that so
+[2117] 1:28:29	thank you very much for the super chat
+[2118] 1:28:30	uh very much appreciate it again i hope
+[2119] 1:28:32	that
+[2120] 1:28:33	added a little clarity
+[2121] 1:28:35	um so thank you very much
+[2122] 1:28:46	um i will follow up on that just uh on
+[2123] 1:28:48	this here
+[2124] 1:28:49	uh he adds here
+[2125] 1:28:51	uh i thought maybe kings and priests was
+[2126] 1:28:54	used in reference to melchizedek being
+[2127] 1:28:56	called king and priest
+[2128] 1:28:58	that we are made like him
+[2129] 1:29:01	actually
+[2130] 1:29:02	if we get right down to it
+[2131] 1:29:05	um i believe it actually does not come
+[2132] 1:29:08	from melchizedek
+[2133] 1:29:10	but i think it comes from exodus if i re
+[2134] 1:29:14	all right
+[2135] 1:29:16	it might take me a little
+[2136] 1:29:20	bit to look it up here
+[2137] 1:29:31	let's see if i can find this quickly
+[2138] 1:29:34	yeah i mean it's tempting it is tempting
+[2139] 1:29:36	to um
+[2140] 1:29:44	here
+[2141] 1:29:45	fine this
+[2142] 1:29:47	might have to look
+[2143] 1:29:49	another time
+[2144] 1:30:09	yes uh it actually comes from exodus 19
+[2145] 1:30:12	6. that's the origin of this
+[2146] 1:30:15	so
+[2147] 1:30:17	and
+[2148] 1:30:19	pop that up
+[2149] 1:30:22	and this is this is this is the source
+[2150] 1:30:24	of uh
+[2151] 1:30:25	revelation
+[2152] 1:30:26	um
+[2153] 1:30:27	um
+[2154] 1:30:29	1 6 is actually taken from exodus 19
+[2155] 1:30:33	and you shall be to me a kingdom of
+[2156] 1:30:36	priests and a holy nation
+[2157] 1:30:40	okay
+[2158] 1:30:41	this is the source of that text
+[2159] 1:30:46	it's not melchizedek it's exodus
+[2160] 1:30:50	as exodus 19.
+[2161] 1:30:53	so that's that's the source of this
+[2162] 1:30:56	and
+[2163] 1:30:58	here it is kingdom
+[2164] 1:31:02	so
+[2165] 1:31:05	um
+[2166] 1:31:06	so it is a dominion a sovereignty a
+[2167] 1:31:09	reign a kingdom so it's got that broad
+[2168] 1:31:12	symmetric language but it's not
+[2169] 1:31:14	kings
+[2170] 1:31:16	so it's actually a it's actually a
+[2171] 1:31:19	direct quote
+[2172] 1:31:21	um
+[2173] 1:31:22	from exodus 19 6. so
+[2174] 1:31:26	there you go now you know the source
+[2175] 1:31:32	i'm gonna take that
+[2176] 1:31:33	little bit from mouthwash here
+[2177] 1:31:36	but that was all the old covenant
+[2178] 1:31:39	yes
+[2179] 1:31:40	it is
+[2180] 1:31:42	and that's because
+[2181] 1:31:44	some of the old covenant is still around
+[2182] 1:31:49	but you know
+[2183] 1:31:51	you know every jot and tittle will will
+[2184] 1:31:54	you know
+[2185] 1:31:55	none of it will pass away the word of
+[2186] 1:31:57	god is forever
+[2187] 1:32:00	old covenant is not completely disposed
+[2188] 1:32:02	of
+[2189] 1:32:03	it's just not completely disposed of
+[2190] 1:32:07	it's you know it is the promise that you
+[2191] 1:32:09	know hey the law will live in our hearts
+[2192] 1:32:12	in our minds
+[2193] 1:32:14	you know basically it says you know on
+[2194] 1:32:16	our hands and on our on our foreheads
+[2195] 1:32:20	it's
+[2196] 1:32:21	it's righteousness
+[2197] 1:32:23	and that's what the kingdom of christ is
+[2198] 1:32:26	a kingdom of priests a holy nation
+[2199] 1:32:31	one not built by human hands
+[2200] 1:32:37	okay let's
+[2201] 1:32:39	i'll get back to the super chats here
+[2202] 1:32:42	oh we had some really nice diversions
+[2203] 1:32:44	there let's see here
+[2204] 1:32:51	okay
+[2205] 1:32:56	uh the camel leopard for ten dollars
+[2206] 1:32:57	thank you very much for the super chat
+[2207] 1:33:00	what are some of the
+[2208] 1:33:01	um pros and cons for both the septuagint
+[2209] 1:33:04	and the masoretic texts i've seen many
+[2210] 1:33:07	people argue on both sides that one is
+[2211] 1:33:09	more readable than the other
+[2212] 1:33:11	um
+[2213] 1:33:12	okay
+[2214] 1:33:13	there are pros and cons to both
+[2215] 1:33:17	um
+[2216] 1:33:19	the septuagint comes from an earlier
+[2217] 1:33:21	text
+[2218] 1:33:22	so
+[2219] 1:33:23	the the septuagint comes from a text
+[2220] 1:33:25	that dates to the third century bc
+[2221] 1:33:28	the masoretic text comes from a textual
+[2222] 1:33:31	tradition that is as late as the 10th
+[2223] 1:33:33	century ad
+[2224] 1:33:37	so there's there is a there is a age gap
+[2225] 1:33:39	between them
+[2226] 1:33:41	now
+[2227] 1:33:43	the masoretic text
+[2228] 1:33:46	tries to preserve the majority of the
+[2229] 1:33:48	original hebrew
+[2230] 1:33:52	the maserates did make some small
+[2231] 1:33:54	changes
+[2232] 1:33:55	okay
+[2233] 1:33:56	they did make some small changes
+[2234] 1:33:58	um they also made some
+[2235] 1:34:00	dodgy changes too
+[2236] 1:34:02	okay on the other hand the septuagint is
+[2237] 1:34:07	the greek translation of
+[2238] 1:34:10	of the old testament
+[2239] 1:34:13	and as it as a translation of the old
+[2240] 1:34:16	testament
+[2241] 1:34:18	they do make some word choices that
+[2242] 1:34:20	every translator has to do
+[2243] 1:34:23	for example
+[2244] 1:34:24	um
+[2245] 1:34:25	the septuagint is where we get the
+[2246] 1:34:28	translation the red c from
+[2247] 1:34:31	when they translate the yamsuf sea of
+[2248] 1:34:34	reeds that translation originates in the
+[2249] 1:34:37	septuagint and part of the reason they
+[2250] 1:34:39	translated it that way is because
+[2251] 1:34:43	the
+[2252] 1:34:43	yamsuf didn't exist anymore it
+[2253] 1:34:46	completely dried up
+[2254] 1:34:48	and become more or less a a desert
+[2255] 1:34:52	so
+[2256] 1:34:53	the septuagint often makes some word
+[2257] 1:34:55	choices
+[2258] 1:34:56	that you know
+[2259] 1:34:58	are understandable in their particular
+[2260] 1:35:00	time but
+[2261] 1:35:02	aren't
+[2262] 1:35:03	really not that good for a modern
+[2263] 1:35:05	translation
+[2264] 1:35:09	but where septuagint is really useful
+[2265] 1:35:12	is in text critical work
+[2266] 1:35:15	so when you do text critical work of the
+[2267] 1:35:17	old testament you generally take
+[2268] 1:35:21	um
+[2269] 1:35:22	the three
+[2270] 1:35:23	text types and i know there are text
+[2271] 1:35:25	critics that say there's no such thing
+[2272] 1:35:27	as text types
+[2273] 1:35:29	but they are broad trends
+[2274] 1:35:31	and you have to use some sort of jargon
+[2275] 1:35:33	when you want to get you know some
+[2276] 1:35:34	information out there so we're going to
+[2277] 1:35:36	use that jargon
+[2278] 1:35:38	okay
+[2279] 1:35:40	so
+[2280] 1:35:41	when you do text critical work what you
+[2281] 1:35:43	generally do is you take all the
+[2282] 1:35:45	available texts
+[2283] 1:35:46	you take your septuagint you take your
+[2284] 1:35:48	masoretic text you take your um
+[2285] 1:35:54	samaritan pentateuch
+[2286] 1:35:56	and you compare the texts
+[2287] 1:35:58	text by text
+[2288] 1:36:00	and then you come up with a reading
+[2289] 1:36:01	that's most likely given the
+[2290] 1:36:03	preponderance of evidence you've got
+[2291] 1:36:04	some dead sea scrolls throw them in too
+[2292] 1:36:06	so you see what what comes out with the
+[2293] 1:36:08	reading
+[2294] 1:36:09	so
+[2295] 1:36:12	so when you do text critical work each
+[2296] 1:36:14	of these has an important function
+[2297] 1:36:17	so
+[2298] 1:36:17	if i'm doing some text critical work
+[2299] 1:36:20	i use all three
+[2300] 1:36:23	or whatever ticks i haven't made
+[2301] 1:36:24	available i use a septuagint i use them
+[2302] 1:36:26	as a retic text
+[2303] 1:36:28	i use the samaritan pentateuch and i use
+[2304] 1:36:31	the dead sea scrolls where available
+[2305] 1:36:35	so i don't think one is superior to the
+[2306] 1:36:38	other
+[2307] 1:36:39	uh
+[2308] 1:36:42	i think
+[2309] 1:36:43	you need them all
+[2310] 1:36:44	you need them all if you're going to do
+[2311] 1:36:46	say
+[2312] 1:36:47	real scholarly work
+[2313] 1:36:49	now most of our bibles today are based
+[2314] 1:36:52	upon the masoretic text
+[2315] 1:36:54	whether that's the aleppo codex or
+[2316] 1:36:56	whether that's the leningrad codex
+[2317] 1:36:59	uh the king james version okay it's old
+[2318] 1:37:02	testament is based upon a copy of the
+[2319] 1:37:04	lenagrad codex
+[2320] 1:37:07	most modern old testaments are based on
+[2321] 1:37:10	as their base text
+[2322] 1:37:12	on a masoretic text of some kind
+[2323] 1:37:14	and that's because
+[2324] 1:37:17	it's complete
+[2325] 1:37:18	it is a complete old testament
+[2326] 1:37:20	the samaritan pentake only has the first
+[2327] 1:37:22	five books of the bible
+[2328] 1:37:23	so in order to do a translation of the
+[2329] 1:37:25	old testament you need a complete old
+[2330] 1:37:27	testament text
+[2331] 1:37:30	so i very much think that um it's not a
+[2332] 1:37:34	either or
+[2333] 1:37:35	but i do think that um if you're going
+[2334] 1:37:38	to try to get it as close to the
+[2335] 1:37:40	original as possible
+[2336] 1:37:43	um your readings are probably going to
+[2337] 1:37:44	start with the masoretic text and then
+[2338] 1:37:46	work from there okay
+[2339] 1:37:49	um
+[2340] 1:37:50	some some places the septuagints better
+[2341] 1:37:54	i think probably in the genealogies the
+[2342] 1:37:56	numerical systems that they used in say
+[2343] 1:37:58	genesis 11 much better than the
+[2344] 1:38:00	septuagint than masoretic text
+[2345] 1:38:02	okay
+[2346] 1:38:04	but in other places too maserati text is
+[2347] 1:38:06	better than septuagint so
+[2348] 1:38:08	you know it's six of one half a dozen of
+[2349] 1:38:10	the other
+[2350] 1:38:13	so anyway thank you very much for the
+[2351] 1:38:15	super chat very much appreciate it
+[2352] 1:38:27	okay
+[2353] 1:38:29	mouthwash for five dollars thank you for
+[2354] 1:38:31	the super chat
+[2355] 1:38:32	i can't believe that terror is really
+[2356] 1:38:34	terra
+[2357] 1:38:36	really
+[2358] 1:38:37	uh no textual variant says erkesh
+[2359] 1:38:42	uh
+[2360] 1:38:42	it says erkeshdeem
+[2361] 1:38:46	okay
+[2362] 1:38:48	it says erkesh deem
+[2363] 1:38:51	now think about that for a moment
+[2364] 1:38:54	who's the second best attested before
+[2365] 1:38:56	the patriarchs excluding hammurabi
+[2366] 1:39:02	oh that's cheating that's cheating
+[2367] 1:39:08	oh definitely cheating
+[2368] 1:39:11	your best friend just showed up
+[2369] 1:39:15	uh so
+[2370] 1:39:17	um
+[2371] 1:39:23	okay
+[2372] 1:39:25	well
+[2373] 1:39:27	um i think i think it's pretty strong
+[2374] 1:39:30	actually
+[2375] 1:39:31	um
+[2376] 1:39:33	now we have had some issues in some
+[2377] 1:39:36	biblical texts
+[2378] 1:39:38	where
+[2379] 1:39:39	because we are not dealing with a spaced
+[2380] 1:39:42	text
+[2381] 1:39:44	that
+[2382] 1:39:46	um
+[2383] 1:39:47	sometimes
+[2384] 1:39:48	a space is inserted like for example all
+[2385] 1:39:52	our modern masoretic texts have spaces
+[2386] 1:39:54	to isolate the words
+[2387] 1:39:56	this has led to some readings that are
+[2388] 1:39:58	not exactly fortunate
+[2389] 1:40:01	especially when it comes to stuff like
+[2390] 1:40:03	mesopotamian names
+[2391] 1:40:06	if you want more information on this
+[2392] 1:40:07	paul lawrence's book is excellent about
+[2393] 1:40:09	this
+[2394] 1:40:11	so by just moving the space into a
+[2395] 1:40:13	different place you get a completely
+[2396] 1:40:15	different reading
+[2397] 1:40:17	so i think this might have been a case
+[2398] 1:40:19	where
+[2399] 1:40:20	um rakesh and urquesh deem
+[2400] 1:40:25	are not necessarily of i mean urkesh
+[2401] 1:40:28	deen is a variant of erkesh
+[2402] 1:40:33	it could have been urkeshed which was
+[2403] 1:40:35	then mated that's a possibility
+[2404] 1:40:39	it could be that
+[2405] 1:40:41	it could be irkesh and dem it could be
+[2406] 1:40:44	another another way to read this
+[2407] 1:40:46	but i think it's just such an incredible
+[2408] 1:40:49	coincidence that we have er cash
+[2409] 1:40:53	and irkesh d
+[2410] 1:40:55	that's
+[2411] 1:40:56	that's that's just
+[2412] 1:40:58	too close to just ignore
+[2413] 1:41:00	that's just too close to ignore
+[2414] 1:41:05	so
+[2415] 1:41:08	um
+[2416] 1:41:09	i i think i think it's pretty strong
+[2417] 1:41:11	especially given the fact especially
+[2418] 1:41:12	given the fact that we have a date for
+[2419] 1:41:14	abraham
+[2420] 1:41:16	because we have a date for abraham that
+[2421] 1:41:18	comes directly after
+[2422] 1:41:21	like like 50 years after
+[2423] 1:41:24	uh terror of our cash
+[2424] 1:41:26	roughly
+[2425] 1:41:28	um
+[2426] 1:41:29	i think this is definitely something
+[2427] 1:41:31	that's that's
+[2428] 1:41:33	viable i think there's a credibility
+[2429] 1:41:35	here that's
+[2430] 1:41:37	um
+[2431] 1:41:37	this is there's enough evidence here
+[2432] 1:41:39	that i think that
+[2433] 1:41:41	i don't have any doubts here that
+[2434] 1:41:44	the terror of irkesh is a teru of urkesh
+[2435] 1:41:47	is
+[2436] 1:41:49	it isn't
+[2437] 1:41:50	and i don't i don't think that that
+[2438] 1:41:52	there's
+[2439] 1:41:52	any viable possibility here that
+[2440] 1:41:55	um
+[2441] 1:41:56	teru of urkish isn't terra of urkhashtim
+[2442] 1:42:00	so anyway
+[2443] 1:42:02	uh thank you for the super chat
+[2444] 1:42:04	um just though the linguistic parallels
+[2445] 1:42:06	are just too close they're just too
+[2446] 1:42:07	close to to ignore this so
+[2447] 1:42:12	okay uh next super chat is tony g from
+[2448] 1:42:15	1999. thank you very much for the super
+[2449] 1:42:17	chat very much appreciate it
+[2450] 1:42:22	did abraham and isaac really fear kings
+[2451] 1:42:25	would kill them for their wives
+[2452] 1:42:31	well considering that kings in the
+[2453] 1:42:33	ancient world often acted like mob
+[2454] 1:42:35	bosses
+[2455] 1:42:38	possible
+[2456] 1:42:39	or did they know that they would get
+[2457] 1:42:41	wealthy by duping the kings to take them
+[2458] 1:42:43	as sisters
+[2459] 1:42:44	porking abimelech got worked by
+[2460] 1:42:47	by abe and ike
+[2461] 1:42:48	[Laughter]
+[2462] 1:42:52	well
+[2463] 1:42:55	that's
+[2464] 1:42:56	that's sort of is is what uh you know
+[2465] 1:42:58	here we're we're asking about intent
+[2466] 1:43:02	and it's always difficult here to to say
+[2467] 1:43:05	what was their intent here
+[2468] 1:43:07	i don't think
+[2469] 1:43:09	i don't think the text really tells us
+[2470] 1:43:12	what that their intent was to build
+[2471] 1:43:15	abimelech or pharaoh of their money and
+[2472] 1:43:18	slaves and all that stuff
+[2473] 1:43:20	so i don't think that was necessarily
+[2474] 1:43:22	the intent
+[2475] 1:43:25	but kings did act like mob bosses
+[2476] 1:43:28	especially uh kings and kanan
+[2477] 1:43:31	okay
+[2478] 1:43:32	a king and kanan could act like
+[2479] 1:43:34	you know
+[2480] 1:43:36	if he saw something he wanted he could
+[2481] 1:43:37	take it
+[2482] 1:43:39	so i i think that's that's a that's a
+[2483] 1:43:41	possibility
+[2484] 1:43:42	and um i hear
+[2485] 1:43:44	um i don't necessarily doubt the text
+[2486] 1:43:46	here
+[2487] 1:43:47	uh but
+[2488] 1:43:50	i do think that uh
+[2489] 1:43:52	that what you suggest here is also
+[2490] 1:43:54	possible as well even though we don't
+[2491] 1:43:56	have
+[2492] 1:43:58	we're getting into empty conjecture at
+[2493] 1:43:59	this point
+[2494] 1:44:01	where
+[2495] 1:44:03	we're ascribing a motive without
+[2496] 1:44:05	necessarily having the evidence for that
+[2497] 1:44:07	motive
+[2498] 1:44:09	so
+[2499] 1:44:12	yeah mr empty conjecture should show up
+[2500] 1:44:15	here you know
+[2501] 1:44:19	because that's really what what we're
+[2502] 1:44:21	talking about this point is is empty
+[2503] 1:44:22	conjecture
+[2504] 1:44:24	so
+[2505] 1:44:25	um
+[2506] 1:44:26	[Laughter]
+[2507] 1:44:28	the other thing is here is is a biblic
+[2508] 1:44:32	um
+[2509] 1:44:33	the
+[2510] 1:44:34	didn't get worked over twice
+[2511] 1:44:37	okay we should be careful about that too
+[2512] 1:44:39	but there's that there's several
+[2513] 1:44:41	abimelechs
+[2514] 1:44:42	okay
+[2515] 1:44:44	there's a lot of abimelechs in the um
+[2516] 1:44:48	in the levant
+[2517] 1:44:50	abimelech was an exceptionally common
+[2518] 1:44:52	name
+[2519] 1:44:53	for for kings and levant
+[2520] 1:44:57	uh i think we record something like
+[2521] 1:45:01	20 abimelechs in the ancient near east
+[2522] 1:45:06	i mean really really common
+[2523] 1:45:09	and essentially it's it's the word
+[2524] 1:45:11	abimelech the name abimelech means
+[2525] 1:45:14	my father is king
+[2526] 1:45:16	so any prince is going to be named i
+[2527] 1:45:18	mean a lot of princes are going to be
+[2528] 1:45:20	named abimelech
+[2529] 1:45:22	well because if your father is king
+[2530] 1:45:24	likely you're going to be king too
+[2531] 1:45:27	funny how that works
+[2532] 1:45:29	um
+[2533] 1:45:31	so it's not the same abimelech getting
+[2534] 1:45:34	worked over by both abraham and and
+[2535] 1:45:36	isaac they're different abimelechs
+[2536] 1:45:41	it's the same lie though
+[2537] 1:45:45	funny that too
+[2538] 1:45:48	so
+[2539] 1:45:50	uh i don't think i don't think this was
+[2540] 1:45:51	a get rich quick scheme i don't think
+[2541] 1:45:53	this was um intentionally trying to
+[2542] 1:45:55	build them
+[2543] 1:45:57	and i don't think it's the same a bimba
+[2544] 1:45:59	like
+[2545] 1:45:59	but i do think that
+[2546] 1:46:02	to go beyond the text here would be as i
+[2547] 1:46:04	say sterile conjecture so anyway i hope
+[2548] 1:46:07	that helps thank you very much for the
+[2549] 1:46:08	super chat very much appreciated
+[2550] 1:46:13	okay
+[2551] 1:46:26	uh the camel leopard for five dollars
+[2552] 1:46:28	thank you very much for the super chat
+[2553] 1:46:31	is there any mythological connection
+[2554] 1:46:32	between the milky way and the bovine sky
+[2555] 1:46:35	goddess of egypt no
+[2556] 1:46:39	um
+[2557] 1:46:41	we
+[2558] 1:46:42	i i think you're talking about hathor
+[2559] 1:46:44	here if i'm if i'm guessing correctly
+[2560] 1:46:47	and she wasn't necessarily a a sky
+[2561] 1:46:50	goddess um she was a fertility goddess
+[2562] 1:46:53	now there is a sky goddess whose name is
+[2563] 1:46:56	newt
+[2564] 1:46:57	you know she's um
+[2565] 1:46:59	she's the mother of the five of siren
+[2566] 1:47:01	gods
+[2567] 1:47:03	um
+[2568] 1:47:05	her husband was the earth gab okay
+[2569] 1:47:09	and
+[2570] 1:47:10	we typically we see when we see
+[2571] 1:47:12	portraits of her
+[2572] 1:47:13	in tombs she is portrayed like the milky
+[2573] 1:47:16	way
+[2574] 1:47:17	so it we we do see that represented in
+[2575] 1:47:20	tombs where newt is the milky way
+[2576] 1:47:25	so
+[2577] 1:47:26	essentially you know that's that's and
+[2578] 1:47:28	that's an interesting thing when we look
+[2579] 1:47:30	up in this in the sky
+[2580] 1:47:32	and you know you do see the milky way
+[2581] 1:47:34	and it's a white strip and uh we can't
+[2582] 1:47:37	most of us can't see it
+[2583] 1:47:38	man it's surprising how many people
+[2584] 1:47:40	today have never seen the milky way
+[2585] 1:47:43	because of light pollution
+[2586] 1:47:45	um
+[2587] 1:47:47	you know
+[2588] 1:47:48	my wife and i saw it when we were living
+[2589] 1:47:49	in nevada i saw it recently when i was
+[2590] 1:47:52	at abu simbel i stayed the night and wow
+[2591] 1:47:55	i've never seen the milky way so clear
+[2592] 1:47:57	as a at abu simbel i mean just
+[2593] 1:47:59	amazing i mean this is this white strip
+[2594] 1:48:02	across the sky
+[2595] 1:48:05	so uh the egyptians did sort of picture
+[2596] 1:48:08	that they visualize that as the body of
+[2597] 1:48:11	the goddess newt
+[2598] 1:48:15	so
+[2599] 1:48:15	there's no necessary connection between
+[2600] 1:48:18	the milky way and a bovine deity but
+[2601] 1:48:21	there is a egyptian connection between
+[2602] 1:48:24	the milky way and the goddess newt
+[2603] 1:48:27	and she was portrayed as a woman
+[2604] 1:48:30	so anyway i hope that helped thank you
+[2605] 1:48:31	very much for the super chat very much
+[2606] 1:48:33	appreciate it interesting question
+[2607] 1:48:37	okay
+[2608] 1:48:42	uh linguist ammo for five dollars thank
+[2609] 1:48:44	you very much the super chat
+[2610] 1:48:46	in exodus 7 9 the masoretic text has the
+[2611] 1:48:50	word tanim
+[2612] 1:48:51	but the
+[2613] 1:48:53	septuagint and the same verse
+[2614] 1:48:55	is dracon
+[2615] 1:48:57	is it absent in the dead sea scroll is
+[2616] 1:49:00	it serpent or not and i would have to
+[2617] 1:49:02	look that up
+[2618] 1:49:03	to
+[2619] 1:49:05	to save for that now maybe i if i'm
+[2620] 1:49:08	lucky here
+[2621] 1:49:10	the i can look this up quickly it's not
+[2622] 1:49:14	something that i would normally do in a
+[2623] 1:49:15	live stream here
+[2624] 1:49:17	uh because this does take a little time
+[2625] 1:49:20	sometimes to look up
+[2626] 1:49:22	but if we get really lucky here
+[2627] 1:49:25	and of course the squirrels in my uh the
+[2628] 1:49:28	hamsters in my nas are starting to spin
+[2629] 1:49:30	up because i've got a really slow nas
+[2630] 1:49:32	here
+[2631] 1:49:34	that's where i keep my my vast
+[2632] 1:49:36	electronic library
+[2633] 1:49:40	oh okay
+[2634] 1:49:44	let's see what the dead sea scrolls say
+[2635] 1:49:50	that up
+[2636] 1:49:52	seven nine
+[2637] 1:50:11	exodus
+[2638] 1:50:14	seven
+[2639] 1:50:19	of course microtext
+[2640] 1:50:21	help
+[2641] 1:50:23	okay
+[2642] 1:50:25	exodus seven nine we have one dead sea
+[2643] 1:50:27	scroll
+[2644] 1:50:29	or exodus seven nine
+[2645] 1:50:31	which is four q
+[2646] 1:50:34	genesis nexus
+[2647] 1:50:37	a
+[2648] 1:50:40	okay
+[2649] 1:50:40	[Music]
+[2650] 1:50:45	and then we have to look at where that
+[2651] 1:50:46	text is in
+[2652] 1:50:53	and that text is in
+[2653] 1:51:00	or q exit one that's in volume 12.
+[2654] 1:51:05	you can say see why it takes a while to
+[2655] 1:51:07	to look up anything with a dead sea
+[2656] 1:51:09	scroll because
+[2657] 1:51:10	you've got to cross-reference you know
+[2658] 1:51:12	half dozen volumes sometimes
+[2659] 1:51:15	so
+[2660] 1:51:15	this is usually not practical to do in a
+[2661] 1:51:17	live stream but your question here is
+[2662] 1:51:20	really specific
+[2663] 1:51:22	so
+[2664] 1:51:25	this fragment
+[2665] 1:51:26	got here
+[2666] 1:51:30	hey
+[2667] 1:51:34	okay
+[2668] 1:51:37	seven five three okay i found the
+[2669] 1:51:39	fragment
+[2670] 1:51:41	and
+[2671] 1:51:43	look it up
+[2672] 1:51:46	seven nine exodus
+[2673] 1:51:54	seven
+[2674] 1:51:56	nine
+[2675] 1:52:02	so last verse
+[2676] 1:52:06	so
+[2677] 1:52:08	10.
+[2678] 1:52:19	ruin my
+[2679] 1:52:25	time
+[2680] 1:52:44	yep and this is what happens sometimes
+[2681] 1:52:47	uh
+[2682] 1:52:49	it's part of a lacuna your particular
+[2683] 1:52:51	section here
+[2684] 1:52:53	is part of a lacuna
+[2685] 1:52:55	so
+[2686] 1:52:56	while uh exit part of exodus 79
+[2687] 1:53:01	survived in the dead sea scrolls
+[2688] 1:53:04	the last bit didn't
+[2689] 1:53:06	and this is one of the this is one of
+[2690] 1:53:08	the
+[2691] 1:53:09	the hard knocks of using the dead sea
+[2692] 1:53:11	scrolls is
+[2693] 1:53:13	they have been sometimes equipped to be
+[2694] 1:53:14	the dead sea scraps
+[2695] 1:53:17	because you only get pieces of text
+[2696] 1:53:21	so
+[2697] 1:53:22	it did you're you're not going to find
+[2698] 1:53:24	it there because it didn't survive it
+[2699] 1:53:26	was part of the fragment that didn't
+[2700] 1:53:27	survive
+[2701] 1:53:29	so while i found the text
+[2702] 1:53:31	at least the piece of that text that
+[2703] 1:53:33	that survived
+[2704] 1:53:35	that particular fragment does not have
+[2705] 1:53:37	that last piece
+[2706] 1:53:40	so your best your best option at this
+[2707] 1:53:43	point is to look it up in the samaritan
+[2708] 1:53:45	pentateuch
+[2709] 1:53:47	and see what it says
+[2710] 1:53:50	and if the samaritan pentateuch also
+[2711] 1:53:54	says tananim
+[2712] 1:53:56	then what you can do here is then you
+[2713] 1:53:57	can just say okay
+[2714] 1:54:00	um this a septuagint using dracon is
+[2715] 1:54:03	essentially a translation of tana nim
+[2716] 1:54:06	and i from my what i best recall
+[2717] 1:54:11	the samaritan pentateuch and i'm not
+[2718] 1:54:13	going to look it up here because i've
+[2719] 1:54:14	already used enough time to do one dead
+[2720] 1:54:17	sea scroll search
+[2721] 1:54:19	um
+[2722] 1:54:21	i believe it also says tanani
+[2723] 1:54:23	okay
+[2724] 1:54:25	so
+[2725] 1:54:27	um
+[2726] 1:54:28	you're not going to find it in the dead
+[2727] 1:54:29	sea scrolls it just didn't survive
+[2728] 1:54:31	so
+[2729] 1:54:32	um
+[2730] 1:54:34	i hope that helped um you weren't you
+[2731] 1:54:37	weren't wrong in thinking you couldn't
+[2732] 1:54:38	find it because it didn't survive
+[2733] 1:54:41	but that particular text did
+[2734] 1:54:43	we just got the middle of the text not
+[2735] 1:54:45	the beginning or the end
+[2736] 1:54:47	so and that's just that's just the
+[2737] 1:54:49	that's just the ups and downs of using
+[2738] 1:54:50	the dead sea scrolls so anyway
+[2739] 1:54:53	thank you very much for the super chat
+[2740] 1:54:54	uh very much appreciate it
+[2741] 1:54:57	um
+[2742] 1:54:58	uh i did answer the question it's just
+[2743] 1:55:00	unfortunately sometimes it's
+[2744] 1:55:02	well it ain't there
+[2745] 1:55:05	because
+[2746] 1:55:06	mice or mold got to it first
+[2747] 1:55:09	so thank you very much very much
+[2748] 1:55:11	appreciate it
+[2749] 1:55:14	okay
+[2750] 1:55:15	and
+[2751] 1:55:26	all right cataphract three uh for five
+[2752] 1:55:28	dollars thank you very much for the
+[2753] 1:55:29	super chat good to see you here tonight
+[2754] 1:55:32	uh was egyptian necromancy outlawed no
+[2755] 1:55:37	also what were the k its characteristics
+[2756] 1:55:39	what did they do to get knowledge from
+[2757] 1:55:40	the dead
+[2758] 1:55:42	okay
+[2759] 1:55:43	uh we have to kind of understand
+[2760] 1:55:46	um
+[2761] 1:55:47	that in ancient egypt
+[2762] 1:55:50	necromancy wasn't outlawed
+[2763] 1:55:52	because
+[2764] 1:55:54	talking to the dead wasn't outlawed it
+[2765] 1:55:56	was normal
+[2766] 1:55:58	everyone in ancient egypt talked to the
+[2767] 1:55:59	dead
+[2768] 1:56:01	and we have to kind of understand that
+[2769] 1:56:02	this is part of the nature of say
+[2770] 1:56:05	the funerary culture of ancient egypt
+[2771] 1:56:09	um
+[2772] 1:56:10	in other parts of the world and even
+[2773] 1:56:13	other parts of the ancient near east
+[2774] 1:56:15	necromancy was outlawed because it
+[2775] 1:56:17	involved dragging out a skeleton
+[2776] 1:56:19	or a body and you know doing something
+[2777] 1:56:22	to it
+[2778] 1:56:23	to um to do a form of
+[2779] 1:56:26	divination people didn't have to do that
+[2780] 1:56:29	in ancient egypt bodies were preserved
+[2781] 1:56:31	and mummified
+[2782] 1:56:35	so because they were mummified and
+[2783] 1:56:36	preserved and people went to the grave
+[2784] 1:56:38	once a year
+[2785] 1:56:41	of their recently deceased relatives to
+[2786] 1:56:43	have a picnic lunch and talk to the dead
+[2787] 1:56:46	okay
+[2788] 1:56:48	that's what they did they took the hope
+[2789] 1:56:50	to get the whole family together get
+[2790] 1:56:52	yourself a picnic lunch
+[2791] 1:56:54	some olive oil some hummus some nice
+[2792] 1:56:57	bread
+[2793] 1:57:02	other places you were burned alive for
+[2794] 1:57:04	being a necromancer but in egypt you had
+[2795] 1:57:06	a picnic
+[2796] 1:57:10	and you basically took your picnic lunch
+[2797] 1:57:11	and you went to the tomb of your
+[2798] 1:57:13	ancestors
+[2799] 1:57:14	you had your picnic lunch in front of
+[2800] 1:57:16	the tomb
+[2801] 1:57:17	and then you talked to your ancestors
+[2802] 1:57:20	you know
+[2803] 1:57:21	if the body and the the cough was still
+[2804] 1:57:24	there you'd talk to the coffin
+[2805] 1:57:27	if they had been loaded already yet talk
+[2806] 1:57:29	to the your ancestor who's portrayed on
+[2807] 1:57:32	the walls
+[2808] 1:57:33	or the votive statue that remained
+[2809] 1:57:36	okay
+[2810] 1:57:38	so there was no prohibition on
+[2811] 1:57:41	necromancy
+[2812] 1:57:45	oh
+[2813] 1:57:46	they have the duat says
+[2814] 1:57:49	gotta feed those cause yes you do
+[2815] 1:57:51	[Laughter]
+[2816] 1:57:56	yes um
+[2817] 1:57:58	so um absolutely
+[2818] 1:58:01	uh you know
+[2819] 1:58:03	there was there was it was not
+[2820] 1:58:04	prohibited practice
+[2821] 1:58:06	uh people did expect a child to be
+[2822] 1:58:09	visited by their ancestors
+[2823] 1:58:11	by the dead
+[2824] 1:58:12	uh they were expected they expected to
+[2825] 1:58:14	if they talk to their deceased you know
+[2826] 1:58:17	they expect to get dreams from their
+[2827] 1:58:18	ancestors
+[2828] 1:58:20	you know
+[2829] 1:58:21	uh this is where things like the um for
+[2830] 1:58:24	example the um the dream book uh papyrus
+[2831] 1:58:27	chester bd3 comes in
+[2832] 1:58:30	like people will uh were expecting say
+[2833] 1:58:33	okay
+[2834] 1:58:34	granddad died you know you go to grand
+[2835] 1:58:36	dads too and you go you know should i
+[2836] 1:58:38	marry this woman
+[2837] 1:58:40	and
+[2838] 1:58:41	basically granddad shows up in your
+[2839] 1:58:43	dream
+[2840] 1:58:45	and says
+[2841] 1:58:46	here
+[2842] 1:58:47	have have an egg
+[2843] 1:58:49	and you look it up in the green book and
+[2844] 1:58:51	and it tells you
+[2845] 1:58:53	hey you're going to meet someone that's
+[2846] 1:58:54	going to make your life hell run
+[2847] 1:58:58	and then you get that you get that
+[2848] 1:59:00	that engagement in adults
+[2849] 1:59:02	lickety-split because granddad told you
+[2850] 1:59:04	so
+[2851] 1:59:04	okay
+[2852] 1:59:07	so you know that's what they expected so
+[2853] 1:59:10	necromancy was
+[2854] 1:59:12	wasn't prohibited in egypt it was
+[2855] 1:59:13	normalized
+[2856] 1:59:15	he was really normalized
+[2857] 1:59:17	and everybody did it
+[2858] 1:59:20	absolutely everybody did it it was just
+[2859] 1:59:22	normally ancient egypt
+[2860] 1:59:27	but the way the dead would talk back
+[2861] 1:59:29	would not be from say
+[2862] 1:59:32	the tomb itself or the coffin itself it
+[2863] 1:59:34	would usually be through the process of
+[2864] 1:59:36	dreams
+[2865] 1:59:38	so um
+[2866] 1:59:40	so that sort of gives you an idea of um
+[2867] 1:59:43	what necromancy was like in ancient
+[2868] 1:59:45	egypt was it completely normal
+[2869] 1:59:48	nobody thought anything of it
+[2870] 1:59:50	anything wrong about it
+[2871] 1:59:51	it was just totally normal
+[2872] 1:59:53	something people did every day
+[2873] 1:59:55	we have to understand that in ancient
+[2874] 1:59:57	egypt people thought that they walked
+[2875] 1:59:59	alongside the ancestors of the dead
+[2876] 2:00:03	you know they lived in a world of
+[2877] 2:00:04	spirits
+[2878] 2:00:06	you know the dead were all around you
+[2879] 2:00:07	demons were all around you imps were all
+[2880] 2:00:09	around you gods were all around you
+[2881] 2:00:12	you it was just part of the uh part of
+[2882] 2:00:15	the environment
+[2883] 2:00:18	so you know understanding that gives you
+[2884] 2:00:20	a great appreciation for how they viewed
+[2885] 2:00:22	things
+[2886] 2:00:23	so anyway thank you very much for that
+[2887] 2:00:25	super chat fun super chat that was an
+[2888] 2:00:27	interesting question um very fun
+[2889] 2:00:30	uh thank you very much for that super
+[2890] 2:00:31	chat very much appreciated
+[2891] 2:00:47	oh i'm going to take this one from kenny
+[2892] 2:00:50	dr falk fender telecaster fender strat
+[2893] 2:00:53	telecaster
+[2894] 2:00:55	yeah definitely the telecaster over the
+[2895] 2:00:57	strat i don't like the strap i just
+[2896] 2:00:59	don't like the way the strat sounds
+[2897] 2:01:01	so i'll i'll take it i'll take a
+[2898] 2:01:02	telecaster any day over a strat
+[2899] 2:01:05	okay with that diversion
+[2900] 2:01:09	[Laughter]
+[2901] 2:01:13	okay uh jamie russell for two dollars
+[2902] 2:01:15	thank you very much for the super chat
+[2903] 2:01:17	is the 70 week of g is the 70 week jesus
+[2904] 2:01:21	or the antichrist
+[2905] 2:01:23	okay
+[2906] 2:01:26	and for that we have to go to daniel now
+[2907] 2:01:28	in the future
+[2908] 2:01:30	do tell me which verse that comes from
+[2909] 2:01:34	because it's very hard to get a
+[2910] 2:01:37	look things up on
+[2911] 2:01:39	on the fly like this
+[2912] 2:01:42	so
+[2913] 2:01:44	i do have a notes in daniel so that
+[2914] 2:01:46	helps me to narrow it down but
+[2915] 2:01:49	okay
+[2916] 2:01:51	but
+[2917] 2:01:52	it's it would be a lot easier if you
+[2918] 2:01:54	gave me the exact verse in the future so
+[2919] 2:01:57	please keep that in mind
+[2920] 2:02:04	okay so let's get the
+[2921] 2:02:07	up here
+[2922] 2:02:13	now which says you know uh daniel
+[2923] 2:02:16	chapter 9 verse 24
+[2924] 2:02:18	70 weeks have been decreed for your
+[2925] 2:02:20	people and your holy city
+[2926] 2:02:22	to finish the transgression to make it
+[2927] 2:02:24	into sin to make atonement for iniquity
+[2928] 2:02:26	to bring everlasting righteousness to
+[2929] 2:02:28	seal of vision and prophecy and to
+[2930] 2:02:30	anoint the most holy place okay
+[2931] 2:02:34	generally overall good things
+[2932] 2:02:36	so you are to know and discern that from
+[2933] 2:02:38	the issuing of a decree to rebuild and
+[2934] 2:02:40	destroy uh just restore and rebuild
+[2935] 2:02:43	jerusalem until messiah the prince will
+[2936] 2:02:46	be 7 weeks and 62 weeks it will be built
+[2937] 2:02:50	again with plaza and moat even in times
+[2938] 2:02:52	of distress
+[2939] 2:02:54	this is of course referring to the
+[2940] 2:02:56	decree of ezra nehemiah
+[2941] 2:03:01	so you are to know and discern that from
+[2942] 2:03:03	the uh sorry um
+[2943] 2:03:06	and then after 62 weeks the messiah will
+[2944] 2:03:08	be cut off and have nothing
+[2945] 2:03:10	and the people of the prince who is to
+[2946] 2:03:12	come will destroy the city and the
+[2947] 2:03:14	sanctuary
+[2948] 2:03:15	and its end will come with a flood even
+[2949] 2:03:18	to the end there will be war desolations
+[2950] 2:03:20	and determines
+[2951] 2:03:22	and he
+[2952] 2:03:24	okay the antecedent here
+[2953] 2:03:26	is um essentially the prince to come
+[2954] 2:03:30	will make a firm covenant with many for
+[2955] 2:03:32	one week
+[2956] 2:03:34	but in the middle of the one week he
+[2957] 2:03:35	will put a stop to the sacrifice and the
+[2958] 2:03:37	grain offering
+[2959] 2:03:39	yeah jesus christ will never do that
+[2960] 2:03:41	that's not something messiah does
+[2961] 2:03:44	messiah does not put a stop to the
+[2962] 2:03:45	sacrifice or the grain offering
+[2963] 2:03:48	and on the wing of abominations and
+[2964] 2:03:49	christ doesn't do abominations either
+[2965] 2:03:52	okay
+[2966] 2:03:54	that's just
+[2967] 2:03:55	abominations we have to understand that
+[2968] 2:03:56	this is this is the hebrew word toevo
+[2969] 2:03:59	um
+[2970] 2:04:01	i think or is it something else here
+[2971] 2:04:04	look at the hebrew here just a second
+[2972] 2:04:27	thanks
+[2973] 2:04:38	all right it is uh
+[2974] 2:04:47	detestable things
+[2975] 2:04:49	testable things
+[2976] 2:04:52	so it's not toevo but it's detestable
+[2977] 2:04:54	things
+[2978] 2:04:57	so
+[2979] 2:04:59	messiah is not going to do detestable
+[2980] 2:05:00	things
+[2981] 2:05:02	just
+[2982] 2:05:02	daddy that's that's not what messiah
+[2983] 2:05:04	does okay
+[2984] 2:05:07	so even until the end until it con
+[2985] 2:05:10	complete destruction
+[2986] 2:05:13	one that is decreed is poured out
+[2987] 2:05:15	on the one who makes desolate okay
+[2988] 2:05:20	so
+[2989] 2:05:22	so what we got here in that final week
+[2990] 2:05:24	is is essentially sort of a compressed
+[2991] 2:05:27	series of events
+[2992] 2:05:29	um you know the prince that is to come
+[2993] 2:05:31	he will make a firm covenant for with
+[2994] 2:05:32	many for one week
+[2995] 2:05:34	knows here the words many not all
+[2996] 2:05:37	but in the middle of the week he'll put
+[2997] 2:05:38	stop the sacrifice in the green offering
+[2998] 2:05:41	something messiah doesn't do
+[2999] 2:05:43	on the wing of abominations will come
+[3000] 2:05:45	the one who makes
+[3001] 2:05:47	okay
+[3002] 2:05:49	um you know this is the abomination that
+[3003] 2:05:51	makes desolate
+[3004] 2:05:54	okay and
+[3005] 2:05:55	that is say um
+[3006] 2:05:58	you know identified as being the
+[3007] 2:06:00	antichrist in the book of revelation
+[3008] 2:06:02	even until a complete destruction one
+[3009] 2:06:05	that is decreed is poured out on the one
+[3010] 2:06:07	who makes it desolate
+[3011] 2:06:10	okay
+[3012] 2:06:12	so the seventh week is talking about the
+[3013] 2:06:14	activities of the antichrist
+[3014] 2:06:17	not of jesus christ
+[3015] 2:06:20	because that one last week
+[3016] 2:06:22	there is no way
+[3017] 2:06:24	jesus would ever do any of these things
+[3018] 2:06:27	okay just no way
+[3019] 2:06:31	gods
+[3020] 2:06:33	god would not be at war with god here
+[3021] 2:06:35	you know as jesus christ the second
+[3022] 2:06:37	person of the trinity would not be doing
+[3023] 2:06:39	these things
+[3024] 2:06:40	um
+[3025] 2:06:41	these detestable things um against uh
+[3026] 2:06:44	god the father
+[3027] 2:06:46	so this is something that's that's
+[3028] 2:06:49	only a real wicked
+[3029] 2:06:52	entity would do
+[3030] 2:06:54	so i i don't think there's any question
+[3031] 2:06:56	here that the 70th week
+[3032] 2:06:58	is referring to the activities of the
+[3033] 2:07:00	antichrist
+[3034] 2:07:02	but i hope that answers your question
+[3035] 2:07:04	thank you very much for the super chat
+[3036] 2:07:06	okay
+[3037] 2:07:17	uh slim 2k uh for five dollars thank you
+[3038] 2:07:20	very much for the super chat
+[3039] 2:07:22	where do you think the egyptian gods
+[3040] 2:07:24	came from
+[3041] 2:07:25	exaggerated stories of men maybe fallen
+[3042] 2:07:28	angels maybe the gods of a gap situation
+[3043] 2:07:31	um
+[3044] 2:07:34	it's interesting because we actually
+[3045] 2:07:36	have
+[3046] 2:07:37	sort of a really good grasp
+[3047] 2:07:41	of the development of the egyptian
+[3048] 2:07:43	pantheon
+[3049] 2:07:44	we don't actually have this for a lot of
+[3050] 2:07:46	cultures
+[3051] 2:07:48	the development of the egyptian pantheon
+[3052] 2:07:50	is actually really well
+[3053] 2:07:52	known um and some of it is because we
+[3054] 2:07:56	have a lot of archaeolog religious
+[3055] 2:07:58	archaeological remains from egypt
+[3056] 2:08:01	we know that some of the gods of egypt
+[3057] 2:08:04	are very old they go back to the
+[3058] 2:08:06	earliest days some pre-dynastic times
+[3059] 2:08:08	you know um god's like horus
+[3060] 2:08:11	um gods like isis and hathor
+[3061] 2:08:14	even seth these are pre-dynastic deities
+[3062] 2:08:19	we also know that say for example
+[3063] 2:08:22	some deities are um
+[3064] 2:08:25	come along a little later
+[3065] 2:08:27	like for example uh the hair god
+[3066] 2:08:30	comes along in the early dynastic period
+[3067] 2:08:33	and into say the early old kingdom
+[3068] 2:08:37	we know some gods are get prominent
+[3069] 2:08:42	start to begin prominence in the old
+[3070] 2:08:44	kingdom like osiris he's actually kind
+[3071] 2:08:46	of a little later to the game
+[3072] 2:08:49	on the other hand
+[3073] 2:08:50	um
+[3074] 2:08:51	gods like ball
+[3075] 2:08:54	are very late comparatively you know um
+[3076] 2:08:57	he's introduced from kanan
+[3077] 2:08:59	um bess same deal he's he's he comes in
+[3078] 2:09:02	during the middle kingdom
+[3079] 2:09:04	and he's an import
+[3080] 2:09:07	so
+[3081] 2:09:08	we do see that um that what we have here
+[3082] 2:09:11	is a sort of a combination of little
+[3083] 2:09:13	tribal gods or sorry local gods
+[3084] 2:09:16	gods of a specific location
+[3085] 2:09:19	combined with
+[3086] 2:09:21	um the development of
+[3087] 2:09:24	from animism
+[3088] 2:09:26	basically where um
+[3089] 2:09:29	spirits are sorry forces of nature are
+[3090] 2:09:32	given animal-like forms
+[3091] 2:09:36	to say more complex forms of deity
+[3092] 2:09:39	that uh that come along say a little
+[3093] 2:09:42	later like for example khan's moon god
+[3094] 2:09:44	very late um you know we don't see him
+[3095] 2:09:48	we don't see him emerge
+[3096] 2:09:49	until say uh dynasty 11.
+[3097] 2:09:54	so
+[3098] 2:09:54	um and same with moot
+[3099] 2:09:56	we don't see it all until like dynasty
+[3100] 2:09:58	12.
+[3101] 2:09:59	dynasty 12 dynasty 13 so she's really
+[3102] 2:10:02	late to the game
+[3103] 2:10:04	so this is one of those things where we
+[3104] 2:10:07	um i don't think we can ascribe it
+[3105] 2:10:09	specifically to
+[3106] 2:10:12	to
+[3107] 2:10:13	say fallen angels or fallen spirits you
+[3108] 2:10:15	know i know heiser loves this this
+[3109] 2:10:18	council of gods being
+[3110] 2:10:20	um the gods of the ancient world but we
+[3111] 2:10:22	start having difficulties here
+[3112] 2:10:24	especially as the egyptian pantheon
+[3113] 2:10:26	multiplies
+[3114] 2:10:28	and it's the egyptian pantheon only gets
+[3115] 2:10:32	bigger over time
+[3116] 2:10:34	you know
+[3117] 2:10:36	the whole idea of there being like 400
+[3118] 2:10:39	plus gods
+[3119] 2:10:40	by the roughly the third intermediate
+[3120] 2:10:43	period
+[3121] 2:10:44	now we see that the pantheon is is goes
+[3122] 2:10:47	through this process of growth and
+[3123] 2:10:49	contraction over time but ultimately
+[3124] 2:10:51	grows
+[3125] 2:10:55	so i don't take a heiser's view that's
+[3126] 2:10:58	fallen angels
+[3127] 2:11:00	but i also can't deny too that there's
+[3128] 2:11:02	something demonic behind it all
+[3129] 2:11:05	but that's really different than what
+[3130] 2:11:08	he's suggesting which is that the
+[3131] 2:11:09	assignment
+[3132] 2:11:11	of
+[3133] 2:11:14	the lesser gods
+[3134] 2:11:16	to
+[3135] 2:11:17	specific deities is the cause of those
+[3136] 2:11:20	deities
+[3137] 2:11:21	and i don't think that
+[3138] 2:11:23	um i think every sort of locality
+[3139] 2:11:27	you know village had its own gods
+[3140] 2:11:30	uh some were shared between villages
+[3141] 2:11:32	but as egypt unified
+[3142] 2:11:35	it decided to
+[3143] 2:11:37	to just sort of
+[3144] 2:11:39	bundle them you know oh your village has
+[3145] 2:11:41	a god
+[3146] 2:11:42	my village is a different god
+[3147] 2:11:44	well let's let's change exchange gods
+[3148] 2:11:46	we'll have both
+[3149] 2:11:49	and that seems to be how the egyptians
+[3150] 2:11:51	sort of viewed polytheism
+[3151] 2:11:53	is that you know they were just happy to
+[3152] 2:11:56	add another one
+[3153] 2:11:57	in fact the only time the egyptians seem
+[3154] 2:11:59	to have um
+[3155] 2:12:01	railed against a another god being
+[3156] 2:12:04	entered
+[3157] 2:12:05	add to their pantheon was if the
+[3158] 2:12:08	acceptance of that god
+[3159] 2:12:10	somehow disrupted the polytheistic
+[3160] 2:12:11	system
+[3161] 2:12:14	this is why they didn't like atonism
+[3162] 2:12:16	they didn't like atonism because
+[3163] 2:12:18	athenism said well
+[3164] 2:12:20	you can only worship one god
+[3165] 2:12:22	you know the aton
+[3166] 2:12:23	all the other gods are just
+[3167] 2:12:24	manifestations of the atom
+[3168] 2:12:27	that rubbed egyptians the wrong way
+[3169] 2:12:32	so
+[3170] 2:12:35	so i think here that um the best
+[3171] 2:12:38	explanation is that you know
+[3172] 2:12:41	is that there's many
+[3173] 2:12:42	reasons why
+[3174] 2:12:44	uh and where the egyptian gods came from
+[3175] 2:12:47	you know some are specifically from
+[3176] 2:12:50	uh southern egypt some of them are from
+[3177] 2:12:52	some northern egypt you know there's
+[3178] 2:12:54	geography geographic differences too
+[3179] 2:12:57	um
+[3180] 2:12:58	like for example um the wajam and the
+[3181] 2:13:01	neck bet you know they come from
+[3182] 2:13:03	different parts of um
+[3183] 2:13:06	like the watch it is from bhuto
+[3184] 2:13:08	in the north you know where the neckbed
+[3185] 2:13:10	is from the south
+[3186] 2:13:12	and both of those particular goddesses
+[3187] 2:13:15	represent kingship
+[3188] 2:13:16	they just you know combine them together
+[3189] 2:13:18	and basically said hey both of them
+[3190] 2:13:20	together
+[3191] 2:13:22	represent kingship
+[3192] 2:13:24	okay
+[3193] 2:13:25	so
+[3194] 2:13:27	um
+[3195] 2:13:31	uh
+[3196] 2:13:32	yeah uh today's word is squishy as far
+[3197] 2:13:35	as the pantheon goes yeah it's it it
+[3198] 2:13:38	does get kind of squishy
+[3199] 2:13:39	um
+[3200] 2:13:41	let's just say they had a very uh
+[3201] 2:13:43	flexible idea of divinity
+[3202] 2:13:47	so um
+[3203] 2:13:48	i thank you very much for the super chat
+[3204] 2:13:50	very much appreciate that
+[3205] 2:13:54	okay and the next one is from
+[3206] 2:14:06	slim 2k again thank you very much for
+[3207] 2:14:08	the super chat for five dollars
+[3208] 2:14:11	very much appreciated
+[3209] 2:14:15	and he says are you familiar with the
+[3210] 2:14:17	emerald tablets of thoth the atlantean
+[3211] 2:14:21	no
+[3212] 2:14:22	never heard of him sorry
+[3213] 2:14:25	uh is it a legitimate egyptian myth not
+[3214] 2:14:28	that i know of
+[3215] 2:14:30	i've never heard of this uh any evidence
+[3216] 2:14:33	that connects egypt with atlantis not
+[3217] 2:14:35	that i know of
+[3218] 2:14:36	uh the earliest um reference that we
+[3219] 2:14:39	have to atlantis is uh from one of
+[3220] 2:14:42	plato's dialogues
+[3221] 2:14:45	so um that's that's the earliest we have
+[3222] 2:14:48	and it's really kind of a
+[3223] 2:14:50	non-descript
+[3224] 2:14:51	and a very
+[3225] 2:14:52	imprecise um
+[3226] 2:14:55	reference
+[3227] 2:14:56	but that's that's the only reference i
+[3228] 2:14:59	know of
+[3229] 2:15:00	oh that's the earliest reference i know
+[3230] 2:15:02	of to um to atlantis
+[3231] 2:15:05	but we don't it's not something we find
+[3232] 2:15:07	in egyptian culture
+[3233] 2:15:08	it's just not
+[3234] 2:15:12	um
+[3235] 2:15:14	but even the whole material of emerald
+[3236] 2:15:17	uh we don't actually find emeralds in
+[3237] 2:15:19	egypt
+[3238] 2:15:20	until very very late
+[3239] 2:15:23	in the ptolemaic period
+[3240] 2:15:25	that's the first time we actually see um
+[3241] 2:15:28	emerald and by that we mean green barrel
+[3242] 2:15:31	which is a mineral
+[3243] 2:15:34	um we don't find green barrel
+[3244] 2:15:37	basically in egypt until very very late
+[3245] 2:15:39	in the ptolemaic period
+[3246] 2:15:41	um it's not it's not an it's not a
+[3247] 2:15:45	um mineral that we find in egypt
+[3248] 2:15:48	so it's it's an import
+[3249] 2:15:51	so
+[3250] 2:15:52	yeah uh
+[3251] 2:15:54	and frankly emerald
+[3252] 2:15:58	you don't get it in pieces large enough
+[3253] 2:15:59	to make tablets emeralds are really
+[3254] 2:16:01	small
+[3255] 2:16:02	they're really small
+[3256] 2:16:05	so you you you don't find them in in
+[3257] 2:16:08	large enough pieces to to
+[3258] 2:16:11	to make um
+[3259] 2:16:13	tablets
+[3260] 2:16:16	uh ryan naylor says uh he's referencing
+[3261] 2:16:19	a book by billy carson again i don't
+[3262] 2:16:21	know who billy carson
+[3263] 2:16:23	is so again
+[3264] 2:16:25	i can't really comment on this
+[3265] 2:16:27	but it's not something we find in
+[3266] 2:16:28	egyptian myth it's not something we
+[3267] 2:16:30	either emerald tablets
+[3268] 2:16:33	or atlantis so that's probably all i can
+[3269] 2:16:36	say is that it's not a legitimate
+[3270] 2:16:38	uh egyptian myth so anyway
+[3271] 2:16:41	uh
+[3272] 2:16:42	it probably is fiction i probably guess
+[3273] 2:16:44	it's fiction so any uh thank you very
+[3274] 2:16:48	much for that super chat very much
+[3275] 2:16:50	appreciated and um
+[3276] 2:16:52	unfortunately there are you know writers
+[3277] 2:16:54	can be very um
+[3278] 2:16:56	can um
+[3279] 2:16:58	invoke things of fantasy
+[3280] 2:17:00	when they write
+[3281] 2:17:01	so
+[3282] 2:17:02	that can be fun that can be fun but it's
+[3283] 2:17:05	also not to be taken that seriously
+[3284] 2:17:06	either so anyway thank you very much to
+[3285] 2:17:08	super chat very much appreciate it
+[3286] 2:17:22	okay uh slim2k again for five dollars
+[3287] 2:17:24	thank you very much for the super chat
+[3288] 2:17:26	what were the egyptian pyramids used for
+[3289] 2:17:29	i've seen it said that no mummy was ever
+[3290] 2:17:31	found uh in one
+[3291] 2:17:34	not quite true
+[3292] 2:17:38	um
+[3293] 2:17:40	there was a um
+[3294] 2:17:42	there was a part of a mummy
+[3295] 2:17:47	uh
+[3296] 2:17:48	found in the pyramid of sid wasser iii
+[3297] 2:17:53	okay
+[3298] 2:17:54	it was a section of hand a section of a
+[3299] 2:17:56	hand was found
+[3300] 2:17:58	uh
+[3301] 2:17:59	now
+[3302] 2:18:00	is was that sin was the third who knows
+[3303] 2:18:03	was that uh sat on hathor don't know
+[3304] 2:18:08	okay um
+[3305] 2:18:11	but every every pyramid has pretty much
+[3306] 2:18:14	every pyramid has a sarcophagus
+[3307] 2:18:16	the purpose of a sarcophagus
+[3308] 2:18:19	is to
+[3309] 2:18:20	bury the dead
+[3310] 2:18:22	we do find canopic jars like for example
+[3311] 2:18:25	and the pyramid is wasper the third we
+[3312] 2:18:28	do find the canopic jars of
+[3313] 2:18:30	of
+[3314] 2:18:32	hawthorne
+[3315] 2:18:33	in that complex
+[3316] 2:18:35	so you know in her burial
+[3317] 2:18:37	there are canopic jars
+[3318] 2:18:40	okay
+[3319] 2:18:41	you don't have canopic jars without
+[3320] 2:18:43	the internal organs to stick in the
+[3321] 2:18:45	canopic jars
+[3322] 2:18:50	now it is true that um that most
+[3323] 2:18:54	uh most pyramids were ransacked
+[3324] 2:18:57	again going back to the um
+[3325] 2:19:00	uh the pier medicine watch with the
+[3326] 2:19:02	third
+[3327] 2:19:03	what we have there is that the whole
+[3328] 2:19:06	that the inside had been stuffed with uh
+[3329] 2:19:10	you know branches etc and the whole
+[3330] 2:19:12	thing was set on fire on the inside
+[3331] 2:19:14	presumably that was to burn the funerary
+[3332] 2:19:16	furniture and sweep up the gold
+[3333] 2:19:18	afterwards
+[3334] 2:19:20	so we do find charring inside a fair
+[3335] 2:19:23	number of of pyramids because that's the
+[3336] 2:19:25	way they you know
+[3337] 2:19:27	they typically dis
+[3338] 2:19:29	tomb robbers would steal the precious
+[3339] 2:19:32	metals okay
+[3340] 2:19:35	essentially pyramid egyptian pyramids
+[3341] 2:19:37	were royal burials
+[3342] 2:19:39	that's what they were they were the
+[3343] 2:19:41	tombs for royalty
+[3344] 2:19:44	now
+[3345] 2:19:45	in the case of say the um pyramid of sin
+[3346] 2:19:49	was the third
+[3347] 2:19:50	he said western iii
+[3348] 2:19:52	probably wasn't buried there
+[3349] 2:19:55	he was probably buried at his his uh
+[3350] 2:19:58	temple
+[3351] 2:19:59	tomb at abidos
+[3352] 2:20:02	but it did leave the opportunity for
+[3353] 2:20:03	other people to be buried there
+[3354] 2:20:06	now
+[3355] 2:20:08	egyptian pyramids also served as the
+[3356] 2:20:10	focal point for royal necropolis
+[3357] 2:20:13	basically cities of the dead so the king
+[3358] 2:20:16	would be buried typically buried in the
+[3359] 2:20:18	pyramid
+[3360] 2:20:20	and then around him would be smaller
+[3361] 2:20:23	pyramids of the queens
+[3362] 2:20:25	king's daughters
+[3363] 2:20:26	masturbate officials and then
+[3364] 2:20:29	smaller tombs of
+[3365] 2:20:32	lesser officials and nobles
+[3366] 2:20:35	and
+[3367] 2:20:37	they were i mean it's bare essentially
+[3368] 2:20:39	these these um
+[3369] 2:20:42	pyramids essentially uh were
+[3370] 2:20:47	royal um
+[3371] 2:20:48	i would say royal cemeteries
+[3372] 2:20:53	there were royal cemeteries that were
+[3373] 2:20:57	that were used to um were essentially
+[3374] 2:21:01	the high
+[3375] 2:21:03	high nobility high officials of ancient
+[3376] 2:21:05	egypt
+[3377] 2:21:07	and
+[3378] 2:21:08	but
+[3379] 2:21:09	pyramids also served a secondary
+[3380] 2:21:11	function
+[3381] 2:21:13	um
+[3382] 2:21:14	spiritual function
+[3383] 2:21:16	they were kind of seen as resurrection
+[3384] 2:21:18	machines
+[3385] 2:21:20	essentially
+[3386] 2:21:22	that the spirit of the king
+[3387] 2:21:25	would be resurrected by
+[3388] 2:21:28	the pyramid by its construction by its
+[3389] 2:21:30	architecture
+[3390] 2:21:32	and that that would bestow power on
+[3391] 2:21:35	those are buried around the pyramid to
+[3392] 2:21:37	be resurrected also and basically what
+[3393] 2:21:40	we mean by resurrected is not say the
+[3394] 2:21:42	christian conception of resurrection
+[3395] 2:21:43	which is the bodily uh resurrection from
+[3396] 2:21:46	the dead
+[3397] 2:21:47	but
+[3398] 2:21:48	the nightly return of the spirit
+[3399] 2:21:51	uh
+[3400] 2:21:52	to their body or their votive statute to
+[3401] 2:21:55	receive offerings essentially so they
+[3402] 2:21:56	don't starve in the afterlife
+[3403] 2:22:02	so
+[3404] 2:22:04	um they did serve as uh supposedly as
+[3405] 2:22:07	resurrection machines
+[3406] 2:22:10	and as the focal point for royal car um
+[3407] 2:22:13	royal mortuary cults and for uh royal
+[3408] 2:22:16	cemeteries
+[3409] 2:22:18	so that's the purpose of egyptian
+[3410] 2:22:20	pyramids they were used to bury the dead
+[3411] 2:22:24	and they were used to bury the dead of
+[3412] 2:22:26	basically the kings
+[3413] 2:22:28	there's really in egyptology there's
+[3414] 2:22:30	really no doubt about that
+[3415] 2:22:33	we do find we do find sarcophagi in
+[3416] 2:22:36	every
+[3417] 2:22:37	practically every pyramid every
+[3418] 2:22:38	practically every pyramid has a
+[3419] 2:22:40	sarcophagus
+[3420] 2:22:42	and this was the essentially the
+[3421] 2:22:44	basically the outer coffin
+[3422] 2:22:47	that was then used to bury the body and
+[3423] 2:22:50	the inner coffin of the king
+[3424] 2:22:52	okay
+[3425] 2:22:55	but we also find grave goods in there
+[3426] 2:22:56	too so given the fact that we also find
+[3427] 2:22:59	grave goods in
+[3428] 2:23:01	egyptian pyramids
+[3429] 2:23:02	i think it's pretty much guaranteed that
+[3430] 2:23:04	yeah
+[3431] 2:23:05	these were used
+[3432] 2:23:06	as tombs
+[3433] 2:23:08	okay so thank you very much for the
+[3434] 2:23:10	super chat i hope that answered that
+[3435] 2:23:11	question uh thank you very much
+[3436] 2:23:14	hey
+[3437] 2:23:21	cataract three for two dollars
+[3438] 2:23:24	uh thank you very super chat why were
+[3439] 2:23:27	egyptians allergic to shirts
+[3440] 2:23:30	um because it was hot
+[3441] 2:23:40	yeah
+[3442] 2:23:41	um
+[3443] 2:23:43	well it depends
+[3444] 2:23:45	it depended
+[3445] 2:23:46	um
+[3446] 2:23:48	you know
+[3447] 2:23:49	they would uh
+[3448] 2:23:51	if you were a king you never went out in
+[3449] 2:23:53	the sun
+[3450] 2:23:54	you never went out in the sun
+[3451] 2:23:56	so you know sometimes kings did wear you
+[3452] 2:23:59	know um
+[3453] 2:24:01	linens over their shoulder you know
+[3454] 2:24:04	like a kind of shawl
+[3455] 2:24:06	that covered their upper body
+[3456] 2:24:08	um
+[3457] 2:24:10	but the fact is that the shirt had not
+[3458] 2:24:12	been invented either
+[3459] 2:24:15	basically what a shirt is is a modified
+[3460] 2:24:17	tunic
+[3461] 2:24:19	now other cultures had tunics
+[3462] 2:24:22	uh levantines had tunics
+[3463] 2:24:25	but the egyptians didn't have
+[3464] 2:24:26	tunics and frankly they didn't serve
+[3465] 2:24:29	much of a function because
+[3466] 2:24:31	people worked out in the sun it was hot
+[3467] 2:24:34	uh you sweated a lot you
+[3468] 2:24:36	you didn't want to keep warm in the day
+[3469] 2:24:39	at night is a different matter
+[3470] 2:24:41	at night they would then make cover up
+[3471] 2:24:44	but in the day time it was hot
+[3472] 2:24:47	so
+[3473] 2:24:49	you know if you were if you were working
+[3474] 2:24:52	with fields you did not want extra
+[3475] 2:24:54	clothing
+[3476] 2:24:55	that was just one of those things that
+[3477] 2:24:57	uh you know just
+[3478] 2:24:59	just the the fact of living in a in an
+[3479] 2:25:02	exceptionally hot culture
+[3480] 2:25:05	so that's why they were allergic to
+[3481] 2:25:06	shirts because
+[3482] 2:25:08	it was too darn hot
+[3483] 2:25:10	honey i hope that answers your question
+[3484] 2:25:12	thank you very much for the super chat
+[3485] 2:25:21	hey
+[3486] 2:25:22	i think we're getting close to the end
+[3487] 2:25:23	of the super chats finally
+[3488] 2:25:25	okay we are at the end of
+[3489] 2:25:28	the super chats so
+[3490] 2:25:31	uh
+[3491] 2:25:36	we are going to take now a couple of
+[3492] 2:25:38	non-super chats and then we're going to
+[3493] 2:25:40	call it a night
+[3494] 2:25:41	because frankly i am running out of
+[3495] 2:25:43	steam here
+[3496] 2:25:44	so
+[3497] 2:25:47	i'm going to take uh let's see here
+[3498] 2:25:50	i did want a ghost so we're not going to
+[3499] 2:25:52	do that one
+[3500] 2:25:58	i'll take samuel rohan's here okay
+[3501] 2:26:02	dr falk did the ancient israelites
+[3502] 2:26:04	believe that whatever they would speak
+[3503] 2:26:06	negative positive would come to pass
+[3504] 2:26:08	people use verses like proverbs 18 21
+[3505] 2:26:11	and uh matthew 11 23 to claim that
+[3506] 2:26:16	okay let's take a brief look at those
+[3507] 2:26:18	passages
+[3508] 2:26:23	first we look at proverbs here
+[3509] 2:26:27	proverbs
+[3510] 2:26:31	18.
+[3511] 2:26:36	three
+[3512] 2:26:39	okay
+[3513] 2:26:42	now we have to understand first of all
+[3514] 2:26:43	what is a proverb
+[3515] 2:26:45	a proverb is a wise saying
+[3516] 2:26:48	something that's considered to be
+[3517] 2:26:50	generally true
+[3518] 2:26:52	but isn't a promise not a promise not a
+[3519] 2:26:55	guarantee
+[3520] 2:26:56	um not an incantation
+[3521] 2:27:00	it's just an aphorism
+[3522] 2:27:02	of what is generally true so that's a
+[3523] 2:27:04	proverb
+[3524] 2:27:06	so given that this is a proverb that's
+[3525] 2:27:08	the context of the proverb
+[3526] 2:27:10	and
+[3527] 2:27:12	18 21 sorry
+[3528] 2:27:14	because
+[3529] 2:27:16	okay
+[3530] 2:27:19	death and life are in the power of the
+[3531] 2:27:20	tongue
+[3532] 2:27:22	and those who those who love it will eat
+[3533] 2:27:25	its fruit okay
+[3534] 2:27:27	now
+[3535] 2:27:28	power of life and death are in the
+[3536] 2:27:30	tongue
+[3537] 2:27:32	basically it's essentially an and this
+[3538] 2:27:34	is again a
+[3539] 2:27:36	you have to sort of take both halves
+[3540] 2:27:38	here and this is this is this is sip
+[3541] 2:27:40	this is a hebrew poetry
+[3542] 2:27:42	and uh a proverb a psalm are forms of
+[3543] 2:27:46	hebrew poetry
+[3544] 2:27:48	hebrew poetry is is in two couplets
+[3545] 2:27:51	okay
+[3546] 2:27:52	now
+[3547] 2:27:53	the first couplet here
+[3548] 2:27:54	death and life are
+[3549] 2:27:57	are in the power of the tongue
+[3550] 2:28:01	okay
+[3551] 2:28:03	now what's it saying here
+[3552] 2:28:05	essentially
+[3553] 2:28:07	um
+[3554] 2:28:08	you can harm you can heal with the
+[3555] 2:28:10	tongue
+[3556] 2:28:11	you give people words of encouragement
+[3557] 2:28:14	you can say
+[3558] 2:28:15	the person on the side of uh who's ready
+[3559] 2:28:18	to jump off a building
+[3560] 2:28:20	jump jump jump jump
+[3561] 2:28:22	okay
+[3562] 2:28:24	you can do great wickedness with the
+[3563] 2:28:25	tongue
+[3564] 2:28:27	you know you can condemn yourself with
+[3565] 2:28:29	the tongue
+[3566] 2:28:31	you can lift somebody up with the tongue
+[3567] 2:28:37	the second couplet here
+[3568] 2:28:41	is basically saying
+[3569] 2:28:43	that
+[3570] 2:28:44	those who
+[3571] 2:28:46	love the tongue
+[3572] 2:28:48	love that power
+[3573] 2:28:50	will eat of its fruit
+[3574] 2:28:53	whether that's for life or for death
+[3575] 2:28:57	essentially this is a proverb saying
+[3576] 2:28:59	watch what you say
+[3577] 2:29:03	that's what
+[3578] 2:29:04	that's what the meaning here is
+[3579] 2:29:09	now the word power here is literally
+[3580] 2:29:10	hand
+[3581] 2:29:11	okay
+[3582] 2:29:13	so
+[3583] 2:29:16	so you know you got this this this just
+[3584] 2:29:18	just position here of body language too
+[3585] 2:29:22	so life and death are
+[3586] 2:29:25	in the hand of the tongue
+[3587] 2:29:27	so quite literally that
+[3588] 2:29:31	that you know
+[3589] 2:29:32	the tongue is the instrument
+[3590] 2:29:36	is the instrument to affect life and
+[3591] 2:29:38	death
+[3592] 2:29:40	you reap what you sow
+[3593] 2:29:42	that's essentially what it's saying here
+[3594] 2:29:45	you create trouble with your tongue
+[3595] 2:29:47	you'll eat of that fruit
+[3596] 2:29:50	so essentially it's just another way of
+[3597] 2:29:52	saying
+[3598] 2:29:53	uh like the proverb he who sows the wind
+[3599] 2:29:55	will we reap the whirlwind
+[3600] 2:29:59	okay
+[3601] 2:30:00	you know you made your bed you lie in it
+[3602] 2:30:04	it's one of those sort of proverbs
+[3603] 2:30:08	so this is not some silly uh law of
+[3604] 2:30:11	attraction going on here this is not a
+[3605] 2:30:13	kind of positive confession
+[3606] 2:30:16	where
+[3607] 2:30:17	it's promising you that whatever you say
+[3608] 2:30:20	will come to pass it's not saying that
+[3609] 2:30:21	at all
+[3610] 2:30:23	it's saying
+[3611] 2:30:24	you create good with the tongue you'll
+[3612] 2:30:25	re eat eat a good fruit
+[3613] 2:30:28	if you create trouble with the tongue
+[3614] 2:30:30	you'll get what you deserve it'll come
+[3615] 2:30:31	to haunt you
+[3616] 2:30:32	that's what this passage is saying
+[3617] 2:30:35	all right
+[3618] 2:30:36	so that's proverbs 18 21. let's go to
+[3619] 2:30:39	matthew 11 23.
+[3620] 2:30:53	back up a little bit here
+[3621] 2:30:59	okay we'll start verse 21 here why not
+[3622] 2:31:02	woe to you chorusine woe to you
+[3623] 2:31:07	for if miracles had occurred entire and
+[3624] 2:31:09	sidon which occurred in you
+[3625] 2:31:12	they would have repented long ago in
+[3626] 2:31:14	sackcloth and ashes
+[3627] 2:31:17	nevertheless
+[3628] 2:31:19	i say to you it shall be more tolerable
+[3629] 2:31:21	for satire and sidon in the day of
+[3630] 2:31:24	judgment than for you
+[3631] 2:31:27	and you capernaum
+[3632] 2:31:29	will you will not be
+[3633] 2:31:32	will not
+[3634] 2:31:33	and you capernaum will not be exalted to
+[3635] 2:31:36	heaven will you
+[3636] 2:31:38	you shall descend to hades for if
+[3637] 2:31:41	miracles had occurred in sodom which
+[3638] 2:31:43	occurred in you
+[3639] 2:31:45	it would have remained
+[3640] 2:31:47	to this day
+[3641] 2:31:50	nevertheless i say to you it shall be
+[3642] 2:31:52	more tolerable for the land of sodom in
+[3643] 2:31:54	the day of judgment then for you
+[3644] 2:31:58	okay
+[3645] 2:32:00	um
+[3646] 2:32:02	i don't think that
+[3647] 2:32:06	that this can be used to again justify
+[3648] 2:32:08	say any sort of positive or
+[3649] 2:32:11	or negative that's um that's
+[3650] 2:32:15	you know
+[3651] 2:32:18	spoken in there for that habit now
+[3652] 2:32:20	egyptians have that view that if you
+[3653] 2:32:22	speak something trouble into being ill
+[3654] 2:32:24	come
+[3655] 2:32:25	the egyptians also said if you wrote
+[3656] 2:32:27	something down
+[3657] 2:32:28	that it instantiated that and made that
+[3658] 2:32:31	an object it changed reality egyptians
+[3659] 2:32:32	believed that
+[3660] 2:32:34	israelites didn't
+[3661] 2:32:37	okay
+[3662] 2:32:39	now they did believe in execration
+[3663] 2:32:40	curses but that was magic
+[3664] 2:32:44	um
+[3665] 2:32:46	the egyptian worldview was a little
+[3666] 2:32:48	broader on the scope of magic than
+[3667] 2:32:51	then say israel's
+[3668] 2:32:53	so for in the case of of egypt
+[3669] 2:32:56	um
+[3670] 2:32:57	you could turn just about anything into
+[3671] 2:32:59	an object of magic just by putting some
+[3672] 2:33:01	writing on it or an illustration or
+[3673] 2:33:02	something on it
+[3674] 2:33:04	it wasn't so simple in israel
+[3675] 2:33:06	um israel you had to actually go through
+[3676] 2:33:08	a ritual to instantiate some magic
+[3677] 2:33:12	so
+[3678] 2:33:13	i i don't think this is good
+[3679] 2:33:15	justification
+[3680] 2:33:16	for saying that
+[3681] 2:33:18	that um
+[3682] 2:33:20	[Music]
+[3683] 2:33:21	that
+[3684] 2:33:22	you know
+[3685] 2:33:23	israelites of of say for example the
+[3686] 2:33:25	first century
+[3687] 2:33:27	um believed that
+[3688] 2:33:30	speaking something positive or negative
+[3689] 2:33:32	wouldn't make it come to pass
+[3690] 2:33:34	i don't think that they were quite
+[3691] 2:33:36	that
+[3692] 2:33:39	i don't think they quite
+[3693] 2:33:41	had that metaphysical point of view
+[3694] 2:33:47	they do seem to see be more sort of um
+[3695] 2:33:51	um grounded in that um writing didn't
+[3696] 2:33:54	necessarily have that power
+[3697] 2:33:59	but at the same time too they did do
+[3698] 2:34:00	magic they did do they did practice
+[3699] 2:34:03	magic
+[3700] 2:34:04	and they practiced uh
+[3701] 2:34:06	cursed tablets
+[3702] 2:34:08	uh cursed ambulance
+[3703] 2:34:10	they did do execration magic
+[3704] 2:34:12	but that was magic
+[3705] 2:34:15	and that's different than just
+[3706] 2:34:16	speaking and it comes about
+[3707] 2:34:19	i don't think the israelites had that
+[3708] 2:34:21	sort of worldview where they just
+[3709] 2:34:23	said something that happened
+[3710] 2:34:26	that's not to say that you know a
+[3711] 2:34:28	particularly threatening
+[3712] 2:34:30	voice would not be heated
+[3713] 2:34:33	okay uh rowan updates it okay uh mark 11
+[3714] 2:34:37	23 okay so there's a correction here
+[3715] 2:34:44	yeah it didn't sound right
+[3716] 2:34:46	mark
+[3717] 2:34:49	11
+[3718] 2:34:54	23 okay
+[3719] 2:34:58	yeah and let's back up here
+[3720] 2:35:02	verse 19
+[3721] 2:35:04	and whatever evening came they would go
+[3722] 2:35:06	out of the city
+[3723] 2:35:08	and as they were passing by in the
+[3724] 2:35:10	morning they saw a fig tree wither saw
+[3725] 2:35:12	the fig tree withered from the roots up
+[3726] 2:35:15	and being reminded peter said rabbi
+[3727] 2:35:17	behold the fig tree which you cursed has
+[3728] 2:35:19	withered
+[3729] 2:35:21	and jesus answered saying to them have
+[3730] 2:35:23	faith in god
+[3731] 2:35:26	truly i say to you whoever says to this
+[3732] 2:35:27	mountain be taken up and cast into the
+[3733] 2:35:29	sea
+[3734] 2:35:31	and does not doubt in his heart but
+[3735] 2:35:33	believes what he says is going to happen
+[3736] 2:35:36	it shall be granted to him
+[3737] 2:35:38	and therefore i said to you all things
+[3738] 2:35:40	for which you pray and ask believe that
+[3739] 2:35:42	you have received them and they shall be
+[3740] 2:35:44	now the word granted is is neither text
+[3741] 2:35:47	here but
+[3742] 2:35:48	it shall be him
+[3743] 2:35:52	and x goes on in verse 25
+[3744] 2:35:57	and wherever you stand praying forgive
+[3745] 2:35:59	and if you have anything against anyone
+[3746] 2:36:02	so that the father who is in heaven may
+[3747] 2:36:03	forgive you of your transgressions okay
+[3748] 2:36:08	there is a context here
+[3749] 2:36:11	and the context here is
+[3750] 2:36:14	god's sovereignty
+[3751] 2:36:18	so
+[3752] 2:36:19	you know
+[3753] 2:36:20	peter putting his hand on on a
+[3754] 2:36:22	victory and causing it to w wither
+[3755] 2:36:25	capriciously
+[3756] 2:36:26	that's not that's not how it works
+[3757] 2:36:29	um
+[3758] 2:36:30	you know
+[3759] 2:36:31	it's not
+[3760] 2:36:33	the spoken word that causes the things
+[3761] 2:36:35	to happen
+[3762] 2:36:37	it's god
+[3763] 2:36:40	okay
+[3764] 2:36:42	the active agent here is god
+[3765] 2:36:46	okay
+[3766] 2:36:48	christ
+[3767] 2:36:49	withered the tree
+[3768] 2:36:51	because he's god
+[3769] 2:36:53	and he invoked the power of god
+[3770] 2:36:57	likewise
+[3771] 2:37:00	those who
+[3772] 2:37:02	who
+[3773] 2:37:02	pray aren't going to be given everything
+[3774] 2:37:06	no matter how hard they believe
+[3775] 2:37:09	sorry young men
+[3776] 2:37:11	you know
+[3777] 2:37:15	sorry young men
+[3778] 2:37:17	um
+[3779] 2:37:18	that woman that that
+[3780] 2:37:21	girl in high school you you crushed over
+[3781] 2:37:24	oh god please i gotta have her
+[3782] 2:37:28	i'll do anything please i believe it
+[3783] 2:37:32	and god says no
+[3784] 2:37:37	and then twenties later you discover why
+[3785] 2:37:40	he said no
+[3786] 2:37:44	[Laughter]
+[3787] 2:37:49	okay
+[3788] 2:37:51	god will not give you everything even if
+[3789] 2:37:53	you faith it
+[3790] 2:37:56	it doesn't work that way
+[3791] 2:37:58	okay
+[3792] 2:38:01	the way it works is it has to be within
+[3793] 2:38:03	god's will
+[3794] 2:38:05	um his permissive will
+[3795] 2:38:07	if it's not in his permissive will and
+[3796] 2:38:09	that's sort of the underlying context of
+[3797] 2:38:11	all this is god is the agent he is not
+[3798] 2:38:14	some
+[3799] 2:38:15	passive you know
+[3800] 2:38:18	force
+[3801] 2:38:19	that makes your words come into
+[3802] 2:38:21	existence
+[3803] 2:38:23	yeah i know they there are people who
+[3804] 2:38:25	abuse this text that way that's not its
+[3805] 2:38:28	context
+[3806] 2:38:30	the context here is the power of god
+[3807] 2:38:33	not the power of man
+[3808] 2:38:39	that is really really an important
+[3809] 2:38:41	consideration in all this
+[3810] 2:38:44	it's god
+[3811] 2:38:45	not man
+[3812] 2:38:47	it doesn't matter how hard you believe
+[3813] 2:38:50	if it's not in god's will ain't gonna
+[3814] 2:38:52	happen
+[3815] 2:38:53	period
+[3816] 2:38:55	but if it is in god's will
+[3817] 2:38:57	yes even a mountain will move
+[3818] 2:39:01	but it has to be within god's will
+[3819] 2:39:03	for god's purposes
+[3820] 2:39:06	so anyway i hope that answers your
+[3821] 2:39:07	question thank you very much for the
+[3822] 2:39:09	question it's a question um i do get
+[3823] 2:39:11	sometimes
+[3824] 2:39:12	and it just again it boils down to
+[3825] 2:39:14	what's god's will
+[3826] 2:39:16	what's god's sovereignty in all this
+[3827] 2:39:21	okay
+[3828] 2:39:31	i'll take the camel leopard here uh
+[3829] 2:39:33	there's an interesting question here
+[3830] 2:39:36	uh he's
+[3831] 2:39:38	you've said before the egyptians
+[3832] 2:39:39	believed that the gods had middle skin
+[3833] 2:39:41	could this metal be copper no it wasn't
+[3834] 2:39:43	it was gold
+[3835] 2:39:44	uh the skin of the gods was by by
+[3836] 2:39:47	definition it was gold
+[3837] 2:39:49	it's always been
+[3838] 2:39:50	gold uh
+[3839] 2:39:53	if so could
+[3840] 2:39:55	osiris's skin be seen as oxidized copper
+[3841] 2:39:57	no
+[3842] 2:39:59	that's different
+[3843] 2:40:01	in fact i wrote a
+[3844] 2:40:03	actually a peer-reviewed article
+[3845] 2:40:08	on the
+[3846] 2:40:09	skin of osiris
+[3847] 2:40:12	and the skin of osiris is either black
+[3848] 2:40:15	or green and there's a reason why that's
+[3849] 2:40:18	because he's a cadaver he's a corpse
+[3850] 2:40:22	what we're seeing with osiris skin is uh
+[3851] 2:40:25	marbling
+[3852] 2:40:27	the effect of a dead person putrefying
+[3853] 2:40:31	that's really disgusting this is really
+[3854] 2:40:33	disgusting
+[3855] 2:40:34	uh go on to my academia edu page
+[3856] 2:40:37	download the article
+[3857] 2:40:38	um and you'll you'll get the uh you'll
+[3858] 2:40:41	get the idea exactly of what's being
+[3859] 2:40:43	meant here by the green skin of osiris
+[3860] 2:40:47	it's disgusting
+[3861] 2:40:48	it's absolutely disgusting but he was
+[3862] 2:40:49	god of the dead
+[3863] 2:40:51	he's the god of dead he's a corpse he's
+[3864] 2:40:52	a good haver
+[3865] 2:40:55	you know he's like weakened at bernie's
+[3866] 2:40:57	egyptian style
+[3867] 2:40:59	okay
+[3868] 2:41:00	we won't go into that any further but
+[3869] 2:41:03	because it's it's really it's really
+[3870] 2:41:05	foul
+[3871] 2:41:06	um
+[3872] 2:41:07	but uh
+[3873] 2:41:08	yeah
+[3874] 2:41:09	uh that's it's it's different for osiris
+[3875] 2:41:12	osiris is something special here
+[3876] 2:41:15	we do actually find this in some other
+[3877] 2:41:16	uh funerary gods as well like some there
+[3878] 2:41:18	are some other uh mama form gods that
+[3879] 2:41:21	are also
+[3880] 2:41:22	uh portrayed as as rotten cadavers also
+[3881] 2:41:27	so osiris is not unique in this
+[3882] 2:41:31	but he is sort of the archetype for it
+[3883] 2:41:34	okay thank you for the question
+[3884] 2:41:35	interesting question i think i'll take
+[3885] 2:41:37	one more question
+[3886] 2:41:39	and then we'll call it a night
+[3887] 2:41:41	because we've been going now for almost
+[3888] 2:41:43	three hours
+[3889] 2:41:50	let's see here
+[3890] 2:42:03	this is not really a question it's more
+[3891] 2:42:05	of a request
+[3892] 2:42:07	uh by bc would you consider doing some
+[3893] 2:42:09	videos of you you're executing passages
+[3894] 2:42:12	showing what and how you use various
+[3895] 2:42:14	sources and so this would be very
+[3896] 2:42:16	helpful for a lot of people okay we'll
+[3897] 2:42:18	consider it
+[3898] 2:42:20	um we're always looking material for our
+[3899] 2:42:22	monday videos so we'll definitely
+[3900] 2:42:23	consider it
+[3901] 2:42:26	we'd have to be very selective of the
+[3902] 2:42:28	passage though so
+[3903] 2:42:29	but um
+[3904] 2:42:30	yeah we'll consider it
+[3905] 2:42:35	okay and i will take one more actual
+[3906] 2:42:38	question
+[3907] 2:42:45	then we will call it a night
+[3908] 2:43:06	um
+[3909] 2:43:15	okay um
+[3910] 2:43:21	i am actually going to take this one and
+[3911] 2:43:23	it'll be the last one here
+[3912] 2:43:25	um from muhammad akaram
+[3913] 2:43:28	uh what are some up-to-date works on the
+[3914] 2:43:30	translation of the proto-cyanic
+[3915] 2:43:32	inscriptions the oldest i can find is oh
+[3916] 2:43:35	albright so yeah
+[3917] 2:43:37	um yeah it's pretty old and so gardner
+[3918] 2:43:39	is pretty old
+[3919] 2:43:40	uh i would actually recommend hamilton
+[3920] 2:43:42	i think i think
+[3921] 2:43:44	i think
+[3922] 2:43:45	i don't know if he's got translations
+[3923] 2:43:48	but he's got transcriptions
+[3924] 2:43:52	okay
+[3925] 2:43:53	and if you know you're
+[3926] 2:43:55	uh know some semitics
+[3927] 2:43:58	you might be able to translate that
+[3928] 2:44:00	if he doesn't provide translations
+[3929] 2:44:01	already
+[3930] 2:44:02	but hamilton is the most up-to-date work
+[3931] 2:44:05	on on the pro science inscriptions and
+[3932] 2:44:07	it's about 10 years old it's not that
+[3933] 2:44:09	old
+[3934] 2:44:10	um it's actually probably the most
+[3935] 2:44:11	current work we have right now on the
+[3936] 2:44:14	early alphabetical inscriptions
+[3937] 2:44:16	so but i would i would highly recommend
+[3938] 2:44:18	hamilton here
+[3939] 2:44:19	i think he's probably the best best uh
+[3940] 2:44:23	best recent work
+[3941] 2:44:25	on on the early alphabetical
+[3942] 2:44:27	inscriptions so
+[3943] 2:44:29	um highly recommended hamilton he's he's
+[3944] 2:44:32	the guy i go to
+[3945] 2:44:33	when i want to look up something in in
+[3946] 2:44:35	the um early alphabetic uh inscriptions
+[3947] 2:44:38	from sinai
+[3948] 2:44:39	so
+[3949] 2:44:40	anyway
+[3950] 2:44:41	thank you very much for the question and
+[3951] 2:44:42	i think that will be the last for the
+[3952] 2:44:44	night here um
+[3953] 2:44:47	i want to remind everybody that uh our
+[3954] 2:44:50	live stream next week will be a half
+[3955] 2:44:53	hour later it's going to be at 8 30 not
+[3956] 2:44:55	eight uh pacific time
+[3957] 2:44:58	so um if you show up a half hour early
+[3958] 2:45:01	you might see some people in live live
+[3959] 2:45:02	chat but uh the show won't go on until
+[3960] 2:45:05	um 8 30 proper
+[3961] 2:45:07	so
+[3962] 2:45:09	that said i want to thank everyone who
+[3963] 2:45:11	came out to uh party with us tonight uh
+[3964] 2:45:14	some great questions as as usual i want
+[3965] 2:45:17	to thank all our subscribers i want to
+[3966] 2:45:18	thank everyone who helped us make it to
+[3967] 2:45:20	6 000 subscribers
+[3968] 2:45:22	uh thank you so very much we couldn't
+[3969] 2:45:24	have done it without you
+[3970] 2:45:25	uh we couldn't have done it without our
+[3971] 2:45:26	patreon supporters and all of those who
+[3972] 2:45:29	generously provided super chats
+[3973] 2:45:32	uh your generosity has been outstanding
+[3974] 2:45:35	it's been just overwhelming
+[3975] 2:45:38	it really helps us to keep going and we
+[3976] 2:45:40	are so appreciative for all the
+[3977] 2:45:42	financial support
+[3978] 2:45:44	uh we want to take this opportunity to
+[3979] 2:45:46	uh thank uh the volunteers we now have
+[3980] 2:45:48	some volunteers who are helping us
+[3981] 2:45:51	um we got somebody who um you know we
+[3982] 2:45:54	got great volunteers who are do our
+[3983] 2:45:56	discord server
+[3984] 2:45:58	i want to thank uh solely and faye so
+[3985] 2:46:00	much for helping out on the discord
+[3986] 2:46:02	server uh we have a couple people who
+[3987] 2:46:04	are also uh
+[3988] 2:46:06	uh
+[3989] 2:46:07	helping us uh hopefully um index these
+[3990] 2:46:10	uh video uh these uh q a's also and we
+[3991] 2:46:14	very much appreciate that effort also
+[3992] 2:46:17	so
+[3993] 2:46:18	i also want to thank my wife here uh who
+[3994] 2:46:21	helps produce these uh videos uh she's
+[3995] 2:46:24	basically the support on the side here
+[3996] 2:46:26	who fields uh comments that i can't read
+[3997] 2:46:29	because i'm so distracted
+[3998] 2:46:31	she also does the moderation work as
+[3999] 2:46:34	well as uh for both the live chat as
+[4000] 2:46:37	well as our discord server so
+[4001] 2:46:40	um that said i want to thank you all for
+[4002] 2:46:43	joining us tonight and um
+[4003] 2:46:46	really loved having you guys here
+[4004] 2:46:48	and i will see you next time on ancient
+[4005] 2:46:50	egypt and the bible goodnight everyone
+[4006] 2:46:54	[Music]
+[4007] 2:47:49	you
