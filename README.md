@@ -216,6 +216,27 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 - [209 One Meaning Flippancy Questions](docs/questions/209-one-meaning-flippancy-questions.md)
 - [210 Reading Into The Lines Questions](docs/questions/210-reading-into-the-lines-questions.md)
 - [211 When Your Guest Is A Gas Bag Questions](docs/questions/211-when-your-guest-is-a-gas-bag-questions.md)
+- [212 One Degree Of Separation Questions](docs/questions/212-one-degree-of-separation-questions.md)
+- [213 Exploring The Sewer World Questions](docs/questions/213-exploring-the-sewer-world-questions.md)
+- [214 Crud Slurping Egyptian Deities Questions](docs/questions/214-crud-slurping-egyptian-deities-questions.md)
+- [215 Amalgamated Lamentations Questions](docs/questions/215-amalgamated-lamentations-questions.md)
+- [216 Rock Around The Ark Tonight Questions](docs/questions/216-rock-around-the-ark-tonight-questions.md)
+- [217 Cringe Scholars Society With Red Wine Questions](docs/questions/217-cringe-scholars-society-with-red-wine-questions.md)
+- [218 License To Exegete Questions](docs/questions/218-license-to-exegete-questions.md)
+- [219 Ten Things You Wish You Knew Questions](docs/questions/219-ten-things-you-wish-you-knew-questions.md)
+- [220 Bears Bears Everywheres Questions](docs/questions/220-bears-bears-everywheres-questions.md)
+- [221 The Concise Fun Notes Edition Questions](docs/questions/221-the-concise-fun-notes-edition-questions.md)
+- [222 The Master Of All Classes Questions](docs/questions/222-the-master-of-all-classes-questions.md)
+- [223 A Question Of Assessed Damage Questions](docs/questions/223-a-question-of-assessed-damage-questions.md)
+- [224 Pareidolia Paranoia Questions](docs/questions/224-pareidolia-paranoia-questions.md)
+- [225 Ancient Egyptian Pyramid Scheme Questions](docs/questions/225-ancient-egyptian-pyramid-scheme-questions.md)
+- [226 Gem Of A Question Questions](docs/questions/226-gem-of-a-question-questions.md)
+- [227 Just One More Question Questions](docs/questions/227-just-one-more-question-questions.md)
+- [228 The Abr Boogie Questions](docs/questions/228-the-abr-boogie-questions.md)
+- [229 A Levite On Every Street Corner Questions](docs/questions/229-a-levite-on-every-street-corner-questions.md)
+- [230 Ten Things About One Thing Questions](docs/questions/230-ten-things-about-one-thing-questions.md)
+- [231 Why Bother With Stream Titles No One Can Read Questions](docs/questions/231-why-bother-with-stream-titles-no-one-can-read-questions.md)
+- [232 The Abr Grove Has No Soul Questions](docs/questions/232-the-abr-grove-has-no-soul-questions.md)
 - [244 Romani Ite Domum Questions](docs/questions/244-romani-ite-domum-questions.md)
 - [245 Friday The 23 Rd Questions](docs/questions/245-friday-the-23-rd-questions.md)
 - [246 Egyptian Royal Streaming Questions](docs/questions/246-egyptian-royal-streaming-questions.md)
@@ -301,7 +322,7 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 
 ## Current Status
 
-The repository currently has generated TXT working transcripts for 230 episode streams. Every episode stream that has a TXT transcript on disk also now has a curated Markdown page under `docs/questions/`.
+The repository currently has generated TXT working transcripts for 264 numbered episode streams. Curated Markdown pages currently exist for 252 numbered episode streams under `docs/questions/`, and the next missing processable numbered episode page is Live Stream #233.
 
 Known blocked numbered episodes remain:
 - Live Stream #118: transcript disabled / empty placeholder
