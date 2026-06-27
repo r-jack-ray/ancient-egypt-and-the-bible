@@ -1,0 +1,35 @@
+# Questions in Livestream 228
+
+Live Stream #228: The ABR Boogie
+
+Time links open the YouTube video at the relevant timestamp.
+
+| Time | Question | Short answer / answer direction |
+|---:|---|---|
+| <a href="https://youtu.be/WTjKMnybR3A?t=966" target="_blank" rel="noopener noreferrer">16:06</a> | Do bug-eating plants show anything like spirit or moral agency? | No. He says carnivorous plants exist, but their motion is purely biological and not evidence of spirit. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=1401" target="_blank" rel="noopener noreferrer">23:21</a> | How would he address Scott Stripling's claims about Shiloh and late-bronze Israelite occupation? | He says the claims are hard to assess because the excavation results still have not been properly published. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=2072" target="_blank" rel="noopener noreferrer">34:32</a> | When Moses saw the burning bush, was he an old man or a young man? | He places Moses as an older man by then, likely in his late 50s or 60s. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=2194" target="_blank" rel="noopener noreferrer">36:34</a> | If creation has hierarchies, what makes one creature more valuable than another in God's eyes? | He says hierarchies express order rather than superior value. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=2669" target="_blank" rel="noopener noreferrer">44:29</a> | What is the process for becoming a pastor? | It varies by denomination, but usually involves education, examination, and ordination. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=3725" target="_blank" rel="noopener noreferrer">1:02:05</a> | Is every war unjust for one side? | Many wars have one unjust side, and some conflicts involve unjust conduct on both sides. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=3924" target="_blank" rel="noopener noreferrer">1:05:24</a> | Was either side just in the Iran-Iraq War of the 1980s? | He doubts it, though he says he is not deeply read in that conflict. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=5379" target="_blank" rel="noopener noreferrer">1:29:39</a> | Does the soul begin at conception or later in development? | He says Christians hold multiple views, and the answer turns on broader beliefs about the soul. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=5664" target="_blank" rel="noopener noreferrer">1:34:24</a> | Is there a point in animal development where creatures gain souls, and what about sponges? | He does not think sponges have souls and links ensouled life to higher capacities such as reason or moral reflection. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=7155" target="_blank" rel="noopener noreferrer">1:59:15</a> | Was Nicaea II a major overcorrection driven by politics? | Yes, he thinks the council was heavily shaped by the iconoclasm controversy and the politics around it. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=7609" target="_blank" rel="noopener noreferrer">2:06:49</a> | When did the evidence for a late-bronze Jericho pass the 50 percent mark? | He says the case was already there in Garstang's work. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=7974" target="_blank" rel="noopener noreferrer">2:12:54</a> | Should `ekklesia` in Matthew 16:18 be translated as a government structure? | No. He rejects that reading. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=8716" target="_blank" rel="noopener noreferrer">2:25:16</a> | Is there a practical difference between using a dictionary and a lexicon for Bible study? | Yes. A lexicon gives roots, related terms, and historical data, while a dictionary is more basic. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=8975" target="_blank" rel="noopener noreferrer">2:29:35</a> | Would the original vampires consider modern vampires to be legitimate? | No. He says the old folkloric vampire tradition is very different from the modern gothic version. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=9053" target="_blank" rel="noopener noreferrer">2:30:53</a> | Is the chupacabra real? | No. He thinks most sightings are probably coyotes with mange. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=9531" target="_blank" rel="noopener noreferrer">2:38:51</a> | Why do some academics claim the Israelites came from the Phoenicians? | He says that claim is poorly informed because Phoenician civilization is later and has a different origin story. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=9788" target="_blank" rel="noopener noreferrer">2:43:08</a> | Is there a line of scripture saying all souls were created in the beginning? | No. He says that is not a Christian scriptural teaching. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=10120" target="_blank" rel="noopener noreferrer">2:48:40</a> | Have giant squids ever attacked ships? | He is not aware of a documented case, though he thinks old small vessels could have been vulnerable. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=11637" target="_blank" rel="noopener noreferrer">3:13:57</a> | What caused the death of philology? | He says the field became too subjective and eventually lost trust. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=11784" target="_blank" rel="noopener noreferrer">3:16:24</a> | What is philology? | It is the study of the history and origins of words. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=11809" target="_blank" rel="noopener noreferrer">3:16:49</a> | Must tithes be money, or can time and talents count? | He says tithing is not only money; goods, time, and service can matter, though ordinary obligations do not automatically count as tithe. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=13071" target="_blank" rel="noopener noreferrer">3:37:51</a> | What is the Christian stance on reincarnation, and how should pro-reincarnation studies be explained? | Christianity rejects reincarnation, and he points instead to false memories or spiritual deception. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=14300" target="_blank" rel="noopener noreferrer">3:58:20</a> | Is it within Christian orthodoxy to believe Muhammad was a true prophet? | No. He says that falls outside Christian orthodoxy because Muhammad denied core Christian doctrines. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=14397" target="_blank" rel="noopener noreferrer">3:59:57</a> | Did other ancient Near Eastern cultures tithe? | He does not see a clear equivalent, though temples did receive offerings and taxes. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=14642" target="_blank" rel="noopener noreferrer">4:04:02</a> | What Bible software does he use? | An old copy of BibleWorks rather than a current subscription platform. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=14857" target="_blank" rel="noopener noreferrer">4:07:37</a> | Which science-fiction world has enthralled him the most? | Dune, especially Frank Herbert's original series. |
+| <a href="https://youtu.be/WTjKMnybR3A?t=15256" target="_blank" rel="noopener noreferrer">4:14:16</a> | What was God's relation to the peoples who lived before Abraham? | He thinks there was some real communication from God to pre-Abrahamic peoples, even if the details are sparse. |
