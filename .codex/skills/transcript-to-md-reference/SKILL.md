@@ -266,9 +266,11 @@ Use TSV when exact seconds or generated links are difficult to validate from TXT
 
 1. Validate that all table rows render cleanly.
 2. Validate that timestamp display text matches the `?t=` seconds value.
-3. Review the resulting diff.
-4. Update navigation and status references, especially `README.md`, when adding or moving public curated pages.
-5. If several pages were created in parallel, serialize shared-file updates such as `README.md`, indexes, or status records through the parent agent.
+3. Count the final question data rows.
+4. Review the resulting diff.
+5. Update navigation and status references, especially `README.md`, when adding or moving public curated pages.
+6. If several pages were created in parallel, serialize shared-file updates such as `README.md`, indexes, status records, and `src/transcript-audit.log` through the parent agent.
+7. Append the creation or regeneration tracking record only after the page and related changes have been validated.
 
 ## Existing Page Safety
 
@@ -393,8 +395,75 @@ If migrating old generated pages, move them from `src/md/` or `transcripts/lives
 - Do not use local AI for semantic page creation unless the user explicitly requests it.
 - Do not treat candidate-search output as complete transcript coverage.
 - Do not let two agents create, regenerate, or review the same page concurrently.
-- Serialize changes to shared files such as `README.md`, `docs/questions/index.md`, or status notes through the parent agent.
-- If an agent cannot demonstrate full transcript coverage for its assigned file, do not describe that page as complete.
+- Serialize changes to shared files such as `README.md`, `docs/questions/index.md`, status notes, and `src/transcript-audit.log` through the parent agent.
+- Semantic subagents must not append `src/transcript-audit.log`; return the validated counts and concise record note to the parent agent.
+- If an agent cannot demonstrate full transcript coverage for its assigned file, do not describe that page as complete or append a successful creation record.
+
+## Creation And Regeneration Tracking
+
+Use `src/transcript-audit.log` as an append-only tracking record for completed page creation and explicit regeneration. The log records work history; it is not transcript evidence and must not influence the independent first-pass analysis.
+
+### Before Writing
+
+- Do not read or use previous audit-log entries before independently evaluating the transcript and building the complete question inventory.
+- Determine `question_count_before`:
+  - use `0` when creating a page that does not already exist
+  - when the user explicitly requested regeneration or replacement, count the existing page's actual question data rows before changing it
+- Count only actual question rows. Do not count the table header, separator row, or transcript notes.
+
+### After Writing And Validation
+
+- Count the final question data rows as `question_count_after`.
+- Calculate:
+
+```text
+question_count_change = question_count_after - question_count_before
+```
+
+- Confirm that `question_count_before`, `question_count_after`, and `question_count_change` agree.
+- After the independent creation or regeneration work is complete, search only for existing log entries matching the target filename when prior history may help identify unresolved concerns or compare earlier work.
+- Treat previous entries as clues and history, never as proof that a question, answer summary, or timestamp is correct.
+- Do not read or summarize the entire audit log merely to process one page.
+- Append exactly one new record for each successfully created or regenerated page.
+- Preserve all existing records without rewriting, sorting, or normalizing them.
+- Do not add or infer an `audit_pass` number. The existing log does not guarantee a complete audit sequence.
+- Do not append a success record when a page was not created because of a missing, empty, or otherwise blocked transcript source.
+- In batch work, semantic subagents must not append the shared log. The parent agent appends records serially after validating each page.
+
+Record:
+
+- ISO 8601 full local timestamp
+- created or regenerated file short name and extension
+- semantic creation model
+- semantic creation reasoning effort
+- `coverage=full`
+- `question_count_before`
+- `question_count_after`
+- `question_count_change`, including `+` for positive changes
+- whether the file could use further inspection
+- a concise note identifying first-pass creation or explicit regeneration and any important uncertainty
+
+For `could_use_further_inspection`:
+
+- use `yes` for ordinary first-pass creation because the page has not yet received a separate audit pass
+- for an explicit regeneration, use `yes` when material uncertainty remains and `no` only when no important unresolved concern was found
+- do not describe a first-pass creation record as an audit
+
+For model and effort fields:
+
+- record runtime-reported values when available
+- otherwise record the parent session's selected values because semantic agents are required to inherit them
+- if a value cannot be determined, record `unknown`
+- do not record a mechanical helper's model or effort as the semantic creation model or effort
+- do not guess a model name from behavior or output quality
+
+Example first-pass record; replace placeholders and counts with actual values:
+
+```text
+2026-06-27T12:34:56-05:00 265-the-pharaoh-of-swing-questions.md; model=MODEL_NAME; effort=EFFORT_LEVEL; coverage=full; question_count_before=0; question_count_after=68; question_count_change=+68; could_use_further_inspection=yes; created first-pass page from full transcript coverage; separate audit not yet performed.
+```
+
+Existing records in older formats may remain unchanged.
 
 ## Validation
 
@@ -438,6 +507,7 @@ Keep the final response short. Report:
 - created page paths
 - actual question-row count for each page
 - validation performed
+- confirmation that the creation or regeneration record was appended
 - blockers or material uncertainty
 
 Do not provide a long transcript-analysis report unless the user explicitly requests one.
@@ -461,7 +531,12 @@ A task using this skill is complete only when the relevant items are true:
 - timestamp links include `target="_blank"` and `rel="noopener noreferrer"`
 - Markdown tables render cleanly
 - no placeholder or legacy links remain
+- `question_count_before`, `question_count_after`, and `question_count_change` agree
 - the final question-row count was checked
+- the creation or regeneration record was appended only after independent transcript analysis and page validation
+- the recorded `coverage=full` matches the work actually performed
+- ordinary first-pass creation records use `could_use_further_inspection=yes` and do not claim that an audit occurred
+- no successful creation record was appended for a blocked or uncreated page
 - generated TXT or TSV files, when created, were produced by `scripts/Convert-TranscriptJson.ps1`
 - `README.md` explicit episode links and current-status text are updated when needed
 - `docs/index.html` searches `docs/questions/` or the mismatch is reported
