@@ -1,0 +1,33 @@
+# Questions in Dr. Falk plays Assassin's Creed Origins (part 6)
+
+Dr. Falk plays Assassin's Creed Origins (part 6)
+
+Time links open the YouTube video at the relevant timestamp.
+
+| Time | Question | Short answer / answer direction |
+|---:|---|---|
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=397" target="_blank" rel="noopener noreferrer">6:37</a> | How should we understand the "judgment of the gods" in Exodus 12:12? | He said the passage is better read as judgment on Egypt's rulers and divine powers, not as if literal statues were being attacked. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=580" target="_blank" rel="noopener noreferrer">9:40</a> | Is Avaris in the game? | He said he did not know yet and would have to see whether the game includes it. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=940" target="_blank" rel="noopener noreferrer">15:40</a> | What kind of event could turn Egypt's stored water black during the plagues? | He suggested something like petroleum or oily discharge into the river as the closest natural comparison. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=1144" target="_blank" rel="noopener noreferrer">19:04</a> | Do you think the Nile literally became blood, or just took on blood-like qualities? | He favored the latter: that it resembled blood rather than becoming literal blood with real corpuscles. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=1287" target="_blank" rel="noopener noreferrer">21:27</a> | What is your view of Lake Nasser from an egyptology standpoint? | He called it mixed: helpful in some ways, destructive in others. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=2043" target="_blank" rel="noopener noreferrer">34:03</a> | Where should the Red Pyramid be relative to the Step Pyramid? | He said it is at Dahshur, farther back, and not actually visible from the Step Pyramid because other pyramids stand between them. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=5361" target="_blank" rel="noopener noreferrer">1:29:21</a> | How would horses be so common in a desert like this? | He said they would not be; the game's horse abundance is not realistic. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=6471" target="_blank" rel="noopener noreferrer">1:47:51</a> | Is Ptah shown as a mummy the way Osiris is? | Yes. He said Ptah is depicted as a mummiform creator god. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=6906" target="_blank" rel="noopener noreferrer">1:55:06</a> | What would you say to Christians who think they should not play video games at all? | He argued against blanket legalism and said the issue is whether the entertainment is morally fitting. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=6976" target="_blank" rel="noopener noreferrer">1:56:16</a> | Do the god-flagpoles go all the way back to the Old Kingdom? | Yes, as far as we can tell. He tied them to the long history of the word `netjer`. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=7105" target="_blank" rel="noopener noreferrer">1:58:25</a> | What language family does Egyptian belong to? | He said Egyptian belongs to the Afroasiatic language family. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=7448" target="_blank" rel="noopener noreferrer">2:04:08</a> | What is a good way to start learning Coptic? | He said there is a right and wrong way to learn it and began recommending books, though the transcript only preserves that in brief. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=8306" target="_blank" rel="noopener noreferrer">2:18:26</a> | Was the Nile sacred in the same way the Ganges is regarded as sacred? | No. He said the Nile was treated as divine, but not as perpetually holy or clean in that Hindu sense. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=8600" target="_blank" rel="noopener noreferrer">2:23:20</a> | How prestigious was it to be a bronze smith in ancient Egypt? | He said it was an important and respected craft within the craftsman class. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=8634" target="_blank" rel="noopener noreferrer">2:23:54</a> | What probably darkened the land of Egypt during the plague of darkness? | He suggested a sandstorm mixed with fire and ash. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=9211" target="_blank" rel="noopener noreferrer">2:33:31</a> | Can you explain the temple of Wepwawet a bit? | He said it stood on the mount at Lycopolis and gave some brief location and cult context. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=10112" target="_blank" rel="noopener noreferrer">2:48:32</a> | How did Christianity change the culture of Egypt? | He said Christianity became culturally dominant especially in Lower Egypt and shaped education and church leadership from Alexandria outward. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=10484" target="_blank" rel="noopener noreferrer">2:54:44</a> | Can we definitely say Ramesses II was the pharaoh of the exodus? | Yes, he said, if there was an exodus at all Ramesses II is the only serious fit. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=10798" target="_blank" rel="noopener noreferrer">2:59:58</a> | What is a swamp puppy? | He said it is just a nickname for an alligator or crocodile. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=10999" target="_blank" rel="noopener noreferrer">3:03:19</a> | Are there any theories about which pharaoh Joseph interpreted dreams for? | He said it was probably one of the Hyksos kings, though not identifiable with certainty. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=11246" target="_blank" rel="noopener noreferrer">3:07:26</a> | How deep is the Nile? | He said it is generally not especially deep, often around forty feet at most in the areas he had in mind. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=11305" target="_blank" rel="noopener noreferrer">3:08:25</a> | Were the Nile inundations fast moving? | Sometimes yes. He said they could sweep trees and other material downriver. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=11563" target="_blank" rel="noopener noreferrer">3:12:43</a> | What caused the Pelusiac branch to dry up? | He said sedimentation gradually choked it off. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=11666" target="_blank" rel="noopener noreferrer">3:14:26</a> | Is the source of the Nile in Abyssinia, and where does the Nile really begin? | He said the Nile comes from the White and Blue Nile, with one source in Ethiopia and the fuller source question still debated because the river system shifts seasonally. |
+| <a href="https://youtu.be/0Y3MlmY_XYA?t=14178" target="_blank" rel="noopener noreferrer">3:56:18</a> | Why was Egypt used so heavily for cotton production? | He said Egypt's combination of abundant irrigation, strong sun, and otherwise dry conditions made it ideal for cotton. |
