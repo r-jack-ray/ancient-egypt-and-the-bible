@@ -1,0 +1,30 @@
+# Questions in Dr. Falk plays Assassin's Creed Origins (part 8)
+
+Dr. Falk plays Assassin's Creed Origins (part 8)
+
+Time links open the YouTube video at the relevant timestamp.
+
+| Time | Question | Short answer / answer direction |
+|---:|---|---|
+| <a href="https://youtu.be/Irr11_k26rY?t=483" target="_blank" rel="noopener noreferrer">8:03</a> | Are we body, soul, and spirit, or just body and spirit? | He said Christian tradition has defended both views, and no major theology hinges on settling it. |
+| <a href="https://youtu.be/Irr11_k26rY?t=540" target="_blank" rel="noopener noreferrer">9:00</a> | Are there enough signups yet for the Egypt tour? | Not yet, but he said interest looked promising and there was still plenty of time. |
+| <a href="https://youtu.be/Irr11_k26rY?t=617" target="_blank" rel="noopener noreferrer">10:17</a> | Could we expect more evidence-for-the-Exodus videos, and what about Abraham and Joseph? | Yes. He said more Exodus material is planned, Joseph already has video coverage, and Abraham is much murkier historically. |
+| <a href="https://youtu.be/Irr11_k26rY?t=728" target="_blank" rel="noopener noreferrer">12:08</a> | Why was Ramesses II's long life seen as a curse, and how did Merneptah become pharaoh from so far down the line? | Merneptah inherited because he outlived his older brothers, and very long reigns can weaken kingdoms by slowing renewal and creating instability. |
+| <a href="https://youtu.be/Irr11_k26rY?t=852" target="_blank" rel="noopener noreferrer">14:12</a> | How often are Egyptian documents, carvings, or stelae translated incorrectly? | He said older translations can be quite bad, but recent scholarly translations are usually much more reliable. |
+| <a href="https://youtu.be/Irr11_k26rY?t=957" target="_blank" rel="noopener noreferrer">15:57</a> | Was Moses around when Ramesses II became pharaoh, and how long was he in Midian? | No. He placed Moses earlier and estimated roughly 42 years in Midian. |
+| <a href="https://youtu.be/Irr11_k26rY?t=1074" target="_blank" rel="noopener noreferrer">17:54</a> | Why were cities built on the east side of the Nile? | He said the east bank had the more favorable daily temperature pattern, while the west was more associated with tombs. |
+| <a href="https://youtu.be/Irr11_k26rY?t=1183" target="_blank" rel="noopener noreferrer">19:43</a> | Is there a good affordable alternative to HALOT? | Yes. He recommended Holladay's concise Hebrew and Aramaic lexicon as a cheaper starter option. |
+| <a href="https://youtu.be/Irr11_k26rY?t=1293" target="_blank" rel="noopener noreferrer">21:33</a> | How do we know Moses left by the end of Horemheb's reign rather than under Ramesses I? | He said it is not certain, but Horemheb's anti-corruption reputation fits the story best. |
+| <a href="https://youtu.be/Irr11_k26rY?t=2406" target="_blank" rel="noopener noreferrer">40:06</a> | Which governorates and regions does your Egypt tour cover? | He said the extended tour includes Sinai, and the wider trip includes places such as Aswan, Thebes, Abydos, Cairo, and Tanis. |
+| <a href="https://youtu.be/Irr11_k26rY?t=2651" target="_blank" rel="noopener noreferrer">44:11</a> | When did the Sphinx lose its nose? | He said the exact date is uncertain, but it seems to have happened in the Islamic period. |
+| <a href="https://youtu.be/Irr11_k26rY?t=2897" target="_blank" rel="noopener noreferrer">48:17</a> | Will you be streaming or filming during your Egypt tour? | He hopes to, though he said internet limits may make recording and uploading more practical than livestreaming. |
+| <a href="https://youtu.be/Irr11_k26rY?t=3552" target="_blank" rel="noopener noreferrer">59:12</a> | Which site matters most to you as Egypt's greatest wonder? | He said he prefers the temples and tombs over the pyramids. |
+| <a href="https://youtu.be/Irr11_k26rY?t=7046" target="_blank" rel="noopener noreferrer">1:57:26</a> | Was any later eastern empire more brutal than Assyria? | He said no empire clearly surpassed Assyria overall, though the Persians had moments of comparable brutality. |
+| <a href="https://youtu.be/Irr11_k26rY?t=7150" target="_blank" rel="noopener noreferrer">1:59:10</a> | Is there any villain-origin explanation for why the Assyrians were so brutal? | No. He traced it to economics, competition, and imperial struggle for resources. |
+| <a href="https://youtu.be/Irr11_k26rY?t=7735" target="_blank" rel="noopener noreferrer">2:08:55</a> | Did Egypt have contact with West Africans? | He said not with West Africans directly, though Egypt did have contact with Nubia, Punt, and nearby sub-Saharan regions. |
+| <a href="https://youtu.be/Irr11_k26rY?t=8196" target="_blank" rel="noopener noreferrer">2:16:36</a> | What separates a god's good coming from a bad coming? | He said the good coming is the god's beneficial action, while the bad coming is the destructive side of that same power. |
+| <a href="https://youtu.be/Irr11_k26rY?t=8252" target="_blank" rel="noopener noreferrer">2:17:32</a> | Was there any god or entity with only a bad coming? | He said Apophis comes closest, though he treated Apophis more as a demon than an ordinary god. |
+| <a href="https://youtu.be/Irr11_k26rY?t=8358" target="_blank" rel="noopener noreferrer">2:19:18</a> | Is there a metaphysical reason Egyptian gods have dual natures? | He said it seems to be simply how Egyptian religion developed. |
+| <a href="https://youtu.be/Irr11_k26rY?t=9282" target="_blank" rel="noopener noreferrer">2:34:42</a> | If a temple were broken like that, would it lose value in Egyptian eyes? | No. He said temples could suffer damage without ceasing to matter as temples. |
+| <a href="https://youtu.be/Irr11_k26rY?t=9322" target="_blank" rel="noopener noreferrer">2:35:22</a> | What do you think of the idea that Joseph and Imhotep were the same person? | He dismissed the idea outright. |
+| <a href="https://youtu.be/Irr11_k26rY?t=10949" target="_blank" rel="noopener noreferrer">3:02:29</a> | Are those papyrus boats accurate? | Largely yes. He said papyrus boats were real but usually temporary seasonal craft, unlike more permanent wooden boats. |

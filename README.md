@@ -271,6 +271,20 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 - [264 The Shasu Of Vancouver Questions](docs/questions/264-the-shasu-of-vancouver-questions.md)
 - [265 The Pharaoh Of Swing Questions](docs/questions/265-the-pharaoh-of-swing-questions.md)
 - [266 Three Major Questions Questions](docs/questions/266-three-major-questions-questions.md)
+- [267 Ramesses II, Marketing Genius Questions](docs/questions/267-ramesses-ii-marketing-genius-questions.md)
+- [Special Live Stream: All the Stars as Angels Q&A Questions](docs/questions/special-live-stream-all-the-stars-as-angels-q-and-a-questions.md)
+- [Special Live Stream: Reliquary of the Dead Q&A Questions](docs/questions/special-live-stream-reliquary-of-the-dead-q-and-a-questions.md)
+- [Dr. Falk Plays Assassin's Creed Origins (part 1) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-1-questions.md)
+- [Dr. Falk Plays Assassin's Creed Origins (part 2) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-2-questions.md)
+- [Dr. Falk Plays Assassin's Creed Origins (part 3) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-3-questions.md)
+- [Dr. Falk Plays Assassin's Creed Origins (part 4) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-4-questions.md)
+- [Dr. Falk Plays Assassin's Creed Origins (part 5) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-5-questions.md)
+- [Dr. Falk Plays Assassin's Creed Origins (part 6) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-6-questions.md)
+- [Dr. Falk Plays Assassin's Creed Origins (part 7) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-7-questions.md)
+- [Dr. Falk Plays Assassin's Creed Origins (part 8) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-8-questions.md)
+- [Dr. Falk Plays Assassin's Creed Origins (part 9) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-9-questions.md)
+- [Dr. Falk Plays Assassin's Creed Origins (part 10) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-10-questions.md)
+- [Dr. Falk Plays Assassin's Creed Origins (part 11) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-11-questions.md)
 
 
 - [Livestream archive](src/live-stream-list.md) - episode list with YouTube links and transcript slugs.
@@ -334,7 +348,7 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 
 ## Current Status
 
-The repository currently has generated TXT working transcripts for 264 numbered episode streams. Curated Markdown pages currently exist for 264 numbered episode streams under `docs/questions/`, and the next missing processable numbered episode page is Live Stream #267.
+The repository currently has generated TXT working transcripts for 265 numbered episode streams. Curated Markdown pages currently exist for 265 numbered episode streams under `docs/questions/`, matching the current numbered TXT coverage.
 
 Known blocked numbered episodes remain:
 - Live Stream #118: transcript disabled / empty placeholder
