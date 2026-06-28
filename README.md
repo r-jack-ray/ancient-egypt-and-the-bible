@@ -237,6 +237,17 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 - [230 Ten Things About One Thing Questions](docs/questions/230-ten-things-about-one-thing-questions.md)
 - [231 Why Bother With Stream Titles No One Can Read Questions](docs/questions/231-why-bother-with-stream-titles-no-one-can-read-questions.md)
 - [232 The Abr Grove Has No Soul Questions](docs/questions/232-the-abr-grove-has-no-soul-questions.md)
+- [233 Happy All Saints' Eve Questions](docs/questions/233-happy-all-saints-eve-questions.md)
+- [234 The Nephilim Are Coming For You Questions](docs/questions/234-the-nephilim-are-coming-for-you-questions.md)
+- [235 Trick Or Treaty Questions](docs/questions/235-trick-or-treaty-questions.md)
+- [236 Our Third ETS D&D Special Live Stream Questions](docs/questions/236-our-third-ets-d-and-d-special-live-stream-questions.md)
+- [237 Tea Spilled All Over The Floor Questions](docs/questions/237-tea-spilled-all-over-the-floor-questions.md)
+- [238 I've Got Your Emails Questions](docs/questions/238-i-ve-got-your-emails-questions.md)
+- [239 Monsters Of Myth And Rubber Chicken Questions](docs/questions/239-monsters-of-myth-and-rubber-chicken-questions.md)
+- [240 The Last Of Winter's Tea Questions](docs/questions/240-the-last-of-winter-s-tea-questions.md)
+- [241 Decking The Halls With Poison Ivy Questions](docs/questions/241-decking-the-halls-with-poison-ivy-questions.md)
+- [242 Happy New Year 2026 Questions](docs/questions/242-happy-new-year-2026-questions.md)
+- [243 In Search Of Nuance Questions](docs/questions/243-in-search-of-nuance-questions.md)
 - [244 Romani Ite Domum Questions](docs/questions/244-romani-ite-domum-questions.md)
 - [245 Friday The 23 Rd Questions](docs/questions/245-friday-the-23-rd-questions.md)
 - [246 Egyptian Royal Streaming Questions](docs/questions/246-egyptian-royal-streaming-questions.md)
@@ -259,6 +270,7 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 - [263 The Live Streamer S Gambit Questions](docs/questions/263-the-live-streamer-s-gambit-questions.md)
 - [264 The Shasu Of Vancouver Questions](docs/questions/264-the-shasu-of-vancouver-questions.md)
 - [265 The Pharaoh Of Swing Questions](docs/questions/265-the-pharaoh-of-swing-questions.md)
+- [266 Three Major Questions Questions](docs/questions/266-three-major-questions-questions.md)
 
 
 - [Livestream archive](src/live-stream-list.md) - episode list with YouTube links and transcript slugs.
@@ -322,7 +334,7 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 
 ## Current Status
 
-The repository currently has generated TXT working transcripts for 264 numbered episode streams. Curated Markdown pages currently exist for 252 numbered episode streams under `docs/questions/`, and the next missing processable numbered episode page is Live Stream #233.
+The repository currently has generated TXT working transcripts for 264 numbered episode streams. Curated Markdown pages currently exist for 264 numbered episode streams under `docs/questions/`, and the next missing processable numbered episode page is Live Stream #267.
 
 Known blocked numbered episodes remain:
 - Live Stream #118: transcript disabled / empty placeholder
