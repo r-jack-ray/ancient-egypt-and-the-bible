@@ -301,6 +301,7 @@ Time links open the YouTube video at the relevant timestamp.
 ```
 
 For topic indexes or special-purpose pages, adapt the heading and table columns, but keep timestamp links in the first column unless the user asks for a different structure.
+For ordinary full Q&A pages, do not use alternate column orders such as `Question | Time | Answer`; the timestamp column must be first.
 
 ## Timestamp And Link Rules
 
@@ -359,7 +360,9 @@ Markdown table rows must render cleanly in GitHub and GitHub Pages.
 
 - Use one table row per line.
 - Use exactly three columns for ordinary pages.
+- Use the exact ordinary-page header `| Time | Question | Short answer / answer direction |`.
 - Keep timestamp links in the first column.
+- Ensure every ordinary-page data row begins with the timestamp anchor, followed by the question and then the short answer.
 - Escape literal pipe characters inside cells as `\|`.
 - Avoid raw newlines inside table cells.
 - Keep answer summaries short enough to scan.
