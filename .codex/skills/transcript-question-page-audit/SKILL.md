@@ -239,6 +239,8 @@ Rules:
 - one table row per line
 - exactly three columns for ordinary pages
 - timestamp link in column 1
+- ordinary pages must use the exact column order `Time | Question | Short answer / answer direction`
+- if an ordinary page uses another order such as `Question | Time | Answer`, normalize it to the standard order as part of the repair
 - escape literal pipes inside cells as `\|`
 - no raw newlines inside cells
 - no placeholder links
@@ -267,6 +269,7 @@ git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible diff -- $path
 ```
 
 Also verify display timestamps match `?t=` seconds for changed rows or when links were edited.
+For ordinary pages, also verify the table header is exactly `| Time | Question | Short answer / answer direction |` and that every data row begins with a timestamp link.
 
 ## Output Modes
 
