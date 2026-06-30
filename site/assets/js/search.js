@@ -210,7 +210,6 @@
       var item = fragment.querySelector("[data-result-item]");
       var episodeLink = fragment.querySelector("[data-episode-link]");
       var videoLink = fragment.querySelector("[data-video-link]");
-      var pageAction = fragment.querySelector("[data-page-action]");
       var questionNode = fragment.querySelector("[data-result-question]");
       var answerNode = fragment.querySelector("[data-result-answer]");
 
@@ -234,9 +233,6 @@
         videoTime.textContent = row.time_label;
         videoLink.appendChild(videoLabel);
         videoLink.appendChild(videoTime);
-      }
-      if (pageAction) {
-        pageAction.href = siteUrl(row.content_path);
       }
       if (questionNode) {
         appendHighlightedText(questionNode, row.question, tokens);
