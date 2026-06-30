@@ -39,30 +39,37 @@
   <nav class="question-page-nav" aria-label="Episode navigation">
     <a href="{{ "episodes/" | relURL }}">All episodes</a>
     <a href="{{ "search/" | relURL }}">Question index</a>
-    {{ with $newer.content_path }}
-    <a href="{{ . | relURL }}">Newer: #{{ $newer.number }}</a>
-    {{ end }}
     {{ with $older.content_path }}
     <a href="{{ . | relURL }}">Older: #{{ $older.number }}</a>
+    {{ end }}
+    {{ with $newer.content_path }}
+    <a href="{{ . | relURL }}">Newer: #{{ $newer.number }}</a>
     {{ end }}
   </nav>
 
   {{ if gt (len $questions) 0 }}
+  {{ $expandedQuestions := where $questions "expanded_answer" "!=" nil }}
   <div class="index-toolbar">
     <label class="visually-hidden" for="episode-question-filter">Filter questions</label>
     <input id="episode-question-filter" data-filter-control data-filter-target="#episode-question-list" data-filter-count="#episode-question-count" type="search" placeholder="Filter this episode by topic, passage, or answer">
     <span id="episode-question-count" class="results-summary"></span>
+    {{ if gt (len $expandedQuestions) 0 }}
+    <button class="secondary-button compact-button" type="button" data-expanded-answer-toggle data-expanded-answer-target="#episode-question-list" aria-controls="episode-question-list" aria-expanded="false">Show expanded answers</button>
+    {{ end }}
   </div>
 
   <ol id="episode-question-list" class="episode-question-list">
     {{ range $questions }}
-    <li class="episode-question-card" data-filter-item data-filter-text="{{ .time_label }} {{ .question | plainify }} {{ .short_answer | plainify }}">
+    <li class="episode-question-card" data-filter-item data-filter-text="{{ .time_label }} {{ .question | plainify }} {{ .short_answer | plainify }} {{ with .expanded_answer }}{{ . | plainify }}{{ end }}">
       <a class="episode-question-time" href="{{ .video_url }}" target="_blank" rel="noopener noreferrer">
         <span>Video<br><strong>{{ .time_label }}</strong></span>
       </a>
       <div class="episode-question-body">
         <h2>{{ .question | markdownify }}</h2>
         <p>{{ .short_answer | markdownify }}</p>
+        {{ with .expanded_answer }}
+        <div class="episode-expanded-answer" data-expanded-answer hidden>{{ . | markdownify }}</div>
+        {{ end }}
       </div>
     </li>
     {{ end }}

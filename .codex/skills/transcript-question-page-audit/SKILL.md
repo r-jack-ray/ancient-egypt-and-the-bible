@@ -1,6 +1,6 @@
 ---
 name: transcript-question-page-audit
-description: Find and fix issues in existing Ancient Egypt and the Bible curated question Markdown pages under docs/questions against TXT and JSON transcript sources. Use for low-output correction passes, timestamp verification, missing-question repair, unsupported short or expanded answer cleanup, table/link validation including four-column expanded-answer tables, and minimal-diff edits. Do not use for first-pass transcript-to-Markdown generation.
+description: Find and fix issues in existing Ancient Egypt and the Bible curated question Markdown pages under docs/questions against TXT and JSON transcript sources. Use for low-output correction passes, timestamp verification, missing-question repair, unsupported short answers, transcript-grounded expanded-answer population and cleanup, table/link validation including four-column expanded-answer tables, and minimal-diff edits. Do not use for first-pass transcript-to-Markdown generation.
 ---
 
 # Transcript Question Page Audit
@@ -29,8 +29,8 @@ Semantic audit work includes:
 - deciding question inclusion or exclusion
 - interpreting transcript fragments
 - choosing question wording
-- writing or revising answer summaries
-- validating expanded answers when present
+- writing or revising short and expanded answer summaries
+- validating expanded answers for every ordinary-page row
 - resolving timestamps
 - editing the question page
 
@@ -215,12 +215,14 @@ Short answers must be transcript-grounded:
 
 Expanded answers:
 
-- may be `_Expansion pending._`; this is allowed and is not an audit failure
-- must be transcript-grounded when not pending
+- are required for ordinary pages unless the user explicitly asks not to populate them
+- must be transcript-grounded, useful as a standalone explanation, and more detailed than the short answer
 - must not contradict the short answer
-- should add useful transcript-supported detail rather than merely repeating the short answer
-- should be updated when a short answer is factually corrected and the expanded answer is not pending
-- should be counted separately from factual audit issues when reporting remaining work
+- should preserve the speaker's caveats, uncertainty, and limits rather than smoothing them away
+- should add transcript-supported detail such as reasoning, examples, qualifications, and distinctions that help a reader understand the answer without rewatching the segment
+- should be updated whenever the short answer, question wording, timestamp, split/merge decision, or supporting transcript window changes
+- may use `_Expansion pending._` only when the transcript does not support a reliable expanded answer after inspection, the row is intentionally deferred by an explicit user instruction, or the page is a special-purpose page whose established structure does not support expanded answers
+- must leave a concise note in the final output and audit log if any ordinary-page row still has `_Expansion pending._`
 
 Use uncertainty when needed:
 
@@ -241,7 +243,7 @@ Time links open the YouTube video at the relevant timestamp.
 
 | Time | Question | Short answer / answer direction | Expanded answer |
 |---:|---|---|---|
-| <a href="https://youtu.be/VIDEO_ID?t=543" target="_blank" rel="noopener noreferrer">9:03</a> | Question text? | Short supported answer. | _Expansion pending._ |
+| <a href="https://youtu.be/VIDEO_ID?t=543" target="_blank" rel="noopener noreferrer">9:03</a> | Question text? | Short supported answer. | Expanded transcript-grounded answer with the main reasoning, caveats, and examples. |
 ```
 
 Rules:
@@ -251,11 +253,11 @@ Rules:
 - timestamp link in column 1
 - ordinary pages must use the exact column order `Time | Question | Short answer / answer direction | Expanded answer`
 - if an ordinary page uses another order such as `Question | Time | Answer`, normalize it to the standard order as part of the repair
-- if an ordinary page still uses the legacy three-column order, add the `Expanded answer` column and use `_Expansion pending._` for each existing row unless the user explicitly asked for expanded answers
+- if an ordinary page still uses the legacy three-column order, add the `Expanded answer` column and populate transcript-grounded expanded answers for retained and added rows
 - escape literal pipes inside cells as `\|`
 - no raw newlines inside cells
 - no placeholder links
-- `_Expansion pending._` is allowed only in the expanded-answer column
+- `_Expansion pending._` is allowed only in the expanded-answer column and only for an explicitly justified exception under the expanded-answer rules
 
 Special-purpose pages may keep their existing adapted structure when supported. Transcript notes after the table are allowed if transcript-grounded and clearly
 separate from Q&A rows.
@@ -281,7 +283,7 @@ git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible diff -- $path
 ```
 
 Also verify display timestamps match `?t=` seconds for changed rows or when links were edited.
-For ordinary pages, also verify the table header is exactly `| Time | Question | Short answer / answer direction | Expanded answer |`, that every data row begins with a timestamp link, and that every expanded-answer cell is either `_Expansion pending._` or non-empty transcript-grounded text.
+For ordinary pages, also verify the table header is exactly `| Time | Question | Short answer / answer direction | Expanded answer |`, that every data row begins with a timestamp link, and that every expanded-answer cell is non-empty, transcript-grounded text. If any ordinary-page row remains `_Expansion pending._`, confirm it has a specific documented justification from the expanded-answer rules.
 
 ## Output Modes
 
@@ -381,6 +383,7 @@ Record:
 - `question_count_after`
 - `question_count_change`, including `+` for positive changes
 - whether the file could use further inspection
+- whether any ordinary-page expanded answers remain pending and why
 - a concise note describing important changes or remaining uncertainty
 
 For model and effort fields:
@@ -408,7 +411,8 @@ Finish only when relevant items are true:
 - `?t=` seconds match display timestamps
 - timestamp links include `target="_blank"` and `rel="noopener noreferrer"`
 - short answers are supported and preserve uncertainty
-- expanded answers are pending or transcript-supported and consistent with short answers
+- expanded answers are populated, transcript-supported, consistent with short answers, and preserve uncertainty
+- any remaining `_Expansion pending._` cells are specifically justified in the final output and audit log
 - no outside facts were added
 - table rows render cleanly
 - no placeholder links or legacy links remain
