@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ $questions := hugo.Data.questions }}
+{{ $aliases := index site.Data "search-aliases" }}
 <h1 class="page-title">{{ .Title }}</h1>
 <section class="search-panel" data-question-search data-base-path="{{ site.Home.RelPermalink }}">
   <div class="search-controls">
@@ -53,6 +54,7 @@
 </template>
 
 <script type="application/json" id="question-search-data">{{ $questions | jsonify | safeJS }}</script>
+<script type="application/json" id="question-search-aliases">{{ $aliases | jsonify | safeJS }}</script>
 {{ end }}
 
 {{ define "scripts" }}
