@@ -11,9 +11,9 @@ function Get-RelativePath {
         [Parameter(Mandatory = $true)][string]$Path
     )
 
-    $baseUri = [Uri]((Resolve-Path -LiteralPath $BasePath).Path.TrimEnd("\") + "\")
-    $pathUri = [Uri](Resolve-Path -LiteralPath $Path).Path
-    return [Uri]::UnescapeDataString($baseUri.MakeRelativeUri($pathUri).ToString()).Replace("/", "\")
+    $resolvedBase = (Resolve-Path -LiteralPath $BasePath).Path
+    $resolvedPath = (Resolve-Path -LiteralPath $Path).Path
+    return [System.IO.Path]::GetRelativePath($resolvedBase, $resolvedPath).Replace([System.IO.Path]::DirectorySeparatorChar, "/")
 }
 
 function ConvertTo-YamlScalar {
