@@ -1,0 +1,73 @@
+{
+  "aliasGroups": [
+    ["ramses", "ramesses", "rameses"],
+    ["thutmose", "thutmosis", "tuthmosis"],
+    ["amenhotep", "amenophis"],
+    ["akhenaten", "akhnaten"],
+    ["horemheb", "haremhab"],
+    ["ramessid", "ramesside", "ramessides"],
+    ["merneptah", "merenptah"],
+    ["seti", "sety", "sethos"],
+    ["setnakhte", "setnakht"],
+    ["amenmesse", "amenmesses"],
+    ["amunherkhepeshef", "amunherkhepshef", "amenherkhepeshef", "amenherkhepshef"],
+    ["yahweh", "yhwh"],
+    ["ps", "psalm", "psalms"],
+    ["exod", "exodus"],
+    ["deut", "deuteronomy"],
+    ["isa", "isaiah"],
+    ["jer", "jeremiah"],
+    ["ezek", "ezekiel"],
+    ["rom", "romans"],
+    ["rev", "revelation", "apocalypse"],
+    ["2", "ii"],
+    ["3", "iii"],
+    ["4", "iv"],
+    ["6", "vi"],
+    ["7", "vii"],
+    ["8", "viii"],
+    ["9", "ix"]
+  ],
+  "queryTests": [
+    {
+      "query": "ramses 2",
+      "minResults": 50,
+      "maxResults": 500
+    },
+    {
+      "query": "ramesses ii",
+      "minResults": 50,
+      "maxResults": 500
+    },
+    {
+      "query": "ramessides",
+      "minResults": 20,
+      "maxResults": 100
+    },
+    {
+      "query": "merenptah stele",
+      "minResults": 20,
+      "maxResults": 100
+    },
+    {
+      "query": "sethos",
+      "minResults": 10,
+      "maxResults": 100
+    },
+    {
+      "query": "amunherkhepshef",
+      "minResults": 2,
+      "maxResults": 20
+    },
+    {
+      "query": "yhwh",
+      "minResults": 1,
+      "maxResults": 500
+    },
+    {
+      "query": "ps 82",
+      "minResults": 1,
+      "maxResults": 200
+    }
+  ]
+}

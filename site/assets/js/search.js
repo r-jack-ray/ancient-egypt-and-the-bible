@@ -1,6 +1,7 @@
 (function () {
   var root = document.querySelector("[data-question-search]");
   var dataNode = document.getElementById("question-search-data");
+  var aliasNode = document.getElementById("question-search-aliases");
   var template = document.getElementById("question-result-template");
 
   if (!root || !dataNode || !template) {
@@ -26,6 +27,8 @@
   var currentRows = [];
   var currentTokens = [];
   var questionBySearchId = {};
+  var searchAliasGroups = readSearchAliasGroups(aliasNode);
+  var searchAliases = {};
 
   function normalize(value) {
     return (value || "").toString().toLowerCase().trim();
@@ -35,10 +38,62 @@
     return normalize(value).split(/\s+/).filter(Boolean);
   }
 
+  function tokenizeSearchTerms(value) {
+    return normalize(value).replace(/<[^>]*>/g, " ").match(/[a-z0-9]+/g) || [];
+  }
+
+  function readSearchAliasGroups(node) {
+    if (!node) {
+      return [];
+    }
+
+    try {
+      var data = JSON.parse(node.textContent || "{}");
+      if (typeof data === "string") {
+        data = JSON.parse(data);
+      }
+      if (Array.isArray(data)) {
+        return data;
+      }
+      if (data && Array.isArray(data.aliasGroups)) {
+        return data.aliasGroups;
+      }
+    } catch (error) {
+      return [];
+    }
+
+    return [];
+  }
+
+  searchAliasGroups.forEach(function (group) {
+    group.forEach(function (term) {
+      searchAliases[term] = group.filter(function (alias) {
+        return alias !== term;
+      });
+    });
+  });
+
+  function getSearchAliases(value) {
+    var aliases = {};
+    tokenizeSearchTerms(value).forEach(function (token) {
+      (searchAliases[token] || []).forEach(function (alias) {
+        aliases[alias] = true;
+      });
+    });
+
+    return Object.keys(aliases).join(" ");
+  }
+
   function prepareSearchRows(rows) {
     rows.forEach(function (row, index) {
       row.search_id = index.toString();
       row.episode_number_text = row.episode_number ? row.episode_number.toString() : "";
+      row.search_aliases = getSearchAliases([
+        row.episode_title,
+        row.question,
+        row.short_answer,
+        row.search_text
+      ].join(" "));
       questionBySearchId[row.search_id] = row;
     });
   }
@@ -57,7 +112,8 @@
           "episode_title",
           "question",
           "short_answer",
-          "search_text"
+          "search_text",
+          "search_aliases"
         ],
         storeFields: ["search_id"],
         searchOptions: {
@@ -66,7 +122,8 @@
             episode_title: 4,
             short_answer: 3,
             episode_number_text: 5,
-            search_text: 1
+            search_text: 1,
+            search_aliases: 2
           },
           combineWith: "AND",
           prefix: true,
@@ -133,7 +190,7 @@
     var title = normalize(row.episode_title);
     var question = normalize(row.question);
     var answer = normalize(row.short_answer);
-    var searchText = normalize(row.search_text || [title, question, answer].join(" "));
+    var searchText = normalize([row.search_text || [title, question, answer].join(" "), row.search_aliases].join(" "));
 
     if (!tokens.every(function (token) { return searchText.indexOf(token) !== -1; })) {
       return 0;
