@@ -29,3 +29,7 @@ scripts/Get-YouTubeTranscriptJson.run-summary*
 # Local AI wanted to install Python locally
 /Python/
 /reports/
+
+# Hugo local build artifacts. Generated source/data under site/ are intentionally tracked during migration.
+/site/public/
+/site/resources/_gen/
