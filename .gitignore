@@ -19,9 +19,14 @@ env/
 # Transcript tooling venv
 .venv-transcripts/
 
-# Local transient task summaries and notes. Keep only the policy README.
-/task-notes/*
-!/task-notes/README.md
+# Task notes: sync useful Markdown planning/context notes, ignore generated scratch output.
+task-notes/**
+!task-notes/
+!task-notes/**/
+!task-notes/**/*.md
+task-notes/question-revision-explicit-test/**
+task-notes/question-revision-root-test/**
+task-notes/question-revision-scripts-test/**
 
 # Ignore the run summaries for pulling YT transcript JSON.
 scripts/Get-YouTubeTranscriptJson.run-summary*
