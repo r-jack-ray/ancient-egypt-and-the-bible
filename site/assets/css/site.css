@@ -494,6 +494,7 @@ th:first-child {
 .search-controls {
   display: flex;
   align-items: end;
+  flex-wrap: wrap;
   gap: 12px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -504,6 +505,7 @@ th:first-child {
 
 .field {
   display: grid;
+  flex: 1 1 150px;
   gap: 5px;
   min-width: 150px;
 }
@@ -515,11 +517,13 @@ th:first-child {
 }
 
 .field-grow {
-  flex: 1;
-  min-width: 240px;
+  flex: 999 1 280px;
+  min-width: 260px;
 }
 
 .field-narrow {
+  flex: 0 1 130px;
+  min-width: 110px;
   max-width: 130px;
 }
 
@@ -548,6 +552,10 @@ th:first-child {
 .compact-button {
   min-height: 36px;
   padding: 0 12px;
+}
+
+.search-controls > button {
+  flex: 0 0 auto;
 }
 
 .search-results {
@@ -652,6 +660,17 @@ th:first-child {
   padding: 0 0 10px;
 }
 
+@media (max-width: 900px) {
+  .home-intro,
+  .home-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .latest-feature {
+    max-width: 420px;
+  }
+}
+
 @media (max-width: 720px) {
   .site-header-inner {
     align-items: flex-start;
@@ -668,11 +687,6 @@ th:first-child {
 
   .page-title {
     font-size: 1.9rem;
-  }
-
-  .home-intro,
-  .home-columns {
-    grid-template-columns: 1fr;
   }
 
   .home-search,
@@ -695,7 +709,14 @@ th:first-child {
   .field,
   .field-narrow,
   .index-toolbar input {
+    flex: none;
     max-width: none;
+    width: 100%;
+  }
+
+  .field-grow,
+  .search-controls > button {
+    flex: none;
     width: 100%;
   }
 }
