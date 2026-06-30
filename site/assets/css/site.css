@@ -354,7 +354,7 @@ th:first-child {
 
 .episode-question-card {
   display: grid;
-  grid-template-columns: 88px minmax(0, 1fr);
+  grid-template-columns: 96px minmax(0, 1fr);
   gap: 14px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -366,6 +366,7 @@ th:first-child {
   display: grid;
   gap: 1px;
   align-self: start;
+  box-sizing: border-box;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface-alt);
@@ -373,6 +374,7 @@ th:first-child {
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
+  width: 100%;
 }
 
 .episode-question-time span {
