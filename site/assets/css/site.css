@@ -353,7 +353,8 @@ button:focus {
   font-size: 0.92rem;
 }
 
-.episode-index-list {
+.episode-index-list,
+.question-page-list {
   display: grid;
   gap: 10px;
   margin: 0;
@@ -361,7 +362,8 @@ button:focus {
   list-style: none;
 }
 
-.episode-index-card {
+.episode-index-card,
+.question-page-card {
   display: grid;
   grid-template-columns: 82px minmax(0, 1fr) auto;
   align-items: center;
@@ -372,7 +374,8 @@ button:focus {
   padding: 14px;
 }
 
-.episode-badge {
+.episode-badge,
+.question-page-badge {
   display: inline-block;
   min-width: 58px;
   border: 1px solid var(--line);
@@ -384,24 +387,29 @@ button:focus {
   text-align: center;
 }
 
-.episode-index-body {
+.episode-index-body,
+.question-page-body {
   display: grid;
   gap: 3px;
   min-width: 0;
 }
 
-.episode-index-title {
+.episode-index-title,
+.question-page-title {
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
 
-.episode-index-actions {
+.episode-index-actions,
+.question-page-actions {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 8px;
 }
 
-.episode-index-actions a {
+.episode-index-actions a,
+.question-page-actions a {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface-alt);
@@ -413,7 +421,8 @@ button:focus {
   white-space: nowrap;
 }
 
-.episode-index-actions a:hover {
+.episode-index-actions a:hover,
+.question-page-actions a:hover {
   border-color: var(--accent);
 }
 
@@ -788,11 +797,13 @@ th:first-child {
     grid-template-columns: 1fr;
   }
 
-  .episode-index-card {
+  .episode-index-card,
+  .question-page-card {
     grid-template-columns: 1fr;
   }
 
-  .episode-index-actions {
+  .episode-index-actions,
+  .question-page-actions {
     justify-content: flex-start;
   }
 
