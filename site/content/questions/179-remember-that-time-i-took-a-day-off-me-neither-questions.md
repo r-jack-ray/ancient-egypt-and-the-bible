@@ -55,4 +55,3 @@ Time links open the YouTube video at the relevant timestamp.
 | <a href="https://youtu.be/FfAZ-VQatxI?t=13488" target="_blank" rel="noopener noreferrer">3:44:48</a> | What is the meaning of 1 Corinthians 8:13 and Romans 14:13-23? | He reads both passages as warnings not to use freedom in a way that makes another believer stumble. |
 | <a href="https://youtu.be/FfAZ-VQatxI?t=14570" target="_blank" rel="noopener noreferrer">4:02:50</a> | What is the connection between the throw-stick hieroglyph and foreigners? | He says Egyptians likely associated the throwing stick with nomadic peoples even though Egyptians also used it. |
 | <a href="https://youtu.be/FfAZ-VQatxI?t=14926" target="_blank" rel="noopener noreferrer">4:08:46</a> | Was sign language used in ancient Egypt? | He says there was some gesture-based sign communication, but not a fully developed sign language in the modern sense. |
-

@@ -56,4 +56,3 @@ Time links open the YouTube video at the relevant timestamp.
 | <a href="https://youtu.be/bGY1zwr_wss?t=12205" target="_blank" rel="noopener noreferrer">3:23:25</a> | Did Egyptians have wedding anniversaries? | He says we do not know, and describes Egyptian marriage as mainly a civil arrangement. |
 | <a href="https://youtu.be/bGY1zwr_wss?t=13112" target="_blank" rel="noopener noreferrer">3:38:32</a> | Have you read any of Randy Alcorn's books, fiction or nonfiction? | No. He says he has not read Alcorn's books and cannot comment on the angelic-character material. |
 | <a href="https://youtu.be/bGY1zwr_wss?t=13215" target="_blank" rel="noopener noreferrer">3:40:15</a> | Can Psalm 82 be read as speaking to men because it says "you shall die like men"? | He says the comparison language does not force a human-only reading. |
-

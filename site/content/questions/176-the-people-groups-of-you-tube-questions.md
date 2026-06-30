@@ -62,4 +62,3 @@ Time links open the YouTube video at the relevant timestamp.
 | <a href="https://youtu.be/sKKScMy3Q64?t=14425" target="_blank" rel="noopener noreferrer">4:00:25</a> | What are your thoughts on Christian nationalism? | He strongly rejects it, defining it as a distorted mix of Old Testament law-as-state-law and racism rather than ordinary Christian civic duty. |
 | <a href="https://youtu.be/sKKScMy3Q64?t=15509" target="_blank" rel="noopener noreferrer">4:18:29</a> | Were there Freemasons on the King James Bible editing board? | He says the verifiable history of Freemasonry is too late to make that likely. |
 | <a href="https://youtu.be/sKKScMy3Q64?t=15841" target="_blank" rel="noopener noreferrer">4:24:01</a> | How can you have confidence as a Christian? | He says doubt remains part of Christian life, but Scripture, prayer, and faithful church practice can steady and reduce it. |
-

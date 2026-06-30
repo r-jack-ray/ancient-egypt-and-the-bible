@@ -47,4 +47,3 @@ Time links open the YouTube video at the relevant timestamp.
 | <a href="https://youtu.be/80oRlFB_V60?t=11559" target="_blank" rel="noopener noreferrer">3:12:39</a> | If the Shroud is not Jesus' burial cloth, was it a painting of him? | He says the cloth does not date to Jesus and may be a painting, but he withholds fuller claims pending experimental work. |
 | <a href="https://youtu.be/80oRlFB_V60?t=11678" target="_blank" rel="noopener noreferrer">3:14:38</a> | What role should tradition play in theology? | He says tradition can guide theology, but its value depends on whether it grows from exegesis or from later cultural assumptions. |
 | <a href="https://youtu.be/80oRlFB_V60?t=14371" target="_blank" rel="noopener noreferrer">3:59:31</a> | What do you think of historiography, or history through narrative? | He distinguishes that from a narrative fallacy and says narrative forms can still do real historical work. |
-

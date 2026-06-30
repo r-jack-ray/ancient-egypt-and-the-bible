@@ -51,4 +51,3 @@ Time links open the YouTube video at the relevant timestamp.
 | <a href="https://youtu.be/uSma5je3KA4?t=13676" target="_blank" rel="noopener noreferrer">3:47:56</a> | Did studying the Exodus build your faith, or were you a Christian before? | He was already a Christian, but says studying Scripture and the Exodus did build his faith because he treated study as worship. |
 | <a href="https://youtu.be/uSma5je3KA4?t=13875" target="_blank" rel="noopener noreferrer">3:51:15</a> | Is Moses' name related to Ramesses and Thutmose? | He says there are two main views; he favors an Egyptian *m-sh* connection, while acknowledging the *mose* view is also possible. |
 | <a href="https://youtu.be/uSma5je3KA4?t=14674" target="_blank" rel="noopener noreferrer">4:04:34</a> | Does Mark have a low christology? | No. He says Mark still presents a high christology, including Jesus' divine authority. |
-

@@ -69,4 +69,3 @@ Time links open the YouTube video at the relevant timestamp.
 | <a href="https://youtu.be/pjs3dNgZMQA?t=14241" target="_blank" rel="noopener noreferrer">3:57:21</a> | What are your thoughts on Rings of Power and Tolkien's philosophy? | He has not watched Rings of Power and describes Tolkien's outlook more as pastoral and anti-industrial than a formal philosophy. |
 | <a href="https://youtu.be/pjs3dNgZMQA?t=14392" target="_blank" rel="noopener noreferrer">3:59:52</a> | How certain are you that Hammurabi was in Canaan in year 39? | He bases it on Hammurabi's year epithets, especially the year of subduing all enemies, while treating it as an inference. |
 | <a href="https://youtu.be/pjs3dNgZMQA?t=14550" target="_blank" rel="noopener noreferrer">4:02:30</a> | Is Ishtar the same goddess as Isis? | No. He says they have different origins and mythologies, with only superficial similarity. |
-

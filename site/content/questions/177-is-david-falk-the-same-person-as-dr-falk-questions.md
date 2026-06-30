@@ -68,4 +68,3 @@ Time links open the YouTube video at the relevant timestamp.
 | <a href="https://youtu.be/ISMO6TD9giY?t=15541" target="_blank" rel="noopener noreferrer">4:19:01</a> | Does "My name is Legion, for we are many" mean multiple demons can occupy one person? | Yes. He reads the passage as many demons sharing one possession. |
 | <a href="https://youtu.be/ISMO6TD9giY?t=15840" target="_blank" rel="noopener noreferrer">4:24:00</a> | What do you think about the proposed link between metallurgy and Yahwism? | He treats it as a corollary of the Kenite hypothesis and remains unconvinced. |
 | <a href="https://youtu.be/ISMO6TD9giY?t=16284" target="_blank" rel="noopener noreferrer">4:31:24</a> | What is Nagada 3? | He describes it as part of Egypt's late predynastic period before Dynasty 1. |
-

@@ -53,4 +53,3 @@ Time links open the YouTube video at the relevant timestamp.
 | <a href="https://youtu.be/g9tKk48D9Rw?t=13910" target="_blank" rel="noopener noreferrer">3:51:50</a> | Did ancient Egyptians eat eggs, and what was their word for egg? | He says they did eat eggs and would need to look up the Egyptian word. |
 | <a href="https://youtu.be/g9tKk48D9Rw?t=14028" target="_blank" rel="noopener noreferrer">3:53:48</a> | Do the channel's custom emojis need more characters? | He jokes through the suggestion and rejects adding glittering vampires. |
 | <a href="https://youtu.be/g9tKk48D9Rw?t=14851" target="_blank" rel="noopener noreferrer">4:07:31</a> | Did the Apostle John write Revelation, or did another John write it? | He says the author is certainly named John, but the precise identification with the Apostle John remains uncertain. |
-

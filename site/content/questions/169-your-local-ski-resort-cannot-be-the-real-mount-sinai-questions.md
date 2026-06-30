@@ -57,4 +57,3 @@ Time links open the YouTube video at the relevant timestamp.
 | <a href="https://youtu.be/Ur0jd3JLNxk?t=12944" target="_blank" rel="noopener noreferrer">3:35:44</a> | Can he comment on Ephesians 4:29? | He opens the passage and discusses speech that builds up rather than corrupting or tearing down. |
 | <a href="https://youtu.be/Ur0jd3JLNxk?t=13530" target="_blank" rel="noopener noreferrer">3:45:30</a> | Are Ammonites closely related to Israelites? | He says they are related like cousins through the biblical family lines, but not identical or especially close in every respect. |
 | <a href="https://youtu.be/Ur0jd3JLNxk?t=13631" target="_blank" rel="noopener noreferrer">3:47:11</a> | What prevented Egyptians from bringing Yahweh into the Egyptian pantheon after the plagues? | He says Egypt could absorb many gods, but Yahweh's exclusive claims resist ordinary Egyptian syncretism. |
-

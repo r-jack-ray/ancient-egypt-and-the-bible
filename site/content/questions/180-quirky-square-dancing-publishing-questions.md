@@ -47,4 +47,3 @@ Time links open the YouTube video at the relevant timestamp.
 | <a href="https://youtu.be/poPNaIqdshw?t=12352" target="_blank" rel="noopener noreferrer">3:25:52</a> | How did Egyptians handle children with disabilities? | He says they sometimes provided aids such as crutches, litters, or limited sign communication depending on the disability and status. |
 | <a href="https://youtu.be/poPNaIqdshw?t=12788" target="_blank" rel="noopener noreferrer">3:33:08</a> | Did Michael Heiser write fiction? | Yes. He says Heiser used fiction as one way of engaging the culture. |
 | <a href="https://youtu.be/poPNaIqdshw?t=14333" target="_blank" rel="noopener noreferrer">3:58:53</a> | Who were the Ophites? | He describes them as a Jewish and later Christian gnostic sect associated with serpent-focused teaching. |
-
