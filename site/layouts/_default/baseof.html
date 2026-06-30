@@ -7,6 +7,9 @@
   {{ with resources.Get "css/site.css" }}
   <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{ end }}
+  {{ with resources.Get "js/site.js" }}
+  <script src="{{ .RelPermalink }}" defer></script>
+  {{ end }}
 </head>
 <body>
   <header class="site-header">
@@ -27,5 +30,6 @@
       Transitional Hugo build generated from {{ site.Params.sourceCorpus }}.
     </div>
   </footer>
+  {{ block "scripts" . }}{{ end }}
 </body>
 </html>

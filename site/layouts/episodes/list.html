@@ -1,6 +1,11 @@
 {{ define "main" }}
 {{ $episodes := hugo.Data.episodes }}
 <h1 class="page-title">{{ .Title }}</h1>
+<div class="index-toolbar">
+  <label class="visually-hidden" for="episode-filter">Filter episodes</label>
+  <input id="episode-filter" data-filter-control data-filter-target="#episode-table-body" data-filter-count="#episode-filter-count" type="search" placeholder="Filter by number, title, or status">
+  <span id="episode-filter-count" class="results-summary"></span>
+</div>
 <div class="table-wrap">
   <table>
     <thead>
@@ -11,9 +16,9 @@
         <th>Video</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="episode-table-body">
       {{ range $episodes }}
-      <tr>
+      <tr data-filter-item data-filter-text="{{ if .is_numbered }}{{ .number }} {{ end }}{{ .title }} {{ .status }} {{ .series }}">
         <td>{{ if .is_numbered }}#{{ .number }}{{ else }}Special{{ end }}</td>
         <td>
           {{ if .content_path }}

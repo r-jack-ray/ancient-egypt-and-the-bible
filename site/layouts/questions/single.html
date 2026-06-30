@@ -1,10 +1,12 @@
 {{ define "main" }}
 <article>
-  <p class="question-meta">
-    {{ if .Params.is_numbered }}Live Stream #{{ .Params.episode_number }}{{ else }}{{ .Params.series }}{{ end }}
-    · {{ .Params.question_count }} questions
-    · generated from {{ .Params.source_file }}
-  </p>
+  <div class="question-meta-bar">
+    <span>{{ if .Params.is_numbered }}Live Stream #{{ .Params.episode_number }}{{ else }}{{ .Params.series }}{{ end }}</span>
+    <span>{{ .Params.question_count }} questions</span>
+    {{ with .Params.video_id }}
+    <a href="https://youtu.be/{{ . }}" target="_blank" rel="noopener noreferrer">Watch video</a>
+    {{ end }}
+  </div>
   <div class="content-body table-wrap">
     {{ .Content }}
   </div>
