@@ -1,5 +1,7 @@
 # Ancient Egypt and the Bible Transcript Reference
 
+> Live site: [r-jack-ray.github.io/ancient-egypt-and-the-bible](https://r-jack-ray.github.io/ancient-egypt-and-the-bible/)
+
 This repository is a public reference project for the *Ancient Egypt and the Bible* livestream archive. Its goal is to turn livestream transcripts into material that is easy to browse, search, quote, and verify from the original videos.
 
 The raw transcript exports are useful, but long livestreams are hard to navigate from transcript text alone. This project keeps the raw data, generates working transcript text files for processing, and adds curated Markdown Q&A pages so readers can jump from a topic or question directly to the matching moment in the video.
