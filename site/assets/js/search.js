@@ -15,10 +15,16 @@
   var input = root.querySelector("[data-search-input]");
   var typeFilter = root.querySelector("[data-type-filter]");
   var episodeFilter = root.querySelector("[data-episode-filter]");
+  var sortControl = root.querySelector("[data-sort-control]");
   var clearButton = root.querySelector("[data-clear-search]");
+  var loadMoreButton = root.querySelector("[data-load-more]");
   var resultList = root.querySelector("[data-search-results]");
   var resultCount = root.querySelector("[data-result-count]");
-  var resultLimit = 100;
+  var emptyState = root.querySelector("[data-empty-state]");
+  var resultLimitStep = 100;
+  var resultLimit = resultLimitStep;
+  var currentRows = [];
+  var currentTokens = [];
 
   function normalize(value) {
     return (value || "").toString().toLowerCase().trim();
@@ -41,6 +47,33 @@
       }
       return (a.row_index || 0) - (b.row_index || 0);
     });
+  }
+
+  function compareByNewest(a, b) {
+    var aNumber = a.episode_number || 0;
+    var bNumber = b.episode_number || 0;
+    if (aNumber !== bNumber) {
+      return bNumber - aNumber;
+    }
+    return (a.row_index || 0) - (b.row_index || 0);
+  }
+
+  function compareByOldest(a, b) {
+    var aNumber = a.episode_number || 0;
+    var bNumber = b.episode_number || 0;
+    if (aNumber !== bNumber) {
+      return aNumber - bNumber;
+    }
+    return (a.row_index || 0) - (b.row_index || 0);
+  }
+
+  function compareByTime(a, b) {
+    var aNumber = a.episode_number || 0;
+    var bNumber = b.episode_number || 0;
+    if (aNumber !== bNumber) {
+      return bNumber - aNumber;
+    }
+    return (a.start_seconds || 0) - (b.start_seconds || 0);
   }
 
   function scoreRow(row, query, tokens) {
@@ -108,7 +141,68 @@
     }
   }
 
-  function render(rows) {
+  function appendHighlightedText(target, value, tokens) {
+    var text = value || "";
+    var activeTokens = tokens.filter(function (token) {
+      return token.length > 1;
+    });
+
+    target.textContent = "";
+    if (!activeTokens.length) {
+      target.textContent = text;
+      return;
+    }
+
+    var lowerText = text.toLowerCase();
+    var matches = [];
+    activeTokens.forEach(function (token) {
+      var start = 0;
+      while (start < lowerText.length) {
+        var index = lowerText.indexOf(token, start);
+        if (index === -1) {
+          break;
+        }
+        matches.push({ start: index, end: index + token.length });
+        start = index + token.length;
+      }
+    });
+
+    matches.sort(function (a, b) {
+      if (a.start !== b.start) {
+        return a.start - b.start;
+      }
+      return b.end - a.end;
+    });
+
+    var merged = [];
+    matches.forEach(function (match) {
+      var last = merged[merged.length - 1];
+      if (!last || match.start > last.end) {
+        merged.push(match);
+        return;
+      }
+      if (match.end > last.end) {
+        last.end = match.end;
+      }
+    });
+
+    var cursor = 0;
+    merged.forEach(function (match) {
+      if (match.start > cursor) {
+        target.appendChild(document.createTextNode(text.slice(cursor, match.start)));
+      }
+      var marker = document.createElement("mark");
+      marker.textContent = text.slice(match.start, match.end);
+      target.appendChild(marker);
+      cursor = match.end;
+    });
+
+    if (cursor < text.length) {
+      target.appendChild(document.createTextNode(text.slice(cursor)));
+    }
+  }
+
+  function render(rows, tokens) {
     resultList.textContent = "";
 
     rows.slice(0, resultLimit).forEach(function (row) {
@@ -116,21 +210,35 @@
       var item = fragment.querySelector("[data-result-item]");
       var episodeLink = fragment.querySelector("[data-episode-link]");
       var videoLink = fragment.querySelector("[data-video-link]");
+      var pageAction = fragment.querySelector("[data-page-action]");
+      var videoAction = fragment.querySelector("[data-video-action]");
+      var questionNode = fragment.querySelector("[data-result-question]");
+      var answerNode = fragment.querySelector("[data-result-answer]");
 
-      setText("[data-result-question]", row.question, fragment);
-      setText("[data-result-answer]", row.short_answer, fragment);
       setText("[data-result-meta]", [
         row.is_numbered ? "Live Stream #" + row.episode_number : "Special",
-        row.time_label
+        "question " + row.row_index
       ].join(" · "), fragment);
 
       if (episodeLink) {
         episodeLink.href = siteUrl(row.content_path);
-        episodeLink.textContent = row.episode_title || "Question page";
+        appendHighlightedText(episodeLink, row.episode_title || "Question page", tokens);
       }
       if (videoLink) {
         videoLink.href = row.video_url;
-        videoLink.textContent = "Watch at " + row.time_label;
+        videoLink.textContent = row.time_label;
+      }
+      if (pageAction) {
+        pageAction.href = siteUrl(row.content_path);
+      }
+      if (videoAction) {
+        videoAction.href = row.video_url;
+      }
+      if (questionNode) {
+        appendHighlightedText(questionNode, row.question, tokens);
+      }
+      if (answerNode) {
+        appendHighlightedText(answerNode, row.short_answer, tokens);
       }
 
       if (item) {
@@ -139,8 +247,14 @@
     });
 
     if (resultCount) {
-      var limited = rows.length > resultLimit ? " showing first " + resultLimit.toLocaleString() : "";
-      resultCount.textContent = rows.length.toLocaleString() + " results" + limited;
+      var shown = Math.min(rows.length, resultLimit);
+      resultCount.textContent = shown.toLocaleString() + " of " + rows.length.toLocaleString() + " results";
+    }
+    if (loadMoreButton) {
+      loadMoreButton.hidden = rows.length <= resultLimit;
+    }
+    if (emptyState) {
+      emptyState.hidden = rows.length !== 0;
     }
   }
 
@@ -155,6 +269,9 @@
     if (episodeFilter && episodeFilter.value.trim()) {
       params.set("episode", episodeFilter.value.trim());
     }
+    if (sortControl && sortControl.value !== "relevance") {
+      params.set("sort", sortControl.value);
+    }
 
     var nextUrl = window.location.pathname + (params.toString() ? "?" + params.toString() : "");
     window.history.replaceState({}, "", nextUrl);
@@ -164,6 +281,7 @@
     var query = normalize(input ? input.value : "");
     var tokens = tokenize(query);
     var scored = [];
+    var sortMode = sortControl ? sortControl.value : "relevance";
 
     questions.forEach(function (row) {
       if (!matchesFilters(row)) {
@@ -177,7 +295,7 @@
     });
 
     var rows;
-    if (tokens.length) {
+    if (tokens.length && sortMode === "relevance") {
       rows = scored.sort(function (a, b) {
         if (a.score !== b.score) {
           return b.score - a.score;
@@ -192,7 +310,17 @@
       }));
     }
 
-    render(rows);
+    if (sortMode === "newest") {
+      rows = rows.sort(compareByNewest);
+    } else if (sortMode === "oldest") {
+      rows = rows.sort(compareByOldest);
+    } else if (sortMode === "time") {
+      rows = rows.sort(compareByTime);
+    }
+
+    currentRows = rows;
+    currentTokens = tokens;
+    render(rows, tokens);
     updateUrl();
   }
 
@@ -207,12 +335,21 @@
     if (episodeFilter && params.has("episode")) {
       episodeFilter.value = params.get("episode");
     }
+    if (sortControl && params.has("sort")) {
+      sortControl.value = params.get("sort");
+    }
   }
 
-  [input, typeFilter, episodeFilter].forEach(function (control) {
+  [input, typeFilter, episodeFilter, sortControl].forEach(function (control) {
     if (control) {
-      control.addEventListener("input", applySearch);
-      control.addEventListener("change", applySearch);
+      control.addEventListener("input", function () {
+        resultLimit = resultLimitStep;
+        applySearch();
+      });
+      control.addEventListener("change", function () {
+        resultLimit = resultLimitStep;
+        applySearch();
+      });
     }
   });
 
@@ -227,10 +364,22 @@
       if (episodeFilter) {
         episodeFilter.value = "";
       }
+      if (sortControl) {
+        sortControl.value = "relevance";
+      }
+      resultLimit = resultLimitStep;
       applySearch();
       if (input) {
         input.focus();
       }
+    });
+  }
+
+  if (loadMoreButton) {
+    loadMoreButton.addEventListener("click", function () {
+      resultLimit += resultLimitStep;
+      render(currentRows, currentTokens);
+      updateUrl();
     });
   }
 
