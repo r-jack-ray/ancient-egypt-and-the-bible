@@ -1,6 +1,6 @@
 {{ define "main" }}
-{{ $episodes := site.Data.episodes }}
-{{ $questions := site.Data.questions }}
+{{ $episodes := hugo.Data.episodes }}
+{{ $questions := hugo.Data.questions }}
 {{ $curated := where $episodes "status" "curated" }}
 {{ $numbered := where $curated "is_numbered" true }}
 {{ $special := where $curated "is_special" true }}

@@ -1,5 +1,5 @@
 baseURL: "https://r-jack-ray.github.io/ancient-egypt-and-the-bible/"
-languageCode: "en-us"
+locale: "en-US"
 title: "Ancient Egypt and the Bible Q&A"
 
 disableKinds:
