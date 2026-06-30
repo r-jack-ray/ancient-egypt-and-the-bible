@@ -158,8 +158,16 @@ function Get-QuestionRowsFromMarkdown {
 
     $lines = Get-Content -LiteralPath $Path
     $tableStart = -1
+    $expectedColumnCount = 0
     for ($i = 0; $i -lt $lines.Count; $i++) {
         if ($lines[$i] -match '^\|\s*Time\s*\|\s*Question\s*\|\s*Short answer / answer direction\s*\|\s*$') {
+            $expectedColumnCount = 3
+            $tableStart = $i
+            break
+        }
+
+        if ($lines[$i] -match '^\|\s*Time\s*\|\s*Question\s*\|\s*Short answer / answer direction\s*\|\s*Expanded answer\s*\|\s*$') {
+            $expectedColumnCount = 4
             $tableStart = $i
             break
         }
@@ -169,9 +177,16 @@ function Get-QuestionRowsFromMarkdown {
         throw "Missing Q&A table header in $Path."
     }
 
-    if ($tableStart + 1 -ge $lines.Count -or $lines[$tableStart + 1] -notmatch '^\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*$') {
+    $separatorPattern = if ($expectedColumnCount -eq 4) {
+        '^\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*$'
+    }
+    else {
+        '^\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*$'
+    }
+
+    if ($tableStart + 1 -ge $lines.Count -or $lines[$tableStart + 1] -notmatch $separatorPattern) {
         $lineNumber = $tableStart + 2
-        throw "${Path}:$lineNumber is not a valid three-column table separator."
+        throw "${Path}:$lineNumber is not a valid $expectedColumnCount-column table separator."
     }
 
     $rows = New-Object System.Collections.Generic.List[object]
@@ -185,16 +200,21 @@ function Get-QuestionRowsFromMarkdown {
 
         if ($line.TrimStart().StartsWith("|")) {
             $cells = Split-MarkdownTableRow -Line $line -Path $Path -LineNumber ($i + 1)
-            if ($cells.Count -ne 3) {
-                throw "${Path}:$($i + 1) has $($cells.Count) cells; expected 3."
+            if ($cells.Count -ne $expectedColumnCount) {
+                throw "${Path}:$($i + 1) has $($cells.Count) cells; expected $expectedColumnCount."
             }
 
             $timeCell = $cells[0]
             $question = $cells[1]
             $answer = $cells[2]
+            $expandedAnswer = $(if ($expectedColumnCount -eq 4) { $cells[3] } else { $null })
 
             if ([string]::IsNullOrWhiteSpace($question) -or [string]::IsNullOrWhiteSpace($answer)) {
                 throw "${Path}:$($i + 1) has an empty question or answer cell."
+            }
+
+            if ($expectedColumnCount -eq 4 -and [string]::IsNullOrWhiteSpace($expandedAnswer)) {
+                throw "${Path}:$($i + 1) has an empty expanded answer cell."
             }
 
             if ($timeCell -notmatch '<a\s+href="(?<href>https://(?:youtu\.be/[^"?]+|www\.youtube\.com/watch\?[^"]+)[^"]*[?&]t=(?<seconds>\d+)[^"]*)"\s+target="_blank"\s+rel="noopener noreferrer">(?<label>[^<]+)</a>') {
@@ -225,10 +245,11 @@ function Get-QuestionRowsFromMarkdown {
                 video_url = $href
                 question = $question
                 short_answer = $answer
+                expanded_answer = $expandedAnswer
                 row_index = $rowIndex
                 is_numbered = $PageMeta.is_numbered
                 is_special = $PageMeta.is_special
-                search_text = (@($PageMeta.number, $PageMeta.title, $question, $answer) -join " ").ToLowerInvariant()
+                search_text = (@($PageMeta.number, $PageMeta.title, $question, $answer, $expandedAnswer) -join " ").ToLowerInvariant()
             })
 
             continue

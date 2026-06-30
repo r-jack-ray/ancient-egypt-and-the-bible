@@ -58,23 +58,63 @@ function Get-SearchAliasMap {
     foreach ($group in $AliasGroups) {
         $terms = @($group | ForEach-Object { [string]$_ })
         foreach ($term in $terms) {
-            $aliasMap[$term] = @($terms | Where-Object { $_ -ne $term })
+            $aliases = New-Object System.Collections.Generic.List[string]
+            foreach ($alias in $terms) {
+                if ($alias -ne $term) {
+                    $aliases.Add($alias)
+                }
+            }
+
+            $aliasMap[$term] = $aliases.ToArray()
         }
     }
 
     return $aliasMap
 }
 
+function Get-NormalizedPhraseAliasGroups {
+    param([Parameter(Mandatory = $true)][object[]]$PhraseAliasGroups)
+
+    $normalizedGroups = New-Object System.Collections.Generic.List[object]
+    foreach ($group in $PhraseAliasGroups) {
+        $terms = New-Object System.Collections.Generic.List[string]
+        foreach ($term in $group) {
+            $normalizedTerm = Get-NormalizedSearchPhrase -Value ([string]$term)
+            if (-not [string]::IsNullOrWhiteSpace($normalizedTerm)) {
+                $terms.Add($normalizedTerm)
+            }
+        }
+
+        if ($terms.Count -gt 0) {
+            $firstTokens = @{}
+            foreach ($term in $terms) {
+                $termTokens = @(Get-SearchTokens -Value $term)
+                if ($termTokens.Count -gt 0) {
+                    $firstTokens[$termTokens[0]] = $true
+                }
+            }
+
+            $normalizedGroups.Add([pscustomobject]@{
+                Terms = $terms.ToArray()
+                FirstTokens = @($firstTokens.Keys)
+            })
+        }
+    }
+
+    return $normalizedGroups.ToArray()
+}
+
 function Get-SearchAliasesForText {
     param(
-        [Parameter(Mandatory = $true)][string]$Text,
+        [Parameter(Mandatory = $true)][string[]]$Tokens,
+        [Parameter(Mandatory = $true)][hashtable]$TokenSet,
+        [Parameter(Mandatory = $true)][string]$NormalizedText,
         [Parameter(Mandatory = $true)][hashtable]$AliasMap,
-        [Parameter(Mandatory = $true)][object[]]$PhraseAliasGroups
+        [Parameter(Mandatory = $true)][object[]]$NormalizedPhraseAliasGroups
     )
 
     $aliases = @{}
-    $tokens = @(Get-SearchTokens -Value $Text)
-    foreach ($token in $tokens) {
+    foreach ($token in $Tokens) {
         if (-not $AliasMap.ContainsKey($token)) {
             continue
         }
@@ -84,10 +124,21 @@ function Get-SearchAliasesForText {
         }
     }
 
-    $normalizedText = " " + ($tokens -join " ") + " "
-    foreach ($group in $PhraseAliasGroups) {
-        $terms = @($group | ForEach-Object { Get-NormalizedSearchPhrase -Value ([string]$_) } | Where-Object { $_ })
+    foreach ($group in $NormalizedPhraseAliasGroups) {
+        $terms = @($group.Terms)
         if ($terms.Count -lt 2) {
+            continue
+        }
+
+        $couldMatch = $false
+        foreach ($firstToken in @($group.FirstTokens)) {
+            if ($TokenSet.ContainsKey($firstToken)) {
+                $couldMatch = $true
+                break
+            }
+        }
+
+        if (-not $couldMatch) {
             continue
         }
 
@@ -109,6 +160,78 @@ function Get-SearchAliasesForText {
     }
 
     return @($aliases.Keys)
+}
+
+function Add-SearchIndexTerm {
+    param(
+        [Parameter(Mandatory = $true)][hashtable]$Index,
+        [Parameter(Mandatory = $true)][string]$Term,
+        [Parameter(Mandatory = $true)][int]$RowIndex
+    )
+
+    if (-not $Index.ContainsKey($Term)) {
+        $Index[$Term] = New-Object System.Collections.Generic.List[int]
+    }
+
+    $Index[$Term].Add($RowIndex)
+}
+
+function Get-MatchingRowCountForAnyIndexedTerm {
+    param(
+        [Parameter(Mandatory = $true)][hashtable]$Index,
+        [Parameter(Mandatory = $true)][string[]]$Terms
+    )
+
+    $rowIndexes = @{}
+    foreach ($term in $Terms) {
+        if (-not $Index.ContainsKey($term)) {
+            continue
+        }
+
+        foreach ($rowIndex in $Index[$term]) {
+            $rowIndexes[$rowIndex] = $true
+        }
+    }
+
+    return $rowIndexes.Count
+}
+
+function Get-MatchingRowCountForAllIndexedTerms {
+    param(
+        [Parameter(Mandatory = $true)][hashtable]$Index,
+        [Parameter(Mandatory = $true)][object[]]$QuestionSearchRows,
+        [Parameter(Mandatory = $true)][string[]]$Terms
+    )
+
+    $candidateRows = $null
+    foreach ($term in $Terms) {
+        if (-not $Index.ContainsKey($term)) {
+            return 0
+        }
+
+        $rows = $Index[$term]
+        if ($null -eq $candidateRows -or $rows.Count -lt $candidateRows.Count) {
+            $candidateRows = $rows
+        }
+    }
+
+    $matchingRowCount = 0
+    foreach ($rowIndex in $candidateRows) {
+        $haystackSet = $QuestionSearchRows[$rowIndex].HaystackSet
+        $hasAllTerms = $true
+        foreach ($term in $Terms) {
+            if (-not $haystackSet.ContainsKey($term)) {
+                $hasAllTerms = $false
+                break
+            }
+        }
+
+        if ($hasAllTerms) {
+            $matchingRowCount++
+        }
+    }
+
+    return $matchingRowCount
 }
 
 function Get-NormalizedSearchPhrase {
@@ -273,44 +396,79 @@ if ($questions.Count -eq 0) {
 }
 
 $aliasMap = Get-SearchAliasMap -AliasGroups $aliasGroups
-$questionSearchRows = @($questions | ForEach-Object {
-    $searchText = @($_.search_text, $_.episode_title, $_.question, $_.short_answer) -join " "
+$normalizedPhraseAliasGroups = Get-NormalizedPhraseAliasGroups -PhraseAliasGroups $phraseAliasGroups
+Write-Host "Building search alias validation index..."
+$questionSearchRows = New-Object System.Collections.Generic.List[object]
+$tokenRowIndex = @{}
+$haystackRowIndex = @{}
+foreach ($question in $questions) {
+    $searchText = @($question.search_text, $question.episode_title, $question.question, $question.short_answer) -join " "
     $tokens = @(Get-SearchTokens -Value $searchText)
     $tokenSet = @{}
     foreach ($token in $tokens) {
         $tokenSet[$token] = $true
     }
 
-    $aliases = @(Get-SearchAliasesForText -Text $searchText -AliasMap $aliasMap -PhraseAliasGroups $phraseAliasGroups)
-    $haystackTokens = @($tokens + $aliases | Select-Object -Unique)
-
-    [pscustomobject]@{
-        Question = $_
-        TokenSet = $tokenSet
-        NormalizedText = " " + ($tokens -join " ") + " "
-        Haystack = " " + ($haystackTokens -join " ") + " "
+    $normalizedText = " " + ($tokens -join " ") + " "
+    $aliases = @(Get-SearchAliasesForText -Tokens $tokens -TokenSet $tokenSet -NormalizedText $normalizedText -AliasMap $aliasMap -NormalizedPhraseAliasGroups $normalizedPhraseAliasGroups)
+    $haystackTokenSet = @{}
+    foreach ($token in $tokens) {
+        $haystackTokenSet[$token] = $true
     }
-})
+    foreach ($alias in $aliases) {
+        foreach ($aliasToken in @(Get-SearchTokens -Value $alias)) {
+            $haystackTokenSet[$aliasToken] = $true
+        }
+    }
+
+    $rowIndex = $questionSearchRows.Count
+    foreach ($term in $tokenSet.Keys) {
+        Add-SearchIndexTerm -Index $tokenRowIndex -Term $term -RowIndex $rowIndex
+    }
+    foreach ($term in $haystackTokenSet.Keys) {
+        Add-SearchIndexTerm -Index $haystackRowIndex -Term $term -RowIndex $rowIndex
+    }
+
+    $questionSearchRows.Add([pscustomobject]@{
+        Question = $question
+        TokenSet = $tokenSet
+        NormalizedText = $normalizedText
+        HaystackSet = $haystackTokenSet
+    })
+}
+$questionSearchRowArray = $questionSearchRows.ToArray()
 
 foreach ($group in $aliasGroups) {
     $terms = @($group | ForEach-Object { [string]$_ })
-    $matchingRows = @($questionSearchRows | Where-Object {
-        Test-TokenSetContainsAny -TokenSet $_.TokenSet -Terms $terms
-    })
+    $matchingRowCount = Get-MatchingRowCountForAnyIndexedTerm -Index $tokenRowIndex -Terms $terms
 
-    if ($matchingRows.Count -gt $MaxRowsPerAliasGroup) {
-        throw "Alias group [$($terms -join ', ')] matches $($matchingRows.Count) rows; limit is $MaxRowsPerAliasGroup."
+    if ($matchingRowCount -gt $MaxRowsPerAliasGroup) {
+        throw "Alias group [$($terms -join ', ')] matches $matchingRowCount rows; limit is $MaxRowsPerAliasGroup."
     }
 }
 
-foreach ($group in $phraseAliasGroups) {
-    $terms = @($group | ForEach-Object { Get-NormalizedSearchPhrase -Value ([string]$_) })
-    $matchingRows = @($questionSearchRows | Where-Object {
-        Test-HaystackContainsAnyPhrase -Haystack $_.NormalizedText -Terms $terms
-    })
+foreach ($group in $normalizedPhraseAliasGroups) {
+    $terms = @($group.Terms)
+    $candidateRows = @{}
+    foreach ($firstToken in @($group.FirstTokens)) {
+        if (-not $tokenRowIndex.ContainsKey($firstToken)) {
+            continue
+        }
 
-    if ($matchingRows.Count -gt $MaxRowsPerAliasGroup) {
-        throw "Phrase alias group [$($terms -join ', ')] matches $($matchingRows.Count) rows; limit is $MaxRowsPerAliasGroup."
+        foreach ($rowIndex in $tokenRowIndex[$firstToken]) {
+            $candidateRows[$rowIndex] = $true
+        }
+    }
+
+    $matchingRowCount = 0
+    foreach ($rowIndex in $candidateRows.Keys) {
+        if (Test-HaystackContainsAnyPhrase -Haystack $questionSearchRowArray[$rowIndex].NormalizedText -Terms $terms) {
+            $matchingRowCount++
+        }
+    }
+
+    if ($matchingRowCount -gt $MaxRowsPerAliasGroup) {
+        throw "Phrase alias group [$($terms -join ', ')] matches $matchingRowCount rows; limit is $MaxRowsPerAliasGroup."
     }
 }
 
@@ -323,15 +481,13 @@ foreach ($test in $queryTests) {
         throw "Query test has an empty query."
     }
 
-    $matches = @($questionSearchRows | Where-Object {
-        Test-HaystackContainsAll -Haystack $_.Haystack -Terms $queryTokens
-    })
+    $matchingRowCount = Get-MatchingRowCountForAllIndexedTerms -Index $haystackRowIndex -QuestionSearchRows $questionSearchRowArray -Terms $queryTokens
 
-    if ($null -ne $test.minResults -and $matches.Count -lt [int]$test.minResults) {
-        throw "Query '$query' returned $($matches.Count) rows; expected at least $($test.minResults)."
+    if ($null -ne $test.minResults -and $matchingRowCount -lt [int]$test.minResults) {
+        throw "Query '$query' returned $matchingRowCount rows; expected at least $($test.minResults)."
     }
-    if ($null -ne $test.maxResults -and $matches.Count -gt [int]$test.maxResults) {
-        throw "Query '$query' returned $($matches.Count) rows; expected at most $($test.maxResults)."
+    if ($null -ne $test.maxResults -and $matchingRowCount -gt [int]$test.maxResults) {
+        throw "Query '$query' returned $matchingRowCount rows; expected at most $($test.maxResults)."
     }
 }
 
