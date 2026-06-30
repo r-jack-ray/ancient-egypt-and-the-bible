@@ -57,6 +57,19 @@ Recent commits use short, descriptive messages, for example `1-100 transcripts` 
 
 Pull requests should explain the affected episode range or file set, note whether changes are raw transcript imports or curated Markdown edits, and mention any manual validation performed. For curated pages, include enough context for reviewers to verify the timestamp and summary against the transcript.
 
+## User Communication
+
+Keep responses brief. The user prefers direct progress reports and actionable summaries.
+
+Default response format after work:
+
+- Changed:
+- Files:
+- Checked:
+- Notes:
+
+Do not include lengthy explanations, tutorials, broad background, or repeated restatements of the prompt unless explicitly requested.
+
 ## Agent-Specific Instructions
 
 Do not invent transcript content. Preserve uncertainty when audio or transcript text is unclear. This project converts the Questions & Answers in general from Ancient Egypt and the Bible livestreams into a reference repository, so curated pages should include all real questions supported by the transcript, not only super chats. Keep curated pages useful as navigation aids: question, timestamp, direct video link, and a short answer direction when supported by the source.
