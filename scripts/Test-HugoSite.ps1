@@ -8,8 +8,10 @@ $ErrorActionPreference = "Stop"
 
 $RepoRoot = (Resolve-Path -LiteralPath $RepoRoot).Path
 $builder = Join-Path $RepoRoot "scripts/Build-HugoSiteContent.ps1"
+$searchAliasTester = Join-Path $RepoRoot "scripts/Test-HugoSearchAliases.ps1"
 
 pwsh -NoProfile -File $builder -RepoRoot $RepoRoot
+pwsh -NoProfile -File $searchAliasTester -RepoRoot $RepoRoot
 
 $sourceQuestionCount = @(Get-ChildItem -LiteralPath (Join-Path $RepoRoot "docs/questions") -Filter "*.md").Count
 $generatedQuestionCount = @(Get-ChildItem -LiteralPath (Join-Path $RepoRoot "site/content/questions") -Filter "*.md" | Where-Object { $_.Name -ne "_index.md" }).Count

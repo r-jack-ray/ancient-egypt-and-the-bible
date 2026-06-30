@@ -306,10 +306,11 @@ scripts/
   Get-QuestionRevisionCandidates.ps1
                                Generates local reports for likely Q&A page repair candidates
   Test-HugoSite.ps1           Regenerates and validates the Hugo compatibility site
+  Test-HugoSearchAliases.ps1  Validates curated Hugo search alias groups and query smoke tests
 site/
   hugo.yaml                   Hugo site configuration
   content/                    Generated compatibility content for the Hugo site
-  data/                       Generated episode and question search data
+  data/                       Generated episode/question data plus curated search aliases
   layouts/                    Hugo templates for reference pages and search
   assets/                     Hugo-managed CSS and client assets
 src/
@@ -472,6 +473,14 @@ pwsh -NoProfile -File scripts/Test-HugoSite.ps1
 ```
 
 This regenerates the compatibility site, verifies source/generated page counts, checks required question-row fields, and runs `hugo --source site` when Hugo is installed.
+
+For search alias-only changes, run the narrower check:
+
+```powershell
+pwsh -NoProfile -File scripts/Test-HugoSearchAliases.ps1
+```
+
+Curate search aliases in `site/data/search-aliases.json`, not directly in `site/assets/js/search.js`, unless the indexing behavior itself needs to change.
 
 ## How to Use This Reference
 
