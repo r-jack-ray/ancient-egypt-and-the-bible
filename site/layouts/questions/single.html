@@ -21,12 +21,16 @@
   {{ end }}
 {{ end }}
 <article>
-  <h1 class="page-title">{{ .Title }}</h1>
-  {{ with .Params.description }}
+  <h1 class="page-title">{{ if .Params.is_numbered }}#{{ .Params.episode_number }}: {{ .Params.episode_title }}{{ else }}{{ .Title }}{{ end }}</h1>
+  {{ if .Params.is_numbered }}
+  <p class="lede">Questions and timestamp links for Live Stream #{{ .Params.episode_number }}.</p>
+  {{ else }}
+    {{ with .Params.description }}
   <p class="lede">{{ . }}</p>
+    {{ end }}
   {{ end }}
   <div class="question-meta-bar">
-    <span>{{ if .Params.is_numbered }}Live Stream #{{ .Params.episode_number }}{{ else }}{{ .Params.series }}{{ end }}</span>
+    <span>{{ if .Params.is_numbered }}{{ .Title }}{{ else }}{{ .Params.series }}{{ end }}</span>
     <span>{{ .Params.question_count }} questions</span>
     {{ with .Params.video_id }}
     <a href="https://youtu.be/{{ . }}" target="_blank" rel="noopener noreferrer">Watch video</a>
