@@ -295,6 +295,7 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 docs/
   questions/                  Public curated Markdown Q&A reference pages
 scripts/
+  Build-HugoSiteContent.ps1   Generates Hugo compatibility content and data from curated Markdown
   Convert-TranscriptJson.ps1  PowerShell 7 converter from JSON to TXT or TSV
   Generate-live-stream-list.ps1
                                Scrapes the public YouTube streams tab into the episode index format
@@ -304,6 +305,13 @@ scripts/
                                Usage notes for transcript acquisition
   Get-QuestionRevisionCandidates.ps1
                                Generates local reports for likely Q&A page repair candidates
+  Test-HugoSite.ps1           Regenerates and validates the Hugo compatibility site
+site/
+  hugo.yaml                   Hugo site configuration
+  content/                    Generated compatibility content for the Hugo site
+  data/                       Generated episode and question search data
+  layouts/                    Hugo templates for reference pages and search
+  assets/                     Hugo-managed CSS and client assets
 src/
   live-stream-list.md         Episode index with YouTube links and transcript slugs
   live-stream-list.txt        Plain text episode index
@@ -322,6 +330,36 @@ src/
 `src/transcripts/tsv/` is optional generated output for structured processing. TSV rows include columns such as `Timestamp`, `StartSeconds`, `Text`, and `Link`.
 
 `docs/questions/` contains human-edited reference pages. These are meant to be read directly on GitHub Pages and GitHub and may include cleaned-up questions, short answer summaries, and timestamp links.
+
+`site/` contains the Hugo compatibility site. During the current migration phase, generated files under `site/content/` and `site/data/` are produced from `docs/questions/` and `src/live-stream-list.md`; do not hand-edit generated question pages there.
+
+## Local Dependencies
+
+PowerShell 7 is required for the repository scripts. Hugo Extended is required for full local Hugo site validation and preview.
+
+On Windows, install Hugo Extended globally with Winget:
+
+```powershell
+winget install Hugo.Hugo.Extended
+```
+
+After installation, open a new terminal and verify that Hugo is on `PATH`:
+
+```powershell
+hugo version
+```
+
+If `hugo version` works, run the full Hugo site validation:
+
+```powershell
+pwsh -NoProfile -File scripts/Test-HugoSite.ps1
+```
+
+If Hugo is not installed yet, the non-rendering compatibility checks can still run with:
+
+```powershell
+pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo
+```
 
 ## Transcript Conversion
 
@@ -416,6 +454,14 @@ rg "TODO|FIXME|placeholder|timestamp needed|missing timestamp" docs/questions RE
 ```
 
 For curated Markdown edits, also check that table rows have consistent columns, timestamp links use the correct video ID and `?t=` seconds, and summaries are supported by the transcript. For broad README or inventory updates, compare the README list and status counts against `docs/questions/*.md` and `src/transcripts/txt/*.txt`.
+
+For Hugo site changes, run:
+
+```powershell
+pwsh -NoProfile -File scripts/Test-HugoSite.ps1
+```
+
+This regenerates the compatibility site, verifies source/generated page counts, checks required question-row fields, and runs `hugo --source site` when Hugo is installed.
 
 ## How to Use This Reference
 

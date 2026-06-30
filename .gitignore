@@ -31,5 +31,6 @@ scripts/Get-YouTubeTranscriptJson.run-summary*
 /reports/
 
 # Hugo local build artifacts. Generated source/data under site/ are intentionally tracked during migration.
+/site/.hugo_build.lock
 /site/public/
 /site/resources/_gen/
