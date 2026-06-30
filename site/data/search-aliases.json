@@ -35,6 +35,15 @@
     ["papyrus", "papyri"],
     ["ostracon", "ostraca"],
     ["melchizedek", "melchisedek"],
+    ["cherub", "cherubim", "cherubs", "cherubims"],
+    ["seraph", "seraphim", "seraphs"],
+    ["giant", "giants"],
+    ["rephaim", "rephaite", "rephaites"],
+    ["anakim", "anakite", "anakites"],
+    ["messiah", "messiahs"],
+    ["tabernacle", "tabernacles"],
+    ["theophany", "theophanies"],
+    ["christophany", "christophanies"],
     ["dab", "daba", "dabaa"],
     ["thebes", "luxor", "waset"],
     ["memphis", "mennefer"],
@@ -235,6 +244,56 @@
       "query": "melchisedek",
       "minResults": 10,
       "maxResults": 50
+    },
+    {
+      "query": "cherubs",
+      "minResults": 20,
+      "maxResults": 100
+    },
+    {
+      "query": "cherubims",
+      "minResults": 20,
+      "maxResults": 100
+    },
+    {
+      "query": "seraphs",
+      "minResults": 20,
+      "maxResults": 100
+    },
+    {
+      "query": "giant",
+      "minResults": 20,
+      "maxResults": 100
+    },
+    {
+      "query": "rephaites",
+      "minResults": 1,
+      "maxResults": 25
+    },
+    {
+      "query": "anakites",
+      "minResults": 1,
+      "maxResults": 25
+    },
+    {
+      "query": "messiahs",
+      "minResults": 10,
+      "maxResults": 75
+    },
+    {
+      "query": "tabernacles",
+      "minResults": 10,
+      "maxResults": 75
+    },
+    {
+      "query": "theophanies",
+      "minResults": 5,
+      "maxResults": 25
+    },
+    {
+      "query": "christophanies",
+      "minResults": 5,
+      "maxResults": 25
     },
     {
       "query": "dabaa",
