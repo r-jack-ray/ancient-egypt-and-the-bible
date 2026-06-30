@@ -79,4 +79,33 @@
     input.addEventListener("input", applyFilter);
     applyFilter();
   });
+
+  document.querySelectorAll("[data-expanded-answer-toggle]").forEach(function (button) {
+    var targetSelector = button.getAttribute("data-expanded-answer-target");
+    var target = targetSelector ? document.querySelector(targetSelector) : null;
+    if (!target) {
+      return;
+    }
+
+    var expandedAnswers = Array.prototype.slice.call(target.querySelectorAll("[data-expanded-answer]"));
+    if (expandedAnswers.length === 0) {
+      button.hidden = true;
+      return;
+    }
+
+    function setExpandedAnswersVisible(isVisible) {
+      expandedAnswers.forEach(function (answer) {
+        answer.hidden = !isVisible;
+      });
+
+      button.setAttribute("aria-expanded", isVisible ? "true" : "false");
+      button.textContent = isVisible ? "Hide expanded answers" : "Show expanded answers";
+    }
+
+    button.addEventListener("click", function () {
+      setExpandedAnswersVisible(button.getAttribute("aria-expanded") !== "true");
+    });
+
+    setExpandedAnswersVisible(false);
+  });
 })();

@@ -1,4 +1,4 @@
 interface:
   display_name: "Transcript Question Page Audit"
-  short_description: "Fix four-column Q&A Markdown against transcripts"
-  default_prompt: "Use $transcript-question-page-audit to find and fix issues in an existing livestream Q&A Markdown page, including expanded-answer columns, with minimal output."
+  short_description: "Fix Q&A Markdown and fill expanded answers"
+  default_prompt: "Use $transcript-question-page-audit to find and fix issues in an existing livestream Q&A Markdown page, including transcript-grounded expanded answers, with minimal output."
