@@ -20,6 +20,18 @@
     ["setnakhte", "setnakht"],
     ["amenmesse", "amenmesses"],
     ["amunherkhepeshef", "amunherkhepshef", "amenherkhepeshef", "amenherkhepshef"],
+    ["pharaoh", "pharaohs", "pharoah", "pharoahs"],
+    ["archaeology", "archeology"],
+    ["archaeological", "archeological"],
+    ["archaeologist", "archeologist"],
+    ["archaeologists", "archeologists"],
+    ["hieroglyph", "hieroglyphs", "heiroglyph", "heiroglyphs"],
+    ["nebuchadnezzar", "nebuchadrezzar", "nebuchadnezzer", "nebuchadnezer"],
+    ["cuneiform", "cuniform"],
+    ["mummification", "mumification"],
+    ["israelite", "israelites", "isrealite", "isrealites"],
+    ["semitic", "semetic"],
+    ["melchizedek", "melchisedek"],
     ["dab", "daba", "dabaa"],
     ["thebes", "luxor", "waset"],
     ["memphis", "mennefer"],
@@ -35,7 +47,7 @@
     ["exod", "exodus"],
     ["lev", "leviticus"],
     ["num", "numbers"],
-    ["deut", "deuteronomy"],
+    ["deut", "deuteronomy", "dueteronomy"],
     ["josh", "joshua"],
     ["judg", "judges"],
     ["rth", "ruth"],
@@ -155,6 +167,61 @@
       "query": "amon",
       "minResults": 20,
       "maxResults": 100
+    },
+    {
+      "query": "pharoah",
+      "minResults": 100,
+      "maxResults": 600
+    },
+    {
+      "query": "archeology",
+      "minResults": 100,
+      "maxResults": 250
+    },
+    {
+      "query": "archeological",
+      "minResults": 50,
+      "maxResults": 150
+    },
+    {
+      "query": "heiroglyphs",
+      "minResults": 20,
+      "maxResults": 80
+    },
+    {
+      "query": "nebuchadnezzer",
+      "minResults": 10,
+      "maxResults": 60
+    },
+    {
+      "query": "dueteronomy",
+      "minResults": 50,
+      "maxResults": 150
+    },
+    {
+      "query": "cuniform",
+      "minResults": 30,
+      "maxResults": 100
+    },
+    {
+      "query": "mumification",
+      "minResults": 20,
+      "maxResults": 80
+    },
+    {
+      "query": "isrealite",
+      "minResults": 100,
+      "maxResults": 500
+    },
+    {
+      "query": "semetic",
+      "minResults": 50,
+      "maxResults": 150
+    },
+    {
+      "query": "melchisedek",
+      "minResults": 10,
+      "maxResults": 50
     },
     {
       "query": "dabaa",
