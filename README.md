@@ -361,6 +361,8 @@ If Hugo is not installed yet, the non-rendering compatibility checks can still r
 pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo
 ```
 
+For GitHub Pages, GitHub Actions, and deployment environment handling, see [GitHub Handling Notes](project-notes/github-handling/README.md).
+
 ## Transcript Conversion
 
 Use PowerShell 7 to generate TXT working transcripts from JSON exports:
