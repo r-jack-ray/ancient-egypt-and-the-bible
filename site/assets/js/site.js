@@ -1,4 +1,42 @@
 (function () {
+  var themePicker = document.querySelector("[data-theme-picker]");
+  var themeStorageKey = "aeb-theme";
+
+  function storedTheme() {
+    try {
+      return localStorage.getItem(themeStorageKey) || "system";
+    } catch (error) {
+      return "system";
+    }
+  }
+
+  function applyTheme(theme) {
+    var normalized = theme === "dark" || theme === "light" ? theme : "system";
+    if (normalized === "system") {
+      document.documentElement.removeAttribute("data-theme");
+    } else {
+      document.documentElement.setAttribute("data-theme", normalized);
+    }
+    if (themePicker) {
+      themePicker.value = normalized;
+    }
+  }
+
+  if (themePicker) {
+    applyTheme(storedTheme());
+    themePicker.addEventListener("change", function () {
+      var theme = themePicker.value;
+      try {
+        if (theme === "system") {
+          localStorage.removeItem(themeStorageKey);
+        } else {
+          localStorage.setItem(themeStorageKey, theme);
+        }
+      } catch (error) {}
+      applyTheme(theme);
+    });
+  }
+
   function normalize(value) {
     return (value || "").toString().toLowerCase().trim();
   }
