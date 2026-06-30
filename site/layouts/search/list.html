@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $questions := site.Data.questions }}
+{{ $questions := hugo.Data.questions }}
 <h1 class="page-title">{{ .Title }}</h1>
 <ul class="question-index">
   {{ range $questions }}
