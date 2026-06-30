@@ -192,6 +192,7 @@ function Get-QuestionRowsFromMarkdown {
                 episode_number = $PageMeta.number
                 episode_title = $PageMeta.title
                 question_page = $PageMeta.question_page
+                content_path = $PageMeta.content_path
                 time_label = $timeLabel
                 start_seconds = $startSeconds
                 video_url = $href
@@ -314,7 +315,7 @@ foreach ($line in $liveStreamLines) {
         youtube_url = $url
         video_id = $videoId
         question_page = $(if ($hasQuestionPage) { "questions/$expectedQuestionPage" } else { $null })
-        content_path = $(if ($hasQuestionPage) { "/questions/$([System.IO.Path]::GetFileNameWithoutExtension($expectedQuestionPage))/" } else { $null })
+        content_path = $(if ($hasQuestionPage) { "questions/$slug/" } else { $null })
         status = $(if ($hasQuestionPage) { "curated" } else { "missing_question_page" })
         is_numbered = $isNumbered
         is_special = -not $isNumbered
@@ -362,7 +363,7 @@ foreach ($file in $questionFiles) {
             slug = $episode.slug
             video_id = $episode.video_id
             question_page = "questions/$($file.Name)"
-            content_path = "/questions/$baseName/"
+            content_path = "questions/$($episode.slug)/"
             is_numbered = $true
             is_special = $false
             series = "numbered livestream"
@@ -386,7 +387,7 @@ foreach ($file in $questionFiles) {
             slug = $slug
             video_id = $(if ($episode) { $episode.video_id } else { $null })
             question_page = "questions/$($file.Name)"
-            content_path = "/questions/$baseName/"
+            content_path = "questions/$slug/"
             is_numbered = $false
             is_special = $true
             series = $(if ($slug -like "dr-falk-plays-assassin-s-creed-origins-*") { "Assassin's Creed side content" } else { "special stream" })
@@ -401,7 +402,7 @@ foreach ($file in $questionFiles) {
                 youtube_url = $null
                 video_id = $null
                 question_page = "questions/$($file.Name)"
-                content_path = "/questions/$baseName/"
+                content_path = "questions/$slug/"
                 status = "curated"
                 is_numbered = $false
                 is_special = $true
@@ -420,7 +421,7 @@ foreach ($file in $questionFiles) {
 
     $matchingEpisode = $episodesBySlug[$pageMeta.slug]
     $matchingEpisode.question_page = "questions/$($file.Name)"
-    $matchingEpisode.content_path = "/questions/$baseName/"
+    $matchingEpisode.content_path = $pageMeta.content_path
     $matchingEpisode.status = "curated"
     $matchingEpisode.question_count = $rows.Count
 
