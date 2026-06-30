@@ -1,0 +1,47 @@
+{{ define "main" }}
+{{ $episodes := site.Data.episodes }}
+{{ $questions := site.Data.questions }}
+{{ $curated := where $episodes "status" "curated" }}
+{{ $numbered := where $curated "is_numbered" true }}
+{{ $special := where $curated "is_special" true }}
+<h1 class="page-title">{{ .Title }}</h1>
+
+<section class="summary-grid" aria-label="Corpus summary">
+  <div class="metric">
+    <span class="metric-value">{{ len $curated }}</span>
+    <span class="metric-label">curated pages</span>
+  </div>
+  <div class="metric">
+    <span class="metric-value">{{ len $numbered }}</span>
+    <span class="metric-label">numbered livestreams</span>
+  </div>
+  <div class="metric">
+    <span class="metric-value">{{ len $special }}</span>
+    <span class="metric-label">special pages</span>
+  </div>
+  <div class="metric">
+    <span class="metric-value">{{ len $questions }}</span>
+    <span class="metric-label">question rows</span>
+  </div>
+</section>
+
+<h2>Latest Numbered Streams</h2>
+<ul class="reference-list">
+  {{ range first 12 $numbered }}
+  <li class="reference-item">
+    <a class="reference-item-title" href="{{ .content_path | relURL }}">#{{ .number }}: {{ .title }}</a>
+    <span class="reference-item-meta">{{ .question_count }} questions</span>
+  </li>
+  {{ end }}
+</ul>
+
+<h2>Special Pages</h2>
+<ul class="reference-list">
+  {{ range $special }}
+  <li class="reference-item">
+    <a class="reference-item-title" href="{{ .content_path | relURL }}">{{ .title }}</a>
+    <span class="reference-item-meta">{{ .question_count }} questions</span>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

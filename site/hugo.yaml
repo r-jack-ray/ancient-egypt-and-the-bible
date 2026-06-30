@@ -1,0 +1,19 @@
+baseURL: "https://r-jack-ray.github.io/ancient-egypt-and-the-bible/"
+languageCode: "en-us"
+title: "Ancient Egypt and the Bible Q&A"
+
+disableKinds:
+  - taxonomy
+  - term
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+permalinks:
+  questions: "/questions/:slug/"
+
+params:
+  sourceCorpus: "docs/questions"
+  generatedContent: "site/content/questions"

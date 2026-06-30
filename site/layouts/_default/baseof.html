@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+  {{ with resources.Get "css/site.css" }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{ end }}
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-title" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="{{ "/episodes/" | relURL }}">Episodes</a>
+        <a href="{{ "/questions/" | relURL }}">Questions</a>
+        <a href="{{ "/search/" | relURL }}">Question Index</a>
+      </nav>
+    </div>
+  </header>
+  <main class="site-main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      Transitional Hugo build generated from {{ site.Params.sourceCorpus }}.
+    </div>
+  </footer>
+</body>
+</html>

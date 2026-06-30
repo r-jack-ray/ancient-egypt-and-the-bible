@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ $pages := where site.RegularPages "Section" "questions" }}
+<h1 class="page-title">{{ .Title }}</h1>
+<ul class="reference-list">
+  {{ range sort $pages "Params.sort_key" "desc" }}
+  <li class="reference-item">
+    <a class="reference-item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <span class="reference-item-meta">
+      {{ if .Params.is_numbered }}Live Stream #{{ .Params.episode_number }}{{ else }}{{ .Params.series }}{{ end }}
+      · {{ .Params.question_count }} questions
+    </span>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
