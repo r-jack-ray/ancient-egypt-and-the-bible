@@ -297,6 +297,14 @@ docs/
   questions/                  Public curated Markdown Q&A reference pages
 scripts/
   Convert-TranscriptJson.ps1  PowerShell 7 converter from JSON to TXT or TSV
+  Generate-live-stream-list.ps1
+                               Scrapes the public YouTube streams tab into the episode index format
+  Get-YouTubeTranscriptJson.ps1
+                               Downloads transcript JSON from indexed YouTube videos
+  Get-YouTubeTranscriptJson.README.md
+                               Usage notes for transcript acquisition
+  Get-QuestionRevisionCandidates.ps1
+                               Generates local reports for likely Q&A page repair candidates
 src/
   live-stream-list.md         Episode index with YouTube links and transcript slugs
   live-stream-list.txt        Plain text episode index
@@ -339,6 +347,76 @@ pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 `
     src/transcripts/json/14-fourteen-pieces-of-osiris.json `
     src/transcripts/json/15-and-other-taboo-jewish-numbers.json
 ```
+
+## Project Maintenance
+
+Maintain the project as a source-data pipeline: keep the stream index current, pull raw transcript JSON, generate working TXT or TSV files from JSON, then curate or repair public Markdown pages from the generated transcript text.
+
+### 1. Refresh the stream index
+
+Use `scripts/Generate-live-stream-list.ps1` when the public YouTube stream list needs to be refreshed. The script scrapes the channel's `/streams` tab and writes Markdown entries with the YouTube URL and repository slug.
+
+```powershell
+pwsh -NoProfile -File scripts/Generate-live-stream-list.ps1 -OutputPath src/live-stream-list.md
+```
+
+The script includes numbered livestreams and other public stream entries by default. Use `-NumberedOnly` when you intentionally want only numbered `Live Stream #` entries, `-OldestFirst` to reverse the scraped order, or `-SortByNumber` to restore numbered archive ordering. After refreshing the Markdown index, review slug changes carefully because transcript and question filenames are based on those slugs.
+
+### 2. Pull missing transcript JSON
+
+Use `scripts/Get-YouTubeTranscriptJson.ps1` to download transcript JSON for entries in `src/live-stream-list.md`. It uses the Python `youtube-transcript-api` package, so install or update that dependency in the Python environment used by `python` before running it:
+
+```powershell
+python -m pip install --upgrade youtube-transcript-api
+```
+
+The normal maintenance command is:
+
+```powershell
+pwsh -NoProfile -File scripts/Get-YouTubeTranscriptJson.ps1 -MissingOnly -DelaySeconds 3 -TimeoutSeconds 45
+```
+
+Use `-Episode 209` for a numbered livestream, `-Slug 209-one-meaning-flippancy` for an exact slug, and `-ListOnly` to preview matching entries without downloading. The script writes JSON under `src/transcripts/json/` and creates ignored run summaries named `scripts/Get-YouTubeTranscriptJson.run-summary.*.md`. Treat `NoTranscript` results as blockers unless the source later changes; do not fabricate curated pages from empty placeholder JSON.
+
+### 3. Regenerate working transcripts
+
+Use `scripts/Convert-TranscriptJson.ps1` after new JSON files are added or when generated working files need to be rebuilt. Running it without paths converts every JSON file in `src/transcripts/json/` to TXT under `src/transcripts/txt/`:
+
+```powershell
+pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1
+```
+
+For targeted work, pass one or more JSON paths. Use `-Format Tsv` only when structured columns such as `StartSeconds`, `StartMs`, `EndMs`, `Text`, and `Link` are useful for auditing or automation. Generated TXT and TSV files should normally be recreated with this script instead of hand-edited.
+
+### 4. Curate and repair Q&A pages
+
+Curated pages belong in `docs/questions/`. Start from the matching `src/transcripts/txt/<slug>.txt` file because it is optimized for fast search and bounded review. Use the JSON source of record when transcript text is ambiguous, raw timing fields matter, or a missing TXT file needs to be regenerated.
+
+Each ordinary page should use the `docs/questions/<slug>-questions.md` naming pattern, except when the slug already ends in `questions`; in that case use `docs/questions/<slug>.md`. Keep timestamp links in direct YouTube `?t=` form and use the GitHub-friendly HTML link form when a new tab is desired.
+
+When pages are added, renamed, or repaired, update this README's link list and `Current Status` counts against the actual filesystem inventory. The known blocked numbered episodes, currently 118 and 162, should stay listed until usable transcripts exist.
+
+### 5. Find likely repair candidates
+
+Use `scripts/Get-QuestionRevisionCandidates.ps1` for local triage when deciding which curated pages may need repair:
+
+```powershell
+pwsh -NoProfile -File scripts/Get-QuestionRevisionCandidates.ps1
+```
+
+The script compares `docs/questions/` and `src/transcripts/txt/`, then writes ignored reports under `reports/`. Treat its score as a triage signal only; a low question density or old Markdown timestamp is a reason to inspect the transcript, not proof that the page is wrong.
+
+### 6. Validate content changes
+
+Before committing maintenance changes, run focused checks for the files you touched:
+
+```powershell
+git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible status --short
+git diff --check
+rg "TODO|FIXME|placeholder|timestamp needed|missing timestamp" docs/questions README.md
+```
+
+For curated Markdown edits, also check that table rows have consistent columns, timestamp links use the correct video ID and `?t=` seconds, and summaries are supported by the transcript. For broad README or inventory updates, compare the README list and status counts against `docs/questions/*.md` and `src/transcripts/txt/*.txt`.
 
 ## How to Use This Reference
 
