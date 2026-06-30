@@ -12,13 +12,43 @@
     ["amenmesse", "amenmesses"],
     ["amunherkhepeshef", "amunherkhepshef", "amenherkhepeshef", "amenherkhepshef"],
     ["yahweh", "yhwh"],
+    ["gen", "genesis"],
     ["ps", "psalm", "psalms"],
     ["exod", "exodus"],
+    ["lev", "leviticus"],
+    ["num", "numbers"],
     ["deut", "deuteronomy"],
+    ["judg", "judges"],
+    ["rth", "ruth"],
+    ["kgs", "kings"],
+    ["chr", "chronicles"],
+    ["ezr", "ezra"],
+    ["neh", "nehemiah"],
+    ["esth", "esther"],
+    ["prov", "proverbs"],
+    ["eccl", "ecclesiastes"],
+    ["lam", "lamentations"],
     ["isa", "isaiah"],
     ["jer", "jeremiah"],
     ["ezek", "ezekiel"],
+    ["hos", "hosea"],
+    ["obad", "obadiah"],
+    ["mic", "micah"],
+    ["nah", "nahum"],
+    ["hag", "haggai"],
+    ["zech", "zechariah"],
+    ["mal", "malachi"],
+    ["matt", "matthew"],
+    ["lk", "luke"],
     ["rom", "romans"],
+    ["cor", "corinthians"],
+    ["gal", "galatians"],
+    ["eph", "ephesians"],
+    ["phil", "philippians"],
+    ["col", "colossians"],
+    ["thess", "thessalonians"],
+    ["heb", "hebrews"],
+    ["jud", "jude"],
     ["rev", "revelation", "apocalypse"],
     ["2", "ii"],
     ["3", "iii"],
@@ -68,6 +98,51 @@
       "query": "ps 82",
       "minResults": 1,
       "maxResults": 200
+    },
+    {
+      "query": "gen 1",
+      "minResults": 1,
+      "maxResults": 250
+    },
+    {
+      "query": "lev 12",
+      "minResults": 1,
+      "maxResults": 50
+    },
+    {
+      "query": "num 12",
+      "minResults": 1,
+      "maxResults": 100
+    },
+    {
+      "query": "1 kgs",
+      "minResults": 1,
+      "maxResults": 150
+    },
+    {
+      "query": "1 chr",
+      "minResults": 1,
+      "maxResults": 75
+    },
+    {
+      "query": "matt 16",
+      "minResults": 1,
+      "maxResults": 50
+    },
+    {
+      "query": "lk 3",
+      "minResults": 1,
+      "maxResults": 50
+    },
+    {
+      "query": "1 cor",
+      "minResults": 1,
+      "maxResults": 100
+    },
+    {
+      "query": "heb 11",
+      "minResults": 1,
+      "maxResults": 50
     }
   ]
 }
