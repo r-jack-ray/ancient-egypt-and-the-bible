@@ -9,7 +9,6 @@ This repository is a Questions & Answers reference archive for the Ancient Egypt
 - `src/transcripts/txt/`: generated working transcript text files, one transcript segment per line. These are the default inspection surface for curation and currently exist for all non-empty JSON transcript exports through episode 208.
 - `src/transcripts/tsv/`: optional generated TSV files, created only when structured columns are useful.
 - `docs/questions/`: curated GitHub-readable Q&A reference pages with timestamp links.
-- `docs/index.html`: GitHub Pages search page.
 - `scripts/Convert-TranscriptJson.ps1`: PowerShell 7 converter from transcript JSON to TXT or TSV.
 - `task-notes/`: transient in-project notes and AI session summaries. Create this directory if it is missing.
 
