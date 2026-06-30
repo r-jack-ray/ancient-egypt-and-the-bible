@@ -6,15 +6,23 @@
   <input id="page-filter" data-filter-control data-filter-target="#question-page-list" data-filter-count="#page-filter-count" type="search" placeholder="Filter pages by title, number, or series">
   <span id="page-filter-count" class="results-summary"></span>
 </div>
-<ul id="question-page-list" class="reference-list">
+<ol id="question-page-list" class="question-page-list">
   {{ range sort $pages "Params.sort_key" "desc" }}
-  <li class="reference-item" data-filter-item data-filter-text="{{ .Title }} {{ .Params.episode_number }} {{ .Params.series }}">
-    <a class="reference-item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-    <span class="reference-item-meta">
-      {{ if .Params.is_numbered }}Live Stream #{{ .Params.episode_number }}{{ else }}{{ .Params.series }}{{ end }}
-      · {{ .Params.question_count }} questions
-    </span>
+  <li class="question-page-card" data-filter-item data-filter-text="{{ .Title }} {{ .Params.episode_title }} {{ .Params.episode_number }} {{ .Params.series }}">
+    <div>
+      <span class="question-page-badge">{{ if .Params.is_numbered }}#{{ .Params.episode_number }}{{ else }}Special{{ end }}</span>
+    </div>
+    <div class="question-page-body">
+      <a class="question-page-title" href="{{ .RelPermalink }}">{{ if .Params.is_numbered }}{{ .Params.episode_title }}{{ else }}{{ .Title }}{{ end }}</a>
+      <span class="reference-item-meta">
+        {{ if .Params.is_numbered }}numbered livestream{{ else }}{{ .Params.series }}{{ end }} · {{ .Params.question_count }} questions
+      </span>
+    </div>
+    <div class="question-page-actions">
+      <a href="{{ .RelPermalink }}">Open page</a>
+      {{ with .Params.video_id }}<a href="https://youtu.be/{{ . }}" target="_blank" rel="noopener noreferrer">Watch video</a>{{ end }}
+    </div>
   </li>
   {{ end }}
-</ul>
+</ol>
 {{ end }}
