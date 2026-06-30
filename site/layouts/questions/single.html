@@ -1,6 +1,25 @@
 {{ define "main" }}
 {{ $contentPath := printf "questions/%s/" .Params.slug }}
 {{ $questions := where hugo.Data.questions "content_path" $contentPath }}
+{{ $numberedPages := where (where hugo.Data.episodes "is_numbered" true) "content_path" "!=" nil }}
+{{ $currentIndex := -1 }}
+{{ range $index, $episode := $numberedPages }}
+  {{ if eq $episode.content_path $contentPath }}
+    {{ $currentIndex = $index }}
+  {{ end }}
+{{ end }}
+{{ $newer := dict }}
+{{ $older := dict }}
+{{ if ge $currentIndex 0 }}
+  {{ $newerIndex := sub $currentIndex 1 }}
+  {{ $olderIndex := add $currentIndex 1 }}
+  {{ if ge $newerIndex 0 }}
+    {{ $newer = index $numberedPages $newerIndex }}
+  {{ end }}
+  {{ if lt $olderIndex (len $numberedPages) }}
+    {{ $older = index $numberedPages $olderIndex }}
+  {{ end }}
+{{ end }}
 <article>
   <h1 class="page-title">{{ .Title }}</h1>
   {{ with .Params.description }}
@@ -13,6 +32,16 @@
     <a href="https://youtu.be/{{ . }}" target="_blank" rel="noopener noreferrer">Watch video</a>
     {{ end }}
   </div>
+  <nav class="question-page-nav" aria-label="Episode navigation">
+    <a href="{{ "episodes/" | relURL }}">All episodes</a>
+    <a href="{{ "search/" | relURL }}">Question index</a>
+    {{ with $newer.content_path }}
+    <a href="{{ . | relURL }}">Newer: #{{ $newer.number }}</a>
+    {{ end }}
+    {{ with $older.content_path }}
+    <a href="{{ . | relURL }}">Older: #{{ $older.number }}</a>
+    {{ end }}
+  </nav>
 
   {{ if gt (len $questions) 0 }}
   <div class="index-toolbar">
