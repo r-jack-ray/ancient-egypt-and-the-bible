@@ -293,7 +293,6 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 
 ```text
 docs/
-  index.html                  GitHub Pages search page
   questions/                  Public curated Markdown Q&A reference pages
 scripts/
   Convert-TranscriptJson.ps1  PowerShell 7 converter from JSON to TXT or TSV

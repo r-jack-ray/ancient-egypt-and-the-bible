@@ -378,9 +378,7 @@ Pages under `docs/questions/` are public-facing GitHub Pages content.
 
 When adding new curated pages, update `README.md` if it maintains an explicit episode-link list or current-status summary. Compare `docs/questions/*.md` against the README curated episode list before finishing, and fix drift when the README claims a range or page count that no longer matches the files.
 
-`docs/index.html` is the GitHub Pages search page. It should search the public reference content under `docs/questions/`. If it still contains copied template text or searches an unrelated path such as `/src/main/resources/sql`, update it or report the mismatch as part of the task.
-
-For a large number of pages, prefer a grouped Markdown index under `docs/questions/`, leaving the existing `docs/index.html` search page intact unless the search UI itself needs to change:
+For a large number of pages, prefer a grouped Markdown index under `docs/questions/`:
 
 ```text
 docs/questions/index.md
@@ -542,7 +540,6 @@ A task using this skill is complete only when the relevant items are true:
 - no successful creation record was appended for a blocked or uncreated page
 - generated TXT or TSV files, when created, were produced by `scripts/Convert-TranscriptJson.ps1`
 - `README.md` explicit episode links and current-status text are updated when needed
-- `docs/index.html` searches `docs/questions/` or the mismatch is reported
 - semantic subagents, when used, inherited the parent model and reasoning effort
 - no local AI was used for semantic work unless the user explicitly requested it
 - shared navigation or status files were updated serially
