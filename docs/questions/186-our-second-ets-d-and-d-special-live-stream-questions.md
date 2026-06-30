@@ -6,6 +6,7 @@ Time links open the YouTube video at the relevant timestamp.
 
 | Time | Question | Short answer / answer direction |
 |---:|---|---|
+| <a href="https://youtu.be/msTEhuIDElw?t=7084" target="_blank" rel="noopener noreferrer">1:58:04</a> | What even was that? | He said it was a typical ETS D&D game, an annual special event they enjoy because it is quirky and outside the box. |
 | <a href="https://youtu.be/msTEhuIDElw?t=7133" target="_blank" rel="noopener noreferrer">1:58:53</a> | Should people keep praying for his earlier health issue, or is he better now? | He said he had recovered to a great extent and thanked people for praying. |
 | <a href="https://youtu.be/msTEhuIDElw?t=7229" target="_blank" rel="noopener noreferrer">2:00:29</a> | Could he explain the story of U's wife from his book? | After the reference was clarified, he described a Deir el-Medina story about a laborer who wanted to buy a carrying pole but had to ask his deceased wife for permission to spend her money. |
 | <a href="https://youtu.be/msTEhuIDElw?t=7422" target="_blank" rel="noopener noreferrer">2:03:42</a> | Will there be D&D in Egypt? | He said probably not on the Egypt tour, though the main tour was still going ahead. |
