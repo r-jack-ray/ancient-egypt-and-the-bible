@@ -53,7 +53,14 @@
     ["saqqara", "sakkara"],
     ["giza", "gizeh"],
     ["septuagint", "lxx"],
-    ["yahweh", "yhwh"],
+    ["yahweh", "yhwh", "yahveh"],
+    ["tanakh", "tanach"],
+    ["ruach", "ruakh", "ruak"],
+    ["nephesh", "nefesh"],
+    ["adonai", "adonay"],
+    ["toledot", "toldot"],
+    ["gehenna", "gehinnom", "gehinom"],
+    ["masoretic", "massoretic"],
     ["gen", "genesis"],
     ["ps", "psa", "psalm", "psalms"],
     ["exod", "exodus"],
@@ -112,7 +119,11 @@
     ["mesha stele", "mesha stela", "moabite stone"],
     ["tel dan stele", "tel dan stela"],
     ["ipuwer papyrus", "admonitions of ipuwer"],
-    ["papyrus westcar", "westcar papyrus"]
+    ["papyrus westcar", "westcar papyrus"],
+    ["baal", "baalim", "ba al"],
+    ["el elyon", "el elion"],
+    ["el shaddai", "el shadday"],
+    ["tell el daba", "tell el dab a", "tell el dabaa"]
   ],
   "queryTests": [
     {
@@ -339,6 +350,66 @@
       "query": "yhwh",
       "minResults": 1,
       "maxResults": 500
+    },
+    {
+      "query": "yahveh",
+      "minResults": 100,
+      "maxResults": 500
+    },
+    {
+      "query": "tanach",
+      "minResults": 1,
+      "maxResults": 25
+    },
+    {
+      "query": "ruakh",
+      "minResults": 1,
+      "maxResults": 20
+    },
+    {
+      "query": "nefesh",
+      "minResults": 1,
+      "maxResults": 20
+    },
+    {
+      "query": "adonay",
+      "minResults": 1,
+      "maxResults": 10
+    },
+    {
+      "query": "toldot",
+      "minResults": 1,
+      "maxResults": 25
+    },
+    {
+      "query": "gehinnom",
+      "minResults": 1,
+      "maxResults": 20
+    },
+    {
+      "query": "massoretic",
+      "minResults": 10,
+      "maxResults": 75
+    },
+    {
+      "query": "ba'al",
+      "minResults": 10,
+      "maxResults": 75
+    },
+    {
+      "query": "el elion",
+      "minResults": 1,
+      "maxResults": 20
+    },
+    {
+      "query": "el shadday",
+      "minResults": 1,
+      "maxResults": 20
+    },
+    {
+      "query": "tell el dab'a",
+      "minResults": 1,
+      "maxResults": 20
     },
     {
       "query": "lxx",
