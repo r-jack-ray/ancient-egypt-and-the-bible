@@ -20,18 +20,28 @@
     ["setnakhte", "setnakht"],
     ["amenmesse", "amenmesses"],
     ["amunherkhepeshef", "amunherkhepshef", "amenherkhepeshef", "amenherkhepshef"],
+    ["dab", "daba", "dabaa"],
+    ["thebes", "luxor", "waset"],
+    ["memphis", "mennefer"],
+    ["tanis", "zoan"],
+    ["elephantine", "yeb"],
+    ["amarna", "akhetaten"],
+    ["saqqara", "sakkara"],
+    ["giza", "gizeh"],
     ["septuagint", "lxx"],
     ["yahweh", "yhwh"],
     ["gen", "genesis"],
-    ["ps", "psalm", "psalms"],
+    ["ps", "psa", "psalm", "psalms"],
     ["exod", "exodus"],
     ["lev", "leviticus"],
     ["num", "numbers"],
     ["deut", "deuteronomy"],
+    ["josh", "joshua"],
     ["judg", "judges"],
     ["rth", "ruth"],
+    ["sam", "samuel"],
     ["kgs", "kings"],
-    ["chr", "chronicles"],
+    ["chr", "chron", "chronicles"],
     ["ezr", "ezra"],
     ["neh", "nehemiah"],
     ["esth", "esther"],
@@ -49,6 +59,7 @@
     ["zech", "zechariah"],
     ["mal", "malachi"],
     ["matt", "matthew"],
+    ["mk", "mrk", "mark"],
     ["lk", "luke"],
     ["rom", "romans"],
     ["cor", "corinthians"],
@@ -58,6 +69,7 @@
     ["col", "colossians"],
     ["thess", "thessalonians"],
     ["heb", "hebrews"],
+    ["jas", "james"],
     ["jud", "jude"],
     ["rev", "revelation", "apocalypse"],
     ["2", "ii"],
@@ -145,6 +157,46 @@
       "maxResults": 100
     },
     {
+      "query": "dabaa",
+      "minResults": 1,
+      "maxResults": 20
+    },
+    {
+      "query": "waset",
+      "minResults": 5,
+      "maxResults": 50
+    },
+    {
+      "query": "mennefer",
+      "minResults": 1,
+      "maxResults": 25
+    },
+    {
+      "query": "zoan",
+      "minResults": 5,
+      "maxResults": 40
+    },
+    {
+      "query": "yeb",
+      "minResults": 5,
+      "maxResults": 50
+    },
+    {
+      "query": "akhetaten",
+      "minResults": 20,
+      "maxResults": 80
+    },
+    {
+      "query": "sakkara",
+      "minResults": 1,
+      "maxResults": 15
+    },
+    {
+      "query": "gizeh",
+      "minResults": 5,
+      "maxResults": 40
+    },
+    {
       "query": "yhwh",
       "minResults": 1,
       "maxResults": 500
@@ -158,6 +210,11 @@
       "query": "ps 82",
       "minResults": 1,
       "maxResults": 200
+    },
+    {
+      "query": "psa 82",
+      "minResults": 1,
+      "maxResults": 50
     },
     {
       "query": "gen 1",
@@ -175,6 +232,16 @@
       "maxResults": 100
     },
     {
+      "query": "josh 9",
+      "minResults": 1,
+      "maxResults": 25
+    },
+    {
+      "query": "1 sam",
+      "minResults": 20,
+      "maxResults": 150
+    },
+    {
       "query": "1 kgs",
       "minResults": 1,
       "maxResults": 150
@@ -185,9 +252,19 @@
       "maxResults": 75
     },
     {
+      "query": "chron 21",
+      "minResults": 1,
+      "maxResults": 25
+    },
+    {
       "query": "matt 16",
       "minResults": 1,
       "maxResults": 50
+    },
+    {
+      "query": "mk 8",
+      "minResults": 1,
+      "maxResults": 25
     },
     {
       "query": "lk 3",
@@ -203,6 +280,11 @@
       "query": "heb 11",
       "minResults": 1,
       "maxResults": 50
+    },
+    {
+      "query": "jas 3",
+      "minResults": 1,
+      "maxResults": 20
     }
   ]
 }
