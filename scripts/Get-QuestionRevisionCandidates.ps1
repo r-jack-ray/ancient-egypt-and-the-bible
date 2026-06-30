@@ -26,7 +26,7 @@
 
 [CmdletBinding()]
 param(
-    [string]$RepoRoot = (Get-Location).Path,
+    [string]$RepoRoot = "",
 
     [string]$QuestionsDir = "docs/questions",
 
@@ -50,7 +50,67 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
-$repoRootPath = (Resolve-Path -LiteralPath $RepoRoot).Path
+function Resolve-RepositoryRoot {
+    param(
+        [Parameter(Mandatory)]
+        [string]$StartPath
+    )
+
+    $current = (Resolve-Path -LiteralPath $StartPath).Path
+
+    if (Test-Path -LiteralPath $current -PathType Leaf) {
+        $current = Split-Path -Path $current -Parent
+    }
+
+    while ($current) {
+        $questionsCandidate = Join-Path $current "docs/questions"
+        $transcriptsCandidate = Join-Path $current "src/transcripts/txt"
+
+        if (
+            (Test-Path -LiteralPath $questionsCandidate -PathType Container) -and
+            (Test-Path -LiteralPath $transcriptsCandidate -PathType Container)
+        ) {
+            return $current
+        }
+
+        $parent = Split-Path -Path $current -Parent
+        if ($parent -eq $current) {
+            break
+        }
+
+        $current = $parent
+    }
+
+    throw "Could not find repository root from '$StartPath'. Expected docs/questions and src/transcripts/txt."
+}
+
+function Resolve-DefaultRepositoryRoot {
+    $candidateStartPaths = @()
+
+    if (-not [string]::IsNullOrWhiteSpace($PSScriptRoot)) {
+        $candidateStartPaths += $PSScriptRoot
+    }
+
+    $candidateStartPaths += (Get-Location).Path
+
+    foreach ($startPath in ($candidateStartPaths | Select-Object -Unique)) {
+        try {
+            return Resolve-RepositoryRoot -StartPath $startPath
+        }
+        catch {
+            continue
+        }
+    }
+
+    throw "Could not find repository root from the current location or script path. Expected docs/questions and src/transcripts/txt."
+}
+
+$repoRootPath = if ([string]::IsNullOrWhiteSpace($RepoRoot)) {
+    Resolve-DefaultRepositoryRoot
+}
+else {
+    (Resolve-Path -LiteralPath $RepoRoot).Path
+}
 
 $questionsPath = Join-Path $repoRootPath $QuestionsDir
 $transcriptsPath = Join-Path $repoRootPath $TranscriptsDir
