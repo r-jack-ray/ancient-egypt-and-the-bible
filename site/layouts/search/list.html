@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ $questions := site.Data.questions }}
+<h1 class="page-title">{{ .Title }}</h1>
+<ul class="question-index">
+  {{ range $questions }}
+  <li>
+    <a href="{{ .question_page | replaceRE "^questions/" "/questions/" | replaceRE "\\.md$" "/" | relURL }}">{{ .episode_title }}</a>
+    · <a href="{{ .video_url }}">{{ .time_label }}</a>
+    <br>
+    <strong>{{ .question }}</strong>
+    <br>
+    {{ .short_answer }}
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

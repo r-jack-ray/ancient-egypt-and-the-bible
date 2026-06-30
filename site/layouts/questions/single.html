@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article>
+  <p class="question-meta">
+    {{ if .Params.is_numbered }}Live Stream #{{ .Params.episode_number }}{{ else }}{{ .Params.series }}{{ end }}
+    · {{ .Params.question_count }} questions
+    · generated from {{ .Params.source_file }}
+  </p>
+  <div class="content-body table-wrap">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}
