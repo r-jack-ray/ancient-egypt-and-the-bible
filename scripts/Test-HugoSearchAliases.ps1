@@ -17,6 +17,40 @@ function Get-SearchTokens {
     return @([regex]::Matches($withoutTags, '[a-z0-9]+') | ForEach-Object { $_.Value })
 }
 
+function ConvertTo-NormalizedSearchQuery {
+    param([AllowNull()][string]$Value)
+
+    if ([string]::IsNullOrWhiteSpace($Value)) {
+        return ""
+    }
+
+    $text = $Value.ToLowerInvariant().Trim()
+    $numberedBookPattern = "sam|samuel|kgs|kings|chr|chron|chronicles|cor|corinthians|thess|thessalonians"
+    $bibleReferenceBooks = @(
+        "genesis", "exodus", "leviticus", "numbers", "deuteronomy", "joshua",
+        "judges", "ruth", "samuel", "kings", "chronicles", "ezra", "nehemiah",
+        "esther", "proverbs", "ecclesiastes", "lamentations", "isaiah",
+        "jeremiah", "ezekiel", "hosea", "obadiah", "micah", "nahum", "haggai",
+        "zechariah", "malachi", "matthew", "mark", "luke", "romans",
+        "corinthians", "galatians", "ephesians", "philippians", "colossians",
+        "thessalonians", "hebrews", "james", "jude", "revelation", "apocalypse",
+        "chron", "exod", "deut", "josh", "judg", "esth", "prov", "eccl", "ezek",
+        "obad", "zech", "matt", "thess", "psalms", "psalm", "gen", "lev", "num",
+        "rth", "sam", "kgs", "chr", "ezr", "neh", "lam", "isa", "jer", "hos",
+        "mic", "nah", "hag", "mal", "mrk", "rom", "cor", "gal", "eph", "phil",
+        "col", "heb", "jas", "jud", "rev", "psa", "mk", "lk", "ps"
+    )
+    $bookPattern = (($bibleReferenceBooks | Sort-Object Length -Descending) -join "|")
+
+    $text = [regex]::Replace($text, "\b(first|1st|i)\s+($numberedBookPattern)\b", '1 $2')
+    $text = [regex]::Replace($text, "\b(second|2nd|ii)\s+($numberedBookPattern)\b", '2 $2')
+    $text = [regex]::Replace($text, "\b(third|3rd|iii)\s+($numberedBookPattern)\b", '3 $2')
+    $text = [regex]::Replace($text, "\b([1-3])($numberedBookPattern)(?=\d|\b)", '$1 $2')
+    $text = [regex]::Replace($text, "\b($bookPattern)(\d+)", '$1 $2')
+
+    return ([regex]::Replace($text, '\s+', ' ')).Trim()
+}
+
 function Get-SearchAliasMap {
     param([Parameter(Mandatory = $true)][object[]]$AliasGroups)
 
@@ -283,7 +317,8 @@ foreach ($group in $phraseAliasGroups) {
 $queryTests = @($aliasConfig.queryTests)
 foreach ($test in $queryTests) {
     $query = [string]$test.query
-    $queryTokens = @(Get-SearchTokens -Value $query)
+    $normalizedQuery = ConvertTo-NormalizedSearchQuery -Value $query
+    $queryTokens = @(Get-SearchTokens -Value $normalizedQuery)
     if ($queryTokens.Count -eq 0) {
         throw "Query test has an empty query."
     }

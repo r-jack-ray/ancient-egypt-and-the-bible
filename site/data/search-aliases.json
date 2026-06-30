@@ -123,7 +123,28 @@
     ["baal", "baalim", "ba al"],
     ["el elyon", "el elion"],
     ["el shaddai", "el shadday"],
-    ["tell el daba", "tell el dab a", "tell el dabaa"]
+    ["tell el daba", "tell el dab a", "tell el dabaa"],
+    ["new kingdom", "nk"],
+    ["first intermediate period", "fip"],
+    ["second intermediate period", "sip"],
+    ["late bronze age", "lba"],
+    ["dynasty 12", "12th dynasty", "twelfth dynasty", "dynasty xii"],
+    ["dynasty 13", "13th dynasty", "thirteenth dynasty", "dynasty xiii"],
+    ["dynasty 18", "18th dynasty", "eighteenth dynasty", "dynasty xviii"],
+    ["dynasty 19", "19th dynasty", "nineteenth dynasty", "dynasty xix"],
+    ["dynasty 20", "20th dynasty", "twentieth dynasty", "dynasty xx"],
+    ["dynasty 21", "21st dynasty", "twenty first dynasty", "dynasty xxi"],
+    ["dynasty 25", "25th dynasty", "twenty fifth dynasty", "dynasty xxv"],
+    ["dynasty 26", "26th dynasty", "twenty sixth dynasty", "dynasty xxvi"],
+    ["dr falk", "david falk", "dr david falk"],
+    ["kenneth kitchen", "kitchen", "k a kitchen", "ka kitchen"],
+    ["james hoffmeier", "hoffmeier"],
+    ["israel finkelstein", "finkelstein"],
+    ["michael heiser", "heiser"],
+    ["titus kennedy", "kennedy"],
+    ["david rohl", "rohl"],
+    ["joshua bowen", "bowen"],
+    ["assassin s creed origins", "assassins creed origins", "assassin creed origins", "aco"]
   ],
   "queryTests": [
     {
@@ -447,6 +468,11 @@
       "maxResults": 200
     },
     {
+      "query": "ps82",
+      "minResults": 1,
+      "maxResults": 200
+    },
+    {
       "query": "psa 82",
       "minResults": 1,
       "maxResults": 50
@@ -455,6 +481,11 @@
       "query": "gen 1",
       "minResults": 1,
       "maxResults": 250
+    },
+    {
+      "query": "exod12",
+      "minResults": 1,
+      "maxResults": 50
     },
     {
       "query": "lev 12",
@@ -475,6 +506,21 @@
       "query": "1 sam",
       "minResults": 20,
       "maxResults": 150
+    },
+    {
+      "query": "1sam28",
+      "minResults": 1,
+      "maxResults": 100
+    },
+    {
+      "query": "first samuel 28",
+      "minResults": 1,
+      "maxResults": 100
+    },
+    {
+      "query": "i samuel 28",
+      "minResults": 1,
+      "maxResults": 100
     },
     {
       "query": "1 kgs",
@@ -520,6 +566,86 @@
       "query": "jas 3",
       "minResults": 1,
       "maxResults": 20
+    },
+    {
+      "query": "nk",
+      "minResults": 30,
+      "maxResults": 100
+    },
+    {
+      "query": "sip",
+      "minResults": 5,
+      "maxResults": 25
+    },
+    {
+      "query": "lba",
+      "minResults": 30,
+      "maxResults": 100
+    },
+    {
+      "query": "dynasty xviii",
+      "minResults": 5,
+      "maxResults": 40
+    },
+    {
+      "query": "dynasty xix",
+      "minResults": 10,
+      "maxResults": 50
+    },
+    {
+      "query": "twentieth dynasty",
+      "minResults": 5,
+      "maxResults": 30
+    },
+    {
+      "query": "dr david falk",
+      "minResults": 500,
+      "maxResults": 700
+    },
+    {
+      "query": "ka kitchen",
+      "minResults": 50,
+      "maxResults": 150
+    },
+    {
+      "query": "james hoffmeier",
+      "minResults": 20,
+      "maxResults": 50
+    },
+    {
+      "query": "israel finkelstein",
+      "minResults": 5,
+      "maxResults": 25
+    },
+    {
+      "query": "michael heiser",
+      "minResults": 30,
+      "maxResults": 75
+    },
+    {
+      "query": "titus kennedy",
+      "minResults": 50,
+      "maxResults": 100
+    },
+    {
+      "query": "david rohl",
+      "minResults": 15,
+      "maxResults": 30
+    },
+    {
+      "query": "joshua bowen",
+      "minResults": 5,
+      "maxResults": 20
+    },
+    {
+      "query": "assassins creed origins",
+      "minResults": 300,
+      "maxResults": 500
+    },
+    {
+      "query": "aco",
+      "minResults": 300,
+      "maxResults": 500
     }
   ]
 }

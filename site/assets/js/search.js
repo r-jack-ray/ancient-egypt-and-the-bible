@@ -52,6 +52,40 @@
     return tokenizeSearchTerms(value).join(" ");
   }
 
+  var bibleReferenceBooks = [
+    "genesis", "exodus", "leviticus", "numbers", "deuteronomy", "joshua",
+    "judges", "ruth", "samuel", "kings", "chronicles", "ezra", "nehemiah",
+    "esther", "proverbs", "ecclesiastes", "lamentations", "isaiah",
+    "jeremiah", "ezekiel", "hosea", "obadiah", "micah", "nahum", "haggai",
+    "zechariah", "malachi", "matthew", "mark", "luke", "romans",
+    "corinthians", "galatians", "ephesians", "philippians", "colossians",
+    "thessalonians", "hebrews", "james", "jude", "revelation", "apocalypse",
+    "chron", "exod", "deut", "josh", "judg", "esth", "prov", "eccl", "ezek",
+    "obad", "zech", "matt", "thess", "psalms", "psalm", "gen", "lev", "num",
+    "rth", "sam", "kgs", "chr", "ezr", "neh", "lam", "isa", "jer", "hos",
+    "mic", "nah", "hag", "mal", "mrk", "rom", "cor", "gal", "eph", "phil",
+    "col", "heb", "jas", "jud", "rev", "psa", "mk", "lk", "ps"
+  ];
+  var bibleReferenceBookPattern = bibleReferenceBooks.slice().sort(function (a, b) {
+    return b.length - a.length;
+  }).join("|");
+  var numberedBibleBooks = "sam|samuel|kgs|kings|chr|chron|chronicles|cor|corinthians|thess|thessalonians";
+
+  function normalizeBibleReferenceQuery(value) {
+    var text = normalize(value);
+    if (!text) {
+      return "";
+    }
+
+    text = text.replace(new RegExp("\\b(first|1st|i)\\s+(" + numberedBibleBooks + ")\\b", "g"), "1 $2");
+    text = text.replace(new RegExp("\\b(second|2nd|ii)\\s+(" + numberedBibleBooks + ")\\b", "g"), "2 $2");
+    text = text.replace(new RegExp("\\b(third|3rd|iii)\\s+(" + numberedBibleBooks + ")\\b", "g"), "3 $2");
+    text = text.replace(new RegExp("\\b([1-3])(" + numberedBibleBooks + ")(?=\\d|\\b)", "g"), "$1 $2");
+    text = text.replace(new RegExp("\\b(" + bibleReferenceBookPattern + ")(\\d+)", "g"), "$1 $2");
+
+    return text.replace(/\s+/g, " ").trim();
+  }
+
   function readSearchAliasConfig(node) {
     var emptyConfig = {
       aliasGroups: [],
@@ -494,7 +528,7 @@
   var miniSearch = createMiniSearchIndex(questions);
 
   function applySearch() {
-    var query = normalize(input ? input.value : "");
+    var query = normalizeBibleReferenceQuery(input ? input.value : "");
     var tokens = tokenize(query);
     var scored = searchQuestions(query, tokens, miniSearch);
     var sortMode = sortControl ? sortControl.value : "relevance";
