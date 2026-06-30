@@ -361,6 +361,14 @@ If Hugo is not installed yet, the non-rendering compatibility checks can still r
 pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo
 ```
 
+To preview the Hugo site locally with the same subpath used by GitHub Pages, run:
+
+```powershell
+hugo server --source site --bind 127.0.0.1 --port 1314 --baseURL http://127.0.0.1:1314/ancient-egypt-and-the-bible/ --appendPort=false --disableFastRender
+```
+
+Then open <http://127.0.0.1:1314/ancient-egypt-and-the-bible/>.
+
 For GitHub Pages, GitHub Actions, and deployment environment handling, see [GitHub Handling Notes](project-notes/github-handling/README.md).
 
 ## Transcript Conversion
