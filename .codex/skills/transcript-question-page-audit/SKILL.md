@@ -1,6 +1,6 @@
 ---
 name: transcript-question-page-audit
-description: Find and fix issues in existing Ancient Egypt and the Bible curated question Markdown pages under docs/questions against TXT and JSON transcript sources. Use for low-output correction passes, timestamp verification, missing-question repair, unsupported answer cleanup, table/link validation, and minimal-diff edits. Do not use for first-pass transcript-to-Markdown generation.
+description: Find and fix issues in existing Ancient Egypt and the Bible curated question Markdown pages under docs/questions against TXT and JSON transcript sources. Use for low-output correction passes, timestamp verification, missing-question repair, unsupported short or expanded answer cleanup, table/link validation including four-column expanded-answer tables, and minimal-diff edits. Do not use for first-pass transcript-to-Markdown generation.
 ---
 
 # Transcript Question Page Audit
@@ -30,6 +30,7 @@ Semantic audit work includes:
 - interpreting transcript fragments
 - choosing question wording
 - writing or revising answer summaries
+- validating expanded answers when present
 - resolving timestamps
 - editing the question page
 
@@ -212,6 +213,15 @@ Short answers must be transcript-grounded:
 - stay short enough for table scanning
 - avoid outside research
 
+Expanded answers:
+
+- may be `_Expansion pending._`; this is allowed and is not an audit failure
+- must be transcript-grounded when not pending
+- must not contradict the short answer
+- should add useful transcript-supported detail rather than merely repeating the short answer
+- should be updated when a short answer is factually corrected and the expanded answer is not pending
+- should be counted separately from factual audit issues when reporting remaining work
+
 Use uncertainty when needed:
 
 ```text
@@ -229,21 +239,23 @@ Live Stream #265: The Pharaoh of Swing
 
 Time links open the YouTube video at the relevant timestamp.
 
-| Time | Question | Short answer / answer direction |
-|---:|---|---|
-| <a href="https://youtu.be/VIDEO_ID?t=543" target="_blank" rel="noopener noreferrer">9:03</a> | Question text? | Short supported answer. |
+| Time | Question | Short answer / answer direction | Expanded answer |
+|---:|---|---|---|
+| <a href="https://youtu.be/VIDEO_ID?t=543" target="_blank" rel="noopener noreferrer">9:03</a> | Question text? | Short supported answer. | _Expansion pending._ |
 ```
 
 Rules:
 
 - one table row per line
-- exactly three columns for ordinary pages
+- exactly four columns for ordinary pages
 - timestamp link in column 1
-- ordinary pages must use the exact column order `Time | Question | Short answer / answer direction`
+- ordinary pages must use the exact column order `Time | Question | Short answer / answer direction | Expanded answer`
 - if an ordinary page uses another order such as `Question | Time | Answer`, normalize it to the standard order as part of the repair
+- if an ordinary page still uses the legacy three-column order, add the `Expanded answer` column and use `_Expansion pending._` for each existing row unless the user explicitly asked for expanded answers
 - escape literal pipes inside cells as `\|`
 - no raw newlines inside cells
 - no placeholder links
+- `_Expansion pending._` is allowed only in the expanded-answer column
 
 Special-purpose pages may keep their existing adapted structure when supported. Transcript notes after the table are allowed if transcript-grounded and clearly
 separate from Q&A rows.
@@ -257,7 +269,7 @@ $path = "docs/questions/FILE.md"
 Get-Content $path | Where-Object { $_ -match '^\|' } | ForEach-Object {
     $line = $_
     $unescaped = ([regex]::Matches($line, '(?<!\\)\|')).Count
-    if ($unescaped -ne 4)
+    if ($unescaped -ne 5)
     {
         [pscustomobject]@{ Pipes = $unescaped; Line = $line }
     }
@@ -269,7 +281,7 @@ git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible diff -- $path
 ```
 
 Also verify display timestamps match `?t=` seconds for changed rows or when links were edited.
-For ordinary pages, also verify the table header is exactly `| Time | Question | Short answer / answer direction |` and that every data row begins with a timestamp link.
+For ordinary pages, also verify the table header is exactly `| Time | Question | Short answer / answer direction | Expanded answer |`, that every data row begins with a timestamp link, and that every expanded-answer cell is either `_Expansion pending._` or non-empty transcript-grounded text.
 
 ## Output Modes
 
@@ -396,9 +408,10 @@ Finish only when relevant items are true:
 - `?t=` seconds match display timestamps
 - timestamp links include `target="_blank"` and `rel="noopener noreferrer"`
 - short answers are supported and preserve uncertainty
+- expanded answers are pending or transcript-supported and consistent with short answers
 - no outside facts were added
 - table rows render cleanly
-- no placeholder or legacy links remain
+- no placeholder links or legacy links remain
 - `question_count_before`, `question_count_after`, and `question_count_change` agree
 - full-coverage audits inspected the TXT transcript from beginning to end without gaps
 - targeted audits were limited only because the user requested or identified a narrow scope

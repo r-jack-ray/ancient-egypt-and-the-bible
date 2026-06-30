@@ -1,6 +1,6 @@
 ---
 name: transcript-to-md-reference
-description: Convert Ancient Egypt and the Bible livestream transcript exports and generated TXT working transcripts into curated GitHub Pages Q&A reference pages. Use when Codex needs to turn source files under src/transcripts into Markdown files under docs/questions with all real audience questions, short transcript-grounded answer summaries, question-start timestamps, and direct YouTube links like docs/questions/6-all-of-this-has-happened-before-questions.md. Do not use for auditing or repairing an existing question page; use transcript-question-page-audit for that work.
+description: Convert Ancient Egypt and the Bible livestream transcript exports and generated TXT working transcripts into curated GitHub Pages Q&A reference pages. Use when Codex needs to turn source files under src/transcripts into Markdown files under docs/questions with all real audience questions, short transcript-grounded answer summaries, expanded-answer placeholders, question-start timestamps, and direct YouTube links like docs/questions/6-all-of-this-has-happened-before-questions.md. Do not use for auditing or repairing an existing question page; use transcript-question-page-audit for that work.
 ---
 
 # Transcript to MD Reference
@@ -11,6 +11,7 @@ Create curated Markdown reference pages from livestream transcript files. The go
 
 - find real audience questions
 - scan a short answer direction
+- track whether an expanded answer is still pending
 - open the original video at the right timestamp
 
 The public-facing Markdown output belongs under `docs/questions/`. Keep raw transcript source data under `src/`.
@@ -43,6 +44,7 @@ Semantic creation work includes:
 - determining whether adjacent fragments form one question or separate questions
 - choosing readable question wording
 - writing short answer summaries
+- filling expanded-answer cells with `_Expansion pending._` unless the user asks for expanded answers
 - resolving question-start timestamps
 - creating or editing the question page
 
@@ -246,8 +248,9 @@ After completing the transcript inventory:
 2. Combine split transcript fragments into one readable question.
 3. Use the question start, not the answer start, for the timestamp.
 4. Add a short answer or answer direction only when the transcript clearly supports it.
-5. Preserve uncertainty when the answer is incomplete or indirect.
-6. Write the output under `docs/questions/`.
+5. Add `_Expansion pending._` in the expanded-answer cell unless the user explicitly requests expanded answers during first-pass creation.
+6. Preserve uncertainty when the answer is incomplete or indirect.
+7. Write the output under `docs/questions/`.
 
 ### 7. Verify Every Row
 
@@ -295,9 +298,9 @@ Live Stream #6: All of This Has Happened Before...
 
 Time links open the YouTube video at the relevant timestamp.
 
-| Time | Question | Short answer / answer direction |
-|---:|---|---|
-| <a href="https://youtu.be/VIDEO_ID?t=136" target="_blank" rel="noopener noreferrer">2:16</a> | Did the Sea Peoples' attacks on Egypt under Merneptah and Ramesses III contribute to the end of the New Kingdom? | Yes, especially under Ramesses III, but the decline was a longer economic and political process. |
+| Time | Question | Short answer / answer direction | Expanded answer |
+|---:|---|---|---|
+| <a href="https://youtu.be/VIDEO_ID?t=136" target="_blank" rel="noopener noreferrer">2:16</a> | Did the Sea Peoples' attacks on Egypt under Merneptah and Ramesses III contribute to the end of the New Kingdom? | Yes, especially under Ramesses III, but the decline was a longer economic and political process. | _Expansion pending._ |
 ```
 
 For topic indexes or special-purpose pages, adapt the heading and table columns, but keep timestamp links in the first column unless the user asks for a different structure.
@@ -348,6 +351,14 @@ Short answers must be transcript-grounded:
 - avoid outside research
 - preserve the difference between what the question asks and what the answer actually supports
 
+Expanded answers:
+
+- use `_Expansion pending._` by default during first-pass creation
+- write transcript-grounded expanded answers only when the user explicitly asks for expanded answers
+- keep expanded answers consistent with the short answer
+- do not use outside research
+- do not merely repeat the short answer word-for-word unless no fuller answer is supported
+
 Use uncertainty when needed:
 
 ```text
@@ -359,14 +370,15 @@ The transcript does not give a clear direct answer.
 Markdown table rows must render cleanly in GitHub and GitHub Pages.
 
 - Use one table row per line.
-- Use exactly three columns for ordinary pages.
-- Use the exact ordinary-page header `| Time | Question | Short answer / answer direction |`.
+- Use exactly four columns for ordinary pages.
+- Use the exact ordinary-page header `| Time | Question | Short answer / answer direction | Expanded answer |`.
+- Use `_Expansion pending._` in the expanded-answer cell unless the user explicitly requested expanded answers.
 - Keep timestamp links in the first column.
-- Ensure every ordinary-page data row begins with the timestamp anchor, followed by the question and then the short answer.
+- Ensure every ordinary-page data row begins with the timestamp anchor, followed by the question, the short answer, and then the expanded answer.
 - Escape literal pipe characters inside cells as `\|`.
 - Avoid raw newlines inside table cells.
 - Keep answer summaries short enough to scan.
-- Do not leave placeholder links or placeholder text.
+- Do not leave placeholder links or placeholder text except the exact expanded-answer placeholder `_Expansion pending._`.
 - Verify each table row has the same number of unescaped pipe separators.
 - Prefer a Markdown preview when a table contains HTML anchors, names with punctuation, or long question text.
 
@@ -476,7 +488,7 @@ $path = "docs/questions/FILE.md"
 Get-Content $path | Where-Object { $_ -match '^\|' } | ForEach-Object {
     $line = $_
     $unescaped = ([regex]::Matches($line, '(?<!\\)\|')).Count
-    if ($unescaped -ne 4)
+    if ($unescaped -ne 5)
     {
         [pscustomobject]@{ Pipes = $unescaped; Line = $line }
     }
@@ -530,8 +542,10 @@ A task using this skill is complete only when the relevant items are true:
 - timestamp links use `?t=` seconds
 - timestamp display text is human-readable and matches the seconds value
 - timestamp links include `target="_blank"` and `rel="noopener noreferrer"`
+- ordinary Q&A rows use four columns with a non-empty expanded-answer cell
+- first-pass expanded-answer placeholders use exactly `_Expansion pending._`
 - Markdown tables render cleanly
-- no placeholder or legacy links remain
+- no placeholder links or legacy links remain
 - `question_count_before`, `question_count_after`, and `question_count_change` agree
 - the final question-row count was checked
 - the creation or regeneration record was appended only after independent transcript analysis and page validation
