@@ -353,6 +353,70 @@ button:focus {
   font-size: 0.92rem;
 }
 
+.episode-index-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.episode-index-card {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px;
+}
+
+.episode-badge {
+  display: inline-block;
+  min-width: 58px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-alt);
+  color: var(--accent-dark);
+  font-weight: 700;
+  padding: 5px 8px;
+  text-align: center;
+}
+
+.episode-index-body {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.episode-index-title {
+  font-weight: 700;
+}
+
+.episode-index-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.episode-index-actions a {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-alt);
+  color: var(--accent-dark);
+  font-size: 0.92rem;
+  font-weight: 700;
+  padding: 6px 9px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.episode-index-actions a:hover {
+  border-color: var(--accent);
+}
+
 .table-wrap {
   width: 100%;
   overflow-x: auto;
@@ -700,6 +764,14 @@ th:first-child {
 
   .episode-question-card {
     grid-template-columns: 1fr;
+  }
+
+  .episode-index-card {
+    grid-template-columns: 1fr;
+  }
+
+  .episode-index-actions {
+    justify-content: flex-start;
   }
 
   .search-result-time {

@@ -3,35 +3,30 @@
 <h1 class="page-title">{{ .Title }}</h1>
 <div class="index-toolbar">
   <label class="visually-hidden" for="episode-filter">Filter episodes</label>
-  <input id="episode-filter" data-filter-control data-filter-target="#episode-table-body" data-filter-count="#episode-filter-count" type="search" placeholder="Filter by number, title, or status">
+  <input id="episode-filter" data-filter-control data-filter-target="#episode-list" data-filter-count="#episode-filter-count" type="search" placeholder="Filter by number, title, or status">
   <span id="episode-filter-count" class="results-summary"></span>
 </div>
-<div class="table-wrap">
-  <table>
-    <thead>
-      <tr>
-        <th>Episode</th>
-        <th>Title</th>
-        <th>Questions</th>
-        <th>Video</th>
-      </tr>
-    </thead>
-    <tbody id="episode-table-body">
-      {{ range $episodes }}
-      <tr data-filter-item data-filter-text="{{ if .is_numbered }}{{ .number }} {{ end }}{{ .title }} {{ .status }} {{ .series }}">
-        <td>{{ if .is_numbered }}#{{ .number }}{{ else }}Special{{ end }}</td>
-        <td>
-          {{ if .content_path }}
-          <a href="{{ .content_path | relURL }}">{{ .title }}</a>
-          {{ else }}
-          {{ .title }}
-          {{ end }}
-        </td>
-        <td>{{ if eq .status "curated" }}{{ .question_count }}{{ else }}{{ .status }}{{ end }}</td>
-        <td>{{ with .youtube_url }}<a href="{{ . }}">YouTube</a>{{ end }}</td>
-      </tr>
+<ol id="episode-list" class="episode-index-list">
+  {{ range $episodes }}
+  <li class="episode-index-card" data-filter-item data-filter-text="{{ if .is_numbered }}{{ .number }} {{ end }}{{ .title }} {{ .status }} {{ .series }}">
+    <div>
+      <span class="episode-badge">{{ if .is_numbered }}#{{ .number }}{{ else }}Special{{ end }}</span>
+    </div>
+    <div class="episode-index-body">
+      {{ if .content_path }}
+      <a class="episode-index-title" href="{{ .content_path | relURL }}">{{ .title }}</a>
+      {{ else }}
+      <span class="episode-index-title">{{ .title }}</span>
       {{ end }}
-    </tbody>
-  </table>
-</div>
+      <span class="reference-item-meta">
+        {{ .series }} · {{ if eq .status "curated" }}{{ .question_count }} questions{{ else }}{{ .status }}{{ end }}
+      </span>
+    </div>
+    <div class="episode-index-actions">
+      {{ if .content_path }}<a href="{{ .content_path | relURL }}">Open questions</a>{{ end }}
+      {{ with .youtube_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Watch video</a>{{ end }}
+    </div>
+  </li>
+  {{ end }}
+</ol>
 {{ end }}
