@@ -7,7 +7,7 @@ episode_title: 'A Hot Mess of Ebal Amulet Epigraphy'
 slug: '107-a-hot-mess-of-ebal-amulet-epigraphy'
 video_id: 'DClj9BDRQLQ'
 question_page: 'questions/107-a-hot-mess-of-ebal-amulet-epigraphy-questions.md'
-question_count: 36
+question_count: 38
 is_numbered: true
 is_special: false
 series: 'numbered livestream'
@@ -27,6 +27,8 @@ Time links open the YouTube video at the relevant timestamp.
 |---:|---|---|
 | <a href="https://youtu.be/DClj9BDRQLQ?t=463" target="_blank" rel="noopener noreferrer">7:43</a> | Could both the `480 years` of 1 Kings 6:1 and the Ramesses reference be taken literally by dating the temple much later? | He said no; Judah-Assyria synchronisms lock Solomon's temple into the tenth century BC, so that workaround fails. |
 | <a href="https://youtu.be/DClj9BDRQLQ?t=592" target="_blank" rel="noopener noreferrer">9:52</a> | How did ancient Egyptian form the past tense? | He said Middle Egyptian typically marks it by inserting `n` into the verbal form before the suffix. |
+| <a href="https://youtu.be/DClj9BDRQLQ?t=749" target="_blank" rel="noopener noreferrer">12:29</a> | With groups such as ABR making Christian academia look like a laughingstock, are there reputable bodies supporting solid evidence-based work? | He said ABR took over NEAS and drove moderates elsewhere, including IBR and discipline-specific groups, but no equivalent moderate replacement has really filled NEAS's former role. |
+| <a href="https://youtu.be/DClj9BDRQLQ?t=931" target="_blank" rel="noopener noreferrer">15:31</a> | Do you think ABR will ever do that to ETS? | He said no; ETS is too large for ABR to take over, though ABR has influenced it through NEAS activity and sympathetic journal connections. |
 | <a href="https://youtu.be/DClj9BDRQLQ?t=1059" target="_blank" rel="noopener noreferrer">17:39</a> | Are there Egyptian monotheistic cult sites that parallel double altars or double standing stones? | He said yes; Amarna/Akhetaten gives examples of multiple altars, and such installations can have different ritual purposes. |
 | <a href="https://youtu.be/DClj9BDRQLQ?t=1207" target="_blank" rel="noopener noreferrer">20:07</a> | Why was there still a redemption requirement for Israel's firstborn after the tenth plague? | He said the plague sparing and the later redemption rite serve different purposes, and `firstborn` is about heir status, not just newborn babies. |
 | <a href="https://youtu.be/DClj9BDRQLQ?t=1491" target="_blank" rel="noopener noreferrer">24:51</a> | Does using cultural context to understand scripture create relativism? | He said the opposite: cultural context helps clarify what the text meant instead of undermining it. |
