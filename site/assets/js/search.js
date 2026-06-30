@@ -211,7 +211,6 @@
       var episodeLink = fragment.querySelector("[data-episode-link]");
       var videoLink = fragment.querySelector("[data-video-link]");
       var pageAction = fragment.querySelector("[data-page-action]");
-      var videoAction = fragment.querySelector("[data-video-action]");
       var questionNode = fragment.querySelector("[data-result-question]");
       var answerNode = fragment.querySelector("[data-result-answer]");
 
@@ -226,13 +225,18 @@
       }
       if (videoLink) {
         videoLink.href = row.video_url;
-        videoLink.textContent = "Video " + row.time_label;
+        videoLink.setAttribute("aria-label", "Watch video at " + row.time_label);
+        videoLink.title = "Watch video at " + row.time_label;
+        videoLink.textContent = "";
+        var videoLabel = document.createElement("span");
+        var videoTime = document.createElement("strong");
+        videoLabel.textContent = "Video";
+        videoTime.textContent = row.time_label;
+        videoLink.appendChild(videoLabel);
+        videoLink.appendChild(videoTime);
       }
       if (pageAction) {
         pageAction.href = siteUrl(row.content_path);
-      }
-      if (videoAction) {
-        videoAction.href = row.video_url;
       }
       if (questionNode) {
         appendHighlightedText(questionNode, row.question, tokens);

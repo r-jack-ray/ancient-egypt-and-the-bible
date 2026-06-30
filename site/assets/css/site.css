@@ -666,6 +666,7 @@ th:first-child {
   border-radius: 8px;
   background: var(--surface);
   padding: 14px;
+  overflow: hidden;
 }
 
 .search-result-header {
@@ -684,27 +685,49 @@ th:first-child {
   display: inline-block;
   margin-top: 2px;
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
 
 .search-result-time {
+  display: grid;
+  gap: 1px;
   flex: 0 0 auto;
+  min-width: 82px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface-alt);
-  color: var(--accent-dark);
-  font-weight: 700;
-  padding: 5px 8px;
+  padding: 6px 8px;
+  text-align: center;
   text-decoration: none;
+}
+
+.search-result-time span {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.search-result-time strong {
+  color: var(--accent-dark);
+  font-size: 1rem;
+  line-height: 1.2;
 }
 
 .search-result-question {
   margin: 8px 0 4px;
   font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .search-result-answer {
   margin: 0 0 8px;
   color: var(--text);
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .search-result-video {
