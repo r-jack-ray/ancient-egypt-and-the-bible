@@ -7,7 +7,7 @@ episode_title: 'The ETS D&D Special Live Stream'
 slug: '133-the-ets-d-and-d-special-live-stream'
 video_id: 'm0lfwar6BD0'
 question_page: 'questions/133-the-ets-d-and-d-special-live-stream-questions.md'
-question_count: 16
+question_count: 19
 is_numbered: true
 is_special: false
 series: 'numbered livestream'
@@ -37,6 +37,9 @@ Time links open the YouTube video at the relevant timestamp. The links use HTML 
 | <a href="https://youtu.be/m0lfwar6BD0?t=6343" target="_blank" rel="noopener noreferrer">1:45:43</a> | What was his favorite session or talk at ETS? | He singled out David Yoon's paper on semantic and exegetical errors in annihilationism, with another ritual-cups paper also standing out. |
 | <a href="https://youtu.be/m0lfwar6BD0?t=6541" target="_blank" rel="noopener noreferrer">1:49:01</a> | In clan genealogy, are there ever disputes over who counts as the greatest member? | Yes. He said succession disputes and rival claims can happen, sometimes even splitting clans into new branches. |
 | <a href="https://youtu.be/m0lfwar6BD0?t=6647" target="_blank" rel="noopener noreferrer">1:50:47</a> | Were there any ETS talks he thought were just bad? | Yes. He singled out one paper on the Exodus as badly argued and said it mishandled both the text and Egyptological context. |
+| <a href="https://youtu.be/m0lfwar6BD0?t=6903" target="_blank" rel="noopener noreferrer">1:55:03</a> | Was Andrew Loke's The Origin of Humanity and Evolution available at ETS? | He did not see it and was not looking for it; after the follow-up, he noted T&T Clark was not at ETS that year. |
+| <a href="https://youtu.be/m0lfwar6BD0?t=6996" target="_blank" rel="noopener noreferrer">1:56:36</a> | What is the difference between an unclear Egyptian term and the ib or heart? | The transcript does not preserve the first term clearly. He said he would need to look that up, but described the ib as the heart, mind, consciousness, or internal essence shown in the weighing of the heart scene. |
+| <a href="https://youtu.be/m0lfwar6BD0?t=7252" target="_blank" rel="noopener noreferrer">2:00:52</a> | Had he taken a selfie with David Wood? | No. David Wood was rushing out as he arrived, but he did get a selfie with IP and Mr. EC. |
 | <a href="https://youtu.be/m0lfwar6BD0?t=7417" target="_blank" rel="noopener noreferrer">2:03:37</a> | How did his meeting with David Wood go? | It was very brief; David Wood was leaving while he was entering, and IP still hoped to facilitate a fuller meeting later. |
 | <a href="https://youtu.be/m0lfwar6BD0?t=7647" target="_blank" rel="noopener noreferrer">2:07:27</a> | Who is Pharaoh Sesostris? | He explained that Sesostris is a Greek form for the Senusret kings of Dynasty 12 in the Middle Kingdom. |
 | <a href="https://youtu.be/m0lfwar6BD0?t=8800" target="_blank" rel="noopener noreferrer">2:26:40</a> | Did the earlier David Falk and Titus Kennedy debate come up at ETS? | Yes. He said students and scholars had been discussing clips from the debate, including the Amorites/Ammonites exchange. |

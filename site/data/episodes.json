@@ -1046,7 +1046,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 12,
+    "question_count": 42,
     "series": "numbered livestream"
   },
   {
@@ -1172,7 +1172,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 13,
+    "question_count": 15,
     "series": "numbered livestream"
   },
   {
@@ -1382,7 +1382,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 19,
+    "question_count": 35,
     "series": "numbered livestream"
   },
   {
@@ -2040,7 +2040,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 19,
+    "question_count": 38,
     "series": "numbered livestream"
   },
   {
@@ -2068,7 +2068,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 16,
+    "question_count": 19,
     "series": "numbered livestream"
   },
   {
