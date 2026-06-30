@@ -35,6 +35,33 @@ function ConvertTo-YamlScalar {
     return "'" + ([string]$Value).Replace("'", "''") + "'"
 }
 
+function Set-Utf8NoBomLfContent {
+    param(
+        [Parameter(Mandatory = $true)][string]$LiteralPath,
+        [Parameter(Mandatory = $true)][AllowEmptyCollection()][AllowEmptyString()][object[]]$Value
+    )
+
+    $text = ([string]::Join("`n", [string[]]$Value)) -replace "`r`n?", "`n"
+    if (-not $text.EndsWith("`n")) {
+        $text += "`n"
+    }
+
+    $encoding = [System.Text.UTF8Encoding]::new($false)
+    $directory = [System.IO.Path]::GetDirectoryName($LiteralPath)
+    $fileName = [System.IO.Path]::GetFileName($LiteralPath)
+    $tempPath = Join-Path $directory ".$fileName.$([guid]::NewGuid()).tmp"
+
+    try {
+        [System.IO.File]::WriteAllText($tempPath, $text, $encoding)
+        [System.IO.File]::Move($tempPath, $LiteralPath, $true)
+    }
+    finally {
+        if (Test-Path -LiteralPath $tempPath) {
+            Remove-Item -LiteralPath $tempPath -Force
+        }
+    }
+}
+
 function Get-QuestionPageNameForSlug {
     param([Parameter(Mandatory = $true)][string]$Slug)
 
@@ -449,7 +476,7 @@ foreach ($file in $questionFiles) {
     )
 
     $outputPath = Join-Path $siteQuestionsDir $file.Name
-    @($frontMatter + $lines) | Set-Content -LiteralPath $outputPath -Encoding utf8NoBOM
+    Set-Utf8NoBomLfContent -LiteralPath $outputPath -Value @($frontMatter + $lines)
 }
 
 $expectedGeneratedCount = $questionFiles.Count
@@ -461,8 +488,8 @@ if ($actualGeneratedCount -ne $expectedGeneratedCount) {
 $episodeData = @($episodes | ForEach-Object { [pscustomobject]$_ })
 $questionData = @($allQuestionRows | ForEach-Object { [pscustomobject]$_ })
 
-$episodeData | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $siteDataDir "episodes.json") -Encoding utf8NoBOM
-$questionData | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $siteDataDir "questions.json") -Encoding utf8NoBOM
+Set-Utf8NoBomLfContent -LiteralPath (Join-Path $siteDataDir "episodes.json") -Value ($episodeData | ConvertTo-Json -Depth 8)
+Set-Utf8NoBomLfContent -LiteralPath (Join-Path $siteDataDir "questions.json") -Value ($questionData | ConvertTo-Json -Depth 8)
 
 Write-Host "Generated $actualGeneratedCount Hugo question pages from docs/questions."
 Write-Host "Numbered pages: $numberedPageCount"
