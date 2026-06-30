@@ -1,5 +1,11 @@
 {{ define "main" }}
+{{ $contentPath := printf "questions/%s/" .Params.slug }}
+{{ $questions := where hugo.Data.questions "content_path" $contentPath }}
 <article>
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ with .Params.description }}
+  <p class="lede">{{ . }}</p>
+  {{ end }}
   <div class="question-meta-bar">
     <span>{{ if .Params.is_numbered }}Live Stream #{{ .Params.episode_number }}{{ else }}{{ .Params.series }}{{ end }}</span>
     <span>{{ .Params.question_count }} questions</span>
@@ -7,8 +13,29 @@
     <a href="https://youtu.be/{{ . }}" target="_blank" rel="noopener noreferrer">Watch video</a>
     {{ end }}
   </div>
+
+  {{ if gt (len $questions) 0 }}
+  <div class="index-toolbar">
+    <label class="visually-hidden" for="episode-question-filter">Filter questions</label>
+    <input id="episode-question-filter" data-filter-control data-filter-target="#episode-question-list" data-filter-count="#episode-question-count" type="search" placeholder="Filter this episode by topic, passage, or answer">
+    <span id="episode-question-count" class="results-summary"></span>
+  </div>
+
+  <ol id="episode-question-list" class="episode-question-list">
+    {{ range $questions }}
+    <li class="episode-question-card" data-filter-item data-filter-text="{{ .time_label }} {{ .question | plainify }} {{ .short_answer | plainify }}">
+      <a class="episode-question-time" href="{{ .video_url }}" target="_blank" rel="noopener noreferrer">{{ .time_label }}</a>
+      <div class="episode-question-body">
+        <h2>{{ .question | markdownify }}</h2>
+        <p>{{ .short_answer | markdownify }}</p>
+      </div>
+    </li>
+    {{ end }}
+  </ol>
+  {{ else }}
   <div class="content-body table-wrap">
     {{ .Content }}
   </div>
+  {{ end }}
 </article>
 {{ end }}
