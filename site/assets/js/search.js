@@ -25,6 +25,7 @@
   var resultLimit = resultLimitStep;
   var currentRows = [];
   var currentTokens = [];
+  var questionBySearchId = {};
 
   function normalize(value) {
     return (value || "").toString().toLowerCase().trim();
@@ -32,6 +33,54 @@
 
   function tokenize(value) {
     return normalize(value).split(/\s+/).filter(Boolean);
+  }
+
+  function prepareSearchRows(rows) {
+    rows.forEach(function (row, index) {
+      row.search_id = index.toString();
+      row.episode_number_text = row.episode_number ? row.episode_number.toString() : "";
+      questionBySearchId[row.search_id] = row;
+    });
+  }
+
+  function createMiniSearchIndex(rows) {
+    var MiniSearchConstructor = window.MiniSearch || (typeof MiniSearch === "function" ? MiniSearch : null);
+    if (typeof MiniSearchConstructor !== "function") {
+      return null;
+    }
+
+    try {
+      var index = new MiniSearchConstructor({
+        idField: "search_id",
+        fields: [
+          "episode_number_text",
+          "episode_title",
+          "question",
+          "short_answer",
+          "search_text"
+        ],
+        storeFields: ["search_id"],
+        searchOptions: {
+          boost: {
+            question: 6,
+            episode_title: 4,
+            short_answer: 3,
+            episode_number_text: 5,
+            search_text: 1
+          },
+          combineWith: "AND",
+          prefix: true,
+          fuzzy: function (term) {
+            return term.length > 4 ? 0.2 : false;
+          }
+        }
+      });
+
+      index.addAll(rows);
+      return index;
+    } catch (error) {
+      return null;
+    }
   }
 
   function siteUrl(path) {
@@ -115,6 +164,75 @@
 
     score += Math.min((row.episode_number || 0) / 1000, 1);
     return score;
+  }
+
+  function exactBoost(row, query, tokens) {
+    if (!tokens.length) {
+      return 0;
+    }
+
+    var title = normalize(row.episode_title);
+    var question = normalize(row.question);
+    var answer = normalize(row.short_answer);
+    var score = 0;
+
+    if (question.indexOf(query) !== -1) {
+      score += 8;
+    }
+    if (title.indexOf(query) !== -1) {
+      score += 5;
+    }
+    if (answer.indexOf(query) !== -1) {
+      score += 3;
+    }
+
+    tokens.forEach(function (token) {
+      if (question.indexOf(token) !== -1) {
+        score += 1.5;
+      }
+      if (title.indexOf(token) !== -1) {
+        score += 1;
+      }
+      if (answer.indexOf(token) !== -1) {
+        score += 0.75;
+      }
+    });
+
+    return score;
+  }
+
+  function fallbackSearch(query, tokens) {
+    var scored = [];
+
+    questions.forEach(function (row) {
+      if (!matchesFilters(row)) {
+        return;
+      }
+
+      var score = scoreRow(row, query, tokens);
+      if (score > 0) {
+        scored.push({ row: row, score: score });
+      }
+    });
+
+    return scored;
+  }
+
+  function searchQuestions(query, tokens, miniSearch) {
+    if (!tokens.length || !miniSearch) {
+      return fallbackSearch(query, tokens);
+    }
+
+    return miniSearch.search(query).reduce(function (scored, result) {
+      var row = questionBySearchId[result.id];
+      if (row && matchesFilters(row)) {
+        scored.push({
+          row: row,
+          score: result.score + exactBoost(row, query, tokens)
+        });
+      }
+      return scored;
+    }, []);
   }
 
   function matchesFilters(row) {
@@ -277,22 +395,14 @@
     window.history.replaceState({}, "", nextUrl);
   }
 
+  prepareSearchRows(questions);
+  var miniSearch = createMiniSearchIndex(questions);
+
   function applySearch() {
     var query = normalize(input ? input.value : "");
     var tokens = tokenize(query);
-    var scored = [];
+    var scored = searchQuestions(query, tokens, miniSearch);
     var sortMode = sortControl ? sortControl.value : "relevance";
-
-    questions.forEach(function (row) {
-      if (!matchesFilters(row)) {
-        return;
-      }
-
-      var score = scoreRow(row, query, tokens);
-      if (score > 0) {
-        scored.push({ row: row, score: score });
-      }
-    });
 
     var rows;
     if (tokens.length && sortMode === "relevance") {
