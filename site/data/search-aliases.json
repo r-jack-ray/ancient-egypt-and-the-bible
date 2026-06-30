@@ -5,12 +5,22 @@
     ["amenhotep", "amenophis"],
     ["akhenaten", "akhnaten"],
     ["horemheb", "haremhab"],
+    ["hatshepsut", "hatchepsut"],
+    ["ahmose", "ahmosis", "amosis"],
+    ["amenemhat", "amenemhet"],
+    ["senusret", "senwosret", "sesostris"],
+    ["khufu", "cheops"],
+    ["khafre", "chephren"],
+    ["menkaure", "mycerinus"],
+    ["sobekhotep", "sebekhotep"],
+    ["amun", "amon"],
     ["ramessid", "ramesside", "ramessides"],
     ["merneptah", "merenptah"],
     ["seti", "sety", "sethos"],
     ["setnakhte", "setnakht"],
     ["amenmesse", "amenmesses"],
     ["amunherkhepeshef", "amunherkhepshef", "amenherkhepeshef", "amenherkhepshef"],
+    ["septuagint", "lxx"],
     ["yahweh", "yhwh"],
     ["gen", "genesis"],
     ["ps", "psalm", "psalms"],
@@ -90,7 +100,57 @@
       "maxResults": 20
     },
     {
+      "query": "hatchepsut",
+      "minResults": 10,
+      "maxResults": 50
+    },
+    {
+      "query": "ahmosis",
+      "minResults": 10,
+      "maxResults": 50
+    },
+    {
+      "query": "amenemhet",
+      "minResults": 1,
+      "maxResults": 10
+    },
+    {
+      "query": "sesostris",
+      "minResults": 3,
+      "maxResults": 20
+    },
+    {
+      "query": "cheops",
+      "minResults": 5,
+      "maxResults": 30
+    },
+    {
+      "query": "chephren",
+      "minResults": 1,
+      "maxResults": 20
+    },
+    {
+      "query": "mycerinus",
+      "minResults": 1,
+      "maxResults": 20
+    },
+    {
+      "query": "sebekhotep",
+      "minResults": 1,
+      "maxResults": 10
+    },
+    {
+      "query": "amon",
+      "minResults": 20,
+      "maxResults": 100
+    },
+    {
       "query": "yhwh",
+      "minResults": 1,
+      "maxResults": 500
+    },
+    {
+      "query": "lxx",
       "minResults": 1,
       "maxResults": 500
     },

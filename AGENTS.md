@@ -61,6 +61,10 @@ Pull requests should explain the affected episode range or file set, note whethe
 
 Do not invent transcript content. Preserve uncertainty when audio or transcript text is unclear. This project converts the Questions & Answers in general from Ancient Egypt and the Bible livestreams into a reference repository, so curated pages should include all real questions supported by the transcript, not only super chats. Keep curated pages useful as navigation aids: question, timestamp, direct video link, and a short answer direction when supported by the source.
 
+### Agent Routing
+
+When a request involves Hugo site search, search indexing, missing or noisy search results, search aliases, search query smoke tests, or making a term easier to find, use `.agents/search-index-curator.md` even if the user does not name that file exactly. Treat natural phrasing such as "fix search for X", "improve results for X", "search misses X", "X should find Y", or "add a synonym/alias" as enough to route through the search index curator.
+
 When a curated page needs transcript inspection, prefer the matching `src/transcripts/txt/<slug>.txt` file. The generated TXT files are optimized for `rg`, `Select-String`, and bounded `Get-Content` review. Use the JSON source of record to resolve ambiguity, confirm raw fields, or regenerate derived outputs; use TSV only when structured `StartSeconds` and `Link` columns are useful.
 
 If a matching TXT file does not exist and the JSON source is non-empty, generate it with:
