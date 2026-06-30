@@ -24,7 +24,10 @@
   <ol id="episode-question-list" class="episode-question-list">
     {{ range $questions }}
     <li class="episode-question-card" data-filter-item data-filter-text="{{ .time_label }} {{ .question | plainify }} {{ .short_answer | plainify }}">
-      <a class="episode-question-time" href="{{ .video_url }}" target="_blank" rel="noopener noreferrer">{{ .time_label }}</a>
+      <a class="episode-question-time" href="{{ .video_url }}" target="_blank" rel="noopener noreferrer">
+        <span>Watch</span>
+        <strong>{{ .time_label }}</strong>
+      </a>
       <div class="episode-question-body">
         <h2>{{ .question | markdownify }}</h2>
         <p>{{ .short_answer | markdownify }}</p>
