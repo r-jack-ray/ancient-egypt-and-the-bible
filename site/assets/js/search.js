@@ -27,7 +27,13 @@
   var currentRows = [];
   var currentTokens = [];
   var questionBySearchId = {};
-  var searchAliasGroups = readSearchAliasGroups(aliasNode);
+  var searchAliasConfig = readSearchAliasConfig(aliasNode);
+  var searchAliasGroups = searchAliasConfig.aliasGroups;
+  var searchPhraseAliasGroups = searchAliasConfig.phraseAliasGroups.map(function (group) {
+    return group.map(normalizeSearchPhrase).filter(Boolean);
+  }).filter(function (group) {
+    return group.length > 1;
+  });
   var searchAliases = {};
 
   function normalize(value) {
@@ -42,9 +48,18 @@
     return normalize(value).replace(/<[^>]*>/g, " ").match(/[a-z0-9]+/g) || [];
   }
 
-  function readSearchAliasGroups(node) {
+  function normalizeSearchPhrase(value) {
+    return tokenizeSearchTerms(value).join(" ");
+  }
+
+  function readSearchAliasConfig(node) {
+    var emptyConfig = {
+      aliasGroups: [],
+      phraseAliasGroups: []
+    };
+
     if (!node) {
-      return [];
+      return emptyConfig;
     }
 
     try {
@@ -53,16 +68,22 @@
         data = JSON.parse(data);
       }
       if (Array.isArray(data)) {
-        return data;
+        return {
+          aliasGroups: data,
+          phraseAliasGroups: []
+        };
       }
       if (data && Array.isArray(data.aliasGroups)) {
-        return data.aliasGroups;
+        return {
+          aliasGroups: data.aliasGroups,
+          phraseAliasGroups: Array.isArray(data.phraseAliasGroups) ? data.phraseAliasGroups : []
+        };
       }
     } catch (error) {
-      return [];
+      return emptyConfig;
     }
 
-    return [];
+    return emptyConfig;
   }
 
   searchAliasGroups.forEach(function (group) {
@@ -75,8 +96,25 @@
 
   function getSearchAliases(value) {
     var aliases = {};
-    tokenizeSearchTerms(value).forEach(function (token) {
+    var tokens = tokenizeSearchTerms(value);
+    var normalizedText = " " + tokens.join(" ") + " ";
+
+    tokens.forEach(function (token) {
       (searchAliases[token] || []).forEach(function (alias) {
+        aliases[alias] = true;
+      });
+    });
+
+    searchPhraseAliasGroups.forEach(function (group) {
+      var hasMatch = group.some(function (term) {
+        return normalizedText.indexOf(" " + term + " ") !== -1;
+      });
+
+      if (!hasMatch) {
+        return;
+      }
+
+      group.forEach(function (alias) {
         aliases[alias] = true;
       });
     });

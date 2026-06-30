@@ -31,6 +31,9 @@
     ["mummification", "mumification"],
     ["israelite", "israelites", "isrealite", "isrealites"],
     ["semitic", "semetic"],
+    ["stele", "stela", "stelae"],
+    ["papyrus", "papyri"],
+    ["ostracon", "ostraca"],
     ["melchizedek", "melchisedek"],
     ["dab", "daba", "dabaa"],
     ["thebes", "luxor", "waset"],
@@ -91,6 +94,16 @@
     ["7", "vii"],
     ["8", "viii"],
     ["9", "ix"]
+  ],
+  "phraseAliasGroups": [
+    ["masoretic text", "mt"],
+    ["dead sea scrolls", "dss", "qumran"],
+    ["amarna letters", "amarna correspondence"],
+    ["merneptah stele", "merneptah stela", "merneptah victory stela", "israel stele", "israel stela"],
+    ["mesha stele", "mesha stela", "moabite stone"],
+    ["tel dan stele", "tel dan stela"],
+    ["ipuwer papyrus", "admonitions of ipuwer"],
+    ["papyrus westcar", "westcar papyrus"]
   ],
   "queryTests": [
     {
@@ -272,6 +285,31 @@
       "query": "lxx",
       "minResults": 1,
       "maxResults": 500
+    },
+    {
+      "query": "mt",
+      "minResults": 10,
+      "maxResults": 100
+    },
+    {
+      "query": "dss",
+      "minResults": 20,
+      "maxResults": 100
+    },
+    {
+      "query": "amarna correspondence",
+      "minResults": 10,
+      "maxResults": 100
+    },
+    {
+      "query": "tel dan stela",
+      "minResults": 5,
+      "maxResults": 50
+    },
+    {
+      "query": "westcar papyrus",
+      "minResults": 5,
+      "maxResults": 25
     },
     {
       "query": "ps 82",
