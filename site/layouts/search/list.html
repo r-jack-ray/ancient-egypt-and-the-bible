@@ -19,19 +19,40 @@
       <label for="question-episode-filter">Episode</label>
       <input id="question-episode-filter" data-episode-filter type="number" min="1" inputmode="numeric" placeholder="267">
     </div>
+    <div class="field">
+      <label for="question-sort">Sort</label>
+      <select id="question-sort" data-sort-control>
+        <option value="relevance">Relevance</option>
+        <option value="newest">Newest</option>
+        <option value="oldest">Oldest</option>
+        <option value="time">Timestamp</option>
+      </select>
+    </div>
     <button type="button" class="secondary-button" data-clear-search>Clear</button>
   </div>
-  <div class="results-summary" data-result-count></div>
+  <div class="results-bar">
+    <div class="results-summary" data-result-count></div>
+    <button type="button" class="secondary-button compact-button" data-load-more hidden>Show more</button>
+  </div>
   <ol class="search-results" data-search-results></ol>
+  <div class="empty-state" data-empty-state hidden>No matching questions found.</div>
 </section>
 
 <template id="question-result-template">
   <li class="search-result" data-result-item>
-    <div class="search-result-meta" data-result-meta></div>
-    <a class="search-result-title" data-episode-link href=""></a>
+    <div class="search-result-header">
+      <div>
+        <div class="search-result-meta" data-result-meta></div>
+        <a class="search-result-title" data-episode-link href=""></a>
+      </div>
+      <a class="search-result-time" data-video-link href="" target="_blank" rel="noopener noreferrer"></a>
+    </div>
     <p class="search-result-question" data-result-question></p>
     <p class="search-result-answer" data-result-answer></p>
-    <a class="search-result-video" data-video-link href="" target="_blank" rel="noopener noreferrer"></a>
+    <div class="search-result-actions">
+      <a data-page-action href="">Open episode</a>
+      <a data-video-action href="" target="_blank" rel="noopener noreferrer">Watch timestamp</a>
+    </div>
   </li>
 </template>
 
