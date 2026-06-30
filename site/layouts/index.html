@@ -4,7 +4,28 @@
 {{ $curated := where $episodes "status" "curated" }}
 {{ $numbered := where $curated "is_numbered" true }}
 {{ $special := where $curated "is_special" true }}
-<h1 class="page-title">{{ .Title }}</h1>
+{{ $latest := index $numbered 0 }}
+<section class="home-intro">
+  <div>
+    <h1 class="page-title">{{ .Title }}</h1>
+    <p class="lede">A searchable reference for livestream questions, short answer directions, and direct YouTube timestamps.</p>
+    <form class="home-search" action="{{ "search/" | relURL }}" method="get">
+      <label class="visually-hidden" for="home-search-input">Search questions</label>
+      <input id="home-search-input" name="q" type="search" placeholder="Search topics, passages, people, or episodes">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+  {{ with $latest }}
+  <a class="latest-feature" href="{{ .content_path | relURL }}">
+    <img src="https://img.youtube.com/vi/{{ .video_id }}/hqdefault.jpg" alt="" loading="eager">
+    <span class="latest-feature-body">
+      <span class="eyebrow">Latest curated stream</span>
+      <strong>#{{ .number }}: {{ .title }}</strong>
+      <span>{{ .question_count }} questions</span>
+    </span>
+  </a>
+  {{ end }}
+</section>
 
 <section class="summary-grid" aria-label="Corpus summary">
   <div class="metric">
@@ -25,23 +46,35 @@
   </div>
 </section>
 
-<h2>Latest Numbered Streams</h2>
-<ul class="reference-list">
-  {{ range first 12 $numbered }}
-  <li class="reference-item">
-    <a class="reference-item-title" href="{{ .content_path | relURL }}">#{{ .number }}: {{ .title }}</a>
-    <span class="reference-item-meta">{{ .question_count }} questions</span>
-  </li>
-  {{ end }}
-</ul>
+<div class="home-columns">
+  <section>
+    <div class="section-heading">
+      <h2>Latest Numbered Streams</h2>
+      <a href="{{ "episodes/" | relURL }}">All episodes</a>
+    </div>
+    <ul class="reference-list compact-list">
+      {{ range first 12 $numbered }}
+      <li class="reference-item">
+        <a class="reference-item-title" href="{{ .content_path | relURL }}">#{{ .number }}: {{ .title }}</a>
+        <span class="reference-item-meta">{{ .question_count }} questions</span>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
 
-<h2>Special Pages</h2>
-<ul class="reference-list">
-  {{ range $special }}
-  <li class="reference-item">
-    <a class="reference-item-title" href="{{ .content_path | relURL }}">{{ .title }}</a>
-    <span class="reference-item-meta">{{ .question_count }} questions</span>
-  </li>
-  {{ end }}
-</ul>
+  <section>
+    <div class="section-heading">
+      <h2>Special Pages</h2>
+      <a href="{{ "questions/" | relURL }}">All pages</a>
+    </div>
+    <ul class="reference-list compact-list">
+      {{ range $special }}
+      <li class="reference-item">
+        <a class="reference-item-title" href="{{ .content_path | relURL }}">{{ .title }}</a>
+        <span class="reference-item-meta">{{ .question_count }} questions</span>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+</div>
 {{ end }}

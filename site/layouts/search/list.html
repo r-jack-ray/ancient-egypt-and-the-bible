@@ -1,16 +1,45 @@
 {{ define "main" }}
 {{ $questions := hugo.Data.questions }}
 <h1 class="page-title">{{ .Title }}</h1>
-<ul class="question-index">
-  {{ range $questions }}
-  <li>
-    <a href="{{ .content_path | relURL }}">{{ .episode_title }}</a>
-    · <a href="{{ .video_url }}">{{ .time_label }}</a>
-    <br>
-    <strong>{{ .question }}</strong>
-    <br>
-    {{ .short_answer }}
+<section class="search-panel" data-question-search data-base-path="{{ site.Home.RelPermalink }}">
+  <div class="search-controls">
+    <div class="field field-grow">
+      <label for="question-search-input">Search text</label>
+      <input id="question-search-input" data-search-input type="search" placeholder="Try exodus, cherubim, chronology, psalm 82">
+    </div>
+    <div class="field">
+      <label for="question-type-filter">Page type</label>
+      <select id="question-type-filter" data-type-filter>
+        <option value="all">All pages</option>
+        <option value="numbered">Numbered streams</option>
+        <option value="special">Special pages</option>
+      </select>
+    </div>
+    <div class="field field-narrow">
+      <label for="question-episode-filter">Episode</label>
+      <input id="question-episode-filter" data-episode-filter type="number" min="1" inputmode="numeric" placeholder="267">
+    </div>
+    <button type="button" class="secondary-button" data-clear-search>Clear</button>
+  </div>
+  <div class="results-summary" data-result-count></div>
+  <ol class="search-results" data-search-results></ol>
+</section>
+
+<template id="question-result-template">
+  <li class="search-result" data-result-item>
+    <div class="search-result-meta" data-result-meta></div>
+    <a class="search-result-title" data-episode-link href=""></a>
+    <p class="search-result-question" data-result-question></p>
+    <p class="search-result-answer" data-result-answer></p>
+    <a class="search-result-video" data-video-link href="" target="_blank" rel="noopener noreferrer"></a>
   </li>
-  {{ end }}
-</ul>
+</template>
+
+<script type="application/json" id="question-search-data">{{ $questions | jsonify | safeJS }}</script>
+{{ end }}
+
+{{ define "scripts" }}
+{{ with resources.Get "js/search.js" }}
+<script src="{{ .RelPermalink }}" defer></script>
+{{ end }}
 {{ end }}
