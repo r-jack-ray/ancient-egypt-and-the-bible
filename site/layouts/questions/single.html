@@ -25,8 +25,7 @@
     {{ range $questions }}
     <li class="episode-question-card" data-filter-item data-filter-text="{{ .time_label }} {{ .question | plainify }} {{ .short_answer | plainify }}">
       <a class="episode-question-time" href="{{ .video_url }}" target="_blank" rel="noopener noreferrer">
-        <span>Watch</span>
-        <strong>{{ .time_label }}</strong>
+        <span>Video<br><strong>{{ .time_label }}</strong></span>
       </a>
       <div class="episode-question-body">
         <h2>{{ .question | markdownify }}</h2>

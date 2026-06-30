@@ -226,7 +226,7 @@
       }
       if (videoLink) {
         videoLink.href = row.video_url;
-        videoLink.textContent = "Watch " + row.time_label;
+        videoLink.textContent = "Video " + row.time_label;
       }
       if (pageAction) {
         pageAction.href = siteUrl(row.content_path);
