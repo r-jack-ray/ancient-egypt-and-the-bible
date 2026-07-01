@@ -3,8 +3,9 @@
   var dataNode = document.getElementById("question-search-data");
   var aliasNode = document.getElementById("question-search-aliases");
   var template = document.getElementById("question-result-template");
+  var core = window.QuestionSearchCore;
 
-  if (!root || !dataNode || !template) {
+  if (!root || !dataNode || !template || !core) {
     return;
   }
 
@@ -25,135 +26,16 @@
   var resultLimitStep = 100;
   var resultLimit = resultLimitStep;
   var currentRows = [];
-  var currentTokens = [];
+  var currentHighlightModel = null;
   var questionBySearchId = {};
-  var searchAliasConfig = readSearchAliasConfig(aliasNode);
-  var searchAliasGroups = searchAliasConfig.aliasGroups;
-  var searchPhraseAliasGroups = searchAliasConfig.phraseAliasGroups.map(function (group) {
-    return group.map(normalizeSearchPhrase).filter(Boolean);
-  }).filter(function (group) {
-    return group.length > 1;
-  });
-  var searchAliases = {};
-
-  function normalize(value) {
-    return (value || "").toString().toLowerCase().trim();
-  }
-
-  function tokenize(value) {
-    return normalize(value).split(/\s+/).filter(Boolean);
-  }
-
-  function tokenizeSearchTerms(value) {
-    return normalize(value).replace(/<[^>]*>/g, " ").match(/[a-z0-9]+/g) || [];
-  }
-
-  function normalizeSearchPhrase(value) {
-    return tokenizeSearchTerms(value).join(" ");
-  }
-
-  var bibleReferenceBooks = [
-    "genesis", "exodus", "leviticus", "numbers", "deuteronomy", "joshua",
-    "judges", "ruth", "samuel", "kings", "chronicles", "ezra", "nehemiah",
-    "esther", "proverbs", "ecclesiastes", "lamentations", "isaiah",
-    "jeremiah", "ezekiel", "hosea", "obadiah", "micah", "nahum", "haggai",
-    "zechariah", "malachi", "matthew", "mark", "luke", "romans",
-    "corinthians", "galatians", "ephesians", "philippians", "colossians",
-    "thessalonians", "hebrews", "james", "jude", "revelation", "apocalypse",
-    "chron", "exod", "deut", "josh", "judg", "esth", "prov", "eccl", "ezek",
-    "obad", "zech", "matt", "thess", "psalms", "psalm", "gen", "lev", "num",
-    "rth", "sam", "kgs", "chr", "ezr", "neh", "lam", "isa", "jer", "hos",
-    "mic", "nah", "hag", "mal", "mrk", "rom", "cor", "gal", "eph", "phil",
-    "col", "heb", "jas", "jud", "rev", "psa", "mk", "lk", "ps"
-  ];
-  var bibleReferenceBookPattern = bibleReferenceBooks.slice().sort(function (a, b) {
-    return b.length - a.length;
-  }).join("|");
-  var numberedBibleBooks = "sam|samuel|kgs|kings|chr|chron|chronicles|cor|corinthians|thess|thessalonians";
-
-  function normalizeBibleReferenceQuery(value) {
-    var text = normalize(value);
-    if (!text) {
-      return "";
-    }
-
-    text = text.replace(new RegExp("\\b(first|1st|i)\\s+(" + numberedBibleBooks + ")\\b", "g"), "1 $2");
-    text = text.replace(new RegExp("\\b(second|2nd|ii)\\s+(" + numberedBibleBooks + ")\\b", "g"), "2 $2");
-    text = text.replace(new RegExp("\\b(third|3rd|iii)\\s+(" + numberedBibleBooks + ")\\b", "g"), "3 $2");
-    text = text.replace(new RegExp("\\b([1-3])(" + numberedBibleBooks + ")(?=\\d|\\b)", "g"), "$1 $2");
-    text = text.replace(new RegExp("\\b(" + bibleReferenceBookPattern + ")(\\d+)", "g"), "$1 $2");
-
-    return text.replace(/\s+/g, " ").trim();
-  }
-
-  function readSearchAliasConfig(node) {
-    var emptyConfig = {
-      aliasGroups: [],
-      phraseAliasGroups: []
-    };
-
-    if (!node) {
-      return emptyConfig;
-    }
-
-    try {
-      var data = JSON.parse(node.textContent || "{}");
-      if (typeof data === "string") {
-        data = JSON.parse(data);
-      }
-      if (Array.isArray(data)) {
-        return {
-          aliasGroups: data,
-          phraseAliasGroups: []
-        };
-      }
-      if (data && Array.isArray(data.aliasGroups)) {
-        return {
-          aliasGroups: data.aliasGroups,
-          phraseAliasGroups: Array.isArray(data.phraseAliasGroups) ? data.phraseAliasGroups : []
-        };
-      }
-    } catch (error) {
-      return emptyConfig;
-    }
-
-    return emptyConfig;
-  }
-
-  searchAliasGroups.forEach(function (group) {
-    group.forEach(function (term) {
-      searchAliases[term] = group.filter(function (alias) {
-        return alias !== term;
-      });
-    });
-  });
+  var normalize = core.normalize;
+  var tokenize = core.tokenize;
+  var normalizeBibleReferenceQuery = core.normalizeBibleReferenceQuery;
+  var searchAliasConfig = core.readSearchAliasConfig(aliasNode ? aliasNode.textContent : "");
+  var searchAliasIndex = core.createSearchAliasIndex(searchAliasConfig);
 
   function getSearchAliases(value) {
-    var aliases = {};
-    var tokens = tokenizeSearchTerms(value);
-    var normalizedText = " " + tokens.join(" ") + " ";
-
-    tokens.forEach(function (token) {
-      (searchAliases[token] || []).forEach(function (alias) {
-        aliases[alias] = true;
-      });
-    });
-
-    searchPhraseAliasGroups.forEach(function (group) {
-      var hasMatch = group.some(function (term) {
-        return normalizedText.indexOf(" " + term + " ") !== -1;
-      });
-
-      if (!hasMatch) {
-        return;
-      }
-
-      group.forEach(function (alias) {
-        aliases[alias] = true;
-      });
-    });
-
-    return Object.keys(aliases).join(" ");
+    return core.getSearchAliases(value, searchAliasIndex);
   }
 
   function prepareSearchRows(rows) {
@@ -388,53 +270,18 @@
     }
   }
 
-  function appendHighlightedText(target, value, tokens) {
+  function appendHighlightedText(target, value, highlightModel) {
     var text = value || "";
-    var activeTokens = tokens.filter(function (token) {
-      return token.length > 1;
-    });
+    var matches = core.getHighlightSpans(text, highlightModel);
 
     target.textContent = "";
-    if (!activeTokens.length) {
+    if (!matches.length) {
       target.textContent = text;
       return;
     }
 
-    var lowerText = text.toLowerCase();
-    var matches = [];
-    activeTokens.forEach(function (token) {
-      var start = 0;
-      while (start < lowerText.length) {
-        var index = lowerText.indexOf(token, start);
-        if (index === -1) {
-          break;
-        }
-        matches.push({ start: index, end: index + token.length });
-        start = index + token.length;
-      }
-    });
-
-    matches.sort(function (a, b) {
-      if (a.start !== b.start) {
-        return a.start - b.start;
-      }
-      return b.end - a.end;
-    });
-
-    var merged = [];
-    matches.forEach(function (match) {
-      var last = merged[merged.length - 1];
-      if (!last || match.start > last.end) {
-        merged.push(match);
-        return;
-      }
-      if (match.end > last.end) {
-        last.end = match.end;
-      }
-    });
-
     var cursor = 0;
-    merged.forEach(function (match) {
+    matches.forEach(function (match) {
       if (match.start > cursor) {
         target.appendChild(document.createTextNode(text.slice(cursor, match.start)));
       }
@@ -449,7 +296,7 @@
     }
   }
 
-  function render(rows, tokens) {
+  function render(rows, highlightModel) {
     resultList.textContent = "";
 
     rows.slice(0, resultLimit).forEach(function (row) {
@@ -467,7 +314,7 @@
 
       if (episodeLink) {
         episodeLink.href = siteUrl(row.content_path);
-        appendHighlightedText(episodeLink, row.episode_title || "Question page", tokens);
+        appendHighlightedText(episodeLink, row.episode_title || "Question page", highlightModel);
       }
       if (videoLink) {
         videoLink.href = row.video_url;
@@ -482,10 +329,10 @@
         videoLink.appendChild(videoTime);
       }
       if (questionNode) {
-        appendHighlightedText(questionNode, row.question, tokens);
+        appendHighlightedText(questionNode, row.question, highlightModel);
       }
       if (answerNode) {
-        appendHighlightedText(answerNode, row.short_answer, tokens);
+        appendHighlightedText(answerNode, row.short_answer, highlightModel);
       }
 
       if (item) {
@@ -530,6 +377,7 @@
   function applySearch() {
     var query = normalizeBibleReferenceQuery(input ? input.value : "");
     var tokens = tokenize(query);
+    var highlightModel = core.buildHighlightModel(query, searchAliasIndex);
     var scored = searchQuestions(query, tokens, miniSearch);
     var sortMode = sortControl ? sortControl.value : "relevance";
 
@@ -558,8 +406,8 @@
     }
 
     currentRows = rows;
-    currentTokens = tokens;
-    render(rows, tokens);
+    currentHighlightModel = highlightModel;
+    render(rows, highlightModel);
     updateUrl();
   }
 
@@ -617,7 +465,7 @@
   if (loadMoreButton) {
     loadMoreButton.addEventListener("click", function () {
       resultLimit += resultLimitStep;
-      render(currentRows, currentTokens);
+      render(currentRows, currentHighlightModel);
       updateUrl();
     });
   }
