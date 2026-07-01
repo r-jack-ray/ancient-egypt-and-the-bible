@@ -2,6 +2,10 @@
   "private": true,
   "scripts": {
     "test": "node --test",
-    "check:js": "node --check site/assets/js/search-core.js && node --check site/assets/js/search.js && node --check site/assets/js/site.js"
+    "check": "npm run check:js && npm run check:site:static",
+    "check:js": "node --check site/assets/js/search-core.js && node --check site/assets/js/search.js && node --check site/assets/js/site.js",
+    "check:site": "pwsh -NoProfile -File scripts/Test-HugoSite.ps1",
+    "check:site:static": "pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo",
+    "launch:hugo": "hugo server --source site --bind 127.0.0.1 --port 1314 --baseURL http://127.0.0.1:1314/ancient-egypt-and-the-bible/ --appendPort=false --disableFastRender"
   }
 }
