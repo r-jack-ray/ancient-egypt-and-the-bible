@@ -307,6 +307,7 @@ scripts/
                                Usage notes for transcript acquisition
   Get-QuestionRevisionCandidates.ps1
                                Generates local reports for likely Q&A page repair candidates
+  Test-QuestionTableFormat.ps1 Validates question table shape, timestamp links, and expanded-answer cells
   Test-HugoSite.ps1           Regenerates and validates the Hugo compatibility site
   Test-HugoSearchAliases.ps1  Validates curated Hugo search alias groups and query smoke tests
 site/
@@ -467,6 +468,12 @@ rg "TODO|FIXME|placeholder|timestamp needed|missing timestamp" docs/questions RE
 ```
 
 For curated Markdown edits, also check that table rows have consistent columns, timestamp links use the correct video ID and `?t=` seconds, and summaries are supported by the transcript. For broad README or inventory updates, compare the README list and status counts against `docs/questions/*.md` and `src/transcripts/txt/*.txt`.
+
+For ordinary Q&A table structure and expanded-answer cells, run:
+
+```powershell
+pwsh -NoProfile -File scripts/Test-QuestionTableFormat.ps1
+```
 
 For Hugo site changes, run:
 
