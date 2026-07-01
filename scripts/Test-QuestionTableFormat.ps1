@@ -3,9 +3,10 @@
     Validates ordinary docs/questions Q&A table structure.
 
 .DESCRIPTION
-    Accepts both current three-column and future four-column ordinary Q&A tables by
-    default. Use -RequireExpandedAnswer after migration to require the four-column
-    format with a non-empty Expanded answer cell.
+    Validates ordinary Q&A tables against the current four-column baseline with
+    populated Expanded answer cells and no pending placeholders. Use
+    -AllowLegacyThreeColumn only for inventorying or diagnosing an unexpected
+    legacy file.
 #>
 
 [CmdletBinding()]
@@ -15,6 +16,7 @@ param(
     [string]$OutputDir = "reports",
     [string]$JsonName = "question-table-validation.json",
     [string]$MarkdownName = "question-table-validation.md",
+    [switch]$AllowLegacyThreeColumn,
     [switch]$RequireExpandedAnswer
 )
 
@@ -26,6 +28,10 @@ $ErrorActionPreference = "Stop"
 $repoRootPath = Resolve-QuestionRepositoryRoot -RepoRoot $RepoRoot
 $questionsPath = Join-Path $repoRootPath $QuestionsDir
 $outputPath = Join-Path $repoRootPath $OutputDir
+$requireExpandedAnswerEffective = -not $AllowLegacyThreeColumn
+if ($RequireExpandedAnswer) {
+    $requireExpandedAnswerEffective = $true
+}
 
 if (-not (Test-Path -LiteralPath $questionsPath -PathType Container)) {
     throw "Questions directory not found: $questionsPath"
@@ -33,7 +39,7 @@ if (-not (Test-Path -LiteralPath $questionsPath -PathType Container)) {
 
 $files = @(Get-ChildItem -LiteralPath $questionsPath -Filter "*.md" | Sort-Object Name)
 $details = foreach ($file in $files) {
-    Get-QuestionTableAnalysis -Path $file.FullName -RepoRoot $repoRootPath -RequireExpandedAnswer:$RequireExpandedAnswer
+    Get-QuestionTableAnalysis -Path $file.FullName -RepoRoot $repoRootPath -RequireExpandedAnswer:$requireExpandedAnswerEffective
 }
 
 $ordinary = @($details | Where-Object { $_.classification -in @("ordinaryThreeColumn", "ordinaryFourColumn", "malformed") -and $_.headerColumns -gt 0 })
@@ -44,7 +50,8 @@ $ordinaryFourColumn = @($details | Where-Object { $_.classification -eq "ordinar
 
 $report = [ordered]@{
     generatedAt = (Get-Date).ToString("o")
-    requireExpandedAnswer = [bool]$RequireExpandedAnswer
+    requireExpandedAnswer = [bool]$requireExpandedAnswerEffective
+    allowLegacyThreeColumn = [bool]$AllowLegacyThreeColumn
     filesScanned = $files.Count
     ordinaryFilesValidated = $ordinary.Count
     ordinaryFourColumn = $ordinaryFourColumn.Count

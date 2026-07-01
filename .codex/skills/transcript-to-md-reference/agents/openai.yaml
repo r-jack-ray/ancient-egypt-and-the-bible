@@ -1,4 +1,4 @@
 interface:
   display_name: "Transcript to MD Reference"
   short_description: "Curate TXT transcripts into four-column Q&A Markdown"
-  default_prompt: "Use $transcript-to-md-reference to convert a livestream TXT transcript into a curated Markdown Q&A reference page with expanded-answer placeholders."
+  default_prompt: "Use $transcript-to-md-reference to convert a livestream TXT transcript into a curated Markdown Q&A reference page with transcript-grounded expanded answers."

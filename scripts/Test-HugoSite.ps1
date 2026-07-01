@@ -48,21 +48,13 @@ if ($badRows.Count -gt 0) {
     throw "Found $($badRows.Count) generated question rows with missing required fields."
 }
 
-$expandedAnswerSourcePages = @{}
-Get-ChildItem -LiteralPath (Join-Path $RepoRoot "docs/questions") -Filter "*.md" | ForEach-Object {
-    $hasExpandedAnswerColumn = Select-String -LiteralPath $_.FullName -Pattern '^\|\s*Time\s*\|\s*Question\s*\|\s*Short answer / answer direction\s*\|\s*Expanded answer\s*\|\s*$' -Quiet
-    if ($hasExpandedAnswerColumn) {
-        $expandedAnswerSourcePages["questions/$($_.Name)"] = $true
-    }
-}
-
 $badExpandedRows = @($questions | Where-Object {
-    $expandedAnswerSourcePages.ContainsKey($_.question_page) -and
-    [string]::IsNullOrWhiteSpace($_.expanded_answer)
+    [string]::IsNullOrWhiteSpace($_.expanded_answer) -or
+    $_.expanded_answer -match '_Expansion pending\._'
 })
 
 if ($badExpandedRows.Count -gt 0) {
-    throw "Found $($badExpandedRows.Count) generated question rows with missing expanded answers."
+    throw "Found $($badExpandedRows.Count) generated question rows with missing or pending expanded answers."
 }
 
 if (-not $SkipHugo) {

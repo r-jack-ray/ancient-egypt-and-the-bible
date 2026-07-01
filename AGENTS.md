@@ -8,7 +8,7 @@ This repository is a Questions & Answers reference archive for the Ancient Egypt
 - `src/transcripts/json/`: raw YouTube transcript JSON exports. Treat these as the source of record.
 - `src/transcripts/txt/`: generated working transcript text files, one transcript segment per line. These are the default inspection surface for curation and currently exist for all non-empty JSON transcript exports through episode 208.
 - `src/transcripts/tsv/`: optional generated TSV files, created only when structured columns are useful.
-- `docs/questions/`: curated GitHub-readable Q&A reference pages with timestamp links.
+- `docs/questions/`: curated GitHub-readable Q&A reference pages with timestamp links, short answers, and filled transcript-grounded expanded answers.
 - `scripts/Convert-TranscriptJson.ps1`: PowerShell 7 converter from transcript JSON to TXT or TSV.
 - `task-notes/`: transient in-project notes and AI session summaries. Create this directory if it is missing.
 
@@ -39,7 +39,7 @@ Follow existing transcript naming patterns:
 208-super-chat-questions.md
 ```
 
-For ordinary curated pages, use `docs/questions/<slug>-questions.md`. If the slug already ends in `questions`, use `docs/questions/<slug>.md` to avoid duplicated names like `questions-questions.md`. Special-purpose pages such as `208-super-chat-questions.md` should only be used when explicitly requested.
+For ordinary curated pages, use `docs/questions/<slug>-questions.md`. If the slug already ends in `questions`, use `docs/questions/<slug>.md` to avoid duplicated names like `questions-questions.md`. Special-purpose pages such as `208-super-chat-questions.md` should only be used when explicitly requested. Ordinary Q&A pages use the four-column table `Time | Question | Short answer / answer direction | Expanded answer`; treat filled expanded answers as the current baseline, not as a pending migration.
 
 Timestamp links should point directly to YouTube with `?t=`. For links intended to open in a new GitHub tab, use:
 
@@ -49,7 +49,7 @@ Timestamp links should point directly to YouTube with `?t=`. For links intended 
 
 ## Testing Guidelines
 
-No automated test framework is configured. Validate changes by checking that referenced files exist, Markdown tables have consistent columns, and timestamp links match transcript rows. For curated Q&A pages, compare summaries against the TXT working transcript first, then use the JSON source or TSV output when raw fields, start seconds, or link reconstruction need auditing.
+No automated test framework is configured. Validate changes by checking that referenced files exist, Markdown tables have consistent columns, timestamp links match transcript rows, and ordinary-page expanded answers are populated. For curated Q&A pages, compare short and expanded answers against the TXT working transcript first, then use the JSON source or TSV output when raw fields, start seconds, or link reconstruction need auditing.
 
 ## Commit & Pull Request Guidelines
 
@@ -72,7 +72,7 @@ Do not include lengthy explanations, tutorials, broad background, or repeated re
 
 ## Agent-Specific Instructions
 
-Do not invent transcript content. Preserve uncertainty when audio or transcript text is unclear. This project converts the Questions & Answers in general from Ancient Egypt and the Bible livestreams into a reference repository, so curated pages should include all real questions supported by the transcript, not only super chats. Keep curated pages useful as navigation aids: question, timestamp, direct video link, and a short answer direction when supported by the source.
+Do not invent transcript content. Preserve uncertainty when audio or transcript text is unclear. This project converts the Questions & Answers in general from Ancient Egypt and the Bible livestreams into a reference repository, so curated pages should include all real questions supported by the transcript, not only super chats. Keep curated pages useful as navigation aids: question, timestamp, direct video link, short answer direction, and transcript-grounded expanded answer when supported by the source.
 
 ### Agent Routing
 

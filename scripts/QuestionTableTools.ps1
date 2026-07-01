@@ -301,8 +301,11 @@ function Get-QuestionTableAnalysis {
                 $emptyExpandedAnswers++
                 $errors.Add("${relativePath}:$($i + 1) has an empty expanded-answer cell.")
             }
-            elseif ($expandedAnswerCell -eq "_Expansion pending._") {
+            elseif ($expandedAnswerCell -match '_Expansion pending\._') {
                 $pendingExpandedAnswers++
+                if ($RequireExpandedAnswer) {
+                    $errors.Add("${relativePath}:$($i + 1) has a pending expanded-answer placeholder.")
+                }
             }
             else {
                 $completedExpandedAnswers++
