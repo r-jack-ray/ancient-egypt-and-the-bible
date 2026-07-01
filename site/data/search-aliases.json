@@ -230,12 +230,12 @@
     {
       "query": "archeology",
       "minResults": 100,
-      "maxResults": 250
+      "maxResults": 300
     },
     {
       "query": "archeological",
       "minResults": 50,
-      "maxResults": 150
+      "maxResults": 200
     },
     {
       "query": "heiroglyphs",
@@ -265,12 +265,12 @@
     {
       "query": "isrealite",
       "minResults": 100,
-      "maxResults": 500
+      "maxResults": 700
     },
     {
       "query": "semetic",
       "minResults": 50,
-      "maxResults": 150
+      "maxResults": 250
     },
     {
       "query": "melchisedek",
@@ -335,12 +335,12 @@
     {
       "query": "waset",
       "minResults": 5,
-      "maxResults": 50
+      "maxResults": 60
     },
     {
       "query": "mennefer",
       "minResults": 1,
-      "maxResults": 25
+      "maxResults": 30
     },
     {
       "query": "zoan",
@@ -575,7 +575,7 @@
     {
       "query": "sip",
       "minResults": 5,
-      "maxResults": 25
+      "maxResults": 30
     },
     {
       "query": "lba",
@@ -590,7 +590,7 @@
     {
       "query": "dynasty xix",
       "minResults": 10,
-      "maxResults": 50
+      "maxResults": 60
     },
     {
       "query": "twentieth dynasty",

@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "check:js": "node --check site/assets/js/search-core.js && node --check site/assets/js/search.js && node --check site/assets/js/site.js"
+  }
+}
