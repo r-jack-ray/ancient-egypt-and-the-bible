@@ -158,31 +158,19 @@ function Get-QuestionRowsFromMarkdown {
 
     $lines = Get-Content -LiteralPath $Path
     $tableStart = -1
-    $expectedColumnCount = 0
+    $expectedColumnCount = 4
     for ($i = 0; $i -lt $lines.Count; $i++) {
-        if ($lines[$i] -match '^\|\s*Time\s*\|\s*Question\s*\|\s*Short answer / answer direction\s*\|\s*$') {
-            $expectedColumnCount = 3
-            $tableStart = $i
-            break
-        }
-
         if ($lines[$i] -match '^\|\s*Time\s*\|\s*Question\s*\|\s*Short answer / answer direction\s*\|\s*Expanded answer\s*\|\s*$') {
-            $expectedColumnCount = 4
             $tableStart = $i
             break
         }
     }
 
     if ($tableStart -lt 0) {
-        throw "Missing Q&A table header in $Path."
+        throw "Missing four-column Q&A table header in $Path."
     }
 
-    $separatorPattern = if ($expectedColumnCount -eq 4) {
-        '^\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*$'
-    }
-    else {
-        '^\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*$'
-    }
+    $separatorPattern = '^\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*$'
 
     if ($tableStart + 1 -ge $lines.Count -or $lines[$tableStart + 1] -notmatch $separatorPattern) {
         $lineNumber = $tableStart + 2
@@ -207,14 +195,18 @@ function Get-QuestionRowsFromMarkdown {
             $timeCell = $cells[0]
             $question = $cells[1]
             $answer = $cells[2]
-            $expandedAnswer = $(if ($expectedColumnCount -eq 4) { $cells[3] } else { $null })
+            $expandedAnswer = $cells[3]
 
             if ([string]::IsNullOrWhiteSpace($question) -or [string]::IsNullOrWhiteSpace($answer)) {
                 throw "${Path}:$($i + 1) has an empty question or answer cell."
             }
 
-            if ($expectedColumnCount -eq 4 -and [string]::IsNullOrWhiteSpace($expandedAnswer)) {
+            if ([string]::IsNullOrWhiteSpace($expandedAnswer)) {
                 throw "${Path}:$($i + 1) has an empty expanded answer cell."
+            }
+
+            if ($expandedAnswer -match '_Expansion pending\._') {
+                throw "${Path}:$($i + 1) has a pending expanded answer placeholder."
             }
 
             if ($timeCell -notmatch '<a\s+href="(?<href>https://(?:youtu\.be/[^"?]+|www\.youtube\.com/watch\?[^"]+)[^"]*[?&]t=(?<seconds>\d+)[^"]*)"\s+target="_blank"\s+rel="noopener noreferrer">(?<label>[^<]+)</a>') {

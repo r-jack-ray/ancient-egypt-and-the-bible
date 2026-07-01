@@ -1,6 +1,6 @@
 ---
 name: transcript-question-page-audit
-description: Find and fix issues in existing Ancient Egypt and the Bible curated question Markdown pages under docs/questions against TXT and JSON transcript sources. Use for low-output correction passes, timestamp verification, missing-question repair, unsupported short answers, transcript-grounded expanded-answer population and cleanup, table/link validation including four-column expanded-answer tables, and minimal-diff edits. Do not use for first-pass transcript-to-Markdown generation.
+description: Find and fix issues in existing Ancient Egypt and the Bible curated question Markdown pages under docs/questions against TXT and JSON transcript sources. Use for low-output correction passes, timestamp verification, missing-question repair, unsupported short or expanded answers, table/link validation including four-column expanded-answer tables, and minimal-diff edits. Do not use for first-pass transcript-to-Markdown generation.
 ---
 
 # Transcript Question Page Audit
@@ -10,6 +10,7 @@ description: Find and fix issues in existing Ancient Egypt and the Bible curated
 Default to **find and fix** with minimal user-facing output.
 
 - Edit the target page when the user asks to audit, check, repair, fix, correct, update, or improve it.
+- Treat missing, placeholder, duplicated, unsupported, or stale expanded answers as audit issues on ordinary pages.
 - Do not return a long audit report unless the user explicitly asks for "audit-only", "report only", "do not edit", or "review only".
 - Keep final output terse: what changed, checks run, and any important uncertainty.
 - Prefer high-confidence fixes over speculative edits.
@@ -135,6 +136,8 @@ Make minimal edits to:
 - add clearly missing real audience questions
 - correct timestamps to the question start
 - repair unsupported or overstated summaries
+- repair missing, placeholder, or deferred expanded answers
+- revise expanded answers when they are unsupported, too thin to be useful, duplicated from the short answer, contradicted by the short answer, or stale after a row change
 - complete truncated question wording
 - split merged distinct questions or merge duplicates
 - remove non-question housekeeping rows
@@ -150,6 +153,7 @@ For full coverage:
 - verify every retained, added, removed, merged, or split row against the transcript
 - verify every timestamp points to the audience-question start
 - verify each answer summary against the relevant answer span
+- verify each expanded answer against the relevant answer span and confirm it adds transcript-supported detail beyond the short answer
 - confirm the transcript was inspected from beginning to end without gaps
 
 For targeted coverage, re-check changed and directly related rows only.
@@ -221,8 +225,9 @@ Expanded answers:
 - should preserve the speaker's caveats, uncertainty, and limits rather than smoothing them away
 - should add transcript-supported detail such as reasoning, examples, qualifications, and distinctions that help a reader understand the answer without rewatching the segment
 - should be updated whenever the short answer, question wording, timestamp, split/merge decision, or supporting transcript window changes
-- may use `_Expansion pending._` only when the transcript does not support a reliable expanded answer after inspection, the row is intentionally deferred by an explicit user instruction, or the page is a special-purpose page whose established structure does not support expanded answers
-- must leave a concise note in the final output and audit log if any ordinary-page row still has `_Expansion pending._`
+- must not leave `_Expansion pending._` on ordinary pages under the filled-answer baseline
+- when transcript support is limited, write a limited expanded answer that preserves uncertainty, or correct/remove the row if the question or answer is unsupported
+- may leave `_Expansion pending._` only when the user explicitly asks to defer that row, and must note that strict table validation will fail until the placeholder is resolved
 
 Use uncertainty when needed:
 
@@ -257,14 +262,22 @@ Rules:
 - escape literal pipes inside cells as `\|`
 - no raw newlines inside cells
 - no placeholder links
-- `_Expansion pending._` is allowed only in the expanded-answer column and only for an explicitly justified exception under the expanded-answer rules
+- `_Expansion pending._` is not allowed on ordinary pages unless the user explicitly asks to defer that row
 
 Special-purpose pages may keep their existing adapted structure when supported. Transcript notes after the table are allowed if transcript-grounded and clearly
 separate from Q&A rows.
 
 ## Validation
 
-After edits, run targeted checks:
+After edits, run targeted checks. For ordinary pages, prefer the repo validator,
+which requires four-column rows and populated expanded answers by default:
+
+```powershell
+pwsh -NoProfile -File scripts/Test-QuestionTableFormat.ps1
+```
+
+For a narrow single-file pass, or when the full corpus validator is too noisy or
+slow for the current task, run the local checks against the target file:
 
 ```powershell
 $path = "docs/questions/FILE.md"
@@ -278,12 +291,13 @@ Get-Content $path | Where-Object { $_ -match '^\|' } | ForEach-Object {
 }
 Select-String -Path $path -Pattern 'https://youtu\.be/[^"? ]+[" ]'
 rg -n "\[Watch on YouTube\]|\[PLACEHOLDER\]|transcripts/livestreams/md|src/md" $path
+rg -n "_Expansion pending\\._" $path
 git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible diff --check -- $path
 git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible diff -- $path
 ```
 
 Also verify display timestamps match `?t=` seconds for changed rows or when links were edited.
-For ordinary pages, also verify the table header is exactly `| Time | Question | Short answer / answer direction | Expanded answer |`, that every data row begins with a timestamp link, and that every expanded-answer cell is non-empty, transcript-grounded text. If any ordinary-page row remains `_Expansion pending._`, confirm it has a specific documented justification from the expanded-answer rules.
+For ordinary pages, also verify the table header is exactly `| Time | Question | Short answer / answer direction | Expanded answer |`, that every data row begins with a timestamp link, and that every expanded-answer cell is non-empty, transcript-grounded text. Treat any remaining `_Expansion pending._` row as an explicit deferral or blocker; strict table validation will fail until it is resolved. Do not treat a passing structural validator as proof that expanded-answer prose is transcript-supported; semantic support still requires transcript inspection.
 
 ## Output Modes
 
@@ -383,7 +397,7 @@ Record:
 - `question_count_after`
 - `question_count_change`, including `+` for positive changes
 - whether the file could use further inspection
-- whether any ordinary-page expanded answers remain pending and why
+- `expanded_answers_pending=0` for ordinary pages, or the exact pending count plus explicit deferral/blocker reason if the user chose to leave a placeholder unresolved
 - a concise note describing important changes or remaining uncertainty
 
 For model and effort fields:
@@ -397,7 +411,7 @@ For model and effort fields:
 Example shape; replace placeholders with the actual values:
 
 ```text
-2026-06-21T12:34:56-05:00 108-the-many-views-of-heck-questions.md; model=MODEL_NAME; effort=EFFORT_LEVEL; coverage=full; question_count_before=6; question_count_after=31; question_count_change=+25; could_use_further_inspection=no; added high-confidence missing questions and validated retained rows and timestamps.
+2026-06-21T12:34:56-05:00 108-the-many-views-of-heck-questions.md; model=MODEL_NAME; effort=EFFORT_LEVEL; coverage=full; question_count_before=6; question_count_after=31; question_count_change=+25; could_use_further_inspection=no; expanded_answers_pending=0; added high-confidence missing questions and validated retained rows, timestamps, and expanded answers.
 ```
 
 Existing records in older formats may remain unchanged.
@@ -412,7 +426,7 @@ Finish only when relevant items are true:
 - timestamp links include `target="_blank"` and `rel="noopener noreferrer"`
 - short answers are supported and preserve uncertainty
 - expanded answers are populated, transcript-supported, consistent with short answers, and preserve uncertainty
-- any remaining `_Expansion pending._` cells are specifically justified in the final output and audit log
+- no `_Expansion pending._` cells remain unless the user explicitly deferred them and the final output/audit log records the blocker
 - no outside facts were added
 - table rows render cleanly
 - no placeholder links or legacy links remain
