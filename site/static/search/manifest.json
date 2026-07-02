@@ -3,7 +3,7 @@
   "generated_by": "scripts/Build-SearchIndex.mjs",
   "source_data": "site/data/questions.json",
   "source_aliases": "site/data/search-aliases.json",
-  "document_count": 12542,
+  "document_count": 12833,
   "minisearch_version": "7.1.2",
   "index_url": "index.json",
   "docs_url": "docs.json",
