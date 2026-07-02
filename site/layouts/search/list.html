@@ -1,8 +1,6 @@
 {{ define "main" }}
-{{ $questions := hugo.Data.questions }}
-{{ $aliases := index site.Data "search-aliases" }}
 <h1 class="page-title">{{ .Title }}</h1>
-<section class="search-panel" data-question-search data-base-path="{{ site.Home.RelPermalink }}">
+<section class="search-panel" data-question-search data-base-path="{{ site.Home.RelPermalink }}" data-search-manifest-url="{{ "search/manifest.json" | relURL }}" data-search-docs-url="{{ "search/docs.json" | relURL }}" data-search-index-url="{{ "search/index.json" | relURL }}">
   <div class="search-controls">
     <div class="field field-grow">
       <label for="question-search-input">Search text</label>
@@ -52,9 +50,6 @@
     <p class="search-result-answer" data-result-answer></p>
   </li>
 </template>
-
-<script type="application/json" id="question-search-data">{{ $questions | jsonify | safeJS }}</script>
-<script type="application/json" id="question-search-aliases">{{ $aliases | jsonify | safeJS }}</script>
 {{ end }}
 
 {{ define "scripts" }}

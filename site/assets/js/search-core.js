@@ -329,6 +329,36 @@
     return mergeHighlightSpans(matches);
   }
 
+  function createMiniSearchOptions() {
+    return {
+      idField: "search_id",
+      fields: [
+        "episode_number_text",
+        "episode_title",
+        "question",
+        "short_answer",
+        "search_text",
+        "search_aliases"
+      ],
+      storeFields: ["search_id"],
+      searchOptions: {
+        boost: {
+          question: 6,
+          episode_title: 4,
+          short_answer: 3,
+          episode_number_text: 5,
+          search_text: 1,
+          search_aliases: 2
+        },
+        combineWith: "AND",
+        prefix: true,
+        fuzzy: function (term) {
+          return term.length > 4 ? 0.2 : false;
+        }
+      }
+    };
+  }
+
   return {
     normalize: normalize,
     tokenize: tokenize,
@@ -339,6 +369,7 @@
     createSearchAliasIndex: createSearchAliasIndex,
     getSearchAliases: getSearchAliases,
     buildHighlightModel: buildHighlightModel,
-    getHighlightSpans: getHighlightSpans
+    getHighlightSpans: getHighlightSpans,
+    createMiniSearchOptions: createMiniSearchOptions
   };
 }));
