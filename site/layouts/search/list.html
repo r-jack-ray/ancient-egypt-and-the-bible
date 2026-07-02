@@ -54,9 +54,6 @@
 
 {{ define "scripts" }}
 <script src="https://cdn.jsdelivr.net/npm/minisearch@7.1.2/dist/umd/index.min.js" defer></script>
-{{ with resources.Get "js/search-core.js" }}
-<script src="{{ .RelPermalink }}" defer></script>
-{{ end }}
 {{ with resources.Get "js/search.js" }}
 <script src="{{ .RelPermalink }}" defer></script>
 {{ end }}

@@ -51,7 +51,7 @@
   {{ $expandedQuestions := where $questions "expanded_answer" "!=" nil }}
   <div class="index-toolbar">
     <label class="visually-hidden" for="episode-question-filter">Filter questions</label>
-    <input id="episode-question-filter" data-filter-control data-filter-target="#episode-question-list" data-filter-count="#episode-question-count" type="search" placeholder="Filter this episode by topic, passage, or answer">
+    <input id="episode-question-filter" data-filter-control data-filter-target="#episode-question-list" data-filter-count="#episode-question-count" data-filter-param="q" data-filter-highlight-target=".episode-question-body" type="search" placeholder="Filter this episode by topic, passage, or answer">
     <span id="episode-question-count" class="results-summary"></span>
     {{ if gt (len $expandedQuestions) 0 }}
     <button class="secondary-button compact-button" type="button" data-expanded-answer-toggle data-expanded-answer-target="#episode-question-list" aria-controls="episode-question-list" aria-expanded="false">Show expanded answers</button>
