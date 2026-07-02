@@ -43,6 +43,25 @@
     return siteUrl(path);
   }
 
+  function addCurrentSearchQuery(url) {
+    var query = input ? input.value.trim() : "";
+    if (!query) {
+      return url;
+    }
+
+    try {
+      var resolved = new URL(url, window.location.origin);
+      resolved.searchParams.set("q", query);
+      if (/^(?:https?:)?\/\//.test(url)) {
+        return resolved.href;
+      }
+      return resolved.pathname + resolved.search + resolved.hash;
+    } catch (error) {
+      var separator = url.indexOf("?") === -1 ? "?" : "&";
+      return url + separator + "q=" + encodeURIComponent(query);
+    }
+  }
+
   function setControlsDisabled(disabled) {
     controls.forEach(function (control) {
       control.disabled = disabled;
@@ -330,7 +349,7 @@
       ].join(" · "), fragment);
 
       if (episodeLink) {
-        episodeLink.href = siteUrl(row.content_path);
+        episodeLink.href = addCurrentSearchQuery(siteUrl(row.content_path));
         appendHighlightedText(episodeLink, row.episode_title || "Question page", highlightModel);
       }
       if (videoLink) {
