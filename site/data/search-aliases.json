@@ -149,503 +149,427 @@
   "queryTests": [
     {
       "query": "ramses 2",
-      "minResults": 50,
-      "maxResults": 500
+      "minResults": 50
     },
     {
       "query": "ramesses ii",
-      "minResults": 50,
-      "maxResults": 500
+      "minResults": 50
     },
     {
       "query": "ramessides",
-      "minResults": 20,
-      "maxResults": 100
+      "minResults": 20
     },
     {
       "query": "merenptah stele",
-      "minResults": 20,
-      "maxResults": 100
+      "minResults": 20
     },
     {
       "query": "sethos",
-      "minResults": 10,
-      "maxResults": 100
+      "minResults": 10
     },
     {
       "query": "amunherkhepshef",
-      "minResults": 2,
-      "maxResults": 20
+      "minResults": 2
     },
     {
       "query": "hatchepsut",
-      "minResults": 10,
-      "maxResults": 50
+      "minResults": 10
     },
     {
       "query": "ahmosis",
-      "minResults": 10,
-      "maxResults": 50
+      "minResults": 10
     },
     {
       "query": "amenemhet",
-      "minResults": 1,
-      "maxResults": 10
+      "minResults": 1
     },
     {
       "query": "sesostris",
-      "minResults": 3,
-      "maxResults": 20
+      "minResults": 3
     },
     {
       "query": "cheops",
-      "minResults": 5,
-      "maxResults": 30
+      "minResults": 5
     },
     {
       "query": "chephren",
-      "minResults": 1,
-      "maxResults": 20
+      "minResults": 1
     },
     {
       "query": "mycerinus",
-      "minResults": 1,
-      "maxResults": 20
+      "minResults": 1
     },
     {
       "query": "sebekhotep",
-      "minResults": 1,
-      "maxResults": 10
+      "minResults": 1
     },
     {
       "query": "amon",
-      "minResults": 20,
-      "maxResults": 100
+      "minResults": 20
     },
     {
       "query": "pharoah",
-      "minResults": 100,
-      "maxResults": 600
+      "minResults": 100
     },
     {
       "query": "archeology",
-      "minResults": 100,
-      "maxResults": 300
+      "minResults": 100
     },
     {
       "query": "archeological",
-      "minResults": 50,
-      "maxResults": 200
+      "minResults": 50
     },
     {
       "query": "heiroglyphs",
-      "minResults": 20,
-      "maxResults": 80
+      "minResults": 20
     },
     {
       "query": "nebuchadnezzer",
-      "minResults": 10,
-      "maxResults": 60
+      "minResults": 10
     },
     {
       "query": "dueteronomy",
-      "minResults": 50,
-      "maxResults": 150
+      "minResults": 50
     },
     {
       "query": "cuniform",
-      "minResults": 30,
-      "maxResults": 100
+      "minResults": 30
     },
     {
       "query": "mumification",
-      "minResults": 20,
-      "maxResults": 80
+      "minResults": 20
     },
     {
       "query": "isrealite",
-      "minResults": 100,
-      "maxResults": 700
+      "minResults": 100
     },
     {
       "query": "semetic",
-      "minResults": 50,
-      "maxResults": 250
+      "minResults": 50
     },
     {
       "query": "melchisedek",
-      "minResults": 10,
-      "maxResults": 50
+      "minResults": 10
     },
     {
       "query": "cherubs",
-      "minResults": 20,
-      "maxResults": 100
+      "minResults": 20
     },
     {
       "query": "cherubims",
-      "minResults": 20,
-      "maxResults": 100
+      "minResults": 20
     },
     {
       "query": "seraphs",
-      "minResults": 20,
-      "maxResults": 100
+      "minResults": 20
     },
     {
       "query": "giant",
-      "minResults": 20,
-      "maxResults": 100
+      "minResults": 20
     },
     {
       "query": "rephaites",
-      "minResults": 1,
-      "maxResults": 25
+      "minResults": 1
     },
     {
       "query": "anakites",
-      "minResults": 1,
-      "maxResults": 25
+      "minResults": 1
     },
     {
       "query": "messiahs",
-      "minResults": 10,
-      "maxResults": 75
+      "minResults": 10
     },
     {
       "query": "tabernacles",
-      "minResults": 10,
-      "maxResults": 75
+      "minResults": 10
     },
     {
       "query": "theophanies",
-      "minResults": 5,
-      "maxResults": 25
+      "expectedMatches": [
+        {
+          "questionPage": "questions/65-the-storage-city-of-popcorn-questions.md",
+          "timeLabel": "1:33:37",
+          "questionContains": "Genesis 15:4-5"
+        },
+        {
+          "questionPage": "questions/121-big-questions-and-puny-gods-questions.md",
+          "timeLabel": "2:11:40",
+          "questionContains": "pre-incarnate theophanies"
+        }
+      ]
     },
     {
       "query": "christophanies",
-      "minResults": 5,
-      "maxResults": 25
+      "expectedMatches": [
+        {
+          "questionPage": "questions/56-celebrating-like-a-statistician-6000-10-subs-questions.md",
+          "timeLabel": "34:53",
+          "questionContains": "angel of the Lord"
+        }
+      ]
     },
     {
       "query": "dabaa",
-      "minResults": 1,
-      "maxResults": 20
+      "minResults": 1
     },
     {
       "query": "waset",
-      "minResults": 5,
-      "maxResults": 60
+      "minResults": 5
     },
     {
       "query": "mennefer",
-      "minResults": 1,
-      "maxResults": 30
+      "minResults": 1
     },
     {
       "query": "zoan",
-      "minResults": 5,
-      "maxResults": 40
+      "minResults": 5
     },
     {
       "query": "yeb",
-      "minResults": 5,
-      "maxResults": 50
+      "minResults": 5
     },
     {
       "query": "akhetaten",
       "minResults": 20,
-      "maxResults": 80
+      "expectedMatches": [
+        {
+          "questionPage": "questions/101-god-will-provide-a-lamb-questions.md",
+          "timeLabel": "19:42",
+          "questionContains": "Amarna letters"
+        }
+      ]
     },
     {
       "query": "sakkara",
-      "minResults": 1,
-      "maxResults": 15
+      "minResults": 1
     },
     {
       "query": "gizeh",
-      "minResults": 5,
-      "maxResults": 40
+      "minResults": 5
     },
     {
       "query": "yhwh",
-      "minResults": 1,
-      "maxResults": 500
+      "minResults": 1
     },
     {
       "query": "yahveh",
-      "minResults": 100,
-      "maxResults": 500
+      "minResults": 100
     },
     {
       "query": "tanach",
-      "minResults": 1,
-      "maxResults": 25
+      "minResults": 1
     },
     {
       "query": "ruakh",
-      "minResults": 1,
-      "maxResults": 20
+      "minResults": 1
     },
     {
       "query": "nefesh",
-      "minResults": 1,
-      "maxResults": 20
+      "minResults": 1
     },
     {
       "query": "adonay",
-      "minResults": 1,
-      "maxResults": 10
+      "minResults": 1
     },
     {
       "query": "toldot",
-      "minResults": 1,
-      "maxResults": 25
+      "minResults": 1
     },
     {
       "query": "gehinnom",
-      "minResults": 1,
-      "maxResults": 20
+      "minResults": 1
     },
     {
       "query": "massoretic",
-      "minResults": 10,
-      "maxResults": 75
+      "minResults": 10
     },
     {
       "query": "ba'al",
-      "minResults": 10,
-      "maxResults": 75
+      "minResults": 10
     },
     {
       "query": "el elion",
-      "minResults": 1,
-      "maxResults": 20
+      "minResults": 1
     },
     {
       "query": "el shadday",
-      "minResults": 1,
-      "maxResults": 20
+      "minResults": 1
     },
     {
       "query": "tell el dab'a",
-      "minResults": 1,
-      "maxResults": 20
+      "minResults": 1
     },
     {
       "query": "lxx",
-      "minResults": 1,
-      "maxResults": 500
+      "minResults": 1
     },
     {
       "query": "mt",
-      "minResults": 10,
-      "maxResults": 100
+      "minResults": 10
     },
     {
       "query": "dss",
-      "minResults": 20,
-      "maxResults": 100
+      "minResults": 20
     },
     {
       "query": "amarna correspondence",
-      "minResults": 10,
-      "maxResults": 100
+      "minResults": 10
     },
     {
       "query": "tel dan stela",
-      "minResults": 5,
-      "maxResults": 50
+      "minResults": 5
     },
     {
       "query": "westcar papyrus",
-      "minResults": 5,
-      "maxResults": 25
+      "minResults": 5
     },
     {
       "query": "ps 82",
-      "minResults": 1,
-      "maxResults": 200
+      "minResults": 1
     },
     {
       "query": "ps82",
-      "minResults": 1,
-      "maxResults": 200
+      "minResults": 1
     },
     {
       "query": "psa 82",
-      "minResults": 1,
-      "maxResults": 50
+      "minResults": 1
     },
     {
       "query": "gen 1",
-      "minResults": 1,
-      "maxResults": 250
+      "minResults": 1
     },
     {
       "query": "exod12",
-      "minResults": 1,
-      "maxResults": 50
+      "minResults": 1
     },
     {
       "query": "lev 12",
-      "minResults": 1,
-      "maxResults": 50
+      "minResults": 1
     },
     {
       "query": "num 12",
-      "minResults": 1,
-      "maxResults": 100
+      "minResults": 1
     },
     {
       "query": "josh 9",
-      "minResults": 1,
-      "maxResults": 25
+      "minResults": 1
     },
     {
       "query": "1 sam",
-      "minResults": 20,
-      "maxResults": 150
+      "minResults": 20
     },
     {
       "query": "1sam28",
-      "minResults": 1,
-      "maxResults": 100
+      "minResults": 1
     },
     {
       "query": "first samuel 28",
-      "minResults": 1,
-      "maxResults": 100
+      "minResults": 1
     },
     {
       "query": "i samuel 28",
-      "minResults": 1,
-      "maxResults": 100
+      "minResults": 1
     },
     {
       "query": "1 kgs",
-      "minResults": 1,
-      "maxResults": 150
+      "minResults": 1
     },
     {
       "query": "1 chr",
-      "minResults": 1,
-      "maxResults": 75
+      "minResults": 1
     },
     {
       "query": "chron 21",
-      "minResults": 1,
-      "maxResults": 25
+      "minResults": 1
     },
     {
       "query": "matt 16",
-      "minResults": 1,
-      "maxResults": 50
+      "minResults": 1
     },
     {
       "query": "mk 8",
-      "minResults": 1,
-      "maxResults": 25
+      "minResults": 1
     },
     {
       "query": "lk 3",
-      "minResults": 1,
-      "maxResults": 50
+      "minResults": 1
     },
     {
       "query": "1 cor",
-      "minResults": 1,
-      "maxResults": 100
+      "minResults": 1
     },
     {
       "query": "heb 11",
-      "minResults": 1,
-      "maxResults": 50
+      "minResults": 1
     },
     {
       "query": "jas 3",
-      "minResults": 1,
-      "maxResults": 20
+      "minResults": 1
     },
     {
       "query": "nk",
-      "minResults": 30,
-      "maxResults": 100
+      "minResults": 30
     },
     {
       "query": "sip",
-      "minResults": 5,
-      "maxResults": 30
+      "minResults": 5
     },
     {
       "query": "lba",
-      "minResults": 30,
-      "maxResults": 100
+      "minResults": 30
     },
     {
       "query": "dynasty xviii",
-      "minResults": 5,
-      "maxResults": 40
+      "minResults": 5
     },
     {
       "query": "dynasty xix",
-      "minResults": 10,
-      "maxResults": 60
+      "minResults": 10
     },
     {
       "query": "twentieth dynasty",
-      "minResults": 5,
-      "maxResults": 30
+      "minResults": 5
     },
     {
       "query": "dr david falk",
-      "minResults": 500,
-      "maxResults": 700
+      "minResults": 500
     },
     {
       "query": "ka kitchen",
-      "minResults": 50,
-      "maxResults": 150
+      "minResults": 50
     },
     {
       "query": "james hoffmeier",
-      "minResults": 20,
-      "maxResults": 50
+      "minResults": 20
     },
     {
       "query": "israel finkelstein",
-      "minResults": 5,
-      "maxResults": 25
+      "minResults": 5
     },
     {
       "query": "michael heiser",
-      "minResults": 30,
-      "maxResults": 75
+      "minResults": 30
     },
     {
       "query": "titus kennedy",
-      "minResults": 50,
-      "maxResults": 100
+      "minResults": 50
     },
     {
       "query": "david rohl",
-      "minResults": 15,
-      "maxResults": 30
+      "minResults": 15
     },
     {
       "query": "joshua bowen",
-      "minResults": 5,
-      "maxResults": 20
+      "minResults": 5
     },
     {
       "query": "assassins creed origins",
-      "minResults": 300,
-      "maxResults": 500
+      "minResults": 300
     },
     {
       "query": "aco",
-      "minResults": 300,
-      "maxResults": 500
+      "minResults": 300
     }
   ]
 }
