@@ -1,18 +1,12 @@
 (function () {
   var root = document.querySelector("[data-question-search]");
-  var dataNode = document.getElementById("question-search-data");
-  var aliasNode = document.getElementById("question-search-aliases");
   var template = document.getElementById("question-result-template");
   var core = window.QuestionSearchCore;
 
-  if (!root || !dataNode || !template || !core) {
+  if (!root || !template || !core) {
     return;
   }
 
-  var questions = JSON.parse(dataNode.textContent || "[]");
-  if (typeof questions === "string") {
-    questions = JSON.parse(questions);
-  }
   var basePath = root.getAttribute("data-base-path") || "/";
   var input = root.querySelector("[data-search-input]");
   var typeFilter = root.querySelector("[data-type-filter]");
@@ -28,74 +22,97 @@
   var currentRows = [];
   var currentHighlightModel = null;
   var questionBySearchId = {};
+  var questions = [];
+  var miniSearch = null;
+  var searchReady = false;
   var normalize = core.normalize;
   var tokenize = core.tokenize;
   var normalizeBibleReferenceQuery = core.normalizeBibleReferenceQuery;
-  var searchAliasConfig = core.readSearchAliasConfig(aliasNode ? aliasNode.textContent : "");
-  var searchAliasIndex = core.createSearchAliasIndex(searchAliasConfig);
-
-  function getSearchAliases(value) {
-    return core.getSearchAliases(value, searchAliasIndex);
-  }
-
-  function prepareSearchRows(rows) {
-    rows.forEach(function (row, index) {
-      row.search_id = index.toString();
-      row.episode_number_text = row.episode_number ? row.episode_number.toString() : "";
-      row.search_aliases = getSearchAliases([
-        row.episode_title,
-        row.question,
-        row.short_answer,
-        row.search_text
-      ].join(" "));
-      questionBySearchId[row.search_id] = row;
-    });
-  }
-
-  function createMiniSearchIndex(rows) {
-    var MiniSearchConstructor = window.MiniSearch || (typeof MiniSearch === "function" ? MiniSearch : null);
-    if (typeof MiniSearchConstructor !== "function") {
-      return null;
-    }
-
-    try {
-      var index = new MiniSearchConstructor({
-        idField: "search_id",
-        fields: [
-          "episode_number_text",
-          "episode_title",
-          "question",
-          "short_answer",
-          "search_text",
-          "search_aliases"
-        ],
-        storeFields: ["search_id"],
-        searchOptions: {
-          boost: {
-            question: 6,
-            episode_title: 4,
-            short_answer: 3,
-            episode_number_text: 5,
-            search_text: 1,
-            search_aliases: 2
-          },
-          combineWith: "AND",
-          prefix: true,
-          fuzzy: function (term) {
-            return term.length > 4 ? 0.2 : false;
-          }
-        }
-      });
-
-      index.addAll(rows);
-      return index;
-    } catch (error) {
-      return null;
-    }
-  }
+  var searchAliasIndex = core.createSearchAliasIndex({});
+  var controls = [input, typeFilter, episodeFilter, sortControl, clearButton, loadMoreButton].filter(Boolean);
 
   function siteUrl(path) {
     return basePath.replace(/\/?$/, "/") + (path || "").replace(/^\/+/, "");
+  }
+
+  function resolveSearchUrl(value, fallbackPath) {
+    var path = value || fallbackPath;
+    if (/^(?:https?:)?\/\//.test(path) || path.charAt(0) === "/") {
+      return path;
+    }
+    return siteUrl(path);
+  }
+
+  function setControlsDisabled(disabled) {
+    controls.forEach(function (control) {
+      control.disabled = disabled;
+    });
+  }
+
+  function setStatus(message) {
+    if (resultList) {
+      resultList.textContent = "";
+    }
+    if (resultCount) {
+      resultCount.textContent = message;
+    }
+    if (loadMoreButton) {
+      loadMoreButton.hidden = true;
+    }
+    if (emptyState) {
+      emptyState.hidden = true;
+    }
+  }
+
+  function setError(message) {
+    setStatus("");
+    if (resultCount) {
+      resultCount.textContent = "Search unavailable";
+    }
+    if (emptyState) {
+      emptyState.textContent = message;
+      emptyState.hidden = false;
+    }
+  }
+
+  function fetchJson(url) {
+    return fetch(url, { credentials: "same-origin" }).then(function (response) {
+      if (!response.ok) {
+        throw new Error("HTTP " + response.status + " for " + url);
+      }
+      return response.json();
+    });
+  }
+
+  function loadMiniSearchIndex(indexData) {
+    var MiniSearchConstructor = window.MiniSearch || (typeof MiniSearch === "function" ? MiniSearch : null);
+    var options = core.createMiniSearchOptions();
+
+    if (typeof MiniSearchConstructor !== "function") {
+      return Promise.reject(new Error("MiniSearch did not load."));
+    }
+
+    if (typeof MiniSearchConstructor.loadJSAsync === "function") {
+      return MiniSearchConstructor.loadJSAsync(indexData, options);
+    }
+
+    if (typeof MiniSearchConstructor.loadJS === "function") {
+      return Promise.resolve(MiniSearchConstructor.loadJS(indexData, options));
+    }
+
+    if (typeof MiniSearchConstructor.loadJSON === "function") {
+      return Promise.resolve(MiniSearchConstructor.loadJSON(JSON.stringify(indexData), options));
+    }
+
+    return Promise.reject(new Error("MiniSearch cannot deserialize the prebuilt index."));
+  }
+
+  function prepareDisplayRows(rows) {
+    questionBySearchId = {};
+    questions = rows || [];
+    questions.forEach(function (row) {
+      questionBySearchId[row.search_id] = row;
+    });
   }
 
   function sortedDefaultRows(rows) {
@@ -144,7 +161,7 @@
     var title = normalize(row.episode_title);
     var question = normalize(row.question);
     var answer = normalize(row.short_answer);
-    var searchText = normalize([row.search_text || [title, question, answer].join(" "), row.search_aliases].join(" "));
+    var searchText = normalize([title, question, answer].join(" "));
 
     if (!tokens.every(function (token) { return searchText.indexOf(token) !== -1; })) {
       return 0;
@@ -229,7 +246,7 @@
     return scored;
   }
 
-  function searchQuestions(query, tokens, miniSearch) {
+  function searchQuestions(query, tokens) {
     if (!tokens.length || !miniSearch) {
       return fallbackSearch(query, tokens);
     }
@@ -371,14 +388,15 @@
     window.history.replaceState({}, "", nextUrl);
   }
 
-  prepareSearchRows(questions);
-  var miniSearch = createMiniSearchIndex(questions);
-
   function applySearch() {
+    if (!searchReady) {
+      return;
+    }
+
     var query = normalizeBibleReferenceQuery(input ? input.value : "");
     var tokens = tokenize(query);
     var highlightModel = core.buildHighlightModel(query, searchAliasIndex);
-    var scored = searchQuestions(query, tokens, miniSearch);
+    var scored = searchQuestions(query, tokens);
     var sortMode = sortControl ? sortControl.value : "relevance";
 
     var rows;
@@ -471,5 +489,28 @@
   }
 
   hydrateFromUrl();
-  applySearch();
+  setControlsDisabled(true);
+  setStatus("Loading search index...");
+
+  Promise.all([
+    fetchJson(resolveSearchUrl(root.getAttribute("data-search-manifest-url"), "search/manifest.json")),
+    fetchJson(resolveSearchUrl(root.getAttribute("data-search-docs-url"), "search/docs.json")),
+    fetchJson(resolveSearchUrl(root.getAttribute("data-search-index-url"), "search/index.json"))
+  ]).then(function (results) {
+    var manifest = results[0] || {};
+    var docs = results[1] || [];
+    var indexData = results[2] || {};
+
+    searchAliasIndex = core.createSearchAliasIndex(manifest.alias_config || {});
+    prepareDisplayRows(docs);
+    return loadMiniSearchIndex(indexData);
+  }).then(function (loadedMiniSearch) {
+    miniSearch = loadedMiniSearch;
+    searchReady = true;
+    setControlsDisabled(false);
+    applySearch();
+  }).catch(function (error) {
+    setControlsDisabled(true);
+    setError("Search index files could not be loaded. " + (error && error.message ? error.message : ""));
+  });
 })();

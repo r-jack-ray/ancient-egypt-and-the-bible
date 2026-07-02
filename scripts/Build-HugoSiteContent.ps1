@@ -504,8 +504,15 @@ $questionData = @($allQuestionRows | ForEach-Object { [pscustomobject]$_ })
 Set-Utf8NoBomLfContent -LiteralPath (Join-Path $siteDataDir "episodes.json") -Value ($episodeData | ConvertTo-Json -Depth 8)
 Set-Utf8NoBomLfContent -LiteralPath (Join-Path $siteDataDir "questions.json") -Value ($questionData | ConvertTo-Json -Depth 8)
 
+$nodeCommand = Get-Command node -ErrorAction SilentlyContinue
+if (-not $nodeCommand) {
+    throw "Node.js is required to build the prebuilt search index."
+}
+
+& $nodeCommand.Source (Join-Path $RepoRoot "scripts/Build-SearchIndex.mjs") $RepoRoot
+
 Write-Host "Generated $actualGeneratedCount Hugo question pages from docs/questions."
 Write-Host "Numbered pages: $numberedPageCount"
 Write-Host "Special pages: $specialPageCount"
 Write-Host "Question rows: $($allQuestionRows.Count)"
-Write-Host "Wrote site/data/episodes.json and site/data/questions.json."
+Write-Host "Wrote site/data/episodes.json, site/data/questions.json, and site/static/search/."
