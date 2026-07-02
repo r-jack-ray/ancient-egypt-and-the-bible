@@ -11,14 +11,19 @@
       - CSV report
       - Markdown summary report
 
-    Main scoring signals:
+    Main triage signals:
       - Missing MD or TXT pair
       - Low question density
       - Low MD-to-transcript word ratio
-      - Missing timestamp links
-      - Red-flag wording
-      - Duplicate question headings
+      - Nonstandard table shape
+      - Missing timestamp links on question rows
+      - Missing or pending expanded answers
+      - Editorial repair markers
+      - Duplicate question text
       - MD older than transcript
+
+    The score is a triage aid, not proof of an error. Transcript-grounded
+    uncertainty words such as "unknown" or "not sure" are not repair markers.
 
 .NOTES
     Designed for PowerShell 7+.
@@ -44,11 +49,19 @@ param(
 
     [double]$LowQuestionsPerThousandWordsThreshold = 2.0,
 
-    [double]$LowMdWordsPerThousandTxtWordsThreshold = 35.0
+    [double]$LowMdWordsPerThousandTxtWordsThreshold = 35.0,
+
+    [switch]$ScoreSpecialEpisodeDensity
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
+
+$questionTableToolsPath = Join-Path $PSScriptRoot "QuestionTableTools.ps1"
+if (-not (Test-Path -LiteralPath $questionTableToolsPath -PathType Leaf)) {
+    throw "Required helper not found: $questionTableToolsPath"
+}
+. $questionTableToolsPath
 
 function Resolve-RepositoryRoot {
     param(
@@ -208,7 +221,7 @@ function Get-RepoRelativePath {
         return ""
     }
 
-    return [System.IO.Path]::GetRelativePath($repoRootPath, $File.FullName)
+    return [System.IO.Path]::GetRelativePath($repoRootPath, $File.FullName).Replace([System.IO.Path]::DirectorySeparatorChar, "/")
 }
 
 function Get-EpisodeNumber {
@@ -222,6 +235,32 @@ function Get-EpisodeNumber {
     }
 
     return $null
+}
+
+function Get-TriageCategory {
+    param(
+        [Parameter(Mandatory)]
+        [string]$Slug
+    )
+
+    if ($Slug -match '(?i)d-and-d-special-live-stream$') {
+        return "DAndDSpecial"
+    }
+
+    if ($Slug -match '(?i)(^special-live-stream-|-open-room-special$)') {
+        return "Special"
+    }
+
+    return "Ordinary"
+}
+
+function Test-DensityScoringSkipped {
+    param(
+        [Parameter(Mandatory)]
+        [string]$TriageCategory
+    )
+
+    return (-not $ScoreSpecialEpisodeDensity) -and ($TriageCategory -ne "Ordinary")
 }
 
 function Get-TextStats {
@@ -270,54 +309,233 @@ function Get-TextStats {
     }
 }
 
-function Get-MdQualityStats {
+function Test-MarkdownTimestampLink {
     param(
+        [AllowEmptyString()]
         [string]$Text
     )
 
+    $timestampPattern = "(?i)(?:<a\s+[^>]*href=[""'][^""']*(?:youtu\.be/|youtube\.com/watch\?)[^""']*(?:[?&]t=\d+s?)[^""']*[""'][^>]*>\s*\d{1,2}:\d{2}(?::\d{2})?\s*</a>|\[\d{1,2}:\d{2}(?::\d{2})?\]\([^)]*(?:youtu\.be/|youtube\.com/watch\?)[^)]*(?:[?&]t=\d+s?)[^)]*\))"
+    return [regex]::IsMatch($Text, $timestampPattern)
+}
+
+function Get-MarkdownTimestampLinkCount {
+    param(
+        [AllowEmptyString()]
+        [string]$Text
+    )
+
+    $timestampPattern = "(?i)(?:<a\s+[^>]*href=[""'][^""']*(?:youtu\.be/|youtube\.com/watch\?)[^""']*(?:[?&]t=\d+s?)[^""']*[""'][^>]*>\s*\d{1,2}:\d{2}(?::\d{2})?\s*</a>|\[\d{1,2}:\d{2}(?::\d{2})?\]\([^)]*(?:youtu\.be/|youtube\.com/watch\?)[^)]*(?:[?&]t=\d+s?)[^)]*\))"
+    return [regex]::Matches($Text, $timestampPattern).Count
+}
+
+function Get-EditorialRepairMarkerCount {
+    param(
+        [AllowEmptyString()]
+        [string]$Text
+    )
+
+    # Keep this list to editor/workflow markers. Ordinary answers often need
+    # words such as "unknown", "unclear", or "not sure" to preserve transcript
+    # uncertainty, so those are intentionally excluded.
+    $patterns = @(
+        '(?im)\bTODO\b',
+        '(?im)\bFIXME\b',
+        '(?im)\bTBD\b',
+        '(?m)(?<!\w)TK(?!\w)',
+        '(?i)\bneeds review\b',
+        '(?i)\bverification needed\b',
+        '(?i)\btimestamp needed\b',
+        '(?i)\bmissing timestamp\b',
+        '(?i)\bcitation needed\b',
+        '(?i)\btranscript needed\b',
+        '(?i)\bcheck transcript\b',
+        '(?i)_Expansion pending\._',
+        '(?m)\bPLACEHOLDER\b'
+    )
+
+    $count = 0
+    foreach ($pattern in $patterns) {
+        $count += [regex]::Matches($Text, $pattern).Count
+    }
+
+    return $count
+}
+
+function ConvertTo-NormalizedQuestionText {
+    param(
+        [AllowEmptyString()]
+        [string]$Text
+    )
+
+    if ($null -eq $Text) {
+        return ""
+    }
+
+    $q = $Text
+    $q = $q -replace '<[^>]+>', ''
+    $q = $q -replace '\[[^\]]+\]\([^)]+\)', ''
+    $q = $q -replace "^\s{0,3}#{2,6}\s+", ""
+    $q = $q -replace "^\s{0,3}[-*]\s+", ""
+    $q = $q -replace "^\d+[\.\)]\s*", ""
+    $q = $q -replace "\\\|", "|"
+    $q = $q -replace "\s+", " "
+    return $q.Trim().ToLowerInvariant()
+}
+
+function ConvertTo-MarkdownTableCell {
+    param(
+        [AllowNull()]
+        [object]$Value
+    )
+
+    if ($null -eq $Value) {
+        return ""
+    }
+
+    $text = [string]$Value
+    $text = $text -replace "\r\n|\n|\r", " "
+    return $text.Replace("|", "\|")
+}
+
+function New-EmptyMdQualityStats {
+    return [pscustomobject]@{
+        OrdinaryTableDetected       = $false
+        TableHeaderColumnCount      = 0
+        QuestionCount               = 0
+        TimestampLinkCount          = 0
+        MissingTimestampLinkCount   = 0
+        MalformedTableRowCount      = 0
+        LegacyThreeColumnTable      = $false
+        PendingExpandedAnswerCount  = 0
+        EmptyExpandedAnswerCount    = 0
+        MissingExpandedAnswerCount  = 0
+        CompletedExpandedAnswerCount = 0
+        RedFlagCount                = 0
+        DuplicateQuestionCount      = 0
+        DuplicateQuestionSamples    = ""
+    }
+}
+
+function Get-MdQualityStats {
+    param(
+        [AllowEmptyString()]
+        [string]$Text
+    )
+
+    $stats = New-EmptyMdQualityStats
+
     if ([string]::IsNullOrWhiteSpace($Text)) {
-        return [pscustomobject]@{
-            QuestionCount            = 0
-            TimestampLinkCount       = 0
-            RedFlagCount             = 0
-            DuplicateQuestionCount   = 0
-            DuplicateQuestionSamples = ""
-        }
+        return $stats
     }
 
     $questionTexts = New-Object System.Collections.Generic.List[string]
     $lines = $Text -split "\r\n|\n|\r"
 
-    foreach ($line in $lines) {
-        $trimmed = $line.Trim()
+    for ($i = 0; $i -lt $lines.Count; $i++) {
+        $trimmed = ([string]$lines[$i]).Trim()
 
-        if ($trimmed -notmatch '^\|.*\|$') {
+        if (-not ($trimmed.StartsWith("|") -and $trimmed.EndsWith("|"))) {
             continue
         }
 
-        if ($trimmed -match '^\|\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$') {
+        try {
+            $headerCells = @(Split-MarkdownTableRowStrict -Line $trimmed)
+        }
+        catch {
             continue
         }
 
-        $cells = @($trimmed.Trim('|') -split '(?<!\\)\|')
-
-        if ($cells.Count -lt 3) {
+        if (-not (Test-OrdinaryQuestionHeader -Cells $headerCells)) {
             continue
         }
 
-        $timeCell = $cells[0].Trim()
-        $questionCell = $cells[1].Trim()
+        $stats.OrdinaryTableDetected = $true
+        $stats.TableHeaderColumnCount = $headerCells.Count
+        $stats.LegacyThreeColumnTable = $headerCells.Count -eq 3
+        $expectedColumnCount = $headerCells.Count
 
-        if ($questionCell -eq "" -or $questionCell -match '^(?i:question)$') {
-            continue
+        $dividerLineIndex = $i + 1
+        if ($dividerLineIndex -ge $lines.Count) {
+            $stats.MalformedTableRowCount++
+        }
+        else {
+            try {
+                $dividerCells = @(Split-MarkdownTableRowStrict -Line ([string]$lines[$dividerLineIndex]))
+                if ($dividerCells.Count -ne $expectedColumnCount) {
+                    $stats.MalformedTableRowCount++
+                }
+                elseif (@($dividerCells | Where-Object { -not (Test-MarkdownDividerCell -Cell $_) }).Count -gt 0) {
+                    $stats.MalformedTableRowCount++
+                }
+            }
+            catch {
+                $stats.MalformedTableRowCount++
+            }
         }
 
-        if ($timeCell -match '(?i)(?:youtu\.be/|youtube\.com/watch\?).*(?:[?&]t=\d+s?)') {
+        for ($j = $i + 2; $j -lt $lines.Count; $j++) {
+            $line = [string]$lines[$j]
+
+            if ([string]::IsNullOrWhiteSpace($line)) {
+                break
+            }
+
+            $rowText = $line.Trim()
+            if (-not ($rowText.StartsWith("|") -and $rowText.EndsWith("|"))) {
+                break
+            }
+
+            try {
+                $cells = @(Split-MarkdownTableRowStrict -Line $rowText)
+            }
+            catch {
+                $stats.MalformedTableRowCount++
+                continue
+            }
+
+            if ($cells.Count -ne $expectedColumnCount) {
+                $stats.MalformedTableRowCount++
+                continue
+            }
+
+            $timeCell = $cells[0].Trim()
+            $questionCell = $cells[1].Trim()
+            $shortAnswerCell = $cells[2].Trim()
+
+            if ([string]::IsNullOrWhiteSpace($questionCell)) {
+                $stats.MalformedTableRowCount++
+                continue
+            }
+
             $questionTexts.Add($questionCell)
+
+            if (Test-MarkdownTimestampLink -Text $timeCell) {
+                $stats.TimestampLinkCount++
+            }
+
+            if ($expectedColumnCount -eq 3) {
+                $stats.MissingExpandedAnswerCount++
+            }
+            elseif ($expectedColumnCount -eq 4) {
+                $expandedAnswerCell = $cells[3].Trim()
+
+                if ([string]::IsNullOrWhiteSpace($expandedAnswerCell)) {
+                    $stats.EmptyExpandedAnswerCount++
+                }
+                elseif ($expandedAnswerCell -match '_Expansion pending\._') {
+                    $stats.PendingExpandedAnswerCount++
+                }
+                else {
+                    $stats.CompletedExpandedAnswerCount++
+                }
+            }
         }
+
+        break
     }
 
-    if ($questionTexts.Count -eq 0) {
+    if (-not $stats.OrdinaryTableDetected) {
         $fallbackQuestionPattern = "(?im)^\s{0,3}(?:#{2,6}\s+|[-*]\s+|\d+[\.\)]\s+).+\?\s*$"
         foreach ($match in [regex]::Matches($Text, $fallbackQuestionPattern)) {
             $questionText = $match.Value
@@ -326,30 +544,23 @@ function Get-MdQualityStats {
             $questionText = $questionText -replace "^\s{0,3}\d+[\.\)]\s+", ""
             $questionTexts.Add($questionText.Trim())
         }
+
+        $stats.TimestampLinkCount = Get-MarkdownTimestampLinkCount -Text $Text
     }
 
-    $questionCount = $questionTexts.Count
+    $stats.QuestionCount = $questionTexts.Count
+    if ($stats.QuestionCount -gt $stats.TimestampLinkCount) {
+        $stats.MissingTimestampLinkCount = $stats.QuestionCount - $stats.TimestampLinkCount
+    }
 
-    $timestampPattern = "(?i)(?:<a\s+[^>]*href=[""'][^""']*(?:youtu\.be/|youtube\.com/watch\?)[^""']*(?:[?&]t=\d+s?)[^""']*[""'][^>]*>\s*\d{1,2}:\d{2}(?::\d{2})?\s*</a>|\[\d{1,2}:\d{2}(?::\d{2})?\]\([^)]*(?:youtu\.be/|youtube\.com/watch\?)[^)]*(?:[?&]t=\d+s?)[^)]*\))"
-    $timestampLinkCount = [regex]::Matches($Text, $timestampPattern).Count
-
-    # Terms that often indicate unfinished or uncertain output.
-    $redFlagPattern = "(?i)\b(TODO|FIXME|needs review|unclear|unknown|verify|verification needed|placeholder|timestamp needed|missing timestamp|not sure|unsure)\b"
-    $redFlagCount = [regex]::Matches($Text, $redFlagPattern).Count
+    $stats.RedFlagCount = Get-EditorialRepairMarkerCount -Text $Text
 
     $normalizedQuestions = foreach ($questionText in $questionTexts) {
-        $q = $questionText
-        $q = $q -replace '<[^>]+>', ''
-        $q = $q -replace '\[[^\]]+\]\([^)]+\)', ''
-        $q = $q -replace "^\s{0,3}#{2,6}\s+", ""
-        $q = $q -replace "^\d+[\.\)]\s*", ""
-        $q = $q -replace "\\\|", "|"
-        $q = $q -replace "\s+", " "
-        $q = $q.Trim().ToLowerInvariant()
-        $q
+        ConvertTo-NormalizedQuestionText -Text $questionText
     }
 
     $duplicates = $normalizedQuestions |
+        Where-Object { -not [string]::IsNullOrWhiteSpace($_) } |
         Group-Object |
         Where-Object { $_.Count -gt 1 } |
         Sort-Object Count -Descending
@@ -363,26 +574,10 @@ function Get-MdQualityStats {
         Select-Object -First 3 |
         ForEach-Object { "$($_.Count)x $($_.Name)" }) -join "; "
 
-    return [pscustomobject]@{
-        QuestionCount            = $questionCount
-        TimestampLinkCount       = $timestampLinkCount
-        RedFlagCount             = $redFlagCount
-        DuplicateQuestionCount   = $duplicateQuestionCount
-        DuplicateQuestionSamples = $duplicateSamples
-    }
-}
+    $stats.DuplicateQuestionCount = $duplicateQuestionCount
+    $stats.DuplicateQuestionSamples = $duplicateSamples
 
-function Add-Score {
-    param(
-        [string[]]$Reasons,
-        [int]$Score,
-        [string]$Reason
-    )
-
-    return [pscustomobject]@{
-        Reasons = $Reasons + $Reason
-        Score   = $Score
-    }
+    return $stats
 }
 
 $mdFiles = Get-ChildItem -LiteralPath $questionsPath -Filter "*.md" -File
@@ -410,6 +605,8 @@ $results = foreach ($slug in $allSlugs) {
     [System.IO.FileInfo[]]$txtFilesForSlug = if ($txtBySlug.ContainsKey($slug)) { @($txtBySlug[$slug]) } else { @() }
     $mdFile = Get-FirstIndexedFile -Index $mdBySlug -Slug $slug
     $txtFile = Get-FirstIndexedFile -Index $txtBySlug -Slug $slug
+    $triageCategory = Get-TriageCategory -Slug $slug
+    $densityScoringSkipped = Test-DensityScoringSkipped -TriageCategory $triageCategory
 
     $mdStats = Get-TextStats -File $mdFile
     $txtStats = Get-TextStats -File $txtFile
@@ -460,34 +657,62 @@ $results = foreach ($slug in $allSlugs) {
     }
 
     if ($txtStats.Exists -and $mdStats.Exists) {
-        if ($txtStats.WordCount -ge $LargeTranscriptWordThreshold -and $qualityStats.QuestionCount -lt $LowQuestionCountThreshold) {
-            $score += 40
-            $reasons += "Large transcript with low question count"
+        if ($qualityStats.MalformedTableRowCount -gt 0) {
+            $score += 70
+            $reasons += "Malformed question table rows"
         }
 
-        if ($questionsPer1000Words -gt 0 -and $questionsPer1000Words -lt $LowQuestionsPerThousandWordsThreshold) {
-            $score += 30
-            $reasons += "Low questions per 1,000 transcript words"
+        if ($qualityStats.LegacyThreeColumnTable) {
+            $score += 55
+            $reasons += "Legacy three-column question table"
         }
 
-        if ($mdWordsPer1000TxtWords -gt 0 -and $mdWordsPer1000TxtWords -lt $LowMdWordsPerThousandTxtWordsThreshold) {
-            $score += 25
-            $reasons += "Low MD words per 1,000 transcript words"
+        if ($qualityStats.PendingExpandedAnswerCount -gt 0) {
+            $score += 55
+            $reasons += "Pending expanded-answer placeholders"
         }
 
-        if ($qualityStats.QuestionCount -gt 0 -and $qualityStats.TimestampLinkCount -eq 0) {
-            $score += 20
-            $reasons += "No timestamp links detected"
+        if ($qualityStats.EmptyExpandedAnswerCount -gt 0) {
+            $score += 55
+            $reasons += "Empty expanded-answer cells"
+        }
+
+        if (-not $densityScoringSkipped) {
+            if ($txtStats.WordCount -ge $LargeTranscriptWordThreshold -and $qualityStats.QuestionCount -lt $LowQuestionCountThreshold) {
+                $score += 40
+                $reasons += "Large transcript with low question count"
+            }
+
+            if ($questionsPer1000Words -gt 0 -and $questionsPer1000Words -lt $LowQuestionsPerThousandWordsThreshold) {
+                $score += 30
+                $reasons += "Low questions per 1,000 transcript words"
+            }
+
+            if ($mdWordsPer1000TxtWords -gt 0 -and $mdWordsPer1000TxtWords -lt $LowMdWordsPerThousandTxtWordsThreshold) {
+                $score += 25
+                $reasons += "Low MD words per 1,000 transcript words"
+            }
+        }
+
+        if ($qualityStats.QuestionCount -gt 0 -and $qualityStats.MissingTimestampLinkCount -gt 0) {
+            if ($qualityStats.TimestampLinkCount -eq 0) {
+                $score += 20
+                $reasons += "No timestamp links detected"
+            }
+            else {
+                $score += 15
+                $reasons += "Some question rows lack timestamp links"
+            }
         }
 
         if ($qualityStats.RedFlagCount -gt 0) {
             $score += 15
-            $reasons += "Red-flag wording detected"
+            $reasons += "Editorial repair marker detected"
         }
 
         if ($qualityStats.DuplicateQuestionCount -gt 0) {
             $score += 10
-            $reasons += "Duplicate question headings detected"
+            $reasons += "Duplicate question text detected"
         }
 
         if ($mdStats.LastWriteTime -lt $txtStats.LastWriteTime) {
@@ -507,6 +732,8 @@ $results = foreach ($slug in $allSlugs) {
     [pscustomobject]@{
         EpisodeNumber                 = Get-EpisodeNumber -Slug $slug
         Slug                          = $slug
+        TriageCategory                = $triageCategory
+        DensityScoringSkipped         = [bool]$densityScoringSkipped
         Priority                      = $priority
         RevisionScore                 = $score
         Reasons                       = ($reasons -join "; ")
@@ -525,8 +752,17 @@ $results = foreach ($slug in $allSlugs) {
         TxtWordCount                  = $txtStats.WordCount
         TxtSizeKB                     = $txtStats.SizeKB
 
+        OrdinaryTableDetected         = $qualityStats.OrdinaryTableDetected
+        TableHeaderColumnCount        = $qualityStats.TableHeaderColumnCount
+        MalformedTableRowCount        = $qualityStats.MalformedTableRowCount
+        LegacyThreeColumnTable        = $qualityStats.LegacyThreeColumnTable
         QuestionCount                 = $qualityStats.QuestionCount
         TimestampLinkCount            = $qualityStats.TimestampLinkCount
+        MissingTimestampLinkCount     = $qualityStats.MissingTimestampLinkCount
+        MissingExpandedAnswerCount    = $qualityStats.MissingExpandedAnswerCount
+        PendingExpandedAnswerCount    = $qualityStats.PendingExpandedAnswerCount
+        EmptyExpandedAnswerCount      = $qualityStats.EmptyExpandedAnswerCount
+        CompletedExpandedAnswerCount  = $qualityStats.CompletedExpandedAnswerCount
         RedFlagCount                  = $qualityStats.RedFlagCount
         DuplicateQuestionCount        = $qualityStats.DuplicateQuestionCount
         DuplicateQuestionSamples      = $qualityStats.DuplicateQuestionSamples
@@ -554,6 +790,7 @@ $high = @($sortedResults | Where-Object Priority -eq "High")
 $medium = @($sortedResults | Where-Object Priority -eq "Medium")
 $low = @($sortedResults | Where-Object Priority -eq "Low")
 $ok = @($sortedResults | Where-Object Priority -eq "OK")
+$densitySkipped = @($sortedResults | Where-Object DensityScoringSkipped)
 
 $markdown = New-Object System.Collections.Generic.List[string]
 
@@ -572,19 +809,25 @@ $markdown.Add("| Low | $($low.Count) |")
 $markdown.Add("| OK | $($ok.Count) |")
 $markdown.Add("")
 $markdown.Add("CSV report: ``$CsvName``")
+if ($densitySkipped.Count -gt 0) {
+    $markdown.Add("")
+    $markdown.Add("Density scoring skipped for $($densitySkipped.Count) special/D&D rows. Use ``-ScoreSpecialEpisodeDensity`` to include low-density scoring for those rows.")
+}
 $markdown.Add("")
 
 $markdown.Add("## Top Revision Candidates")
 $markdown.Add("")
-$markdown.Add("| Score | Priority | Episode | Slug | Questions | TXT Words | Q / 1k TXT Words | MD Words / 1k TXT Words | Reasons |")
-$markdown.Add("|---:|---|---:|---|---:|---:|---:|---:|---|")
+$markdown.Add("| Score | Priority | Episode | Category | Slug | Questions | Timestamp links | Expanded issues | TXT Words | Q / 1k TXT Words | MD Words / 1k TXT Words | Reasons |")
+$markdown.Add("|---:|---|---:|---|---|---:|---:|---:|---:|---:|---:|---|")
 
 foreach ($row in ($sortedResults | Select-Object -First 50)) {
     $episode = if ($null -ne $row.EpisodeNumber) { $row.EpisodeNumber } else { "" }
-    $safeReasons = ($row.Reasons -replace "\|", "\|")
-    $safeSlug = ($row.Slug -replace "\|", "\|")
+    $expandedIssues = $row.MissingExpandedAnswerCount + $row.PendingExpandedAnswerCount + $row.EmptyExpandedAnswerCount
+    $safeReasons = ConvertTo-MarkdownTableCell -Value $row.Reasons
+    $safeSlug = ConvertTo-MarkdownTableCell -Value $row.Slug
+    $safeCategory = ConvertTo-MarkdownTableCell -Value $row.TriageCategory
 
-    $markdown.Add("| $($row.RevisionScore) | $($row.Priority) | $episode | $safeSlug | $($row.QuestionCount) | $($row.TxtWordCount) | $($row.QuestionsPer1000TxtWords) | $($row.MdWordsPer1000TxtWords) | $safeReasons |")
+    $markdown.Add("| $($row.RevisionScore) | $($row.Priority) | $episode | $safeCategory | $safeSlug | $($row.QuestionCount) | $($row.TimestampLinkCount) | $expandedIssues | $($row.TxtWordCount) | $($row.QuestionsPer1000TxtWords) | $($row.MdWordsPer1000TxtWords) | $safeReasons |")
 }
 
 $markdown.Add("")
@@ -602,8 +845,8 @@ else {
 
     foreach ($row in $missingRows) {
         $episode = if ($null -ne $row.EpisodeNumber) { $row.EpisodeNumber } else { "" }
-        $safeReasons = ($row.Reasons -replace "\|", "\|")
-        $safeSlug = ($row.Slug -replace "\|", "\|")
+        $safeReasons = ConvertTo-MarkdownTableCell -Value $row.Reasons
+        $safeSlug = ConvertTo-MarkdownTableCell -Value $row.Slug
 
         $markdown.Add("| $($row.Priority) | $episode | $safeSlug | $($row.MdExists) | $($row.TxtExists) | $safeReasons |")
     }
@@ -613,8 +856,9 @@ $markdown.Add("")
 $markdown.Add("## Notes")
 $markdown.Add("")
 $markdown.Add("- The score is only a triage estimate.")
-$markdown.Add("- Low question density does not prove the file is bad, but it is a strong candidate for review.")
-$markdown.Add("- Very short transcripts may naturally have low question counts.")
+$markdown.Add("- Low question density does not prove the file is bad, but it can be a candidate for review on ordinary streams.")
+$markdown.Add("- Special live streams and ETS D&D streams skip low-density scoring by default because their transcript structure is different.")
+$markdown.Add("- Editorial repair markers exclude normal transcript-grounded uncertainty wording such as unknown, unclear, and not sure.")
 $markdown.Add("- CSV output is the better file for sorting and filtering.")
 
 $markdown | Set-Content -LiteralPath $markdownPath -Encoding UTF8
