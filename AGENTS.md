@@ -27,6 +27,13 @@ git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible status --short
 
 Use `rg` for fast repository searches. When editing Markdown, inspect the rendered structure manually in GitHub or a Markdown preview. Generated TXT or TSV transcript files should normally be produced by `scripts/Convert-TranscriptJson.ps1`, not hand-edited.
 
+Runner availability notes for Codex desktop sessions:
+
+- Python: do not assume `python` is on `PATH`. Use the Python executable reported by `codex_app.load_workspace_dependencies`; in this environment it is typically `C:\Users\JR\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe`. If a Python helper still fails because a package is missing, report the missing module and fall back to a manual check when practical.
+- PowerShell: repo scripts are written for PowerShell 7. Prefer `pwsh -NoProfile -File ...`; Windows PowerShell may be present as `powershell` but should not be the default for repo scripts.
+- Node and package runners: `node`, `npm`, and `pnpm` may be available directly, but if PATH lookup fails, use the Node.js or pnpm executable reported by `codex_app.load_workspace_dependencies`. If an npm wrapper fails while Node works, prefer direct checks such as `node --check` or `node --test` when they cover the same surface.
+- Hugo: do not assume `hugo` is installed or on `PATH`. Use `npm run check:site:static` or `pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo` for Hugo compatibility validation when local Hugo is unavailable; allow a longer timeout because the static check can take 45 seconds or more.
+
 ## Coding Style & Naming Conventions
 
 Use Markdown for human-facing reference pages. Keep headings clear, tables compact, and summaries factual. Prefer ASCII punctuation unless preserving names or quoted source text requires otherwise.
