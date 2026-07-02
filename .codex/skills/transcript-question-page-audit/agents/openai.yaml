@@ -1,4 +1,4 @@
 interface:
   display_name: "Transcript Question Page Audit"
-  short_description: "Fix Q&A Markdown and validate expanded answers"
-  default_prompt: "Use $transcript-question-page-audit to find and fix issues in an existing livestream Q&A Markdown page, including validating and repairing transcript-grounded expanded answers for every ordinary-page row, with minimal output."
+  short_description: "Fix searchable Q&A Markdown and validate answers"
+  default_prompt: "Use $transcript-question-page-audit to fix an existing docs/questions Q&A page against transcripts with direct searchable questions, concise third-person answers, validated timestamps and links, and minimal output."
