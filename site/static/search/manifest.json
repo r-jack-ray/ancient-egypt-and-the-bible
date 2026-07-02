@@ -1,0 +1,674 @@
+{
+  "version": 1,
+  "generated_by": "scripts/Build-SearchIndex.mjs",
+  "source_data": "site/data/questions.json",
+  "source_aliases": "site/data/search-aliases.json",
+  "document_count": 11770,
+  "minisearch_version": "7.1.2",
+  "index_url": "index.json",
+  "docs_url": "docs.json",
+  "display_fields": [
+    "search_id",
+    "episode_number",
+    "episode_title",
+    "is_numbered",
+    "is_special",
+    "row_index",
+    "content_path",
+    "question",
+    "short_answer",
+    "time_label",
+    "video_url",
+    "start_seconds"
+  ],
+  "index_fields": [
+    "episode_number_text",
+    "episode_title",
+    "question",
+    "short_answer",
+    "search_text",
+    "search_aliases"
+  ],
+  "store_fields": [
+    "search_id"
+  ],
+  "alias_config": {
+    "aliasGroups": [
+      [
+        "ramses",
+        "ramesses",
+        "rameses"
+      ],
+      [
+        "thutmose",
+        "thutmosis",
+        "tuthmosis"
+      ],
+      [
+        "amenhotep",
+        "amenophis"
+      ],
+      [
+        "akhenaten",
+        "akhnaten"
+      ],
+      [
+        "horemheb",
+        "haremhab"
+      ],
+      [
+        "hatshepsut",
+        "hatchepsut"
+      ],
+      [
+        "ahmose",
+        "ahmosis",
+        "amosis"
+      ],
+      [
+        "amenemhat",
+        "amenemhet"
+      ],
+      [
+        "senusret",
+        "senwosret",
+        "sesostris"
+      ],
+      [
+        "khufu",
+        "cheops"
+      ],
+      [
+        "khafre",
+        "chephren"
+      ],
+      [
+        "menkaure",
+        "mycerinus"
+      ],
+      [
+        "sobekhotep",
+        "sebekhotep"
+      ],
+      [
+        "amun",
+        "amon"
+      ],
+      [
+        "ramessid",
+        "ramesside",
+        "ramessides"
+      ],
+      [
+        "merneptah",
+        "merenptah"
+      ],
+      [
+        "seti",
+        "sety",
+        "sethos"
+      ],
+      [
+        "setnakhte",
+        "setnakht"
+      ],
+      [
+        "amenmesse",
+        "amenmesses"
+      ],
+      [
+        "amunherkhepeshef",
+        "amunherkhepshef",
+        "amenherkhepeshef",
+        "amenherkhepshef"
+      ],
+      [
+        "pharaoh",
+        "pharaohs",
+        "pharoah",
+        "pharoahs"
+      ],
+      [
+        "archaeology",
+        "archeology"
+      ],
+      [
+        "archaeological",
+        "archeological"
+      ],
+      [
+        "archaeologist",
+        "archeologist"
+      ],
+      [
+        "archaeologists",
+        "archeologists"
+      ],
+      [
+        "hieroglyph",
+        "hieroglyphs",
+        "heiroglyph",
+        "heiroglyphs"
+      ],
+      [
+        "nebuchadnezzar",
+        "nebuchadrezzar",
+        "nebuchadnezzer",
+        "nebuchadnezer"
+      ],
+      [
+        "cuneiform",
+        "cuniform"
+      ],
+      [
+        "mummification",
+        "mumification"
+      ],
+      [
+        "israelite",
+        "israelites",
+        "isrealite",
+        "isrealites"
+      ],
+      [
+        "semitic",
+        "semetic"
+      ],
+      [
+        "stele",
+        "stela",
+        "stelae"
+      ],
+      [
+        "papyrus",
+        "papyri"
+      ],
+      [
+        "ostracon",
+        "ostraca"
+      ],
+      [
+        "melchizedek",
+        "melchisedek"
+      ],
+      [
+        "cherub",
+        "cherubim",
+        "cherubs",
+        "cherubims"
+      ],
+      [
+        "seraph",
+        "seraphim",
+        "seraphs"
+      ],
+      [
+        "giant",
+        "giants"
+      ],
+      [
+        "rephaim",
+        "rephaite",
+        "rephaites"
+      ],
+      [
+        "anakim",
+        "anakite",
+        "anakites"
+      ],
+      [
+        "messiah",
+        "messiahs"
+      ],
+      [
+        "tabernacle",
+        "tabernacles"
+      ],
+      [
+        "theophany",
+        "theophanies"
+      ],
+      [
+        "christophany",
+        "christophanies"
+      ],
+      [
+        "dab",
+        "daba",
+        "dabaa"
+      ],
+      [
+        "thebes",
+        "luxor",
+        "waset"
+      ],
+      [
+        "memphis",
+        "mennefer"
+      ],
+      [
+        "tanis",
+        "zoan"
+      ],
+      [
+        "elephantine",
+        "yeb"
+      ],
+      [
+        "amarna",
+        "akhetaten"
+      ],
+      [
+        "saqqara",
+        "sakkara"
+      ],
+      [
+        "giza",
+        "gizeh"
+      ],
+      [
+        "septuagint",
+        "lxx"
+      ],
+      [
+        "yahweh",
+        "yhwh",
+        "yahveh"
+      ],
+      [
+        "tanakh",
+        "tanach"
+      ],
+      [
+        "ruach",
+        "ruakh",
+        "ruak"
+      ],
+      [
+        "nephesh",
+        "nefesh"
+      ],
+      [
+        "adonai",
+        "adonay"
+      ],
+      [
+        "toledot",
+        "toldot"
+      ],
+      [
+        "gehenna",
+        "gehinnom",
+        "gehinom"
+      ],
+      [
+        "masoretic",
+        "massoretic"
+      ],
+      [
+        "gen",
+        "genesis"
+      ],
+      [
+        "ps",
+        "psa",
+        "psalm",
+        "psalms"
+      ],
+      [
+        "exod",
+        "exodus"
+      ],
+      [
+        "lev",
+        "leviticus"
+      ],
+      [
+        "num",
+        "numbers"
+      ],
+      [
+        "deut",
+        "deuteronomy",
+        "dueteronomy"
+      ],
+      [
+        "josh",
+        "joshua"
+      ],
+      [
+        "judg",
+        "judges"
+      ],
+      [
+        "rth",
+        "ruth"
+      ],
+      [
+        "sam",
+        "samuel"
+      ],
+      [
+        "kgs",
+        "kings"
+      ],
+      [
+        "chr",
+        "chron",
+        "chronicles"
+      ],
+      [
+        "ezr",
+        "ezra"
+      ],
+      [
+        "neh",
+        "nehemiah"
+      ],
+      [
+        "esth",
+        "esther"
+      ],
+      [
+        "prov",
+        "proverbs"
+      ],
+      [
+        "eccl",
+        "ecclesiastes"
+      ],
+      [
+        "lam",
+        "lamentations"
+      ],
+      [
+        "isa",
+        "isaiah"
+      ],
+      [
+        "jer",
+        "jeremiah"
+      ],
+      [
+        "ezek",
+        "ezekiel"
+      ],
+      [
+        "hos",
+        "hosea"
+      ],
+      [
+        "obad",
+        "obadiah"
+      ],
+      [
+        "mic",
+        "micah"
+      ],
+      [
+        "nah",
+        "nahum"
+      ],
+      [
+        "hag",
+        "haggai"
+      ],
+      [
+        "zech",
+        "zechariah"
+      ],
+      [
+        "mal",
+        "malachi"
+      ],
+      [
+        "matt",
+        "matthew"
+      ],
+      [
+        "mk",
+        "mrk",
+        "mark"
+      ],
+      [
+        "lk",
+        "luke"
+      ],
+      [
+        "rom",
+        "romans"
+      ],
+      [
+        "cor",
+        "corinthians"
+      ],
+      [
+        "gal",
+        "galatians"
+      ],
+      [
+        "eph",
+        "ephesians"
+      ],
+      [
+        "phil",
+        "philippians"
+      ],
+      [
+        "col",
+        "colossians"
+      ],
+      [
+        "thess",
+        "thessalonians"
+      ],
+      [
+        "heb",
+        "hebrews"
+      ],
+      [
+        "jas",
+        "james"
+      ],
+      [
+        "jud",
+        "jude"
+      ],
+      [
+        "rev",
+        "revelation",
+        "apocalypse"
+      ],
+      [
+        "2",
+        "ii"
+      ],
+      [
+        "3",
+        "iii"
+      ],
+      [
+        "4",
+        "iv"
+      ],
+      [
+        "6",
+        "vi"
+      ],
+      [
+        "7",
+        "vii"
+      ],
+      [
+        "8",
+        "viii"
+      ],
+      [
+        "9",
+        "ix"
+      ]
+    ],
+    "phraseAliasGroups": [
+      [
+        "masoretic text",
+        "mt"
+      ],
+      [
+        "dead sea scrolls",
+        "dss",
+        "qumran"
+      ],
+      [
+        "amarna letters",
+        "amarna correspondence"
+      ],
+      [
+        "merneptah stele",
+        "merneptah stela",
+        "merneptah victory stela",
+        "israel stele",
+        "israel stela"
+      ],
+      [
+        "mesha stele",
+        "mesha stela",
+        "moabite stone"
+      ],
+      [
+        "tel dan stele",
+        "tel dan stela"
+      ],
+      [
+        "ipuwer papyrus",
+        "admonitions of ipuwer"
+      ],
+      [
+        "papyrus westcar",
+        "westcar papyrus"
+      ],
+      [
+        "baal",
+        "baalim",
+        "ba al"
+      ],
+      [
+        "el elyon",
+        "el elion"
+      ],
+      [
+        "el shaddai",
+        "el shadday"
+      ],
+      [
+        "tell el daba",
+        "tell el dab a",
+        "tell el dabaa"
+      ],
+      [
+        "new kingdom",
+        "nk"
+      ],
+      [
+        "first intermediate period",
+        "fip"
+      ],
+      [
+        "second intermediate period",
+        "sip"
+      ],
+      [
+        "late bronze age",
+        "lba"
+      ],
+      [
+        "dynasty 12",
+        "12th dynasty",
+        "twelfth dynasty",
+        "dynasty xii"
+      ],
+      [
+        "dynasty 13",
+        "13th dynasty",
+        "thirteenth dynasty",
+        "dynasty xiii"
+      ],
+      [
+        "dynasty 18",
+        "18th dynasty",
+        "eighteenth dynasty",
+        "dynasty xviii"
+      ],
+      [
+        "dynasty 19",
+        "19th dynasty",
+        "nineteenth dynasty",
+        "dynasty xix"
+      ],
+      [
+        "dynasty 20",
+        "20th dynasty",
+        "twentieth dynasty",
+        "dynasty xx"
+      ],
+      [
+        "dynasty 21",
+        "21st dynasty",
+        "twenty first dynasty",
+        "dynasty xxi"
+      ],
+      [
+        "dynasty 25",
+        "25th dynasty",
+        "twenty fifth dynasty",
+        "dynasty xxv"
+      ],
+      [
+        "dynasty 26",
+        "26th dynasty",
+        "twenty sixth dynasty",
+        "dynasty xxvi"
+      ],
+      [
+        "dr falk",
+        "david falk",
+        "dr david falk"
+      ],
+      [
+        "kenneth kitchen",
+        "kitchen",
+        "k a kitchen",
+        "ka kitchen"
+      ],
+      [
+        "james hoffmeier",
+        "hoffmeier"
+      ],
+      [
+        "israel finkelstein",
+        "finkelstein"
+      ],
+      [
+        "michael heiser",
+        "heiser"
+      ],
+      [
+        "titus kennedy",
+        "kennedy"
+      ],
+      [
+        "david rohl",
+        "rohl"
+      ],
+      [
+        "joshua bowen",
+        "bowen"
+      ],
+      [
+        "assassin s creed origins",
+        "assassins creed origins",
+        "assassin creed origins",
+        "aco"
+      ]
+    ]
+  }
+}

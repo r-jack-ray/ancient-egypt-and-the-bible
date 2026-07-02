@@ -298,6 +298,7 @@ docs/
   questions/                  Public curated Markdown Q&A reference pages
 scripts/
   Build-HugoSiteContent.ps1   Generates Hugo compatibility content and data from curated Markdown
+  Build-SearchIndex.mjs       Builds precomputed MiniSearch data for the Hugo search page
   Convert-TranscriptJson.ps1  PowerShell 7 converter from JSON to TXT or TSV
   Generate-live-stream-list.ps1
                                Scrapes the public YouTube streams tab into the episode index format
@@ -314,6 +315,7 @@ site/
   hugo.yaml                   Hugo site configuration
   content/                    Generated compatibility content for the Hugo site
   data/                       Generated episode/question data plus curated search aliases
+  static/search/              Generated prebuilt search index and slim result payload
   layouts/                    Hugo templates for reference pages and search
   assets/                     Hugo-managed CSS and client assets
 src/
@@ -335,11 +337,15 @@ src/
 
 `docs/questions/` contains human-edited reference pages. These are meant to be read directly on GitHub Pages and GitHub and may include cleaned-up questions, short answer summaries, and timestamp links.
 
-`site/` contains the Hugo compatibility site. During the current migration phase, generated files under `site/content/` and `site/data/` are produced from `docs/questions/` and `src/live-stream-list.md`; do not hand-edit generated question pages there.
+`site/` contains the Hugo compatibility site. During the current migration phase, generated files under `site/content/`, `site/data/`, and `site/static/search/` are produced from `docs/questions/` and `src/live-stream-list.md`; do not hand-edit generated question pages or prebuilt search files there.
 
 ## Local Dependencies
 
-PowerShell 7 is required for the repository scripts. Hugo Extended is required for full local Hugo site validation and preview.
+PowerShell 7 and Node.js are required for the repository scripts. Run `npm ci` before Hugo compatibility validation so the prebuilt MiniSearch index builder can use the pinned dependency. Hugo Extended is required for full local Hugo site validation and preview.
+
+```powershell
+npm ci
+```
 
 On Windows, install Hugo Extended globally with Winget:
 
