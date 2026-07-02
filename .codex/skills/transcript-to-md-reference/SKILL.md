@@ -1,6 +1,6 @@
 ---
 name: transcript-to-md-reference
-description: Convert Ancient Egypt and the Bible livestream transcript exports and generated TXT working transcripts into curated GitHub Pages Q&A reference pages. Use when Codex needs to turn source files under src/transcripts into Markdown files under docs/questions with all real audience questions, short transcript-grounded answer summaries, filled transcript-grounded expanded answers, question-start timestamps, and direct YouTube links like docs/questions/6-all-of-this-has-happened-before-questions.md. Do not use for auditing or repairing an existing question page; use transcript-question-page-audit for that work.
+description: Create curated Ancient Egypt and the Bible Q&A Markdown pages under docs/questions from transcript sources under src/transcripts. Use for first-pass page creation with all real audience questions, direct searchable wording, transcript-grounded short and expanded answers, question-start timestamps, and YouTube links. Do not use for auditing or repairing an existing page.
 ---
 
 # Transcript to MD Reference
@@ -30,53 +30,16 @@ Default to creating the requested page or pages with full transcript coverage an
 - Do not add outside facts, even when they appear historically correct.
 - Keep the final response concise: files created, question-row counts, validation performed, and important blockers or uncertainties.
 
-## Model And Reasoning Requirements
-
-This skill is intended for Codex execution. Do not route semantic transcript work to a local-AI model, an MCP-served local model, or another external inference system unless the user explicitly requests that override.
-
-When this skill uses Codex subagents, choose or define agent profiles that inherit the model and reasoning-effort setting selected for the parent session.
-
-Semantic creation work includes:
-
-- finding all real audience questions
-- deciding question inclusion or exclusion
-- interpreting transcript fragments
-- determining whether adjacent fragments form one question or separate questions
-- choosing readable question wording
-- writing short and expanded answer summaries
-- resolving question-start timestamps
-- creating or editing the question page
-
-For semantic creation work:
-
-- omit `model` and `model_reasoning_effort` from custom agent configuration
-- do not select an agent profile that overrides or downgrades either setting
-- keep all semantic decisions with an agent inheriting the parent settings
-- do not use local AI as a substitute when Codex usage is constrained
-
-Mechanical helper work includes file discovery, row counting, Markdown validation, link checking, timestamp arithmetic, and repository checks. Mechanical helpers should also inherit the parent settings by default. Use a different model or reasoning effort only when the user explicitly requests that override.
-
 ## Source Files
 
-Use `src/transcripts/json/*.json` as the source of record.
+Use the current repository layout:
 
-Use `src/transcripts/txt/*.txt` as the default working transcripts for efficient inspection and Q&A curation. These TXT files are derived from the JSON files and should have the same base slug:
+1. Routing index: `src/live-stream-list.md`
+2. Source transcript: `src/transcripts/json/<slug>.json`
+3. Working transcript: `src/transcripts/txt/<slug>.txt`
+4. TSV only when exact seconds or generated links are useful.
 
-```text
-src/transcripts/json/12-the-quorum-of-the-twelve.json
-src/transcripts/txt/12-the-quorum-of-the-twelve.txt
-```
-
-The generated TXT corpus should normally cover all non-empty JSON transcript exports.
-
-Use `src/live-stream-list.md` to confirm:
-
-- stream identifier or episode number, when present
-- stream title
-- YouTube video URL
-- slug and filename pattern
-
-If the JSON source is missing for a stream listed in `src/live-stream-list.md`, report the missing transcript source and do not invent a curated page.
+Use TXT as the default curation surface. Use JSON as the source of record to resolve ambiguity, verify raw fields, or generate missing TXT.
 
 If the JSON source exists but the TXT file is missing, generate TXT before curating:
 
@@ -84,77 +47,33 @@ If the JSON source exists but the TXT file is missing, generate TXT before curat
 pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/12-the-quorum-of-the-twelve.json
 ```
 
-The converter writes to `src/transcripts/txt/` by default, overwrites generated output by default, and emits one line per transcript segment:
-
-```text
-[22] 3:58 okay um how prevalent were the gnostics in egypt
-```
-
-If the converter reports that no transcript segments were found, treat the JSON as an empty placeholder. Do not invent a curated page. Note the blocker and move to the next requested stream only when the user asked for a batch such as "next two episodes" or "next two streams."
-
-Known documented transcript blockers may exist, such as disabled-transcript placeholder JSON files. Confirm current blockers from `README.md`, `AGENTS.md`, the JSON file contents, and converter output before reporting final status.
-
-For structured processing, the same script can emit TSV under `src/transcripts/tsv/`:
+If the converter reports no transcript segments, treat the JSON as an empty placeholder and do not invent a page. For TSV:
 
 ```powershell
 pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/12-the-quorum-of-the-twelve.json -Format Tsv
 ```
 
-Use TSV when many exact `StartSeconds` values or generated links need to be resolved or validated.
-
-Do not read the full JSON when TXT or TSV already supplies the necessary transcript content and timing. Use JSON only when the derived files cannot answer a specific source question.
-
-If legacy curated Markdown exists under `src/md/`, `transcripts/livestreams/md/`, or other non-`docs/questions/` paths, treat it as old output. Do not add new public Q&A pages there.
-
 ## Output Location
 
-Write curated Q&A Markdown pages under:
-
-```text
-docs/questions/
-```
-
-Use filenames like:
+Write curated Q&A Markdown pages under `docs/questions/`.
 
 ```text
 docs/questions/<slug>-questions.md
 ```
 
-Examples:
-
-```text
-docs/questions/6-all-of-this-has-happened-before-questions.md
-docs/questions/208-super-chat-questions.md
-```
-
-If the slug already ends in `questions`, use `.md` instead of duplicating the word, as in:
+If the slug already ends in `questions`, use `.md` instead of duplicating the word:
 
 ```text
 docs/questions/5-five-and-even-more-questions.md
 ```
 
-Special-purpose pages may diverge from the slug when the page indexes a narrower topic. For example, `docs/questions/208-super-chat-questions.md` is sourced from `src/transcripts/json/208-hysterical-context-error.json` but indexes only super chats. Use special-purpose filenames only when explicitly requested.
-
-When creating a special-purpose page, include a short note near the top that identifies the page as a subset index, such as super chats, a topic-only index, or another narrow slice. Ordinary full Q&A pages should use the source stream slug.
-
-Do not write new public Q&A pages under:
-
-```text
-src/md/
-transcripts/livestreams/md/
-```
-
-Those are legacy or incorrect output locations for this GitHub Pages layout.
+Use special-purpose filenames only when explicitly requested. Ordinary full Q&A pages use the source stream slug.
 
 ## Batch Selection
 
-When the user asks for the "next" episode pages in this repository, interpret that as the next missing ordinary curated Markdown pages in ascending episode order from the numbered entries in `src/live-stream-list.md`, skipping pages that already exist under `docs/questions/`.
+When the user asks for the "next" episode pages, use the next missing ordinary pages in ascending numbered order from `src/live-stream-list.md`, based on actual files under `docs/questions/`. Treat README/status text as hints only.
 
-Treat `README.md` and `AGENTS.md` backlog or status notes as hints only. Verify the actual next missing pages against the files on disk because status text can drift.
-
-If a blocked placeholder is encountered, note it and continue only when the user's requested batch count can still be satisfied by later non-empty transcript sources. For example, if the user asks for "next two episodes" and the next candidate has an empty transcript placeholder, report that blocker and continue to the next transcript-bearing episode so the user still gets two processable pages when possible.
-
-For non-numbered streams, preserve their order from `src/live-stream-list.md` unless the user specifies another ordering rule.
+If a blocked placeholder appears in a batch, report it and continue only when later non-empty transcript sources can still satisfy the requested count. Preserve `src/live-stream-list.md` order for non-numbered streams unless the user gives another order.
 
 ## Creation Workflow
 
@@ -333,21 +252,25 @@ When the TXT transcript line has only the display timestamp, convert it to secon
 
 ## Wording And Summary Rules
 
-Question wording may be cleaned for readability, but stay conservative:
+Question wording should create direct, searchable questions:
 
-- remove filler only when meaning is unchanged
-- combine split transcript fragments
-- correct obvious transcript artifacts
-- preserve names, titles, Bible references, Egyptian terms, dates, and chronology markers
+- write direct questions, not transcript fragments or topic labels
+- preserve the user's wording when it helps specificity or searchability
+- remove filler, false starts, and repeated setup when meaning is unchanged
+- combine split transcript fragments and correct obvious transcript artifacts
+- keep names, titles, Bible references, Egyptian terms, dates, and chronology markers searchable
 - do not add context from the answer into the question
 - do not silently resolve an unclear proper noun or technical term from outside knowledge
 
-Short answers must be transcript-grounded:
+Answer wording should be concise, third-person, and useful in search results:
 
-- reflect what the speaker actually says
-- preserve caveats and uncertainty
-- stay short enough for table scanning
+- write short and expanded answers as concise third-person summaries of the host's response
+- reflect what the host actually says
+- preserve caveats, uncertainty, disagreement, and limits
 - avoid outside research
+- do not begin routine answers with "He said," "He argued," or "He explained."
+- use attribution only when the answer depends on the host's interpretation, uncertainty, disagreement, or stated opinion
+- prefer compact phrasing suitable for search results, tables, and index pages
 - preserve the difference between what the question asks and what the answer actually supports
 
 Expanded answers:
@@ -391,65 +314,35 @@ Pages under `docs/questions/` are public-facing GitHub Pages content.
 
 When adding new curated pages, update `README.md` if it maintains an explicit episode-link list or current-status summary. Compare `docs/questions/*.md` against the README curated episode list before finishing, and fix drift when the README claims a range or page count that no longer matches the files.
 
-For a large number of pages, prefer a grouped Markdown index under `docs/questions/`:
-
-```text
-docs/questions/index.md
-docs/questions/1-the-debug-episode-questions.md
-docs/questions/2-bugs-bugs-and-fixes-questions.md
-```
-
-If migrating old generated pages, move them from `src/md/` or `transcripts/livestreams/md/` to `docs/questions/` and update any README, index, or search-page references that still point at old locations.
-
 ## Batch And Parallel Guidance
 
 - Assign at most one semantic creation agent per source stream and output page.
 - When processing multiple files in parallel, give each semantic subagent exclusive ownership of a distinct transcript and output page.
-- Every semantic subagent must inherit the parent session's model and reasoning effort.
-- Do not use local AI for semantic page creation unless the user explicitly requests it.
 - Do not treat candidate-search output as complete transcript coverage.
 - Do not let two agents create, regenerate, or review the same page concurrently.
 - Serialize changes to shared files such as `README.md`, `docs/questions/index.md`, status notes, and `src/transcript-audit.log` through the parent agent.
 - Semantic subagents must not append `src/transcript-audit.log`; return the validated counts and concise record note to the parent agent.
 - If an agent cannot demonstrate full transcript coverage for its assigned file, do not describe that page as complete or append a successful creation record.
 
-## Creation And Regeneration Tracking
+## Creation Tracking
 
 Use `src/transcript-audit.log` as an append-only tracking record for completed page creation and explicit regeneration. The log records work history; it is not transcript evidence and must not influence the independent first-pass analysis.
 
-### Before Writing
+Before writing, build the complete question inventory independently. Use `question_count_before=0` for new pages; for explicit regeneration, count the existing page's actual question rows first.
 
-- Do not read or use previous audit-log entries before independently evaluating the transcript and building the complete question inventory.
-- Determine `question_count_before`:
-  - use `0` when creating a page that does not already exist
-  - when the user explicitly requested regeneration or replacement, count the existing page's actual question data rows before changing it
-- Count only actual question rows. Do not count the table header, separator row, or transcript notes.
-
-### After Writing And Validation
-
-- Count the final question data rows as `question_count_after`.
-- Calculate:
+After writing and validation, count final question rows as `question_count_after` and calculate:
 
 ```text
 question_count_change = question_count_after - question_count_before
 ```
 
-- Confirm that `question_count_before`, `question_count_after`, and `question_count_change` agree.
-- After the independent creation or regeneration work is complete, search only for existing log entries matching the target filename when prior history may help identify unresolved concerns or compare earlier work.
-- Treat previous entries as clues and history, never as proof that a question, answer summary, or timestamp is correct.
-- Do not read or summarize the entire audit log merely to process one page.
-- Append exactly one new record for each successfully created or regenerated page.
-- Preserve all existing records without rewriting, sorting, or normalizing them.
-- Do not add or infer an `audit_pass` number. The existing log does not guarantee a complete audit sequence.
-- Do not append a success record when a page was not created because of a missing, empty, or otherwise blocked transcript source.
-- In batch work, semantic subagents must not append the shared log. The parent agent appends records serially after validating each page.
+Append exactly one record for each successfully created or regenerated page after validation. Preserve existing records without rewriting, sorting, or normalizing them. Do not append a success record for a blocked or uncreated page.
 
 Record:
 
 - ISO 8601 full local timestamp
 - created or regenerated file short name and extension
-- semantic creation model
-- semantic creation reasoning effort
+- semantic creation model and effort, or `unknown`
 - `coverage=full`
 - `question_count_before`
 - `question_count_after`
@@ -457,27 +350,13 @@ Record:
 - whether the file could use further inspection
 - a concise note identifying first-pass creation or explicit regeneration and any important uncertainty
 
-For `could_use_further_inspection`:
-
-- use `yes` for ordinary first-pass creation because the page has not yet received a separate audit pass
-- for an explicit regeneration, use `yes` when material uncertainty remains and `no` only when no important unresolved concern was found
-- do not describe a first-pass creation record as an audit
-
-For model and effort fields:
-
-- record runtime-reported values when available
-- otherwise record the parent session's selected values because semantic agents are required to inherit them
-- if a value cannot be determined, record `unknown`
-- do not record a mechanical helper's model or effort as the semantic creation model or effort
-- do not guess a model name from behavior or output quality
+Use `could_use_further_inspection=yes` for ordinary first-pass creation because it has not received a separate audit pass. Do not describe first-pass creation as an audit.
 
 Example first-pass record; replace placeholders and counts with actual values:
 
 ```text
 2026-06-27T12:34:56-05:00 265-the-pharaoh-of-swing-questions.md; model=MODEL_NAME; effort=EFFORT_LEVEL; coverage=full; question_count_before=0; question_count_after=68; question_count_change=+68; could_use_further_inspection=yes; created first-pass page from full transcript coverage; separate audit not yet performed.
 ```
-
-Existing records in older formats may remain unchanged.
 
 ## Validation
 
@@ -497,7 +376,7 @@ Get-Content $path | Where-Object { $_ -match '^\|' } | ForEach-Object {
 
 Select-String -Path $path -Pattern 'target="_blank" rel="noopener noreferrer"'
 Select-String -Path $path -Pattern 'https://youtu\.be/[^"? ]+[" ]'
-rg -n "\[Watch on YouTube\]|\[PLACEHOLDER\]|transcripts/livestreams/md|src/md" $path
+rg -n "\[PLACEHOLDER\]|_Expansion pending\\._" $path
 git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible diff --check -- $path
 git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible diff -- $path
 ```
@@ -516,13 +395,12 @@ If a new curated page was added, ensure `README.md` links to the new page when t
 
 ## Final Response
 
-Keep the final response short. Report:
+Keep the final response brief. Use the repo's default closeout shape:
 
-- created page paths
-- actual question-row count for each page
-- validation performed
-- confirmation that the creation or regeneration record was appended
-- blockers or material uncertainty
+- Changed:
+- Files:
+- Checked:
+- Notes:
 
 Do not provide a long transcript-analysis report unless the user explicitly requests one.
 
@@ -531,13 +409,14 @@ Do not provide a long transcript-analysis report unless the user explicitly requ
 A task using this skill is complete only when the relevant items are true:
 
 - output is under `docs/questions/`
-- no new public Q&A output was written under `src/md/` or `transcripts/livestreams/md/`
 - an existing curated page was not overwritten without explicit user direction
 - the TXT transcript was inspected from beginning to end without gaps
 - candidate searches were used only as an accelerator, not as the sole completeness method
 - all real audience-question turns found during full coverage were considered for inclusion
 - retained questions are supported by transcript text
+- retained questions are written as direct, searchable questions
 - answer summaries are supported by transcript text and preserve uncertainty
+- short and expanded answers use concise third-person phrasing and avoid routine "He said" openings
 - no outside facts were added
 - timestamps point to question starts
 - timestamp links use `?t=` seconds
@@ -546,7 +425,7 @@ A task using this skill is complete only when the relevant items are true:
 - ordinary Q&A rows use four columns with a non-empty expanded-answer cell
 - expanded answers are populated with transcript-grounded prose for ordinary pages
 - Markdown tables render cleanly
-- no placeholder links or legacy links remain
+- no placeholder links remain
 - `question_count_before`, `question_count_after`, and `question_count_change` agree
 - the final question-row count was checked
 - the creation or regeneration record was appended only after independent transcript analysis and page validation
@@ -555,7 +434,5 @@ A task using this skill is complete only when the relevant items are true:
 - no successful creation record was appended for a blocked or uncreated page
 - generated TXT or TSV files, when created, were produced by `scripts/Convert-TranscriptJson.ps1`
 - `README.md` explicit episode links and current-status text are updated when needed
-- semantic subagents, when used, inherited the parent model and reasoning effort
-- no local AI was used for semantic work unless the user explicitly requested it
 - shared navigation or status files were updated serially
 - the diff was reviewed

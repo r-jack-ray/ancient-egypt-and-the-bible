@@ -1,6 +1,6 @@
 ---
 name: transcript-question-page-audit
-description: Find and fix issues in existing Ancient Egypt and the Bible curated question Markdown pages under docs/questions against TXT and JSON transcript sources. Use for low-output correction passes, timestamp verification, missing-question repair, unsupported short or expanded answers, table/link validation including four-column expanded-answer tables, and minimal-diff edits. Do not use for first-pass transcript-to-Markdown generation.
+description: Find and fix issues in existing Ancient Egypt and the Bible Q&A Markdown pages under docs/questions against transcript sources. Use for low-output correction passes covering missing questions, timestamps, answer support, four-column tables, and links. Do not use for first-pass page creation.
 ---
 
 # Transcript Question Page Audit
@@ -18,33 +18,6 @@ Default to **find and fix** with minimal user-facing output.
 - Do not invent transcript content or outside facts.
 
 Use `transcript-to-md-reference` instead for first-pass page creation.
-
-## Model And Reasoning Requirements
-
-When this skill uses subagents, choose or define agent profiles that inherit the
-model and reasoning-effort setting selected for the parent session.
-
-Semantic audit work includes:
-
-- discovering missing questions
-- deciding question inclusion or exclusion
-- interpreting transcript fragments
-- choosing question wording
-- writing or revising short and expanded answer summaries
-- validating expanded answers for every ordinary-page row
-- resolving timestamps
-- editing the question page
-
-For semantic audit work:
-
-- omit `model` and `model_reasoning_effort` from custom agent configuration
-- do not select an agent profile that overrides or downgrades either setting
-- keep all semantic decisions with an agent inheriting the parent settings
-
-Mechanical helper work includes row counting, Markdown validation, link checking,
-timestamp arithmetic, and repository checks. Mechanical helpers should also
-inherit the parent settings by default. Use a different model or reasoning effort
-only when the user explicitly requests that override.
 
 ## Sources
 
@@ -202,27 +175,31 @@ When TSV exists, prefer `StartSeconds` and generated links over hand conversion.
 
 ## Wording And Summary Rules
 
-Question wording may be cleaned for readability, but stay conservative:
+Question wording should create direct, searchable questions:
 
-- remove filler only when meaning is unchanged
-- combine split transcript fragments
-- correct obvious transcript artifacts
-- preserve names, titles, Bible references, Egyptian terms, dates, and chronology markers
+- write direct questions, not transcript fragments or topic labels
+- preserve the user's wording when it helps specificity or searchability
+- remove filler, false starts, and repeated setup when meaning is unchanged
+- combine split transcript fragments and correct obvious transcript artifacts
+- keep names, titles, Bible references, Egyptian terms, dates, and chronology markers searchable
 - do not add context from the answer into the question
 
-Short answers must be transcript-grounded:
+Answer wording should be concise, third-person, and useful in search results:
 
-- reflect what the speaker actually says
-- preserve caveats and uncertainty
-- stay short enough for table scanning
+- write short and expanded answers as concise third-person summaries of the host's response
+- reflect what the host actually says
+- preserve caveats, uncertainty, disagreement, and limits
 - avoid outside research
+- do not begin routine answers with "He said," "He argued," or "He explained."
+- use attribution only when the answer depends on the host's interpretation, uncertainty, disagreement, or stated opinion
+- prefer compact phrasing suitable for search results, tables, and index pages
 
 Expanded answers:
 
 - are required for ordinary pages unless the user explicitly asks not to populate them
 - must be transcript-grounded, useful as a standalone explanation, and more detailed than the short answer
 - must not contradict the short answer
-- should preserve the speaker's caveats, uncertainty, and limits rather than smoothing them away
+- should preserve the host's caveats, uncertainty, and limits rather than smoothing them away
 - should add transcript-supported detail such as reasoning, examples, qualifications, and distinctions that help a reader understand the answer without rewatching the segment
 - should be updated whenever the short answer, question wording, timestamp, split/merge decision, or supporting transcript window changes
 - must not leave `_Expansion pending._` on ordinary pages under the filled-answer baseline
@@ -299,56 +276,16 @@ git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible diff -- $path
 Also verify display timestamps match `?t=` seconds for changed rows or when links were edited.
 For ordinary pages, also verify the table header is exactly `| Time | Question | Short answer / answer direction | Expanded answer |`, that every data row begins with a timestamp link, and that every expanded-answer cell is non-empty, transcript-grounded text. Treat any remaining `_Expansion pending._` row as an explicit deferral or blocker; strict table validation will fail until it is resolved. Do not treat a passing structural validator as proof that expanded-answer prose is transcript-supported; semantic support still requires transcript inspection.
 
-## Output Modes
+## Final Response
 
-### Default Fix Mode
+Keep the final response brief. Use the repo's default closeout shape:
 
-Return only:
+- Changed:
+- Files:
+- Checked:
+- Notes:
 
-```markdown
-## Changes Made
-
-- concise summary
-
-## Validation
-
-- checks run and result
-
-## Remaining Uncertainties
-
-- "None found" or important items only
-```
-
-Keep this short. Do not list every supported row or every candidate found.
-
-### Audit-Only Mode
-
-Only when explicitly requested, do not edit files. Return a compact report:
-
-```markdown
-## Audit Report
-
-### Page
-
-`docs/questions/FILE.md`
-
-### Overall Status
-
-PASS / NEEDS FIX / STRUCTURAL ISSUE
-
-### Findings
-
-- timestamp - issue - recommended fix
-
-### Formatting And Link Issues
-
-- issue list
-
-### Recommended Repair Plan
-
-1. highest-confidence fix
-2. remaining uncertainty
-```
+Mention important blockers or uncertainty. Do not list every transcript candidate or every unchanged row unless the user asked for a report.
 
 ## Batch Guidance
 
@@ -358,33 +295,19 @@ PASS / NEEDS FIX / STRUCTURAL ISSUE
 - Every semantic subagent must inherit the parent session's model and reasoning effort.
 - Do not treat candidate-search output as complete transcript coverage.
 
-## Audit and Fix Tracking
+## Audit Log
 
 Use `src/transcript-audit.log` as an append-only tracking record, not as transcript evidence.
 
-### Before Editing
-
-- Count the existing question data rows in the target page.
-- Store the count as `question_count_before`.
-- Count only actual question rows. Do not count the table header, separator row, or transcript notes.
-- Do not read or use previous audit-log entries before independently evaluating the page against the transcript.
-
-### After Editing And Validation
-
-- Count the final question data rows as `question_count_after`.
-- Calculate:
+Before editing, count actual question rows as `question_count_before`. After editing and validation, count final question rows as `question_count_after` and calculate:
 
 ```text
 question_count_change = question_count_after - question_count_before
 ```
 
-- Confirm that the recorded counts and change agree.
-- After the independent audit is complete, search only for existing log entries matching the target filename when prior history may help identify unresolved
-  concerns or compare earlier work.
-- Treat previous audit entries as clues and history, not as proof that a row, answer, or timestamp is correct.
-- Do not read or summarize the entire audit log merely to process one page.
-- Append exactly one new record. Preserve all existing records without rewriting or normalizing them.
-- Do not add or infer an `audit_pass` number. The existing log does not guarantee a complete audit sequence.
+Confirm the recorded counts agree. Do not read or summarize the whole log before auditing. After the independent audit, search only for target-file records if prior history may clarify unresolved concerns.
+
+Append exactly one new record after validation. Preserve existing records without rewriting, sorting, or normalizing them. Do not add or infer an `audit_pass` number.
 
 Record:
 
@@ -400,13 +323,7 @@ Record:
 - `expanded_answers_pending=0` for ordinary pages, or the exact pending count plus explicit deferral/blocker reason if the user chose to leave a placeholder unresolved
 - a concise note describing important changes or remaining uncertainty
 
-For model and effort fields:
-
-- record runtime-reported values when available
-- otherwise record the parent session's selected values because semantic agents are required to inherit them
-- if a value cannot be determined, record `unknown`
-- do not record a mechanical helper's model or effort as the semantic audit model or effort
-- do not guess a model name from behavior or output quality
+For model and effort fields, use runtime-reported values when available; otherwise use the parent session values or `unknown`. Do not record a mechanical helper's model or effort as the semantic audit model or effort.
 
 Example shape; replace placeholders with the actual values:
 
@@ -414,17 +331,17 @@ Example shape; replace placeholders with the actual values:
 2026-06-21T12:34:56-05:00 108-the-many-views-of-heck-questions.md; model=MODEL_NAME; effort=EFFORT_LEVEL; coverage=full; question_count_before=6; question_count_after=31; question_count_change=+25; could_use_further_inspection=no; expanded_answers_pending=0; added high-confidence missing questions and validated retained rows, timestamps, and expanded answers.
 ```
 
-Existing records in older formats may remain unchanged.
-
 ## Done Checklist
 
 Finish only when relevant items are true:
 
 - retained and added questions are transcript-supported
+- retained and added questions are written as direct, searchable questions
 - timestamps point to question starts
 - `?t=` seconds match display timestamps
 - timestamp links include `target="_blank"` and `rel="noopener noreferrer"`
 - short answers are supported and preserve uncertainty
+- short and expanded answers use concise third-person phrasing and avoid routine "He said" openings
 - expanded answers are populated, transcript-supported, consistent with short answers, and preserve uncertainty
 - no `_Expansion pending._` cells remain unless the user explicitly deferred them and the final output/audit log records the blocker
 - no outside facts were added
