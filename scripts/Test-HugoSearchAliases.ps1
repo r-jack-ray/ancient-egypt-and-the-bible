@@ -203,10 +203,20 @@ function Get-MatchingRowCountForAllIndexedTerms {
         [Parameter(Mandatory = $true)][string[]]$Terms
     )
 
+    return @(Get-MatchingRowIndexesForAllIndexedTerms -Index $Index -QuestionSearchRows $QuestionSearchRows -Terms $Terms).Count
+}
+
+function Get-MatchingRowIndexesForAllIndexedTerms {
+    param(
+        [Parameter(Mandatory = $true)][hashtable]$Index,
+        [Parameter(Mandatory = $true)][object[]]$QuestionSearchRows,
+        [Parameter(Mandatory = $true)][string[]]$Terms
+    )
+
     $candidateRows = $null
     foreach ($term in $Terms) {
         if (-not $Index.ContainsKey($term)) {
-            return 0
+            return @()
         }
 
         $rows = $Index[$term]
@@ -215,7 +225,7 @@ function Get-MatchingRowCountForAllIndexedTerms {
         }
     }
 
-    $matchingRowCount = 0
+    $matchingRows = New-Object System.Collections.Generic.List[int]
     foreach ($rowIndex in $candidateRows) {
         $haystackSet = $QuestionSearchRows[$rowIndex].HaystackSet
         $hasAllTerms = $true
@@ -227,11 +237,70 @@ function Get-MatchingRowCountForAllIndexedTerms {
         }
 
         if ($hasAllTerms) {
-            $matchingRowCount++
+            $matchingRows.Add([int]$rowIndex)
         }
     }
 
-    return $matchingRowCount
+    return $matchingRows.ToArray()
+}
+
+function Get-OptionalPropertyValue {
+    param(
+        [Parameter(Mandatory = $true)][object]$Object,
+        [Parameter(Mandatory = $true)][string]$Name
+    )
+
+    $property = $Object.PSObject.Properties[$Name]
+    if ($null -eq $property) {
+        return $null
+    }
+
+    return $property.Value
+}
+
+function Test-QuestionMatchesExpectedSearchResult {
+    param(
+        [Parameter(Mandatory = $true)][object]$Question,
+        [Parameter(Mandatory = $true)][object]$Expected
+    )
+
+    $questionPage = Get-OptionalPropertyValue -Object $Expected -Name "questionPage"
+    if ($null -ne $questionPage -and [string]$Question.question_page -ne [string]$questionPage) {
+        return $false
+    }
+
+    $timeLabel = Get-OptionalPropertyValue -Object $Expected -Name "timeLabel"
+    if ($null -ne $timeLabel -and [string]$Question.time_label -ne [string]$timeLabel) {
+        return $false
+    }
+
+    $questionContains = Get-OptionalPropertyValue -Object $Expected -Name "questionContains"
+    if ($null -ne $questionContains) {
+        $questionText = [string]$Question.question
+        if ($questionText.IndexOf([string]$questionContains, [StringComparison]::OrdinalIgnoreCase) -lt 0) {
+            return $false
+        }
+    }
+
+    return $true
+}
+
+function Format-ExpectedSearchResult {
+    param([Parameter(Mandatory = $true)][object]$Expected)
+
+    $parts = New-Object System.Collections.Generic.List[string]
+    foreach ($propertyName in @("questionPage", "timeLabel", "questionContains")) {
+        $value = Get-OptionalPropertyValue -Object $Expected -Name $propertyName
+        if ($null -ne $value) {
+            $parts.Add("$propertyName='$value'")
+        }
+    }
+
+    if ($parts.Count -eq 0) {
+        return "<empty expected match>"
+    }
+
+    return ($parts -join ", ")
 }
 
 function Get-NormalizedSearchPhrase {
@@ -481,13 +550,34 @@ foreach ($test in $queryTests) {
         throw "Query test has an empty query."
     }
 
-    $matchingRowCount = Get-MatchingRowCountForAllIndexedTerms -Index $haystackRowIndex -QuestionSearchRows $questionSearchRowArray -Terms $queryTokens
+    $matchingRowIndexes = @(Get-MatchingRowIndexesForAllIndexedTerms -Index $haystackRowIndex -QuestionSearchRows $questionSearchRowArray -Terms $queryTokens)
+    $matchingRowCount = $matchingRowIndexes.Count
 
-    if ($null -ne $test.minResults -and $matchingRowCount -lt [int]$test.minResults) {
-        throw "Query '$query' returned $matchingRowCount rows; expected at least $($test.minResults)."
+    $minResults = Get-OptionalPropertyValue -Object $test -Name "minResults"
+    $maxResults = Get-OptionalPropertyValue -Object $test -Name "maxResults"
+    if ($null -ne $minResults -and $matchingRowCount -lt [int]$minResults) {
+        throw "Query '$query' returned $matchingRowCount rows; expected at least $minResults."
     }
-    if ($null -ne $test.maxResults -and $matchingRowCount -gt [int]$test.maxResults) {
-        throw "Query '$query' returned $matchingRowCount rows; expected at most $($test.maxResults)."
+    if ($null -ne $maxResults -and $matchingRowCount -gt [int]$maxResults) {
+        throw "Query '$query' returned $matchingRowCount rows; expected at most $maxResults."
+    }
+
+    $expectedMatchesProperty = $test.PSObject.Properties["expectedMatches"]
+    if ($null -ne $expectedMatchesProperty) {
+        $expectedMatches = @($expectedMatchesProperty.Value)
+        foreach ($expectedMatch in $expectedMatches) {
+            $foundExpectedMatch = $false
+            foreach ($rowIndex in $matchingRowIndexes) {
+                if (Test-QuestionMatchesExpectedSearchResult -Question $questionSearchRowArray[$rowIndex].Question -Expected $expectedMatch) {
+                    $foundExpectedMatch = $true
+                    break
+                }
+            }
+
+            if (-not $foundExpectedMatch) {
+                throw "Query '$query' did not return expected match: $(Format-ExpectedSearchResult -Expected $expectedMatch)."
+            }
+        }
     }
 }
 
