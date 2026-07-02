@@ -87,6 +87,14 @@ When a request involves Hugo site search, search indexing, missing or noisy sear
 
 When a curated page needs transcript inspection, prefer the matching `src/transcripts/txt/<slug>.txt` file. The generated TXT files are optimized for `rg`, `Select-String`, and bounded `Get-Content` review. Use the JSON source of record to resolve ambiguity, confirm raw fields, or regenerate derived outputs; use TSV only when structured `StartSeconds` and `Link` columns are useful.
 
+When requesting `transcript-question-page-audit`, prefer project-root-relative paths and the direct phrase:
+
+```text
+docs/questions/<file>.md use $transcript-question-page-audit find and fix issues silently
+```
+
+Add `with full transcript coverage` when the goal includes finding missing questions.
+
 If a matching TXT file does not exist and the JSON source is non-empty, generate it with:
 
 ```powershell
@@ -99,7 +107,7 @@ If the converter reports that no transcript segments were found, treat the JSON 
 
 Use `./task-notes/` for transient in-project task notes, including AI session summaries and temporary task documentation. Create the directory if it does not exist. Do not place generated transcript TXT/TSV files here; those belong under `src/transcripts/`.
 
-`task-notes/README.md` is the committed policy file for this notes area. Individual note files are local transient artifacts and are ignored by git.
+`task-notes/README.md` is the committed policy file for this notes area.
 
 AI session summary filenames must use this format:
 

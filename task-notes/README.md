@@ -2,7 +2,7 @@
 
 Use this directory for transient in-project task notes, including AI session summaries and temporary task documentation.
 
-Individual note files are local artifacts and are ignored by git. Commit durable project knowledge to `README.md`, `AGENTS.md`, or another stable documentation file instead.
+Use durable project files such as `README.md`, `AGENTS.md`, or another stable documentation file for guidance that should apply outside a task note.
 
 ## Filename Format
 
