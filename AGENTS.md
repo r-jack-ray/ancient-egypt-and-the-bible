@@ -10,7 +10,8 @@ This repository is a Questions & Answers reference archive for the Ancient Egypt
 - `src/transcripts/tsv/`: optional generated TSV files, created only when structured columns are useful.
 - `docs/questions/`: curated GitHub-readable Q&A reference pages with timestamp links, short answers, and filled transcript-grounded expanded answers.
 - `scripts/Convert-TranscriptJson.ps1`: PowerShell 7 converter from transcript JSON to TXT or TSV.
-- `task-notes/`: transient in-project notes and AI session summaries. Create this directory if it is missing.
+- `reports/`: ignored generated reports, validation output, smoke-test output, and triage artifacts.
+- `task-notes/`: transient in-project notes, AI session summaries, and temporary human task documentation. Create this directory if it is missing.
 
 There is no application source-code module tree, automated test directory, or asset pipeline.
 
@@ -105,7 +106,7 @@ If the converter reports that no transcript segments were found, treat the JSON 
 
 ### Notes Placement and Configuration
 
-Use `./task-notes/` for transient in-project task notes, including AI session summaries and temporary task documentation. Create the directory if it does not exist. Do not place generated transcript TXT/TSV files here; those belong under `src/transcripts/`.
+Use `./task-notes/` for transient in-project task notes, including AI session summaries and temporary human task documentation. Create the directory if it does not exist. Do not place generated transcript TXT/TSV files here; those belong under `src/transcripts/`. Do not place generated reports, validation output, smoke-test output, CSV/JSON report data, or Markdown report files here; those belong under `./reports/`.
 
 `task-notes/README.md` is the committed policy file for this notes area.
 

@@ -296,6 +296,8 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 ```text
 docs/
   questions/                  Public curated Markdown Q&A reference pages
+reports/
+  Generated local reports, validation output, smoke-test output, and triage artifacts
 scripts/
   Build-HugoSiteContent.ps1   Generates Hugo compatibility content and data from curated Markdown
   Build-SearchIndex.mjs       Builds precomputed MiniSearch data for the Hugo search page
