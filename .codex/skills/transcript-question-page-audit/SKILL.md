@@ -186,12 +186,16 @@ Question wording should create direct, searchable questions:
 
 Answer wording should be concise, third-person, and useful in search results:
 
-- write short and expanded answers as concise third-person summaries of the host's response
+- write short and expanded answers as concise third-person summaries of the transcript-supported answer
 - reflect what the host actually says
 - preserve caveats, uncertainty, disagreement, and limits
 - avoid outside research
-- do not begin routine answers with "He said," "He argued," or "He explained."
-- use attribution only when the answer depends on the host's interpretation, uncertainty, disagreement, or stated opinion
+- make routine answer cells answer-shaped, not report-shaped: prefer `Pyramids were resurrection machines...` over `The host described pyramids as...`
+- use `docs/questions/266-three-major-questions-questions.md` as the style model for shortened updates: `The Greek term means...`, `Wine was already present...`, and `The ark's danger is tied...`
+- do not mechanically replace "He said" with "The host said"; if attribution is unnecessary, remove the attribution frame entirely
+- avoid routine openings such as "He said," "He argued," "He explained," "The host said," "The host argued," or "The host explained"
+- use attribution only when it carries necessary meaning, such as the host's interpretation, uncertainty, disagreement, stated opinion, personal preference, or personal experience
+- keep compact attribution for personal status or preference when direct phrasing would blur the source: `He had not heard of it`, `He would rather...`, or `In his account...`
 - prefer compact phrasing suitable for search results, tables, and index pages
 
 Expanded answers:
@@ -350,7 +354,7 @@ Finish only when relevant items are true:
 - `?t=` seconds match display timestamps
 - timestamp links include `target="_blank"` and `rel="noopener noreferrer"`
 - short answers are supported and preserve uncertainty
-- short and expanded answers use concise third-person phrasing and avoid routine "He said" openings
+- short and expanded answers use concise third-person phrasing, avoid report-shaped routine attribution, and do not merely replace "He said" with "The host said"
 - expanded answers are populated, transcript-supported, consistent with short answers, and preserve uncertainty
 - no `_Expansion pending._` cells remain unless the user explicitly deferred them and the final output/audit log records the blocker
 - no outside facts were added
