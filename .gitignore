@@ -20,20 +20,20 @@ node_modules/
 # Transcript tooling venv
 .venv-transcripts/
 
-# Task notes: sync useful Markdown planning/context notes, ignore generated scratch output.
+# Task notes: sync useful Markdown planning/context notes. Generated reports and
+# validation/test output belong under reports/.
 task-notes/**
 !task-notes/
 !task-notes/**/
 !task-notes/**/*.md
-task-notes/question-revision-explicit-test/**
-task-notes/question-revision-root-test/**
-task-notes/question-revision-scripts-test/**
 
 # Ignore the run summaries for pulling YT transcript JSON.
 scripts/Get-YouTubeTranscriptJson.run-summary*
 
 # Local AI wanted to install Python locally
 /Python/
+
+# Generated reports, validation output, and smoke-test output.
 /reports/
 
 # Hugo local build artifacts. Generated source/data under site/ are intentionally tracked during migration.

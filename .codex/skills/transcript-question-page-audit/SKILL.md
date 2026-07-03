@@ -254,7 +254,16 @@ pwsh -NoProfile -File scripts/Test-QuestionTableFormat.ps1
 ```
 
 For a narrow single-file pass, or when the full corpus validator is too noisy or
-slow for the current task, run the local checks against the target file:
+slow for the current task, scope the same validator to the target file:
+
+```powershell
+pwsh -NoProfile -File scripts/Test-QuestionTableFormat.ps1 -Path docs/questions/FILE.md
+```
+
+The script's internal table-analysis helper is `Get-QuestionTableAnalysis` from
+`scripts/QuestionTableTools.ps1`; do not call an invented `Test-QuestionTable`
+helper. If the scoped validator is unavailable in an older checkout, run these
+local checks against the target file:
 
 ```powershell
 $path = "docs/questions/FILE.md"

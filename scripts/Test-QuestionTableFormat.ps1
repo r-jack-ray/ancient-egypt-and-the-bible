@@ -6,13 +6,15 @@
     Validates ordinary Q&A tables against the current four-column baseline with
     populated Expanded answer cells and no pending placeholders. Use
     -AllowLegacyThreeColumn only for inventorying or diagnosing an unexpected
-    legacy file.
+    legacy file. Use -Path for a scoped validation pass over one or more
+    Markdown pages instead of the whole docs/questions directory.
 #>
 
 [CmdletBinding()]
 param(
     [string]$RepoRoot = "",
     [string]$QuestionsDir = "docs/questions",
+    [string[]]$Path = @(),
     [string]$OutputDir = "reports",
     [string]$JsonName = "question-table-validation.json",
     [string]$MarkdownName = "question-table-validation.md",
@@ -33,11 +35,51 @@ if ($RequireExpandedAnswer) {
     $requireExpandedAnswerEffective = $true
 }
 
-if (-not (Test-Path -LiteralPath $questionsPath -PathType Container)) {
-    throw "Questions directory not found: $questionsPath"
+function Resolve-QuestionMarkdownFile {
+    param(
+        [Parameter(Mandatory = $true)][string]$InputPath,
+        [Parameter(Mandatory = $true)][string]$RepoRootPath
+    )
+
+    $candidatePath = if ([System.IO.Path]::IsPathRooted($InputPath)) {
+        $InputPath
+    }
+    else {
+        Join-Path $RepoRootPath $InputPath
+    }
+
+    try {
+        $resolvedPath = (Resolve-Path -LiteralPath $candidatePath -ErrorAction Stop).Path
+    }
+    catch {
+        throw "Question Markdown file not found: $InputPath"
+    }
+
+    $item = Get-Item -LiteralPath $resolvedPath
+    if ($item.PSIsContainer) {
+        throw "Question Markdown path is a directory: $InputPath"
+    }
+
+    if ($item.Extension -ne ".md") {
+        throw "Question Markdown path must end in .md: $InputPath"
+    }
+
+    return $item
 }
 
-$files = @(Get-ChildItem -LiteralPath $questionsPath -Filter "*.md" | Sort-Object Name)
+if ($Path.Count -gt 0) {
+    $files = @($Path | ForEach-Object {
+        Resolve-QuestionMarkdownFile -InputPath $_ -RepoRootPath $repoRootPath
+    } | Sort-Object FullName -Unique)
+}
+else {
+    if (-not (Test-Path -LiteralPath $questionsPath -PathType Container)) {
+        throw "Questions directory not found: $questionsPath"
+    }
+
+    $files = @(Get-ChildItem -LiteralPath $questionsPath -Filter "*.md" | Sort-Object Name)
+}
+
 $details = foreach ($file in $files) {
     Get-QuestionTableAnalysis -Path $file.FullName -RepoRoot $repoRootPath -RequireExpandedAnswer:$requireExpandedAnswerEffective
 }
