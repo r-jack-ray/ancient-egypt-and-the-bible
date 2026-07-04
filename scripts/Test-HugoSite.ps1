@@ -14,7 +14,8 @@ pwsh -NoProfile -File $builder -RepoRoot $RepoRoot
 Write-Host "Validating Hugo search aliases..."
 pwsh -NoProfile -File $searchAliasTester -RepoRoot $RepoRoot
 
-$sourceQuestionCount = @(Get-ChildItem -LiteralPath (Join-Path $RepoRoot "docs/questions") -Filter "*.md").Count
+$sourceQuestionFiles = @(Get-ChildItem -LiteralPath (Join-Path $RepoRoot "docs/questions") -Filter "*.md")
+$sourceQuestionCount = $sourceQuestionFiles.Count
 $generatedQuestionCount = @(Get-ChildItem -LiteralPath (Join-Path $RepoRoot "site/content/questions") -Filter "*.md" | Where-Object { $_.Name -ne "_index.md" }).Count
 
 if ($sourceQuestionCount -ne $generatedQuestionCount) {
@@ -25,15 +26,17 @@ $episodes = Get-Content -LiteralPath (Join-Path $RepoRoot "site/data/episodes.js
 $questions = Get-Content -LiteralPath (Join-Path $RepoRoot "site/data/questions.json") -Raw | ConvertFrom-Json
 $generatedPages = Get-ChildItem -LiteralPath (Join-Path $RepoRoot "site/content/questions") -Filter "*.md" | Where-Object { $_.Name -ne "_index.md" }
 
+$expectedNumberedPageCount = @($sourceQuestionFiles | Where-Object { $_.Name -match '^\d+-' }).Count
+$expectedSpecialPageCount = @($sourceQuestionFiles | Where-Object { $_.Name -notmatch '^\d+-' }).Count
 $numberedPages = @($generatedPages | Where-Object { $_.Name -match '^\d+-' })
 $specialPages = @($generatedPages | Where-Object { $_.Name -notmatch '^\d+-' })
 
-if ($numberedPages.Count -ne 265) {
-    throw "Expected 265 numbered pages, found $($numberedPages.Count)."
+if ($numberedPages.Count -ne $expectedNumberedPageCount) {
+    throw "Expected $expectedNumberedPageCount numbered pages from docs/questions, found $($numberedPages.Count)."
 }
 
-if ($specialPages.Count -ne 13) {
-    throw "Expected 13 special pages, found $($specialPages.Count)."
+if ($specialPages.Count -ne $expectedSpecialPageCount) {
+    throw "Expected $expectedSpecialPageCount special pages from docs/questions, found $($specialPages.Count)."
 }
 
 $badRows = @($questions | Where-Object {
