@@ -5,12 +5,12 @@
     "slug": "268-getting-it-okay",
     "youtube_url": "https://www.youtube.com/watch?v=Q5TLsJcfhcE",
     "video_id": "Q5TLsJcfhcE",
-    "question_page": null,
-    "content_path": null,
-    "status": "missing_question_page",
+    "question_page": "questions/268-getting-it-okay-questions.md",
+    "content_path": "questions/268-getting-it-okay/",
+    "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 0,
+    "question_count": 55,
     "series": "numbered livestream"
   },
   {
