@@ -193,7 +193,7 @@ Answer wording should be concise, third-person, and useful in search results:
 - make routine answer cells answer-shaped, not report-shaped: prefer `Pyramids were resurrection machines...` over `The host described pyramids as...`
 - use `docs/questions/266-three-major-questions-questions.md` as the style model for shortened updates: `The Greek term means...`, `Wine was already present...`, and `The ark's danger is tied...`
 - do not mechanically replace "He said" with "The host said"; if attribution is unnecessary, remove the attribution frame entirely
-- avoid routine openings such as "He said," "He says," "He rejects," "He argued," "He explained," "The host said," "The host argued," "The host explained," or "He"
+- avoid routine openings such as "He said," "He says," "He rejects," "He argued," "He explained," "The host said," "The host argued," or "The host explained"
 - use attribution only when it carries necessary meaning, such as the host's interpretation, uncertainty, disagreement, stated opinion, personal preference, or personal experience
 - keep compact attribution for personal status or preference when direct phrasing would blur the source: `He had not heard of it`, `He would rather...`, or `In his account...`
 - prefer compact phrasing suitable for search results, tables, and index pages
