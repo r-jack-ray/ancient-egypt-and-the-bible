@@ -1,4 +1,5 @@
 # 📺 Ancient Egypt and the Bible – Livestream Archive
+- [Live Stream #268: Getting It Okay](https://www.youtube.com/watch?v=Q5TLsJcfhcE) `268-getting-it-okay`
 - [Live Stream #267: Ramesses II, Marketing Genius](https://www.youtube.com/watch?v=oi709TjJlBE) `267-ramesses-ii-marketing-genius`
 - [Live Stream #266: Three Major Questions](https://www.youtube.com/watch?v=3lcFL2Atyps) `266-three-major-questions`
 - [Live Stream #265: The Pharaoh of Swing](https://www.youtube.com/watch?v=wEZ5Ds5lLAE) `265-the-pharaoh-of-swing`
