@@ -1,5 +1,19 @@
 [
   {
+    "number": 268,
+    "title": "Getting It Okay",
+    "slug": "268-getting-it-okay",
+    "youtube_url": "https://www.youtube.com/watch?v=Q5TLsJcfhcE",
+    "video_id": "Q5TLsJcfhcE",
+    "question_page": null,
+    "content_path": null,
+    "status": "missing_question_page",
+    "is_numbered": true,
+    "is_special": false,
+    "question_count": 0,
+    "series": "numbered livestream"
+  },
+  {
     "number": 267,
     "title": "Ramesses II, Marketing Genius",
     "slug": "267-ramesses-ii-marketing-genius",
@@ -2502,7 +2516,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 48,
+    "question_count": 49,
     "series": "numbered livestream"
   },
   {
@@ -2516,7 +2530,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 48,
+    "question_count": 49,
     "series": "numbered livestream"
   },
   {
@@ -2530,7 +2544,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 35,
+    "question_count": 37,
     "series": "numbered livestream"
   },
   {
@@ -2558,7 +2572,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 37,
+    "question_count": 38,
     "series": "numbered livestream"
   },
   {
