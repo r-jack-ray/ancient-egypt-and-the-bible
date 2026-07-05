@@ -33,7 +33,7 @@
     <span>{{ if .Params.is_numbered }}{{ .Title }}{{ else }}{{ .Params.series }}{{ end }}</span>
     <span>{{ .Params.question_count }} questions</span>
     {{ with .Params.video_id }}
-    <a href="https://youtu.be/{{ . }}" target="_blank" rel="noopener noreferrer">Watch video</a>
+    <a href="https://youtu.be/{{ . }}" target="_blank" rel="noopener noreferrer">Watch Full Video</a>
     {{ end }}
   </div>
   <nav class="question-page-nav" aria-label="Episode navigation">
@@ -62,7 +62,7 @@
     {{ range $questions }}
     <li class="episode-question-card" data-filter-item data-filter-text="{{ .time_label }} {{ .question | plainify }} {{ .short_answer | plainify }} {{ with .expanded_answer }}{{ . | plainify }}{{ end }}">
       <a class="episode-question-time" href="{{ .video_url }}" target="_blank" rel="noopener noreferrer">
-        <span>Video<br><strong>{{ .time_label }}</strong></span>
+        <span>Watch<br><strong>{{ .time_label }}</strong></span>
       </a>
       <div class="episode-question-body">
         <h2>{{ .question | markdownify }}</h2>

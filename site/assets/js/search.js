@@ -359,7 +359,7 @@
         videoLink.textContent = "";
         var videoLabel = document.createElement("span");
         var videoTime = document.createElement("strong");
-        videoLabel.textContent = "Video";
+        videoLabel.textContent = "Watch";
         videoTime.textContent = row.time_label;
         videoLink.appendChild(videoLabel);
         videoLink.appendChild(videoTime);
