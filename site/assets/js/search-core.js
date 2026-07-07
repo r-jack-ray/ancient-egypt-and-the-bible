@@ -178,6 +178,38 @@
     return uniqueValues([token].concat(aliasIndex.searchAliases[token] || []));
   }
 
+  function getPhraseAliasAlternatives(token, normalizedQueryText, aliasIndex) {
+    var alternatives = [];
+
+    aliasIndex.phraseAliasGroups.forEach(function (group) {
+      var matchedTerms = group.filter(function (term) {
+        return normalizedQueryText.indexOf(" " + term + " ") !== -1;
+      });
+      var tokenIsPartOfMatchedTerm = matchedTerms.some(function (term) {
+        return tokenizeSearchTerms(term).indexOf(token) !== -1;
+      });
+
+      if (tokenIsPartOfMatchedTerm) {
+        alternatives = alternatives.concat(group);
+      }
+    });
+
+    return alternatives;
+  }
+
+  function createSearchMatchUnit(token, aliasIndex, normalizedQueryText) {
+    return uniqueValues(getAliasAlternatives(token, aliasIndex).concat(
+      getPhraseAliasAlternatives(token, normalizedQueryText, aliasIndex)
+    )).map(function (term) {
+      return {
+        term: term,
+        tokens: tokenizeSearchTerms(term)
+      };
+    }).filter(function (alternative) {
+      return alternative.tokens.length > 0;
+    });
+  }
+
   function addCombinationPhrases(phraseSet, prefix, alternativesByToken, position, maxPhrases) {
     if (Object.keys(phraseSet).length >= maxPhrases) {
       return;
@@ -197,13 +229,15 @@
 
   function buildHighlightModel(query, aliasIndex, options) {
     var settings = options || {};
+    var safeAliasIndex = aliasIndex || createSearchAliasIndex({});
     var maxWindowLength = settings.maxWindowLength || 4;
     var maxPhrases = settings.maxPhrases || 100;
     var tokens = tokenizeSearchTerms(query);
     var normalizedQueryText = " " + tokens.join(" ") + " ";
     var phraseSet = {};
+    var literalSet = {};
 
-    aliasIndex.phraseAliasGroups.forEach(function (group) {
+    safeAliasIndex.phraseAliasGroups.forEach(function (group) {
       var hasMatch = group.some(function (term) {
         return normalizedQueryText.indexOf(" " + term + " ") !== -1;
       });
@@ -223,7 +257,7 @@
       for (var length = 2; length <= maxWindowLength && start + length <= tokens.length; length++) {
         var windowTokens = tokens.slice(start, start + length);
         var alternativesByToken = windowTokens.map(function (token) {
-          return getAliasAlternatives(token, aliasIndex);
+          return getAliasAlternatives(token, safeAliasIndex);
         });
         var hasAliasExpansion = alternativesByToken.some(function (alternatives) {
           return alternatives.length > 1;
@@ -237,10 +271,22 @@
       }
     }
 
+    tokens.forEach(function (token) {
+      if (token.length <= 1) {
+        return;
+      }
+
+      createSearchMatchUnit(token, safeAliasIndex, normalizedQueryText).forEach(function (alternative) {
+        if (alternative.tokens.length === 1) {
+          literalSet[alternative.tokens[0]] = true;
+        } else {
+          phraseSet[alternative.tokens.join(" ")] = true;
+        }
+      });
+    });
+
     return {
-      literalTokens: tokens.filter(function (token) {
-        return token.length > 1;
-      }),
+      literalTokens: Object.keys(literalSet),
       phraseCandidates: Object.keys(phraseSet).sort(function (a, b) {
         return b.length - a.length;
       })
@@ -279,19 +325,18 @@
   }
 
   function collectLiteralMatches(text, literalTokens) {
-    var lowerText = (text || "").toLowerCase();
+    var textTokens = getTextTokenSpans(text);
     var matches = [];
 
     literalTokens.forEach(function (token) {
-      var start = 0;
-      while (start < lowerText.length) {
-        var index = lowerText.indexOf(token, start);
-        if (index === -1) {
-          break;
+      textTokens.forEach(function (textToken) {
+        if (textToken.token.indexOf(token) === 0) {
+          matches.push({
+            start: textToken.start,
+            end: textToken.start + token.length
+          });
         }
-        matches.push({ start: index, end: index + token.length });
-        start = index + token.length;
-      }
+      });
     });
 
     return matches;
@@ -352,6 +397,64 @@
     });
   }
 
+  function createSearchMatchModel(query, aliasIndex, options) {
+    var safeAliasIndex = aliasIndex || createSearchAliasIndex({});
+    var normalizedQuery = normalizeBibleReferenceQuery(query);
+    var tokens = tokenizeSearchTerms(normalizedQuery);
+    var normalizedQueryText = " " + tokens.join(" ") + " ";
+
+    return {
+      query: normalizedQuery,
+      tokens: tokens,
+      units: tokens.map(function (token) {
+        return createSearchMatchUnit(token, safeAliasIndex, normalizedQueryText);
+      }),
+      highlightModel: buildHighlightModel(normalizedQuery, safeAliasIndex, options)
+    };
+  }
+
+  function alternativeMatchesText(textTokens, alternative) {
+    var alternativeTokens = alternative.tokens;
+
+    if (alternativeTokens.length === 1) {
+      return textTokens.some(function (textToken) {
+        return textToken.token.indexOf(alternativeTokens[0]) === 0;
+      });
+    }
+
+    for (var start = 0; start <= textTokens.length - alternativeTokens.length; start++) {
+      var hasMatch = true;
+      for (var i = 0; i < alternativeTokens.length; i++) {
+        if (textTokens[start + i].token.indexOf(alternativeTokens[i]) !== 0) {
+          hasMatch = false;
+          break;
+        }
+      }
+      if (hasMatch) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  function matchesSearchText(text, matchModel) {
+    var model = matchModel || {};
+    var units = model.units || [];
+    var textTokens;
+
+    if (!units.length) {
+      return true;
+    }
+
+    textTokens = getTextTokenSpans(text);
+    return units.every(function (unit) {
+      return unit.some(function (alternative) {
+        return alternativeMatchesText(textTokens, alternative);
+      });
+    });
+  }
+
   function createMiniSearchOptions() {
     return {
       idField: "search_id",
@@ -375,9 +478,7 @@
         },
         combineWith: "AND",
         prefix: true,
-        fuzzy: function (term) {
-          return term.length > 4 ? 0.2 : false;
-        }
+        fuzzy: false
       }
     };
   }
@@ -394,6 +495,8 @@
     buildHighlightModel: buildHighlightModel,
     getHighlightSpans: getHighlightSpans,
     hasUnrepresentedHighlightMatch: hasUnrepresentedHighlightMatch,
+    createSearchMatchModel: createSearchMatchModel,
+    matchesSearchText: matchesSearchText,
     createMiniSearchOptions: createMiniSearchOptions
   };
 }));

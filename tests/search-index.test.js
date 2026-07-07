@@ -43,3 +43,17 @@ test("prebuilt index preserves compact Bible reference normalization", () => {
   assert.ok(search("ps82").length >= 1);
   assert.ok(search("exod12").length >= 1);
 });
+
+test("prebuilt index does not return fuzzy-only results for exact terms", () => {
+  const results = search("avengers");
+  const rows = results.map((result) => docs[Number(result.id)]);
+
+  assert.equal(results.length, 4);
+  assert.ok(results.every((result) => result.terms.includes("avengers")));
+  assert.ok(rows.every((row) => /avengers/i.test([
+    row.episode_title,
+    row.question,
+    row.short_answer,
+    row.expanded_answer
+  ].join(" "))));
+});
