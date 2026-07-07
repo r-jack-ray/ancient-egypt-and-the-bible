@@ -180,7 +180,8 @@
     var title = normalize(row.episode_title);
     var question = normalize(row.question);
     var answer = normalize(row.short_answer);
-    var searchText = normalize([title, question, answer].join(" "));
+    var expandedAnswer = normalize(row.expanded_answer);
+    var searchText = normalize([title, question, answer, expandedAnswer].join(" "));
 
     if (!tokens.every(function (token) { return searchText.indexOf(token) !== -1; })) {
       return 0;
@@ -196,6 +197,9 @@
     if (answer.indexOf(query) !== -1) {
       score += 25;
     }
+    if (expandedAnswer.indexOf(query) !== -1) {
+      score += 12;
+    }
 
     tokens.forEach(function (token) {
       if (question.indexOf(token) !== -1) {
@@ -206,6 +210,9 @@
       }
       if (title.indexOf(token) !== -1) {
         score += 5;
+      }
+      if (expandedAnswer.indexOf(token) !== -1) {
+        score += 2;
       }
     });
 
@@ -221,6 +228,7 @@
     var title = normalize(row.episode_title);
     var question = normalize(row.question);
     var answer = normalize(row.short_answer);
+    var expandedAnswer = normalize(row.expanded_answer);
     var score = 0;
 
     if (question.indexOf(query) !== -1) {
@@ -232,6 +240,9 @@
     if (answer.indexOf(query) !== -1) {
       score += 3;
     }
+    if (expandedAnswer.indexOf(query) !== -1) {
+      score += 1.5;
+    }
 
     tokens.forEach(function (token) {
       if (question.indexOf(token) !== -1) {
@@ -242,6 +253,9 @@
       }
       if (answer.indexOf(token) !== -1) {
         score += 0.75;
+      }
+      if (expandedAnswer.indexOf(token) !== -1) {
+        score += 0.35;
       }
     });
 
@@ -332,6 +346,18 @@
     }
   }
 
+  function hasExpandedAnswerOnlyMatch(row, highlightModel) {
+    if (!row.expanded_answer || !highlightModel) {
+      return false;
+    }
+
+    return core.hasUnrepresentedHighlightMatch(row.expanded_answer, [
+      row.episode_title,
+      row.question,
+      row.short_answer
+    ].join(" "), highlightModel);
+  }
+
   function render(rows, highlightModel) {
     resultList.textContent = "";
 
@@ -342,6 +368,7 @@
       var videoLink = fragment.querySelector("[data-video-link]");
       var questionNode = fragment.querySelector("[data-result-question]");
       var answerNode = fragment.querySelector("[data-result-answer]");
+      var expandedAnswerNode = fragment.querySelector("[data-result-expanded-answer]");
 
       setText("[data-result-meta]", [
         row.is_numbered ? "Live Stream #" + row.episode_number : "Special",
@@ -369,6 +396,15 @@
       }
       if (answerNode) {
         appendHighlightedText(answerNode, row.short_answer, highlightModel);
+      }
+      if (expandedAnswerNode) {
+        var showExpandedAnswer = hasExpandedAnswerOnlyMatch(row, highlightModel);
+        expandedAnswerNode.hidden = !showExpandedAnswer;
+        if (showExpandedAnswer) {
+          appendHighlightedText(expandedAnswerNode, row.expanded_answer, highlightModel);
+        } else {
+          expandedAnswerNode.textContent = "";
+        }
       }
 
       if (item) {

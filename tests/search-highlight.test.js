@@ -55,3 +55,25 @@ test("highlight spans preserve original casing and punctuation", () => {
 test("overlapping phrase and token matches merge into the longest range", () => {
   assert.equal(markedText("ramses 2", "Ramses II, Ramses alone"), "[Ramses II], [Ramses] alone");
 });
+
+test("expanded-answer helper detects matches not represented in visible fields", () => {
+  const highlightModel = core.buildHighlightModel("avengers tick", aliasIndex);
+
+  assert.equal(
+    core.hasUnrepresentedHighlightMatch(
+      "The Tick is his favorite superhero, even though he once worked on an Avengers movie.",
+      "Who is his favorite superhero? The Tick.",
+      highlightModel
+    ),
+    true
+  );
+
+  assert.equal(
+    core.hasUnrepresentedHighlightMatch(
+      "The answer also mentions Avengers.",
+      "Why do you hate Avengers movies?",
+      highlightModel
+    ),
+    false
+  );
+});

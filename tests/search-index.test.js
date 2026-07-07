@@ -17,11 +17,11 @@ function search(query) {
   return miniSearch.search(core.normalizeBibleReferenceQuery(query));
 }
 
-test("prebuilt search docs match source row count and stay display-only", () => {
+test("prebuilt search docs match source row count and keep display fields only", () => {
   assert.equal(manifest.document_count, questions.length);
   assert.equal(docs.length, questions.length);
   assert.equal(docs[0].search_id, "0");
-  assert.ok(!Object.hasOwn(docs[0], "expanded_answer"));
+  assert.equal(docs[0].expanded_answer, questions[0].expanded_answer);
   assert.ok(!Object.hasOwn(docs[0], "search_text"));
   assert.ok(!Object.hasOwn(docs[0], "search_aliases"));
 });

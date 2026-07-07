@@ -746,6 +746,15 @@ th:first-child {
   overflow-wrap: anywhere;
 }
 
+.search-result-expanded-answer {
+  margin: 10px 0 2px;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  color: var(--muted);
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
 .search-result-video {
   font-weight: 700;
 }

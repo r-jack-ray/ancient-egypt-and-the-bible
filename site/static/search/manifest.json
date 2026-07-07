@@ -17,6 +17,7 @@
     "content_path",
     "question",
     "short_answer",
+    "expanded_answer",
     "time_label",
     "video_url",
     "start_seconds"
