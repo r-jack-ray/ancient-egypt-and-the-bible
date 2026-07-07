@@ -40,7 +40,15 @@ test("ramses 2 does not highlight unrelated Roman numerals", () => {
 
 test("literal highlighting still works for ordinary terms", () => {
   assert.equal(markedText("exodus", "The Exodus question"), "The [Exodus] question");
-  assert.equal(markedText("pharaoh", "Pharaohs and pharaoh"), "[Pharaoh]s and [pharaoh]");
+  assert.equal(markedText("pharaoh", "Pharaohs and pharaoh"), "[Pharaohs] and [pharaoh]");
+});
+
+test("literal highlighting is token-prefix based", () => {
+  assert.equal(markedText("avengers", "Avengers and scavengers seek revenge"), "[Avengers] and scavengers seek revenge");
+});
+
+test("literal highlighting includes configured token aliases", () => {
+  assert.equal(markedText("pharoah", "Pharaoh and pharoah"), "[Pharaoh] and [pharoah]");
 });
 
 test("one-character query tokens stay out of general literal highlighting", () => {
@@ -76,4 +84,18 @@ test("expanded-answer helper detects matches not represented in visible fields",
     ),
     false
   );
+});
+
+test("shared matcher rejects substring and fuzzy-only matches", () => {
+  const matchModel = core.createSearchMatchModel("Avengers", aliasIndex);
+
+  assert.equal(core.matchesSearchText("Why do you hate Avengers movies?", matchModel), true);
+  assert.equal(core.matchesSearchText("Dogs were scavengers and corpse eaters.", matchModel), false);
+  assert.equal(core.matchesSearchText("Children might seek revenge later.", matchModel), false);
+});
+
+test("shared matcher accepts configured token and phrase aliases", () => {
+  assert.equal(core.matchesSearchText("Pharaoh was mentioned.", core.createSearchMatchModel("pharoah", aliasIndex)), true);
+  assert.equal(core.matchesSearchText("The Dead Sea Scrolls are relevant.", core.createSearchMatchModel("dss", aliasIndex)), true);
+  assert.equal(core.matchesSearchText("DSS material is relevant.", core.createSearchMatchModel("dead sea scrolls", aliasIndex)), true);
 });

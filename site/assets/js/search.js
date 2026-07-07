@@ -26,7 +26,6 @@
   var miniSearch = null;
   var searchReady = false;
   var normalize = core.normalize;
-  var tokenize = core.tokenize;
   var normalizeBibleReferenceQuery = core.normalizeBibleReferenceQuery;
   var searchAliasIndex = core.createSearchAliasIndex({});
   var controls = [input, typeFilter, episodeFilter, sortControl, clearButton, loadMoreButton].filter(Boolean);
@@ -172,8 +171,17 @@
     return (a.start_seconds || 0) - (b.start_seconds || 0);
   }
 
-  function scoreRow(row, query, tokens) {
-    if (!tokens.length) {
+  function searchTextForRow(row) {
+    return [
+      row.episode_title,
+      row.question,
+      row.short_answer,
+      row.expanded_answer
+    ].join(" ");
+  }
+
+  function scoreRow(row, matchModel) {
+    if (!matchModel.tokens.length) {
       return 1;
     }
 
@@ -181,9 +189,9 @@
     var question = normalize(row.question);
     var answer = normalize(row.short_answer);
     var expandedAnswer = normalize(row.expanded_answer);
-    var searchText = normalize([title, question, answer, expandedAnswer].join(" "));
+    var query = matchModel.query;
 
-    if (!tokens.every(function (token) { return searchText.indexOf(token) !== -1; })) {
+    if (!core.matchesSearchText(searchTextForRow(row), matchModel)) {
       return 0;
     }
 
@@ -201,7 +209,7 @@
       score += 12;
     }
 
-    tokens.forEach(function (token) {
+    matchModel.tokens.forEach(function (token) {
       if (question.indexOf(token) !== -1) {
         score += 8;
       }
@@ -220,8 +228,8 @@
     return score;
   }
 
-  function exactBoost(row, query, tokens) {
-    if (!tokens.length) {
+  function exactBoost(row, matchModel) {
+    if (!matchModel.tokens.length) {
       return 0;
     }
 
@@ -229,6 +237,7 @@
     var question = normalize(row.question);
     var answer = normalize(row.short_answer);
     var expandedAnswer = normalize(row.expanded_answer);
+    var query = matchModel.query;
     var score = 0;
 
     if (question.indexOf(query) !== -1) {
@@ -244,7 +253,7 @@
       score += 1.5;
     }
 
-    tokens.forEach(function (token) {
+    matchModel.tokens.forEach(function (token) {
       if (question.indexOf(token) !== -1) {
         score += 1.5;
       }
@@ -262,7 +271,7 @@
     return score;
   }
 
-  function fallbackSearch(query, tokens) {
+  function fallbackSearch(matchModel) {
     var scored = [];
 
     questions.forEach(function (row) {
@@ -270,7 +279,7 @@
         return;
       }
 
-      var score = scoreRow(row, query, tokens);
+      var score = scoreRow(row, matchModel);
       if (score > 0) {
         scored.push({ row: row, score: score });
       }
@@ -279,17 +288,17 @@
     return scored;
   }
 
-  function searchQuestions(query, tokens) {
-    if (!tokens.length || !miniSearch) {
-      return fallbackSearch(query, tokens);
+  function searchQuestions(matchModel) {
+    if (!matchModel.tokens.length || !miniSearch) {
+      return fallbackSearch(matchModel);
     }
 
-    return miniSearch.search(query).reduce(function (scored, result) {
+    return miniSearch.search(matchModel.query).reduce(function (scored, result) {
       var row = questionBySearchId[result.id];
-      if (row && matchesFilters(row)) {
+      if (row && matchesFilters(row) && core.matchesSearchText(searchTextForRow(row), matchModel)) {
         scored.push({
           row: row,
-          score: result.score + exactBoost(row, query, tokens)
+          score: result.score + exactBoost(row, matchModel)
         });
       }
       return scored;
@@ -449,13 +458,13 @@
     }
 
     var query = normalizeBibleReferenceQuery(input ? input.value : "");
-    var tokens = tokenize(query);
-    var highlightModel = core.buildHighlightModel(query, searchAliasIndex);
-    var scored = searchQuestions(query, tokens);
+    var matchModel = core.createSearchMatchModel(query, searchAliasIndex);
+    var highlightModel = matchModel.highlightModel;
+    var scored = searchQuestions(matchModel);
     var sortMode = sortControl ? sortControl.value : "relevance";
 
     var rows;
-    if (tokens.length && sortMode === "relevance") {
+    if (matchModel.tokens.length && sortMode === "relevance") {
       rows = scored.sort(function (a, b) {
         if (a.score !== b.score) {
           return b.score - a.score;

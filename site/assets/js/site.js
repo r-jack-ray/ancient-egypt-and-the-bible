@@ -58,29 +58,6 @@
     return filterAliasIndex;
   }
 
-  function tokenizeFilterQuery(value) {
-    if (!filterCore) {
-      return tokenize(value);
-    }
-
-    return filterCore.tokenizeSearchTerms(filterCore.normalizeBibleReferenceQuery(value));
-  }
-
-  function buildFilterHaystack(value) {
-    var text = value || "";
-
-    if (!filterCore) {
-      return normalize(text);
-    }
-
-    var aliasIndex = getFilterAliasIndex();
-    return normalize([
-      text,
-      filterCore.normalizeBibleReferenceQuery(text),
-      filterCore.getSearchAliases(text, aliasIndex)
-    ].join(" "));
-  }
-
   function hydrateFilterInput(input) {
     var paramName = input.getAttribute("data-filter-param");
     if (!paramName) {
@@ -160,6 +137,30 @@
     });
   }
 
+  function isExpandedAnswersVisible(target) {
+    return target.getAttribute("data-expanded-answers-visible") === "true";
+  }
+
+  function setExpandedAnswerAutoVisible(answer, isAutoVisible) {
+    if (!answer) {
+      return;
+    }
+
+    if (isAutoVisible) {
+      answer.setAttribute("data-expanded-answer-auto", "true");
+    } else {
+      answer.removeAttribute("data-expanded-answer-auto");
+    }
+  }
+
+  function refreshExpandedAnswerVisibility(target) {
+    var showAll = isExpandedAnswersVisible(target);
+
+    Array.prototype.slice.call(target.querySelectorAll("[data-expanded-answer]")).forEach(function (answer) {
+      answer.hidden = !(showAll || answer.getAttribute("data-expanded-answer-auto") === "true");
+    });
+  }
+
   document.querySelectorAll("[data-filter-control]").forEach(function (input) {
     var targetSelector = input.getAttribute("data-filter-target");
     var target = targetSelector ? document.querySelector(targetSelector) : null;
@@ -173,27 +174,45 @@
     var filterRows = items.map(function (item) {
       var filterText = item.getAttribute("data-filter-text") || item.textContent;
       var highlightRoot = highlightSelector ? item.querySelector(highlightSelector) : null;
+      var expandedAnswer = item.querySelector("[data-expanded-answer]");
+      var expandedAnswerText = expandedAnswer ? expandedAnswer.textContent || "" : "";
+      var visibleText = item.textContent || "";
+
+      if (expandedAnswerText) {
+        visibleText = visibleText.replace(expandedAnswerText, "");
+      }
+
       return {
         item: item,
         highlightRoot: highlightRoot,
-        haystack: buildFilterHaystack(filterText)
+        expandedAnswer: expandedAnswer,
+        expandedAnswerText: expandedAnswerText,
+        filterText: filterText,
+        visibleText: visibleText,
+        fallbackHaystack: normalize(filterText)
       };
     });
 
     hydrateFilterInput(input);
 
     function applyFilter() {
-      var tokens = tokenizeFilterQuery(input.value);
       var aliasIndex = getFilterAliasIndex();
-      var highlightModel = filterCore && tokens.length ? filterCore.buildHighlightModel(filterCore.normalizeBibleReferenceQuery(input.value), aliasIndex) : null;
+      var matchModel = filterCore ? filterCore.createSearchMatchModel(input.value, aliasIndex) : null;
+      var tokens = matchModel ? matchModel.tokens : tokenize(input.value);
+      var highlightModel = matchModel && tokens.length ? matchModel.highlightModel : null;
       var visible = 0;
 
       filterRows.forEach(function (row) {
-        var matches = tokens.every(function (token) {
-          return row.haystack.indexOf(token) !== -1;
-        });
+        var matches = matchModel
+          ? filterCore.matchesSearchText(row.filterText, matchModel)
+          : tokens.every(function (token) {
+            return row.fallbackHaystack.indexOf(token) !== -1;
+          });
 
         row.item.hidden = !matches;
+        setExpandedAnswerAutoVisible(row.expandedAnswer, matches && highlightModel && filterCore
+          ? filterCore.hasUnrepresentedHighlightMatch(row.expandedAnswerText, row.visibleText, highlightModel)
+          : false);
         if (row.highlightRoot) {
           clearFilterHighlights(row.highlightRoot);
           if (matches && highlightModel) {
@@ -208,6 +227,7 @@
       if (countTarget) {
         countTarget.textContent = visible.toLocaleString() + " shown";
       }
+      refreshExpandedAnswerVisibility(target);
     }
 
     input.addEventListener("input", applyFilter);
@@ -228,10 +248,8 @@
     }
 
     function setExpandedAnswersVisible(isVisible) {
-      expandedAnswers.forEach(function (answer) {
-        answer.hidden = !isVisible;
-      });
-
+      target.setAttribute("data-expanded-answers-visible", isVisible ? "true" : "false");
+      refreshExpandedAnswerVisibility(target);
       button.setAttribute("aria-expanded", isVisible ? "true" : "false");
       button.textContent = isVisible ? "Hide expanded answers" : "Show expanded answers";
     }
