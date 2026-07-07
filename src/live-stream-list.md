@@ -1,4 +1,5 @@
 # 📺 Ancient Egypt and the Bible – Livestream Archive
+- [Live Stream #269: Smithers, Release The Book Hounds!](https://www.youtube.com/watch?v=al_vinriuiw) `269-smithers-release-the-book-hounds`
 - [Live Stream #268: Getting It Okay](https://www.youtube.com/watch?v=Q5TLsJcfhcE) `268-getting-it-okay`
 - [Live Stream #267: Ramesses II, Marketing Genius](https://www.youtube.com/watch?v=oi709TjJlBE) `267-ramesses-ii-marketing-genius`
 - [Live Stream #266: Three Major Questions](https://www.youtube.com/watch?v=3lcFL2Atyps) `266-three-major-questions`
