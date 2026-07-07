@@ -38,6 +38,7 @@ function compactDoc(row, index) {
     content_path: row.content_path || "",
     question: row.question || "",
     short_answer: row.short_answer || "",
+    expanded_answer: row.expanded_answer || "",
     time_label: row.time_label || "",
     video_url: row.video_url || ""
   };

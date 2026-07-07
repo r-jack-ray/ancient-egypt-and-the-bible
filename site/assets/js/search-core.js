@@ -329,6 +329,29 @@
     return mergeHighlightSpans(matches);
   }
 
+  function getHighlightedTerms(text, highlightModel) {
+    var value = text || "";
+    var terms = {};
+
+    getHighlightSpans(value, highlightModel).forEach(function (match) {
+      var term = normalize(value.slice(match.start, match.end));
+      if (term) {
+        terms[term] = true;
+      }
+    });
+
+    return terms;
+  }
+
+  function hasUnrepresentedHighlightMatch(sourceText, visibleText, highlightModel) {
+    var sourceTerms = getHighlightedTerms(sourceText, highlightModel);
+    var visibleTerms = getHighlightedTerms(visibleText, highlightModel);
+
+    return Object.keys(sourceTerms).some(function (term) {
+      return !visibleTerms[term];
+    });
+  }
+
   function createMiniSearchOptions() {
     return {
       idField: "search_id",
@@ -370,6 +393,7 @@
     getSearchAliases: getSearchAliases,
     buildHighlightModel: buildHighlightModel,
     getHighlightSpans: getHighlightSpans,
+    hasUnrepresentedHighlightMatch: hasUnrepresentedHighlightMatch,
     createMiniSearchOptions: createMiniSearchOptions
   };
 }));
