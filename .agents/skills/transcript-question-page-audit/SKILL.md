@@ -309,7 +309,6 @@ Mention every material blocker or uncertainty. Do not list every transcript cand
 - Assign at most one semantic audit per file.
 - When auditing multiple files in parallel, give each semantic subagent a distinct page and transcript.
 - Semantic subagents should be read-only; the parent agent applies edits and appends the shared audit log serially.
-- When the runtime supports explicit settings, pin each semantic subagent to the parent session's exact model and reasoning effort. Otherwise, do not assume inheritance.
 - Do not treat candidate-search output as complete transcript coverage.
 
 ## Audit Log
@@ -330,8 +329,6 @@ Record:
 
 - ISO 8601 full local timestamp
 - audited file short name and extension
-- exact runtime-reported semantic audit model ID
-- exact runtime-reported semantic audit reasoning effort
 - `coverage=full` or `coverage=targeted`
 - `question_count_before`
 - `question_count_after`
@@ -340,12 +337,10 @@ Record:
 - `expanded_answers_pending=0` for ordinary pages, or the exact pending count plus explicit deferral/blocker reason if the user chose to leave a placeholder unresolved
 - a concise note describing important changes or remaining uncertainty
 
-The semantic worker is the model that actually performed the transcript analysis, whether that was the parent agent or a subagent. Use that worker's exact runtime-reported model and effort values. If either value is unavailable, record `unknown`; never infer it from the parent session, a model family name, or a mechanical helper.
-
 Example shape; replace placeholders with the actual values:
 
 ```text
-2026-06-21T12:34:56-05:00 108-the-many-views-of-heck-questions.md; model=EXACT_MODEL_ID; effort=EXACT_EFFORT_OR_UNKNOWN; coverage=full; question_count_before=6; question_count_after=31; question_count_change=+25; could_use_further_inspection=no; expanded_answers_pending=0; added high-confidence missing questions and validated retained rows, timestamps, and expanded answers.
+2026-06-21T12:34:56-05:00 108-the-many-views-of-heck-questions.md; coverage=full; question_count_before=6; question_count_after=31; question_count_change=+25; could_use_further_inspection=no; expanded_answers_pending=0; added high-confidence missing questions and validated retained rows, timestamps, and expanded answers.
 ```
 
 ## Done Checklist

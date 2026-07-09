@@ -111,7 +111,7 @@ If the converter reports that no transcript segments were found, treat the JSON 
 
 ### AI Model Changes
 
-When the active model family or reasoning effort changes for semantic transcript work, compare representative first-pass creation and full-audit tasks at the same reasoning effort before changing prompts or effort. Compare question recall, transcript support, timestamp accuracy, row counts, validation results, and material uncertainty; then test one lower effort only if the same quality bar still holds. Record the exact runtime-reported model ID and reasoning effort in new `src/transcript-audit.log` records; use `unknown` when the runtime does not report a value, and never infer it. Keep historical log records unchanged.
+When changing transcript-processing prompts or workflows, compare representative first-pass creation and full-audit tasks. Compare question recall, transcript support, timestamp accuracy, row counts, validation results, and material uncertainty before adopting the change. Keep `src/transcript-audit.log` records focused on coverage, row counts, validation, and substantive changes.
 
 ### Notes Placement and Configuration
 
