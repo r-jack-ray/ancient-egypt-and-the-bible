@@ -322,7 +322,6 @@ When adding new curated pages, update `README.md` if it maintains an explicit ep
 - Do not let two agents create, regenerate, or review the same page concurrently.
 - Serialize changes to shared files such as `README.md`, `docs/questions/index.md`, status notes, and `src/transcript-audit.log` through the parent agent.
 - Semantic subagents must not append `src/transcript-audit.log`; return the validated counts and concise record note to the parent agent.
-- When the runtime supports explicit settings, pin semantic subagents to the parent session's exact model and reasoning effort. Otherwise, record the worker's runtime-reported values or `unknown` rather than assuming inheritance.
 - If an agent cannot demonstrate full transcript coverage for its assigned file, do not describe that page as complete or append a successful creation record.
 
 ## Creation Tracking
@@ -343,7 +342,6 @@ Record:
 
 - ISO 8601 full local timestamp
 - created or regenerated file short name and extension
-- exact runtime-reported semantic creation model ID and reasoning effort, or `unknown`
 - `coverage=full`
 - `question_count_before`
 - `question_count_after`
@@ -351,14 +349,12 @@ Record:
 - whether the file could use further inspection
 - a concise note identifying first-pass creation or explicit regeneration and any important uncertainty
 
-The semantic worker is the model that actually performed the transcript analysis, whether that was the parent agent or a subagent. Never infer its model or effort from the parent session or from a broad family label. Use the worker's runtime-reported values; if unavailable, record `unknown`.
-
 Use `could_use_further_inspection=yes` for ordinary first-pass creation because it has not received a separate audit pass. Do not describe first-pass creation as an audit.
 
 Example first-pass record; replace placeholders and counts with actual values:
 
 ```text
-2026-06-27T12:34:56-05:00 265-the-pharaoh-of-swing-questions.md; model=EXACT_MODEL_ID; effort=EXACT_EFFORT_OR_UNKNOWN; coverage=full; question_count_before=0; question_count_after=68; question_count_change=+68; could_use_further_inspection=yes; created first-pass page from full transcript coverage; separate audit not yet performed.
+2026-06-27T12:34:56-05:00 265-the-pharaoh-of-swing-questions.md; coverage=full; question_count_before=0; question_count_after=68; question_count_change=+68; could_use_further_inspection=yes; created first-pass page from full transcript coverage; separate audit not yet performed.
 ```
 
 ## Validation
