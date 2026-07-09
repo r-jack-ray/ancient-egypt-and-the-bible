@@ -1,5 +1,19 @@
 [
   {
+    "number": 269,
+    "title": "Smithers, Release The Book Hounds!",
+    "slug": "269-smithers-release-the-book-hounds",
+    "youtube_url": "https://www.youtube.com/watch?v=al_vinriuiw",
+    "video_id": "al_vinriuiw",
+    "question_page": null,
+    "content_path": null,
+    "status": "missing_question_page",
+    "is_numbered": true,
+    "is_special": false,
+    "question_count": 0,
+    "series": "numbered livestream"
+  },
+  {
     "number": 268,
     "title": "Getting It Okay",
     "slug": "268-getting-it-okay",

@@ -110,7 +110,7 @@ Make minimal edits to:
 - correct timestamps to the question start
 - repair unsupported or overstated summaries
 - repair missing, placeholder, or deferred expanded answers
-- revise expanded answers when they are unsupported, too thin to be useful, duplicated from the short answer, contradicted by the short answer, or stale after a row change
+- revise expanded answers when they are unsupported, too thin or over-compressed to be useful, duplicated from the short answer, contradicted by the short answer, or stale after a row change
 - complete truncated question wording
 - split merged distinct questions or merge duplicates
 - remove non-question housekeeping rows
@@ -126,7 +126,7 @@ For full coverage:
 - verify every retained, added, removed, merged, or split row against the transcript
 - verify every timestamp points to the audience-question start
 - verify each answer summary against the relevant answer span
-- verify each expanded answer against the relevant answer span and confirm it adds transcript-supported detail beyond the short answer
+- verify each expanded answer against the relevant answer span and confirm it adds detail beyond the short answer without omitting material reasoning, examples, qualifications, or distinctions
 - confirm the transcript was inspected from beginning to end without gaps
 
 For targeted coverage, re-check changed and directly related rows only.
@@ -184,27 +184,31 @@ Question wording should create direct, searchable questions:
 - keep names, titles, Bible references, Egyptian terms, dates, and chronology markers searchable
 - do not add context from the answer into the question
 
-Answer wording should be concise, third-person, and useful in search results:
+Short answers should be concise and search-friendly. Expanded answers should be readable, developed, and third-person:
 
-- write short and expanded answers as concise third-person summaries of the transcript-supported answer
+- keep short answers concise; let expanded answers use the wording needed to explain the transcript-supported answer fully
 - reflect what the host actually says
 - preserve caveats, uncertainty, disagreement, and limits
 - avoid outside research
 - make routine answer cells answer-shaped, not report-shaped: prefer `Pyramids were resurrection machines...` over `The host described pyramids as...`
-- use `docs/questions/266-three-major-questions-questions.md` as the style model for shortened updates: `The Greek term means...`, `Wine was already present...`, and `The ark's danger is tied...`
+- use `docs/questions/266-three-major-questions-questions.md` as the style model for direct answer phrasing: `The Greek term means...`, `Wine was already present...`, and `The ark's danger is tied...`
 - do not mechanically replace "He said" with "The host said"; if attribution is unnecessary, remove the attribution frame entirely
 - avoid routine openings such as "He said," "He says," "He rejects," "He argued," "He explained," "The host said," "The host argued," or "The host explained"
 - use attribution only when it carries necessary meaning, such as the host's interpretation, uncertainty, disagreement, stated opinion, personal preference, or personal experience
 - keep compact attribution for personal status or preference when direct phrasing would blur the source: `He had not heard of it`, `He would rather...`, or `In his account...`
-- prefer compact phrasing suitable for search results, tables, and index pages
+- prefer compact phrasing for short answers; keep expanded answers focused without forcing them into short-answer length
 
 Expanded answers:
 
 - are required for ordinary pages unless the user explicitly asks not to populate them
 - must be transcript-grounded, useful as a standalone explanation, and more detailed than the short answer
 - must not contradict the short answer
+- have no fixed word or sentence limit; use several sentences when the source answer needs them
+- should favor completeness over compression for the main reasoning, sequence, material examples, qualifications, caveats, and distinctions
+- should retain useful transcript-supported detail from an existing answer rather than shortening it merely for concision
 - should preserve the host's caveats, uncertainty, and limits rather than smoothing them away
 - should add transcript-supported detail such as reasoning, examples, qualifications, and distinctions that help a reader understand the answer without rewatching the segment
+- should remain focused: do not add repeated conclusions, irrelevant tangents, transcript filler, or wording that does not improve understanding
 - should be updated whenever the short answer, question wording, timestamp, split/merge decision, or supporting transcript window changes
 - must not leave `_Expansion pending._` on ordinary pages under the filled-answer baseline
 - when transcript support is limited, write a limited expanded answer that preserves uncertainty, or correct/remove the row if the question or answer is unsupported
@@ -354,8 +358,8 @@ Finish only when relevant items are true:
 - `?t=` seconds match display timestamps
 - timestamp links include `target="_blank"` and `rel="noopener noreferrer"`
 - short answers are supported and preserve uncertainty
-- short and expanded answers use concise third-person phrasing, avoid report-shaped routine attribution, and do not merely replace "He said" with "The host said"
-- expanded answers are populated, transcript-supported, consistent with short answers, and preserve uncertainty
+- short answers use concise third-person phrasing; expanded answers use readable third-person prose with enough room for material transcript detail; neither uses report-shaped routine attribution or merely replaces "He said" with "The host said"
+- expanded answers are populated, transcript-supported, sufficiently developed for the source answer, consistent with short answers, and preserve uncertainty
 - no `_Expansion pending._` cells remain unless the user explicitly deferred them and the final output/audit log records the blocker
 - no outside facts were added
 - table rows render cleanly
