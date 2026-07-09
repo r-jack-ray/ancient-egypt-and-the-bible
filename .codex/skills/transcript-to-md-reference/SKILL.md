@@ -22,13 +22,13 @@ This skill is for first-pass page creation with Codex. Use `transcript-question-
 
 ## Default Behavior
 
-Default to creating the requested page or pages with full transcript coverage and minimal user-facing output.
+Default to creating the requested page or pages with full transcript coverage. Keep artifact completeness and validation independent of closeout length.
 
 - Inspect the complete working transcript before claiming that a page includes all real audience questions.
 - Candidate searches are an accelerator, not proof of completeness.
 - Prefer high-confidence transcript-grounded wording over speculative cleanup.
 - Do not add outside facts, even when they appear historically correct.
-- Keep the final response concise: files created, question-row counts, validation performed, and important blockers or uncertainties.
+- In the final response, retain files created, question-row counts, validation performed, and every material blocker or uncertainty; trim introductions, repetition, and optional background first.
 
 ## Source Files
 
@@ -104,7 +104,7 @@ Full coverage means:
 - use contiguous bounded windows with overlap so no transcript range is skipped
 - use a small overlap, usually 10-20 lines, between windows
 - track the last inspected line or timestamp so coverage has no gaps
-- inspect answer spans far enough to support each short summary
+- inspect answer spans far enough to support both the short and expanded answer summaries
 - expand a window when needed to capture a complete question or answer
 
 Do not infer completeness from search hits alone.
@@ -300,7 +300,7 @@ Markdown table rows must render cleanly in GitHub and GitHub Pages.
 - Ensure every ordinary-page data row begins with the timestamp anchor, followed by the question, the short answer, and then the expanded answer.
 - Escape literal pipe characters inside cells as `\|`.
 - Avoid raw newlines inside table cells.
-- Keep answer summaries short enough to scan.
+- Keep the short-answer column concise enough to scan; keep expanded answers detailed enough to preserve the transcript-supported reasoning, examples, qualifications, and limits.
 - Do not leave placeholder links or placeholder text. Do not use `_Expansion pending._` for ordinary pages under the filled-answer baseline unless the user explicitly asks to defer that page and accepts that strict validation will fail until it is resolved.
 - If the transcript does not support a fuller answer, write a limited expanded answer that says so instead of using a placeholder.
 - Verify each table row has the same number of unescaped pipe separators.
@@ -322,6 +322,7 @@ When adding new curated pages, update `README.md` if it maintains an explicit ep
 - Do not let two agents create, regenerate, or review the same page concurrently.
 - Serialize changes to shared files such as `README.md`, `docs/questions/index.md`, status notes, and `src/transcript-audit.log` through the parent agent.
 - Semantic subagents must not append `src/transcript-audit.log`; return the validated counts and concise record note to the parent agent.
+- When the runtime supports explicit settings, pin semantic subagents to the parent session's exact model and reasoning effort. Otherwise, record the worker's runtime-reported values or `unknown` rather than assuming inheritance.
 - If an agent cannot demonstrate full transcript coverage for its assigned file, do not describe that page as complete or append a successful creation record.
 
 ## Creation Tracking
@@ -342,7 +343,7 @@ Record:
 
 - ISO 8601 full local timestamp
 - created or regenerated file short name and extension
-- semantic creation model and effort, or `unknown`
+- exact runtime-reported semantic creation model ID and reasoning effort, or `unknown`
 - `coverage=full`
 - `question_count_before`
 - `question_count_after`
@@ -350,12 +351,14 @@ Record:
 - whether the file could use further inspection
 - a concise note identifying first-pass creation or explicit regeneration and any important uncertainty
 
+The semantic worker is the model that actually performed the transcript analysis, whether that was the parent agent or a subagent. Never infer its model or effort from the parent session or from a broad family label. Use the worker's runtime-reported values; if unavailable, record `unknown`.
+
 Use `could_use_further_inspection=yes` for ordinary first-pass creation because it has not received a separate audit pass. Do not describe first-pass creation as an audit.
 
 Example first-pass record; replace placeholders and counts with actual values:
 
 ```text
-2026-06-27T12:34:56-05:00 265-the-pharaoh-of-swing-questions.md; model=MODEL_NAME; effort=EFFORT_LEVEL; coverage=full; question_count_before=0; question_count_after=68; question_count_change=+68; could_use_further_inspection=yes; created first-pass page from full transcript coverage; separate audit not yet performed.
+2026-06-27T12:34:56-05:00 265-the-pharaoh-of-swing-questions.md; model=EXACT_MODEL_ID; effort=EXACT_EFFORT_OR_UNKNOWN; coverage=full; question_count_before=0; question_count_after=68; question_count_change=+68; could_use_further_inspection=yes; created first-pass page from full transcript coverage; separate audit not yet performed.
 ```
 
 ## Validation
@@ -395,14 +398,14 @@ If a new curated page was added, ensure `README.md` links to the new page when t
 
 ## Final Response
 
-Keep the final response brief. Use the repo's default closeout shape:
+Lead with the result. For completed change tasks, use the repo's compact closeout shape when it fits:
 
 - Changed:
 - Files:
 - Checked:
 - Notes:
 
-Do not provide a long transcript-analysis report unless the user explicitly requests one.
+Keep every material result, check, blocker, and uncertainty. Omit optional transcript-analysis detail unless the user requests it.
 
 ## Done Checklist
 

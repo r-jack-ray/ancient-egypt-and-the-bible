@@ -30,7 +30,7 @@ task-notes/**
 # Ignore the run summaries for pulling YT transcript JSON.
 scripts/Get-YouTubeTranscriptJson.run-summary*
 
-# Local AI wanted to install Python locally
+# Optional repo-local Python runtime.
 /Python/
 
 # Generated reports, validation output, and smoke-test output.

@@ -6,23 +6,28 @@ This repository is a Questions & Answers reference archive for the Ancient Egypt
 
 - `src/live-stream-list.md` and `src/live-stream-list.txt`: episode indexes with YouTube links and transcript slugs.
 - `src/transcripts/json/`: raw YouTube transcript JSON exports. Treat these as the source of record.
-- `src/transcripts/txt/`: generated working transcript text files, one transcript segment per line. These are the default inspection surface for curation and currently exist for all non-empty JSON transcript exports through episode 208.
+- `src/transcripts/txt/`: generated working transcript text files, one transcript segment per line. These are the default inspection surface for curation and should exist for each non-empty JSON transcript export.
 - `src/transcripts/tsv/`: optional generated TSV files, created only when structured columns are useful.
 - `docs/questions/`: curated GitHub-readable Q&A reference pages with timestamp links, short answers, and filled transcript-grounded expanded answers.
+- `site/`: Hugo compatibility site, generated question mirrors, search data, layouts, and browser assets.
+- `tests/`: Node test coverage for the generated search index and client-side search behavior.
 - `scripts/Convert-TranscriptJson.ps1`: PowerShell 7 converter from transcript JSON to TXT or TSV.
 - `reports/`: ignored generated reports, validation output, smoke-test output, and triage artifacts.
 - `task-notes/`: transient in-project notes, AI session summaries, and temporary human task documentation. Create this directory if it is missing.
 
-There is no application source-code module tree, automated test directory, or asset pipeline.
+There is no server application or conventional application module tree. The repository does have Node-based search tooling, automated search tests, and a Hugo build/deployment pipeline.
 
 ## Build, Test, and Development Commands
 
-There is no build step. Use shell checks to validate content changes:
+Transcript curation has no compile step. The Hugo/search surfaces do have build and validation commands:
 
 ```powershell
 rg "search term" src/transcripts docs/questions
 Get-Content docs/questions/208-super-chat-questions.md
 pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/14-fourteen-pieces-of-osiris.json
+npm test
+npm run check:js
+pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo
 git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible status --short
 ```
 
@@ -57,7 +62,7 @@ Timestamp links should point directly to YouTube with `?t=`. For links intended 
 
 ## Testing Guidelines
 
-No automated test framework is configured. Validate changes by checking that referenced files exist, Markdown tables have consistent columns, timestamp links match transcript rows, and ordinary-page expanded answers are populated. For curated Q&A pages, compare short and expanded answers against the TXT working transcript first, then use the JSON source or TSV output when raw fields, start seconds, or link reconstruction need auditing.
+Run `npm test` for search-index, alias, normalization, or highlighting changes, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo` for source-to-site compatibility validation. For curated Q&A pages, also check that referenced files exist, Markdown tables have consistent columns, timestamp links match transcript rows, and expanded answers are populated. Compare short and expanded answers against the TXT working transcript first, then use the JSON source or TSV output when raw fields, start seconds, or link reconstruction need auditing.
 
 ## Commit & Pull Request Guidelines
 
@@ -67,16 +72,16 @@ Pull requests should explain the affected episode range or file set, note whethe
 
 ## User Communication
 
-Keep responses brief. The user prefers direct progress reports and actionable summaries.
+Lead with the outcome. Keep all required facts, decisions, evidence, caveats, blockers, and next actions; trim introductions, repetition, generic reassurance, and optional background first.
 
-Default response format after work:
+For completed change tasks, use this compact closeout shape when it fits:
 
 - Changed:
 - Files:
 - Checked:
 - Notes:
 
-Do not include lengthy explanations, tutorials, broad background, or repeated restatements of the prompt unless explicitly requested.
+For reviews, diagnoses, and audit-only requests, lead with prioritized findings instead of forcing empty change fields. Do not include tutorials, broad background, or repeated restatements unless requested.
 
 ## Agent-Specific Instructions
 
@@ -84,14 +89,14 @@ Do not invent transcript content. Preserve uncertainty when audio or transcript 
 
 ### Agent Routing
 
-When a request involves Hugo site search, search indexing, missing or noisy search results, search aliases, search query smoke tests, or making a term easier to find, use `.agents/search-index-curator.md` even if the user does not name that file exactly. Treat natural phrasing such as "fix search for X", "improve results for X", "search misses X", "X should find Y", or "add a synonym/alias" as enough to route through the search index curator.
+When a request involves Hugo site search, search indexing, missing or noisy search results, search aliases, search query smoke tests, or making a term easier to find, use `$search-index-curator` even if the user does not name the skill exactly. Treat natural phrasing such as "fix search for X", "improve results for X", "search misses X", "X should find Y", or "add a synonym/alias" as enough to route through the skill.
 
 When a curated page needs transcript inspection, prefer the matching `src/transcripts/txt/<slug>.txt` file. The generated TXT files are optimized for `rg`, `Select-String`, and bounded `Get-Content` review. Use the JSON source of record to resolve ambiguity, confirm raw fields, or regenerate derived outputs; use TSV only when structured `StartSeconds` and `Link` columns are useful.
 
 When requesting `transcript-question-page-audit`, prefer project-root-relative paths and the direct phrase:
 
 ```text
-docs/questions/<file>.md use $transcript-question-page-audit find and fix issues silently
+docs/questions/<file>.md use $transcript-question-page-audit find and fix issues with complete transcript-grounded validation; report material changes, checks, blockers, and uncertainty
 ```
 
 Add `with full transcript coverage` when the goal includes finding missing questions.
@@ -103,6 +108,10 @@ pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/<s
 ```
 
 If the converter reports that no transcript segments were found, treat the JSON as an empty placeholder and do not create a fabricated curated page.
+
+### AI Model Changes
+
+When the active model family or reasoning effort changes for semantic transcript work, compare representative first-pass creation and full-audit tasks at the same reasoning effort before changing prompts or effort. Compare question recall, transcript support, timestamp accuracy, row counts, validation results, and material uncertainty; then test one lower effort only if the same quality bar still holds. Record the exact runtime-reported model ID and reasoning effort in new `src/transcript-audit.log` records; use `unknown` when the runtime does not report a value, and never infer it. Keep historical log records unchanged.
 
 ### Notes Placement and Configuration
 

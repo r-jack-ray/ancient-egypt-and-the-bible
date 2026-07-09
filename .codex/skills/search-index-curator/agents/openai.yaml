@@ -1,0 +1,4 @@
+interface:
+  display_name: "Search Index Curator"
+  short_description: "Repair and validate Hugo search behavior"
+  default_prompt: "Use $search-index-curator to reproduce and fix a Hugo search problem at the narrowest responsible layer, then run the required regression and site validation."
