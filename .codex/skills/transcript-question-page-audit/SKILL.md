@@ -1,18 +1,18 @@
 ---
 name: transcript-question-page-audit
-description: Find and fix issues in existing Ancient Egypt and the Bible Q&A Markdown pages under docs/questions against transcript sources. Use for low-output correction passes covering missing questions, timestamps, answer support, four-column tables, and links. Do not use for first-pass page creation.
+description: Find and fix issues in existing Ancient Egypt and the Bible Q&A Markdown pages under docs/questions against transcript sources. Use for page-scoped correction passes covering missing questions, timestamps, answer support, four-column tables, and links. Do not use for first-pass page creation.
 ---
 
 # Transcript Question Page Audit
 
 ## Default Behavior
 
-Default to **find and fix** with minimal user-facing output.
+Default to **find and fix**. Keep page completeness, transcript support, and validation independent of closeout length.
 
 - Edit the target page when the user asks to audit, check, repair, fix, correct, update, or improve it.
 - Treat missing, placeholder, duplicated, unsupported, or stale expanded answers as audit issues on ordinary pages.
 - Do not return a long audit report unless the user explicitly asks for "audit-only", "report only", "do not edit", or "review only".
-- Keep final output terse: what changed, checks run, and any important uncertainty.
+- In the final response, retain every material change, check, blocker, and uncertainty; trim introductions, repetition, and optional background first.
 - Prefer high-confidence fixes over speculative edits.
 - For missing-question or completeness audits, inspect the entire working transcript; high confidence limits what is changed, not how much of the transcript is covered.
 - Do not invent transcript content or outside facts.
@@ -291,21 +291,21 @@ For ordinary pages, also verify the table header is exactly `| Time | Question |
 
 ## Final Response
 
-Keep the final response brief. Use the repo's default closeout shape:
+Lead with the result. For completed change tasks, use the repo's compact closeout shape when it fits:
 
 - Changed:
 - Files:
 - Checked:
 - Notes:
 
-Mention important blockers or uncertainty. Do not list every transcript candidate or every unchanged row unless the user asked for a report.
+Mention every material blocker or uncertainty. Do not list every transcript candidate or unchanged row unless the user asked for a report.
 
 ## Batch Guidance
 
 - Assign at most one semantic audit per file.
 - When auditing multiple files in parallel, give each semantic subagent a distinct page and transcript.
 - Semantic subagents should be read-only; the parent agent applies edits and appends the shared audit log serially.
-- Every semantic subagent must inherit the parent session's model and reasoning effort.
+- When the runtime supports explicit settings, pin each semantic subagent to the parent session's exact model and reasoning effort. Otherwise, do not assume inheritance.
 - Do not treat candidate-search output as complete transcript coverage.
 
 ## Audit Log
@@ -326,8 +326,8 @@ Record:
 
 - ISO 8601 full local timestamp
 - audited file short name and extension
-- semantic audit model
-- semantic audit reasoning effort
+- exact runtime-reported semantic audit model ID
+- exact runtime-reported semantic audit reasoning effort
 - `coverage=full` or `coverage=targeted`
 - `question_count_before`
 - `question_count_after`
@@ -336,12 +336,12 @@ Record:
 - `expanded_answers_pending=0` for ordinary pages, or the exact pending count plus explicit deferral/blocker reason if the user chose to leave a placeholder unresolved
 - a concise note describing important changes or remaining uncertainty
 
-For model and effort fields, use runtime-reported values when available; otherwise use the parent session values or `unknown`. Do not record a mechanical helper's model or effort as the semantic audit model or effort.
+The semantic worker is the model that actually performed the transcript analysis, whether that was the parent agent or a subagent. Use that worker's exact runtime-reported model and effort values. If either value is unavailable, record `unknown`; never infer it from the parent session, a model family name, or a mechanical helper.
 
 Example shape; replace placeholders with the actual values:
 
 ```text
-2026-06-21T12:34:56-05:00 108-the-many-views-of-heck-questions.md; model=MODEL_NAME; effort=EFFORT_LEVEL; coverage=full; question_count_before=6; question_count_after=31; question_count_change=+25; could_use_further_inspection=no; expanded_answers_pending=0; added high-confidence missing questions and validated retained rows, timestamps, and expanded answers.
+2026-06-21T12:34:56-05:00 108-the-many-views-of-heck-questions.md; model=EXACT_MODEL_ID; effort=EXACT_EFFORT_OR_UNKNOWN; coverage=full; question_count_before=6; question_count_after=31; question_count_change=+25; could_use_further_inspection=no; expanded_answers_pending=0; added high-confidence missing questions and validated retained rows, timestamps, and expanded answers.
 ```
 
 ## Done Checklist
@@ -366,4 +366,4 @@ Finish only when relevant items are true:
 - the audit log was appended only after independent page analysis and validation
 - the recorded `coverage` value matches the work actually performed
 - diff was reviewed
-- final response is minimal unless audit-only was requested
+- final response retains all material changes, checks, blockers, and uncertainty without optional transcript-by-transcript detail

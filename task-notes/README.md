@@ -5,6 +5,7 @@ Use this directory for transient in-project task notes, including AI session sum
 Do not store generated reports here. Put validation output, smoke-test output, CSV/JSON report data, and Markdown report files under `../reports/`.
 
 Use durable project files such as `README.md`, `AGENTS.md`, or another stable documentation file for guidance that should apply outside a task note.
+Do not treat task notes as standing AI instructions. When guidance becomes durable, move it into `AGENTS.md` or a repo-local skill and delete or clearly supersede the transient note.
 
 ## Filename Format
 

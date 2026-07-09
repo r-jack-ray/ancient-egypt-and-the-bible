@@ -18,7 +18,7 @@ Add lightweight Node-based test scaffolding for the Hugo search code, then imple
 ## Constraints
 
 - Keep transcript source files, generated Hugo question mirrors, and curated `docs/questions/` pages out of scope.
-- Use `.agents/search-index-curator.md` for Hugo search behavior changes.
+- Use the repo-local `$search-index-curator` skill for Hugo search behavior changes.
 - Do the implementation on a dedicated Git feature branch, preferably named with the repo convention such as `codex/node-search-highlight-tests`.
 - Use a separate Git worktree when this work should stay isolated from other active content curation or transcript-repair changes in the main checkout.
 - Prefer Node's built-in test runner before adding Jest, Vitest, Playwright, or bundling.
