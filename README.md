@@ -275,6 +275,7 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 - [266 Three Major Questions Questions](docs/questions/266-three-major-questions-questions.md)
 - [267 Ramesses II, Marketing Genius Questions](docs/questions/267-ramesses-ii-marketing-genius-questions.md)
 - [268 Getting It Okay Questions](docs/questions/268-getting-it-okay-questions.md)
+- [269 Smithers Release The Book Hounds Questions](docs/questions/269-smithers-release-the-book-hounds-questions.md)
 - [Special Live Stream: All the Stars as Angels Q&A Questions](docs/questions/special-live-stream-all-the-stars-as-angels-q-and-a-questions.md)
 - [Special Live Stream: Reliquary of the Dead Q&A Questions](docs/questions/special-live-stream-reliquary-of-the-dead-q-and-a-questions.md)
 - [Dr. Falk Plays Assassin's Creed Origins (part 1) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-1-questions.md)
