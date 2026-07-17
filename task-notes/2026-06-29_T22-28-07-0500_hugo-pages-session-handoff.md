@@ -147,12 +147,6 @@ hugo version
 
 Codex may still fail to run Hugo inside the sandbox, even after app restart, due execution restrictions around the WinGet shim. If the normal terminal works and GitHub Actions works, this is not a project configuration issue.
 
-Observed shim path:
-
-```text
-C:\Users\JR\AppData\Local\Microsoft\WinGet\Links\hugo.exe
-```
-
 If full Hugo validation is required from Codex and sandbox execution fails, request escalated execution or ask the user to run `scripts/Test-HugoSite.ps1` in PowerShell.
 
 ## GitHub Actions Notes
