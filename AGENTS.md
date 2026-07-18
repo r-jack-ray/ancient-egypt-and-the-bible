@@ -8,8 +8,8 @@ This repository is a Questions & Answers reference archive for the Ancient Egypt
 - `src/transcripts/json/`: raw YouTube transcript JSON exports. Treat these as the source of record.
 - `src/transcripts/txt/`: generated working transcript text files, one transcript segment per line. These are the default inspection surface for curation and should exist for each non-empty JSON transcript export.
 - `src/transcripts/tsv/`: optional generated TSV files, created only when structured columns are useful.
-- `docs/questions/`: curated GitHub-readable Q&A reference pages with timestamp links, short answers, and filled transcript-grounded expanded answers.
-- `site/`: Hugo compatibility site, generated question mirrors, search data, layouts, and browser assets.
+- `docs/questions/`: canonical curated GitHub-readable Q&A reference pages with timestamp links, short answers, and filled transcript-grounded expanded answers.
+- `site/`: Hugo compatibility site. `site/content/questions/_index.md` is handwritten and tracked; the other question Markdown files are generated mirrors, ignored by Git, and must not be edited or committed.
 - `tests/`: Node test coverage for the generated search index and client-side search behavior.
 - `scripts/Convert-TranscriptJson.ps1`: PowerShell 7 converter from transcript JSON to TXT or TSV.
 - `reports/`: ignored generated reports, validation output, smoke-test output, and triage artifacts.
@@ -25,6 +25,7 @@ Transcript curation has no compile step. The Hugo/search surfaces do have build 
 rg "search term" src/transcripts docs/questions
 Get-Content docs/questions/208-super-chat-questions.md
 pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/14-fourteen-pieces-of-osiris.json
+npm run build:site-content
 npm test
 npm run check:js
 pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo
@@ -32,6 +33,8 @@ git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible status --short
 ```
 
 Use `rg` for fast repository searches. When editing Markdown, inspect the rendered structure manually in GitHub or a Markdown preview. Generated TXT or TSV transcript files should normally be produced by `scripts/Convert-TranscriptJson.ps1`, not hand-edited.
+
+Treat `docs/questions/*.md` as the only authoritative Markdown source for episode question pages. `scripts/Build-HugoSiteContent.ps1` recreates every `site/content/questions/*.md` mirror except `_index.md`; do not hand-edit or stage those generated mirrors. If generation makes Git report changes under `site/content/questions/`, treat that as ignore, tracking, or generator policy drift and investigate before committing.
 
 Runner availability notes for Codex desktop sessions:
 
@@ -62,7 +65,7 @@ Timestamp links should point directly to YouTube with `?t=`. For links intended 
 
 ## Testing Guidelines
 
-Run `npm test` for search-index, alias, normalization, or highlighting changes, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo` for source-to-site compatibility validation. For curated Q&A pages, also check that referenced files exist, Markdown tables have consistent columns, timestamp links match transcript rows, and expanded answers are populated. Compare short and expanded answers against the TXT working transcript first, then use the JSON source or TSV output when raw fields, start seconds, or link reconstruction need auditing.
+Run `npm test` for search-index, alias, normalization, or highlighting changes, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo` for source-to-site compatibility validation; it generates the ignored question mirrors before checking them. For curated Q&A pages, also check that referenced files exist, Markdown tables have consistent columns, timestamp links match transcript rows, and expanded answers are populated. Compare short and expanded answers against the TXT working transcript first, then use the JSON source or TSV output when raw fields, start seconds, or link reconstruction need auditing.
 
 ## Commit & Pull Request Guidelines
 
