@@ -340,9 +340,9 @@ src/
 
 `src/transcripts/tsv/` is optional generated output for structured processing. TSV rows include columns such as `Timestamp`, `StartSeconds`, `Text`, and `Link`.
 
-`docs/questions/` contains human-edited reference pages. These are meant to be read directly on GitHub Pages and GitHub and may include cleaned-up questions, short answer summaries, and timestamp links.
+`docs/questions/` contains the canonical, human-edited reference pages. These are meant to be read directly on GitHub Pages and GitHub and may include cleaned-up questions, short answer summaries, and timestamp links.
 
-`site/` contains the Hugo compatibility site. During the current migration phase, generated files under `site/content/`, `site/data/`, and `site/static/search/` are produced from `docs/questions/` and `src/live-stream-list.md`; do not hand-edit generated question pages or prebuilt search files there.
+`site/` contains the Hugo compatibility site. `site/content/questions/_index.md` is the sole handwritten, tracked Markdown file in the question-content directory. Every other `site/content/questions/*.md` file is a generated, ignored mirror of `docs/questions/`; never hand-edit or commit those mirrors. The same generator also refreshes the tracked data under `site/data/` and `site/static/search/` from `docs/questions/` and `src/live-stream-list.md`.
 
 ## Local Dependencies
 
@@ -351,6 +351,14 @@ PowerShell 7 and Node.js are required for the repository scripts. Run `npm ci` b
 ```powershell
 npm ci
 ```
+
+On a clean clone, generate the Hugo question mirrors, data, and search artifacts explicitly with:
+
+```powershell
+npm run build:site-content
+```
+
+The site validation commands, `npm run launch:hugo`, and GitHub Actions run this generation step automatically. A clean checkout therefore needs no committed episode mirrors under `site/content/questions/`.
 
 On Windows, install Hugo Extended globally with Winget:
 
@@ -376,13 +384,13 @@ If Hugo is not installed yet, the non-rendering compatibility checks can still r
 pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo
 ```
 
-To preview the Hugo site locally with the same subpath used by GitHub Pages, run:
+To generate the compatibility content and preview the Hugo site locally with the same subpath used by GitHub Pages, run:
 
 ```powershell
-hugo server --source site --bind 127.0.0.1 --port 1314 --baseURL http://127.0.0.1:1314/ancient-egypt-and-the-bible/ --appendPort=false --disableFastRender
+npm run launch:hugo
 ```
 
-Then open <http://127.0.0.1:1314/ancient-egypt-and-the-bible/>.
+This command regenerates the site content before starting Hugo. Then open <http://127.0.0.1:1314/ancient-egypt-and-the-bible/>.
 
 For GitHub Pages, GitHub Actions, and deployment environment handling, see [GitHub Handling Notes](project-notes/github-handling/README.md).
 

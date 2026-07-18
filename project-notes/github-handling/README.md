@@ -6,10 +6,11 @@ This guide records the GitHub-side setup for the Hugo compatibility site. It is 
 
 - The Hugo site lives under `site/`.
 - The workflow file is `.github/workflows/pages.yml`.
-- The workflow builds Hugo output from `site/`.
+- The workflow generates Hugo question mirrors and search data from the canonical `docs/questions/` sources, then builds Hugo output from `site/`.
 - GitHub Pages deploys the uploaded Pages artifact.
 - The Pages source setting should be `GitHub Actions`.
 - The active Pages environment is named `github-pages`.
+- Pushes to `master` run the workflow automatically. `workflow_dispatch` can run it manually from another selected branch.
 
 The GitHub Pages URL for this repository is:
 
@@ -55,29 +56,22 @@ In the repository UI:
 Settings -> Environments -> github-pages
 ```
 
-Check the deployment branch or tag policy. If the workflow runs from a feature branch, that branch must be allowed to deploy to the `github-pages` environment.
-
-During the Hugo compatibility branch work, the branch is:
-
-```text
-codex/hugo-compatibility-site
-```
-
-If deployment from that branch is blocked, either allow that exact branch temporarily or merge the workflow to the branch that is already allowed to deploy.
+Check the deployment branch or tag policy. The current repository policy allows `master`. A workflow manually dispatched from a policy or feature branch can prove that the build job succeeds, but its deploy job may be blocked by the `github-pages` environment. That block is an environment-policy result, not a content-build failure.
 
 ## Running The Workflow
 
-The workflow currently runs on:
+The workflow runs on:
 
-- Pushes to `codex/hugo-compatibility-site`.
-- Manual `workflow_dispatch` runs from the Actions UI.
+- Pushes to `master`.
+- Manual `workflow_dispatch` runs from the Actions UI on the selected branch.
 
-To trigger it from GitHub:
+Pushing a policy branch alone does not trigger this workflow. To validate one before merging:
 
 1. Push the branch.
 2. Open `Actions`.
 3. Select `Build and deploy Hugo site`.
-4. Use the latest run, or use `Run workflow` if GitHub shows the manual trigger.
+4. Select `Run workflow`, choose the policy branch, and start the run.
+5. Require the build job to pass. A deployment blocked only because the branch is not permitted by the environment does not invalidate the build result.
 
 To rerun after a settings fix:
 
@@ -93,7 +87,7 @@ If the build job passed and only the deploy job failed, rerunning after the envi
 Message:
 
 ```text
-Branch "codex/hugo-compatibility-site" is not allowed to deploy to github-pages due to environment protection rules.
+Branch "some-feature-branch" is not allowed to deploy to github-pages due to environment protection rules.
 ```
 
 Meaning:
@@ -108,7 +102,7 @@ Fix:
 Settings -> Environments -> github-pages
 ```
 
-Allow the branch that ran the workflow, then rerun the failed workflow job.
+If a feature-branch deployment is intentionally required, allow that exact branch temporarily and rerun the failed workflow job. Otherwise, keep the `master`-only policy and merge the validated change normally so the automatic `master` workflow can deploy it.
 
 ### Hugo Is Not Installed Locally
 
@@ -150,10 +144,4 @@ First checks:
 
 ## Merge-Time Preference
 
-The feature branch can prove the build, but the long-term Pages deployment should normally run from the repository's main publishing branch. Before merging the Hugo migration, decide whether the workflow should:
-
-- Deploy only from the main branch.
-- Keep manual `workflow_dispatch` for controlled test runs.
-- Keep or remove feature-branch deployment permissions.
-
-Once the migration is merged, remove temporary feature-branch allowances from the `github-pages` environment if they are no longer needed.
+The durable deployment path is the automatic `master` workflow. Keep `workflow_dispatch` for controlled branch validation, and remove any temporary feature-branch deployment allowance after the test. Generated question mirrors are build products: GitHub Actions must recreate them from `docs/questions/`, and they must not be committed to the policy branch or `master`.
