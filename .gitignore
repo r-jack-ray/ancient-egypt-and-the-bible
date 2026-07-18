@@ -33,7 +33,11 @@ scripts/Get-YouTubeTranscriptJson.run-summary*
 # Generated reports, validation output, and smoke-test output.
 /reports/
 
-# Hugo local build artifacts. Generated source/data under site/ are intentionally tracked during migration.
+# Hugo local build artifacts.
 /site/.hugo_build.lock
 /site/public/
 /site/resources/_gen/
+
+# Generated from docs/questions by scripts/Build-HugoSiteContent.ps1.
+/site/content/questions/*.md
+!/site/content/questions/_index.md
