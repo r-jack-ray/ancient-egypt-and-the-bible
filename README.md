@@ -276,6 +276,7 @@ The raw transcript exports are useful, but long livestreams are hard to navigate
 - [267 Ramesses II, Marketing Genius Questions](docs/questions/267-ramesses-ii-marketing-genius-questions.md)
 - [268 Getting It Okay Questions](docs/questions/268-getting-it-okay-questions.md)
 - [269 Smithers Release The Book Hounds Questions](docs/questions/269-smithers-release-the-book-hounds-questions.md)
+- [270 Dead or Ankh Questions](docs/questions/270-live-stream-dead-or-ankh-questions.md)
 - [Special Live Stream: All the Stars as Angels Q&A Questions](docs/questions/special-live-stream-all-the-stars-as-angels-q-and-a-questions.md)
 - [Special Live Stream: Reliquary of the Dead Q&A Questions](docs/questions/special-live-stream-reliquary-of-the-dead-q-and-a-questions.md)
 - [Dr. Falk Plays Assassin's Creed Origins (part 1) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-1-questions.md)
@@ -509,7 +510,7 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 
 ## Current Status
 
-The repository currently has generated TXT working transcripts for 265 numbered episode streams. Curated Markdown pages currently exist for 265 numbered episode streams under `docs/questions/`, matching the current numbered TXT coverage.
+The repository currently has generated TXT working transcripts for 268 numbered episode streams. Curated Markdown pages currently exist for 268 numbered episode streams under `docs/questions/`, matching the current numbered TXT coverage.
 
 Known blocked numbered episodes remain:
 - Live Stream #118: transcript disabled / empty placeholder

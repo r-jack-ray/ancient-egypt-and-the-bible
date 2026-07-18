@@ -1,4 +1,5 @@
 # 📺 Ancient Egypt and the Bible – Livestream Archive
+- [Live Stream #270: Dead or Ankh](https://www.youtube.com/watch?v=gzXyFDL5TEM) `270-live-stream-dead-or-ankh`
 - [Live Stream #269: Smithers, Release The Book Hounds!](https://www.youtube.com/watch?v=al_vinriuiw) `269-smithers-release-the-book-hounds`
 - [Live Stream #268: Getting It Okay](https://www.youtube.com/watch?v=Q5TLsJcfhcE) `268-getting-it-okay`
 - [Live Stream #267: Ramesses II, Marketing Genius](https://www.youtube.com/watch?v=oi709TjJlBE) `267-ramesses-ii-marketing-genius`
