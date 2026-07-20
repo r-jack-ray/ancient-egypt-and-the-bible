@@ -9,7 +9,16 @@
   {{ $description := .Params.description | default site.Params.description }}
   <meta name="description" content="{{ $description | plainify }}">
   <link rel="canonical" href="{{ .Permalink }}">
-  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+  {{ $pageTitle := site.Title }}
+  {{ $titleSuffix := site.Params.titleSuffix | default site.Title }}
+  {{ if not .IsHome }}
+    {{ $pageTitle = printf "%s | %s" .Title $titleSuffix }}
+    {{ if and (eq .Section "questions") .Params.is_numbered }}
+      {{ $episodeTitle := strings.TrimRight "." (strings.TrimSpace .Params.episode_title) }}
+      {{ $pageTitle = printf "%s - Livestream %v Q&A | %s" $episodeTitle .Params.episode_number $titleSuffix }}
+    {{ end }}
+  {{ end }}
+  <title>{{ $pageTitle }}</title>
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
   <script>
     (function () {
