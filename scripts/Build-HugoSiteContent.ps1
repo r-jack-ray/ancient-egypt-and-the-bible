@@ -280,7 +280,12 @@ function Get-PageDescriptionFromMarkdown {
 
     foreach ($line in $Lines) {
         $trimmed = $line.Trim()
-        if ($trimmed.Length -eq 0 -or $trimmed.StartsWith("#") -or $trimmed -eq "Time links open the YouTube video at the relevant timestamp.") {
+        if (
+            $trimmed.Length -eq 0 -or
+            $trimmed.StartsWith("#") -or
+            $trimmed.StartsWith("<!--") -or
+            $trimmed -eq "Time links open the YouTube video at the relevant timestamp."
+        ) {
             continue
         }
 
@@ -292,6 +297,162 @@ function Get-PageDescriptionFromMarkdown {
     }
 
     return $Fallback
+}
+
+function ConvertTo-PlainDescriptionText {
+    param([Parameter(Mandatory = $true)][string]$Text)
+
+    $plainText = [regex]::Replace($Text, '<[^>]+>', ' ')
+    $plainText = [regex]::Replace($plainText, '\[([^\]]+)\]\([^)]+\)', '$1')
+    $plainText = [regex]::Replace($plainText, '[*_~]', '')
+    $plainText = $plainText.Replace([string][char]96, '')
+    $plainText = [Net.WebUtility]::HtmlDecode($plainText)
+    $plainText = [regex]::Replace($plainText, '\s+', ' ').Trim()
+    return $plainText.Replace('"', "'")
+}
+
+function Limit-DescriptionText {
+    param(
+        [Parameter(Mandatory = $true)][string]$Text,
+        [int]$MaximumLength = 88
+    )
+
+    if ($Text.Length -le $MaximumLength) {
+        return $Text
+    }
+
+    $trimmed = $Text.Substring(0, $MaximumLength - 3).TrimEnd()
+    $lastSpace = $trimmed.LastIndexOf(' ')
+    if ($lastSpace -ge [Math]::Floor($MaximumLength * 0.65)) {
+        $trimmed = $trimmed.Substring(0, $lastSpace)
+    }
+
+    return $trimmed.TrimEnd([char[]]' ,;:') + '...'
+}
+
+function Get-RepresentativeDescriptionTopics {
+    param(
+        [Parameter(Mandatory = $true)][object[]]$Rows,
+        [int]$MaximumLength = 88
+    )
+
+    $targetIndices = if ($Rows.Count -eq 1) {
+        @(0)
+    }
+    elseif ($Rows.Count -eq 2) {
+        @(0, 1)
+    }
+    else {
+        @(
+            [int][Math]::Floor($Rows.Count / 3),
+            [int][Math]::Floor(($Rows.Count * 2) / 3)
+        )
+    }
+
+    $selectedIndices = [Collections.Generic.HashSet[int]]::new()
+    $topics = New-Object System.Collections.Generic.List[string]
+
+    foreach ($targetIndex in $targetIndices) {
+        $topicCountBeforeSelection = $topics.Count
+        $candidateIndices = @(0..($Rows.Count - 1) | Sort-Object @{ Expression = { [Math]::Abs($_ - $targetIndex) } }, @{ Expression = { $_ } })
+        $fallbackTopic = $null
+        $fallbackIndex = -1
+
+        foreach ($candidateIndex in $candidateIndices) {
+            if ($selectedIndices.Contains($candidateIndex)) {
+                continue
+            }
+
+            $candidateTopic = ConvertTo-PlainDescriptionText -Text ([string]$Rows[$candidateIndex].question)
+            if ([string]::IsNullOrWhiteSpace($candidateTopic)) {
+                continue
+            }
+
+            if (-not $fallbackTopic) {
+                $fallbackTopic = $candidateTopic
+                $fallbackIndex = $candidateIndex
+            }
+
+            if ($candidateTopic.Length -le $MaximumLength) {
+                [void]$selectedIndices.Add($candidateIndex)
+                $topics.Add($candidateTopic)
+                break
+            }
+        }
+
+        if ($topics.Count -eq $topicCountBeforeSelection) {
+            if (-not $fallbackTopic) {
+                throw "Could not select a representative question for the generated page description."
+            }
+
+            [void]$selectedIndices.Add($fallbackIndex)
+            $topics.Add((Limit-DescriptionText -Text $fallbackTopic -MaximumLength $MaximumLength))
+        }
+    }
+
+    return $topics.ToArray()
+}
+
+function Get-PageDescriptionOverrideFromMarkdown {
+    param(
+        [Parameter(Mandatory = $true)][AllowEmptyString()][string[]]$Lines,
+        [Parameter(Mandatory = $true)][string]$Path
+    )
+
+    $descriptionOverride = $null
+
+    foreach ($line in $Lines) {
+        if ($line -match '^\s*<!--\s*seo-description\s*:\s*(?<description>.*?)\s*-->\s*$') {
+            if ($descriptionOverride) {
+                throw "$Path contains more than one seo-description override."
+            }
+
+            $descriptionOverride = ConvertTo-PlainDescriptionText -Text $Matches.description
+            if ([string]::IsNullOrWhiteSpace($descriptionOverride)) {
+                throw "$Path contains an empty seo-description override."
+            }
+            continue
+        }
+
+        if ($line -match '^\s*<!--\s*seo-description\b') {
+            throw "$Path contains a malformed seo-description override. Use: <!-- seo-description: Concise page description. -->"
+        }
+    }
+
+    return $descriptionOverride
+}
+
+function New-QuestionPageDescription {
+    param(
+        [Parameter(Mandatory = $true)][object]$PageMeta,
+        [Parameter(Mandatory = $true)][object[]]$Rows
+    )
+
+    if ($Rows.Count -eq 0) {
+        throw "Cannot generate a page description without curated question rows."
+    }
+
+    $episodeTitle = ConvertTo-PlainDescriptionText -Text ([string]$PageMeta.title)
+    $episodeTitle = $episodeTitle.TrimEnd('.')
+    if ([string]::IsNullOrWhiteSpace($episodeTitle)) {
+        throw "Cannot generate a page description without an episode title."
+    }
+
+    $sourceLabel = if ($PageMeta.is_numbered) {
+        "$episodeTitle (Live Stream #$($PageMeta.number))"
+    }
+    else {
+        $episodeTitle
+    }
+
+    $topics = @(Get-RepresentativeDescriptionTopics -Rows $Rows)
+
+    $questionLabel = if ($Rows.Count -eq 1) { "question" } else { "questions" }
+    if ($topics.Count -eq 1) {
+        return ('Explore {0} transcript-grounded {1} from {2}: "{3}"' -f $Rows.Count, $questionLabel, $sourceLabel, $topics[0])
+    }
+
+    return ('Explore {0} transcript-grounded {1} from {2}, including "{3}" and "{4}"' -f $Rows.Count, $questionLabel, $sourceLabel, $topics[0], $topics[1])
 }
 
 $RepoRoot = (Resolve-Path -LiteralPath $RepoRoot).Path
@@ -377,6 +538,8 @@ if ($episodes.Count -eq 0) {
 $allQuestionRows = New-Object System.Collections.Generic.List[object]
 $numberedPageCount = 0
 $specialPageCount = 0
+$descriptionOverrideCount = 0
+$pageDescriptions = [Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
 
 Get-ChildItem -LiteralPath $siteQuestionsDir -Filter "*.md" |
     Where-Object { $_.Name -ne "_index.md" } |
@@ -387,7 +550,7 @@ foreach ($file in $questionFiles) {
     $sourceRelativePath = Get-RelativePath -BasePath $RepoRoot -Path $file.FullName
     $lines = @(Get-Content -LiteralPath $file.FullName)
     $pageTitle = Get-PageTitleFromMarkdown -Lines $lines -Fallback $baseName
-    $pageDescription = Get-PageDescriptionFromMarkdown -Lines $lines -Fallback $pageTitle
+    $pageIntro = Get-PageDescriptionFromMarkdown -Lines $lines -Fallback $pageTitle
 
     $pageMeta = $null
     if ($baseName -match '^(?<number>\d+)-') {
@@ -423,7 +586,7 @@ foreach ($file in $questionFiles) {
 
         $pageMeta = [ordered]@{
             number = $null
-            title = $(if ($episode) { $episode.title } else { $pageDescription })
+            title = $(if ($episode) { $episode.title } else { $pageIntro })
             slug = $slug
             video_id = $(if ($episode) { $episode.video_id } else { $null })
             question_page = "questions/$($file.Name)"
@@ -459,6 +622,22 @@ foreach ($file in $questionFiles) {
         $allQuestionRows.Add($row)
     }
 
+    $descriptionOverride = Get-PageDescriptionOverrideFromMarkdown -Lines $lines -Path $sourceRelativePath
+    $descriptionSource = "generated_from_questions"
+    if ($descriptionOverride) {
+        $pageDescription = $descriptionOverride
+        $descriptionSource = "curated_override"
+        $descriptionOverrideCount++
+    }
+    else {
+        $pageDescription = New-QuestionPageDescription -PageMeta ([pscustomobject]$pageMeta) -Rows $rows
+    }
+
+    $descriptionKey = ([regex]::Replace($pageDescription, '\s+', ' ')).Trim()
+    if (-not $pageDescriptions.Add($descriptionKey)) {
+        throw "Generated duplicate page description for $sourceRelativePath."
+    }
+
     $matchingEpisode = $episodesBySlug[$pageMeta.slug]
     $matchingEpisode.question_page = "questions/$($file.Name)"
     $matchingEpisode.content_path = $pageMeta.content_path
@@ -470,6 +649,7 @@ foreach ($file in $questionFiles) {
         "---",
         "title: $(ConvertTo-YamlScalar $pageTitle)",
         "description: $(ConvertTo-YamlScalar $pageDescription)",
+        "description_source: $(ConvertTo-YamlScalar $descriptionSource)",
         "source_file: $(ConvertTo-YamlScalar $sourceRelativePath)",
         "episode_number: $(ConvertTo-YamlScalar $pageMeta.number)",
         "episode_title: $(ConvertTo-YamlScalar $pageMeta.title)",
@@ -514,5 +694,6 @@ if (-not $nodeCommand) {
 Write-Host "Generated $actualGeneratedCount Hugo question pages from docs/questions."
 Write-Host "Numbered pages: $numberedPageCount"
 Write-Host "Special pages: $specialPageCount"
+Write-Host "Description overrides: $descriptionOverrideCount"
 Write-Host "Question rows: $($allQuestionRows.Count)"
 Write-Host "Wrote site/data/episodes.json, site/data/questions.json, and site/static/search/."
