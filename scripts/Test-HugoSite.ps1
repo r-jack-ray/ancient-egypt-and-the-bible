@@ -39,6 +39,50 @@ if ($specialPages.Count -ne $expectedSpecialPageCount) {
     throw "Expected $expectedSpecialPageCount special pages from docs/questions, found $($specialPages.Count)."
 }
 
+$generatedDescriptionRecords = @(
+    foreach ($page in $generatedPages) {
+        $content = Get-Content -LiteralPath $page.FullName -Raw
+        $descriptionMatch = [regex]::Match($content, "(?m)^description: '(?<value>(?:[^']|'')*)'\r?$")
+        $sourceMatch = [regex]::Match($content, "(?m)^description_source: '(?<value>generated_from_questions|curated_override)'\r?$")
+
+        if (-not $descriptionMatch.Success -or -not $sourceMatch.Success) {
+            throw "Generated page is missing a valid description or description_source: $($page.FullName)"
+        }
+
+        $description = $descriptionMatch.Groups["value"].Value.Replace("''", "'").Trim()
+        $descriptionSource = $sourceMatch.Groups["value"].Value
+
+        if ([string]::IsNullOrWhiteSpace($description)) {
+            throw "Generated page has an empty description: $($page.FullName)"
+        }
+
+        if (
+            $descriptionSource -eq "generated_from_questions" -and
+            $description -notmatch '^Explore \d+ transcript-grounded questions? from .+(?:, including ".*" and ".*"|: ".*")$'
+        ) {
+            throw "Generated question-derived description is not substantive or uses an unexpected format: $($page.FullName)"
+        }
+
+        [pscustomobject]@{
+            Path = $page.FullName
+            Description = $description
+            NormalizedDescription = $description.ToLowerInvariant()
+            Source = $descriptionSource
+        }
+    }
+)
+
+$duplicateDescriptions = @(
+    $generatedDescriptionRecords |
+        Group-Object NormalizedDescription |
+        Where-Object Count -gt 1
+)
+
+if ($duplicateDescriptions.Count -gt 0) {
+    $duplicatePaths = $duplicateDescriptions | ForEach-Object { $_.Group.Path -join ", " }
+    throw "Found duplicate generated page descriptions: $($duplicatePaths -join "; ")"
+}
+
 $badRows = @($questions | Where-Object {
     [string]::IsNullOrWhiteSpace($_.question_page) -or
     [string]::IsNullOrWhiteSpace($_.question) -or
@@ -75,4 +119,5 @@ if (-not $SkipHugo) {
 Write-Host "Hugo compatibility validation passed."
 Write-Host "Source/generated pages: $sourceQuestionCount"
 Write-Host "Numbered/special pages: $($numberedPages.Count)/$($specialPages.Count)"
+Write-Host "Generated/overridden descriptions: $(@($generatedDescriptionRecords | Where-Object Source -eq 'generated_from_questions').Count)/$(@($generatedDescriptionRecords | Where-Object Source -eq 'curated_override').Count)"
 Write-Host "Question rows: $($questions.Count)"

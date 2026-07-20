@@ -57,6 +57,14 @@ Follow existing transcript naming patterns:
 
 For ordinary curated pages, use `docs/questions/<slug>-questions.md`. If the slug already ends in `questions`, use `docs/questions/<slug>.md` to avoid duplicated names like `questions-questions.md`. Special-purpose pages such as `208-super-chat-questions.md` should only be used when explicitly requested. Ordinary Q&A pages use the four-column table `Time | Question | Short answer / answer direction | Expanded answer`; treat filled expanded answers as the current baseline, not as a pending migration.
 
+`scripts/Build-HugoSiteContent.ps1` generates each episode's SEO description from representative curated questions. Review that description when adding or substantially revising an episode. If the generated result is weak or unrepresentative, add one transcript-grounded, single-line override near the top of the authoritative `docs/questions/*.md` page:
+
+```html
+<!-- seo-description: Concise, accurate description of this episode's questions. -->
+```
+
+Do not add multiple overrides or edit the generated `site/content/questions/*.md` mirror.
+
 Timestamp links should point directly to YouTube with `?t=`. For links intended to open in a new GitHub tab, use:
 
 ```html
