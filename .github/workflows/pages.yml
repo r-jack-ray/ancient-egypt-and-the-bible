@@ -73,6 +73,10 @@ jobs:
         shell: pwsh
         run: ./scripts/Test-HugoPageTitles.ps1 -PublicDir site/public
 
+      - name: Validate sitemap
+        shell: pwsh
+        run: ./scripts/Test-HugoSitemap.ps1 -PublicDir site/public -ExpectedBaseUrl "${{ steps.pages.outputs.base_url }}/"
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
