@@ -77,6 +77,10 @@ jobs:
         shell: pwsh
         run: ./scripts/Test-HugoSitemap.ps1 -PublicDir site/public -ExpectedBaseUrl "${{ steps.pages.outputs.base_url }}/"
 
+      - name: Validate rendered SEO and internal links
+        shell: pwsh
+        run: ./scripts/Test-HugoRenderedSeo.ps1 -PublicDir site/public -ExpectedBaseUrl "${{ steps.pages.outputs.base_url }}/"
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:

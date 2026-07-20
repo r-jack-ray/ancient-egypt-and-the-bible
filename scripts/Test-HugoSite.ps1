@@ -1,6 +1,7 @@
 param(
     [string]$RepoRoot = (Split-Path -Parent $PSScriptRoot),
-    [switch]$SkipHugo
+    [switch]$SkipHugo,
+    [string]$ExpectedBaseUrl
 )
 
 Set-StrictMode -Version Latest
@@ -110,10 +111,30 @@ if (-not $SkipHugo) {
         throw "Hugo is not installed or not on PATH. Install Hugo, then run: pwsh -NoProfile -File scripts/Test-HugoSite.ps1"
     }
 
-    & $hugoCommand.Source --source (Join-Path $RepoRoot "site")
+    if ([string]::IsNullOrWhiteSpace($ExpectedBaseUrl)) {
+        $hugoConfigPath = Join-Path $RepoRoot "site/hugo.yaml"
+        $hugoConfig = Get-Content -LiteralPath $hugoConfigPath -Raw
+        $baseUrlMatch = [regex]::Match($hugoConfig, '(?m)^baseURL:\s*["'']?(?<url>[^"''\r\n]+)["'']?\s*$')
+        if (-not $baseUrlMatch.Success) {
+            throw "Could not determine baseURL from $hugoConfigPath. Pass -ExpectedBaseUrl explicitly."
+        }
+        $ExpectedBaseUrl = $baseUrlMatch.Groups["url"].Value.Trim()
+    }
+
+    $ExpectedBaseUrl = $ExpectedBaseUrl.TrimEnd('/') + '/'
+    $siteRoot = Join-Path $RepoRoot "site"
+    $publicDir = Join-Path $siteRoot "public"
+
+    & $hugoCommand.Source --source $siteRoot --baseURL $ExpectedBaseUrl
     if ($LASTEXITCODE -ne 0) {
         throw "Hugo build failed with exit code $LASTEXITCODE."
     }
+
+    & (Join-Path $RepoRoot "scripts/Test-HugoCanonicalUrls.ps1") -PublicDir $publicDir -ExpectedBaseUrl $ExpectedBaseUrl
+    & (Join-Path $RepoRoot "scripts/Test-HugoMetaDescriptions.ps1") -PublicDir $publicDir
+    & (Join-Path $RepoRoot "scripts/Test-HugoPageTitles.ps1") -PublicDir $publicDir
+    & (Join-Path $RepoRoot "scripts/Test-HugoSitemap.ps1") -PublicDir $publicDir -ExpectedBaseUrl $ExpectedBaseUrl
+    & (Join-Path $RepoRoot "scripts/Test-HugoRenderedSeo.ps1") -PublicDir $publicDir -ExpectedBaseUrl $ExpectedBaseUrl
 }
 
 Write-Host "Hugo compatibility validation passed."
