@@ -24,60 +24,28 @@ if ($baseUri.Scheme -notin @("http", "https")) {
 
 $normalizedBaseUrl = $baseUri.AbsoluteUri.TrimEnd("/") + "/"
 $baseUri = [Uri]::new($normalizedBaseUrl)
-$questionsDir = Join-Path $PublicDir "questions"
+$canonicalUrls = [Collections.Generic.HashSet[string]]::new([StringComparer]::Ordinal)
+$renderedPageCount = 0
 
-if (-not (Test-Path -LiteralPath $questionsDir -PathType Container)) {
-    throw "Rendered questions directory was not found: $questionsDir"
-}
+foreach ($file in Get-ChildItem -LiteralPath $PublicDir -Recurse -Filter "*.html" -File) {
+    $relativePath = [IO.Path]::GetRelativePath($PublicDir, $file.FullName) -replace "\\", "/"
+    $html = Get-Content -LiteralPath $file.FullName -Raw
 
-$episodeFile = Get-ChildItem -LiteralPath $questionsDir -Directory |
-    ForEach-Object {
-        $candidate = Join-Path $_.FullName "index.html"
-        if (Test-Path -LiteralPath $candidate -PathType Leaf) {
-            Get-Item -LiteralPath $candidate
-        }
-    } |
-    Sort-Object FullName |
-    Select-Object -First 1
-
-if (-not $episodeFile) {
-    throw "No rendered episode page was found under $questionsDir."
-}
-
-$episodeRoute = [IO.Path]::GetRelativePath($PublicDir, $episodeFile.FullName) -replace "\\", "/"
-$episodeRoute = $episodeRoute -replace "index\.html$", ""
-
-$representativePages = @(
-    [pscustomobject]@{
-        Name = "home"
-        File = Join-Path $PublicDir "index.html"
-        Route = ""
-    }
-    [pscustomobject]@{
-        Name = "questions section"
-        File = Join-Path $questionsDir "index.html"
-        Route = "questions/"
-    }
-    [pscustomobject]@{
-        Name = "episode"
-        File = $episodeFile.FullName
-        Route = $episodeRoute
-    }
-)
-
-foreach ($page in $representativePages) {
-    if (-not (Test-Path -LiteralPath $page.File -PathType Leaf)) {
-        throw "Rendered $($page.Name) page was not found: $($page.File)"
+    if (
+        $relativePath -match '^google[a-z0-9]+\.html$' -and
+        $html.Trim() -match '^google-site-verification:\s*google[a-z0-9]+\.html$'
+    ) {
+        continue
     }
 
-    $html = Get-Content -LiteralPath $page.File -Raw
+    $renderedPageCount++
     $linkTags = [regex]::Matches($html, "<link\b[^>]*>", [Text.RegularExpressions.RegexOptions]::IgnoreCase)
     $canonicalTags = @($linkTags | Where-Object {
         $_.Value -match '\brel\s*=\s*(?:"canonical"|''canonical''|canonical)(?=\s|/?>)'
     })
 
     if ($canonicalTags.Count -ne 1) {
-        throw "Rendered $($page.Name) page must contain exactly one canonical link; found $($canonicalTags.Count)."
+        throw "Rendered page must contain exactly one canonical link; found $($canonicalTags.Count): $relativePath"
     }
 
     $hrefMatch = [regex]::Match(
@@ -87,7 +55,7 @@ foreach ($page in $representativePages) {
     )
 
     if (-not $hrefMatch.Success) {
-        throw "Rendered $($page.Name) canonical link has no href."
+        throw "Rendered page canonical link has no href: $relativePath"
     }
 
     $hrefValue = @("double", "single", "unquoted") |
@@ -95,17 +63,33 @@ foreach ($page in $representativePages) {
         Where-Object Success |
         Select-Object -First 1
     $actualUrl = [Net.WebUtility]::HtmlDecode($hrefValue.Value)
-    $expectedUrl = [Uri]::new($baseUri, [string]$page.Route).AbsoluteUri
+    $route = if ($relativePath -ceq "index.html") {
+        ""
+    }
+    elseif ($relativePath.EndsWith("/index.html", [StringComparison]::Ordinal)) {
+        $relativePath.Substring(0, $relativePath.Length - "index.html".Length)
+    }
+    else {
+        $relativePath
+    }
+    $expectedUrl = [Uri]::new($baseUri, $route).AbsoluteUri
 
     if ($actualUrl -match "(?i)(localhost|127\.0\.0\.1)" -or $actualUrl -match "(?i)\.md(?:$|[?#])") {
-        throw "Rendered $($page.Name) canonical URL is not a deployable page URL: $actualUrl"
+        throw "Rendered page canonical URL is not deployable: $relativePath -> $actualUrl"
     }
 
     if ($actualUrl -cne $expectedUrl) {
-        throw "Rendered $($page.Name) canonical URL is '$actualUrl'; expected '$expectedUrl'."
+        throw "Rendered page canonical URL is '$actualUrl'; expected '$expectedUrl': $relativePath"
     }
 
-    Write-Host "Canonical URL passed ($($page.Name)): $actualUrl"
+    if (-not $canonicalUrls.Add($actualUrl)) {
+        throw "Multiple rendered pages use the same canonical URL: $actualUrl"
+    }
 }
 
-Write-Host "Representative Hugo canonical URL validation passed."
+if ($renderedPageCount -eq 0) {
+    throw "No Hugo-rendered HTML pages were found under $PublicDir."
+}
+
+Write-Host "Full-site Hugo canonical URL validation passed."
+Write-Host "Rendered/unique canonicals: $renderedPageCount/$($canonicalUrls.Count)"

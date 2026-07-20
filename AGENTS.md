@@ -73,7 +73,7 @@ Timestamp links should point directly to YouTube with `?t=`. For links intended 
 
 ## Testing Guidelines
 
-Run `npm test` for search-index, alias, normalization, or highlighting changes, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo` for source-to-site compatibility validation; it generates the ignored question mirrors before checking them. For curated Q&A pages, also check that referenced files exist, Markdown tables have consistent columns, timestamp links match transcript rows, and expanded answers are populated. Compare short and expanded answers against the TXT working transcript first, then use the JSON source or TSV output when raw fields, start seconds, or link reconstruction need auditing.
+Run `npm test` for search-index, alias, normalization, or highlighting changes, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo` for source-to-site compatibility validation; it generates the ignored question mirrors before checking them. After a production-baseURL Hugo render, use `scripts/Test-HugoRenderedSeo.ps1` to check complete rendered metadata, indexability, JSON-LD parsing, and internal links. For curated Q&A pages, also check that referenced files exist, Markdown tables have consistent columns, timestamp links match transcript rows, and expanded answers are populated. Compare short and expanded answers against the TXT working transcript first, then use the JSON source or TSV output when raw fields, start seconds, or link reconstruction need auditing.
 
 ## Commit & Pull Request Guidelines
 
