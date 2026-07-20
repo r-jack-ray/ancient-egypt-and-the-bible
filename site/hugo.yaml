@@ -15,5 +15,6 @@ permalinks:
   questions: "/questions/:slug/"
 
 params:
+  description: "Transcript-grounded questions, answers, and timestamps from Ancient Egypt and the Bible livestreams."
   sourceCorpus: "docs/questions"
   generatedContent: "site/content/questions"

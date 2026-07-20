@@ -6,6 +6,8 @@
   {{ if .Params.noindex }}
   <meta name="robots" content="noindex, follow">
   {{ end }}
+  {{ $description := .Params.description | default site.Params.description }}
+  <meta name="description" content="{{ $description | plainify }}">
   <link rel="canonical" href="{{ .Permalink }}">
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
