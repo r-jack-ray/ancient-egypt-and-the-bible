@@ -65,6 +65,10 @@ jobs:
         shell: pwsh
         run: ./scripts/Test-HugoCanonicalUrls.ps1 -PublicDir site/public -ExpectedBaseUrl "${{ steps.pages.outputs.base_url }}/"
 
+      - name: Validate meta descriptions
+        shell: pwsh
+        run: ./scripts/Test-HugoMetaDescriptions.ps1 -PublicDir site/public
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
