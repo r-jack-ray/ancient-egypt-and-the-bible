@@ -61,6 +61,10 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+      - name: Validate canonical URLs
+        shell: pwsh
+        run: ./scripts/Test-HugoCanonicalUrls.ps1 -PublicDir site/public -ExpectedBaseUrl "${{ steps.pages.outputs.base_url }}/"
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
