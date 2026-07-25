@@ -1,6 +1,6 @@
 param(
     [string]$RepoRoot = (Split-Path -Parent $PSScriptRoot),
-    [int]$MaxRowsPerAliasGroup = 1000
+    [int]$MaxRowsPerAliasGroup = 1100
 )
 
 Set-StrictMode -Version Latest
