@@ -34,24 +34,21 @@ Default to creating the requested page or pages with full transcript coverage. K
 
 Use the current repository layout:
 
-1. Routing index: `src/live-stream-list.md`
-2. Source transcript: `src/transcripts/json/<slug>.json`
-3. Working transcript: `src/transcripts/txt/<slug>.txt`
-4. TSV only when exact seconds or generated links are useful.
+1. Canonical archive identity: `src/channel/episodes.json`
+2. Transcript mapping and validation facts: `src/transcripts/manifest.json`
+3. Source transcript: `src/transcripts/txt/<fileStem>.txt`
+4. Hugo compatibility projection: `src/live-stream-list.md`
 
-Use TXT as the default curation surface. Use JSON as the source of record to resolve ambiguity, verify raw fields, or generate missing TXT.
+TXT is the transcript source of record and default curation surface. Resolve its stable `fileStem` from the manifest. Legacy JSON is retained temporarily as optional historical evidence, but normal creation must not require it or create a new JSON payload.
 
-If the JSON source exists but the TXT file is missing, generate TXT before curating:
-
-```powershell
-pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/12-the-quorum-of-the-twelve.json
-```
-
-If the converter reports no transcript segments, treat the JSON as an empty placeholder and do not invent a page. For TSV:
+If an expected TXT file is missing, validate the store and use the direct TypeScript acquisition command:
 
 ```powershell
-pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/12-the-quorum-of-the-twelve.json -Format Tsv
+npm run check:transcript-store
+npm run alternate:fetch:transcript -- --video-id VIDEO_ID
 ```
+
+If acquisition reports unavailable captions or no transcript segments, do not invent a page. Temporary structured diagnostics belong under ignored `reports/`, not in the tracked transcript store.
 
 ## Output Location
 
@@ -88,11 +85,11 @@ For each requested stream:
 
 ### 2. Confirm Transcript Sources
 
-1. Confirm the matching JSON source exists under `src/transcripts/json/`.
-2. If JSON is missing, report the blocker and stop processing that stream.
-3. Confirm the matching TXT working transcript exists under `src/transcripts/txt/`.
-4. If TXT is missing and JSON is non-empty, run `scripts/Convert-TranscriptJson.ps1` for that JSON file.
-5. If conversion reports no transcript segments, treat the JSON as an empty placeholder and do not create a fabricated page.
+1. Resolve the video ID and stable `fileStem` through `episodes.json` and `manifest.json`.
+2. Confirm the manifest-owned TXT exists under `src/transcripts/txt/`.
+3. If the manifest or TXT is missing or invalid, run the store validator and report the blocker.
+4. Use the direct single-video TypeScript command only when acquisition is authorized for that registered ID.
+5. If acquisition reports unavailable captions or no segments, do not create a fabricated page.
 
 ### 3. Establish Full Transcript Coverage
 
@@ -181,7 +178,7 @@ Before considering the page complete:
 - confirm that the full TXT transcript was inspected without gaps
 - confirm that no outside facts were added
 
-Use TSV when exact seconds or generated links are difficult to validate from TXT. Use JSON only when TXT and TSV are insufficient.
+Derive exact seconds from the TXT display timestamp. If a temporary structured diagnostic is needed, keep it under ignored `reports/`; do not add a tracked TSV or JSON transcript payload.
 
 ### 8. Validate And Update Navigation
 
@@ -248,7 +245,7 @@ Keep the `?t=` value in seconds. Convert precisely:
 1:22:43 -> 4963
 ```
 
-When the TXT transcript line has only the display timestamp, convert it to seconds for the URL. When TSV exists, prefer its `StartSeconds` and generated `Link` values over hand conversion.
+When the TXT transcript line has only the display timestamp, convert it precisely to seconds for the URL.
 
 ## Wording And Summary Rules
 
@@ -388,7 +385,7 @@ Also:
 - verify the full transcript coverage record has no skipped range
 - inspect the page in a Markdown preview when practical
 
-If a TXT file was generated for the stream, verify it exists under `src/transcripts/txt/` and that its line count matches the transcript segment count reported by the converter.
+If a TXT file was acquired for the stream, verify it exists at the manifest-owned path and passes `npm run check:transcript-store`.
 
 If a new curated page was added, ensure `README.md` links to the new page when the surrounding README section lists curated episodes or curated pages.
 
@@ -431,7 +428,7 @@ A task using this skill is complete only when the relevant items are true:
 - the recorded `coverage=full` matches the work actually performed
 - ordinary first-pass creation records use `could_use_further_inspection=yes` and do not claim that an audit occurred
 - no successful creation record was appended for a blocked or uncreated page
-- generated TXT or TSV files, when created, were produced by `scripts/Convert-TranscriptJson.ps1`
+- newly acquired transcripts, when authorized, were produced by the direct TypeScript TXT pipeline
 - `README.md` explicit episode links and current-status text are updated when needed
 - shared navigation or status files were updated serially
 - the diff was reviewed

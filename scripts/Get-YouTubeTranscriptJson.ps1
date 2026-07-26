@@ -1,9 +1,13 @@
 #requires -Version 7.0
 <#
 .SYNOPSIS
-Downloads YouTube transcript JSON files for every stream entry in src/live-stream-list.md.
+LEGACY rollback-only downloader for transcript JSON.
 
 .DESCRIPTION
+The active pipeline is `npm run alternate:fetch:transcripts:safe`, which writes
+TXT payloads directly. Do not use this script for normal acquisition or add new
+tracked transcript JSON during the migration/deployment proving period.
+
 Use this from the repository root to pull transcript JSON files into src/transcripts/json/.
 
 Dependency note:

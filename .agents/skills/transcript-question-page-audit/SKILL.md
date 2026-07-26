@@ -24,18 +24,18 @@ Use `transcript-to-md-reference` instead for first-pass page creation.
 Use these in order:
 
 1. Existing page: `docs/questions/<slug>-questions.md`
-2. Working transcript: `src/transcripts/txt/<slug>.txt`
-3. Source transcript: `src/transcripts/json/<slug>.json`
-4. Stream routing index: `src/live-stream-list.md`
-5. TSV only when exact seconds/links are hard to audit from TXT.
+2. Canonical identity and path: `src/channel/episodes.json` and `src/transcripts/manifest.json`
+3. Source transcript: `src/transcripts/txt/<fileStem>.txt`
+4. Stream routing projection: `src/live-stream-list.md`
 
-If TXT is missing and JSON exists, generate TXT with:
+If an expected TXT is missing, validate the store and use direct acquisition only when authorized:
 
 ```powershell
-pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/<slug>.json
+npm run check:transcript-store
+npm run alternate:fetch:transcript -- --video-id VIDEO_ID
 ```
 
-If JSON is missing, or conversion says no transcript segments were found, stop for that page and report the blocker. Do not guess from the existing Markdown.
+If the manifest is invalid, the TXT is missing, or acquisition reports no caption segments, stop for that page and report the blocker. Do not guess from the existing Markdown. Legacy JSON is optional historical evidence while retained, not a prerequisite or active source.
 
 Special-purpose pages may not match the source slug exactly. Resolve the source stream from page headings, links, README references, `src/live-stream-list.md`,
 or nearby transcript names.
@@ -53,7 +53,7 @@ Read the Markdown page first. Extract:
 
 Use `src/live-stream-list.md` only to confirm uncertain title, slug, or video ID.
 
-Do not read the full JSON unless TXT or TSV cannot answer the question.
+Do not require legacy JSON or create tracked TSV diagnostics. The canonical TXT should answer page-scoped audit questions; put exceptional diagnostics under ignored `reports/`.
 
 ### 2. Determine Coverage
 
@@ -171,7 +171,7 @@ Convert precisely:
 1:22:43 -> 4963
 ```
 
-When TSV exists, prefer `StartSeconds` and generated links over hand conversion.
+Convert the canonical TXT display timestamp precisely to seconds for links.
 
 ## Wording And Summary Rules
 

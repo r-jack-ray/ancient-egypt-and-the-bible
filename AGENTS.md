@@ -4,14 +4,16 @@
 
 This repository is a Questions & Answers reference archive for the Ancient Egypt and the Bible livestreams, not an application. The main source data and public reference pages live under `src/` and `docs/`.
 
-- `src/live-stream-list.md` and `src/live-stream-list.txt`: episode indexes with YouTube links and transcript slugs.
-- `src/transcripts/json/`: raw YouTube transcript JSON exports. Treat these as the source of record.
-- `src/transcripts/txt/`: generated working transcript text files, one transcript segment per line. These are the default inspection surface for curation and should exist for each non-empty JSON transcript export.
-- `src/transcripts/tsv/`: optional generated TSV files, created only when structured columns are useful.
+- `src/channel/episodes.json`: canonical archive membership, stable video IDs, titles, slugs, order, and `fileStem` values.
+- `src/live-stream-list.md`: deterministic Hugo compatibility projection with YouTube links and transcript slugs.
+- `src/transcripts/manifest.json`: canonical TXT payload facts and video-ID-to-file mapping.
+- `src/transcripts/txt/`: canonical transcript payloads, one indexed/timestamped segment per line, and the default curation surface.
+- `src/transcripts/json/`: legacy transcript exports retained unchanged until the TypeScript/TXT pipeline is merged and deployed. Do not add new payloads here.
 - `docs/questions/`: canonical curated GitHub-readable Q&A reference pages with timestamp links, short answers, and filled transcript-grounded expanded answers.
 - `site/`: Hugo compatibility site. `site/content/questions/_index.md` is handwritten and tracked; the other question Markdown files are generated mirrors, ignored by Git, and must not be edited or committed.
 - `tests/`: Node test coverage for the generated search index and client-side search behavior.
-- `scripts/Convert-TranscriptJson.ps1`: PowerShell 7 converter from transcript JSON to TXT or TSV.
+- `src/scripts/`: Node 22 + strict TypeScript inventory, transcript acquisition, reporting, and validation CLIs.
+- `scripts/Convert-TranscriptJson.ps1`: legacy rollback/diagnostic converter; not a canonical writer.
 - `reports/`: ignored generated reports, validation output, smoke-test output, and triage artifacts.
 - `task-notes/`: transient in-project notes, AI session summaries, and temporary human task documentation. Create this directory if it is missing.
 
@@ -24,7 +26,10 @@ Transcript curation has no compile step. The Hugo/search surfaces do have build 
 ```powershell
 rg "search term" src/transcripts docs/questions
 Get-Content docs/questions/208-super-chat-questions.md
-pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/14-fourteen-pieces-of-osiris.json
+npm run check:transcript-store
+npm run check:stream-index
+npm run fetch:video-links
+npm run alternate:fetch:transcripts:safe -- --dry-run
 npm run build:site-content
 npm test
 npm run check:js
@@ -32,7 +37,7 @@ pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo
 git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible status --short
 ```
 
-Use `rg` for fast repository searches. When editing Markdown, inspect the rendered structure manually in GitHub or a Markdown preview. Generated TXT or TSV transcript files should normally be produced by `scripts/Convert-TranscriptJson.ps1`, not hand-edited.
+Use `rg` for fast repository searches. When editing Markdown, inspect the rendered structure manually in GitHub or a Markdown preview. New transcript payloads are produced directly as TXT by the TypeScript pipeline, not hand-edited or routed through new JSON.
 
 Treat `docs/questions/*.md` as the only authoritative Markdown source for episode question pages. `scripts/Build-HugoSiteContent.ps1` recreates every `site/content/questions/*.md` mirror except `_index.md`; do not hand-edit or stage those generated mirrors. If generation makes Git report changes under `site/content/questions/`, treat that as ignore, tracking, or generator policy drift and investigate before committing.
 
@@ -50,7 +55,6 @@ Use Markdown for human-facing reference pages. Keep headings clear, tables compa
 Follow existing transcript naming patterns:
 
 ```text
-208-hysterical-context-error.json
 208-hysterical-context-error.txt
 208-super-chat-questions.md
 ```
@@ -73,7 +77,7 @@ Timestamp links should point directly to YouTube with `?t=`. For links intended 
 
 ## Testing Guidelines
 
-Run `npm test` for search-index, alias, normalization, or highlighting changes, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo` for source-to-site compatibility validation; it generates the ignored question mirrors before checking them. After a production-baseURL Hugo render, use `scripts/Test-HugoRenderedSeo.ps1` to check complete rendered metadata, indexability, JSON-LD parsing, and internal links. For curated Q&A pages, also check that referenced files exist, Markdown tables have consistent columns, timestamp links match transcript rows, and expanded answers are populated. Compare short and expanded answers against the TXT working transcript first, then use the JSON source or TSV output when raw fields, start seconds, or link reconstruction need auditing.
+Run `npm test` for the legacy search suite and compiled TypeScript tests, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `npm run check:transcript-store` and `npm run check:stream-index` for acquisition changes. Use `pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo` for source-to-site compatibility validation; it generates the ignored question mirrors before checking them. After a production-baseURL Hugo render, use `scripts/Test-HugoRenderedSeo.ps1` to check complete rendered metadata, indexability, JSON-LD parsing, and internal links. For curated Q&A pages, compare short and expanded answers against the manifest-owned TXT transcript.
 
 ## Commit & Pull Request Guidelines
 
@@ -102,7 +106,7 @@ Do not invent transcript content. Preserve uncertainty when audio or transcript 
 
 When a request involves Hugo site search, search indexing, missing or noisy search results, search aliases, search query smoke tests, or making a term easier to find, use `$search-index-curator` even if the user does not name the skill exactly. Treat natural phrasing such as "fix search for X", "improve results for X", "search misses X", "X should find Y", or "add a synonym/alias" as enough to route through the skill.
 
-When a curated page needs transcript inspection, prefer the matching `src/transcripts/txt/<slug>.txt` file. The generated TXT files are optimized for `rg`, `Select-String`, and bounded `Get-Content` review. Use the JSON source of record to resolve ambiguity, confirm raw fields, or regenerate derived outputs; use TSV only when structured `StartSeconds` and `Link` columns are useful.
+When a curated page needs transcript inspection, resolve the matching `src/transcripts/txt/<fileStem>.txt` through `src/transcripts/manifest.json`. TXT is the source of record and is optimized for `rg`, `Select-String`, and bounded `Get-Content` review. Legacy JSON may be consulted as optional historical evidence while retained, but curation must not require it.
 
 When requesting `transcript-question-page-audit`, prefer project-root-relative paths and the direct phrase:
 
@@ -112,13 +116,13 @@ docs/questions/<file>.md use $transcript-question-page-audit find and fix issues
 
 Add `with full transcript coverage` when the goal includes finding missing questions.
 
-If a matching TXT file does not exist and the JSON source is non-empty, generate it with:
+If a registered expected TXT file is missing, report the store inconsistency and use the direct TypeScript acquisition path:
 
 ```powershell
-pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/<slug>.json
+npm run alternate:fetch:transcript -- --video-id VIDEO_ID
 ```
 
-If the converter reports that no transcript segments were found, treat the JSON as an empty placeholder and do not create a fabricated curated page.
+If captions are unavailable or the fetcher reports no transcript segments, do not create a fabricated curated page.
 
 ### AI Model Changes
 
@@ -126,7 +130,7 @@ When changing transcript-processing prompts or workflows, compare representative
 
 ### Notes Placement and Configuration
 
-Use `./task-notes/` for transient in-project task notes, including AI session summaries and temporary human task documentation. Create the directory if it does not exist. Do not place generated transcript TXT/TSV files here; those belong under `src/transcripts/`. Do not place generated reports, validation output, smoke-test output, CSV/JSON report data, or Markdown report files here; those belong under `./reports/`.
+Use `./task-notes/` for transient in-project task notes, including AI session summaries and temporary human task documentation. Create the directory if it does not exist. Do not place canonical transcript TXT files here; those belong under `src/transcripts/txt/`. Do not place generated reports, validation output, smoke-test output, CSV/JSON report data, or Markdown report files here; those belong under `./reports/`.
 
 `task-notes/README.md` is the committed policy file for this notes area.
 
