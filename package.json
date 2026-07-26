@@ -1,16 +1,53 @@
 {
+  "name": "ancient-egypt-and-the-bible",
+  "version": "0.1.0",
   "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
-    "test": "node --test",
+    "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\"",
+    "build": "tsc -p tsconfig.json",
+    "check:types": "tsc --noEmit -p tsconfig.json",
+    "test": "npm run test:legacy && npm run test:typescript",
+    "test:legacy": "node --test tests/*.test.js",
+    "test:typescript": "npm run clean && npm run build && node --test \"dist/**/*.test.js\"",
     "check": "npm run check:js && npm run check:site:static",
+    "check:functional": "npm run check:types && npm run test:typescript && npm run check:transcript-store && npm run check:stream-index && npm run check:js && npm run check:site:static && npm run test:legacy",
+    "check:offline": "npm run check:functional && git diff --exit-code && git diff --check",
     "check:js": "node --check scripts/Build-SearchIndex.mjs && node --check site/assets/js/search-core.js && node --check site/assets/js/search.js && node --check site/assets/js/site.js",
+    "check:stream-index": "tsx src/scripts/check-stream-index.ts",
+    "check:transcript-store": "tsx src/scripts/check-transcript-store.ts",
+    "bootstrap:transcript-store": "tsx src/scripts/bootstrap-transcript-store.ts",
+    "fetch:video-links": "tsx src/scripts/get-channel-video-links.ts",
+    "fetch:video-metadata": "tsx src/scripts/fetch-video-metadata.ts",
+    "alternate:fetch:transcript": "tsx src/scripts/get-video-transcript.ts",
+    "alternate:fetch:transcripts": "tsx src/scripts/fetch-transcript-batch.ts",
+    "alternate:fetch:transcripts:safe": "tsx src/scripts/fetch-transcript-batch.ts --request-delay-ms 60000",
+    "alternate:fetch:transcripts:retry": "npm run alternate:fetch:transcripts -- --retry-failed",
+    "alternate:fetch:transcripts:retry:safe": "npm run alternate:fetch:transcripts -- --retry-failed --request-delay-ms 60000",
+    "report:transcript-problems": "tsx src/scripts/report-transcript-problems.ts",
     "build:site-content": "pwsh -NoProfile -File scripts/Build-HugoSiteContent.ps1",
     "build:search-index": "node scripts/Build-SearchIndex.mjs",
     "check:site": "pwsh -NoProfile -File scripts/Test-HugoSite.ps1",
     "check:site:static": "pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo",
     "launch:hugo": "npm run build:site-content && hugo server --source site --bind 127.0.0.1 --port 1314 --baseURL http://127.0.0.1:1314/ancient-egypt-and-the-bible/ --appendPort=false --disableFastRender"
   },
+  "dependencies": {
+    "googleapis": "^173.0.0",
+    "youtube-transcript-plus": "^2.0.0"
+  },
   "devDependencies": {
-    "minisearch": "^7.1.2"
+    "@types/node": "^22.10.0",
+    "minisearch": "^7.1.2",
+    "tsx": "^4.23.1",
+    "typescript": "^5.7.0"
+  },
+  "overrides": {
+    "gaxios": "^7.3.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
   }
 }

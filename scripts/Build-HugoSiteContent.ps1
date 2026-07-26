@@ -690,6 +690,9 @@ if (-not $nodeCommand) {
 }
 
 & $nodeCommand.Source (Join-Path $RepoRoot "scripts/Build-SearchIndex.mjs") $RepoRoot
+if ($LASTEXITCODE -ne 0) {
+    throw "Build-SearchIndex.mjs failed with exit code $LASTEXITCODE."
+}
 
 Write-Host "Generated $actualGeneratedCount Hugo question pages from docs/questions."
 Write-Host "Numbered pages: $numberedPageCount"

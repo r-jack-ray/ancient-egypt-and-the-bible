@@ -1,9 +1,14 @@
 #requires -Version 7.0
 <#
 .SYNOPSIS
-Converts a YouTube transcript JSON export into a plain TXT or TSV working transcript.
+LEGACY diagnostic converter from retained transcript JSON to TXT or TSV.
 
 .DESCRIPTION
+This is retained for rollback and verification while legacy JSON remains in
+history. Its output is not admitted directly into the canonical TXT store:
+normalize and validate it with the TypeScript transcript-store tooling first.
+New transcript acquisition uses `npm run alternate:fetch:transcripts:safe`.
+
 Use this script from the repository root to create generated transcript files for
 Codex or manual transcript review. If no input path is provided, it reads every
 JSON file currently present in src/transcripts/json/ and writes matching TXT

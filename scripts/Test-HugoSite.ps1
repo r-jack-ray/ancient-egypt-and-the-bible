@@ -12,8 +12,14 @@ $builder = Join-Path $RepoRoot "scripts/Build-HugoSiteContent.ps1"
 $searchAliasTester = Join-Path $RepoRoot "scripts/Test-HugoSearchAliases.ps1"
 
 pwsh -NoProfile -File $builder -RepoRoot $RepoRoot
+if ($LASTEXITCODE -ne 0) {
+    throw "Build-HugoSiteContent.ps1 failed with exit code $LASTEXITCODE."
+}
 Write-Host "Validating Hugo search aliases..."
 pwsh -NoProfile -File $searchAliasTester -RepoRoot $RepoRoot
+if ($LASTEXITCODE -ne 0) {
+    throw "Test-HugoSearchAliases.ps1 failed with exit code $LASTEXITCODE."
+}
 
 $sourceQuestionFiles = @(Get-ChildItem -LiteralPath (Join-Path $RepoRoot "docs/questions") -Filter "*.md")
 $sourceQuestionCount = $sourceQuestionFiles.Count

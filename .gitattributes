@@ -1,0 +1,8 @@
+*.md text eol=lf
+*.ts text eol=lf
+package.json text eol=lf
+package-lock.json text eol=lf
+src/channel/*.json text eol=lf
+src/transcripts/manifest.json text eol=lf
+src/transcripts/fetch-status.json text eol=lf
+src/transcripts/txt/*.txt text eol=lf

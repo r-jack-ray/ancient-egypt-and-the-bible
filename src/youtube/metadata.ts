@@ -1,0 +1,190 @@
+import { google, type youtube_v3 } from "googleapis";
+
+import { metadataPath, readEpisodesStore } from "../archive.js";
+import { errorCode, readJsonUnknown, writeJsonIfChanged } from "../pipeline/files.js";
+
+export interface VideoMetadataRecord {
+  videoId: string;
+  fetchedAt: string;
+  title?: string;
+  publishedAt?: string;
+  durationSeconds?: number;
+  liveBroadcastContent?: "none" | "upcoming" | "live";
+  scheduledStartAt?: string;
+  actualStartAt?: string;
+  actualEndAt?: string;
+  privacyStatus?: string;
+  uploadStatus?: string;
+}
+
+export interface VideoMetadataStore {
+  schemaVersion: 1;
+  source: { api: "youtube-data-api-v3" };
+  videos: VideoMetadataRecord[];
+}
+
+export async function fetchVideoMetadata(options: {
+  apiKey: string;
+  videoIds: readonly string[];
+  delayMs: number;
+  logger?: (message: string) => void;
+}): Promise<VideoMetadataRecord[]> {
+  const youtube = google.youtube({ version: "v3", auth: options.apiKey });
+  const records: VideoMetadataRecord[] = [];
+  for (let index = 0; index < options.videoIds.length; index += 50) {
+    if (index > 0 && options.delayMs > 0) {
+      await new Promise<void>((resolve) => setTimeout(resolve, options.delayMs));
+    }
+    const ids = options.videoIds.slice(index, index + 50);
+    options.logger?.(`Fetching YouTube metadata ${index + 1}-${index + ids.length}.`);
+    const response = await youtube.videos.list({
+      part: ["snippet", "contentDetails", "status", "liveStreamingDetails"],
+      id: [...ids],
+      maxResults: ids.length,
+    });
+    const fetchedAt = new Date().toISOString();
+    for (const item of response.data.items ?? []) {
+      const record = normalizeVideo(item, fetchedAt);
+      if (record !== undefined) {
+        records.push(record);
+      }
+    }
+  }
+  return records;
+}
+
+export async function fetchAndStoreVideoMetadata(options: {
+  apiKey: string;
+  delayMs: number;
+  output?: string;
+  limit?: number;
+  logger?: (message: string) => void;
+}): Promise<VideoMetadataStore> {
+  const episodes = await readEpisodesStore();
+  const ids = episodes.episodes.map((record) => record.videoId);
+  const output = options.output ?? metadataPath;
+  const existing = await readVideoMetadataStore(output);
+  const byId = new Map(existing.videos.map((record) => [record.videoId, record]));
+  const missing = ids.filter((videoId) => !byId.has(videoId));
+  const selected = options.limit === undefined ? missing : missing.slice(0, options.limit);
+  const fetched = await fetchVideoMetadata({
+    apiKey: options.apiKey,
+    videoIds: selected,
+    delayMs: options.delayMs,
+    ...(options.logger !== undefined ? { logger: options.logger } : {}),
+  });
+  for (const record of fetched) byId.set(record.videoId, record);
+  const videos = ids.flatMap((videoId) => {
+    const record = byId.get(videoId);
+    return record === undefined ? [] : [record];
+  });
+  const store: VideoMetadataStore = {
+    schemaVersion: 1,
+    source: { api: "youtube-data-api-v3" },
+    videos,
+  };
+  await writeJsonIfChanged(output, store);
+  return store;
+}
+
+export async function readVideoMetadataStore(path = metadataPath): Promise<VideoMetadataStore> {
+  let value: unknown;
+  try {
+    value = await readJsonUnknown(path);
+  } catch (error) {
+    if (errorCode(error) === "ENOENT") {
+      return { schemaVersion: 1, source: { api: "youtube-data-api-v3" }, videos: [] };
+    }
+    throw error;
+  }
+  if (!isRecord(value) || value.schemaVersion !== 1 || !Array.isArray(value.videos)) {
+    throw new Error(`Unsupported video metadata schema: ${path}`);
+  }
+  return value as unknown as VideoMetadataStore;
+}
+
+export function resolveVideoReadiness(record: VideoMetadataRecord | undefined):
+  | { state: "ready" }
+  | { state: "deferred"; reason: string }
+  | { state: "invalid"; reason: string } {
+  if (record === undefined) {
+    return { state: "invalid", reason: "metadata_missing" };
+  }
+  if (record.liveBroadcastContent === "upcoming") {
+    return { state: "deferred", reason: "upcoming" };
+  }
+  if (record.liveBroadcastContent === "live") {
+    return { state: "deferred", reason: "live_in_progress" };
+  }
+  if (record.uploadStatus === "uploaded") {
+    return { state: "deferred", reason: "processing" };
+  }
+  if (record.uploadStatus !== "processed") {
+    return { state: "invalid", reason: "invalid_upload_status" };
+  }
+  if (record.durationSeconds === undefined || record.durationSeconds <= 0) {
+    return { state: "invalid", reason: "invalid_duration" };
+  }
+  if (
+    (record.scheduledStartAt !== undefined || record.actualStartAt !== undefined) &&
+    record.actualEndAt === undefined
+  ) {
+    return { state: "deferred", reason: "completion_unconfirmed" };
+  }
+  return { state: "ready" };
+}
+
+export function parseYoutubeDuration(value: string | null | undefined): number | undefined {
+  if (value === null || value === undefined) {
+    return undefined;
+  }
+  const match = /^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+(?:\.\d+)?)S)?)?$/u.exec(value);
+  if (match === null) {
+    return undefined;
+  }
+  return (Number(match[1] ?? 0) * 86_400) +
+    (Number(match[2] ?? 0) * 3_600) +
+    (Number(match[3] ?? 0) * 60) +
+    Number(match[4] ?? 0);
+}
+
+function normalizeVideo(
+  item: youtube_v3.Schema$Video,
+  fetchedAt: string,
+): VideoMetadataRecord | undefined {
+  const videoId = item.id ?? undefined;
+  if (videoId === undefined) {
+    return undefined;
+  }
+  const record: VideoMetadataRecord = { videoId, fetchedAt };
+  assign(record, "title", item.snippet?.title);
+  assign(record, "publishedAt", item.snippet?.publishedAt);
+  const durationSeconds = parseYoutubeDuration(item.contentDetails?.duration);
+  if (durationSeconds !== undefined) {
+    record.durationSeconds = durationSeconds;
+  }
+  const broadcast = item.snippet?.liveBroadcastContent;
+  if (broadcast === "none" || broadcast === "upcoming" || broadcast === "live") {
+    record.liveBroadcastContent = broadcast;
+  }
+  assign(record, "scheduledStartAt", item.liveStreamingDetails?.scheduledStartTime);
+  assign(record, "actualStartAt", item.liveStreamingDetails?.actualStartTime);
+  assign(record, "actualEndAt", item.liveStreamingDetails?.actualEndTime);
+  assign(record, "privacyStatus", item.status?.privacyStatus);
+  assign(record, "uploadStatus", item.status?.uploadStatus);
+  return record;
+}
+
+function assign<K extends keyof VideoMetadataRecord>(
+  record: VideoMetadataRecord,
+  key: K,
+  value: VideoMetadataRecord[K] | null | undefined,
+): void {
+  if (value !== undefined && value !== null) {
+    record[key] = value;
+  }
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
