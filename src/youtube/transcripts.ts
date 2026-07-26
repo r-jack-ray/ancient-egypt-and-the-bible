@@ -261,6 +261,20 @@ export function transcriptToText(transcript: VideoTranscript): string {
   ).join("\n")}\n`;
 }
 
+export function orderTranscriptRecords(
+  records: TranscriptManifestRecord[],
+  episodes: EpisodeRecord[],
+): TranscriptManifestRecord[] {
+  const episodeOrder = new Map(
+    episodes.map((episode, index) => [episode.videoId, index]),
+  );
+  return [...records].sort((left, right) => {
+    const leftOrder = episodeOrder.get(left.videoId) ?? Number.MAX_SAFE_INTEGER;
+    const rightOrder = episodeOrder.get(right.videoId) ?? Number.MAX_SAFE_INTEGER;
+    return leftOrder - rightOrder || left.videoId.localeCompare(right.videoId);
+  });
+}
+
 export async function findStoredTranscript(videoId: string): Promise<TranscriptManifestRecord | undefined> {
   const manifest = await readManifest();
   const record = manifest.transcripts.find((candidate) => candidate.videoId === videoId);
@@ -338,10 +352,13 @@ export async function storeTranscript(
       });
       const next: TranscriptManifest = {
         ...manifest,
-        transcripts: [
-          ...manifest.transcripts.filter((candidate) => candidate.videoId !== transcript.videoId),
-          record,
-        ].sort((left, right) => left.videoId.localeCompare(right.videoId)),
+        transcripts: orderTranscriptRecords(
+          [
+            ...manifest.transcripts.filter((candidate) => candidate.videoId !== transcript.videoId),
+            record,
+          ],
+          episodes.episodes,
+        ),
       };
       await atomicWriteJson(journalPath, {
         schemaVersion: 1,
