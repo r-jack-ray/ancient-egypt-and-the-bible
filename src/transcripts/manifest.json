@@ -11,12 +11,18 @@
       "videoId": "lslnXdAd1Ok",
       "fileStem": "271-all-your-reliquaries-are-mine",
       "path": "txt/271-all-your-reliquaries-are-mine.txt",
-      "source": "legacy-json-bootstrap",
+      "source": "youtube-transcript-plus",
       "contentSha256": "77b426fee766d40535b2697f1e9b6be7bf3c9c6f2b342a962a1cfe4d0f588727",
       "canonicalByteLength": 216533,
       "segmentCount": 4861,
       "firstStartSeconds": 84,
-      "lastStartSeconds": 15334
+      "lastStartSeconds": 15334,
+      "fetchedAt": "2026-07-26T05:09:50.917Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
     },
     {
       "videoId": "gzXyFDL5TEM",
