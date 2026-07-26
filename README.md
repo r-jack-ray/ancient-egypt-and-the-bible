@@ -431,39 +431,61 @@ npm run alternate:fetch:transcripts:safe
 
 Safe mode spaces every outbound transcript request by 60 seconds, stops on blocking/rate-limit evidence, checkpoints typed failure state, skips valid stored files before any request, and writes no raw transcript JSON. Use `--dry-run` for a network-free and canonical-write-free preview. Forced replacement is available only through the single-video command and requires the current manifest hash.
 
-## Project Maintenance
+## Weekly Livestream Workflow
 
-Maintain the project as a TXT-first source-data pipeline: review official inventory changes, acquire captions directly to validated TXT, then curate or repair public Markdown pages from that text.
+The TypeScript/TXT pipeline replaces the legacy sequence of manually editing `src/live-stream-list.md`, downloading transcript JSON with `Get-YouTubeTranscriptJson.ps1`, and converting that JSON with `Convert-TranscriptJson.ps1`. The weekly curation, two independent audit passes, Hugo generation, and Git review remain part of the process.
 
-### 1. Refresh the stream index
+### 1. Discover and review livestreams
 
-Use the official YouTube Data API candidate command:
+Run the official YouTube Data API inventory command:
 
 ```powershell
 npm run fetch:video-links
 ```
 
-It preserves every established ID, title, slug, order, and `fileStem`; excludes ordinary uploads from proposed archive additions; and reports omissions or title changes without auto-pruning or renaming. `src/channel/episodes.json` is canonical after cutover, while `src/live-stream-list.md` remains the deterministic Hugo compatibility projection.
+This writes the ignored review report `reports/stream-inventory-candidate.json` without changing canonical files. Review additions, omissions, and title changes before accepting anything:
 
-### 2. Pull missing transcript TXT
+```powershell
+$candidate = Get-Content -Raw reports/stream-inventory-candidate.json | ConvertFrom-Json
+$candidate.additions | Select-Object videoId, displayTitle, lifecycle
+$candidate.omittedBaselineVideoIds
+$candidate.titleChanges
+```
 
-Preview the current batch without network access:
+Apply a complete reviewed candidate by explicitly accepting every proposed addition:
+
+```powershell
+npm run fetch:video-links -- --apply `
+  --accept-addition VIDEO_ID_1 `
+  --accept-addition VIDEO_ID_2
+```
+
+Add `--accept-source` to the first accepted application so the resolved channel and uploads playlist are pinned. The application refuses partial or incomplete candidates and requires one `--accept-addition` argument for every proposed addition.
+
+The accepted inventory atomically updates `src/channel/episodes.json`, `src/channel/video-metadata.json`, and the generated compatibility projection `src/live-stream-list.md`. Do not manually add the weekly stream to `src/live-stream-list.md`.
+
+### 2. Pull the registered transcript directly to TXT
+
+For the exact accepted video, use the single-video command with conservative pacing:
+
+```powershell
+npm run alternate:fetch:transcript -- `
+  --video-id VIDEO_ID `
+  --request-delay-ms 60000
+```
+
+The command writes `src/transcripts/txt/<fileStem>.txt` and updates `src/transcripts/manifest.json`. It does not write a JSON transcript and does not require a conversion step.
+
+For batch work, preview the selection without network access or canonical writes, then fetch ready missing transcripts:
 
 ```powershell
 npm run alternate:fetch:transcripts:safe -- --dry-run
-```
-
-Then use the safe command for actual missing records:
-
-```powershell
 npm run alternate:fetch:transcripts:safe
 ```
 
-Use `--limit 1` for a canary or `--retry-failed` to select recorded failures. Neither retry command overwrites a valid stored transcript. The PowerShell JSON downloader and converter remain rollback/diagnostic tools only through the first successful deployment.
+Use `--limit 1` for a single batch canary or `--retry-failed` to select recorded failures. Valid stored transcripts are never overwritten by a batch. If a stream is still scheduled, live, or processing, refresh its metadata later with `npm run fetch:video-metadata` before retrying transcript acquisition.
 
 ### 3. Validate transcript state
-
-Validate cross-file identity, exact Markdown projection, paths, canonical hashes, byte lengths, and segment counts:
 
 ```powershell
 npm run check:stream-index
@@ -471,17 +493,76 @@ npm run check:transcript-store
 npm run report:transcript-problems
 ```
 
-If a process is interrupted during a transcript commit, run `npm run check:transcript-store -- --repair-transaction`, then validate again.
+If acquisition was interrupted during a transcript transaction, run `npm run check:transcript-store -- --repair-transaction`, then validate again.
 
-### 4. Curate and repair Q&A pages
+### 4. Create the first-pass Q&A page
 
-Curated pages belong in `docs/questions/`. Start from the manifest-owned `src/transcripts/txt/<fileStem>.txt` file because it is the canonical transcript and optimized for fast search and bounded review. Legacy JSON is optional historical evidence, not a prerequisite for curation.
+Resolve the canonical TXT path through `src/transcripts/manifest.json`, then give Codex this direct instruction:
 
-Each ordinary page should use the `docs/questions/<slug>-questions.md` naming pattern, except when the slug already ends in `questions`; in that case use `docs/questions/<slug>.md`. Keep timestamp links in direct YouTube `?t=` form and use the GitHub-friendly HTML link form when a new tab is desired.
+```text
+src/transcripts/txt/<fileStem>.txt process with $transcript-to-md-reference
+```
 
-When pages are added, renamed, or repaired, update this README's link list and `Current Status` counts against the actual filesystem inventory. The known blocked numbered episodes, currently 118 and 162, should stay listed until usable transcripts exist.
+The first-pass skill inspects the full TXT transcript, creates the ordinary page under `docs/questions/`, validates its transcript-grounded questions and answers, and appends one creation record to `src/transcript-audit.log`.
 
-### 5. Find likely repair candidates
+Ordinary pages use `docs/questions/<slug>-questions.md`. If the slug already ends in `questions`, use `docs/questions/<slug>.md` to avoid a duplicated suffix. Do not use the creation skill to overwrite an existing curated page.
+
+### 5. Run two independent full audit passes
+
+After first-pass creation, run the following instruction twice as separate tasks:
+
+```text
+docs/questions/<page>.md process with $transcript-question-page-audit find and fix issues with complete transcript-grounded validation
+```
+
+Each audit independently inspects the full manifest-owned TXT transcript, repairs supported completeness, timestamp, wording, answer, link, or table issues, validates the resulting page, and appends one audit record to `src/transcript-audit.log`. The second pass audits the result of the first pass; it is not a substitute for first-pass creation.
+
+When a page is added or renamed, update this README's explicit page links and `Current Status` counts against the actual filesystem inventory. The known blocked numbered episodes, currently 118 and 162, remain listed until usable transcripts exist.
+
+### 6. Generate and validate Hugo content
+
+```powershell
+pwsh -NoProfile -File scripts/Test-QuestionTableFormat.ps1 -Path docs/questions/<page>.md
+pwsh -NoProfile -File scripts/Build-HugoSiteContent.ps1
+pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo
+npm test
+git diff --check
+```
+
+`Build-HugoSiteContent.ps1` regenerates the ignored question mirrors under `site/content/questions/`; do not hand-edit or stage those generated mirrors. Use `scripts/Test-HugoSite.ps1` without `-SkipHugo` when a local Hugo executable is available and a full render is wanted.
+
+### 7. Review, commit, and push
+
+Review the complete feature-branch diff before staging:
+
+```powershell
+git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible status --short
+git diff
+```
+
+Stage only the reviewed canonical inventory, metadata, TXT, manifest, curated Markdown, README, and audit-log changes. Do not stage legacy transcript JSON, ignored reports, or generated Hugo question mirrors.
+
+```powershell
+git commit -m "add livestream N questions"
+git push
+```
+
+The end-to-end weekly path is:
+
+```text
+review YouTube inventory
+-> accept stream and regenerate live-stream-list.md
+-> acquire canonical TXT
+-> create first-pass Q&A page
+-> run full audit
+-> run second full audit
+-> generate and validate Hugo content
+-> review, commit, and push
+```
+
+## Additional Maintenance
+
+### Find likely repair candidates
 
 Use `scripts/Get-QuestionRevisionCandidates.ps1` for local triage when deciding which curated pages may need repair:
 
@@ -491,7 +572,7 @@ pwsh -NoProfile -File scripts/Get-QuestionRevisionCandidates.ps1
 
 The script compares `docs/questions/` and `src/transcripts/txt/`, then writes ignored reports under `reports/`. Treat its score as a triage signal only; a low question density or old Markdown timestamp is a reason to inspect the transcript, not proof that the page is wrong.
 
-### 6. Validate content changes
+### Validate content changes
 
 Before committing maintenance changes, run focused checks for the files you touched:
 
