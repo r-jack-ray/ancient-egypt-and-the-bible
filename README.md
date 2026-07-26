@@ -4,7 +4,7 @@
 
 This repository is a public reference project for the *Ancient Egypt and the Bible* livestream archive. Its goal is to turn livestream transcripts into material that is easy to browse, search, quote, and verify from the original videos.
 
-The raw transcript exports are useful, but long livestreams are hard to navigate from transcript text alone. This project keeps the raw data, generates working transcript text files for processing, and adds curated Markdown Q&A pages so readers can jump from a topic or question directly to the matching moment in the video.
+Long livestreams are hard to navigate from transcript text alone. This project keeps canonical TXT transcripts and curated Markdown Q&A pages so readers can jump from a topic or question directly to the matching moment in the video. Legacy transcript JSON is retained unchanged only through migration, merge, and deployment validation.
 
 ## Start Here
 
@@ -305,11 +305,11 @@ reports/
 scripts/
   Build-HugoSiteContent.ps1   Generates Hugo compatibility content and data from curated Markdown
   Build-SearchIndex.mjs       Builds precomputed MiniSearch data for the Hugo search page
-  Convert-TranscriptJson.ps1  PowerShell 7 converter from JSON to TXT or TSV
+  Convert-TranscriptJson.ps1  Legacy rollback/diagnostic converter
   Generate-live-stream-list.ps1
-                               Scrapes the public YouTube streams tab into the episode index format
+                               Legacy inventory rollback/diagnostic tool
   Get-YouTubeTranscriptJson.ps1
-                               Downloads transcript JSON from indexed YouTube videos
+                               Legacy rollback-only transcript JSON downloader
   Get-YouTubeTranscriptJson.README.md
                                Usage notes for transcript acquisition
   Get-QuestionRevisionCandidates.ps1
@@ -325,21 +325,25 @@ site/
   layouts/                    Hugo templates for reference pages and search
   assets/                     Hugo-managed CSS and client assets
 src/
+  archive.ts                  Typed inventory, manifest, TXT format, and validation contracts
+  channel/
+    episodes.json             Canonical archive identity and stable filename inventory
+    video-metadata.json       Normalized YouTube metadata snapshot
   live-stream-list.md         Episode index with YouTube links and transcript slugs
-  live-stream-list.txt        Plain text episode index
   transcripts/
-    json/                     Raw YouTube transcript JSON exports
-    txt/                      Generated working transcript text files
-    tsv/                      Optional generated TSV files, created only when needed
+    manifest.json             Validated TXT payload facts and canonical hashes
+    fetch-status.json         Resumable transcript failure state
+    json/                     Legacy retained payloads; unchanged during migration
+    txt/                      Canonical transcript payloads and curation surface
 ```
 
 ## File Types
 
-`src/transcripts/json/` contains raw YouTube transcript exports. Treat these as the source of record when rebuilding or auditing transcript-derived files.
+`src/transcripts/txt/` is the transcript source of record for curation and auditing. Each line has a segment index, display timestamp, a tab, and normalized transcript text. `src/transcripts/manifest.json` maps video IDs to stable TXT files and records canonical-LF hashes, lengths, and line counts.
 
-`src/transcripts/txt/` contains generated working transcripts. Each line has a segment index, display timestamp, and transcript text. These files are optimized for fast `rg`, `Select-String`, and Codex-assisted review. They are the preferred working files for curating `docs/questions/` pages.
+`src/transcripts/json/` contains legacy transcript exports retained unchanged until the TypeScript/TXT pipeline is merged to `origin/master` and its Hugo deployment succeeds. New pulls must not add or update transcript JSON. Removal from current and historical Git state is a later, separately authorized operation.
 
-`src/transcripts/tsv/` is optional generated output for structured processing. TSV rows include columns such as `Timestamp`, `StartSeconds`, `Text`, and `Link`.
+TSV is not part of the tracked transcript store. Create temporary structured diagnostics only under ignored `reports/` when a specific task requires them.
 
 `docs/questions/` contains the canonical, human-edited reference pages. These are meant to be read directly on GitHub Pages and GitHub and may include cleaned-up questions, short answer summaries, and timestamp links.
 
@@ -395,73 +399,83 @@ This command regenerates the site content before starting Hugo. Then open <http:
 
 For GitHub Pages, GitHub Actions, and deployment environment handling, see [GitHub Handling Notes](project-notes/github-handling/README.md).
 
-## Transcript Conversion
+## Transcript Acquisition
 
-Use PowerShell 7 to generate TXT working transcripts from JSON exports:
-
-```powershell
-pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/14-fourteen-pieces-of-osiris.json
-```
-
-By default, the script writes to `src/transcripts/txt/` and overwrites generated output so repeated processing is simple. Use `-NoClobber` if you want the script to fail when an output file already exists.
-
-For structured processing, generate TSV instead:
+Install the pinned Node 22 dependencies, then validate the bootstrapped store:
 
 ```powershell
-pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 src/transcripts/json/14-fourteen-pieces-of-osiris.json -Format Tsv
+npm ci
+npm run check:stream-index
+npm run check:transcript-store
 ```
 
-The script can also process multiple explicit files:
+The ignored API key fallback is `reports/youtube-api-key.txt`. Inventory refresh is review-only by default:
 
 ```powershell
-pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1 `
-    src/transcripts/json/14-fourteen-pieces-of-osiris.json `
-    src/transcripts/json/15-and-other-taboo-jewish-numbers.json
+npm run fetch:video-links
 ```
+
+The command writes `reports/stream-inventory-candidate.json`. A complete candidate changes canonical inventory only with `--apply`, `--accept-source` on the first accepted source, and one `--accept-addition VIDEO_ID` for every proposed addition.
+
+Fetch one registered transcript directly to its manifest-owned TXT file:
+
+```powershell
+npm run alternate:fetch:transcript -- --video-id VIDEO_ID
+```
+
+Run a conservatively paced batch:
+
+```powershell
+npm run alternate:fetch:transcripts:safe
+```
+
+Safe mode spaces every outbound transcript request by 60 seconds, stops on blocking/rate-limit evidence, checkpoints typed failure state, skips valid stored files before any request, and writes no raw transcript JSON. Use `--dry-run` for a network-free and canonical-write-free preview. Forced replacement is available only through the single-video command and requires the current manifest hash.
 
 ## Project Maintenance
 
-Maintain the project as a source-data pipeline: keep the stream index current, pull raw transcript JSON, generate working TXT or TSV files from JSON, then curate or repair public Markdown pages from the generated transcript text.
+Maintain the project as a TXT-first source-data pipeline: review official inventory changes, acquire captions directly to validated TXT, then curate or repair public Markdown pages from that text.
 
 ### 1. Refresh the stream index
 
-Use `scripts/Generate-live-stream-list.ps1` when the public YouTube stream list needs to be refreshed. The script scrapes the channel's `/streams` tab and writes Markdown entries with the YouTube URL and repository slug.
+Use the official YouTube Data API candidate command:
 
 ```powershell
-pwsh -NoProfile -File scripts/Generate-live-stream-list.ps1 -OutputPath src/live-stream-list.md
+npm run fetch:video-links
 ```
 
-The script includes numbered livestreams and other public stream entries by default. Use `-NumberedOnly` when you intentionally want only numbered `Live Stream #` entries, `-OldestFirst` to reverse the scraped order, or `-SortByNumber` to restore numbered archive ordering. After refreshing the Markdown index, review slug changes carefully because transcript and question filenames are based on those slugs.
+It preserves every established ID, title, slug, order, and `fileStem`; excludes ordinary uploads from proposed archive additions; and reports omissions or title changes without auto-pruning or renaming. `src/channel/episodes.json` is canonical after cutover, while `src/live-stream-list.md` remains the deterministic Hugo compatibility projection.
 
-### 2. Pull missing transcript JSON
+### 2. Pull missing transcript TXT
 
-Use `scripts/Get-YouTubeTranscriptJson.ps1` to download transcript JSON for entries in `src/live-stream-list.md`. It uses the Python `youtube-transcript-api` package, so install or update that dependency in the Python environment used by `python` before running it:
+Preview the current batch without network access:
 
 ```powershell
-python -m pip install --upgrade youtube-transcript-api
+npm run alternate:fetch:transcripts:safe -- --dry-run
 ```
 
-The normal maintenance command is:
+Then use the safe command for actual missing records:
 
 ```powershell
-pwsh -NoProfile -File scripts/Get-YouTubeTranscriptJson.ps1 -MissingOnly -DelaySeconds 3 -TimeoutSeconds 45
+npm run alternate:fetch:transcripts:safe
 ```
 
-Use `-Episode 209` for a numbered livestream, `-Slug 209-one-meaning-flippancy` for an exact slug, and `-ListOnly` to preview matching entries without downloading. The script writes JSON under `src/transcripts/json/` and creates ignored run summaries named `scripts/Get-YouTubeTranscriptJson.run-summary.*.md`. Treat `NoTranscript` results as blockers unless the source later changes; do not fabricate curated pages from empty placeholder JSON.
+Use `--limit 1` for a canary or `--retry-failed` to select recorded failures. Neither retry command overwrites a valid stored transcript. The PowerShell JSON downloader and converter remain rollback/diagnostic tools only through the first successful deployment.
 
-### 3. Regenerate working transcripts
+### 3. Validate transcript state
 
-Use `scripts/Convert-TranscriptJson.ps1` after new JSON files are added or when generated working files need to be rebuilt. Running it without paths converts every JSON file in `src/transcripts/json/` to TXT under `src/transcripts/txt/`:
+Validate cross-file identity, exact Markdown projection, paths, canonical hashes, byte lengths, and segment counts:
 
 ```powershell
-pwsh -NoProfile -File scripts/Convert-TranscriptJson.ps1
+npm run check:stream-index
+npm run check:transcript-store
+npm run report:transcript-problems
 ```
 
-For targeted work, pass one or more JSON paths. Use `-Format Tsv` only when structured columns such as `StartSeconds`, `StartMs`, `EndMs`, `Text`, and `Link` are useful for auditing or automation. Generated TXT and TSV files should normally be recreated with this script instead of hand-edited.
+If a process is interrupted during a transcript commit, run `npm run check:transcript-store -- --repair-transaction`, then validate again.
 
 ### 4. Curate and repair Q&A pages
 
-Curated pages belong in `docs/questions/`. Start from the matching `src/transcripts/txt/<slug>.txt` file because it is optimized for fast search and bounded review. Use the JSON source of record when transcript text is ambiguous, raw timing fields matter, or a missing TXT file needs to be regenerated.
+Curated pages belong in `docs/questions/`. Start from the manifest-owned `src/transcripts/txt/<fileStem>.txt` file because it is the canonical transcript and optimized for fast search and bounded review. Legacy JSON is optional historical evidence, not a prerequisite for curation.
 
 Each ordinary page should use the `docs/questions/<slug>-questions.md` naming pattern, except when the slug already ends in `questions`; in that case use `docs/questions/<slug>.md`. Keep timestamp links in direct YouTube `?t=` form and use the GitHub-friendly HTML link form when a new tab is desired.
 
@@ -513,13 +527,13 @@ Curate search aliases in `site/data/search-aliases.json`, not directly in `site/
 
 ## How to Use This Reference
 
-Use GitHub search to find a topic, Bible passage, person, place, or episode number. For broad searching, generated TXT transcripts are usually the fastest to scan. For cleaner browsing, use the curated Markdown pages when available.
+Use GitHub search to find a topic, Bible passage, person, place, or episode number. For broad searching, canonical TXT transcripts are usually the fastest to scan. For cleaner browsing, use the curated Markdown pages when available.
 
 Timestamp links point to the relevant place in the YouTube video. Curated Markdown pages may use HTML links with `target="_blank"` so GitHub opens the video in a new tab.
 
 ## Current Status
 
-The repository currently has generated TXT working transcripts for 269 numbered episode streams. Curated Markdown pages currently exist for 269 numbered episode streams under `docs/questions/`, matching the current numbered TXT coverage.
+The repository currently has canonical TXT transcripts for 269 numbered episode streams. Curated Markdown pages currently exist for 269 numbered episode streams under `docs/questions/`, matching the current numbered TXT coverage.
 
 Known blocked numbered episodes remain:
 - Live Stream #118: transcript disabled / empty placeholder
@@ -535,11 +549,12 @@ Curated pages should be treated as reference aids, not full replacements for the
 
 When converting transcripts:
 
-- Keep raw YouTube JSON exports under `src/transcripts/json/`.
-- Prefer the generated TXT files under `src/transcripts/txt/` for transcript inspection and Q&A curation.
-- Generate TXT working files with `scripts/Convert-TranscriptJson.ps1` when a matching TXT file is missing and the JSON source is non-empty.
-- Use TSV output only when structured columns are needed for a processing task.
-- Do not hand-edit generated TXT or TSV files unless the goal is explicitly to repair generated output.
+- Treat `src/transcripts/txt/` as the canonical transcript payload and curation surface.
+- Resolve video IDs and stable files through `src/channel/episodes.json` and `src/transcripts/manifest.json`.
+- Use the TypeScript direct-to-TXT commands for new acquisition.
+- Do not create new tracked transcript JSON or TSV payloads.
+- Keep legacy JSON and PowerShell rollback tools unchanged until the migrated pipeline is merged and deployed.
+- Put temporary structured diagnostics and canary output under ignored `reports/`.
 
 When adding or improving a curated page:
 

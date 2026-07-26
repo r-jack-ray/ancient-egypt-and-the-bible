@@ -1,11 +1,16 @@
 <#
 .SYNOPSIS
-Scrapes the Ancient Egypt and the Bible YouTube streams tab and writes a Markdown archive.
+LEGACY rollback/diagnostic tool that scrapes the YouTube streams tab.
 
 .VERSION
 v011 - Fixes chronological ordering by extracting ordered video renderers and disabling raw-text fallback by default.
 
 .DESCRIPTION
+The active inventory command is `npm run fetch:video-links`. It writes a
+review-only candidate by default and projects accepted inventory from
+src/channel/episodes.json. This retained script must not write the canonical
+index during normal maintenance.
+
 PowerShell 7 script that reads YouTube's embedded page JSON/text, extracts public stream titles and URLs,
 then follows YouTube continuation tokens through the public InnerTube browse endpoint.
 

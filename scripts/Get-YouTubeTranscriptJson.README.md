@@ -1,8 +1,12 @@
 # Get-YouTubeTranscriptJson.ps1
 
-Downloads YouTube transcript JSON files into the repository transcript store.
+Legacy rollback-only downloader for retained transcript JSON.
 
-## Purpose
+> The active acquisition path is `npm run alternate:fetch:transcripts:safe`.
+> It writes canonical TXT transcript payloads directly and never creates a raw
+> transcript JSON companion. Do not use this PowerShell tool for normal pulls.
+
+## Legacy Purpose
 
 This script pulls transcript data directly from YouTube using the Python package `youtube-transcript-api` and stores the results under:
 
@@ -116,7 +120,10 @@ Example:
 
 ---
 
-## Common Usage
+## Legacy Rollback Usage
+
+The commands below are retained only for rollback or comparison. They are not
+the normal maintenance path and must not be used to add new tracked JSON.
 
 Pull all missing transcripts:
 
@@ -227,7 +234,7 @@ These files provide a historical record of transcript acquisition runs.
 
 ---
 
-## Recommended Bulk Pull Command
+## Legacy Bulk Pull Command
 
 ```powershell
 .\Get-YouTubeTranscriptJson.ps1 `
@@ -240,4 +247,5 @@ These files provide a historical record of transcript acquisition runs.
 .\Get-YouTubeTranscriptJson.ps1 -MissingOnly -DelaySeconds 60 -TimeoutSeconds 45
 ```
 
-This is the preferred command for filling transcript gaps while minimizing issues with YouTube rate limiting.
+This is retained for rollback testing only. The supported gap-filling command
+is `npm run alternate:fetch:transcripts:safe`.

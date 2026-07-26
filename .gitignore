@@ -16,6 +16,7 @@ out/
 venv/
 env/
 node_modules/
+dist/
 
 # Transcript tooling venv
 .venv-transcripts/
@@ -32,6 +33,7 @@ scripts/Get-YouTubeTranscriptJson.run-summary*
 
 # Generated reports, validation output, and smoke-test output.
 /reports/
+youtube-api-key.txt
 
 # Hugo local build artifacts.
 /site/.hugo_build.lock
