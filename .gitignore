@@ -43,3 +43,6 @@ youtube-api-key.txt
 # Generated from docs/questions by scripts/Build-HugoSiteContent.ps1.
 /site/content/questions/*.md
 !/site/content/questions/_index.md
+
+# Graphify generated output
+graphify-out/
