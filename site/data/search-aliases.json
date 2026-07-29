@@ -29,6 +29,7 @@
     ["nebuchadnezzar", "nebuchadrezzar", "nebuchadnezzer", "nebuchadnezer"],
     ["cuneiform", "cuniform"],
     ["mummification", "mumification"],
+    ["israel", "isreal"],
     ["israelite", "israelites", "isrealite", "isrealites"],
     ["semitic", "semetic"],
     ["stele", "stela", "stelae"],
@@ -238,6 +239,28 @@
     {
       "query": "mumification",
       "minResults": 20
+    },
+    {
+      "query": "israel",
+      "minResults": 500,
+      "expectedMatches": [
+        {
+          "questionPage": "questions/227-just-one-more-question-questions.md",
+          "timeLabel": "1:14:32",
+          "questionContains": "Merneptah Stele's mention of Israel"
+        }
+      ]
+    },
+    {
+      "query": "isreal",
+      "minResults": 500,
+      "expectedMatches": [
+        {
+          "questionPage": "questions/227-just-one-more-question-questions.md",
+          "timeLabel": "1:14:32",
+          "questionContains": "Merneptah Stele's mention of Israel"
+        }
+      ]
     },
     {
       "query": "isrealite",
