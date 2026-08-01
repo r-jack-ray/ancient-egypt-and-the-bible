@@ -4,7 +4,7 @@
   "source_data": "site/data/questions.json",
   "source_aliases": "site/data/search-aliases.json",
   "document_count": 13931,
-  "minisearch_version": "7.1.2",
+  "minisearch_version": "7.2.0",
   "index_url": "index.json",
   "docs_url": "docs.json",
   "display_fields": [

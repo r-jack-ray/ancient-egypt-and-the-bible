@@ -23,7 +23,7 @@ https://r-jack-ray.github.io/ancient-egypt-and-the-bible/
 Local validation checks whether the generator and Hugo build work:
 
 ```powershell
-pwsh -NoProfile -File scripts/Test-HugoSite.ps1
+npm run check:site
 ```
 
 GitHub Actions checks whether GitHub can repeat that build and publish the artifact. A local pass does not guarantee deploy success, because GitHub repository settings can still block deployment.
@@ -114,7 +114,7 @@ Hugo is not installed or not on PATH.
 
 Meaning:
 
-- Local PowerShell could run the content generation checks.
+- Local Node.js tooling could run the content generation checks.
 - Full local Hugo rendering could not run.
 
 Fix:
@@ -124,7 +124,7 @@ Install Hugo Extended locally and open a new terminal:
 ```powershell
 winget install Hugo.Hugo.Extended
 hugo version
-pwsh -NoProfile -File scripts/Test-HugoSite.ps1
+npm run check:site
 ```
 
 GitHub Actions installs Hugo inside the runner, so this local error does not automatically mean the GitHub workflow will fail.

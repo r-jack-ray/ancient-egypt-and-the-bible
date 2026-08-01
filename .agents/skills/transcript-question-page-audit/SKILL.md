@@ -258,19 +258,18 @@ After edits, run targeted checks. For ordinary pages, prefer the repo validator,
 which requires four-column rows and populated expanded answers by default:
 
 ```powershell
-pwsh -NoProfile -File scripts/Test-QuestionTableFormat.ps1
+npm run check:question-tables
 ```
 
 For a narrow single-file pass, or when the full corpus validator is too noisy or
 slow for the current task, scope the same validator to the target file:
 
 ```powershell
-pwsh -NoProfile -File scripts/Test-QuestionTableFormat.ps1 -Path docs/questions/FILE.md
+npm run check:question-tables -- --path docs/questions/FILE.md
 ```
 
-The script's internal table-analysis helper is `Get-QuestionTableAnalysis` from
-`scripts/QuestionTableTools.ps1`; do not call an invented `Test-QuestionTable`
-helper. If the scoped validator is unavailable in an older checkout, run these
+The validator's table-analysis implementation is `src/questions/table-analysis.ts`.
+If the scoped validator is unavailable in an older checkout, run these
 local checks against the target file:
 
 ```powershell

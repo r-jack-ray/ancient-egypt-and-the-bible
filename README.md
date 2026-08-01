@@ -304,20 +304,7 @@ docs/
 reports/
   Generated local reports, validation output, smoke-test output, and triage artifacts
 scripts/
-  Build-HugoSiteContent.ps1   Generates Hugo compatibility content and data from curated Markdown
   Build-SearchIndex.mjs       Builds precomputed MiniSearch data for the Hugo search page
-  Convert-TranscriptJson.ps1  Legacy rollback/diagnostic converter
-  Generate-live-stream-list.ps1
-                               Legacy inventory rollback/diagnostic tool
-  Get-YouTubeTranscriptJson.ps1
-                               Legacy rollback-only transcript JSON downloader
-  Get-YouTubeTranscriptJson.README.md
-                               Usage notes for transcript acquisition
-  Get-QuestionRevisionCandidates.ps1
-                               Generates local reports for likely Q&A page repair candidates
-  Test-QuestionTableFormat.ps1 Validates question table shape, timestamp links, and expanded-answer cells
-  Test-HugoSite.ps1           Regenerates and validates the Hugo compatibility site
-  Test-HugoSearchAliases.ps1  Validates curated Hugo search alias groups and query smoke tests
 site/
   hugo.yaml                   Hugo site configuration
   content/                    Generated compatibility content for the Hugo site
@@ -331,6 +318,9 @@ src/
     episodes.json             Canonical archive identity and stable filename inventory
     video-metadata.json       Normalized YouTube metadata snapshot
   live-stream-list.md         Episode index with YouTube links and transcript slugs
+  questions/                  Question-table validation and revision-triage modules
+  scripts/                    TypeScript command-line entry points
+  site/                       Hugo generation and validation modules
   transcripts/
     manifest.json             Validated TXT payload facts and canonical hashes
     fetch-status.json         Resumable transcript failure state
@@ -352,7 +342,7 @@ TSV is not part of the tracked transcript store. Create temporary structured dia
 
 ## Local Dependencies
 
-PowerShell 7 and Node.js are required for the repository scripts. Run `npm ci` before Hugo compatibility validation so the prebuilt MiniSearch index builder can use the pinned dependency. Hugo Extended is required for full local Hugo site validation and preview.
+Node.js 22 is required for the repository tooling. Run `npm ci` before Hugo compatibility validation so the TypeScript commands and prebuilt MiniSearch index builder use the pinned dependencies. Hugo Extended is required for full local Hugo site validation and preview.
 
 ```powershell
 npm ci
@@ -381,13 +371,13 @@ hugo version
 If `hugo version` works, run the full Hugo site validation:
 
 ```powershell
-pwsh -NoProfile -File scripts/Test-HugoSite.ps1
+npm run check:site
 ```
 
 If Hugo is not installed yet, the non-rendering compatibility checks can still run with:
 
 ```powershell
-pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo
+npm run check:site:static
 ```
 
 To generate the compatibility content and preview the Hugo site locally with the same subpath used by GitHub Pages, run:
@@ -435,7 +425,7 @@ Safe mode spaces every outbound transcript request by 60 seconds, stops on block
 
 ## Weekly Livestream Workflow
 
-The TypeScript/TXT pipeline replaces the legacy sequence of manually editing `src/live-stream-list.md`, downloading transcript JSON with `Get-YouTubeTranscriptJson.ps1`, and converting that JSON with `Convert-TranscriptJson.ps1`. The weekly curation, two independent audit passes, Hugo generation, and Git review remain part of the process.
+The TypeScript/TXT pipeline replaces the legacy sequence of manually editing `src/live-stream-list.md`, downloading transcript JSON, and converting that JSON separately. The weekly curation, two independent audit passes, Hugo generation, and Git review remain part of the process.
 
 ### 1. Discover and review livestreams
 
@@ -451,22 +441,12 @@ The command still writes `reports/stream-inventory-candidate.json`; unrelated or
 npm run fetch:video-links
 ```
 
-This writes the ignored review report `reports/stream-inventory-candidate.json` without changing canonical files. Review additions, omissions, and title changes before accepting anything:
-
-```powershell
-$candidate = Get-Content -Raw reports/stream-inventory-candidate.json | ConvertFrom-Json
-$candidate.additions | Select-Object videoId, displayTitle, lifecycle
-$candidate.omittedBaselineVideoIds
-$candidate.titleChanges
-```
+This writes the ignored review report `reports/stream-inventory-candidate.json` without changing canonical files. Review its additions, omissions, and title changes before accepting anything.
 
 Apply one or more explicitly reviewed additions from a complete candidate:
 
 ```powershell
-npm run fetch:video-links -- --apply `
-  --accept-source `
-  --accept-addition VIDEO_ID_1 `
-  --accept-addition VIDEO_ID_2
+npm run fetch:video-links -- --apply --accept-source --accept-addition VIDEO_ID_1 --accept-addition VIDEO_ID_2
 ```
 
 The first accepted application requires `--accept-source` so the resolved channel and uploads playlist are pinned. Partial inventory probes can never be applied, unknown accepted IDs are rejected, and unselected proposed additions remain in the review report.
@@ -484,9 +464,7 @@ npm run alternate:fetch:transcripts:safe:latest
 The batch reads canonical episode order, skips valid stored and not-ready transcripts, and writes the selected transcript directly to TXT. For an explicitly selected accepted video, the single-video form remains available:
 
 ```powershell
-npm run alternate:fetch:transcript -- `
-  --video-id VIDEO_ID `
-  --request-delay-ms 60000
+npm run alternate:fetch:transcript -- --video-id VIDEO_ID --request-delay-ms 60000
 ```
 
 The command writes `src/transcripts/txt/<fileStem>.txt` and updates `src/transcripts/manifest.json`. It does not write a JSON transcript and does not require a conversion step.
@@ -537,14 +515,14 @@ When a page is added or renamed, update this README's explicit page links and `C
 ### 6. Generate and validate Hugo content
 
 ```powershell
-pwsh -NoProfile -File scripts/Test-QuestionTableFormat.ps1 -Path docs/questions/<page>.md
-pwsh -NoProfile -File scripts/Build-HugoSiteContent.ps1
-pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo
+npm run check:question-tables -- --path docs/questions/<page>.md
+npm run build:site-content
+npm run check:site:static
 npm test
 git diff --check
 ```
 
-`Build-HugoSiteContent.ps1` regenerates the ignored question mirrors under `site/content/questions/`; do not hand-edit or stage those generated mirrors. Use `scripts/Test-HugoSite.ps1` without `-SkipHugo` when a local Hugo executable is available and a full render is wanted.
+`npm run build:site-content` regenerates the ignored question mirrors under `site/content/questions/`; do not hand-edit or stage those generated mirrors. Use `npm run check:site` when a local Hugo executable is available and a full render is wanted.
 
 ### 7. Review, commit, and push
 
@@ -579,10 +557,10 @@ review YouTube inventory
 
 ### Find likely repair candidates
 
-Use `scripts/Get-QuestionRevisionCandidates.ps1` for local triage when deciding which curated pages may need repair:
+Use the TypeScript revision report for local triage when deciding which curated pages may need repair:
 
 ```powershell
-pwsh -NoProfile -File scripts/Get-QuestionRevisionCandidates.ps1
+npm run report:question-revisions
 ```
 
 The script compares `docs/questions/` and `src/transcripts/txt/`, then writes ignored reports under `reports/`. Treat its score as a triage signal only; a low question density or old Markdown timestamp is a reason to inspect the transcript, not proof that the page is wrong.
@@ -602,13 +580,13 @@ For curated Markdown edits, also check that table rows have consistent columns, 
 For ordinary Q&A table structure and expanded-answer cells, run:
 
 ```powershell
-pwsh -NoProfile -File scripts/Test-QuestionTableFormat.ps1
+npm run check:question-tables
 ```
 
 For Hugo site changes, run:
 
 ```powershell
-pwsh -NoProfile -File scripts/Test-HugoSite.ps1
+npm run check:site
 ```
 
 This regenerates the compatibility site, verifies source/generated page counts, checks required question-row fields, and runs `hugo --source site` when Hugo is installed.
@@ -616,7 +594,7 @@ This regenerates the compatibility site, verifies source/generated page counts, 
 For search alias-only changes, run the narrower check:
 
 ```powershell
-pwsh -NoProfile -File scripts/Test-HugoSearchAliases.ps1
+npm run check:search-aliases
 ```
 
 Curate search aliases in `site/data/search-aliases.json`, not directly in `site/assets/js/search.js`, unless the indexing behavior itself needs to change.
@@ -649,7 +627,7 @@ When converting transcripts:
 - Resolve video IDs and stable files through `src/channel/episodes.json` and `src/transcripts/manifest.json`.
 - Use the TypeScript direct-to-TXT commands for new acquisition.
 - Do not create new tracked transcript JSON or TSV payloads.
-- Keep legacy JSON and PowerShell rollback tools unchanged until the migrated pipeline is merged and deployed.
+- Keep legacy transcript JSON unchanged until its separately authorized cleanup.
 - Put temporary structured diagnostics and canary output under ignored `reports/`.
 
 When adding or improving a curated page:

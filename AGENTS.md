@@ -12,8 +12,7 @@ This repository is a Questions & Answers reference archive for the Ancient Egypt
 - `docs/questions/`: canonical curated GitHub-readable Q&A reference pages with timestamp links, short answers, and filled transcript-grounded expanded answers.
 - `site/`: Hugo compatibility site. `site/content/questions/_index.md` is handwritten and tracked; the other question Markdown files are generated mirrors, ignored by Git, and must not be edited or committed.
 - `tests/`: Node test coverage for the generated search index and client-side search behavior.
-- `src/scripts/`: Node 22 + strict TypeScript inventory, transcript acquisition, reporting, and validation CLIs.
-- `scripts/Convert-TranscriptJson.ps1`: legacy rollback/diagnostic converter; not a canonical writer.
+- `src/scripts/`: Node 22 + strict TypeScript inventory, transcript acquisition, reporting, site generation, and validation CLIs.
 - `reports/`: ignored generated reports, validation output, smoke-test output, and triage artifacts.
 - `task-notes/`: transient in-project notes, AI session summaries, and temporary human task documentation. Create this directory if it is missing.
 
@@ -31,22 +30,24 @@ npm run check:stream-index
 npm run fetch:video-links
 npm run alternate:fetch:transcripts:safe -- --dry-run
 npm run build:site-content
+npm run check:question-tables
 npm test
 npm run check:js
-pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo
+npm run check:site:static
 git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible status --short
 ```
 
 Use `rg` for fast repository searches. When editing Markdown, inspect the rendered structure manually in GitHub or a Markdown preview. New transcript payloads are produced directly as TXT by the TypeScript pipeline, not hand-edited or routed through new JSON.
 
-Treat `docs/questions/*.md` as the only authoritative Markdown source for episode question pages. `scripts/Build-HugoSiteContent.ps1` recreates every `site/content/questions/*.md` mirror except `_index.md`; do not hand-edit or stage those generated mirrors. If generation makes Git report changes under `site/content/questions/`, treat that as ignore, tracking, or generator policy drift and investigate before committing.
+Treat `docs/questions/*.md` as the only authoritative Markdown source for episode question pages. `npm run build:site-content` recreates every `site/content/questions/*.md` mirror except `_index.md`; do not hand-edit or stage those generated mirrors. If generation makes Git report changes under `site/content/questions/`, treat that as ignore, tracking, or generator policy drift and investigate before committing.
 
 Runner availability notes for Codex desktop sessions:
 
-- Python: do not assume `python` is on `PATH`. Reference the user .codex installation notes.; it includes PyYAML for `quick_validate.py`. If that installation is unavailable, use the Python executable reported by `codex_app.load_workspace_dependencies`.
-- PowerShell: repo scripts are written for PowerShell 7. Prefer `pwsh -NoProfile -File ...`; Windows PowerShell may be present as `powershell` but should not be the default for repo scripts.
+A failed executable lookup inside the restricted Codex command runner is not proof that the tool is absent from the user's machine. Before reporting an expected tool as unavailable, try its configured explicit path or bundled runtime. If the executable may be outside the sandbox's readable roots, retry the lookup and any required command with sandbox escalation. Only report the tool unavailable after that outside-sandbox check also fails.
+
+- Python: do not assume `python` is on `PATH`. Prefer `C:\Toolbox\Python313\python.exe`, which includes PyYAML. If that installation is unavailable, use the Python executable reported by `codex_app.load_workspace_dependencies`.
 - Node and package runners: `node`, `npm`, and `pnpm` may be available directly, but if PATH lookup fails, use the Node.js or pnpm executable reported by `codex_app.load_workspace_dependencies`. If an npm wrapper fails while Node works, prefer direct checks such as `node --check` or `node --test` when they cover the same surface.
-- Hugo: do not assume `hugo` is installed or on `PATH`. Use `npm run check:site:static` or `pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo` for Hugo compatibility validation when local Hugo is unavailable; allow a longer timeout because the static check can take 45 seconds or more.
+- Hugo: Hugo Extended is installed for the user and is normally exposed through `C:\Users\JR\AppData\Local\Microsoft\WinGet\Links\hugo.exe`. The sandbox may be unable to resolve or execute that WinGet link even when it is present on `PATH` and `hugo version` works in the interactive terminal. A sandboxed miss requires the outside-sandbox retry described above. Use `npm run check:site` for the complete fresh Hugo build and validation. Fall back to `npm run check:site:static` only if the escalated Hugo check also fails; allow a longer timeout because validation can take 45 seconds or more.
 
 ## Coding Style & Naming Conventions
 
@@ -61,7 +62,7 @@ Follow existing transcript naming patterns:
 
 For ordinary curated pages, use `docs/questions/<slug>-questions.md`. If the slug already ends in `questions`, use `docs/questions/<slug>.md` to avoid duplicated names like `questions-questions.md`. Special-purpose pages such as `208-super-chat-questions.md` should only be used when explicitly requested. Ordinary Q&A pages use the four-column table `Time | Question | Short answer / answer direction | Expanded answer`; treat filled expanded answers as the current baseline, not as a pending migration.
 
-`scripts/Build-HugoSiteContent.ps1` generates each episode's SEO description from representative curated questions. Review that description when adding or substantially revising an episode. If the generated result is weak or unrepresentative, add one transcript-grounded, single-line override near the top of the authoritative `docs/questions/*.md` page:
+The TypeScript site-content builder generates each episode's SEO description from representative curated questions. Review that description when adding or substantially revising an episode. If the generated result is weak or unrepresentative, add one transcript-grounded, single-line override near the top of the authoritative `docs/questions/*.md` page:
 
 ```html
 <!-- seo-description: Concise, accurate description of this episode's questions. -->
@@ -77,7 +78,7 @@ Timestamp links should point directly to YouTube with `?t=`. For links intended 
 
 ## Testing Guidelines
 
-Run `npm test` for the legacy search suite and compiled TypeScript tests, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `npm run check:transcript-store` and `npm run check:stream-index` for acquisition changes. Use `pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo` for source-to-site compatibility validation; it generates the ignored question mirrors before checking them. After a production-baseURL Hugo render, use `scripts/Test-HugoRenderedSeo.ps1` to check complete rendered metadata, indexability, JSON-LD parsing, and internal links. For curated Q&A pages, compare short and expanded answers against the manifest-owned TXT transcript.
+Run `npm test` for the legacy search suite and compiled TypeScript tests, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `npm run check:transcript-store` and `npm run check:stream-index` for acquisition changes. Use `npm run check:site:static` for source-to-site compatibility validation; it generates the ignored question mirrors before checking them. After a production-baseURL Hugo render, use `npm run check:site:rendered -- --public-dir site/public --expected-base-url URL` to check complete rendered metadata, indexability, JSON-LD parsing, sitemap coverage, and internal links. For curated Q&A pages, compare short and expanded answers against the manifest-owned TXT transcript.
 
 ## Commit & Pull Request Guidelines
 

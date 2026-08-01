@@ -14,7 +14,7 @@ Use the smallest change that fixes the reported search behavior and leaves unrel
 - `site/assets/js/search.js` only for browser-side orchestration and UI behavior
 - `site/layouts/search/list.html` only for search-page data wiring or markup
 - `scripts/Build-SearchIndex.mjs` when index generation itself must change
-- `scripts/Test-HugoSearchAliases.ps1` and `tests/search-*.test.js` for regression coverage
+- `src/site/search-alias-validation.ts` and `tests/search-*.test.js` for regression coverage
 
 Do not edit transcript sources, curated `docs/questions/` pages, generated `site/content/questions/` mirrors, `site/data/questions.json`, or files under `site/static/search/` merely to force a result. Regenerate derived search files through the repository scripts.
 
@@ -36,13 +36,13 @@ Do not edit transcript sources, curated `docs/questions/` pages, generated `site
 Run:
 
 ```powershell
-pwsh -NoProfile -File scripts/Test-HugoSearchAliases.ps1
+npm run check:search-aliases
 npm test
 npm run check:js
-git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible diff --check -- site/data/search-aliases.json site/assets/js/search-core.js site/assets/js/search.js site/layouts/search/list.html scripts/Build-SearchIndex.mjs scripts/Test-HugoSearchAliases.ps1 tests
+git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible diff --check -- site/data/search-aliases.json site/assets/js/search-core.js site/assets/js/search.js site/layouts/search/list.html scripts/Build-SearchIndex.mjs src/site/search-alias-validation.ts tests
 ```
 
-Run `npm run build:search-index` before validation when the change affects aliases, source search data, or index generation. Run `pwsh -NoProfile -File scripts/Test-HugoSite.ps1 -SkipHugo` when layouts, generated compatibility content, or site wiring changes.
+Run `npm run build:search-index` before validation when the change affects aliases, source search data, or index generation. Run `npm run check:site:static` when layouts, generated compatibility content, or site wiring changes.
 
 For changes to `search.js`, the search layout, or browser-side data wiring, run the site and exercise the affected query in the in-app browser when available. Record the visible result count and confirm filters, highlighting, empty states, and load-more behavior relevant to the change. If a browser runtime is unavailable, report that limitation and complete the static site check.
 
