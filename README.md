@@ -4,7 +4,7 @@
 
 This repository is a public reference project for the *Ancient Egypt and the Bible* livestream archive. Its goal is to turn livestream transcripts into material that is easy to browse, search, quote, and verify from the original videos.
 
-Long livestreams are hard to navigate from transcript text alone. This project keeps canonical TXT transcripts and curated Markdown Q&A pages so readers can jump from a topic or question directly to the matching moment in the video. Legacy transcript JSON is retained unchanged only through migration, merge, and deployment validation.
+Long livestreams are hard to navigate from transcript text alone. This project keeps canonical TXT transcripts and curated Markdown Q&A pages so readers can jump from a topic or question directly to the matching moment in the video.
 
 ## Start Here
 
@@ -324,7 +324,6 @@ src/
   transcripts/
     manifest.json             Validated TXT payload facts and canonical hashes
     fetch-status.json         Resumable transcript failure state
-    json/                     Legacy retained payloads; unchanged during migration
     txt/                      Canonical transcript payloads and curation surface
 ```
 
@@ -332,9 +331,7 @@ src/
 
 `src/transcripts/txt/` is the transcript source of record for curation and auditing. Each line has a segment index, display timestamp, a tab, and normalized transcript text. `src/transcripts/manifest.json` maps video IDs to stable TXT files and records canonical-LF hashes, lengths, and line counts.
 
-`src/transcripts/json/` contains legacy transcript exports retained unchanged until the TypeScript/TXT pipeline is merged to `origin/master` and its Hugo deployment succeeds. New pulls must not add or update transcript JSON. Removal from current and historical Git state is a later, separately authorized operation.
-
-TSV is not part of the tracked transcript store. Create temporary structured diagnostics only under ignored `reports/` when a specific task requires them.
+Raw transcript JSON and TSV are not part of the tracked transcript store. Create temporary structured diagnostics only under ignored `reports/` when a specific task requires them.
 
 `docs/questions/` contains the canonical, human-edited reference pages. These are meant to be read directly on GitHub Pages and GitHub and may include cleaned-up questions, short answer summaries, and timestamp links.
 
@@ -533,7 +530,7 @@ git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible status --short
 git diff
 ```
 
-Stage only the reviewed canonical inventory, metadata, TXT, manifest, curated Markdown, README, and audit-log changes. Do not stage legacy transcript JSON, ignored reports, or generated Hugo question mirrors.
+Stage only the reviewed canonical inventory, metadata, TXT, manifest, curated Markdown, README, and audit-log changes. Do not stage ignored reports or generated Hugo question mirrors.
 
 ```powershell
 git commit -m "add livestream N questions"
@@ -627,7 +624,6 @@ When converting transcripts:
 - Resolve video IDs and stable files through `src/channel/episodes.json` and `src/transcripts/manifest.json`.
 - Use the TypeScript direct-to-TXT commands for new acquisition.
 - Do not create new tracked transcript JSON or TSV payloads.
-- Keep legacy transcript JSON unchanged until its separately authorized cleanup.
 - Put temporary structured diagnostics and canary output under ignored `reports/`.
 
 When adding or improving a curated page:

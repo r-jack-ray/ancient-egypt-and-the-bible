@@ -8,7 +8,6 @@ This repository is a Questions & Answers reference archive for the Ancient Egypt
 - `src/live-stream-list.md`: deterministic Hugo compatibility projection with YouTube links and transcript slugs.
 - `src/transcripts/manifest.json`: canonical TXT payload facts and video-ID-to-file mapping.
 - `src/transcripts/txt/`: canonical transcript payloads, one indexed/timestamped segment per line, and the default curation surface.
-- `src/transcripts/json/`: legacy transcript exports retained unchanged until the TypeScript/TXT pipeline is merged and deployed. Do not add new payloads here.
 - `docs/questions/`: canonical curated GitHub-readable Q&A reference pages with timestamp links, short answers, and filled transcript-grounded expanded answers.
 - `site/`: Hugo compatibility site. `site/content/questions/_index.md` is handwritten and tracked; the other question Markdown files are generated mirrors, ignored by Git, and must not be edited or committed.
 - `tests/`: Node test coverage for the generated search index and client-side search behavior.
@@ -107,7 +106,7 @@ Do not invent transcript content. Preserve uncertainty when audio or transcript 
 
 When a request involves Hugo site search, search indexing, missing or noisy search results, search aliases, search query smoke tests, or making a term easier to find, use `$search-index-curator` even if the user does not name the skill exactly. Treat natural phrasing such as "fix search for X", "improve results for X", "search misses X", "X should find Y", or "add a synonym/alias" as enough to route through the skill.
 
-When a curated page needs transcript inspection, resolve the matching `src/transcripts/txt/<fileStem>.txt` through `src/transcripts/manifest.json`. TXT is the source of record and is optimized for `rg`, `Select-String`, and bounded `Get-Content` review. Legacy JSON may be consulted as optional historical evidence while retained, but curation must not require it.
+When a curated page needs transcript inspection, resolve the matching `src/transcripts/txt/<fileStem>.txt` through `src/transcripts/manifest.json`. TXT is the source of record and is optimized for `rg`, `Select-String`, and bounded `Get-Content` review.
 
 When requesting `transcript-question-page-audit`, prefer project-root-relative paths and the direct phrase:
 
