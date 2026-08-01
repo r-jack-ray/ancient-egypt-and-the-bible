@@ -28,9 +28,6 @@ task-notes/**
 !task-notes/**/
 !task-notes/**/*.md
 
-# Ignore the run summaries for pulling YT transcript JSON.
-scripts/Get-YouTubeTranscriptJson.run-summary*
-
 # Generated reports, validation output, and smoke-test output.
 /reports/
 youtube-api-key.txt
@@ -40,9 +37,12 @@ youtube-api-key.txt
 /site/public/
 /site/resources/_gen/
 
-# Generated from docs/questions by scripts/Build-HugoSiteContent.ps1.
+# Generated from docs/questions by npm run build:site-content.
 /site/content/questions/*.md
 !/site/content/questions/_index.md
 
 # Graphify generated output
 graphify-out/
+
+# Local CodeGraph index
+.codegraph/
