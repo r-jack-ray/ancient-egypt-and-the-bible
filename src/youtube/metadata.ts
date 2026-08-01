@@ -58,6 +58,7 @@ export async function fetchAndStoreVideoMetadata(options: {
   delayMs: number;
   output?: string;
   limit?: number;
+  refreshAll?: boolean;
   logger?: (message: string) => void;
 }): Promise<VideoMetadataStore> {
   const episodes = await readEpisodesStore();
@@ -65,8 +66,10 @@ export async function fetchAndStoreVideoMetadata(options: {
   const output = options.output ?? metadataPath;
   const existing = await readVideoMetadataStore(output);
   const byId = new Map(existing.videos.map((record) => [record.videoId, record]));
-  const missing = ids.filter((videoId) => !byId.has(videoId));
-  const selected = options.limit === undefined ? missing : missing.slice(0, options.limit);
+  const selected = selectMetadataRefreshVideoIds(ids, existing.videos, {
+    ...(options.limit !== undefined ? { limit: options.limit } : {}),
+    ...(options.refreshAll ? { refreshAll: true } : {}),
+  });
   const fetched = await fetchVideoMetadata({
     apiKey: options.apiKey,
     videoIds: selected,
@@ -85,6 +88,20 @@ export async function fetchAndStoreVideoMetadata(options: {
   };
   await writeJsonIfChanged(output, store);
   return store;
+}
+
+export function selectMetadataRefreshVideoIds(
+  videoIds: readonly string[],
+  existingRecords: readonly VideoMetadataRecord[],
+  options: { limit?: number; refreshAll?: boolean } = {},
+): string[] {
+  const byId = new Map(existingRecords.map((record) => [record.videoId, record]));
+  const selected = videoIds.filter((videoId) => {
+    if (options.refreshAll) return true;
+    const record = byId.get(videoId);
+    return record === undefined || resolveVideoReadiness(record).state !== "ready";
+  });
+  return options.limit === undefined ? selected : selected.slice(0, options.limit);
 }
 
 export async function readVideoMetadataStore(path = metadataPath): Promise<VideoMetadataStore> {

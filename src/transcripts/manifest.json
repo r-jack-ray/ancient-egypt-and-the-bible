@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "8bF8Hm5NpR8",
+      "fileStem": "272-the-oppression-pharaoh-we-are-legion",
+      "path": "txt/272-the-oppression-pharaoh-we-are-legion.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "8c2215956699f5a7d8e63d547f99c483a1e3ef5084cc6f84423a96b08a753049",
+      "canonicalByteLength": 226196,
+      "segmentCount": 4945,
+      "firstStartSeconds": 168,
+      "lastStartSeconds": 15237,
+      "fetchedAt": "2026-08-01T17:14:52.517Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "lslnXdAd1Ok",
       "fileStem": "271-all-your-reliquaries-are-mine",
       "path": "txt/271-all-your-reliquaries-are-mine.txt",

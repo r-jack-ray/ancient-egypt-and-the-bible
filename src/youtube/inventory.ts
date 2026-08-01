@@ -108,7 +108,7 @@ export async function fetchInventoryCandidate(options: {
   const streamMetadata = metadata.filter(isLivestream);
   const additions = streamMetadata
     .filter((record) => !baselineById.has(record.videoId))
-    .map((record, index) => newEpisode(record, baseline.episodes.length + index + 1));
+    .map((record, index) => episodeFromVideoMetadata(record, baseline.episodes.length + index + 1));
   const omittedBaselineVideoIds = baseline.episodes
     .filter((record) => !metadataById.has(record.videoId))
     .map((record) => record.videoId);
@@ -159,12 +159,11 @@ export async function applyInventoryCandidate(
     throw new Error("First apply requires --accept-source to pin the resolved channel and uploads playlist.");
   }
   const accepted = new Set(options.acceptedAdditionIds);
-  const unaccepted = candidate.additions.filter((record) => !accepted.has(record.videoId));
-  if (unaccepted.length > 0) {
-    throw new Error(
-      `Every addition must be accepted explicitly with --accept-addition: ${unaccepted.map((x) => x.videoId).join(", ")}`,
-    );
-  }
+  const nextEpisodes = buildAcceptedInventoryEpisodes(
+    current.episodes,
+    candidate.additions,
+    [...accepted],
+  );
   const next: EpisodesStore = {
     schemaVersion: 1,
     channel: {
@@ -172,7 +171,7 @@ export async function applyInventoryCandidate(
       channelId: candidate.source.channelId,
       uploadsPlaylistId: candidate.source.uploadsPlaylistId,
     },
-    episodes: candidate.candidateEpisodes,
+    episodes: nextEpisodes,
   };
   validateEpisodes(next.episodes);
   const lease = await acquireWriterLease("apply-channel-inventory");
@@ -214,6 +213,35 @@ export async function applyInventoryCandidate(
   } finally {
     await lease.release();
   }
+}
+
+export function buildAcceptedInventoryEpisodes(
+  currentEpisodes: readonly EpisodeRecord[],
+  additions: readonly EpisodeRecord[],
+  acceptedAdditionIds: readonly string[],
+): EpisodeRecord[] {
+  const additionsById = new Map(additions.map((record) => [record.videoId, record]));
+  const accepted = new Set(acceptedAdditionIds);
+  const unknown = [...accepted].filter((videoId) => !additionsById.has(videoId));
+  if (unknown.length > 0) {
+    throw new Error(`Accepted video IDs are not proposed additions: ${unknown.join(", ")}`);
+  }
+  if (additions.length > 0 && accepted.size === 0) {
+    throw new Error("Apply requires at least one --accept-addition or --accept-latest selection.");
+  }
+  return [
+    ...additions.filter((record) => accepted.has(record.videoId)),
+    ...currentEpisodes,
+  ].map((record, index) => ({
+    ...record,
+    order: index + 1,
+  }));
+}
+
+export function latestNumberedAddition(
+  additions: readonly EpisodeRecord[],
+): EpisodeRecord | undefined {
+  return additions.find((record) => record.episodeNumber !== undefined);
 }
 
 export async function recoverInventoryTransaction(): Promise<"none" | "rolled-back" | "completed"> {
@@ -258,20 +286,27 @@ function isLivestream(record: VideoMetadataRecord): boolean {
     record.liveBroadcastContent === "live";
 }
 
-function newEpisode(record: VideoMetadataRecord, order: number): EpisodeRecord {
+export function episodeFromVideoMetadata(record: VideoMetadataRecord, order: number): EpisodeRecord {
   const title = record.title ?? `YouTube livestream ${record.videoId}`;
-  const stem = slugify(title) || `youtube-livestream-${record.videoId.toLowerCase()}`;
-  return {
+  const numbered = /^Live Stream #(\d+):\s*(.+)$/u.exec(title);
+  const displayTitle = numbered?.[2] ?? title;
+  const episodeNumber = numbered?.[1] === undefined ? undefined : Number(numbered[1]);
+  const stem = (episodeNumber === undefined
+    ? slugify(displayTitle)
+    : `${episodeNumber}-${slugify(displayTitle)}`) || `youtube-livestream-${record.videoId.toLowerCase()}`;
+  const episode: EpisodeRecord = {
     videoId: record.videoId,
     url: `https://www.youtube.com/watch?v=${record.videoId}`,
     linkText: title,
-    displayTitle: title,
+    displayTitle,
     slug: stem,
     fileStem: stem,
     order,
     lifecycle: lifecycle(record),
     transcriptPolicy: "expected",
   };
+  if (episodeNumber !== undefined) episode.episodeNumber = episodeNumber;
+  return episode;
 }
 
 function lifecycle(record: VideoMetadataRecord): EpisodeRecord["lifecycle"] {

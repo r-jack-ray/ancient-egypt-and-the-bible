@@ -1,7 +1,12 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 
-import { parseYoutubeDuration, resolveVideoReadiness, type VideoMetadataRecord } from "./metadata.js";
+import {
+  parseYoutubeDuration,
+  resolveVideoReadiness,
+  selectMetadataRefreshVideoIds,
+  type VideoMetadataRecord,
+} from "./metadata.js";
 
 test("metadata readiness defers scheduled, live, and processing streams", () => {
   const base: VideoMetadataRecord = {
@@ -47,4 +52,30 @@ test("ISO 8601 YouTube durations are normalized", () => {
   assert.equal(parseYoutubeDuration("PT1H2M3S"), 3_723);
   assert.equal(parseYoutubeDuration("PT0S"), 0);
   assert.equal(parseYoutubeDuration("invalid"), undefined);
+});
+
+test("metadata refresh includes missing and changing schedule records", () => {
+  const ready: VideoMetadataRecord = {
+    videoId: "abcdefghijk",
+    fetchedAt: "2026-08-01T00:00:00Z",
+    durationSeconds: 100,
+    uploadStatus: "processed",
+  };
+  const upcoming: VideoMetadataRecord = {
+    videoId: "ZYXWVUTSRQP",
+    fetchedAt: "2026-08-01T00:00:00Z",
+    durationSeconds: 0,
+    uploadStatus: "uploaded",
+    liveBroadcastContent: "upcoming",
+    scheduledStartAt: "2026-08-02T00:00:00Z",
+  };
+  const ids = [ready.videoId, upcoming.videoId, "12345678901"];
+  assert.deepEqual(
+    selectMetadataRefreshVideoIds(ids, [ready, upcoming]),
+    [upcoming.videoId, "12345678901"],
+  );
+  assert.deepEqual(
+    selectMetadataRefreshVideoIds(ids, [ready, upcoming], { refreshAll: true, limit: 2 }),
+    [ready.videoId, upcoming.videoId],
+  );
 });

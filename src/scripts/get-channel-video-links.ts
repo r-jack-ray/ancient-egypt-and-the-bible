@@ -3,6 +3,7 @@ import { resolveYoutubeApiKey } from "../youtube/api-key.js";
 import {
   applyInventoryCandidate,
   fetchInventoryCandidate,
+  latestNumberedAddition,
   writeInventoryReport,
 } from "../youtube/inventory.js";
 
@@ -23,11 +24,20 @@ async function main(): Promise<void> {
       `omitted-baseline=${candidate.omittedBaselineVideoIds.length} report=${args.output}`,
   );
   if (args.apply) {
+    const acceptedAdditionIds = [...args.acceptedAdditionIds];
+    if (args.acceptLatest) {
+      const latest = latestNumberedAddition(candidate.additions);
+      if (latest === undefined) {
+        throw new Error("No proposed numbered livestream addition is available to accept.");
+      }
+      acceptedAdditionIds.push(latest.videoId);
+      console.error(`Selected latest numbered livestream: ${latest.videoId} (${latest.linkText}).`);
+    }
     await applyInventoryCandidate(candidate, {
       acceptSource: args.acceptSource,
-      acceptedAdditionIds: args.acceptedAdditionIds,
+      acceptedAdditionIds,
     });
-    console.error("Applied accepted complete inventory and regenerated src/live-stream-list.md.");
+    console.error("Applied selected additions and regenerated src/live-stream-list.md.");
   }
 }
 
@@ -38,6 +48,7 @@ function parseArgs(args: string[]): {
   maxPages?: number;
   apply: boolean;
   acceptSource: boolean;
+  acceptLatest: boolean;
   acceptedAdditionIds: string[];
 } {
   const result: {
@@ -47,12 +58,14 @@ function parseArgs(args: string[]): {
     maxPages?: number;
     apply: boolean;
     acceptSource: boolean;
+    acceptLatest: boolean;
     acceptedAdditionIds: string[];
   } = {
     output: "reports/stream-inventory-candidate.json",
     delayMs: 1_000,
     apply: false,
     acceptSource: false,
+    acceptLatest: false,
     acceptedAdditionIds: [],
   };
   for (let index = 0; index < args.length; index += 1) {
@@ -76,6 +89,9 @@ function parseArgs(args: string[]): {
       case "--accept-source":
         result.acceptSource = true;
         break;
+      case "--accept-latest":
+        result.acceptLatest = true;
+        break;
       case "--accept-addition":
         result.acceptedAdditionIds.push(value(args, ++index, arg));
         break;
@@ -93,7 +109,8 @@ then reports/youtube-api-key.txt. Literal command-line keys are not accepted.
   --max-pages <count>          Partial report-only probe
   --apply                      Apply a complete, accepted candidate
   --accept-source              Pin the first resolved channel/playlist
-  --accept-addition <videoId>  Repeat for every proposed addition
+  --accept-latest              Accept the newest proposed numbered livestream
+  --accept-addition <videoId>  Accept one proposed addition; repeat as needed
 `);
         process.exit(0);
       default:

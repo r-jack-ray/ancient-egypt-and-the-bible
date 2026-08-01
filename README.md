@@ -278,6 +278,7 @@ Long livestreams are hard to navigate from transcript text alone. This project k
 - [269 Smithers Release The Book Hounds Questions](docs/questions/269-smithers-release-the-book-hounds-questions.md)
 - [270 Dead or Ankh Questions](docs/questions/270-live-stream-dead-or-ankh-questions.md)
 - [271 All Your Reliquaries Are Mine Questions](docs/questions/271-all-your-reliquaries-are-mine-questions.md)
+- [272 The Oppression Pharaoh, We Are Legion Questions](docs/questions/272-the-oppression-pharaoh-we-are-legion-questions.md)
 - [Special Live Stream: All the Stars as Angels Q&A Questions](docs/questions/special-live-stream-all-the-stars-as-angels-q-and-a-questions.md)
 - [Special Live Stream: Reliquary of the Dead Q&A Questions](docs/questions/special-live-stream-reliquary-of-the-dead-q-and-a-questions.md)
 - [Dr. Falk Plays Assassin's Creed Origins (part 1) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-1-questions.md)
@@ -415,7 +416,7 @@ The ignored API key fallback is `reports/youtube-api-key.txt`. Inventory refresh
 npm run fetch:video-links
 ```
 
-The command writes `reports/stream-inventory-candidate.json`. A complete candidate changes canonical inventory only with `--apply`, `--accept-source` on the first accepted source, and one `--accept-addition VIDEO_ID` for every proposed addition.
+The command writes `reports/stream-inventory-candidate.json`. A complete candidate changes canonical inventory only with `--apply`, `--accept-source` on the first accepted source, and an explicit selection. Use `--accept-addition VIDEO_ID` for reviewed additions or `--accept-latest` for the newest numbered livestream; unselected additions remain report-only.
 
 Fetch one registered transcript directly to its manifest-owned TXT file:
 
@@ -423,10 +424,11 @@ Fetch one registered transcript directly to its manifest-owned TXT file:
 npm run alternate:fetch:transcript -- --video-id VIDEO_ID
 ```
 
-Run a conservatively paced batch:
+Run a conservatively paced batch, or fetch only the first ready missing transcript:
 
 ```powershell
 npm run alternate:fetch:transcripts:safe
+npm run alternate:fetch:transcripts:safe:latest
 ```
 
 Safe mode spaces every outbound transcript request by 60 seconds, stops on blocking/rate-limit evidence, checkpoints typed failure state, skips valid stored files before any request, and writes no raw transcript JSON. Use `--dry-run` for a network-free and canonical-write-free preview. Forced replacement is available only through the single-video command and requires the current manifest hash.
@@ -437,7 +439,13 @@ The TypeScript/TXT pipeline replaces the legacy sequence of manually editing `sr
 
 ### 1. Discover and review livestreams
 
-Run the official YouTube Data API inventory command:
+For the normal weekly numbered livestream, fetch a complete inventory, accept only the newest numbered addition, store its metadata, and regenerate the compatibility index:
+
+```powershell
+npm run fetch:video-links:latest
+```
+
+The command still writes `reports/stream-inventory-candidate.json`; unrelated or special live broadcasts remain review-only. To review without changing canonical files, run the official YouTube Data API inventory command directly:
 
 ```powershell
 npm run fetch:video-links
@@ -452,21 +460,28 @@ $candidate.omittedBaselineVideoIds
 $candidate.titleChanges
 ```
 
-Apply a complete reviewed candidate by explicitly accepting every proposed addition:
+Apply one or more explicitly reviewed additions from a complete candidate:
 
 ```powershell
 npm run fetch:video-links -- --apply `
+  --accept-source `
   --accept-addition VIDEO_ID_1 `
   --accept-addition VIDEO_ID_2
 ```
 
-Add `--accept-source` to the first accepted application so the resolved channel and uploads playlist are pinned. The application refuses partial or incomplete candidates and requires one `--accept-addition` argument for every proposed addition.
+The first accepted application requires `--accept-source` so the resolved channel and uploads playlist are pinned. Partial inventory probes can never be applied, unknown accepted IDs are rejected, and unselected proposed additions remain in the review report.
 
 The accepted inventory atomically updates `src/channel/episodes.json`, `src/channel/video-metadata.json`, and the generated compatibility projection `src/live-stream-list.md`. Do not manually add the weekly stream to `src/live-stream-list.md`.
 
 ### 2. Pull the registered transcript directly to TXT
 
-For the exact accepted video, use the single-video command with conservative pacing:
+To fetch only the first ready missing transcript without entering a video ID, use:
+
+```powershell
+npm run alternate:fetch:transcripts:safe:latest
+```
+
+The batch reads canonical episode order, skips valid stored and not-ready transcripts, and writes the selected transcript directly to TXT. For an explicitly selected accepted video, the single-video form remains available:
 
 ```powershell
 npm run alternate:fetch:transcript -- `
@@ -483,7 +498,7 @@ npm run alternate:fetch:transcripts:safe -- --dry-run
 npm run alternate:fetch:transcripts:safe
 ```
 
-Use `--limit 1` for a single batch canary or `--retry-failed` to select recorded failures. Valid stored transcripts are never overwritten by a batch. If a stream is still scheduled, live, or processing, refresh its metadata later with `npm run fetch:video-metadata` before retrying transcript acquisition.
+Use `--limit 1` for a single batch canary or `--retry-failed` to select recorded failures. Valid stored transcripts are never overwritten by a batch. `npm run fetch:video-metadata` refreshes missing and scheduled, live, processing, or otherwise not-ready records so schedule and completion changes are retained; add `-- --refresh-all` for a full metadata refresh.
 
 ### 3. Validate transcript state
 
@@ -614,7 +629,7 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 
 ## Current Status
 
-The repository currently has canonical TXT transcripts for 269 numbered episode streams. Curated Markdown pages currently exist for 269 numbered episode streams under `docs/questions/`, matching the current numbered TXT coverage.
+The repository currently has canonical TXT transcripts for 270 numbered episode streams. Curated Markdown pages currently exist for 270 numbered episode streams under `docs/questions/`, matching the current numbered TXT coverage.
 
 Known blocked numbered episodes remain:
 - Live Stream #118: transcript disabled / empty placeholder

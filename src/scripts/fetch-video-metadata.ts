@@ -7,13 +7,17 @@ async function main(): Promise<void> {
   let apiKeyFile: string | undefined;
   let delayMs = 1_000;
   let limit: number | undefined;
+  let refreshAll = false;
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
     if (arg === "--api-key-file") apiKeyFile = required(args[++index], arg);
     else if (arg === "--request-delay-ms") delayMs = number(required(args[++index], arg), arg);
     else if (arg === "--limit") limit = number(required(args[++index], arg), arg);
+    else if (arg === "--refresh-all") refreshAll = true;
     else if (arg === "--help" || arg === "-h") {
-      console.log("Usage: npm run fetch:video-metadata -- [--api-key-file path] [--limit n] [--request-delay-ms ms]");
+      console.log(
+        "Usage: npm run fetch:video-metadata -- [--api-key-file path] [--limit n] [--request-delay-ms ms] [--refresh-all]",
+      );
       return;
     } else throw new Error(`Unknown argument: ${arg ?? ""}`);
   }
@@ -22,6 +26,7 @@ async function main(): Promise<void> {
     apiKey,
     delayMs,
     ...(limit !== undefined ? { limit } : {}),
+    ...(refreshAll ? { refreshAll: true } : {}),
     logger: (message) => console.error(message),
   });
   console.error(`Stored normalized metadata for ${result.videos.length} videos.`);
