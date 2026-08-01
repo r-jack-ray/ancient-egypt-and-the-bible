@@ -1,5 +1,19 @@
 [
   {
+    "number": 272,
+    "title": "The Oppression Pharaoh, We Are Legion",
+    "slug": "272-the-oppression-pharaoh-we-are-legion",
+    "youtube_url": "https://www.youtube.com/watch?v=8bF8Hm5NpR8",
+    "video_id": "8bF8Hm5NpR8",
+    "question_page": "questions/272-the-oppression-pharaoh-we-are-legion-questions.md",
+    "content_path": "questions/272-the-oppression-pharaoh-we-are-legion/",
+    "status": "curated",
+    "is_numbered": true,
+    "is_special": false,
+    "question_count": 70,
+    "series": "numbered livestream"
+  },
+  {
     "number": 271,
     "title": "All Your Reliquaries Are Mine",
     "slug": "271-all-your-reliquaries-are-mine",
