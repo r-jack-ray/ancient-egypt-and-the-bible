@@ -76,7 +76,7 @@ The deterministic processing has two intentional acquisition boundaries: the off
 - Current client search payload: 25.71 MB raw for documents plus index, approximately 6.48 MB with gzip level 9 or 4.30 MB with Brotli quality 11. Both files are functionally used; this is a performance target, not unused output.
 - Current installed dependencies: 247.65 MiB. `node_modules/googleapis` alone is 197.87 MiB (79.9%) and 1,851 files; its lockfile closure contains 47 packages.
 - Static source reachability: all 41 TypeScript files are reachable from a script or test root. There is no whole orphan module to delete blindly.
-- The optional question-revision reporting subsystem is approximately 955 TypeScript lines across its implementation, tests, and CLI. It is a meaningful deletion only if the maintainer confirms that the triage report is no longer used.
+- The optional question-revision reporting subsystem was 1,032 TypeScript lines across its implementation, tests, and CLI. Repository references, generated artifacts, and Git history showed no active human or machine consumer, so Phase 4 retired it while preserving its historical task note.
 
 ## Candidate phases
 
@@ -164,9 +164,11 @@ Validation gate:
 
 ### Phase 4: Clarify report ownership and lifecycle
 
+Status: implemented and review-corrected on 2026-08-02. Review-only inventory discovery now writes a concise human delta without internal metadata, while accepted apply runs write no report unless `--output` is explicit. The unconsumed question-revision report command, module, and tests are retired, while its historical task note remains as process evidence. Clean question-table validation is console-only; failures print their errors and write the detailed pair, and explicit `--report` runs can also write it on success. The stdout-only transcript-problem command is now `status:transcripts`, and README documents every retained report's reader, generation boundary, and cleanup lifecycle.
+
 - Keep the stream inventory candidate when running review-only discovery; make report emission optional or failure-focused for the ordinary weekly workflow after accepted additions are explicit.
 - Write a concise inventory delta for human review rather than serializing the entire internal candidate. Include source identity, completeness, additions, omissions, title changes, and excluded-upload summary; full metadata remains internal to the apply transaction.
-- Keep question-revision CSV/Markdown only if the maintainer still uses them as a triage backlog. Otherwise retire the command, module, tests, and obsolete task note together.
+- Retire the question-revision CSV/Markdown command, module, and tests because no active human or machine consumer exists. Preserve its historical task note as process evidence under the repository-wide `task-notes/` retention decision.
 - Change clean question-table validation to emit a concise console summary. Write detailed JSON/Markdown only on failure or behind an explicit report option.
 - Fold the stdout-only transcript-problem summary into the canonical archive-state/status command, or rename it as a status command instead of a report if it remains separate.
 - Completed: move the local API key fallback from `reports/` to ignored `.local/youtube-api-key.txt`, while retaining `YOUTUBE_API_KEY` and `--api-key-file` precedence. Keep `reports/` limited to generated artifacts and diagnostics.
@@ -208,7 +210,7 @@ If handled later, keep `site/data/search-aliases.json` tracked as authored sourc
 
 ## Decision points requiring owner confirmation
 
-- Whether question-revision reports are actively used as a work queue.
+- Resolved in Phase 4: question-revision reports had no active human or machine consumer and were retired; their historical task note remains.
 - Whether inventory candidate reports should remain mandatory for the ordinary Google API links/metadata workflow.
 - Whether replacing `googleapis` with a narrow native client is preferred over retaining vendor-maintained request/response types.
 
@@ -224,13 +226,13 @@ If handled later, keep `site/data/search-aliases.json` tracked as authored sourc
 8. Completed Phase 1 canonical-to-site cleanup, including removal of `src/live-stream-list.md`, the standalone stream-index command, redundant question-row and episode fields, full-body Hugo mirrors, and the data-backed question-template fallback.
 9. Completed Phase 2 with a narrow injected-fetch YouTube Data API client, fixture-backed endpoint and integration tests, safe API errors, bounded transient-request retries, and removal of `googleapis`, its `gaxios` override, and 47 lockfile packages.
 10. Completed Phase 3 with two independently rerunnable acquisition commands, one shared cross-video caption limiter, automatic later-run recovery for recorded failures, deterministic new-TXT/deferred/failed/pending handoff output, fixture-backed failure and circuit-break coverage, and retirement of `fetch:transcript`.
+11. Completed Phase 4 with concise review-only inventory deltas, report-free accepted apply runs by default, failure-focused question-table diagnostics with CI-visible errors, retirement of the unconsumed question-revision report implementation, the renamed transcript status command, and documented report ownership and cleanup.
 
 ## Remaining implementation order
 
-1. Decide report ownership, then remove or make conditional the reports with no active human or machine consumer.
-2. Consolidate validation, CLI plumbing, and Markdown table parsing while preserving distinct invariants.
-3. Retire the bootstrap and other completed processing-migration residue after recovery-path review.
-4. Consider generated site/search tracking policy only as a separate follow-up after the processing cleanup is complete.
+1. Consolidate validation, CLI plumbing, and Markdown table parsing while preserving distinct invariants.
+2. Retire the bootstrap and other completed processing-migration residue after recovery-path review.
+3. Consider generated site/search tracking policy only as a separate follow-up after the processing cleanup is complete.
 
 ## Verification record
 
@@ -268,4 +270,8 @@ Phase 3 implementation validation completed on 2026-08-01: all 57 compiled TypeS
 
 Phase 3 review follow-up completed on 2026-08-02: the ordinary batch now retries every ready, missing TXT even when a prior failure is recorded, so a not-yet-ready caption cannot become permanently invisible to the weekly command. The redundant `--retry-failed` switch and its active documentation were removed; the older migration plan remains unchanged as historical process evidence. Normal runs clear stale failure records already resolved by stored TXT or deliberate `known-unavailable` policy, while dry runs remain write-free. Success checkpoints now sit outside the fetch/store catch so checkpoint write errors cannot be mislabeled as YouTube failures. A typed conversion for `youtube-transcript-plus` CAPTCHA/rate-limit errors prevents the fallback from making a second request after primary blocking evidence. All 58 compiled TypeScript tests, the complete functional validation stack, 16 JavaScript search tests, the updated CLI help, and the canonical dry run passed; the dry run again reported 283 stored and two known-unavailable records with no pending work or writes. No live network canary or canonical inventory apply was run.
 
-Remaining phases still require their own implementation-time verification. Report lifecycle, validation/parser consolidation, bootstrap retirement, and generated-output tracking policy remain intentionally unchanged.
+Phase 4 implementation validation completed on 2026-08-02: all 60 compiled TypeScript tests and 16 JavaScript search tests passed, including new concise-inventory-report and conditional-question-diagnostic coverage. Type checking, the complete functional validation stack, archive validation, the 283-page/13,931-row question-table check, static Hugo/search compatibility validation, both changed CLI help paths, transcript status, focused IDE inspection, stale-command searches, and diff checks passed. Transcript status reported 285 episodes, 283 stored TXT files, two known-unavailable records, no pending records, and no recorded failures. No live network request or canonical inventory apply was run.
+
+Phase 4 review follow-up completed on 2026-08-02: repository references and Git history showed that the question-revision CSV/Markdown pair was created as a heuristic AI triage aid, had no current human, code, or CI consumer, and was not present among generated reports. Its public command, TypeScript module, and tests were therefore retired instead of assigning unsupported maintainer ownership. The June 29 task note remains intact as historical evidence under the explicit `task-notes/` retention decision. Question-table failures now print each hard error for local and GitHub Actions readers as well as writing the ignored diagnostic pair. Type checking, all 56 remaining compiled TypeScript tests, all 16 JavaScript search tests, the complete functional validation stack, the 283-page/13,931-row table check, transcript status, stale-reference searches, and diff checks passed. No live network request, canonical inventory apply, staging change, or work beyond Phase 4 occurred.
+
+Remaining phases still require their own implementation-time verification. Validation/parser consolidation, bootstrap retirement, and generated-output tracking policy remain intentionally unchanged.

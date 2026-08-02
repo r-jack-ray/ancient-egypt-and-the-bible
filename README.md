@@ -401,7 +401,7 @@ The ignored API key fallback is `.local/youtube-api-key.txt`. Inventory refresh 
 npm run fetch:livestreams
 ```
 
-The command writes `reports/stream-inventory-candidate.json`. A complete candidate changes canonical inventory only with `--apply`, `--accept-source` on the first accepted source, and an explicit selection. Use `--accept-addition VIDEO_ID` for reviewed additions or `--accept-latest` for the newest numbered livestream; unselected additions remain report-only.
+Review-only discovery writes the concise delta `reports/stream-inventory-candidate.json`. It contains source identity, completeness, proposed additions, baseline omissions, title changes, and an excluded-upload summary; full fetched metadata stays internal to the apply transaction. A complete candidate changes canonical inventory only with `--apply`, `--accept-source` on the first accepted source, and an explicit selection. Use `--accept-addition VIDEO_ID` for reviewed additions or `--accept-latest` for the newest numbered livestream; unselected additions remain report-only. Apply runs do not rewrite the report unless `--output` is passed explicitly.
 
 Run a conservatively paced batch for all ready missing transcripts:
 
@@ -423,7 +423,7 @@ For the normal weekly pull, fetch a complete inventory and write the review repo
 npm run fetch:livestreams
 ```
 
-This writes the ignored review report `reports/stream-inventory-candidate.json`. Review its additions, omissions, and title changes before accepting anything; unrelated or special live broadcasts remain review-only.
+This writes the ignored review delta `reports/stream-inventory-candidate.json`. Review its source, completeness, additions, omissions, title changes, and excluded-upload summary before accepting anything; unrelated or special live broadcasts remain review-only.
 
 After reviewing the report, accept only the newest numbered addition and store the canonical episode and metadata records:
 
@@ -437,7 +437,7 @@ Apply one or more explicitly reviewed additions from a complete candidate:
 npm run fetch:livestreams -- --apply --accept-source --accept-addition VIDEO_ID_1 --accept-addition VIDEO_ID_2
 ```
 
-The first accepted application requires `--accept-source` so the resolved channel and uploads playlist are pinned. Partial inventory probes can never be applied, unknown accepted IDs are rejected, and unselected proposed additions remain in the review report.
+The first accepted application requires `--accept-source` so the resolved channel and uploads playlist are pinned. Partial inventory probes can never be applied, unknown accepted IDs are rejected, and unselected proposed additions remain in the earlier review report. The apply command writes no new report by default; pass `--output <path>` only when an apply-time delta artifact is intentionally needed.
 
 The accepted inventory atomically updates `src/channel/episodes.json` and `src/channel/video-metadata.json`. The episode store is the sole canonical archive inventory; do not maintain a separate stream list.
 
@@ -464,10 +464,10 @@ Use `--limit 1` for a single batch canary. Recorded failures are retried by ordi
 
 ```powershell
 npm run check:transcript-store
-npm run report:transcript-problems
+npm run status:transcripts
 ```
 
-If acquisition was interrupted during an inventory or transcript transaction, run `npm run check:transcript-store -- --repair-transaction`, then validate again.
+`check:transcript-store` validates canonical archive integrity. `status:transcripts` is a read-only stdout status view for stored, known-unavailable, pending, and recorded-failure counts; it creates no report file. If acquisition was interrupted during an inventory or transcript transaction, run `npm run check:transcript-store -- --repair-transaction`, then validate again.
 
 ### 4. Create the first-pass Q&A page
 
@@ -536,16 +536,6 @@ review YouTube inventory
 
 ## Additional Maintenance
 
-### Find likely repair candidates
-
-Use the TypeScript revision report for local triage when deciding which curated pages may need repair:
-
-```powershell
-npm run report:question-revisions
-```
-
-The script compares `docs/questions/` and `src/transcripts/txt/`, then writes ignored reports under `reports/`. Treat its score as a triage signal only; a low question density or old Markdown timestamp is a reason to inspect the transcript, not proof that the page is wrong.
-
 ### Validate content changes
 
 Before committing maintenance changes, run focused checks for the files you touched:
@@ -563,6 +553,17 @@ For ordinary Q&A table structure and expanded-answer cells, run:
 ```powershell
 npm run check:question-tables
 ```
+
+A clean run prints one concise summary and creates no report. Failures print their errors and write detailed JSON and Markdown diagnostics under `reports/`; add `-- --report` to request those files for a passing run.
+
+### Report ownership and cleanup
+
+| Artifact | Reader and purpose | When generated | Lifecycle |
+|---|---|---|---|
+| `reports/stream-inventory-candidate.json` | Maintainer reviews a concise Google inventory delta before accepting additions. | Every review-only `fetch:livestreams` run; apply runs only with explicit `--output`. | The next emitted inventory report overwrites it. Delete it after review when no comparison artifact is needed. |
+| `reports/question-table-validation.json` and `.md` | Maintainer uses detailed local table diagnostics; CI receives the same hard errors directly in its log. | On validation failure, or on a passing run with explicit `--report`. | A later emitted report replaces them. Delete them after a clean validation if the old failure record is no longer useful. |
+
+All retained report files are ignored generated artifacts. Transcript status remains stdout-only through `status:transcripts`, so it has no file cleanup lifecycle.
 
 For Hugo site changes, run:
 

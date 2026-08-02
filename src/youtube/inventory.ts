@@ -35,6 +35,35 @@ export interface InventoryCandidate {
   metadata: VideoMetadataRecord[];
 }
 
+export interface InventoryDeltaReport {
+  schemaVersion: 1;
+  generatedAt: string;
+  source: InventoryCandidate["source"];
+  complete: boolean;
+  additions: {
+    count: number;
+    videos: {
+      videoId: string;
+      url: string;
+      title: string;
+      fileStem: string;
+      episodeNumber?: number;
+    }[];
+  };
+  omissions: {
+    count: number;
+    baselineVideoIds: string[];
+  };
+  titleChanges: {
+    count: number;
+    videos: InventoryCandidate["titleChanges"];
+  };
+  excludedUploads: {
+    count: number;
+    videoIds: string[];
+  };
+}
+
 const writerLeasePath = ".tmp/transcript-store/writer.lock";
 
 export async function fetchInventoryCandidate(options: {
@@ -245,8 +274,46 @@ export function latestNumberedAddition(
   return additions.find((record) => record.episodeNumber !== undefined);
 }
 
-export async function writeInventoryReport(path: string, candidate: InventoryCandidate): Promise<void> {
-  await writeDiagnostic(path, candidate);
+export function buildInventoryDeltaReport(
+  candidate: InventoryCandidate,
+  now = new Date(),
+): InventoryDeltaReport {
+  return {
+    schemaVersion: 1,
+    generatedAt: now.toISOString(),
+    source: { ...candidate.source },
+    complete: candidate.complete,
+    additions: {
+      count: candidate.additions.length,
+      videos: candidate.additions.map((record) => ({
+        videoId: record.videoId,
+        url: record.url,
+        title: record.linkText,
+        fileStem: record.fileStem,
+        ...(record.episodeNumber !== undefined ? { episodeNumber: record.episodeNumber } : {}),
+      })),
+    },
+    omissions: {
+      count: candidate.omittedBaselineVideoIds.length,
+      baselineVideoIds: [...candidate.omittedBaselineVideoIds],
+    },
+    titleChanges: {
+      count: candidate.titleChanges.length,
+      videos: candidate.titleChanges.map((change) => ({ ...change })),
+    },
+    excludedUploads: {
+      count: candidate.excludedOrdinaryUploadIds.length,
+      videoIds: [...candidate.excludedOrdinaryUploadIds],
+    },
+  };
+}
+
+export async function writeInventoryReport(
+  path: string,
+  candidate: InventoryCandidate,
+  now = new Date(),
+): Promise<void> {
+  await writeDiagnostic(path, buildInventoryDeltaReport(candidate, now));
 }
 
 function isLivestream(record: VideoMetadataRecord): boolean {

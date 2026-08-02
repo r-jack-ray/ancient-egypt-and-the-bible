@@ -7,6 +7,8 @@ import {
   writeInventoryReport,
 } from "../youtube/inventory.js";
 
+const defaultReportPath = "reports/stream-inventory-candidate.json";
+
 async function main(): Promise<void> {
   const args = parseArgs(process.argv.slice(2));
   const apiKey = await resolveYoutubeApiKey({
@@ -18,10 +20,14 @@ async function main(): Promise<void> {
     ...(args.maxPages !== undefined ? { maxPages: args.maxPages } : {}),
     logger: (message) => console.error(message),
   });
-  await writeInventoryReport(args.output, candidate);
+  const reportPath = args.output ?? (args.apply ? undefined : defaultReportPath);
+  if (reportPath !== undefined) {
+    await writeInventoryReport(reportPath, candidate);
+  }
   console.error(
     `Inventory candidate: complete=${candidate.complete} additions=${candidate.additions.length} ` +
-      `omitted-baseline=${candidate.omittedBaselineVideoIds.length} report=${args.output}`,
+      `omitted-baseline=${candidate.omittedBaselineVideoIds.length}` +
+      (reportPath === undefined ? "" : ` report=${reportPath}`),
   );
   if (args.apply) {
     const acceptedAdditionIds = [...args.acceptedAdditionIds];
@@ -43,7 +49,7 @@ async function main(): Promise<void> {
 
 function parseArgs(args: string[]): {
   apiKeyFile?: string;
-  output: string;
+  output?: string;
   delayMs: number;
   maxPages?: number;
   apply: boolean;
@@ -53,7 +59,7 @@ function parseArgs(args: string[]): {
 } {
   const result: {
     apiKeyFile?: string;
-    output: string;
+    output?: string;
     delayMs: number;
     maxPages?: number;
     apply: boolean;
@@ -61,7 +67,6 @@ function parseArgs(args: string[]): {
     acceptLatest: boolean;
     acceptedAdditionIds: string[];
   } = {
-    output: "reports/stream-inventory-candidate.json",
     delayMs: 1_000,
     apply: false,
     acceptSource: false,
@@ -99,12 +104,13 @@ function parseArgs(args: string[]): {
       case "-h":
         console.log(`Usage: npm run fetch:livestreams -- [options]
 
-Default behavior writes a review-only candidate to reports and does not change
-canonical inventory. The API key precedence is --api-key-file, YOUTUBE_API_KEY,
+Review-only discovery writes a concise inventory delta to
+reports/stream-inventory-candidate.json. Apply runs write no report unless
+--output is passed. The API key precedence is --api-key-file, YOUTUBE_API_KEY,
 then .local/youtube-api-key.txt. Literal command-line keys are not accepted.
 
   --api-key-file <path>
-  --output <path>
+  --output <path>               Write the concise inventory delta here
   --request-delay-ms <ms>
   --max-pages <count>          Partial report-only probe
   --apply                      Apply a complete, accepted candidate
@@ -112,7 +118,7 @@ then .local/youtube-api-key.txt. Literal command-line keys are not accepted.
   --accept-latest              Accept the newest proposed numbered livestream
   --accept-addition <videoId>  Accept one proposed addition; repeat as needed
 `);
-        process.exit(0);
+        return process.exit(0);
       default:
         throw new Error(`Unknown argument: ${arg ?? ""}`);
     }

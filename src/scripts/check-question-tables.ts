@@ -17,6 +17,7 @@ interface Options {
   outputDir: string;
   jsonName: string;
   markdownName: string;
+  report: boolean;
   allowLegacyThreeColumn: boolean;
   requireExpandedAnswer: boolean;
 }
@@ -64,20 +65,34 @@ export function main(args: readonly string[] = process.argv.slice(2)): number {
     files: details,
   };
 
-  const markdown = questionTableReportMarkdown(report);
   const jsonPath = resolve(outputPath, options.jsonName);
   const markdownPath = resolve(outputPath, options.markdownName);
-  writeQuestionReportFiles(report, jsonPath, markdownPath, markdown);
+  const writeReports = report.hardErrorCount > 0 || options.report;
+  if (writeReports) {
+    writeQuestionReportFiles(
+      report,
+      jsonPath,
+      markdownPath,
+      questionTableReportMarkdown(report),
+    );
+  }
 
-  console.log("Question table validation complete.");
-  console.log(`Files scanned: ${report.filesScanned}`);
-  console.log(`Ordinary files validated: ${report.ordinaryFilesValidated}`);
-  console.log(`Question rows: ${report.totalQuestionRows}`);
-  console.log(`Hard errors: ${report.hardErrorCount}`);
-  console.log(`Warnings: ${report.warningCount}`);
-  console.log("Reports:");
-  console.log(`  ${jsonPath}`);
-  console.log(`  ${markdownPath}`);
+  const outcome = report.hardErrorCount > 0 ? "Question table validation failed" : "Question tables valid";
+  console.log(
+    `${outcome}: files=${report.filesScanned} ordinary=${report.ordinaryFilesValidated} ` +
+    `rows=${report.totalQuestionRows} hard-errors=${report.hardErrorCount} warnings=${report.warningCount}.`,
+  );
+  if (report.hardErrors.length > 0) {
+    console.error("Hard errors:");
+    for (const error of report.hardErrors) {
+      console.error(`  ${error}`);
+    }
+  }
+  if (writeReports) {
+    console.log("Detailed reports:");
+    console.log(`  ${jsonPath}`);
+    console.log(`  ${markdownPath}`);
+  }
   return hardErrors.length > 0 ? 1 : 0;
 }
 
@@ -89,6 +104,7 @@ export function parseArgs(args: readonly string[]): Options | null {
     outputDir: "reports",
     jsonName: "question-table-validation.json",
     markdownName: "question-table-validation.md",
+    report: false,
     allowLegacyThreeColumn: false,
     requireExpandedAnswer: false,
   };
@@ -101,6 +117,7 @@ export function parseArgs(args: readonly string[]): Options | null {
     else if (argument === "--output-dir") options.outputDir = required(args[++index], argument);
     else if (argument === "--json-name") options.jsonName = required(args[++index], argument);
     else if (argument === "--markdown-name") options.markdownName = required(args[++index], argument);
+    else if (argument === "--report") options.report = true;
     else if (argument === "--allow-legacy-three-column") options.allowLegacyThreeColumn = true;
     else if (argument === "--require-expanded-answer") options.requireExpandedAnswer = true;
     else if (argument === "--help" || argument === "-h") {
@@ -113,6 +130,7 @@ Options:
   --output-dir <path>
   --json-name <name>
   --markdown-name <name>
+  --report                       Write detailed reports even when validation passes
   --allow-legacy-three-column
   --require-expanded-answer
   --help`);

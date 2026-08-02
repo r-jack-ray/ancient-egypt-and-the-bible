@@ -1,10 +1,10 @@
 import assert from "node:assert/strict";
-import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
 
-import { parseArgs } from "../scripts/check-question-tables.js";
+import { main as checkQuestionTables, parseArgs } from "../scripts/check-question-tables.js";
 import {
   analyzeQuestionTableText,
   questionTimeLabelToSeconds,
@@ -84,10 +84,53 @@ test("question-table CLI accepts repeatable kebab-case paths", () => {
     "--path",
     "docs/questions/two.md",
     "--allow-legacy-three-column",
+    "--report",
   ]);
   assert.ok(options);
   assert.deepEqual(options.paths, ["docs/questions/one.md", "docs/questions/two.md"]);
   assert.equal(options.allowLegacyThreeColumn, true);
+  assert.equal(options.report, true);
+});
+
+test("question-table CLI writes diagnostics only on failure or explicit request", () => {
+  const repoRoot = mkdtempSync(join(tmpdir(), "question-report-"));
+  const pagePath = join(repoRoot, "docs/questions/example.md");
+  const jsonPath = join(repoRoot, "reports/question-table-validation.json");
+  const markdownPath = join(repoRoot, "reports/question-table-validation.md");
+  try {
+    mkdirSync(join(repoRoot, "docs/questions"), { recursive: true });
+    mkdirSync(join(repoRoot, "src/channel"), { recursive: true });
+    writeFileSync(join(repoRoot, "package.json"), "{}\n", "utf8");
+    writeFileSync(join(repoRoot, "src/channel/episodes.json"), "{}\n", "utf8");
+    writeFileSync(pagePath, validFourColumnPage, "utf8");
+
+    assert.equal(checkQuestionTables(["--repo-root", repoRoot]), 0);
+    assert.equal(existsSync(jsonPath), false);
+    assert.equal(existsSync(markdownPath), false);
+
+    assert.equal(checkQuestionTables(["--repo-root", repoRoot, "--report"]), 0);
+    assert.equal(existsSync(jsonPath), true);
+    assert.equal(existsSync(markdownPath), true);
+    rmSync(jsonPath, { force: true });
+    rmSync(markdownPath, { force: true });
+
+    writeFileSync(pagePath, validFourColumnPage.replace("?t=62", "?t=63"), "utf8");
+    const errorOutput: string[] = [];
+    const originalConsoleError = console.error;
+    try {
+      console.error = (...values: unknown[]) => {
+        errorOutput.push(values.map(String).join(" "));
+      };
+      assert.equal(checkQuestionTables(["--repo-root", repoRoot]), 1);
+    } finally {
+      console.error = originalConsoleError;
+    }
+    assert.equal(existsSync(jsonPath), true);
+    assert.match(readFileSync(markdownPath, "utf8"), /does not match \?t=63/u);
+    assert.match(errorOutput.join("\n"), /does not match \?t=63/u);
+  } finally {
+    rmSync(repoRoot, { recursive: true, force: true });
+  }
 });
 
 test("question repository root detection uses canonical Node-era markers", () => {

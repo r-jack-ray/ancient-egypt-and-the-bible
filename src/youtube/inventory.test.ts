@@ -12,6 +12,7 @@ import {
   fetchInventoryCandidate,
   latestNumberedAddition,
   type InventoryCandidate,
+  writeInventoryReport,
 } from "./inventory.js";
 
 const baseline: EpisodeRecord = {
@@ -270,6 +271,75 @@ test("latest selection skips non-numbered broadcasts", () => {
     title: "Live Stream #272: Latest",
   }, 3);
   assert.equal(latestNumberedAddition([unrelated, latest])?.videoId, latest.videoId);
+});
+
+test("inventory review reports contain the human delta without internal metadata", async () => {
+  const reportRoot = await mkdtemp(join(tmpdir(), "inventory-report-"));
+  try {
+    const additionMetadata = {
+      videoId: "8bF8Hm5NpR8",
+      fetchedAt: "2026-08-01T16:45:58Z",
+      title: "Live Stream #272: Latest",
+    };
+    const addition = episodeFromVideoMetadata(additionMetadata, 2);
+    const candidate: InventoryCandidate = {
+      schemaVersion: 1,
+      complete: true,
+      source: {
+        handleUrl: "https://www.youtube.com/@ancientegyptandthebible",
+        channelId: "channel-id",
+        uploadsPlaylistId: "uploads-id",
+      },
+      additions: [addition],
+      omittedBaselineVideoIds: [baseline.videoId],
+      titleChanges: [{
+        videoId: baseline.videoId,
+        established: baseline.linkText,
+        latestApiTitle: "Live Stream #271: Renamed",
+      }],
+      excludedOrdinaryUploadIds: ["ORDINARY001"],
+      metadata: [additionMetadata],
+    };
+    const reportPath = join(reportRoot, "stream-inventory-candidate.json");
+
+    await writeInventoryReport(
+      reportPath,
+      candidate,
+      new Date("2026-08-02T12:34:56Z"),
+    );
+
+    const text = await readFile(reportPath, "utf8");
+    const report = JSON.parse(text) as {
+      generatedAt: string;
+      additions: { count: number; videos: { videoId: string; title: string }[] };
+      omissions: { count: number; baselineVideoIds: string[] };
+      titleChanges: { count: number };
+      excludedUploads: { count: number; videoIds: string[] };
+      metadata?: unknown;
+    };
+    assert.equal(report.generatedAt, "2026-08-02T12:34:56.000Z");
+    assert.equal(report.additions.count, 1);
+    assert.deepEqual(report.additions.videos, [{
+      videoId: addition.videoId,
+      url: addition.url,
+      title: addition.linkText,
+      fileStem: addition.fileStem,
+      episodeNumber: addition.episodeNumber,
+    }]);
+    assert.deepEqual(report.omissions, {
+      count: 1,
+      baselineVideoIds: [baseline.videoId],
+    });
+    assert.equal(report.titleChanges.count, 1);
+    assert.deepEqual(report.excludedUploads, {
+      count: 1,
+      videoIds: ["ORDINARY001"],
+    });
+    assert.equal(report.metadata, undefined);
+    assert.doesNotMatch(text, /fetchedAt/u);
+  } finally {
+    await rm(reportRoot, { recursive: true, force: true });
+  }
 });
 
 test("inventory apply rejects empty and unknown selections", () => {
