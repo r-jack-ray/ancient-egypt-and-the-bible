@@ -16,7 +16,7 @@ async function main(): Promise<void> {
     else if (arg === "--refresh-all") refreshAll = true;
     else if (arg === "--help" || arg === "-h") {
       console.log(
-        "Usage: npm run fetch:video-metadata -- [--api-key-file path] [--limit n] [--request-delay-ms ms] [--refresh-all]",
+        "Usage: npm run refresh:livestream-metadata -- [--api-key-file path] [--limit n] [--request-delay-ms ms] [--refresh-all]",
       );
       return;
     } else throw new Error(`Unknown argument: ${arg ?? ""}`);

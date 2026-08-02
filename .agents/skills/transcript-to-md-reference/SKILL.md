@@ -45,7 +45,7 @@ If an expected TXT file is missing, validate the store and use the direct TypeSc
 
 ```powershell
 npm run check:transcript-store
-npm run alternate:fetch:transcript -- --video-id VIDEO_ID
+npm run fetch:transcript -- --video-id VIDEO_ID
 ```
 
 If acquisition reports unavailable captions or no transcript segments, do not invent a page. Temporary structured diagnostics belong under ignored `reports/`, not in the tracked transcript store.

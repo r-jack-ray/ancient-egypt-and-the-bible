@@ -72,7 +72,7 @@ function parseArgs(args: string[]): {
     else if (arg === "--force") force = true;
     else if (arg === "--expected-current-hash") expectedCurrentHash = required(args[++index], arg);
     else if (arg === "--help" || arg === "-h") {
-      console.log(`Usage: npm run alternate:fetch:transcript -- --video-id ID [options]
+      console.log(`Usage: npm run fetch:transcript -- --video-id ID [options]
 
   --language <code>
   --request-delay-ms <ms>

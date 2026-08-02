@@ -26,8 +26,8 @@ rg "search term" src/transcripts docs/questions
 Get-Content docs/questions/208-super-chat-questions.md
 npm run check:transcript-store
 npm run check:stream-index
-npm run fetch:video-links
-npm run alternate:fetch:transcripts:safe -- --dry-run
+npm run fetch:livestreams
+npm run fetch:transcripts -- --dry-run
 npm run build:site-content
 npm run check:question-tables
 npm test
@@ -77,7 +77,7 @@ Timestamp links should point directly to YouTube with `?t=`. For links intended 
 
 ## Testing Guidelines
 
-Run `npm test` for the legacy search suite and compiled TypeScript tests, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `npm run check:transcript-store` and `npm run check:stream-index` for acquisition changes. Use `npm run check:site:static` for source-to-site compatibility validation; it generates the ignored question mirrors before checking them. After a production-baseURL Hugo render, use `npm run check:site:rendered -- --public-dir site/public --expected-base-url URL` to check complete rendered metadata, indexability, JSON-LD parsing, sitemap coverage, and internal links. For curated Q&A pages, compare short and expanded answers against the manifest-owned TXT transcript.
+Run `npm test` for the JavaScript search suite and compiled TypeScript tests, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `npm run check:transcript-store` and `npm run check:stream-index` for acquisition changes. Use `npm run check:site:static` for source-to-site compatibility validation; it generates the ignored question mirrors before checking them. After a production-baseURL Hugo render, use `npm run check:site:rendered -- --public-dir site/public --expected-base-url URL` to check complete rendered metadata, indexability, JSON-LD parsing, sitemap coverage, and internal links. For curated Q&A pages, compare short and expanded answers against the manifest-owned TXT transcript.
 
 ## Commit & Pull Request Guidelines
 
@@ -119,7 +119,7 @@ Add `with full transcript coverage` when the goal includes finding missing quest
 If a registered expected TXT file is missing, report the store inconsistency and use the direct TypeScript acquisition path:
 
 ```powershell
-npm run alternate:fetch:transcript -- --video-id VIDEO_ID
+npm run fetch:transcript -- --video-id VIDEO_ID
 ```
 
 If captions are unavailable or the fetcher reports no transcript segments, do not create a fabricated curated page.

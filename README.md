@@ -351,7 +351,7 @@ On a clean clone, generate the Hugo question mirrors, data, and search artifacts
 npm run build:site-content
 ```
 
-The site validation commands, `npm run launch:hugo`, and GitHub Actions run this generation step automatically. A clean checkout therefore needs no committed episode mirrors under `site/content/questions/`.
+The site validation commands, `npm run serve:site`, and GitHub Actions run this generation step automatically. A clean checkout therefore needs no committed episode mirrors under `site/content/questions/`.
 
 On Windows, install Hugo Extended globally with Winget:
 
@@ -380,7 +380,7 @@ npm run check:site:static
 To generate the compatibility content and preview the Hugo site locally with the same subpath used by GitHub Pages, run:
 
 ```powershell
-npm run launch:hugo
+npm run serve:site
 ```
 
 This command regenerates the site content before starting Hugo. Then open <http://127.0.0.1:1314/ancient-egypt-and-the-bible/>.
@@ -397,10 +397,10 @@ npm run check:stream-index
 npm run check:transcript-store
 ```
 
-The ignored API key fallback is `reports/youtube-api-key.txt`. Inventory refresh is review-only by default:
+The ignored API key fallback is `.local/youtube-api-key.txt`. Inventory refresh is review-only by default:
 
 ```powershell
-npm run fetch:video-links
+npm run fetch:livestreams
 ```
 
 The command writes `reports/stream-inventory-candidate.json`. A complete candidate changes canonical inventory only with `--apply`, `--accept-source` on the first accepted source, and an explicit selection. Use `--accept-addition VIDEO_ID` for reviewed additions or `--accept-latest` for the newest numbered livestream; unselected additions remain report-only.
@@ -408,17 +408,16 @@ The command writes `reports/stream-inventory-candidate.json`. A complete candida
 Fetch one registered transcript directly to its manifest-owned TXT file:
 
 ```powershell
-npm run alternate:fetch:transcript -- --video-id VIDEO_ID
+npm run fetch:transcript -- --video-id VIDEO_ID
 ```
 
-Run a conservatively paced batch, or fetch only the first ready missing transcript:
+Run a conservatively paced batch for all ready missing transcripts:
 
 ```powershell
-npm run alternate:fetch:transcripts:safe
-npm run alternate:fetch:transcripts:safe:latest
+npm run fetch:transcripts
 ```
 
-Safe mode spaces every outbound transcript request by 60 seconds, stops on blocking/rate-limit evidence, checkpoints typed failure state, skips valid stored files before any request, and writes no raw transcript JSON. Use `--dry-run` for a network-free and canonical-write-free preview. Forced replacement is available only through the single-video command and requires the current manifest hash.
+The batch spaces every outbound transcript request by 60 seconds, stops on blocking/rate-limit evidence, checkpoints typed failure state, skips valid stored files before any request, and writes no raw transcript JSON. Use `--dry-run` for a network-free and canonical-write-free preview. Use `--limit 1` for a canary or `--retry-failed` to reconsider recorded failures. Forced replacement is available only through the single-video command and requires the current manifest hash.
 
 ## Weekly Livestream Workflow
 
@@ -429,13 +428,13 @@ The TypeScript/TXT pipeline replaces the legacy sequence of manually editing `sr
 For the normal weekly numbered livestream, fetch a complete inventory, accept only the newest numbered addition, store its metadata, and regenerate the compatibility index:
 
 ```powershell
-npm run fetch:video-links:latest
+npm run fetch:livestreams:latest
 ```
 
 The command still writes `reports/stream-inventory-candidate.json`; unrelated or special live broadcasts remain review-only. To review without changing canonical files, run the official YouTube Data API inventory command directly:
 
 ```powershell
-npm run fetch:video-links
+npm run fetch:livestreams
 ```
 
 This writes the ignored review report `reports/stream-inventory-candidate.json` without changing canonical files. Review its additions, omissions, and title changes before accepting anything.
@@ -443,7 +442,7 @@ This writes the ignored review report `reports/stream-inventory-candidate.json` 
 Apply one or more explicitly reviewed additions from a complete candidate:
 
 ```powershell
-npm run fetch:video-links -- --apply --accept-source --accept-addition VIDEO_ID_1 --accept-addition VIDEO_ID_2
+npm run fetch:livestreams -- --apply --accept-source --accept-addition VIDEO_ID_1 --accept-addition VIDEO_ID_2
 ```
 
 The first accepted application requires `--accept-source` so the resolved channel and uploads playlist are pinned. Partial inventory probes can never be applied, unknown accepted IDs are rejected, and unselected proposed additions remain in the review report.
@@ -452,16 +451,16 @@ The accepted inventory atomically updates `src/channel/episodes.json`, `src/chan
 
 ### 2. Pull the registered transcript directly to TXT
 
-To fetch only the first ready missing transcript without entering a video ID, use:
+Fetch every registered, ready livestream that does not yet have a valid TXT transcript:
 
 ```powershell
-npm run alternate:fetch:transcripts:safe:latest
+npm run fetch:transcripts
 ```
 
-The batch reads canonical episode order, skips valid stored and not-ready transcripts, and writes the selected transcript directly to TXT. For an explicitly selected accepted video, the single-video form remains available:
+The separate caption-scraping batch reads canonical episode order, skips valid stored, known-unavailable, and not-ready transcripts, and writes each successful transcript directly to TXT. For an explicitly selected accepted video, the single-video repair form remains available:
 
 ```powershell
-npm run alternate:fetch:transcript -- --video-id VIDEO_ID --request-delay-ms 60000
+npm run fetch:transcript -- --video-id VIDEO_ID --request-delay-ms 60000
 ```
 
 The command writes `src/transcripts/txt/<fileStem>.txt` and updates `src/transcripts/manifest.json`. It does not write a JSON transcript and does not require a conversion step.
@@ -469,11 +468,11 @@ The command writes `src/transcripts/txt/<fileStem>.txt` and updates `src/transcr
 For batch work, preview the selection without network access or canonical writes, then fetch ready missing transcripts:
 
 ```powershell
-npm run alternate:fetch:transcripts:safe -- --dry-run
-npm run alternate:fetch:transcripts:safe
+npm run fetch:transcripts -- --dry-run
+npm run fetch:transcripts
 ```
 
-Use `--limit 1` for a single batch canary or `--retry-failed` to select recorded failures. Valid stored transcripts are never overwritten by a batch. `npm run fetch:video-metadata` refreshes missing and scheduled, live, processing, or otherwise not-ready records so schedule and completion changes are retained; add `-- --refresh-all` for a full metadata refresh.
+Use `--limit 1` for a single batch canary or `--retry-failed` to reconsider recorded failures. Valid stored transcripts are never overwritten by a batch. `npm run refresh:livestream-metadata` refreshes missing and scheduled, live, processing, or otherwise not-ready records so schedule and completion changes are retained; add `-- --refresh-all` for a full metadata refresh.
 
 ### 3. Validate transcript state
 

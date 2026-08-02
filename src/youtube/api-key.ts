@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 
 import { errorCode } from "../pipeline/files.js";
 
-export const defaultApiKeyFile = "reports/youtube-api-key.txt";
+export const defaultApiKeyFile = ".local/youtube-api-key.txt";
 
 export interface ApiKeyOptions {
   apiKeyFile?: string;

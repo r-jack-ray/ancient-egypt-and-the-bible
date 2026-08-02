@@ -32,7 +32,7 @@ If an expected TXT is missing, validate the store and use direct acquisition onl
 
 ```powershell
 npm run check:transcript-store
-npm run alternate:fetch:transcript -- --video-id VIDEO_ID
+npm run fetch:transcript -- --video-id VIDEO_ID
 ```
 
 If the manifest is invalid, the TXT is missing, or acquisition reports no caption segments, stop for that page and report the blocker. Do not guess from the existing Markdown. Legacy JSON is optional historical evidence while retained, not a prerequisite or active source.

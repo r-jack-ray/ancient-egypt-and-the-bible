@@ -40,7 +40,7 @@ function parseArgs(args: string[]): {
     else if (arg === "--force") {
       throw new Error("Batch-global force is disabled. Use the scoped single-video command.");
     } else if (arg === "--help" || arg === "-h") {
-      console.log(`Usage: npm run alternate:fetch:transcripts -- [options]
+      console.log(`Usage: npm run fetch:transcripts -- [options]
 
   --limit <count>
   --request-delay-ms <ms>
@@ -49,7 +49,7 @@ function parseArgs(args: string[]): {
   --language <code>
 
 Valid stored transcripts are always skipped. Batch-global force is disabled.
-Safe mode spaces every outbound transcript request by 60 seconds.
+The npm command spaces every outbound transcript request by 60 seconds.
 `);
       process.exit(0);
     } else throw new Error(`Unknown argument: ${arg ?? ""}`);

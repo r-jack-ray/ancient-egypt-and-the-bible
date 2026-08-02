@@ -97,11 +97,11 @@ function parseArgs(args: string[]): {
         break;
       case "--help":
       case "-h":
-        console.log(`Usage: npm run fetch:video-links -- [options]
+        console.log(`Usage: npm run fetch:livestreams -- [options]
 
 Default behavior writes a review-only candidate to reports and does not change
 canonical inventory. The API key precedence is --api-key-file, YOUTUBE_API_KEY,
-then reports/youtube-api-key.txt. Literal command-line keys are not accepted.
+then .local/youtube-api-key.txt. Literal command-line keys are not accepted.
 
   --api-key-file <path>
   --output <path>
