@@ -17,9 +17,9 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run check:offline
+      - run: npm run check:ci
 
-  windows-transcript-tooling:
+  windows-offline:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v6
@@ -28,6 +28,4 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run check:types
-      - run: npm run test:typescript
-      - run: npm run check:transcript-store
+      - run: npm run check:ci

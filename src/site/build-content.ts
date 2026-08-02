@@ -4,6 +4,7 @@ import { basename, join, relative, resolve, sep } from "node:path";
 
 import { episodesPath, readEpisodesStore } from "../archive.js";
 import { atomicWriteJson, atomicWriteText } from "../pipeline/files.js";
+import { parseQuestionTableText } from "../questions/table-analysis.js";
 
 export interface BuildHugoSiteContentOptions {
   repoRoot?: string;
@@ -195,7 +196,7 @@ export async function buildHugoSiteContent(
       }
     }
 
-    const rows = questionRowsFromMarkdown(lines, sourcePath, pageMetadata);
+    const rows = questionRowsFromMarkdown(sourceText, sourcePath, pageMetadata);
     allQuestionRows.push(...rows);
 
     const descriptionOverride = pageDescriptionOverrideFromMarkdown(lines, sourceRelativePath);
@@ -273,110 +274,47 @@ export async function buildHugoSiteContent(
 }
 
 function questionRowsFromMarkdown(
-  lines: readonly string[],
+  text: string,
   path: string,
   pageMetadata: PageMetadata,
 ): QuestionRow[] {
-  const tableStart = lines.findIndex((line) =>
-    /^\|\s*Time\s*\|\s*Question\s*\|\s*Short answer \/ answer direction\s*\|\s*Expanded answer\s*\|\s*$/u.test(line)
-  );
-  if (tableStart < 0) {
+  const table = parseQuestionTableText(text, path, true);
+  const firstError = table.hardErrors[0];
+  if (firstError !== undefined) {
+    throw new Error(firstError);
+  }
+  if (table.headerColumns !== 4) {
     throw new Error(`Missing four-column Q&A table header in ${path}.`);
   }
-  const separatorPattern = /^\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*:?-{3,}:?\s*\|\s*$/u;
-  const separatorLine = lines[tableStart + 1];
-  if (separatorLine === undefined || !separatorPattern.test(separatorLine)) {
-    throw new Error(`${path}:${tableStart + 2} is not a valid 4-column table separator.`);
-  }
 
-  const rows: QuestionRow[] = [];
-  for (let index = tableStart + 2; index < lines.length; index += 1) {
-    const line = lines[index];
-    if (line === undefined || line.trim().length === 0) {
-      break;
+  return table.rows.map((row, index) => {
+    const timestamp = row.timestamp;
+    const expandedAnswer = row.expandedAnswer;
+    if (timestamp === null || expandedAnswer === null) {
+      throw new Error(`${path}:${row.lineNumber} did not produce a validated four-column question row.`);
     }
-    if (!line.trimStart().startsWith("|")) {
-      throw new Error(`${path}:${index + 1} interrupts the Q&A table.`);
-    }
-    const cells = splitMarkdownTableRow(line, path, index + 1);
-    if (cells.length !== 4) {
-      throw new Error(`${path}:${index + 1} has ${cells.length} cells; expected 4.`);
-    }
-    const [timeCell = "", question = "", shortAnswer = "", expandedAnswer = ""] = cells;
-    if (!question.trim() || !shortAnswer.trim()) {
-      throw new Error(`${path}:${index + 1} has an empty question or answer cell.`);
-    }
-    if (!expandedAnswer.trim()) {
-      throw new Error(`${path}:${index + 1} has an empty expanded answer cell.`);
-    }
-    if (/_Expansion pending\._/u.test(expandedAnswer)) {
-      throw new Error(`${path}:${index + 1} has a pending expanded answer placeholder.`);
-    }
-
-    const anchor = /<a\s+href="(?<href>https:\/\/(?:youtu\.be\/[^"?]+|www\.youtube\.com\/watch\?[^"]+)[^"]*[?&]t=(?<seconds>\d+)[^"]*)"\s+target="_blank"\s+rel="noopener noreferrer">(?<label>[^<]+)<\/a>/u.exec(timeCell);
-    const href = anchor?.groups?.href;
-    const seconds = anchor?.groups?.seconds;
-    const label = anchor?.groups?.label;
-    if (href === undefined || seconds === undefined || label === undefined) {
-      throw new Error(`${path}:${index + 1} has a malformed timestamp anchor.`);
-    }
-    const startSeconds = Number(seconds);
-    const labelSeconds = timeLabelToSeconds(label);
-    if (startSeconds !== labelSeconds) {
-      throw new Error(`${path}:${index + 1} timestamp label '${label}' does not match ?t=${startSeconds}.`);
-    }
-    const rowVideoId = videoIdFromUrl(href);
+    const rowVideoId = videoIdFromUrl(timestamp.href);
     if (pageMetadata.video_id !== null && rowVideoId !== pageMetadata.video_id) {
       throw new Error(
-        `${path}:${index + 1} links to video '${rowVideoId}', expected '${pageMetadata.video_id}'.`,
+        `${path}:${row.lineNumber} links to video '${rowVideoId}', expected '${pageMetadata.video_id}'.`,
       );
     }
-    rows.push({
+    return {
       episode_number: pageMetadata.number,
       episode_title: pageMetadata.title,
       question_page: pageMetadata.question_page,
       content_path: pageMetadata.content_path,
-      time_label: label,
-      start_seconds: startSeconds,
-      video_url: href,
-      question,
-      short_answer: shortAnswer,
+      time_label: timestamp.label,
+      start_seconds: timestamp.startSeconds,
+      video_url: timestamp.href,
+      question: row.question,
+      short_answer: row.shortAnswer,
       expanded_answer: expandedAnswer,
-      row_index: rows.length + 1,
+      row_index: index + 1,
       is_numbered: pageMetadata.is_numbered,
       is_special: pageMetadata.is_special,
-    });
-  }
-  if (rows.length === 0) {
-    throw new Error(`No question rows found in ${path}.`);
-  }
-  return rows;
-}
-
-function splitMarkdownTableRow(line: string, path: string, lineNumber: number): string[] {
-  const trimmed = line.trim();
-  if (!trimmed.startsWith("|") || !trimmed.endsWith("|")) {
-    throw new Error(`${path}:${lineNumber} is not a complete Markdown table row.`);
-  }
-  const cells: string[] = [];
-  let current = "";
-  let escaped = false;
-  for (const character of trimmed.slice(1, -1)) {
-    if (escaped) {
-      current += character;
-      escaped = false;
-    } else if (character === "\\") {
-      current += character;
-      escaped = true;
-    } else if (character === "|") {
-      cells.push(current.trim());
-      current = "";
-    } else {
-      current += character;
-    }
-  }
-  cells.push(current.trim());
-  return cells;
+    };
+  });
 }
 
 function pageTitleFromMarkdown(lines: readonly string[], fallback: string): string {
@@ -550,19 +488,6 @@ function videoIdFromUrl(url: string): string {
   const query = /[?&]v=([^?&]+)/u.exec(url)?.[1];
   if (query !== undefined) return query;
   throw new Error(`Could not parse YouTube video id from URL '${url}'.`);
-}
-
-function timeLabelToSeconds(label: string): number {
-  const parts = label.split(":");
-  if (parts.length < 2 || parts.length > 3) {
-    throw new Error(`Timestamp label '${label}' is not M:SS or H:MM:SS.`);
-  }
-  if (parts.some((part) => !/^\d+$/u.test(part))) {
-    throw new Error(`Timestamp label '${label}' contains a non-numeric part.`);
-  }
-  const numbers = parts.map(Number);
-  if (numbers.length === 2) return (numbers[0] ?? 0) * 60 + (numbers[1] ?? 0);
-  return (numbers[0] ?? 0) * 3600 + (numbers[1] ?? 0) * 60 + (numbers[2] ?? 0);
 }
 
 async function removeGeneratedQuestionPages(directory: string): Promise<void> {

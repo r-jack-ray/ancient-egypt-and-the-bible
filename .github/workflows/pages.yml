@@ -38,7 +38,7 @@ jobs:
         run: npm ci
 
       - name: Validate TypeScript tooling and repository state
-        run: npm run check:offline
+        run: npm run check:ci
 
       - name: Install Hugo Extended
         shell: bash

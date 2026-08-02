@@ -20,6 +20,25 @@ export interface QuestionTableAnalysis {
   warnings: string[];
 }
 
+export interface QuestionTableTimestamp {
+  href: string;
+  label: string;
+  startSeconds: number;
+}
+
+export interface ParsedQuestionTableRow {
+  lineNumber: number;
+  timeCell: string;
+  question: string;
+  shortAnswer: string;
+  expandedAnswer: string | null;
+  timestamp: QuestionTableTimestamp | null;
+}
+
+export interface ParsedQuestionTable extends QuestionTableAnalysis {
+  rows: ParsedQuestionTableRow[];
+}
+
 export interface QuestionTableReport {
   generatedAt: string;
   requireExpandedAnswer: boolean;
@@ -178,6 +197,26 @@ export function analyzeQuestionTableText(
   relativePath: string,
   requireExpandedAnswer = false,
 ): QuestionTableAnalysis {
+  const parsed = parseQuestionTableText(text, relativePath, requireExpandedAnswer);
+  return {
+    file: parsed.file,
+    classification: parsed.classification,
+    headerLine: parsed.headerLine,
+    headerColumns: parsed.headerColumns,
+    rowCount: parsed.rowCount,
+    pendingExpandedAnswers: parsed.pendingExpandedAnswers,
+    completedExpandedAnswers: parsed.completedExpandedAnswers,
+    emptyExpandedAnswers: parsed.emptyExpandedAnswers,
+    hardErrors: parsed.hardErrors,
+    warnings: parsed.warnings,
+  };
+}
+
+export function parseQuestionTableText(
+  text: string,
+  relativePath: string,
+  requireExpandedAnswer = false,
+): ParsedQuestionTable {
   const lines = fileLines(text);
   const hardErrors: string[] = [];
   const warnings: string[] = [];
@@ -203,6 +242,9 @@ export function analyzeQuestionTableText(
   }
 
   if (headerLineIndex < 0) {
+    if (tableLikeLineCount > 0 && hardErrors.length === 0) {
+      hardErrors.push(`${relativePath} is missing an ordinary Q&A table header.`);
+    }
     return {
       file: relativePath,
       classification: hardErrors.length > 0 || tableLikeLineCount > 0 ? "malformed" : "specialFormat",
@@ -214,6 +256,7 @@ export function analyzeQuestionTableText(
       emptyExpandedAnswers: 0,
       hardErrors,
       warnings,
+      rows: [],
     };
   }
 
@@ -252,7 +295,7 @@ export function analyzeQuestionTableText(
   let pendingExpandedAnswers = 0;
   let completedExpandedAnswers = 0;
   let emptyExpandedAnswers = 0;
-  let startedRows = false;
+  const rows: ParsedQuestionTableRow[] = [];
 
   for (let index = headerLineIndex + 2; index < lines.length; index += 1) {
     const line = requiredLine(lines[index]);
@@ -260,13 +303,10 @@ export function analyzeQuestionTableText(
       break;
     }
     if (!line.trimStart().startsWith("|")) {
-      if (!startedRows) {
-        hardErrors.push(`${relativePath}:${index + 1} appears before any Q&A data rows.`);
-      }
+      hardErrors.push(`${relativePath}:${index + 1} interrupts the Q&A table.`);
       break;
     }
 
-    startedRows = true;
     rowCount += 1;
     let cells: string[];
     try {
@@ -283,6 +323,7 @@ export function analyzeQuestionTableText(
     const timeCell = requiredCell(cells, 0);
     const questionCell = requiredCell(cells, 1);
     const shortAnswerCell = requiredCell(cells, 2);
+    const expandedAnswerCell = expectedColumns === 4 ? requiredCell(cells, 3) : null;
     if (!questionCell.trim()) {
       hardErrors.push(`${relativePath}:${index + 1} has an empty question cell.`);
     }
@@ -290,13 +331,16 @@ export function analyzeQuestionTableText(
       hardErrors.push(`${relativePath}:${index + 1} has an empty short-answer cell.`);
     }
 
-    const timestamp = /<a\s+href="(?<href>https:\/\/(?:youtu\.be\/[^"?]+|www\.youtube\.com\/watch\?[^"\n]+)[^"\n]*[?&]t=(?<seconds>\d+)[^"\n]*)"\s+target="_blank"\s+rel="noopener noreferrer">(?<label>[^<]+)<\/a>/iu.exec(timeCell);
-    if (timestamp?.groups === undefined) {
+    const timestampMatch = /<a\s+href="(?<href>https:\/\/(?:youtu\.be\/[^"?]+|www\.youtube\.com\/watch\?[^"\n]+)[^"\n]*[?&]t=(?<seconds>\d+)[^"\n]*)"\s+target="_blank"\s+rel="noopener noreferrer">(?<label>[^<]+)<\/a>/iu.exec(timeCell);
+    let timestamp: QuestionTableTimestamp | null = null;
+    if (timestampMatch?.groups === undefined) {
       hardErrors.push(`${relativePath}:${index + 1} has a malformed timestamp anchor.`);
     } else {
-      const label = requiredGroup(timestamp.groups, "label");
-      const seconds = Number(requiredGroup(timestamp.groups, "seconds"));
+      const href = requiredGroup(timestampMatch.groups, "href");
+      const label = requiredGroup(timestampMatch.groups, "label");
+      const seconds = Number(requiredGroup(timestampMatch.groups, "seconds"));
       try {
+        timestamp = { href, label, startSeconds: seconds };
         if (questionTimeLabelToSeconds(label) !== seconds) {
           hardErrors.push(
             `${relativePath}:${index + 1} timestamp label '${label}' does not match ?t=${seconds}.`,
@@ -307,8 +351,7 @@ export function analyzeQuestionTableText(
       }
     }
 
-    if (expectedColumns === 4) {
-      const expandedAnswerCell = requiredCell(cells, 3);
+    if (expandedAnswerCell !== null) {
       if (!expandedAnswerCell.trim()) {
         emptyExpandedAnswers += 1;
         hardErrors.push(`${relativePath}:${index + 1} has an empty expanded-answer cell.`);
@@ -326,6 +369,15 @@ export function analyzeQuestionTableText(
         }
       }
     }
+
+    rows.push({
+      lineNumber: index + 1,
+      timeCell,
+      question: questionCell,
+      shortAnswer: shortAnswerCell,
+      expandedAnswer: expandedAnswerCell,
+      timestamp,
+    });
   }
 
   if (rowCount === 0) {
@@ -346,6 +398,7 @@ export function analyzeQuestionTableText(
     emptyExpandedAnswers,
     hardErrors,
     warnings,
+    rows,
   };
 }
 

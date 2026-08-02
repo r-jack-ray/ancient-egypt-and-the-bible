@@ -29,6 +29,9 @@ npm run fetch:transcripts -- --dry-run
 npm run build:site-content
 npm run check:question-tables
 npm test
+npm run check:quick
+npm run check
+npm run check:ci
 npm run check:js
 npm run check:site:static
 git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible status --short
@@ -76,7 +79,7 @@ Timestamp links should point directly to YouTube with `?t=`. For links intended 
 
 ## Testing Guidelines
 
-Run `npm test` for the JavaScript search suite and compiled TypeScript tests, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `npm run check:transcript-store` for acquisition changes; it validates canonical archive state and detects both inventory and transcript transactions. Use `npm run check:site:static` for source-to-site compatibility validation; it generates the ignored question stubs before checking them. After a production-baseURL Hugo render, use `npm run check:site:rendered -- --public-dir site/public --expected-base-url URL` to check complete rendered metadata, indexability, JSON-LD parsing, sitemap coverage, and internal links. For curated Q&A pages, compare short and expanded answers against the manifest-owned TXT transcript.
+Use `npm run check` for the canonical network-free repository validation pipeline. Use `npm run check:quick` for TypeScript (including unused-code enforcement) and JavaScript syntax only, `npm run check:functional` when repository policy checks are intentionally inapplicable, and `npm run check:ci` when generated output and the tracked worktree must also remain clean. Run `npm test` for the JavaScript search suite and compiled TypeScript tests, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `npm run check:transcript-store` for acquisition changes; it validates canonical archive state and detects both inventory and transcript transactions. Use `npm run check:site:static` for source-to-site compatibility validation; it generates the ignored question stubs before checking them. After a production-baseURL Hugo render, use `npm run check:site:rendered -- --public-dir site/public --expected-base-url URL` to check complete rendered metadata, indexability, JSON-LD parsing, sitemap coverage, and internal links. For curated Q&A pages, compare short and expanded answers against the manifest-owned TXT transcript.
 
 ## Commit & Pull Request Guidelines
 

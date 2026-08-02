@@ -11,7 +11,6 @@ import type {
 } from "youtube-transcript-plus";
 
 import {
-  episodesPath,
   formatTimestamp,
   manifestPath,
   readEpisodesStore,
@@ -26,7 +25,6 @@ import {
   assertPathInside,
   atomicWriteJson,
   atomicWriteText,
-  errorCode,
   fileExists,
 } from "../pipeline/files.js";
 import { acquireWriterLease } from "../pipeline/lease.js";

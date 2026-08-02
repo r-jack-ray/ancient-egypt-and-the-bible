@@ -344,6 +344,14 @@ Node.js 22 is required for the repository tooling. Run `npm ci` before Hugo comp
 npm ci
 ```
 
+The canonical network-free repository validation is:
+
+```powershell
+npm run check
+```
+
+`check` delegates to `check:offline`, which runs the complete functional pipeline plus repository policy checks without requiring network access or Hugo. Use `npm run check:quick` for TypeScript (including unused-code enforcement) and JavaScript syntax only, or `npm run check:functional` when a disposable proof copy intentionally cannot satisfy repository policy checks. GitHub Actions runs `npm run check:ci`, which adds a clean generated-output/worktree requirement after the offline pipeline.
+
 On a clean clone, generate the Hugo question mirrors, data, and search artifacts explicitly with:
 
 ```powershell

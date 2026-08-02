@@ -7,6 +7,7 @@ import { test } from "node:test";
 import { main as checkQuestionTables, parseArgs } from "../scripts/check-question-tables.js";
 import {
   analyzeQuestionTableText,
+  parseQuestionTableText,
   questionTimeLabelToSeconds,
   resolveQuestionRepositoryRoot,
   splitMarkdownTableRowStrict,
@@ -30,12 +31,27 @@ test("strict table rows preserve escaped pipes inside cells", () => {
 });
 
 test("four-column question tables validate timestamps and expanded answers", () => {
-  const analysis = analyzeQuestionTableText(validFourColumnPage, "docs/questions/example.md", true);
+  const path = "docs/questions/example.md";
+  const analysis = analyzeQuestionTableText(validFourColumnPage, path, true);
   assert.equal(analysis.classification, "ordinaryFourColumn");
   assert.equal(analysis.headerLine, 3);
   assert.equal(analysis.rowCount, 1);
   assert.equal(analysis.completedExpandedAnswers, 1);
   assert.deepEqual(analysis.hardErrors, []);
+
+  const parsed = parseQuestionTableText(validFourColumnPage, path, true);
+  assert.deepEqual(parsed.rows, [{
+    lineNumber: 5,
+    timeCell: "<a href=\"https://youtu.be/abcdefghijk?t=62\" target=\"_blank\" rel=\"noopener noreferrer\">1:02</a>",
+    question: "What happened?",
+    shortAnswer: "A short answer.",
+    expandedAnswer: "A longer transcript-grounded answer.",
+    timestamp: {
+      href: "https://youtu.be/abcdefghijk?t=62",
+      label: "1:02",
+      startSeconds: 62,
+    },
+  }]);
 });
 
 test("legacy and pending expanded-answer policies match the old validator", () => {
