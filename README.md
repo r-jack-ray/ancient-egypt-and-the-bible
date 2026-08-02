@@ -396,7 +396,7 @@ For GitHub Pages, GitHub Actions, and deployment environment handling, see [GitH
 
 ## Transcript Acquisition
 
-Install the pinned Node 22 dependencies, then validate the bootstrapped store:
+Install the pinned Node 22 dependencies, then validate the tracked canonical store:
 
 ```powershell
 npm ci
@@ -563,6 +563,20 @@ npm run check:question-tables
 ```
 
 A clean run prints one concise summary and creates no report. Failures print their errors and write detailed JSON and Markdown diagnostics under `reports/`; add `-- --report` to request those files for a passing run.
+
+### Recover the canonical transcript store
+
+`src/channel/episodes.json`, `src/channel/video-metadata.json`, `src/transcripts/manifest.json`, `src/transcripts/fetch-status.json`, and `src/transcripts/txt/` are tracked canonical state. A fresh clone already contains a complete store; there is no bootstrap or manifest-regeneration step.
+
+For accidental working-tree loss or corruption, first review `git status` and `git diff`, then restore the affected canonical paths from one reviewed, known-good Git commit. Restore every file owned by the same inventory or transcript transaction from the same commit so their identities, hashes, provenance, and status remain coherent. For broader repository loss, use a fresh clone. Then validate the restored state:
+
+```powershell
+npm ci
+npm run check:transcript-store
+npm run check
+```
+
+Use `npm run check:transcript-store -- --repair-transaction` only for an unfinished transaction journal. Do not synthesize the manifest, metadata, or fetch status from TXT files alone; that would discard canonical provenance and recovery state. After restoring the last committed store, rerun the guarded inventory or transcript acquisition workflow only for reviewed work that was never committed.
 
 ### Report ownership and cleanup
 

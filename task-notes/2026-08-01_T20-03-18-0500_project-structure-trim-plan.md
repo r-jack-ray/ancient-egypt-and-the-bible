@@ -197,6 +197,8 @@ Status: implemented and reviewed on 2026-08-02. `parseQuestionTableText` now pro
 
 ### Phase 7: Retire completed processing-migration residue
 
+Status: implemented and independently reviewed on 2026-08-02. The tracked canonical store, fresh-clone CI/Pages paths, and active recovery tooling have no bootstrap dependency. README now documents coherent Git/fresh-clone restoration and keeps unfinished-transaction repair distinct from file recovery. The obsolete bootstrap entrypoint and its two archive helpers are retired; the historical manifest provenance value and migration task notes remain intact. No public command or canonical input changed, so AGENTS, skills, and command help required no Phase 7 edit.
+
 - Update README, AGENTS, skills, and command help only where processing commands or canonical inputs change; broad documentation pruning is outside this pass.
 - The public one-time bootstrap npm entry is already removed. Retire its underlying code only after documenting the supported recovery path and proving no fresh-clone or disaster-recovery workflow depends on it.
 
@@ -224,7 +226,7 @@ If handled later, keep `site/data/search-aliases.json` tracked as authored sourc
 2. Made `fetch:livestreams` the sole public links-and-metadata command; removed the automatic `latest` apply alias without removing its explicit flags from the base CLI.
 3. Made safely paced `fetch:transcripts` the ordinary all-eligible-missing transcript command and removed the migration-era transcript alias matrix.
 4. Renamed the JavaScript search test and local Hugo server commands, and removed duplicate TypeScript compilation from the aggregate functional check.
-5. Removed the completed bootstrap from the public npm surface while retaining the underlying recovery code for later review.
+5. Removed the completed bootstrap from the public npm surface while retaining the underlying code for the later recovery-path review.
 6. Moved the YouTube API key fallback to ignored `.local/youtube-api-key.txt` and updated its resolver and references.
 7. Updated CLI help, README, AGENTS, and transcript-skill references for the supported command names and removed the obsolete single-video acquisition fallback.
 8. Completed Phase 1 canonical-to-site cleanup, including removal of `src/live-stream-list.md`, the standalone stream-index command, redundant question-row and episode fields, full-body Hugo mirrors, and the data-backed question-template fallback.
@@ -233,11 +235,12 @@ If handled later, keep `site/data/search-aliases.json` tracked as authored sourc
 11. Completed Phase 4 with concise review-only inventory deltas, report-free accepted apply runs by default, failure-focused question-table diagnostics with CI-visible errors, retirement of the unconsumed question-revision report implementation, the renamed transcript status command, and documented report ownership and cleanup.
 12. Completed Phase 5 with one canonical offline pipeline, one shared Linux/Windows/Pages CI gate, accurate default/quick/functional/CI check names, compiler-enforced unused-code checks, and removal of the two confirmed unused imports without a CLI-helper framework.
 13. Completed Phase 6 with one shared strict Markdown table parser/result model, cross-consumer structural fixtures, site-only episode/video validation, and removal of the redundant aggregate full-corpus table invocation while retaining the targeted CLI.
+14. Completed Phase 7 by documenting Git-based canonical-store recovery and retiring the obsolete bootstrap entrypoint and archive helpers after proving no active fresh-clone, CI, Pages, or transaction-recovery path depends on them.
 
 ## Remaining implementation order
 
-1. Retire the bootstrap and other completed processing-migration residue after recovery-path review.
-2. Consider generated site/search tracking policy only as a separate follow-up after the processing cleanup is complete.
+1. Processing cleanup Phases 0 through 7 are complete.
+2. Consider generated site/search tracking policy only as a separately authorized follow-up; it is not another phase or automatic continuation of this cleanup.
 
 ## Verification record
 
@@ -287,4 +290,8 @@ Phase 6 implementation validation completed on 2026-08-02: the new cross-consume
 
 Phase 6 review follow-up completed on 2026-08-02: CodeGraph confirmed that the shared module now contains the only active ordinary-table row splitter, header matcher, timestamp-anchor parser, and timestamp-label converter, and traced both the validator and Hugo builder to `parseQuestionTableText`. Diff review confirmed that the builder still enforces the separate episode/video-ID invariant and that `check:site:static` covers every hard-error condition that can fail the default full-corpus table check. The 58 compiled TypeScript tests, canonical `npm run check`, focused `npm run check:question-tables`, IntelliJ inspection, and `git diff --check` all passed; both full-corpus paths processed 283 pages and 13,931 rows, the focused command reported zero errors and warnings, and regeneration changed no tracked site/search output. No code correction was necessary. No live network request, canonical data change, Hugo render, staging change, Phase 7 work, or generated-output tracking change occurred.
 
-The next implementation cursor is Phase 7. Bootstrap retirement and the separate generated-output tracking policy still require their own authorization and implementation-time verification.
+Phase 7 implementation validation completed on 2026-08-02: the reference and workflow audit found no active bootstrap command or consumer, all 287 canonical transcript-store paths are tracked (four control files and 283 TXT payloads), and the Linux, Windows, and Pages fresh-clone paths install dependencies and call `check:ci` without a bootstrap step. README now documents restoring coherent canonical paths from one reviewed Git commit or using a fresh clone, validating the result, reserving `--repair-transaction` for unfinished journals, and rerunning guarded acquisition only for uncommitted reviewed work. `src/scripts/bootstrap-transcript-store.ts`, `bootstrapTranscriptStore`, `writeBootstrapStore`, and their now-unused `atomicWriteJson` import were removed. CodeGraph found no remaining bootstrap symbol, and focused IntelliJ inspection found no new problem; its one warning is the pre-existing redundant condition on an unchanged validator line. The canonical `npm run check` passed before and after the change with 58 compiled TypeScript tests, 16 JavaScript search tests, archive validation for 285 episodes, 283 stored transcripts, and two known-unavailable records, plus static generation and validation for 283 question pages and 13,931 rows. `git diff --check` passed, and generated site/search files remained unchanged. No live network request, canonical data change, Hugo render, staging change, AGENTS/skill/help edit, or generated-output tracking change occurred.
+
+Phase 7 review follow-up completed on 2026-08-02: CodeGraph independently confirmed that no active symbol, import, caller, or dependency path still uses the deleted bootstrap entrypoint or helpers; the only retained bootstrap wording in active TypeScript is the historical `legacy-json-bootstrap` manifest provenance value. Direct inspection confirmed that `--repair-transaction` remains a separate recovery mechanism covering the stale writer lease and both inventory and transcript journals. A temporary clean clone of `HEAD` with the complete Phase 7 patch applied contained all 287 tracked canonical store paths, completed `npm ci`, and passed `npm run check:ci`; the temporary clone was then removed. The current checkout also passed canonical `npm run check`, focused IntelliJ inspection found only the pre-existing redundant validator condition on an unchanged line, and no code correction was necessary. No canonical data, staging, later follow-up policy, or generated-output tracking change was made by the review.
+
+The processing-cleanup cursor is complete. The generated site/search tracking policy remains a separate deferred follow-up requiring explicit authorization.

@@ -4,7 +4,6 @@ import { readFile, readdir, rm } from "node:fs/promises";
 
 import {
   assertPathInside,
-  atomicWriteJson,
   atomicWriteText,
   fileExists,
   readJsonUnknown,
@@ -165,69 +164,6 @@ export function transcriptRecordFromText(
     ...(checked.lastStartSeconds !== undefined ? { lastStartSeconds: checked.lastStartSeconds } : {}),
     ...extra,
   };
-}
-
-export async function bootstrapTranscriptStore(): Promise<{
-  episodes: EpisodesStore;
-  manifest: TranscriptManifest;
-}> {
-  const episodes = await readEpisodesStore();
-  const records = episodes.episodes;
-  const manifestRecords: TranscriptManifestRecord[] = [];
-  for (const episode of records) {
-    const txtPath = join(transcriptRoot, `${episode.fileStem}.txt`);
-    assertPathInside(transcriptRoot, txtPath);
-    if (await fileExists(txtPath)) {
-      const text = await readFile(txtPath, "utf8");
-      manifestRecords.push(transcriptRecordFromText(episode, text, "legacy-json-bootstrap"));
-    } else if (episode.transcriptPolicy !== "known-unavailable") {
-      throw new Error(`Expected transcript TXT is missing: ${episode.videoId}`);
-    }
-  }
-  const txtNames = (await readdir(transcriptRoot))
-    .filter((name) => name.endsWith(".txt"))
-    .map((name) => basename(name, ".txt"));
-  const knownStems = new Set(records.map((record) => record.fileStem.toLowerCase()));
-  const orphans = txtNames.filter((name) => !knownStems.has(name.toLowerCase()));
-  if (orphans.length > 0) {
-    throw new Error(`Orphan TXT files: ${orphans.join(", ")}`);
-  }
-
-  const manifest: TranscriptManifest = {
-    schemaVersion: 1,
-    storage: {
-      payload: "txt-only",
-      pathTemplate: "txt/{fileStem}.txt",
-      encoding: "utf8",
-      lineEndings: "lf",
-    },
-    transcripts: manifestRecords,
-  };
-  return { episodes, manifest };
-}
-
-export async function writeBootstrapStore(): Promise<void> {
-  if (!(await fileExists(episodesPath))) {
-    throw new Error(`Bootstrap requires the canonical episode store at ${episodesPath}.`);
-  }
-  if (await fileExists(manifestPath)) {
-    throw new Error("Bootstrap is one-time only and refuses to overwrite an existing transcript manifest.");
-  }
-  const { manifest } = await bootstrapTranscriptStore();
-  await atomicWriteJson(manifestPath, manifest);
-  if (!(await fileExists(metadataPath))) {
-    await atomicWriteJson(metadataPath, {
-      schemaVersion: 1,
-      source: { api: "youtube-data-api-v3" },
-      videos: [],
-    });
-  }
-  if (!(await fileExists(statusPath))) {
-    await atomicWriteJson(statusPath, {
-      schemaVersion: 1,
-      failures: [],
-    } satisfies FetchStatus);
-  }
 }
 
 export async function recoverInventoryTransaction(
