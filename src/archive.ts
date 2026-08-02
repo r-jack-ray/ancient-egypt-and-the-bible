@@ -1,24 +1,23 @@
 import { createHash } from "node:crypto";
-import { basename, join } from "node:path";
-import { readFile, readdir } from "node:fs/promises";
+import { basename, join, resolve } from "node:path";
+import { readFile, readdir, rm } from "node:fs/promises";
 
 import {
   assertPathInside,
   atomicWriteJson,
+  atomicWriteText,
   fileExists,
   readJsonUnknown,
 } from "./pipeline/files.js";
 
-export const streamIndexPath = "src/live-stream-list.md";
 export const episodesPath = "src/channel/episodes.json";
 export const metadataPath = "src/channel/video-metadata.json";
 export const manifestPath = "src/transcripts/manifest.json";
 export const statusPath = "src/transcripts/fetch-status.json";
 export const transcriptRoot = "src/transcripts/txt";
-export const archiveHeader = "# 📺 Ancient Egypt and the Bible – Livestream Archive";
+export const inventoryJournalPath = ".tmp/transcript-store/inventory-transaction.json";
 
 export type TranscriptPolicy = "expected" | "known-unavailable";
-export type ArchiveLifecycle = "included" | "scheduled" | "live" | "processing" | "private" | "removed";
 
 export interface EpisodeRecord {
   videoId: string;
@@ -29,7 +28,6 @@ export interface EpisodeRecord {
   slug: string;
   fileStem: string;
   order: number;
-  lifecycle: ArchiveLifecycle;
   transcriptPolicy: TranscriptPolicy;
 }
 
@@ -86,54 +84,6 @@ export interface FetchFailure {
 export interface FetchStatus {
   schemaVersion: 1;
   failures: FetchFailure[];
-}
-
-export function parseStreamIndex(markdown: string): EpisodeRecord[] {
-  const lines = canonicalText(markdown).trimEnd().split("\n");
-  if (lines[0] !== archiveHeader) {
-    throw new Error(`Unexpected stream-index heading: ${lines[0] ?? "(missing)"}`);
-  }
-
-  const records: EpisodeRecord[] = [];
-  const pattern = /^- \[(.+)\]\(https:\/\/www\.youtube\.com\/watch\?v=([A-Za-z0-9_-]{11})\) `([a-z0-9]+(?:-[a-z0-9]+)*)`$/u;
-  for (const line of lines.slice(1)) {
-    if (!line.trim()) {
-      continue;
-    }
-    const match = pattern.exec(line);
-    if (match === null) {
-      throw new Error(`Unsupported stream-index line: ${line}`);
-    }
-    const linkText = required(match[1], "link text");
-    const videoId = required(match[2], "video ID");
-    const slug = required(match[3], "slug");
-    const numbered = /^Live Stream #(\d+):\s*(.+)$/u.exec(linkText);
-    const displayTitle = numbered?.[2] ?? linkText;
-    const record: EpisodeRecord = {
-      videoId,
-      url: `https://www.youtube.com/watch?v=${videoId}`,
-      linkText,
-      displayTitle,
-      slug,
-      fileStem: slug,
-      order: records.length + 1,
-      lifecycle: "included",
-      transcriptPolicy: "expected",
-    };
-    if (numbered?.[1] !== undefined) {
-      record.episodeNumber = Number(numbered[1]);
-    }
-    records.push(record);
-  }
-  validateEpisodes(records);
-  return records;
-}
-
-export function renderStreamIndex(episodes: readonly EpisodeRecord[]): string {
-  const lines = episodes.map((episode) =>
-    `- [${episode.linkText}](https://www.youtube.com/watch?v=${episode.videoId}) \`${episode.slug}\``
-  );
-  return `${archiveHeader}\n${lines.join("\n")}\n`;
 }
 
 export function validateEpisodes(episodes: readonly EpisodeRecord[]): void {
@@ -221,8 +171,8 @@ export async function bootstrapTranscriptStore(): Promise<{
   episodes: EpisodesStore;
   manifest: TranscriptManifest;
 }> {
-  const markdown = await readFile(streamIndexPath, "utf8");
-  const records = parseStreamIndex(markdown);
+  const episodes = await readEpisodesStore();
+  const records = episodes.episodes;
   const manifestRecords: TranscriptManifestRecord[] = [];
   for (const episode of records) {
     const txtPath = join(transcriptRoot, `${episode.fileStem}.txt`);
@@ -230,8 +180,8 @@ export async function bootstrapTranscriptStore(): Promise<{
     if (await fileExists(txtPath)) {
       const text = await readFile(txtPath, "utf8");
       manifestRecords.push(transcriptRecordFromText(episode, text, "legacy-json-bootstrap"));
-    } else {
-      episode.transcriptPolicy = "known-unavailable";
+    } else if (episode.transcriptPolicy !== "known-unavailable") {
+      throw new Error(`Expected transcript TXT is missing: ${episode.videoId}`);
     }
   }
   const txtNames = (await readdir(transcriptRoot))
@@ -243,15 +193,6 @@ export async function bootstrapTranscriptStore(): Promise<{
     throw new Error(`Orphan TXT files: ${orphans.join(", ")}`);
   }
 
-  const episodes: EpisodesStore = {
-    schemaVersion: 1,
-    channel: {
-      handleUrl: "https://www.youtube.com/@ancientegyptandthebible",
-      channelId: null,
-      uploadsPlaylistId: null,
-    },
-    episodes: records,
-  };
   const manifest: TranscriptManifest = {
     schemaVersion: 1,
     storage: {
@@ -266,21 +207,61 @@ export async function bootstrapTranscriptStore(): Promise<{
 }
 
 export async function writeBootstrapStore(): Promise<void> {
-  if (await fileExists(episodesPath) || await fileExists(manifestPath)) {
-    throw new Error("Bootstrap is one-time only and refuses to overwrite an existing typed store.");
+  if (!(await fileExists(episodesPath))) {
+    throw new Error(`Bootstrap requires the canonical episode store at ${episodesPath}.`);
   }
-  const { episodes, manifest } = await bootstrapTranscriptStore();
-  await atomicWriteJson(episodesPath, episodes);
+  if (await fileExists(manifestPath)) {
+    throw new Error("Bootstrap is one-time only and refuses to overwrite an existing transcript manifest.");
+  }
+  const { manifest } = await bootstrapTranscriptStore();
   await atomicWriteJson(manifestPath, manifest);
-  await atomicWriteJson(metadataPath, {
-    schemaVersion: 1,
-    source: { api: "youtube-data-api-v3" },
-    videos: [],
-  });
-  await atomicWriteJson(statusPath, {
-    schemaVersion: 1,
-    failures: [],
-  } satisfies FetchStatus);
+  if (!(await fileExists(metadataPath))) {
+    await atomicWriteJson(metadataPath, {
+      schemaVersion: 1,
+      source: { api: "youtube-data-api-v3" },
+      videos: [],
+    });
+  }
+  if (!(await fileExists(statusPath))) {
+    await atomicWriteJson(statusPath, {
+      schemaVersion: 1,
+      failures: [],
+    } satisfies FetchStatus);
+  }
+}
+
+export async function recoverInventoryTransaction(
+  repoRoot = ".",
+): Promise<"none" | "rolled-back" | "completed"> {
+  const root = resolve(repoRoot);
+  const journalPath = resolve(root, inventoryJournalPath);
+  if (!(await fileExists(journalPath))) return "none";
+  const value = JSON.parse(await readFile(journalPath, "utf8")) as unknown;
+  const journal = isRecord(value) ? value : undefined;
+  const previous = inventoryTransactionFiles(journal?.previous);
+  const proposed = inventoryTransactionFiles(journal?.proposed);
+  if (
+    journal?.schemaVersion !== 1 ||
+    previous === undefined ||
+    proposed === undefined
+  ) {
+    throw new Error(`Unrecognized inventory transaction journal: ${inventoryJournalPath}`);
+  }
+
+  const episodeFile = resolve(root, episodesPath);
+  const metadataFile = resolve(root, metadataPath);
+  const current = {
+    episodes: await readFile(episodeFile, "utf8"),
+    metadata: await readFile(metadataFile, "utf8"),
+  };
+  const complete = current.episodes === proposed.episodes &&
+    current.metadata === proposed.metadata;
+  if (!complete) {
+    await atomicWriteText(episodeFile, previous.episodes);
+    await atomicWriteText(metadataFile, previous.metadata);
+  }
+  await rm(journalPath, { force: true });
+  return complete ? "completed" : "rolled-back";
 }
 
 export async function readEpisodesStore(path = episodesPath): Promise<EpisodesStore> {
@@ -324,6 +305,11 @@ export async function validateRepositoryStore(): Promise<{
   storedCount: number;
   unavailableCount: number;
 }> {
+  if (await fileExists(inventoryJournalPath)) {
+    throw new Error(
+      "Unfinished inventory transaction found. Run check:transcript-store with --repair-transaction.",
+    );
+  }
   if (await fileExists(".tmp/transcript-store/transaction.json")) {
     throw new Error(
       "Unfinished transcript transaction found. Run check:transcript-store with --repair-transaction.",
@@ -332,10 +318,6 @@ export async function validateRepositoryStore(): Promise<{
   const store = await readEpisodesStore();
   const manifest = await readManifest();
   await readFetchStatus();
-  const markdown = canonicalText(await readFile(streamIndexPath, "utf8"));
-  if (renderStreamIndex(store.episodes) !== markdown) {
-    throw new Error("src/live-stream-list.md is not the exact episodes.json projection.");
-  }
   const manifestById = new Map(manifest.transcripts.map((record) => [record.videoId, record]));
   for (const episode of store.episodes) {
     const record = manifestById.get(episode.videoId);
@@ -420,6 +402,16 @@ function required(value: string | undefined, label: string): string {
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function inventoryTransactionFiles(value: unknown): {
+  episodes: string;
+  metadata: string;
+} | undefined {
+  if (!isRecord(value)) return undefined;
+  return typeof value.episodes === "string" && typeof value.metadata === "string"
+    ? { episodes: value.episodes, metadata: value.metadata }
+    : undefined;
 }
 
 function pickManifestProvenance(record: TranscriptManifestRecord): Partial<TranscriptManifestRecord> {

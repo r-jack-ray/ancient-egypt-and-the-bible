@@ -16,7 +16,7 @@ Create curated Markdown reference pages from livestream transcript files. The go
 
 The public-facing Markdown output belongs under `docs/questions/`. Keep raw transcript source data under `src/`.
 
-A master list of public livestream entries is in `src/live-stream-list.md`. Treat the list as stream-centric, not episode-only. It may include numbered Q&A livestreams, special streams, and other public `/streams` entries. Do not limit processing to numbered episodes unless the user explicitly asks for numbered episodes only.
+The canonical public livestream inventory is `src/channel/episodes.json`. Treat it as stream-centric, not episode-only. It may include numbered Q&A livestreams, special streams, and other public `/streams` entries. Do not limit processing to numbered episodes unless the user explicitly asks for numbered episodes only.
 
 This skill is for first-pass page creation with Codex. Use `transcript-question-page-audit` for later correction passes, completeness audits, timestamp repairs, or minimal-diff improvements to existing pages.
 
@@ -37,7 +37,6 @@ Use the current repository layout:
 1. Canonical archive identity: `src/channel/episodes.json`
 2. Transcript mapping and validation facts: `src/transcripts/manifest.json`
 3. Source transcript: `src/transcripts/txt/<fileStem>.txt`
-4. Hugo compatibility projection: `src/live-stream-list.md`
 
 TXT is the transcript source of record and default curation surface. Resolve its stable `fileStem` from the manifest. Legacy JSON is retained temporarily as optional historical evidence, but normal creation must not require it or create a new JSON payload.
 
@@ -68,9 +67,9 @@ Use special-purpose filenames only when explicitly requested. Ordinary full Q&A 
 
 ## Batch Selection
 
-When the user asks for the "next" episode pages, use the next missing ordinary pages in ascending numbered order from `src/live-stream-list.md`, based on actual files under `docs/questions/`. Treat README/status text as hints only.
+When the user asks for the "next" episode pages, use the next missing ordinary pages in ascending numbered order from `src/channel/episodes.json`, based on actual files under `docs/questions/`. Treat README/status text as hints only.
 
-If a blocked placeholder appears in a batch, report it and continue only when later non-empty transcript sources can still satisfy the requested count. Preserve `src/live-stream-list.md` order for non-numbered streams unless the user gives another order.
+If a blocked placeholder appears in a batch, report it and continue only when later non-empty transcript sources can still satisfy the requested count. Preserve `src/channel/episodes.json` order for non-numbered streams unless the user gives another order.
 
 ## Creation Workflow
 
@@ -79,7 +78,7 @@ If a blocked placeholder appears in a batch, report it and continue only when la
 For each requested stream:
 
 1. Identify the stream, episode number if present, title, URL, and slug.
-2. Use `src/live-stream-list.md` to confirm the title, YouTube video URL, and slug.
+2. Use `src/channel/episodes.json` to confirm the title, YouTube video URL, and slug.
 3. Check whether the intended output page already exists under `docs/questions/`.
 4. If it exists, do not overwrite it as a first-pass creation task. Use `transcript-question-page-audit` unless the user explicitly asks to regenerate or replace it.
 

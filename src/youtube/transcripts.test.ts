@@ -63,7 +63,6 @@ test("manifest records retain canonical episode order after replacement", () => 
     slug: videoId,
     fileStem: videoId,
     order,
-    lifecycle: "included" as const,
     transcriptPolicy: "expected" as const,
   });
 

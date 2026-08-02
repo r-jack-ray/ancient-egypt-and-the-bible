@@ -1,7 +1,9 @@
-import { google, type youtube_v3 } from "googleapis";
-
 import { metadataPath, readEpisodesStore } from "../archive.js";
 import { errorCode, readJsonUnknown, writeJsonIfChanged } from "../pipeline/files.js";
+import {
+  createYoutubeDataApiClient,
+  type YoutubeVideoResource,
+} from "./data-api.js";
 
 export interface VideoMetadataRecord {
   videoId: string;
@@ -27,23 +29,30 @@ export async function fetchVideoMetadata(options: {
   apiKey: string;
   videoIds: readonly string[];
   delayMs: number;
+  fetch?: typeof fetch;
+  sleep?: (milliseconds: number) => Promise<void>;
+  now?: () => Date;
   logger?: (message: string) => void;
 }): Promise<VideoMetadataRecord[]> {
-  const youtube = google.youtube({ version: "v3", auth: options.apiKey });
+  const youtube = createYoutubeDataApiClient({
+    apiKey: options.apiKey,
+    ...(options.fetch !== undefined ? { fetch: options.fetch } : {}),
+    ...(options.sleep !== undefined ? { sleep: options.sleep } : {}),
+  });
+  const sleep = options.sleep ?? ((milliseconds: number) =>
+    new Promise<void>((resolve) => setTimeout(resolve, milliseconds))
+  );
+  const now = options.now ?? (() => new Date());
   const records: VideoMetadataRecord[] = [];
   for (let index = 0; index < options.videoIds.length; index += 50) {
     if (index > 0 && options.delayMs > 0) {
-      await new Promise<void>((resolve) => setTimeout(resolve, options.delayMs));
+      await sleep(options.delayMs);
     }
     const ids = options.videoIds.slice(index, index + 50);
     options.logger?.(`Fetching YouTube metadata ${index + 1}-${index + ids.length}.`);
-    const response = await youtube.videos.list({
-      part: ["snippet", "contentDetails", "status", "liveStreamingDetails"],
-      id: [...ids],
-      maxResults: ids.length,
-    });
-    const fetchedAt = new Date().toISOString();
-    for (const item of response.data.items ?? []) {
+    const items = await youtube.fetchVideos(ids);
+    const fetchedAt = now().toISOString();
+    for (const item of items) {
       const record = normalizeVideo(item, fetchedAt);
       if (record !== undefined) {
         records.push(record);
@@ -59,6 +68,9 @@ export async function fetchAndStoreVideoMetadata(options: {
   output?: string;
   limit?: number;
   refreshAll?: boolean;
+  fetch?: typeof fetch;
+  sleep?: (milliseconds: number) => Promise<void>;
+  now?: () => Date;
   logger?: (message: string) => void;
 }): Promise<VideoMetadataStore> {
   const episodes = await readEpisodesStore();
@@ -74,6 +86,9 @@ export async function fetchAndStoreVideoMetadata(options: {
     apiKey: options.apiKey,
     videoIds: selected,
     delayMs: options.delayMs,
+    ...(options.fetch !== undefined ? { fetch: options.fetch } : {}),
+    ...(options.sleep !== undefined ? { sleep: options.sleep } : {}),
+    ...(options.now !== undefined ? { now: options.now } : {}),
     ...(options.logger !== undefined ? { logger: options.logger } : {}),
   });
   for (const record of fetched) byId.set(record.videoId, record);
@@ -166,7 +181,7 @@ export function parseYoutubeDuration(value: string | null | undefined): number |
 }
 
 function normalizeVideo(
-  item: youtube_v3.Schema$Video,
+  item: YoutubeVideoResource,
   fetchedAt: string,
 ): VideoMetadataRecord | undefined {
   const videoId = item.id ?? undefined;

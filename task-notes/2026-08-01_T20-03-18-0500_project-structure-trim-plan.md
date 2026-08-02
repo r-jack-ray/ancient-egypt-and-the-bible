@@ -89,6 +89,8 @@ The deterministic processing has two intentional acquisition boundaries: the off
 
 ### Phase 1: Remove the obsolete stream projection and simplify canonical-to-site data flow
 
+Status: completed on 2026-08-01. The implementation removed the Markdown projection and standalone validator; narrowed inventory transactions to `episodes.json` and `video-metadata.json`; moved transaction detection and recovery into the canonical transcript/archive-state check; switched Hugo generation and question-tool root detection to Node-era canonical markers; generated front-matter-only question stubs; removed the question-template `.Content` fallback after rendered proof; removed intermediate `search_text`; and removed the unused `lifecycle` and `candidateEpisodes` fields. Broader episode-schema minimization was not implemented.
+
 - Make `src/channel/episodes.json` the sole canonical archive inventory read by all Node tooling.
 - Treat this as completion of the July 25 staged authority transition, not as a new source-of-truth change: `episodes.json` has already been canonical since that migration.
 - Remove `src/live-stream-list.md`; its PowerShell-era compatibility purpose is gone.
@@ -113,14 +115,16 @@ Validation gate:
 
 ### Phase 2: Replace the broad Google API dependency
 
+Status: implemented on 2026-08-01. A narrow typed Node 22 `fetch` client now owns the channels, playlist-items, and videos calls; inventory and metadata retain their pagination, 50-ID batching, delay, normalization, API-key behavior, and bounded transient-request retries with injectable fetch, sleep, and clock dependencies. Offline parity gates passed, `googleapis` and the `gaxios` override were removed, and the plan's separately authorized live report-only inventory canary remains intentionally unrun.
+
 - Implement a narrow typed YouTube Data API client on Node 22 `fetch` for the three used endpoints.
-- Preserve API-key precedence, pagination, 50-ID metadata batching, request delay, response normalization, and safe error messages.
+- Preserve API-key precedence, pagination, 50-ID metadata batching, request delay, bounded transient-request retries, response normalization, and safe error messages.
 - Inject the fetch implementation so channel discovery, pagination, missing fields, API errors, and metadata batching can be tested without network access.
 - Remove `googleapis`, its `gaxios` override, and the resulting transitive lockfile closure only after behavioral parity tests pass.
 
 Validation gate:
 
-- Fixture-backed tests for channels, playlist items, videos, pagination, partial/malformed responses, HTTP errors, and request spacing.
+- Fixture-backed tests for channels, playlist items, videos, pagination, partial/malformed responses, HTTP errors, bounded transient retries, and request spacing.
 - One separately authorized live report-only inventory canary; no canonical apply during dependency migration validation.
 - Record dependency count, install size, install time, and type-check/test results before and after.
 
@@ -216,16 +220,16 @@ If handled later, keep `site/data/search-aliases.json` tracked as authored sourc
 5. Removed the completed bootstrap from the public npm surface while retaining the underlying recovery code for later review.
 6. Moved the YouTube API key fallback to ignored `.local/youtube-api-key.txt` and updated its resolver and references.
 7. Updated CLI help, README, AGENTS, and transcript-skill references for the initial command renames. A stale README reference to the subsequently removed `fetch:livestreams:latest` alias remains.
+8. Completed Phase 1 canonical-to-site cleanup, including removal of `src/live-stream-list.md`, the standalone stream-index command, redundant question-row and episode fields, full-body Hugo mirrors, and the data-backed question-template fallback.
+9. Completed Phase 2 with a narrow injected-fetch YouTube Data API client, fixture-backed endpoint and integration tests, safe API errors, bounded transient-request retries, and removal of `googleapis`, its `gaxios` override, and 47 lockfile packages.
 
 ## Remaining implementation order
 
-1. Remove the obsolete Markdown stream projection and complete the canonical-to-site data-flow cleanup, including lean mirrors and removal of redundant `search_text`.
-2. Finish the weekly command cleanup: remove the stale README `latest` invocation, decide whether to delete owner-unused `fetch:transcript`, and add the concise new-TXT/deferred handoff to the batch command.
-3. Decide report ownership, then remove or make conditional the reports with no active human or machine consumer.
-4. Consolidate validation, CLI plumbing, and Markdown table parsing while preserving distinct invariants.
-5. Replace the broad Google API dependency if its behavioral parity tests justify the maintenance tradeoff.
-6. Retire the bootstrap and other completed processing-migration residue after recovery-path review.
-7. Consider generated site/search tracking policy only as a separate follow-up after the processing cleanup is complete.
+1. Finish the weekly command cleanup: remove the stale README `latest` invocation, decide whether to delete owner-unused `fetch:transcript`, and add the concise new-TXT/deferred handoff to the batch command.
+2. Decide report ownership, then remove or make conditional the reports with no active human or machine consumer.
+3. Consolidate validation, CLI plumbing, and Markdown table parsing while preserving distinct invariants.
+4. Retire the bootstrap and other completed processing-migration residue after recovery-path review.
+5. Consider generated site/search tracking policy only as a separate follow-up after the processing cleanup is complete.
 
 ## Verification record
 
@@ -253,4 +257,10 @@ Questionable command recorded by the owner on 2026-08-01: `fetch:transcript` is 
 
 Validation status for the scripts cleanup: the renamed command help paths, 42 compiled TypeScript tests, 16 JavaScript search tests, transcript/store checks, question-table validation, and static site/search checks passed before the subsequent API-key relocation and `latest` alias removal. The safely paced batch dry run reported 283 stored transcripts and two known-unavailable records. Re-run targeted validation after the remaining README and questionable-command cleanup is implemented.
 
-Remaining phases still require their own implementation-time verification. This plan was originally created without implementation changes; completed cleanup slices are now recorded explicitly above.
+Phase 1 implementation validation completed on 2026-08-01: 45 compiled TypeScript tests and 16 JavaScript search tests passed; canonical archive validation reported 285 episodes, 283 stored transcripts, and two known-unavailable records; all 283 question pages and 13,931 question rows passed strict table, alias, static-site, and full Hugo validation. Representative numbered and special pages were byte-identical to the pre-change render after the canonical-read, lean-stub, and derived-search-text changes. Removing the unreachable fallback then changed only template whitespace for those representatives, and the second full render passed all 287 rendered-page canonical, metadata, title, sitemap, SEO, and internal-link checks.
+
+Phase 2 implementation validation completed on 2026-08-01: all 51 compiled TypeScript tests and 16 JavaScript search tests passed, including fixture-backed channels, playlist-items, videos, pagination, partial and malformed responses, HTTP and network errors, 50-ID batching, and request-spacing cases. Type checking, focused IDE inspections, diff checks, and canonical transcript-store validation also passed. The lockfile dependency count fell from 81 to 34, installed size from 259,684,782 bytes (247.65 MiB) and 3,071 files to 39,432,066 bytes (37.61 MiB) and 362 files, and one cached clean-install sample fell from 8.339 seconds to 1.179 seconds. The separately authorized live report-only inventory canary was not run, and no canonical apply occurred.
+
+Phase 2 review follow-up completed on 2026-08-01: review found that the removed Google request client had supplied default transient retries while the first narrow `fetch` implementation made only one attempt. The replacement client now makes at most three retries after the initial request with 100/200/400 ms exponential waits for transport failures, unreadable successful or retryable responses, HTTP 408/429, and 5xx responses; permanent 4xx and malformed successful payloads still fail immediately. Injected timing remains available through inventory and metadata callers. Deterministic retry-success, exhaustion, non-retryable-error, and secret-redaction coverage brought the compiled TypeScript suite to 52 passing tests; the full functional stack and 16 JavaScript search tests also passed. The live report-only inventory canary remained intentionally unrun, and no canonical apply occurred.
+
+Remaining phases still require their own implementation-time verification. The stale README `fetch:livestreams:latest` invocation, owner-unused single-video transcript command, report lifecycle, validation/parser consolidation, bootstrap retirement, and generated-output tracking policy were intentionally left unchanged.

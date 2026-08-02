@@ -22,6 +22,7 @@ test("prebuilt search docs match source row count and keep display fields only",
   assert.equal(docs.length, questions.length);
   assert.equal(docs[0].search_id, "0");
   assert.equal(docs[0].expanded_answer, questions[0].expanded_answer);
+  assert.ok(questions.every((row) => !Object.hasOwn(row, "search_text")));
   assert.ok(!Object.hasOwn(docs[0], "search_text"));
   assert.ok(!Object.hasOwn(docs[0], "search_aliases"));
 });

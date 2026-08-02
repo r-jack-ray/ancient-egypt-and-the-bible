@@ -14,7 +14,6 @@
       "slug": "272-the-oppression-pharaoh-we-are-legion",
       "fileStem": "272-the-oppression-pharaoh-we-are-legion",
       "order": 1,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 272
     },
@@ -26,7 +25,6 @@
       "slug": "271-all-your-reliquaries-are-mine",
       "fileStem": "271-all-your-reliquaries-are-mine",
       "order": 2,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 271
     },
@@ -38,7 +36,6 @@
       "slug": "270-live-stream-dead-or-ankh",
       "fileStem": "270-live-stream-dead-or-ankh",
       "order": 3,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 270
     },
@@ -50,7 +47,6 @@
       "slug": "269-smithers-release-the-book-hounds",
       "fileStem": "269-smithers-release-the-book-hounds",
       "order": 4,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 269
     },
@@ -62,7 +58,6 @@
       "slug": "268-getting-it-okay",
       "fileStem": "268-getting-it-okay",
       "order": 5,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 268
     },
@@ -74,7 +69,6 @@
       "slug": "267-ramesses-ii-marketing-genius",
       "fileStem": "267-ramesses-ii-marketing-genius",
       "order": 6,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 267
     },
@@ -86,7 +80,6 @@
       "slug": "266-three-major-questions",
       "fileStem": "266-three-major-questions",
       "order": 7,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 266
     },
@@ -98,7 +91,6 @@
       "slug": "265-the-pharaoh-of-swing",
       "fileStem": "265-the-pharaoh-of-swing",
       "order": 8,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 265
     },
@@ -110,7 +102,6 @@
       "slug": "264-the-shasu-of-vancouver",
       "fileStem": "264-the-shasu-of-vancouver",
       "order": 9,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 264
     },
@@ -122,7 +113,6 @@
       "slug": "263-the-live-streamer-s-gambit",
       "fileStem": "263-the-live-streamer-s-gambit",
       "order": 10,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 263
     },
@@ -134,7 +124,6 @@
       "slug": "262-the-vancouver-victory-stela",
       "fileStem": "262-the-vancouver-victory-stela",
       "order": 11,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 262
     },
@@ -146,7 +135,6 @@
       "slug": "261-naughty-word-free-live-stream",
       "fileStem": "261-naughty-word-free-live-stream",
       "order": 12,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 261
     },
@@ -158,7 +146,6 @@
       "slug": "260-forty-two-lost-questions",
       "fileStem": "260-forty-two-lost-questions",
       "order": 13,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 260
     },
@@ -170,7 +157,6 @@
       "slug": "259-a-turn-of-the-seasons",
       "fileStem": "259-a-turn-of-the-seasons",
       "order": 14,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 259
     },
@@ -182,7 +168,6 @@
       "slug": "258-tax-time-there-aint-no-reason-and-there-aint-no-rhyme",
       "fileStem": "258-tax-time-there-aint-no-reason-and-there-aint-no-rhyme",
       "order": 15,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 258
     },
@@ -194,7 +179,6 @@
       "slug": "257-there-will-be-a-test",
       "fileStem": "257-there-will-be-a-test",
       "order": 16,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 257
     },
@@ -206,7 +190,6 @@
       "slug": "256-18000-well-read-intelligent-good-looking-subs",
       "fileStem": "256-18000-well-read-intelligent-good-looking-subs",
       "order": 17,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 256
     },
@@ -218,7 +201,6 @@
       "slug": "255-a-very-good-friday",
       "fileStem": "255-a-very-good-friday",
       "order": 18,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 255
     },
@@ -230,7 +212,6 @@
       "slug": "254-factoring-the-fact-checker",
       "fileStem": "254-factoring-the-fact-checker",
       "order": 19,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 254
     },
@@ -242,7 +223,6 @@
       "slug": "253-the-grassy-nome-theory",
       "fileStem": "253-the-grassy-nome-theory",
       "order": 20,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 253
     },
@@ -254,7 +234,6 @@
       "slug": "252-the-golden-sound-fox",
       "fileStem": "252-the-golden-sound-fox",
       "order": 21,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 252
     },
@@ -266,7 +245,6 @@
       "slug": "251-live-streams-and-rumors-of-live-streams",
       "fileStem": "251-live-streams-and-rumors-of-live-streams",
       "order": 22,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 251
     },
@@ -278,7 +256,6 @@
       "slug": "250-the-origin-of-all-live-streams",
       "fileStem": "250-the-origin-of-all-live-streams",
       "order": 23,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 250
     },
@@ -290,7 +267,6 @@
       "slug": "249-a-seraph-in-every-flagon",
       "fileStem": "249-a-seraph-in-every-flagon",
       "order": 24,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 249
     },
@@ -302,7 +278,6 @@
       "slug": "248-an-angel-under-every-rock",
       "fileStem": "248-an-angel-under-every-rock",
       "order": 25,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 248
     },
@@ -314,7 +289,6 @@
       "slug": "247-a-hamburger-today-for-a-scarab-tomorrow",
       "fileStem": "247-a-hamburger-today-for-a-scarab-tomorrow",
       "order": 26,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 247
     },
@@ -326,7 +300,6 @@
       "slug": "246-egyptian-royal-streaming",
       "fileStem": "246-egyptian-royal-streaming",
       "order": 27,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 246
     },
@@ -338,7 +311,6 @@
       "slug": "245-friday-the-23-rd",
       "fileStem": "245-friday-the-23-rd",
       "order": 28,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 245
     },
@@ -350,7 +322,6 @@
       "slug": "244-romani-ite-domum",
       "fileStem": "244-romani-ite-domum",
       "order": 29,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 244
     },
@@ -362,7 +333,6 @@
       "slug": "243-in-search-of-nuance",
       "fileStem": "243-in-search-of-nuance",
       "order": 30,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 243
     },
@@ -374,7 +344,6 @@
       "slug": "242-happy-new-year-2026",
       "fileStem": "242-happy-new-year-2026",
       "order": 31,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 242
     },
@@ -386,7 +355,6 @@
       "slug": "241-decking-the-halls-with-poison-ivy",
       "fileStem": "241-decking-the-halls-with-poison-ivy",
       "order": 32,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 241
     },
@@ -398,7 +366,6 @@
       "slug": "240-the-last-of-winter-s-tea",
       "fileStem": "240-the-last-of-winter-s-tea",
       "order": 33,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 240
     },
@@ -410,7 +377,6 @@
       "slug": "239-monsters-of-myth-and-rubber-chicken",
       "fileStem": "239-monsters-of-myth-and-rubber-chicken",
       "order": 34,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 239
     },
@@ -422,7 +388,6 @@
       "slug": "238-i-ve-got-your-emails",
       "fileStem": "238-i-ve-got-your-emails",
       "order": 35,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 238
     },
@@ -434,7 +399,6 @@
       "slug": "237-tea-spilled-all-over-the-floor",
       "fileStem": "237-tea-spilled-all-over-the-floor",
       "order": 36,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 237
     },
@@ -446,7 +410,6 @@
       "slug": "236-our-third-ets-d-and-d-special-live-stream",
       "fileStem": "236-our-third-ets-d-and-d-special-live-stream",
       "order": 37,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 236
     },
@@ -458,7 +421,6 @@
       "slug": "235-trick-or-treaty",
       "fileStem": "235-trick-or-treaty",
       "order": 38,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 235
     },
@@ -470,7 +432,6 @@
       "slug": "234-the-nephilim-are-coming-for-you",
       "fileStem": "234-the-nephilim-are-coming-for-you",
       "order": 39,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 234
     },
@@ -482,7 +443,6 @@
       "slug": "233-happy-all-saints-eve",
       "fileStem": "233-happy-all-saints-eve",
       "order": 40,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 233
     },
@@ -494,7 +454,6 @@
       "slug": "232-the-abr-grove-has-no-soul",
       "fileStem": "232-the-abr-grove-has-no-soul",
       "order": 41,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 232
     },
@@ -506,7 +465,6 @@
       "slug": "231-why-bother-with-stream-titles-no-one-can-read",
       "fileStem": "231-why-bother-with-stream-titles-no-one-can-read",
       "order": 42,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 231
     },
@@ -518,7 +476,6 @@
       "slug": "230-ten-things-about-one-thing",
       "fileStem": "230-ten-things-about-one-thing",
       "order": 43,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 230
     },
@@ -530,7 +487,6 @@
       "slug": "229-a-levite-on-every-street-corner",
       "fileStem": "229-a-levite-on-every-street-corner",
       "order": 44,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 229
     },
@@ -542,7 +498,6 @@
       "slug": "228-the-abr-boogie",
       "fileStem": "228-the-abr-boogie",
       "order": 45,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 228
     },
@@ -554,7 +509,6 @@
       "slug": "227-just-one-more-question",
       "fileStem": "227-just-one-more-question",
       "order": 46,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 227
     },
@@ -566,7 +520,6 @@
       "slug": "226-gem-of-a-question",
       "fileStem": "226-gem-of-a-question",
       "order": 47,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 226
     },
@@ -578,7 +531,6 @@
       "slug": "225-ancient-egyptian-pyramid-scheme",
       "fileStem": "225-ancient-egyptian-pyramid-scheme",
       "order": 48,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 225
     },
@@ -590,7 +542,6 @@
       "slug": "224-pareidolia-paranoia",
       "fileStem": "224-pareidolia-paranoia",
       "order": 49,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 224
     },
@@ -602,7 +553,6 @@
       "slug": "223-a-question-of-assessed-damage",
       "fileStem": "223-a-question-of-assessed-damage",
       "order": 50,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 223
     },
@@ -614,7 +564,6 @@
       "slug": "special-live-stream-all-the-stars-as-angels-q-and-a",
       "fileStem": "special-live-stream-all-the-stars-as-angels-q-and-a",
       "order": 51,
-      "lifecycle": "included",
       "transcriptPolicy": "expected"
     },
     {
@@ -625,7 +574,6 @@
       "slug": "222-the-master-of-all-classes",
       "fileStem": "222-the-master-of-all-classes",
       "order": 52,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 222
     },
@@ -637,7 +585,6 @@
       "slug": "221-the-concise-fun-notes-edition",
       "fileStem": "221-the-concise-fun-notes-edition",
       "order": 53,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 221
     },
@@ -649,7 +596,6 @@
       "slug": "220-bears-bears-everywheres",
       "fileStem": "220-bears-bears-everywheres",
       "order": 54,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 220
     },
@@ -661,7 +607,6 @@
       "slug": "219-ten-things-you-wish-you-knew",
       "fileStem": "219-ten-things-you-wish-you-knew",
       "order": 55,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 219
     },
@@ -673,7 +618,6 @@
       "slug": "218-license-to-exegete",
       "fileStem": "218-license-to-exegete",
       "order": 56,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 218
     },
@@ -685,7 +629,6 @@
       "slug": "217-cringe-scholars-society-with-red-wine",
       "fileStem": "217-cringe-scholars-society-with-red-wine",
       "order": 57,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 217
     },
@@ -697,7 +640,6 @@
       "slug": "216-rock-around-the-ark-tonight",
       "fileStem": "216-rock-around-the-ark-tonight",
       "order": 58,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 216
     },
@@ -709,7 +651,6 @@
       "slug": "215-amalgamated-lamentations",
       "fileStem": "215-amalgamated-lamentations",
       "order": 59,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 215
     },
@@ -721,7 +662,6 @@
       "slug": "214-crud-slurping-egyptian-deities",
       "fileStem": "214-crud-slurping-egyptian-deities",
       "order": 60,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 214
     },
@@ -733,7 +673,6 @@
       "slug": "213-exploring-the-sewer-world",
       "fileStem": "213-exploring-the-sewer-world",
       "order": 61,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 213
     },
@@ -745,7 +684,6 @@
       "slug": "212-one-degree-of-separation",
       "fileStem": "212-one-degree-of-separation",
       "order": 62,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 212
     },
@@ -757,7 +695,6 @@
       "slug": "211-when-your-guest-is-a-gas-bag",
       "fileStem": "211-when-your-guest-is-a-gas-bag",
       "order": 63,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 211
     },
@@ -769,7 +706,6 @@
       "slug": "210-reading-into-the-lines",
       "fileStem": "210-reading-into-the-lines",
       "order": 64,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 210
     },
@@ -781,7 +717,6 @@
       "slug": "209-one-meaning-flippancy",
       "fileStem": "209-one-meaning-flippancy",
       "order": 65,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 209
     },
@@ -793,7 +728,6 @@
       "slug": "special-live-stream-reliquary-of-the-dead-q-and-a",
       "fileStem": "special-live-stream-reliquary-of-the-dead-q-and-a",
       "order": 66,
-      "lifecycle": "included",
       "transcriptPolicy": "expected"
     },
     {
@@ -804,7 +738,6 @@
       "slug": "208-hysterical-context-error",
       "fileStem": "208-hysterical-context-error",
       "order": 67,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 208
     },
@@ -816,7 +749,6 @@
       "slug": "207-root-of-the-problem",
       "fileStem": "207-root-of-the-problem",
       "order": 68,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 207
     },
@@ -828,7 +760,6 @@
       "slug": "206-getting-all-wet",
       "fileStem": "206-getting-all-wet",
       "order": 69,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 206
     },
@@ -840,7 +771,6 @@
       "slug": "205-dead-seminaries-society",
       "fileStem": "205-dead-seminaries-society",
       "order": 70,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 205
     },
@@ -852,7 +782,6 @@
       "slug": "204-never-ending-popcorn",
       "fileStem": "204-never-ending-popcorn",
       "order": 71,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 204
     },
@@ -864,7 +793,6 @@
       "slug": "203-degenerative-artificial-intelligence",
       "fileStem": "203-degenerative-artificial-intelligence",
       "order": 72,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 203
     },
@@ -876,7 +804,6 @@
       "slug": "202-rewriting-rewritten-history-did-egypt-try-to-hide-the-monster-pyramid-springs",
       "fileStem": "202-rewriting-rewritten-history-did-egypt-try-to-hide-the-monster-pyramid-springs",
       "order": 73,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 202
     },
@@ -888,7 +815,6 @@
       "slug": "201-back-from-the-land-of-the-dead",
       "fileStem": "201-back-from-the-land-of-the-dead",
       "order": 74,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 201
     },
@@ -900,7 +826,6 @@
       "slug": "200-the-terrible-two-hundreds",
       "fileStem": "200-the-terrible-two-hundreds",
       "order": 75,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 200
     },
@@ -912,7 +837,6 @@
       "slug": "199-discovering-the-tomb-of-pharaoh-khnop-hotep",
       "fileStem": "199-discovering-the-tomb-of-pharaoh-khnop-hotep",
       "order": 76,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 199
     },
@@ -924,7 +848,6 @@
       "slug": "198-travel-tips-for-visiting-purgatory",
       "fileStem": "198-travel-tips-for-visiting-purgatory",
       "order": 77,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 198
     },
@@ -936,7 +859,6 @@
       "slug": "197-usaid-now-paying-grants-in-canadian-tire-money",
       "fileStem": "197-usaid-now-paying-grants-in-canadian-tire-money",
       "order": 78,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 197
     },
@@ -948,7 +870,6 @@
       "slug": "196-remembering-kenneth-a-kitchen",
       "fileStem": "196-remembering-kenneth-a-kitchen",
       "order": 79,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 196
     },
@@ -960,7 +881,6 @@
       "slug": "195-wisdom-of-the-channel",
       "fileStem": "195-wisdom-of-the-channel",
       "order": 80,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 195
     },
@@ -972,7 +892,6 @@
       "slug": "194-vancouver-city-v",
       "fileStem": "194-vancouver-city-v",
       "order": 81,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 194
     },
@@ -984,7 +903,6 @@
       "slug": "193-back-in-the-saddle",
       "fileStem": "193-back-in-the-saddle",
       "order": 82,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 193
     },
@@ -996,7 +914,6 @@
       "slug": "192-truths-facts-and-blessed-facts",
       "fileStem": "192-truths-facts-and-blessed-facts",
       "order": 83,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 192
     },
@@ -1008,7 +925,6 @@
       "slug": "191-happy-new-year",
       "fileStem": "191-happy-new-year",
       "order": 84,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 191
     },
@@ -1020,7 +936,6 @@
       "slug": "190-spilt-tea-all-over-the-floor",
       "fileStem": "190-spilt-tea-all-over-the-floor",
       "order": 85,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 190
     },
@@ -1032,7 +947,6 @@
       "slug": "189-the-thirteenthest-of-fridays",
       "fileStem": "189-the-thirteenthest-of-fridays",
       "order": 86,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 189
     },
@@ -1044,7 +958,6 @@
       "slug": "188-turning-to-spilling-the-coffee",
       "fileStem": "188-turning-to-spilling-the-coffee",
       "order": 87,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 188
     },
@@ -1056,7 +969,6 @@
       "slug": "187-post-conference-apocalypse",
       "fileStem": "187-post-conference-apocalypse",
       "order": 88,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 187
     },
@@ -1068,7 +980,6 @@
       "slug": "186-our-second-ets-d-and-d-special-live-stream",
       "fileStem": "186-our-second-ets-d-and-d-special-live-stream",
       "order": 89,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 186
     },
@@ -1080,7 +991,6 @@
       "slug": "185-song-of-the-awesome",
       "fileStem": "185-song-of-the-awesome",
       "order": 90,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 185
     },
@@ -1092,7 +1002,6 @@
       "slug": "184-priesthood-of-the-most-sacred-question",
       "fileStem": "184-priesthood-of-the-most-sacred-question",
       "order": 91,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 184
     },
@@ -1104,7 +1013,6 @@
       "slug": "183-happy-all-saints-day",
       "fileStem": "183-happy-all-saints-day",
       "order": 92,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 183
     },
@@ -1116,7 +1024,6 @@
       "slug": "182-rolling-dice-for-the-answers",
       "fileStem": "182-rolling-dice-for-the-answers",
       "order": 93,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 182
     },
@@ -1128,7 +1035,6 @@
       "slug": "181-growing-concern-over-the-ever-shrinking-deben",
       "fileStem": "181-growing-concern-over-the-ever-shrinking-deben",
       "order": 94,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 181
     },
@@ -1140,7 +1046,6 @@
       "slug": "180-quirky-square-dancing-publishing",
       "fileStem": "180-quirky-square-dancing-publishing",
       "order": 95,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 180
     },
@@ -1152,7 +1057,6 @@
       "slug": "179-remember-that-time-i-took-a-day-off-me-neither",
       "fileStem": "179-remember-that-time-i-took-a-day-off-me-neither",
       "order": 96,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 179
     },
@@ -1164,7 +1068,6 @@
       "slug": "178-raising-samuel-for-fun-and-prophet",
       "fileStem": "178-raising-samuel-for-fun-and-prophet",
       "order": 97,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 178
     },
@@ -1176,7 +1079,6 @@
       "slug": "177-is-david-falk-the-same-person-as-dr-falk",
       "fileStem": "177-is-david-falk-the-same-person-as-dr-falk",
       "order": 98,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 177
     },
@@ -1188,7 +1090,6 @@
       "slug": "176-the-people-groups-of-you-tube",
       "fileStem": "176-the-people-groups-of-you-tube",
       "order": 99,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 176
     },
@@ -1200,7 +1101,6 @@
       "slug": "175-meta-the-meta-meta-responses",
       "fileStem": "175-meta-the-meta-meta-responses",
       "order": 100,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 175
     },
@@ -1212,7 +1112,6 @@
       "slug": "174-the-shroud-with-the-x-ray-eyes",
       "fileStem": "174-the-shroud-with-the-x-ray-eyes",
       "order": 101,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 174
     },
@@ -1224,7 +1123,6 @@
       "slug": "173-i-never-said-she-stole-my-money",
       "fileStem": "173-i-never-said-she-stole-my-money",
       "order": 102,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 173
     },
@@ -1236,7 +1134,6 @@
       "slug": "172-a-marathon-of-14000-subs",
       "fileStem": "172-a-marathon-of-14000-subs",
       "order": 103,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 172
     },
@@ -1248,7 +1145,6 @@
       "slug": "171-a-census-of-every-conjecture",
       "fileStem": "171-a-census-of-every-conjecture",
       "order": 104,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 171
     },
@@ -1260,7 +1156,6 @@
       "slug": "170-the-foundation-of-all-deposits",
       "fileStem": "170-the-foundation-of-all-deposits",
       "order": 105,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 170
     },
@@ -1272,7 +1167,6 @@
       "slug": "169-your-local-ski-resort-cannot-be-the-real-mount-sinai",
       "fileStem": "169-your-local-ski-resort-cannot-be-the-real-mount-sinai",
       "order": 106,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 169
     },
@@ -1284,7 +1178,6 @@
       "slug": "168-funky-groovy-trendy-ramesses-ii",
       "fileStem": "168-funky-groovy-trendy-ramesses-ii",
       "order": 107,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 168
     },
@@ -1296,7 +1189,6 @@
       "slug": "167-super-expensive-egyptian-ritual-practice",
       "fileStem": "167-super-expensive-egyptian-ritual-practice",
       "order": 108,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 167
     },
@@ -1308,7 +1200,6 @@
       "slug": "166-have-nothing-to-do-with-those-spirally-galaxies",
       "fileStem": "166-have-nothing-to-do-with-those-spirally-galaxies",
       "order": 109,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 166
     },
@@ -1320,7 +1211,6 @@
       "slug": "165-the-credible-falk-always-checks-the-sources",
       "fileStem": "165-the-credible-falk-always-checks-the-sources",
       "order": 110,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 165
     },
@@ -1332,7 +1222,6 @@
       "slug": "164-is-dr-falk-the-biblical-david",
       "fileStem": "164-is-dr-falk-the-biblical-david",
       "order": 111,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 164
     },
@@ -1344,7 +1233,6 @@
       "slug": "dr-falk-plays-assassin-s-creed-origins-part-11",
       "fileStem": "dr-falk-plays-assassin-s-creed-origins-part-11",
       "order": 112,
-      "lifecycle": "included",
       "transcriptPolicy": "expected"
     },
     {
@@ -1355,7 +1243,6 @@
       "slug": "163-succeeding-at-failed-questions",
       "fileStem": "163-succeeding-at-failed-questions",
       "order": 113,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 163
     },
@@ -1367,7 +1254,6 @@
       "slug": "dr-falk-plays-assassin-s-creed-origins-part-10",
       "fileStem": "dr-falk-plays-assassin-s-creed-origins-part-10",
       "order": 114,
-      "lifecycle": "included",
       "transcriptPolicy": "expected"
     },
     {
@@ -1378,7 +1264,6 @@
       "slug": "162-king-for-a-day",
       "fileStem": "162-king-for-a-day",
       "order": 115,
-      "lifecycle": "included",
       "transcriptPolicy": "known-unavailable",
       "episodeNumber": 162
     },
@@ -1390,7 +1275,6 @@
       "slug": "dr-falk-plays-assassin-s-creed-origins-part-9",
       "fileStem": "dr-falk-plays-assassin-s-creed-origins-part-9",
       "order": 116,
-      "lifecycle": "included",
       "transcriptPolicy": "expected"
     },
     {
@@ -1401,7 +1285,6 @@
       "slug": "161-all-the-second-born-questions",
       "fileStem": "161-all-the-second-born-questions",
       "order": 117,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 161
     },
@@ -1413,7 +1296,6 @@
       "slug": "dr-falk-plays-assassin-s-creed-origins-part-8",
       "fileStem": "dr-falk-plays-assassin-s-creed-origins-part-8",
       "order": 118,
-      "lifecycle": "included",
       "transcriptPolicy": "expected"
     },
     {
@@ -1424,7 +1306,6 @@
       "slug": "160-the-synchronicity-of-13000-subs",
       "fileStem": "160-the-synchronicity-of-13000-subs",
       "order": 119,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 160
     },
@@ -1436,7 +1317,6 @@
       "slug": "dr-falk-plays-assassin-s-creed-origins-part-7",
       "fileStem": "dr-falk-plays-assassin-s-creed-origins-part-7",
       "order": 120,
-      "lifecycle": "included",
       "transcriptPolicy": "expected"
     },
     {
@@ -1447,7 +1327,6 @@
       "slug": "159-a-flood-of-questions",
       "fileStem": "159-a-flood-of-questions",
       "order": 121,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 159
     },
@@ -1459,7 +1338,6 @@
       "slug": "dr-falk-plays-assassin-s-creed-origins-part-6",
       "fileStem": "dr-falk-plays-assassin-s-creed-origins-part-6",
       "order": 122,
-      "lifecycle": "included",
       "transcriptPolicy": "expected"
     },
     {
@@ -1470,7 +1348,6 @@
       "slug": "158-biblically-accurate-harsh-language",
       "fileStem": "158-biblically-accurate-harsh-language",
       "order": 123,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 158
     },
@@ -1482,7 +1359,6 @@
       "slug": "dr-falk-plays-assassin-s-creed-origins-part-5",
       "fileStem": "dr-falk-plays-assassin-s-creed-origins-part-5",
       "order": 124,
-      "lifecycle": "included",
       "transcriptPolicy": "expected"
     },
     {
@@ -1493,7 +1369,6 @@
       "slug": "157-the-no-true-canadian-fallacy",
       "fileStem": "157-the-no-true-canadian-fallacy",
       "order": 125,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 157
     },
@@ -1505,7 +1380,6 @@
       "slug": "dr-falk-plays-assassin-s-creed-origins-part-4",
       "fileStem": "dr-falk-plays-assassin-s-creed-origins-part-4",
       "order": 126,
-      "lifecycle": "included",
       "transcriptPolicy": "expected"
     },
     {
@@ -1516,7 +1390,6 @@
       "slug": "156-the-pursuasion-dictionary",
       "fileStem": "156-the-pursuasion-dictionary",
       "order": 127,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 156
     },
@@ -1528,7 +1401,6 @@
       "slug": "dr-falk-plays-assassin-s-creed-origins-part-3",
       "fileStem": "dr-falk-plays-assassin-s-creed-origins-part-3",
       "order": 128,
-      "lifecycle": "included",
       "transcriptPolicy": "expected"
     },
     {
@@ -1539,7 +1411,6 @@
       "slug": "155-the-tyranny-of-hypocrisy",
       "fileStem": "155-the-tyranny-of-hypocrisy",
       "order": 129,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 155
     },
@@ -1551,7 +1422,6 @@
       "slug": "dr-falk-plays-assassin-s-creed-origins-part-2",
       "fileStem": "dr-falk-plays-assassin-s-creed-origins-part-2",
       "order": 130,
-      "lifecycle": "included",
       "transcriptPolicy": "expected"
     },
     {
@@ -1562,7 +1432,6 @@
       "slug": "154-a-brief-question-of-logic",
       "fileStem": "154-a-brief-question-of-logic",
       "order": 131,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 154
     },
@@ -1574,7 +1443,6 @@
       "slug": "dr-falk-plays-assassin-s-creed-origins-part-1",
       "fileStem": "dr-falk-plays-assassin-s-creed-origins-part-1",
       "order": 132,
-      "lifecycle": "included",
       "transcriptPolicy": "expected"
     },
     {
@@ -1585,7 +1453,6 @@
       "slug": "153-philosophy-is-a-walk-on-a-slippery-rock",
       "fileStem": "153-philosophy-is-a-walk-on-a-slippery-rock",
       "order": 133,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 153
     },
@@ -1597,7 +1464,6 @@
       "slug": "152-good-friday-2024",
       "fileStem": "152-good-friday-2024",
       "order": 134,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 152
     },
@@ -1609,7 +1475,6 @@
       "slug": "151-nine-myths-about-spam",
       "fileStem": "151-nine-myths-about-spam",
       "order": 135,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 151
     },
@@ -1621,7 +1486,6 @@
       "slug": "150-not-so-glorious-glass-fish",
       "fileStem": "150-not-so-glorious-glass-fish",
       "order": 136,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 150
     },
@@ -1633,7 +1497,6 @@
       "slug": "149-univocality-and-naive-literalism-sitting-in-a-tree",
       "fileStem": "149-univocality-and-naive-literalism-sitting-in-a-tree",
       "order": 137,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 149
     },
@@ -1645,7 +1508,6 @@
       "slug": "148-christian-marriage-meant-to-endure",
       "fileStem": "148-christian-marriage-meant-to-endure",
       "order": 138,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 148
     },
@@ -1657,7 +1519,6 @@
       "slug": "147-celebrating-12000-subs-we-hope",
       "fileStem": "147-celebrating-12000-subs-we-hope",
       "order": 139,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 147
     },
@@ -1669,7 +1530,6 @@
       "slug": "146-an-evening-with-david-falk-whatcha-expecting",
       "fileStem": "146-an-evening-with-david-falk-whatcha-expecting",
       "order": 140,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 146
     },
@@ -1681,7 +1541,6 @@
       "slug": "145-questions-at-8-pm-pst",
       "fileStem": "145-questions-at-8-pm-pst",
       "order": 141,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 145
     },
@@ -1693,7 +1552,6 @@
       "slug": "144-stampede-of-sacred-cows",
       "fileStem": "144-stampede-of-sacred-cows",
       "order": 142,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 144
     },
@@ -1705,7 +1563,6 @@
       "slug": "143-something-overripe-in-the-state-of-the-answers",
       "fileStem": "143-something-overripe-in-the-state-of-the-answers",
       "order": 143,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 143
     },
@@ -1717,7 +1574,6 @@
       "slug": "142-think-about-the-questions",
       "fileStem": "142-think-about-the-questions",
       "order": 144,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 142
     },
@@ -1729,7 +1585,6 @@
       "slug": "141-the-sweet-incense-of-an-answered-question",
       "fileStem": "141-the-sweet-incense-of-an-answered-question",
       "order": 145,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 141
     },
@@ -1741,7 +1596,6 @@
       "slug": "140-popcorn-or-curse-amulet-which-is-saltier",
       "fileStem": "140-popcorn-or-curse-amulet-which-is-saltier",
       "order": 146,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 140
     },
@@ -1753,7 +1607,6 @@
       "slug": "139-mr-ec-wishes-you-a-happy-2024",
       "fileStem": "139-mr-ec-wishes-you-a-happy-2024",
       "order": 147,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 139
     },
@@ -1765,7 +1618,6 @@
       "slug": "138-st-nick-is-watching-you",
       "fileStem": "138-st-nick-is-watching-you",
       "order": 148,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 138
     },
@@ -1777,7 +1629,6 @@
       "slug": "137-365-2422-days-of-questions",
       "fileStem": "137-365-2422-days-of-questions",
       "order": 149,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 137
     },
@@ -1789,7 +1640,6 @@
       "slug": "136-extreme-old-questions",
       "fileStem": "136-extreme-old-questions",
       "order": 150,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 136
     },
@@ -1801,7 +1651,6 @@
       "slug": "135-full-time-full-time",
       "fileStem": "135-full-time-full-time",
       "order": 151,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 135
     },
@@ -1813,7 +1662,6 @@
       "slug": "134-home-sweet-home",
       "fileStem": "134-home-sweet-home",
       "order": 152,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 134
     },
@@ -1825,7 +1673,6 @@
       "slug": "133-the-ets-d-and-d-special-live-stream",
       "fileStem": "133-the-ets-d-and-d-special-live-stream",
       "order": 153,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 133
     },
@@ -1837,7 +1684,6 @@
       "slug": "132-the-questions-are-genuine-but-not-in-the-way-you-think",
       "fileStem": "132-the-questions-are-genuine-but-not-in-the-way-you-think",
       "order": 154,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 132
     },
@@ -1849,7 +1695,6 @@
       "slug": "131-very-spooky-scary-answers",
       "fileStem": "131-very-spooky-scary-answers",
       "order": 155,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 131
     },
@@ -1861,7 +1706,6 @@
       "slug": "130-million-dollar-questions",
       "fileStem": "130-million-dollar-questions",
       "order": 156,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 130
     },
@@ -1873,7 +1717,6 @@
       "slug": "129-anything-but-ammonites",
       "fileStem": "129-anything-but-ammonites",
       "order": 157,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 129
     },
@@ -1885,7 +1728,6 @@
       "slug": "128-knowledge-gaps-filled-fast",
       "fileStem": "128-knowledge-gaps-filled-fast",
       "order": 158,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 128
     },
@@ -1897,7 +1739,6 @@
       "slug": "127-pyramid-of-the-puppet-pharaohs",
       "fileStem": "127-pyramid-of-the-puppet-pharaohs",
       "order": 159,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 127
     },
@@ -1909,7 +1750,6 @@
       "slug": "126-apocalypse-of-the-sock-puppet",
       "fileStem": "126-apocalypse-of-the-sock-puppet",
       "order": 160,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 126
     },
@@ -1921,7 +1761,6 @@
       "slug": "125-in-the-beginning-nope-let-s-question-instead",
       "fileStem": "125-in-the-beginning-nope-let-s-question-instead",
       "order": 161,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 125
     },
@@ -1933,7 +1772,6 @@
       "slug": "124-questioning-book-learning",
       "fileStem": "124-questioning-book-learning",
       "order": 162,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 124
     },
@@ -1945,7 +1783,6 @@
       "slug": "123-biblical-archaeology-a-game-any-clown-can-play",
       "fileStem": "123-biblical-archaeology-a-game-any-clown-can-play",
       "order": 163,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 123
     },
@@ -1957,7 +1794,6 @@
       "slug": "122-myths-the-academic-world-and-questions",
       "fileStem": "122-myths-the-academic-world-and-questions",
       "order": 164,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 122
     },
@@ -1969,7 +1805,6 @@
       "slug": "121-big-questions-and-puny-gods",
       "fileStem": "121-big-questions-and-puny-gods",
       "order": 165,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 121
     },
@@ -1981,7 +1816,6 @@
       "slug": "120-what-are-you-going-to-do-with-your-question",
       "fileStem": "120-what-are-you-going-to-do-with-your-question",
       "order": 166,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 120
     },
@@ -1993,7 +1827,6 @@
       "slug": "119-dinosaur-hippo-question-monster",
       "fileStem": "119-dinosaur-hippo-question-monster",
       "order": 167,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 119
     },
@@ -2005,7 +1838,6 @@
       "slug": "118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks",
       "fileStem": "118-yeah-even-with-good-questions-the-egyptian-afterlife-still-sucks",
       "order": 168,
-      "lifecycle": "included",
       "transcriptPolicy": "known-unavailable",
       "episodeNumber": 118
     },
@@ -2017,7 +1849,6 @@
       "slug": "117-celebrating-10000-subs",
       "fileStem": "117-celebrating-10000-subs",
       "order": 169,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 117
     },
@@ -2029,7 +1860,6 @@
       "slug": "116-anachronistic-questions-brought-direct-to-you",
       "fileStem": "116-anachronistic-questions-brought-direct-to-you",
       "order": 170,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 116
     },
@@ -2041,7 +1871,6 @@
       "slug": "115-the-magic-of-a-good-question",
       "fileStem": "115-the-magic-of-a-good-question",
       "order": 171,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 115
     },
@@ -2053,7 +1882,6 @@
       "slug": "114-sugary-question-goodness",
       "fileStem": "114-sugary-question-goodness",
       "order": 172,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 114
     },
@@ -2065,7 +1893,6 @@
       "slug": "113-questioning-the-lore",
       "fileStem": "113-questioning-the-lore",
       "order": 173,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 113
     },
@@ -2077,7 +1904,6 @@
       "slug": "112-questions-are-the-reward",
       "fileStem": "112-questions-are-the-reward",
       "order": 174,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 112
     },
@@ -2089,7 +1915,6 @@
       "slug": "111-questions-in-the-garden",
       "fileStem": "111-questions-in-the-garden",
       "order": 175,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 111
     },
@@ -2101,7 +1926,6 @@
       "slug": "110-statues-in-the-mist",
       "fileStem": "110-statues-in-the-mist",
       "order": 176,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 110
     },
@@ -2113,7 +1937,6 @@
       "slug": "109-a-revised-view-of-pseudoscience",
       "fileStem": "109-a-revised-view-of-pseudoscience",
       "order": 177,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 109
     },
@@ -2125,7 +1948,6 @@
       "slug": "108-the-many-views-of-heck",
       "fileStem": "108-the-many-views-of-heck",
       "order": 178,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 108
     },
@@ -2137,7 +1959,6 @@
       "slug": "107-a-hot-mess-of-ebal-amulet-epigraphy",
       "fileStem": "107-a-hot-mess-of-ebal-amulet-epigraphy",
       "order": 179,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 107
     },
@@ -2149,7 +1970,6 @@
       "slug": "106-it-may-be-a-problem-if-mr-ec-reads-the-bible-more-than-you",
       "fileStem": "106-it-may-be-a-problem-if-mr-ec-reads-the-bible-more-than-you",
       "order": 180,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 106
     },
@@ -2161,7 +1981,6 @@
       "slug": "105-happy-birthday-three-years-of-ancient-egypt-and-the-bible",
       "fileStem": "105-happy-birthday-three-years-of-ancient-egypt-and-the-bible",
       "order": 181,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 105
     },
@@ -2173,7 +1992,6 @@
       "slug": "104-striving-towards-an-inerrant-live-stream",
       "fileStem": "104-striving-towards-an-inerrant-live-stream",
       "order": 182,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 104
     },
@@ -2185,7 +2003,6 @@
       "slug": "103-six-reasons-to-watch-this-live-stream",
       "fileStem": "103-six-reasons-to-watch-this-live-stream",
       "order": 183,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 103
     },
@@ -2197,7 +2014,6 @@
       "slug": "102-ph-d-in-ot-or-a-cognate-field-a-false-dilemma",
       "fileStem": "102-ph-d-in-ot-or-a-cognate-field-a-false-dilemma",
       "order": 184,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 102
     },
@@ -2209,7 +2025,6 @@
       "slug": "101-god-will-provide-a-lamb",
       "fileStem": "101-god-will-provide-a-lamb",
       "order": 185,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 101
     },
@@ -2221,7 +2036,6 @@
       "slug": "100-celebration-could-be",
       "fileStem": "100-celebration-could-be",
       "order": 186,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 100
     },
@@ -2233,7 +2047,6 @@
       "slug": "99-9000-at-99",
       "fileStem": "99-9000-at-99",
       "order": 187,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 99
     },
@@ -2245,7 +2058,6 @@
       "slug": "98-all-pharaohs-are-kings-but-not-all-kings-are-pharaohs",
       "fileStem": "98-all-pharaohs-are-kings-but-not-all-kings-are-pharaohs",
       "order": 188,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 98
     },
@@ -2257,7 +2069,6 @@
       "slug": "97-certified-genuine-by-the-iaa",
       "fileStem": "97-certified-genuine-by-the-iaa",
       "order": 189,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 97
     },
@@ -2269,7 +2080,6 @@
       "slug": "96-like-a-goodwill-shop-exploded",
       "fileStem": "96-like-a-goodwill-shop-exploded",
       "order": 190,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 96
     },
@@ -2281,7 +2091,6 @@
       "slug": "95-egyptian-myths-interacting-with-our-live-streams",
       "fileStem": "95-egyptian-myths-interacting-with-our-live-streams",
       "order": 191,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 95
     },
@@ -2293,7 +2102,6 @@
       "slug": "94-a-divinely-inspired-live-stream-or-so-we-can-dream",
       "fileStem": "94-a-divinely-inspired-live-stream-or-so-we-can-dream",
       "order": 192,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 94
     },
@@ -2305,7 +2113,6 @@
       "slug": "93-praying-for-the-people-of-turkey",
       "fileStem": "93-praying-for-the-people-of-turkey",
       "order": 193,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 93
     },
@@ -2317,7 +2124,6 @@
       "slug": "92-ten-myths-about-the-good-doctor",
       "fileStem": "92-ten-myths-about-the-good-doctor",
       "order": 194,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 92
     },
@@ -2329,7 +2135,6 @@
       "slug": "91-take-two-cuneiform-tablets-and-call-me-in-the-morning",
       "fileStem": "91-take-two-cuneiform-tablets-and-call-me-in-the-morning",
       "order": 195,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 91
     },
@@ -2341,7 +2146,6 @@
       "slug": "90-open-round-table-discussing-the-amorite-tablets",
       "fileStem": "90-open-round-table-discussing-the-amorite-tablets",
       "order": 196,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 90
     },
@@ -2353,7 +2157,6 @@
       "slug": "89-osiris-god-of-the-dead-he-s-dead-dead-dead-as-a-door-knocker",
       "fileStem": "89-osiris-god-of-the-dead-he-s-dead-dead-dead-as-a-door-knocker",
       "order": 197,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 89
     },
@@ -2365,7 +2168,6 @@
       "slug": "88-popcorn-is-at-the-gates",
       "fileStem": "88-popcorn-is-at-the-gates",
       "order": 198,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 88
     },
@@ -2377,7 +2179,6 @@
       "slug": "87-8000-subs-further-and-farther-than-we-ever-thought",
       "fileStem": "87-8000-subs-further-and-farther-than-we-ever-thought",
       "order": 199,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 87
     },
@@ -2389,7 +2190,6 @@
       "slug": "86-2022-ushering-out-the-year-of-the-dead-hard-drive",
       "fileStem": "86-2022-ushering-out-the-year-of-the-dead-hard-drive",
       "order": 200,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 86
     },
@@ -2401,7 +2201,6 @@
       "slug": "85-st-nicholas-vs-arius-the-cage-match-this-time-it-s-theological",
       "fileStem": "85-st-nicholas-vs-arius-the-cage-match-this-time-it-s-theological",
       "order": 201,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 85
     },
@@ -2413,7 +2212,6 @@
       "slug": "84-and-now-back-to-our-regularly-scheduled-program",
       "fileStem": "84-and-now-back-to-our-regularly-scheduled-program",
       "order": 202,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 84
     },
@@ -2425,7 +2223,6 @@
       "slug": "83-now-is-the-winter-of-our-discontent",
       "fileStem": "83-now-is-the-winter-of-our-discontent",
       "order": 203,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 83
     },
@@ -2437,7 +2234,6 @@
       "slug": "82-the-censors-are-coming-for-you",
       "fileStem": "82-the-censors-are-coming-for-you",
       "order": 204,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 82
     },
@@ -2449,7 +2245,6 @@
       "slug": "81-happy-thanksgiving-weekend",
       "fileStem": "81-happy-thanksgiving-weekend",
       "order": 205,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 81
     },
@@ -2461,7 +2256,6 @@
       "slug": "80-drs-falk-and-kennedy-debate-after-party",
       "fileStem": "80-drs-falk-and-kennedy-debate-after-party",
       "order": 206,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 80
     },
@@ -2473,7 +2267,6 @@
       "slug": "79-another-vague-cleopatra-tomb-sighting",
       "fileStem": "79-another-vague-cleopatra-tomb-sighting",
       "order": 207,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 79
     },
@@ -2485,7 +2278,6 @@
       "slug": "78-lest-we-forget",
       "fileStem": "78-lest-we-forget",
       "order": 208,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 78
     },
@@ -2497,7 +2289,6 @@
       "slug": "77-well-it-happened-open-room-special",
       "fileStem": "77-well-it-happened-open-room-special",
       "order": 209,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 77
     },
@@ -2509,7 +2300,6 @@
       "slug": "76-100-years-of-king-tut",
       "fileStem": "76-100-years-of-king-tut",
       "order": 210,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 76
     },
@@ -2521,7 +2311,6 @@
       "slug": "75-halloween-and-other-obscure-christian-festivals",
       "fileStem": "75-halloween-and-other-obscure-christian-festivals",
       "order": 211,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 75
     },
@@ -2533,7 +2322,6 @@
       "slug": "74-who-are-you-what-do-you-want",
       "fileStem": "74-who-are-you-what-do-you-want",
       "order": 212,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 74
     },
@@ -2545,7 +2333,6 @@
       "slug": "73-when-archaeology-gets-cheesy",
       "fileStem": "73-when-archaeology-gets-cheesy",
       "order": 213,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 73
     },
@@ -2557,7 +2344,6 @@
       "slug": "72-the-origin-of-all-knowledge",
       "fileStem": "72-the-origin-of-all-knowledge",
       "order": 214,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 72
     },
@@ -2569,7 +2355,6 @@
       "slug": "71-the-first-of-octember",
       "fileStem": "71-the-first-of-octember",
       "order": 215,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 71
     },
@@ -2581,7 +2366,6 @@
       "slug": "70-for-those-in-the-know",
       "fileStem": "70-for-those-in-the-know",
       "order": 216,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 70
     },
@@ -2593,7 +2377,6 @@
       "slug": "69-they-might-be-giants",
       "fileStem": "69-they-might-be-giants",
       "order": 217,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 69
     },
@@ -2605,7 +2388,6 @@
       "slug": "68-uncultured-as-a-philistine",
       "fileStem": "68-uncultured-as-a-philistine",
       "order": 218,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 68
     },
@@ -2617,7 +2399,6 @@
       "slug": "67-ignorance-of-the-incredulously-fallacious",
       "fileStem": "67-ignorance-of-the-incredulously-fallacious",
       "order": 219,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 67
     },
@@ -2629,7 +2410,6 @@
       "slug": "66-osiris-vampires-and-other-undead-playas",
       "fileStem": "66-osiris-vampires-and-other-undead-playas",
       "order": 220,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 66
     },
@@ -2641,7 +2421,6 @@
       "slug": "65-the-storage-city-of-popcorn",
       "fileStem": "65-the-storage-city-of-popcorn",
       "order": 221,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 65
     },
@@ -2653,7 +2432,6 @@
       "slug": "64-a-flock-of-horus-birds",
       "fileStem": "64-a-flock-of-horus-birds",
       "order": 222,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 64
     },
@@ -2665,7 +2443,6 @@
       "slug": "63-wash-and-wear-charioteer-gear",
       "fileStem": "63-wash-and-wear-charioteer-gear",
       "order": 223,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 63
     },
@@ -2677,7 +2454,6 @@
       "slug": "62-kernels-of-truth",
       "fileStem": "62-kernels-of-truth",
       "order": 224,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 62
     },
@@ -2689,7 +2465,6 @@
       "slug": "61-understanding-hell-there-will-be-a-test",
       "fileStem": "61-understanding-hell-there-will-be-a-test",
       "order": 225,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 61
     },
@@ -2701,7 +2476,6 @@
       "slug": "60-early-alphabetic-inscriptions-in-funnel-cakes",
       "fileStem": "60-early-alphabetic-inscriptions-in-funnel-cakes",
       "order": 226,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 60
     },
@@ -2713,7 +2487,6 @@
       "slug": "59-no-space-like-home",
       "fileStem": "59-no-space-like-home",
       "order": 227,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 59
     },
@@ -2725,7 +2498,6 @@
       "slug": "58-is-like-the-luckiest-number-ever",
       "fileStem": "58-is-like-the-luckiest-number-ever",
       "order": 228,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 58
     },
@@ -2737,7 +2509,6 @@
       "slug": "57-this-business-is-our-fifty-seven",
       "fileStem": "57-this-business-is-our-fifty-seven",
       "order": 229,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 57
     },
@@ -2749,7 +2520,6 @@
       "slug": "56-celebrating-like-a-statistician-6000-10-subs",
       "fileStem": "56-celebrating-like-a-statistician-6000-10-subs",
       "order": 230,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 56
     },
@@ -2761,7 +2531,6 @@
       "slug": "55-beastie-under-the-hood",
       "fileStem": "55-beastie-under-the-hood",
       "order": 231,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 55
     },
@@ -2773,7 +2542,6 @@
       "slug": "54-amun-re-dumps-amonet",
       "fileStem": "54-amun-re-dumps-amonet",
       "order": 232,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 54
     },
@@ -2785,7 +2553,6 @@
       "slug": "53-harmony-and-discord",
       "fileStem": "53-harmony-and-discord",
       "order": 233,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 53
     },
@@ -2797,7 +2564,6 @@
       "slug": "52-one-year-streaming-we-can-t-believe-it-either",
       "fileStem": "52-one-year-streaming-we-can-t-believe-it-either",
       "order": 234,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 52
     },
@@ -2809,7 +2575,6 @@
       "slug": "51-manna-machines-over-area-51",
       "fileStem": "51-manna-machines-over-area-51",
       "order": 235,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 51
     },
@@ -2821,7 +2586,6 @@
       "slug": "50-terminator-edition",
       "fileStem": "50-terminator-edition",
       "order": 236,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 50
     },
@@ -2833,7 +2597,6 @@
       "slug": "49-counting-the-omer",
       "fileStem": "49-counting-the-omer",
       "order": 237,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 49
     },
@@ -2845,7 +2608,6 @@
       "slug": "48-good-friday-orthodox-style",
       "fileStem": "48-good-friday-orthodox-style",
       "order": 238,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 48
     },
@@ -2857,7 +2619,6 @@
       "slug": "47-passover-2022",
       "fileStem": "47-passover-2022",
       "order": 239,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 47
     },
@@ -2869,7 +2630,6 @@
       "slug": "46-god-is-our-refuge-and-strength",
       "fileStem": "46-god-is-our-refuge-and-strength",
       "order": 240,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 46
     },
@@ -2881,7 +2641,6 @@
       "slug": "45-amulets-and-rumors-of-amulets",
       "fileStem": "45-amulets-and-rumors-of-amulets",
       "order": 241,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 45
     },
@@ -2893,7 +2652,6 @@
       "slug": "44-voted-most-likely-to-become-an-atheist-by-atheists",
       "fileStem": "44-voted-most-likely-to-become-an-atheist-by-atheists",
       "order": 242,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 44
     },
@@ -2905,7 +2663,6 @@
       "slug": "43-discovering-the-rediscovered-exodus",
       "fileStem": "43-discovering-the-rediscovered-exodus",
       "order": 243,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 43
     },
@@ -2917,7 +2674,6 @@
       "slug": "42-answer-to-the-ultimate-question-of-life-the-universe-and-everything",
       "fileStem": "42-answer-to-the-ultimate-question-of-life-the-universe-and-everything",
       "order": 244,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 42
     },
@@ -2929,7 +2685,6 @@
       "slug": "41-celebrating-5000-subs",
       "fileStem": "41-celebrating-5000-subs",
       "order": 245,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 41
     },
@@ -2941,7 +2696,6 @@
       "slug": "40-the-indefinite-extended-idiom",
       "fileStem": "40-the-indefinite-extended-idiom",
       "order": 246,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 40
     },
@@ -2953,7 +2707,6 @@
       "slug": "39-master-of-the-sock-puppets",
       "fileStem": "39-master-of-the-sock-puppets",
       "order": 247,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 39
     },
@@ -2965,7 +2718,6 @@
       "slug": "38-a-doctorate-for-every-bunny",
       "fileStem": "38-a-doctorate-for-every-bunny",
       "order": 248,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 38
     },
@@ -2977,7 +2729,6 @@
       "slug": "37-normal-temp-before-mummification",
       "fileStem": "37-normal-temp-before-mummification",
       "order": 249,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 37
     },
@@ -2989,7 +2740,6 @@
       "slug": "36-sum-of-the-integers-of-the-beast",
       "fileStem": "36-sum-of-the-integers-of-the-beast",
       "order": 250,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 36
     },
@@ -3001,7 +2751,6 @@
       "slug": "35-pyramids-versus-tetrahedrons",
       "fileStem": "35-pyramids-versus-tetrahedrons",
       "order": 251,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 35
     },
@@ -3013,7 +2762,6 @@
       "slug": "34-nothing-keeps-a-sock-puppet-down-could-be",
       "fileStem": "34-nothing-keeps-a-sock-puppet-down-could-be",
       "order": 252,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 34
     },
@@ -3025,7 +2773,6 @@
       "slug": "33-twenty-twenty-too",
       "fileStem": "33-twenty-twenty-too",
       "order": 253,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 33
     },
@@ -3037,7 +2784,6 @@
       "slug": "32-last-stream-for-2021",
       "fileStem": "32-last-stream-for-2021",
       "order": 254,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 32
     },
@@ -3049,7 +2795,6 @@
       "slug": "31-twas-the-night-before-the-night-before-christmas",
       "fileStem": "31-twas-the-night-before-the-night-before-christmas",
       "order": 255,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 31
     },
@@ -3061,7 +2806,6 @@
       "slug": "30-full-moon-on-saturday",
       "fileStem": "30-full-moon-on-saturday",
       "order": 256,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 30
     },
@@ -3073,7 +2817,6 @@
       "slug": "29-a-copper-penny-for-your-thoughts",
       "fileStem": "29-a-copper-penny-for-your-thoughts",
       "order": 257,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 29
     },
@@ -3085,7 +2828,6 @@
       "slug": "28-the-popcorn-must-flow",
       "fileStem": "28-the-popcorn-must-flow",
       "order": 258,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 28
     },
@@ -3097,7 +2839,6 @@
       "slug": "27-number-of-new-testament-books",
       "fileStem": "27-number-of-new-testament-books",
       "order": 259,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 27
     },
@@ -3109,7 +2850,6 @@
       "slug": "26-i-can-t-believe-we-ve-been-doing-this-for-6-months",
       "fileStem": "26-i-can-t-believe-we-ve-been-doing-this-for-6-months",
       "order": 260,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 26
     },
@@ -3121,7 +2861,6 @@
       "slug": "25-the-canonical-age-for-levitical-priests",
       "fileStem": "25-the-canonical-age-for-levitical-priests",
       "order": 261,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 25
     },
@@ -3133,7 +2872,6 @@
       "slug": "24-the-24-thrones",
       "fileStem": "24-the-24-thrones",
       "order": 262,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 24
     },
@@ -3145,7 +2883,6 @@
       "slug": "23-the-23-enigma",
       "fileStem": "23-the-23-enigma",
       "order": 263,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 23
     },
@@ -3157,7 +2894,6 @@
       "slug": "22-the-catch-22-of-questions",
       "fileStem": "22-the-catch-22-of-questions",
       "order": 264,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 22
     },
@@ -3169,7 +2905,6 @@
       "slug": "21-the-weight-of-the-soul",
       "fileStem": "21-the-weight-of-the-soul",
       "order": 265,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 21
     },
@@ -3181,7 +2916,6 @@
       "slug": "20-what-s-your-twenty",
       "fileStem": "20-what-s-your-twenty",
       "order": 266,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 20
     },
@@ -3193,7 +2927,6 @@
       "slug": "19-the-first-of-octember",
       "fileStem": "19-the-first-of-octember",
       "order": 267,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 19
     },
@@ -3205,7 +2938,6 @@
       "slug": "18-for-the-good-life",
       "fileStem": "18-for-the-good-life",
       "order": 268,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 18
     },
@@ -3217,7 +2949,6 @@
       "slug": "17-back-to-prime-time",
       "fileStem": "17-back-to-prime-time",
       "order": 269,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 17
     },
@@ -3229,7 +2960,6 @@
       "slug": "16-questions-from-the-east",
       "fileStem": "16-questions-from-the-east",
       "order": 270,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 16
     },
@@ -3241,7 +2971,6 @@
       "slug": "15-and-other-taboo-jewish-numbers",
       "fileStem": "15-and-other-taboo-jewish-numbers",
       "order": 271,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 15
     },
@@ -3253,7 +2982,6 @@
       "slug": "14-fourteen-pieces-of-osiris",
       "fileStem": "14-fourteen-pieces-of-osiris",
       "order": 272,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 14
     },
@@ -3265,7 +2993,6 @@
       "slug": "13-triskaidekaphobia",
       "fileStem": "13-triskaidekaphobia",
       "order": 273,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 13
     },
@@ -3277,7 +3004,6 @@
       "slug": "12-the-quorum-of-the-twelve",
       "fileStem": "12-the-quorum-of-the-twelve",
       "order": 274,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 12
     },
@@ -3289,7 +3015,6 @@
       "slug": "11-questions-at-the-eleventh-hour",
       "fileStem": "11-questions-at-the-eleventh-hour",
       "order": 275,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 11
     },
@@ -3301,7 +3026,6 @@
       "slug": "10-a-tenth-portion",
       "fileStem": "10-a-tenth-portion",
       "order": 276,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 10
     },
@@ -3313,7 +3037,6 @@
       "slug": "9-the-nine-bows",
       "fileStem": "9-the-nine-bows",
       "order": 277,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 9
     },
@@ -3325,7 +3048,6 @@
       "slug": "8-questions-behind-the-eight-ball",
       "fileStem": "8-questions-behind-the-eight-ball",
       "order": 278,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 8
     },
@@ -3337,7 +3059,6 @@
       "slug": "7-seven-and-the-ragged-tiger",
       "fileStem": "7-seven-and-the-ragged-tiger",
       "order": 279,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 7
     },
@@ -3349,7 +3070,6 @@
       "slug": "6-all-of-this-has-happened-before",
       "fileStem": "6-all-of-this-has-happened-before",
       "order": 280,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 6
     },
@@ -3361,7 +3081,6 @@
       "slug": "5-five-and-even-more-questions",
       "fileStem": "5-five-and-even-more-questions",
       "order": 281,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 5
     },
@@ -3373,7 +3092,6 @@
       "slug": "4-the-more-bugs-stomped-the-more-appear",
       "fileStem": "4-the-more-bugs-stomped-the-more-appear",
       "order": 282,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 4
     },
@@ -3385,7 +3103,6 @@
       "slug": "3-thrice-the-bugs-thrice-the-charm",
       "fileStem": "3-thrice-the-bugs-thrice-the-charm",
       "order": 283,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 3
     },
@@ -3397,7 +3114,6 @@
       "slug": "2-bugs-bugs-and-fixes",
       "fileStem": "2-bugs-bugs-and-fixes",
       "order": 284,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 2
     },
@@ -3409,7 +3125,6 @@
       "slug": "1-the-debug-episode",
       "fileStem": "1-the-debug-episode",
       "order": 285,
-      "lifecycle": "included",
       "transcriptPolicy": "expected",
       "episodeNumber": 1
     }

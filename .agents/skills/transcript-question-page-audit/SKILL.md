@@ -26,7 +26,6 @@ Use these in order:
 1. Existing page: `docs/questions/<slug>-questions.md`
 2. Canonical identity and path: `src/channel/episodes.json` and `src/transcripts/manifest.json`
 3. Source transcript: `src/transcripts/txt/<fileStem>.txt`
-4. Stream routing projection: `src/live-stream-list.md`
 
 If an expected TXT is missing, validate the store and use direct acquisition only when authorized:
 
@@ -37,8 +36,7 @@ npm run fetch:transcript -- --video-id VIDEO_ID
 
 If the manifest is invalid, the TXT is missing, or acquisition reports no caption segments, stop for that page and report the blocker. Do not guess from the existing Markdown. Legacy JSON is optional historical evidence while retained, not a prerequisite or active source.
 
-Special-purpose pages may not match the source slug exactly. Resolve the source stream from page headings, links, README references, `src/live-stream-list.md`,
-or nearby transcript names.
+Special-purpose pages may not match the source slug exactly. Resolve the source stream from page headings, links, README references, `src/channel/episodes.json`, or nearby transcript names.
 
 ## Audit Workflow
 
@@ -51,7 +49,7 @@ Read the Markdown page first. Extract:
 - current question-row count
 - table shape and obvious link problems
 
-Use `src/live-stream-list.md` only to confirm uncertain title, slug, or video ID.
+Use `src/channel/episodes.json` to confirm uncertain title, slug, or video ID.
 
 Do not require legacy JSON or create tracked TSV diagnostics. The canonical TXT should answer page-scoped audit questions; put exceptional diagnostics under ignored `reports/`.
 

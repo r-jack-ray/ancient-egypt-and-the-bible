@@ -47,7 +47,6 @@
     {{ end }}
   </nav>
 
-  {{ if gt (len $questions) 0 }}
   {{ $expandedQuestions := where $questions "expanded_answer" "!=" nil }}
   <div class="index-toolbar">
     <label class="visually-hidden" for="episode-question-filter">Filter questions</label>
@@ -74,10 +73,5 @@
     </li>
     {{ end }}
   </ol>
-  {{ else }}
-  <div class="content-body table-wrap">
-    {{ .Content }}
-  </div>
-  {{ end }}
 </article>
 {{ end }}

@@ -14,10 +14,9 @@
     "test:search": "node --test tests/*.test.js",
     "test:typescript": "npm run clean && npm run build && node --test \"dist/**/*.test.js\"",
     "check": "npm run check:js && npm run check:site:static",
-    "check:functional": "npm run test:typescript && npm run check:transcript-store && npm run check:stream-index && npm run check:js && npm run check:question-tables && npm run check:site:static && npm run test:search",
+    "check:functional": "npm run test:typescript && npm run check:transcript-store && npm run check:js && npm run check:question-tables && npm run check:site:static && npm run test:search",
     "check:offline": "npm run check:functional && npm run check:no-legacy-json && git diff --exit-code && git diff --check",
     "check:js": "node --check scripts/Build-SearchIndex.mjs && node --check site/assets/js/search-core.js && node --check site/assets/js/search.js && node --check site/assets/js/site.js",
-    "check:stream-index": "tsx src/scripts/check-stream-index.ts",
     "check:transcript-store": "tsx src/scripts/check-transcript-store.ts",
     "check:no-legacy-json": "tsx src/scripts/check-no-legacy-json.ts",
     "fetch:livestreams": "tsx src/scripts/get-channel-video-links.ts",
@@ -36,7 +35,6 @@
     "serve:site": "npm run build:site-content && hugo server --source site --bind 127.0.0.1 --port 1314 --baseURL http://127.0.0.1:1314/ancient-egypt-and-the-bible/ --appendPort=false --disableFastRender"
   },
   "dependencies": {
-    "googleapis": "^173.0.0",
     "youtube-transcript-plus": "^2.0.0"
   },
   "devDependencies": {
@@ -44,9 +42,6 @@
     "minisearch": "^7.1.2",
     "tsx": "^4.23.1",
     "typescript": "^5.7.0"
-  },
-  "overrides": {
-    "gaxios": "^7.3.0"
   },
   "allowScripts": {
     "esbuild@0.28.1": true

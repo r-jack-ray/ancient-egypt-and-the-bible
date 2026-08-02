@@ -51,13 +51,13 @@ function compactDoc(row, index) {
 }
 
 function indexDoc(row, displayDoc, aliasIndex) {
-  const searchText = (row.search_text || [
+  const searchText = [
     row.episode_number,
     row.episode_title,
     row.question,
     row.short_answer,
     row.expanded_answer
-  ].join(" ")).toString().toLowerCase();
+  ].join(" ").toLowerCase();
 
   return {
     search_id: displayDoc.search_id,

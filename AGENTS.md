@@ -5,11 +5,10 @@
 This repository is a Questions & Answers reference archive for the Ancient Egypt and the Bible livestreams, not an application. The main source data and public reference pages live under `src/` and `docs/`.
 
 - `src/channel/episodes.json`: canonical archive membership, stable video IDs, titles, slugs, order, and `fileStem` values.
-- `src/live-stream-list.md`: deterministic Hugo compatibility projection with YouTube links and transcript slugs.
 - `src/transcripts/manifest.json`: canonical TXT payload facts and video-ID-to-file mapping.
 - `src/transcripts/txt/`: canonical transcript payloads, one indexed/timestamped segment per line, and the default curation surface.
 - `docs/questions/`: canonical curated GitHub-readable Q&A reference pages with timestamp links, short answers, and filled transcript-grounded expanded answers.
-- `site/`: Hugo compatibility site. `site/content/questions/_index.md` is handwritten and tracked; the other question Markdown files are generated mirrors, ignored by Git, and must not be edited or committed.
+- `site/`: Hugo compatibility site. `site/content/questions/_index.md` is handwritten and tracked; the other question Markdown files are generated front-matter stubs, ignored by Git, and must not be edited or committed.
 - `tests/`: Node test coverage for the generated search index and client-side search behavior.
 - `src/scripts/`: Node 22 + strict TypeScript inventory, transcript acquisition, reporting, site generation, and validation CLIs.
 - `reports/`: ignored generated reports, validation output, smoke-test output, and triage artifacts.
@@ -25,7 +24,6 @@ Transcript curation has no compile step. The Hugo/search surfaces do have build 
 rg "search term" src/transcripts docs/questions
 Get-Content docs/questions/208-super-chat-questions.md
 npm run check:transcript-store
-npm run check:stream-index
 npm run fetch:livestreams
 npm run fetch:transcripts -- --dry-run
 npm run build:site-content
@@ -38,7 +36,7 @@ git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible status --short
 
 Use `rg` for fast repository searches. When editing Markdown, inspect the rendered structure manually in GitHub or a Markdown preview. New transcript payloads are produced directly as TXT by the TypeScript pipeline, not hand-edited or routed through new JSON.
 
-Treat `docs/questions/*.md` as the only authoritative Markdown source for episode question pages. `npm run build:site-content` recreates every `site/content/questions/*.md` mirror except `_index.md`; do not hand-edit or stage those generated mirrors. If generation makes Git report changes under `site/content/questions/`, treat that as ignore, tracking, or generator policy drift and investigate before committing.
+Treat `docs/questions/*.md` as the only authoritative Markdown source for episode question pages. `npm run build:site-content` recreates every `site/content/questions/*.md` front-matter stub except `_index.md`; do not hand-edit or stage those generated stubs. If generation makes Git report changes under `site/content/questions/`, treat that as ignore, tracking, or generator policy drift and investigate before committing.
 
 Runner availability notes for Codex desktop sessions:
 
@@ -77,7 +75,7 @@ Timestamp links should point directly to YouTube with `?t=`. For links intended 
 
 ## Testing Guidelines
 
-Run `npm test` for the JavaScript search suite and compiled TypeScript tests, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `npm run check:transcript-store` and `npm run check:stream-index` for acquisition changes. Use `npm run check:site:static` for source-to-site compatibility validation; it generates the ignored question mirrors before checking them. After a production-baseURL Hugo render, use `npm run check:site:rendered -- --public-dir site/public --expected-base-url URL` to check complete rendered metadata, indexability, JSON-LD parsing, sitemap coverage, and internal links. For curated Q&A pages, compare short and expanded answers against the manifest-owned TXT transcript.
+Run `npm test` for the JavaScript search suite and compiled TypeScript tests, and run `npm run check:js` when JavaScript or the search-index builder changes. Use `npm run check:transcript-store` for acquisition changes; it validates canonical archive state and detects both inventory and transcript transactions. Use `npm run check:site:static` for source-to-site compatibility validation; it generates the ignored question stubs before checking them. After a production-baseURL Hugo render, use `npm run check:site:rendered -- --public-dir site/public --expected-base-url URL` to check complete rendered metadata, indexability, JSON-LD parsing, sitemap coverage, and internal links. For curated Q&A pages, compare short and expanded answers against the manifest-owned TXT transcript.
 
 ## Commit & Pull Request Guidelines
 

@@ -1,10 +1,14 @@
 import assert from "node:assert/strict";
+import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { test } from "node:test";
 
 import { parseArgs } from "../scripts/check-question-tables.js";
 import {
   analyzeQuestionTableText,
   questionTimeLabelToSeconds,
+  resolveQuestionRepositoryRoot,
   splitMarkdownTableRowStrict,
 } from "./table-analysis.js";
 
@@ -84,4 +88,20 @@ test("question-table CLI accepts repeatable kebab-case paths", () => {
   assert.ok(options);
   assert.deepEqual(options.paths, ["docs/questions/one.md", "docs/questions/two.md"]);
   assert.equal(options.allowLegacyThreeColumn, true);
+});
+
+test("question repository root detection uses canonical Node-era markers", () => {
+  const repoRoot = mkdtempSync(join(tmpdir(), "question-root-"));
+  try {
+    mkdirSync(join(repoRoot, "docs/questions"), { recursive: true });
+    mkdirSync(join(repoRoot, "src/channel"), { recursive: true });
+    writeFileSync(join(repoRoot, "package.json"), "{}\n", "utf8");
+    writeFileSync(join(repoRoot, "src/channel/episodes.json"), "{}\n", "utf8");
+    assert.equal(
+      resolveQuestionRepositoryRoot("", [join(repoRoot, "docs/questions")]),
+      repoRoot,
+    );
+  } finally {
+    rmSync(repoRoot, { recursive: true, force: true });
+  }
 });

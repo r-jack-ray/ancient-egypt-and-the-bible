@@ -37,7 +37,7 @@ async function main(): Promise<void> {
       acceptSource: args.acceptSource,
       acceptedAdditionIds,
     });
-    console.error("Applied selected additions and regenerated src/live-stream-list.md.");
+    console.error("Applied selected additions to canonical episode inventory and metadata.");
   }
 }
 

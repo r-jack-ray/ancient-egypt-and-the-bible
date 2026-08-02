@@ -49,7 +49,7 @@ export function resolveQuestionRepositoryRoot(
       return resolved;
     }
     throw new Error(
-      `Repository root '${repoRoot}' does not contain docs/questions and src/live-stream-list.md.`,
+      `Repository root '${repoRoot}' does not contain package.json, docs/questions, and src/channel/episodes.json.`,
     );
   }
 
@@ -71,7 +71,9 @@ export function resolveQuestionRepositoryRoot(
     }
   }
 
-  throw new Error("Could not find repository root. Expected docs/questions and src/live-stream-list.md.");
+  throw new Error(
+    "Could not find repository root. Expected package.json, docs/questions, and src/channel/episodes.json.",
+  );
 }
 
 export function questionRepoRelativePath(repoRoot: string, path: string): string {
@@ -359,10 +361,12 @@ export function writeQuestionReportFiles(
 }
 
 function isQuestionRepositoryRoot(path: string): boolean {
-  return existsSync(resolve(path, "docs/questions"))
+  return existsSync(resolve(path, "package.json"))
+    && statSync(resolve(path, "package.json")).isFile()
+    && existsSync(resolve(path, "docs/questions"))
     && statSync(resolve(path, "docs/questions")).isDirectory()
-    && existsSync(resolve(path, "src/live-stream-list.md"))
-    && statSync(resolve(path, "src/live-stream-list.md")).isFile();
+    && existsSync(resolve(path, "src/channel/episodes.json"))
+    && statSync(resolve(path, "src/channel/episodes.json")).isFile();
 }
 
 function fileLines(text: string): string[] {

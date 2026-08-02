@@ -30,5 +30,4 @@ jobs:
       - run: npm ci
       - run: npm run check:types
       - run: npm run test:typescript
-      - run: npm run check:stream-index
       - run: npm run check:transcript-store

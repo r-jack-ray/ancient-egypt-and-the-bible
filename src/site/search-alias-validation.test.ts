@@ -68,18 +68,20 @@ async function searchFixture(): Promise<string> {
     join(repoRoot, "site/data/questions.json"),
     `${JSON.stringify([
       {
-        search_text: "Was Pharaoh connected to the Dead Sea Scrolls?",
+        episode_number: 1,
         episode_title: "Example",
-        question: "Was Pharaoh connected to the Dead Sea Scrolls?",
+        question: "Was Pharaoh connected?",
         short_answer: "No.",
+        expanded_answer: "The Dead Sea Scrolls are unrelated.",
         question_page: "questions/example.md",
         time_label: "1:00",
       },
       {
-        search_text: "An unrelated archaeology question",
+        episode_number: 2,
         episode_title: "Another",
         question: "What was found?",
         short_answer: "An artifact.",
+        expanded_answer: "An unrelated archaeology question.",
         question_page: "questions/another.md",
         time_label: "2:00",
       },

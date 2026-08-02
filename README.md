@@ -294,7 +294,7 @@ Long livestreams are hard to navigate from transcript text alone. This project k
 - [Dr. Falk Plays Assassin's Creed Origins (part 11) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-11-questions.md)
 
 
-- [Livestream archive](src/live-stream-list.md) - episode list with YouTube links and transcript slugs.
+- [Livestream episodes](https://r-jack-ray.github.io/ancient-egypt-and-the-bible/episodes/) - public episode list with videos and curated Q&A links.
 
 ## Repository Layout
 
@@ -317,7 +317,6 @@ src/
   channel/
     episodes.json             Canonical archive identity and stable filename inventory
     video-metadata.json       Normalized YouTube metadata snapshot
-  live-stream-list.md         Episode index with YouTube links and transcript slugs
   questions/                  Question-table validation and revision-triage modules
   scripts/                    TypeScript command-line entry points
   site/                       Hugo generation and validation modules
@@ -335,7 +334,7 @@ Raw transcript JSON and TSV are not part of the tracked transcript store. Create
 
 `docs/questions/` contains the canonical, human-edited reference pages. These are meant to be read directly on GitHub Pages and GitHub and may include cleaned-up questions, short answer summaries, and timestamp links.
 
-`site/` contains the Hugo compatibility site. `site/content/questions/_index.md` is the sole handwritten, tracked Markdown file in the question-content directory. Every other `site/content/questions/*.md` file is a generated, ignored mirror of `docs/questions/`; never hand-edit or commit those mirrors. The same generator also refreshes the tracked data under `site/data/` and `site/static/search/` from `docs/questions/` and `src/live-stream-list.md`.
+`site/` contains the Hugo compatibility site. `site/content/questions/_index.md` is the sole handwritten, tracked Markdown file in the question-content directory. Every other `site/content/questions/*.md` file is a generated, ignored front-matter stub; never hand-edit or commit those stubs. The same generator refreshes the tracked data under `site/data/` and `site/static/search/` from `docs/questions/` and the canonical `src/channel/episodes.json` inventory.
 
 ## Local Dependencies
 
@@ -393,7 +392,6 @@ Install the pinned Node 22 dependencies, then validate the bootstrapped store:
 
 ```powershell
 npm ci
-npm run check:stream-index
 npm run check:transcript-store
 ```
 
@@ -421,23 +419,23 @@ The batch spaces every outbound transcript request by 60 seconds, stops on block
 
 ## Weekly Livestream Workflow
 
-The TypeScript/TXT pipeline replaces the legacy sequence of manually editing `src/live-stream-list.md`, downloading transcript JSON, and converting that JSON separately. The weekly curation, two independent audit passes, Hugo generation, and Git review remain part of the process.
+The TypeScript/TXT pipeline replaces the legacy sequence of maintaining a separate Markdown stream index, downloading transcript JSON, and converting that JSON separately. `src/channel/episodes.json` is the sole canonical archive inventory. The weekly curation, two independent audit passes, Hugo generation, and Git review remain part of the process.
 
 ### 1. Discover and review livestreams
 
-For the normal weekly numbered livestream, fetch a complete inventory, accept only the newest numbered addition, store its metadata, and regenerate the compatibility index:
-
-```powershell
-npm run fetch:livestreams:latest
-```
-
-The command still writes `reports/stream-inventory-candidate.json`; unrelated or special live broadcasts remain review-only. To review without changing canonical files, run the official YouTube Data API inventory command directly:
+For the normal weekly pull, fetch a complete inventory and write the review report without changing canonical files:
 
 ```powershell
 npm run fetch:livestreams
 ```
 
-This writes the ignored review report `reports/stream-inventory-candidate.json` without changing canonical files. Review its additions, omissions, and title changes before accepting anything.
+This writes the ignored review report `reports/stream-inventory-candidate.json`. Review its additions, omissions, and title changes before accepting anything; unrelated or special live broadcasts remain review-only.
+
+After reviewing the report, accept only the newest numbered addition and store the canonical episode and metadata records:
+
+```powershell
+npm run fetch:livestreams -- --apply --accept-source --accept-latest
+```
 
 Apply one or more explicitly reviewed additions from a complete candidate:
 
@@ -447,7 +445,7 @@ npm run fetch:livestreams -- --apply --accept-source --accept-addition VIDEO_ID_
 
 The first accepted application requires `--accept-source` so the resolved channel and uploads playlist are pinned. Partial inventory probes can never be applied, unknown accepted IDs are rejected, and unselected proposed additions remain in the review report.
 
-The accepted inventory atomically updates `src/channel/episodes.json`, `src/channel/video-metadata.json`, and the generated compatibility projection `src/live-stream-list.md`. Do not manually add the weekly stream to `src/live-stream-list.md`.
+The accepted inventory atomically updates `src/channel/episodes.json` and `src/channel/video-metadata.json`. The episode store is the sole canonical archive inventory; do not maintain a separate stream list.
 
 ### 2. Pull the registered transcript directly to TXT
 
@@ -477,12 +475,11 @@ Use `--limit 1` for a single batch canary or `--retry-failed` to reconsider reco
 ### 3. Validate transcript state
 
 ```powershell
-npm run check:stream-index
 npm run check:transcript-store
 npm run report:transcript-problems
 ```
 
-If acquisition was interrupted during a transcript transaction, run `npm run check:transcript-store -- --repair-transaction`, then validate again.
+If acquisition was interrupted during an inventory or transcript transaction, run `npm run check:transcript-store -- --repair-transaction`, then validate again.
 
 ### 4. Create the first-pass Q&A page
 
@@ -540,7 +537,7 @@ The end-to-end weekly path is:
 
 ```text
 review YouTube inventory
--> accept stream and regenerate live-stream-list.md
+-> accept stream into canonical episode inventory
 -> acquire canonical TXT
 -> create first-pass Q&A page
 -> run full audit

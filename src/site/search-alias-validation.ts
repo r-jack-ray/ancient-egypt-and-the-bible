@@ -99,10 +99,11 @@ export async function validateHugoSearchAliases(
 
   for (const question of questions) {
     const searchText = [
-      stringValue(question.search_text),
+      stringValue(question.episode_number),
       stringValue(question.episode_title),
       stringValue(question.question),
       stringValue(question.short_answer),
+      stringValue(question.expanded_answer),
     ].join(" ");
     const tokens = searchTokens(searchText);
     const tokenSet = new Set(tokens);
