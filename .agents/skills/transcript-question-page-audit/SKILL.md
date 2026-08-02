@@ -27,14 +27,15 @@ Use these in order:
 2. Canonical identity and path: `src/channel/episodes.json` and `src/transcripts/manifest.json`
 3. Source transcript: `src/transcripts/txt/<fileStem>.txt`
 
-If an expected TXT is missing, validate the store and use direct acquisition only when authorized:
+If an expected TXT is missing, validate the store and use the safe all-eligible batch only when acquisition is authorized:
 
 ```powershell
 npm run check:transcript-store
-npm run fetch:transcript -- --video-id VIDEO_ID
+npm run fetch:transcripts -- --dry-run
+npm run fetch:transcripts
 ```
 
-If the manifest is invalid, the TXT is missing, or acquisition reports no caption segments, stop for that page and report the blocker. Do not guess from the existing Markdown. Legacy JSON is optional historical evidence while retained, not a prerequisite or active source.
+Use `--limit 1` only as a general batch canary; it does not select a video ID. If the manifest is invalid, the TXT is missing, or acquisition reports no caption segments, stop for that page and report the blocker. Do not guess from the existing Markdown. Legacy JSON is optional historical evidence while retained, not a prerequisite or active source.
 
 Special-purpose pages may not match the source slug exactly. Resolve the source stream from page headings, links, README references, `src/channel/episodes.json`, or nearby transcript names.
 

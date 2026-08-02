@@ -73,6 +73,12 @@ export async function fetchVideoTranscript(options: FetchTranscriptOptions): Pro
     if (error instanceof YoutubeRequestError && error.classification === "rate_limited_or_blocked") {
       throw error;
     }
+    if (error instanceof Error && error.name === "YoutubeTranscriptTooManyRequestError") {
+      throw new YoutubeRequestError(
+        "Primary transcript provider reported YouTube blocking/CAPTCHA evidence.",
+        "rate_limited_or_blocked",
+      );
+    }
     options.logger?.(`Primary transcript provider failed: ${safeMessage(error)}. Trying caption-track fallback.`);
   }
   const fallback = await fetchWatchPageCaptions(options, limitedFetch);
@@ -307,7 +313,7 @@ export async function storeTranscript(
       options.expectedCurrentHash !== previous.contentSha256
     ) {
       throw new Error(
-        `Forced replacement requires --expected-current-hash ${previous.contentSha256}.`,
+        `Forced replacement requires expectedCurrentHash ${previous.contentSha256}.`,
       );
     }
 

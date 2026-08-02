@@ -40,13 +40,14 @@ const writerLeasePath = ".tmp/transcript-store/writer.lock";
 export async function fetchInventoryCandidate(options: {
   apiKey: string;
   delayMs: number;
+  repoRoot?: string;
   maxPages?: number;
   fetch?: typeof fetch;
   sleep?: (milliseconds: number) => Promise<void>;
   now?: () => Date;
   logger?: (message: string) => void;
 }): Promise<InventoryCandidate> {
-  const baseline = await readEpisodesStore();
+  const baseline = await readEpisodesStore(resolve(options.repoRoot ?? ".", episodesPath));
   const youtube = createYoutubeDataApiClient({
     apiKey: options.apiKey,
     ...(options.fetch !== undefined ? { fetch: options.fetch } : {}),

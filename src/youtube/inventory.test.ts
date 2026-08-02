@@ -152,6 +152,79 @@ test("inventory discovery reports a channel response with missing uploads fields
   );
 });
 
+test("inventory discovery fixtures cover no additions and multiple additions", async () => {
+  const repoRoot = await mkdtemp(join(tmpdir(), "inventory-discovery-"));
+  try {
+    await mkdir(join(repoRoot, "src/channel"), { recursive: true });
+    await writeFile(
+      join(repoRoot, "src/channel/episodes.json"),
+      `${JSON.stringify({
+        schemaVersion: 1,
+        channel: {
+          handleUrl: "https://www.youtube.com/@ancientegyptandthebible",
+          channelId: "fixture-channel",
+          uploadsPlaylistId: "fixture-uploads",
+        },
+        episodes: [baseline],
+      }, null, 2)}\n`,
+      "utf8",
+    );
+
+    const noAdditionRequests: URL[] = [];
+    const noAdditions = await fetchInventoryCandidate({
+      apiKey: "fixture-key",
+      delayMs: 0,
+      repoRoot,
+      fetch: inventoryFixtureFetch(
+        [baseline.videoId],
+        new Map([[baseline.videoId, baseline.linkText]]),
+        noAdditionRequests,
+      ),
+      now: () => new Date("2026-08-01T12:34:56Z"),
+    });
+    assert.deepEqual(noAdditions.additions, []);
+    assert.deepEqual(noAdditions.omittedBaselineVideoIds, []);
+    assert.deepEqual(noAdditions.titleChanges, []);
+    assert.equal(
+      noAdditionRequests.filter((url) => url.pathname.endsWith("/videos")).length,
+      1,
+    );
+
+    const firstAddition = "NEWSTREAM01";
+    const secondAddition = "NEWSTREAM02";
+    const multipleRequests: URL[] = [];
+    const multipleAdditions = await fetchInventoryCandidate({
+      apiKey: "fixture-key",
+      delayMs: 0,
+      repoRoot,
+      fetch: inventoryFixtureFetch(
+        [firstAddition, secondAddition, baseline.videoId],
+        new Map([
+          [firstAddition, "Live Stream #272: First fixture addition"],
+          [secondAddition, "Live Stream #273: Second fixture addition"],
+          [baseline.videoId, baseline.linkText],
+        ]),
+        multipleRequests,
+      ),
+      now: () => new Date("2026-08-01T12:34:56Z"),
+    });
+    assert.deepEqual(
+      multipleAdditions.additions.map((record) => record.videoId),
+      [firstAddition, secondAddition],
+    );
+    assert.deepEqual(
+      multipleAdditions.additions.map((record) => record.episodeNumber),
+      [272, 273],
+    );
+    assert.equal(
+      multipleRequests.filter((url) => url.pathname.endsWith("/videos")).length,
+      1,
+    );
+  } finally {
+    await rm(repoRoot, { recursive: true, force: true });
+  }
+});
+
 test("numbered inventory additions use the established archive identity shape", () => {
   const episode = episodeFromVideoMetadata({
     videoId: "8bF8Hm5NpR8",
@@ -282,6 +355,22 @@ test("inventory apply atomically updates only canonical episodes and metadata", 
     assert.ok(episodes.episodes.every((episode) => !("lifecycle" in episode)));
     assert.deepEqual(metadata.videos.map((record) => record.videoId), [addition.videoId, baseline.videoId]);
     await assert.rejects(readFile(join(repoRoot, inventoryJournalPath), "utf8"), /ENOENT/u);
+
+    const appliedEpisodes = await readFile(join(repoRoot, "src/channel/episodes.json"), "utf8");
+    const appliedMetadata = await readFile(join(repoRoot, "src/channel/video-metadata.json"), "utf8");
+    await applyInventoryCandidate({ ...candidate, additions: [] }, {
+      acceptSource: false,
+      acceptedAdditionIds: [],
+      repoRoot,
+    });
+    assert.equal(
+      await readFile(join(repoRoot, "src/channel/episodes.json"), "utf8"),
+      appliedEpisodes,
+    );
+    assert.equal(
+      await readFile(join(repoRoot, "src/channel/video-metadata.json"), "utf8"),
+      appliedMetadata,
+    );
   } finally {
     await rm(repoRoot, { recursive: true, force: true });
   }
@@ -292,4 +381,47 @@ function jsonResponse(value: unknown, status = 200): Response {
     status,
     headers: { "content-type": "application/json" },
   });
+}
+
+function inventoryFixtureFetch(
+  uploadIds: readonly string[],
+  titles: ReadonlyMap<string, string>,
+  requests: URL[],
+): typeof fetch {
+  return (async (input: Parameters<typeof fetch>[0]) => {
+    const url = new URL(String(input));
+    requests.push(url);
+    if (url.pathname.endsWith("/channels")) {
+      return jsonResponse({
+        items: [{
+          id: "fixture-channel",
+          contentDetails: { relatedPlaylists: { uploads: "fixture-uploads" } },
+        }],
+      });
+    }
+    if (url.pathname.endsWith("/playlistItems")) {
+      return jsonResponse({
+        items: uploadIds.map((videoId) => ({ contentDetails: { videoId } })),
+      });
+    }
+    if (url.pathname.endsWith("/videos")) {
+      const requestedIds = url.searchParams.get("id")?.split(",") ?? [];
+      return jsonResponse({
+        items: requestedIds.map((videoId) => ({
+          id: videoId,
+          snippet: {
+            title: titles.get(videoId),
+            liveBroadcastContent: "none",
+          },
+          contentDetails: { duration: "PT1H" },
+          status: { privacyStatus: "public", uploadStatus: "processed" },
+          liveStreamingDetails: {
+            actualStartTime: "2026-08-01T00:00:00Z",
+            actualEndTime: "2026-08-01T01:00:00Z",
+          },
+        })),
+      });
+    }
+    return jsonResponse({ error: { message: "Unexpected endpoint." } }, 404);
+  }) as typeof fetch;
 }

@@ -15,16 +15,37 @@ import {
   type FetchTranscriptOptions,
   type VideoTranscript,
 } from "./transcripts.js";
-import { YoutubeRequestError } from "./rate-limit.js";
+import { createRateLimitedFetch, YoutubeRequestError } from "./rate-limit.js";
 
 export interface BatchOptions {
   requestDelayMs: number;
   limit?: number;
-  retryFailed?: boolean;
   dryRun?: boolean;
   language?: string;
   logger?: (message: string) => void;
   fetcher?: (options: FetchTranscriptOptions) => Promise<VideoTranscript>;
+  fetch?: typeof fetch;
+  rateLimitNow?: () => number;
+  sleep?: (milliseconds: number) => Promise<void>;
+}
+
+export interface BatchTranscriptRecord {
+  videoId: string;
+  path: string;
+}
+
+export interface BatchDeferredRecord extends BatchTranscriptRecord {
+  reason: string;
+}
+
+export interface BatchFailureRecord extends BatchTranscriptRecord {
+  classification: FetchFailure["classification"];
+  message: string;
+  retryAfter?: string;
+}
+
+export interface BatchPendingRecord extends BatchTranscriptRecord {
+  reason: "blocked" | "dry_run" | "limit";
 }
 
 export interface BatchResult {
@@ -33,9 +54,12 @@ export interface BatchResult {
   storedSkipped: number;
   unavailableSkipped: number;
   deferred: number;
-  previousFailureSkipped: number;
   pending: number;
   blocked: boolean;
+  newTranscripts: BatchTranscriptRecord[];
+  deferredRecords: BatchDeferredRecord[];
+  failureRecords: BatchFailureRecord[];
+  pendingRecords: BatchPendingRecord[];
 }
 
 export async function fetchTranscriptBatch(options: BatchOptions): Promise<BatchResult> {
@@ -50,58 +74,86 @@ export async function fetchTranscriptBatch(options: BatchOptions): Promise<Batch
     storedSkipped: 0,
     unavailableSkipped: 0,
     deferred: 0,
-    previousFailureSkipped: 0,
     pending: 0,
     blocked: false,
+    newTranscripts: [],
+    deferredRecords: [],
+    failureRecords: [],
+    pendingRecords: [],
   };
   const fetcher = options.fetcher ?? fetchVideoTranscript;
-  let attempts = 0;
+  const limitedFetch = createRateLimitedFetch({
+    delayMs: options.requestDelayMs,
+    ...(options.fetch !== undefined ? { baseFetch: options.fetch } : {}),
+    ...(options.logger !== undefined ? { logger: options.logger } : {}),
+    ...(options.rateLimitNow !== undefined ? { now: options.rateLimitNow } : {}),
+    ...(options.sleep !== undefined ? { sleep: options.sleep } : {}),
+  });
+  let selected = 0;
 
   for (const episode of episodes.episodes) {
+    const pendingRecord = {
+      videoId: episode.videoId,
+      path: canonicalTranscriptPath(episode.fileStem),
+    };
     if (await findStoredTranscript(episode.videoId)) {
       result.storedSkipped += 1;
+      if (!options.dryRun && failures.delete(episode.videoId)) {
+        await checkpoint(failures);
+      }
       continue;
     }
-    if (episode.transcriptPolicy === "known-unavailable" && !options.retryFailed) {
+    if (episode.transcriptPolicy === "known-unavailable") {
       result.unavailableSkipped += 1;
-      continue;
-    }
-    const previousFailure = failures.get(episode.videoId);
-    if (previousFailure !== undefined && !options.retryFailed) {
-      result.previousFailureSkipped += 1;
+      if (!options.dryRun && failures.delete(episode.videoId)) {
+        await checkpoint(failures);
+      }
       continue;
     }
     const metadataRecord = metadataById.get(episode.videoId);
     if (metadataRecord === undefined) {
       result.deferred += 1;
+      result.deferredRecords.push({ ...pendingRecord, reason: "metadata_missing" });
       continue;
     }
     const readiness = resolveVideoReadiness(metadataRecord);
     if (readiness.state !== "ready") {
       result.deferred += 1;
+      result.deferredRecords.push({ ...pendingRecord, reason: readiness.reason });
       continue;
     }
-    if (options.limit !== undefined && attempts >= options.limit) {
+    if (result.blocked) {
       result.pending += 1;
+      result.pendingRecords.push({ ...pendingRecord, reason: "blocked" });
       continue;
     }
+    if (options.limit !== undefined && selected >= options.limit) {
+      result.pending += 1;
+      result.pendingRecords.push({ ...pendingRecord, reason: "limit" });
+      continue;
+    }
+    selected += 1;
     if (options.dryRun) {
       result.pending += 1;
+      result.pendingRecords.push({ ...pendingRecord, reason: "dry_run" });
       options.logger?.(`Would fetch ${episode.videoId} -> src/transcripts/txt/${episode.fileStem}.txt`);
       continue;
     }
-    attempts += 1;
     try {
       const transcript = await fetcher({
         videoId: episode.videoId,
         requestDelayMs: options.requestDelayMs,
+        fetch: limitedFetch,
         ...(options.language !== undefined ? { language: options.language } : {}),
         ...(options.logger !== undefined ? { logger: options.logger } : {}),
       });
-      await storeTranscript(transcript);
+      const stored = await storeTranscript(transcript);
       failures.delete(episode.videoId);
       result.fetched += 1;
-      await checkpoint(failures);
+      result.newTranscripts.push({
+        videoId: episode.videoId,
+        path: `src/transcripts/${stored.path}`,
+      });
     } catch (error) {
       const classification = classifyFetchError(error);
       const failure: FetchFailure = {
@@ -115,14 +167,57 @@ export async function fetchTranscriptBatch(options: BatchOptions): Promise<Batch
       };
       failures.set(episode.videoId, failure);
       result.failed += 1;
+      result.failureRecords.push({
+        ...pendingRecord,
+        classification,
+        message: failure.message,
+        ...(failure.retryAfter !== undefined ? { retryAfter: failure.retryAfter } : {}),
+      });
       await checkpoint(failures);
       if (classification === "rate_limited_or_blocked") {
         result.blocked = true;
-        break;
       }
+      continue;
     }
+    await checkpoint(failures);
   }
   return result;
+}
+
+export function formatTranscriptBatchHandoff(result: BatchResult): string {
+  const lines = [
+    `Transcript batch: fetched=${result.fetched} failed=${result.failed} stored-skipped=${result.storedSkipped} ` +
+      `unavailable-skipped=${result.unavailableSkipped} deferred=${result.deferred} ` +
+      `pending=${result.pending}`,
+  ];
+  appendSection(
+    lines,
+    "New TXT",
+    result.newTranscripts.map((record) => `${record.path} (${record.videoId})`),
+  );
+  appendSection(
+    lines,
+    "Deferred",
+    result.deferredRecords.map((record) =>
+      `${record.path} (${record.videoId}): ${record.reason}`
+    ),
+  );
+  appendSection(
+    lines,
+    "Failed",
+    result.failureRecords.map((record) =>
+      `${record.path} (${record.videoId}): ${record.classification} ${record.message}` +
+      (record.retryAfter === undefined ? "" : ` retry-after=${record.retryAfter}`)
+    ),
+  );
+  appendSection(
+    lines,
+    "Pending",
+    result.pendingRecords.map((record) =>
+      `${record.path} (${record.videoId}): ${record.reason}`
+    ),
+  );
+  return lines.join("\n");
 }
 
 async function checkpoint(failures: ReadonlyMap<string, FetchFailure>): Promise<void> {
@@ -134,7 +229,22 @@ async function checkpoint(failures: ReadonlyMap<string, FetchFailure>): Promise<
 }
 
 function safeMessage(error: unknown): string {
-  return error instanceof Error
-    ? error.message.replace(/\s+/gu, " ").slice(0, 500)
+  const message = error instanceof Error
+    ? error.message
+    : typeof error === "string"
+    ? error
     : "Unknown transcript fetch failure.";
+  return message.replace(/\s+/gu, " ").slice(0, 500);
+}
+
+function canonicalTranscriptPath(fileStem: string): string {
+  return `src/transcripts/txt/${fileStem}.txt`;
+}
+
+function appendSection(lines: string[], label: string, records: readonly string[]): void {
+  if (records.length === 0) {
+    lines.push(`${label}: none`);
+    return;
+  }
+  lines.push(`${label}:`, ...records.map((record) => `  ${record}`));
 }

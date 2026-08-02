@@ -40,14 +40,15 @@ Use the current repository layout:
 
 TXT is the transcript source of record and default curation surface. Resolve its stable `fileStem` from the manifest. Legacy JSON is retained temporarily as optional historical evidence, but normal creation must not require it or create a new JSON payload.
 
-If an expected TXT file is missing, validate the store and use the direct TypeScript acquisition command:
+If an expected TXT file is missing, validate the store and, when acquisition is authorized, use the safe all-eligible TypeScript batch:
 
 ```powershell
 npm run check:transcript-store
-npm run fetch:transcript -- --video-id VIDEO_ID
+npm run fetch:transcripts -- --dry-run
+npm run fetch:transcripts
 ```
 
-If acquisition reports unavailable captions or no transcript segments, do not invent a page. Temporary structured diagnostics belong under ignored `reports/`, not in the tracked transcript store.
+Use `--limit 1` only as a general batch canary; it does not select a video ID. If acquisition reports unavailable captions or no transcript segments, do not invent a page. Temporary structured diagnostics belong under ignored `reports/`, not in the tracked transcript store.
 
 ## Output Location
 

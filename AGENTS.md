@@ -114,10 +114,11 @@ docs/questions/<file>.md use $transcript-question-page-audit find and fix issues
 
 Add `with full transcript coverage` when the goal includes finding missing questions.
 
-If a registered expected TXT file is missing, report the store inconsistency and use the direct TypeScript acquisition path:
+If a registered expected TXT file is missing, report the store inconsistency and use the safe all-eligible TypeScript acquisition path:
 
 ```powershell
-npm run fetch:transcript -- --video-id VIDEO_ID
+npm run fetch:transcripts -- --dry-run
+npm run fetch:transcripts
 ```
 
 If captions are unavailable or the fetcher reports no transcript segments, do not create a fabricated curated page.

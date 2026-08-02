@@ -21,7 +21,6 @@
     "check:no-legacy-json": "tsx src/scripts/check-no-legacy-json.ts",
     "fetch:livestreams": "tsx src/scripts/get-channel-video-links.ts",
     "refresh:livestream-metadata": "tsx src/scripts/fetch-video-metadata.ts",
-    "fetch:transcript": "tsx src/scripts/get-video-transcript.ts",
     "fetch:transcripts": "tsx src/scripts/fetch-transcript-batch.ts --request-delay-ms 60000",
     "report:transcript-problems": "tsx src/scripts/report-transcript-problems.ts",
     "report:question-revisions": "tsx src/scripts/report-question-revisions.ts",

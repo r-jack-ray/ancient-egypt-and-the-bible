@@ -63,14 +63,14 @@ The deterministic processing has two intentional acquisition boundaries: the off
 15. `InventoryCandidate.candidateEpisodes` is built but has no reader. It duplicates the baseline plus all additions and is serialized only because the entire candidate object is written as the review report.
 16. `EpisodeRecord.lifecycle` has no reader. It can be initialized as scheduled/live/processing/private, but metadata refresh does not update it; canonical readiness decisions instead use `video-metadata.json`. It is redundant and potentially stale.
 17. Several other episode fields are derivable (`url` from `videoId`, `order` from array position, `fileStem` from `slug` under the current enforced equality, and `linkText` from episode number/title). These are low-priority schema-review candidates because explicit storage may still be valuable for readability or future divergence.
-18. The initial command-surface cleanup removed the migration-era `alternate:` prefix and the raw/safe/latest/retry transcript alias matrix. The canonical `fetch:transcripts` command now uses safe pacing and processes every eligible registered stream missing TXT; canary limits and failure retries remain explicit options.
-19. The owner subsequently removed `fetch:livestreams:latest`. It fetched the same complete inventory as `fetch:livestreams` and differed only by automatically applying and accepting the newest numbered addition. The base command already exposes explicit apply and acceptance flags, so the alias added convenience rather than capability. One README invocation of the removed alias remains to be corrected.
-20. The single-video `fetch:transcript` command is of questionable value. It exposes targeted canary and forced-replacement behavior, but the owner does not use it and does not recognize a current need for it. References from README, AGENTS, and the transcript skills describe the command but are not independent consumers. Unless a concrete recovery workflow is identified, remove the npm entry, CLI, and those fallback references; use `fetch:transcripts -- --limit 1` for an ordinary one-item canary.
+18. The initial command-surface cleanup removed the migration-era `alternate:` prefix and the raw/safe/latest/retry transcript alias matrix. The canonical `fetch:transcripts` command now uses safe pacing and processes every eligible registered stream missing TXT; canary limits remain explicit, while recorded failures are automatically reconsidered by ordinary later runs.
+19. The owner subsequently removed `fetch:livestreams:latest`. It fetched the same complete inventory as `fetch:livestreams` and differed only by automatically applying and accepting the newest numbered addition. The base command already exposes explicit apply and acceptance flags, so the alias added convenience rather than capability. Phase 3 confirmed that the README now uses the base command and explicit acceptance flags throughout.
+20. Phase 3 found no independent recovery consumer for the owner-unused single-video `fetch:transcript` command and removed its npm entry, CLI, and self-referential README, AGENTS, and transcript-skill instructions. The all-eligible batch remains the only public caption command; `--limit 1` is a general canary rather than a video-ID selector.
 21. The local YouTube API key fallback has been moved from `reports/youtube-api-key.txt` to `.local/youtube-api-key.txt`. The resolver, help/documentation references, and ignore rules now use the local path, leaving `reports/` for generated artifacts and diagnostics.
 
 ## Processing baseline
 
-- Public npm command surface after the current cleanup: 27 entries, reduced from 33. The removed entries are the completed bootstrap exposure, four redundant transcript aliases, and the automatic `fetch:livestreams:latest` apply shortcut.
+- Public npm command surface after the current cleanup: 25 entries, reduced from 33. The removed entries are the completed bootstrap exposure, four redundant transcript aliases, the automatic `fetch:livestreams:latest` apply shortcut, the obsolete standalone stream-index validator, and the unused single-video transcript command.
 - Current generated Hugo question mirrors: 283 files and 8.23 MiB, nearly duplicating the 7.99 MiB authoritative `docs/questions/` corpus in the build workspace.
 - Current `site/data/questions.json`: 13,931 rows and 21.20 MB; its redundant `search_text` values account for approximately 7.28 MB (6.95 MiB) before JSON punctuation/whitespace effects.
 - Current client search payload: 25.71 MB raw for documents plus index, approximately 6.48 MB with gzip level 9 or 4.30 MB with Brotli quality 11. Both files are functionally used; this is a performance target, not unused output.
@@ -130,9 +130,11 @@ Validation gate:
 
 ### Phase 3: Clean up the two independent weekly acquisition stages
 
+Status: implemented on 2026-08-01 and reviewed on 2026-08-02. The two stages remain separate and independently rerunnable. Inventory continues to reuse discovery metadata under guarded apply, with added no-addition and multiple-addition fixtures. The caption batch now uses one rate limiter across episode boundaries, always skips known-unavailable records, applies limits consistently during dry runs, checkpoints partial failures, scans the remaining state without further requests after blocking evidence, and prints a deterministic handoff listing new TXT paths and all deferred, failed, or pending records. Review corrected recorded failures being skipped indefinitely by the ordinary weekly command, removed the resulting redundant retry option, clears stale failure status for stored or known-unavailable records, and ensures a primary-provider CAPTCHA trips the circuit breaker without a fallback request. The unused single-video command and its self-referential documentation were removed; the README `latest` invocation named by the earlier analysis was already absent in the implementation worktree.
+
 Preserve two separate, independently rerunnable commands. They use different data sources and should not be joined by a wrapper or shared transaction.
 
-The current worktree now exposes `fetch:livestreams` as the only public Google inventory command. Its default remains review-only; accepted additions are applied with explicit flags. Do not restore the removed `fetch:livestreams:latest` automatic-acceptance alias. Replace its one remaining README invocation with the base command and explicit acceptance behavior.
+The current worktree now exposes `fetch:livestreams` as the only public Google inventory command. Its default remains review-only; accepted additions are applied with explicit flags. Do not restore the removed `fetch:livestreams:latest` automatic-acceptance alias. Keep README examples on the base command and explicit acceptance behavior.
 
 1. **Google API inventory and metadata**
    - Pull livestream links and their normalized metadata together.
@@ -141,7 +143,7 @@ The current worktree now exposes `fetch:livestreams` as the only public Google i
    - Keep a standalone metadata refresh/repair path only for later schedule changes, incomplete records, or explicit full refreshes; it is not another routine weekly step.
 2. **Caption scrape to canonical TXT**
    - Separately scan all registered livestreams for missing valid manifest-backed TXT files; do not limit routine selection to one item named `latest`.
-   - Skip valid stored TXT files and records marked `known_unavailable`, currently two.
+   - Skip valid stored TXT files and records marked `known-unavailable`, currently two.
    - If captions are not ready or a scrape fails, leave the item eligible for a later run unless it is deliberately marked known unavailable.
    - Write successful results directly to canonical TXT with no intermediate transcript JSON.
    - Preserve conservative request spacing and resumable/checkpointed behavior so a partial run can be rerun safely.
@@ -149,9 +151,9 @@ The current worktree now exposes `fetch:livestreams` as the only public Google i
 
 After acquisition, processing passes to Codex rather than another deterministic repository command: run `$transcript-to-md-reference` once for each new TXT, then run `$transcript-question-page-audit` twice as two independent full-transcript audits of each created page.
 
-Keep the canonical `fetch:transcripts` name and safe default introduced by the initial scripts cleanup. Use its explicit `--limit` and `--retry-failed` options instead of restoring parallel safe, unsafe, latest, or retry aliases.
+Keep the canonical `fetch:transcripts` name and safe default introduced by the initial scripts cleanup. Use its explicit `--limit` option for canaries instead of restoring parallel safe, unsafe, latest, or retry aliases. Do not require a retry mode: a recorded failure still lacks TXT and must remain eligible on an ordinary later run unless its episode is deliberately marked `known-unavailable`.
 
-Treat `fetch:transcript` as questionable rather than part of the supported workflow. Retain it only if its scoped forced-replacement path is shown to be necessary for a real recovery procedure; otherwise remove it and its self-referential documentation in this phase.
+No concrete recovery consumer was found for `fetch:transcript`, so Phase 3 removed it and its self-referential documentation. Keep `fetch:transcripts` as the only public caption command.
 
 Validation gate:
 
@@ -209,27 +211,26 @@ If handled later, keep `site/data/search-aliases.json` tracked as authored sourc
 - Whether question-revision reports are actively used as a work queue.
 - Whether inventory candidate reports should remain mandatory for the ordinary Google API links/metadata workflow.
 - Whether replacing `googleapis` with a narrow native client is preferred over retaining vendor-maintained request/response types.
-- Whether any demonstrated recovery procedure still requires the owner-unused `fetch:transcript` single-video command. Default disposition: remove it if no concrete consumer is found.
 
 ## Completed cleanup slices
 
-1. Reduced and renamed the npm command surface from 33 entries to 27.
+1. Reduced and renamed the npm command surface from 33 entries to 25.
 2. Made `fetch:livestreams` the sole public links-and-metadata command; removed the automatic `latest` apply alias without removing its explicit flags from the base CLI.
 3. Made safely paced `fetch:transcripts` the ordinary all-eligible-missing transcript command and removed the migration-era transcript alias matrix.
 4. Renamed the JavaScript search test and local Hugo server commands, and removed duplicate TypeScript compilation from the aggregate functional check.
 5. Removed the completed bootstrap from the public npm surface while retaining the underlying recovery code for later review.
 6. Moved the YouTube API key fallback to ignored `.local/youtube-api-key.txt` and updated its resolver and references.
-7. Updated CLI help, README, AGENTS, and transcript-skill references for the initial command renames. A stale README reference to the subsequently removed `fetch:livestreams:latest` alias remains.
+7. Updated CLI help, README, AGENTS, and transcript-skill references for the supported command names and removed the obsolete single-video acquisition fallback.
 8. Completed Phase 1 canonical-to-site cleanup, including removal of `src/live-stream-list.md`, the standalone stream-index command, redundant question-row and episode fields, full-body Hugo mirrors, and the data-backed question-template fallback.
 9. Completed Phase 2 with a narrow injected-fetch YouTube Data API client, fixture-backed endpoint and integration tests, safe API errors, bounded transient-request retries, and removal of `googleapis`, its `gaxios` override, and 47 lockfile packages.
+10. Completed Phase 3 with two independently rerunnable acquisition commands, one shared cross-video caption limiter, automatic later-run recovery for recorded failures, deterministic new-TXT/deferred/failed/pending handoff output, fixture-backed failure and circuit-break coverage, and retirement of `fetch:transcript`.
 
 ## Remaining implementation order
 
-1. Finish the weekly command cleanup: remove the stale README `latest` invocation, decide whether to delete owner-unused `fetch:transcript`, and add the concise new-TXT/deferred handoff to the batch command.
-2. Decide report ownership, then remove or make conditional the reports with no active human or machine consumer.
-3. Consolidate validation, CLI plumbing, and Markdown table parsing while preserving distinct invariants.
-4. Retire the bootstrap and other completed processing-migration residue after recovery-path review.
-5. Consider generated site/search tracking policy only as a separate follow-up after the processing cleanup is complete.
+1. Decide report ownership, then remove or make conditional the reports with no active human or machine consumer.
+2. Consolidate validation, CLI plumbing, and Markdown table parsing while preserving distinct invariants.
+3. Retire the bootstrap and other completed processing-migration residue after recovery-path review.
+4. Consider generated site/search tracking policy only as a separate follow-up after the processing cleanup is complete.
 
 ## Verification record
 
@@ -247,15 +248,15 @@ Weekly workflow confirmed by the owner on 2026-08-01: pull livestream links and 
 
 Acquisition boundary confirmed by the owner on 2026-08-01: links and metadata can be combined because both use the official Google API. Transcript retrieval is inherently a separate caption-scraping process and must remain a distinct second stage rather than being folded into the API command.
 
-Initial command-surface cleanup completed on 2026-08-01: the public npm scripts now use `fetch:livestreams`, `refresh:livestream-metadata`, `fetch:transcript`, and safely paced `fetch:transcripts`; the transcript alias matrix, migration-era `alternate:` prefix, completed bootstrap entry, `legacy` test label, and duplicate aggregate type compilation were removed. CLI help, README, AGENTS, and skill references were updated with the names.
+Initial command-surface cleanup completed on 2026-08-01: at that intermediate point, the public npm scripts used `fetch:livestreams`, `refresh:livestream-metadata`, `fetch:transcript`, and safely paced `fetch:transcripts`; the transcript alias matrix, migration-era `alternate:` prefix, completed bootstrap entry, `legacy` test label, and duplicate aggregate type compilation were removed. CLI help, README, AGENTS, and skill references were updated with the names.
 
-Automatic latest alias removed by the owner on 2026-08-01: `fetch:livestreams:latest` was only a preset for applying and accepting the newest numbered addition after the same inventory fetch. `fetch:livestreams` is sufficient because it retains explicit `--apply`, `--accept-source`, `--accept-latest`, and `--accept-addition` options. One README invocation still needs removal.
+Automatic latest alias removed by the owner on 2026-08-01: `fetch:livestreams:latest` was only a preset for applying and accepting the newest numbered addition after the same inventory fetch. `fetch:livestreams` is sufficient because it retains explicit `--apply`, `--accept-source`, `--accept-latest`, and `--accept-addition` options. Phase 3 confirmed the README uses the base command and explicit flags.
 
 API key relocation completed by the owner on 2026-08-01: the fallback file now lives at ignored `.local/youtube-api-key.txt`; source and documentation references were updated. The key contents were not inspected.
 
-Questionable command recorded by the owner on 2026-08-01: `fetch:transcript` is not used by the owner, and its purpose is not recognized as part of the supported weekly process. Do not treat documentation references as proof of use; require a concrete recovery consumer or remove the single-video command in a later cleanup slice.
+Single-video command decision resolved on 2026-08-01: no concrete recovery consumer existed beyond the command's own documentation, so Phase 3 removed `fetch:transcript`, `src/scripts/get-video-transcript.ts`, and the README, AGENTS, and transcript-skill fallbacks. Scoped batch canaries use `fetch:transcripts -- --limit 1`; valid stored transcripts remain non-overwritable through the batch.
 
-Validation status for the scripts cleanup: the renamed command help paths, 42 compiled TypeScript tests, 16 JavaScript search tests, transcript/store checks, question-table validation, and static site/search checks passed before the subsequent API-key relocation and `latest` alias removal. The safely paced batch dry run reported 283 stored transcripts and two known-unavailable records. Re-run targeted validation after the remaining README and questionable-command cleanup is implemented.
+Validation status for the scripts cleanup: the renamed command help paths, 42 compiled TypeScript tests, 16 JavaScript search tests, transcript/store checks, question-table validation, and static site/search checks passed before the subsequent API-key relocation and `latest` alias removal. The safely paced batch dry run reported 283 stored transcripts and two known-unavailable records. Phase 3 reran the targeted validation after completing the remaining command cleanup, as recorded below.
 
 Phase 1 implementation validation completed on 2026-08-01: 45 compiled TypeScript tests and 16 JavaScript search tests passed; canonical archive validation reported 285 episodes, 283 stored transcripts, and two known-unavailable records; all 283 question pages and 13,931 question rows passed strict table, alias, static-site, and full Hugo validation. Representative numbered and special pages were byte-identical to the pre-change render after the canonical-read, lean-stub, and derived-search-text changes. Removing the unreachable fallback then changed only template whitespace for those representatives, and the second full render passed all 287 rendered-page canonical, metadata, title, sitemap, SEO, and internal-link checks.
 
@@ -263,4 +264,8 @@ Phase 2 implementation validation completed on 2026-08-01: all 51 compiled TypeS
 
 Phase 2 review follow-up completed on 2026-08-01: review found that the removed Google request client had supplied default transient retries while the first narrow `fetch` implementation made only one attempt. The replacement client now makes at most three retries after the initial request with 100/200/400 ms exponential waits for transport failures, unreadable successful or retryable responses, HTTP 408/429, and 5xx responses; permanent 4xx and malformed successful payloads still fail immediately. Injected timing remains available through inventory and metadata callers. Deterministic retry-success, exhaustion, non-retryable-error, and secret-redaction coverage brought the compiled TypeScript suite to 52 passing tests; the full functional stack and 16 JavaScript search tests also passed. The live report-only inventory canary remained intentionally unrun, and no canonical apply occurred.
 
-Remaining phases still require their own implementation-time verification. The stale README `fetch:livestreams:latest` invocation, owner-unused single-video transcript command, report lifecycle, validation/parser consolidation, bootstrap retirement, and generated-output tracking policy were intentionally left unchanged.
+Phase 3 implementation validation completed on 2026-08-01: all 57 compiled TypeScript tests and 16 JavaScript search tests passed. New fixtures covered inventory with no additions and multiple additions; guarded selection and metadata reuse; multiple ready missing transcripts; existing valid TXT no-ops; both known-unavailable skips; scheduled and metadata-missing deferrals; direct TXT and manifest writes; shared cross-video request spacing; dry-run limits; partial failure, checkpoint, explicit retry, and blocking handoff behavior. Type checking, both updated skill validators, all three acquisition help paths, the canonical batch dry run, archive validation, stale-command searches, and diff checks passed. Focused IDE inspection found only the two pre-existing unused imports in `src/youtube/transcripts.ts` already recorded for the later unused-code cleanup. The canonical dry run reported 285 episodes represented by 283 stored TXT files and two known-unavailable records, with no pending work or canonical writes. No live network canary or canonical inventory apply was run.
+
+Phase 3 review follow-up completed on 2026-08-02: the ordinary batch now retries every ready, missing TXT even when a prior failure is recorded, so a not-yet-ready caption cannot become permanently invisible to the weekly command. The redundant `--retry-failed` switch and its active documentation were removed; the older migration plan remains unchanged as historical process evidence. Normal runs clear stale failure records already resolved by stored TXT or deliberate `known-unavailable` policy, while dry runs remain write-free. Success checkpoints now sit outside the fetch/store catch so checkpoint write errors cannot be mislabeled as YouTube failures. A typed conversion for `youtube-transcript-plus` CAPTCHA/rate-limit errors prevents the fallback from making a second request after primary blocking evidence. All 58 compiled TypeScript tests, the complete functional validation stack, 16 JavaScript search tests, the updated CLI help, and the canonical dry run passed; the dry run again reported 283 stored and two known-unavailable records with no pending work or writes. No live network canary or canonical inventory apply was run.
+
+Remaining phases still require their own implementation-time verification. Report lifecycle, validation/parser consolidation, bootstrap retirement, and generated-output tracking policy remain intentionally unchanged.

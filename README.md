@@ -403,19 +403,13 @@ npm run fetch:livestreams
 
 The command writes `reports/stream-inventory-candidate.json`. A complete candidate changes canonical inventory only with `--apply`, `--accept-source` on the first accepted source, and an explicit selection. Use `--accept-addition VIDEO_ID` for reviewed additions or `--accept-latest` for the newest numbered livestream; unselected additions remain report-only.
 
-Fetch one registered transcript directly to its manifest-owned TXT file:
-
-```powershell
-npm run fetch:transcript -- --video-id VIDEO_ID
-```
-
 Run a conservatively paced batch for all ready missing transcripts:
 
 ```powershell
 npm run fetch:transcripts
 ```
 
-The batch spaces every outbound transcript request by 60 seconds, stops on blocking/rate-limit evidence, checkpoints typed failure state, skips valid stored files before any request, and writes no raw transcript JSON. Use `--dry-run` for a network-free and canonical-write-free preview. Use `--limit 1` for a canary or `--retry-failed` to reconsider recorded failures. Forced replacement is available only through the single-video command and requires the current manifest hash.
+The batch spaces every outbound transcript request by 60 seconds, stops making requests on blocking/rate-limit evidence, checkpoints typed failure state, skips valid stored and known-unavailable files before any request, and writes no raw transcript JSON. Its final handoff lists every newly stored TXT path and every deferred, failed, or pending record. Use `--dry-run` for a network-free and canonical-write-free preview or `--limit 1` for a batch canary. Recorded failures remain eligible on ordinary later runs; only `known-unavailable` records are durably excluded. Valid stored transcripts are never overwritten.
 
 ## Weekly Livestream Workflow
 
@@ -455,13 +449,7 @@ Fetch every registered, ready livestream that does not yet have a valid TXT tran
 npm run fetch:transcripts
 ```
 
-The separate caption-scraping batch reads canonical episode order, skips valid stored, known-unavailable, and not-ready transcripts, and writes each successful transcript directly to TXT. For an explicitly selected accepted video, the single-video repair form remains available:
-
-```powershell
-npm run fetch:transcript -- --video-id VIDEO_ID --request-delay-ms 60000
-```
-
-The command writes `src/transcripts/txt/<fileStem>.txt` and updates `src/transcripts/manifest.json`. It does not write a JSON transcript and does not require a conversion step.
+The separate caption-scraping batch reads canonical episode order, skips valid stored, known-unavailable, and not-ready transcripts, and writes each successful transcript directly to `src/transcripts/txt/<fileStem>.txt` while updating `src/transcripts/manifest.json`. It does not write a JSON transcript or require a conversion step. The final handoff identifies each new TXT path for the creation and audit steps below, plus every deferred, failed, or pending record that still needs attention.
 
 For batch work, preview the selection without network access or canonical writes, then fetch ready missing transcripts:
 
@@ -470,7 +458,7 @@ npm run fetch:transcripts -- --dry-run
 npm run fetch:transcripts
 ```
 
-Use `--limit 1` for a single batch canary or `--retry-failed` to reconsider recorded failures. Valid stored transcripts are never overwritten by a batch. `npm run refresh:livestream-metadata` refreshes missing and scheduled, live, processing, or otherwise not-ready records so schedule and completion changes are retained; add `-- --refresh-all` for a full metadata refresh.
+Use `--limit 1` for a single batch canary. Recorded failures are retried by ordinary later runs, while valid stored transcripts are never overwritten and `known-unavailable` records remain skipped. `npm run refresh:livestream-metadata` refreshes missing and scheduled, live, processing, or otherwise not-ready records so schedule and completion changes are retained; add `-- --refresh-all` for a full metadata refresh.
 
 ### 3. Validate transcript state
 

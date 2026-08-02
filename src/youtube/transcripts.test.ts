@@ -1,9 +1,11 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 
+import { YoutubeRequestError } from "./rate-limit.js";
 import {
   cleanCaptionText,
   extractJson3Segments,
+  fetchVideoTranscript,
   orderTranscriptRecords,
   transcriptToText,
   type VideoTranscript,
@@ -41,6 +43,24 @@ test("json3 captions are parsed in memory without a JSON payload writer", () => 
 
 test("caption cleanup removes markup, tabs, and line breaks", () => {
   assert.equal(cleanCaptionText("<b>A&amp;B</b>\r\nnext\tword"), "A&B next word");
+});
+
+test("primary CAPTCHA evidence trips the circuit breaker without a fallback request", async () => {
+  let requests = 0;
+  await assert.rejects(
+    fetchVideoTranscript({
+      videoId: "abcdefghijk",
+      requestDelayMs: 0,
+      fetch: (async () => {
+        requests += 1;
+        return new Response('<div class="g-recaptcha">blocked</div>');
+      }) as typeof fetch,
+    }),
+    (error: unknown) =>
+      error instanceof YoutubeRequestError &&
+      error.classification === "rate_limited_or_blocked",
+  );
+  assert.equal(requests, 1);
 });
 
 test("manifest records retain canonical episode order after replacement", () => {
