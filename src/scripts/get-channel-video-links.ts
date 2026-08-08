@@ -11,6 +11,7 @@ const defaultReportPath = "reports/stream-inventory-candidate.json";
 
 async function main(): Promise<void> {
   const args = parseArgs(process.argv.slice(2));
+  if (args === null) return;
   const apiKey = await resolveYoutubeApiKey({
     ...(args.apiKeyFile !== undefined ? { apiKeyFile: args.apiKeyFile } : {}),
   });
@@ -20,7 +21,7 @@ async function main(): Promise<void> {
     ...(args.maxPages !== undefined ? { maxPages: args.maxPages } : {}),
     logger: (message) => console.error(message),
   });
-  const reportPath = args.output ?? (args.apply ? undefined : defaultReportPath);
+  const reportPath = args.output ?? (args.reviewOnly ? defaultReportPath : undefined);
   if (reportPath !== undefined) {
     await writeInventoryReport(reportPath, candidate);
   }
@@ -29,47 +30,50 @@ async function main(): Promise<void> {
       `omitted-baseline=${candidate.omittedBaselineVideoIds.length}` +
       (reportPath === undefined ? "" : ` report=${reportPath}`),
   );
-  if (args.apply) {
+  if (!args.reviewOnly) {
     const acceptedAdditionIds = [...args.acceptedAdditionIds];
-    if (args.acceptLatest) {
+    if (args.acceptLatest || acceptedAdditionIds.length === 0) {
       const latest = latestNumberedAddition(candidate.additions);
       if (latest === undefined) {
-        throw new Error("No proposed numbered livestream addition is available to accept.");
+        if (acceptedAdditionIds.length === 0) {
+          console.error("No new numbered livestream is available; canonical inventory is unchanged.");
+          return;
+        }
+      } else if (!acceptedAdditionIds.includes(latest.videoId)) {
+        acceptedAdditionIds.push(latest.videoId);
+        console.error(`Selected latest numbered livestream: ${latest.videoId} (${latest.linkText}).`);
       }
-      acceptedAdditionIds.push(latest.videoId);
-      console.error(`Selected latest numbered livestream: ${latest.videoId} (${latest.linkText}).`);
     }
     await applyInventoryCandidate(candidate, {
-      acceptSource: args.acceptSource,
+      acceptSource: true,
       acceptedAdditionIds,
     });
     console.error("Applied selected additions to canonical episode inventory and metadata.");
+  } else {
+    console.error("Explicit review-only run; canonical inventory is unchanged.");
   }
 }
 
-function parseArgs(args: string[]): {
+export function parseArgs(args: readonly string[]): {
   apiKeyFile?: string;
   output?: string;
   delayMs: number;
   maxPages?: number;
-  apply: boolean;
-  acceptSource: boolean;
+  reviewOnly: boolean;
   acceptLatest: boolean;
   acceptedAdditionIds: string[];
-} {
+} | null {
   const result: {
     apiKeyFile?: string;
     output?: string;
     delayMs: number;
     maxPages?: number;
-    apply: boolean;
-    acceptSource: boolean;
+    reviewOnly: boolean;
     acceptLatest: boolean;
     acceptedAdditionIds: string[];
   } = {
     delayMs: 1_000,
-    apply: false,
-    acceptSource: false,
+    reviewOnly: false,
     acceptLatest: false,
     acceptedAdditionIds: [],
   };
@@ -88,11 +92,8 @@ function parseArgs(args: string[]): {
       case "--max-pages":
         result.maxPages = integer(value(args, ++index, arg), arg);
         break;
-      case "--apply":
-        result.apply = true;
-        break;
-      case "--accept-source":
-        result.acceptSource = true;
+      case "--review-only":
+        result.reviewOnly = true;
         break;
       case "--accept-latest":
         result.acceptLatest = true;
@@ -104,29 +105,33 @@ function parseArgs(args: string[]): {
       case "-h":
         console.log(`Usage: npm run fetch:livestreams -- [options]
 
-Review-only discovery writes a concise inventory delta to
-reports/stream-inventory-candidate.json. Apply runs write no report unless
---output is passed. The API key precedence is --api-key-file, YOUTUBE_API_KEY,
-then .local/youtube-api-key.txt. Literal command-line keys are not accepted.
+By default, discovery registers the newest numbered livestream, pins the
+resolved channel source when needed, and updates canonical metadata. Unselected
+special broadcasts are not added. Use --review-only for an explicit diagnostic
+run that writes reports/stream-inventory-candidate.json without canonical
+changes. The API key precedence is --api-key-file, YOUTUBE_API_KEY, then
+.local/youtube-api-key.txt. Literal command-line keys are not accepted.
 
   --api-key-file <path>
   --output <path>               Write the concise inventory delta here
   --request-delay-ms <ms>
-  --max-pages <count>          Partial report-only probe
-  --apply                      Apply a complete, accepted candidate
-  --accept-source              Pin the first resolved channel/playlist
-  --accept-latest              Accept the newest proposed numbered livestream
+  --max-pages <count>           Partial probe; requires --review-only
+  --review-only                Do not update canonical files
+  --accept-latest              Also accept the newest numbered livestream
   --accept-addition <videoId>  Accept one proposed addition; repeat as needed
 `);
-        return process.exit(0);
+        return null;
       default:
         throw new Error(`Unknown argument: ${arg ?? ""}`);
     }
   }
+  if (result.maxPages !== undefined && !result.reviewOnly) {
+    throw new Error("--max-pages requires --review-only because a partial inventory cannot be applied.");
+  }
   return result;
 }
 
-function value(args: string[], index: number, name: string): string {
+function value(args: readonly string[], index: number, name: string): string {
   const result = args[index];
   if (!result) throw new Error(`Missing value for ${name}.`);
   return result;
@@ -138,7 +143,9 @@ function integer(input: string, name: string): number {
   return result;
 }
 
-main().catch((error: unknown) => {
-  console.error(error instanceof Error ? error.message : String(error));
-  process.exitCode = 1;
-});
+if (require.main === module) {
+  main().catch((error: unknown) => {
+    console.error(error instanceof Error ? error.message : String(error));
+    process.exitCode = 1;
+  });
+}

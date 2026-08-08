@@ -403,13 +403,13 @@ npm ci
 npm run check:transcript-store
 ```
 
-The ignored API key fallback is `.local/youtube-api-key.txt`. Inventory refresh is review-only by default:
+The ignored API key fallback is `.local/youtube-api-key.txt`. The normal inventory refresh registers the newest numbered livestream and stores its metadata:
 
 ```powershell
 npm run fetch:livestreams
 ```
 
-Review-only discovery writes the concise delta `reports/stream-inventory-candidate.json`. It contains source identity, completeness, proposed additions, baseline omissions, title changes, and an excluded-upload summary; full fetched metadata stays internal to the apply transaction. A complete candidate changes canonical inventory only with `--apply`, `--accept-source` on the first accepted source, and an explicit selection. Use `--accept-addition VIDEO_ID` for reviewed additions or `--accept-latest` for the newest numbered livestream; unselected additions remain report-only. Apply runs do not rewrite the report unless `--output` is passed explicitly.
+The command completes channel discovery, selects the newest proposed numbered livestream, pins the resolved channel source when needed, and atomically updates canonical inventory and metadata. It does not add unrelated or special broadcasts. Use `--accept-addition VIDEO_ID` to select one or more specific proposed additions instead. An explicit `--review-only` run writes the concise delta `reports/stream-inventory-candidate.json` without changing canonical files; ordinary runs write no report unless `--output` is passed.
 
 Run a conservatively paced batch for all ready missing transcripts:
 
@@ -417,35 +417,35 @@ Run a conservatively paced batch for all ready missing transcripts:
 npm run fetch:transcripts
 ```
 
-The batch spaces every outbound transcript request by 60 seconds, stops making requests on blocking/rate-limit evidence, checkpoints typed failure state, skips valid stored and known-unavailable files before any request, and writes no raw transcript JSON. Its final handoff lists every newly stored TXT path and every deferred, failed, or pending record. Use `--dry-run` for a network-free and canonical-write-free preview or `--limit 1` for a batch canary. Recorded failures remain eligible on ordinary later runs; only `known-unavailable` records are durably excluded. Valid stored transcripts are never overwritten.
+The batch spaces transcript attempts by 60 seconds but does not insert delays between the internal requests needed to fetch one transcript. It stops making requests on blocking/rate-limit evidence, checkpoints typed failure state, skips valid stored and known-unavailable files before any request, and writes no raw transcript JSON. Its final handoff lists every newly stored TXT path and every deferred, failed, or pending record. Use `--dry-run` for a network-free and canonical-write-free preview or `--limit 1` for a batch canary. Recorded failures remain eligible on ordinary later runs; only `known-unavailable` records are durably excluded. Valid stored transcripts are never overwritten.
 
 ## Weekly Livestream Workflow
 
 The TypeScript/TXT pipeline replaces the legacy sequence of maintaining a separate Markdown stream index, downloading transcript JSON, and converting that JSON separately. `src/channel/episodes.json` is the sole canonical archive inventory. The weekly curation, two independent audit passes, Hugo generation, and Git review remain part of the process.
 
-### 1. Discover and review livestreams
+### 1. Register the newest numbered livestream
 
-For the normal weekly pull, fetch a complete inventory and write the review report without changing canonical files:
+For the normal weekly pull, fetch a complete inventory and atomically register the newest numbered addition with its metadata:
 
 ```powershell
 npm run fetch:livestreams
 ```
 
-This writes the ignored review delta `reports/stream-inventory-candidate.json`. Review its source, completeness, additions, omissions, title changes, and excluded-upload summary before accepting anything; unrelated or special live broadcasts remain review-only.
+This automatically pins the resolved channel source when needed. Unrelated or special live broadcasts are left out of canonical inventory.
 
-After reviewing the report, accept only the newest numbered addition and store the canonical episode and metadata records:
-
-```powershell
-npm run fetch:livestreams -- --apply --accept-source --accept-latest
-```
-
-Apply one or more explicitly reviewed additions from a complete candidate:
+To accept one or more specific additions instead of the automatic newest-numbered selection:
 
 ```powershell
-npm run fetch:livestreams -- --apply --accept-source --accept-addition VIDEO_ID_1 --accept-addition VIDEO_ID_2
+npm run fetch:livestreams -- --accept-addition VIDEO_ID_1 --accept-addition VIDEO_ID_2
 ```
 
-The first accepted application requires `--accept-source` so the resolved channel and uploads playlist are pinned. Partial inventory probes can never be applied, unknown accepted IDs are rejected, and unselected proposed additions remain in the earlier review report. The apply command writes no new report by default; pass `--output <path>` only when an apply-time delta artifact is intentionally needed.
+Request a non-applying diagnostic inventory only when needed:
+
+```powershell
+npm run fetch:livestreams -- --review-only
+```
+
+The explicit diagnostic run writes the ignored delta `reports/stream-inventory-candidate.json`, including source identity, completeness, additions, omissions, title changes, and excluded uploads. Partial probes require `--review-only`, unknown accepted IDs are rejected, and unselected proposed additions remain excluded. Ordinary runs write no report; pass `--output <path>` when a delta artifact is intentionally needed.
 
 The accepted inventory atomically updates `src/channel/episodes.json` and `src/channel/video-metadata.json`. The episode store is the sole canonical archive inventory; do not maintain a separate stream list.
 
@@ -582,7 +582,7 @@ Use `npm run check:transcript-store -- --repair-transaction` only for an unfinis
 
 | Artifact | Reader and purpose | When generated | Lifecycle |
 |---|---|---|---|
-| `reports/stream-inventory-candidate.json` | Maintainer reviews a concise Google inventory delta before accepting additions. | Every review-only `fetch:livestreams` run; apply runs only with explicit `--output`. | The next emitted inventory report overwrites it. Delete it after review when no comparison artifact is needed. |
+| `reports/stream-inventory-candidate.json` | Maintainer inspects a concise Google inventory delta when a diagnostic artifact is needed. | An explicit `fetch:livestreams -- --review-only` run, or any run with `--output`. | The next emitted inventory report overwrites it. Delete it when no comparison artifact is needed. |
 | `reports/question-table-validation.json` and `.md` | Maintainer uses detailed local table diagnostics; CI receives the same hard errors directly in its log. | On validation failure, or on a passing run with explicit `--report`. | A later emitted report replaces them. Delete them after a clean validation if the old failure record is no longer useful. |
 
 All retained report files are ignored generated artifacts. Transcript status remains stdout-only through `status:transcripts`, so it has no file cleanup lifecycle.

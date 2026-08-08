@@ -230,7 +230,7 @@ The naval fetcher crawls the uploads playlist, which is broader than this archiv
 - Exclude ordinary uploads and Shorts from the transcript archive unless explicitly approved.
 - Mark scheduled, live, processing, missing-metadata, private, or removed entries as states; do not silently delete them.
 - Report additions, omissions, title changes, slug proposals, and scope exclusions before changing the public index.
-- Treat partial, paginated probe, or unknown-completeness inventory as report-only; it can never update canonical membership or order.
+- Treat a partial, paginated probe or unknown-completeness inventory as diagnostic-only; it can never update canonical membership or order.
 - Preserve the current newest-first interleaving of numbered and non-numbered streams.
 
 ### Authority transition
@@ -792,7 +792,7 @@ The migration is done when:
 
 - The feature branch is merged into `origin/master`.
 - The exact merged commit builds and deploys the Hugo site successfully.
-- `npm run fetch:video-links` uses the ignored local key, defaults to a reviewable delta, and applies only an accepted complete pinned-channel result.
+- `npm run fetch:livestreams` uses the ignored local key, defaults to registering the newest numbered addition from a complete pinned-channel result, and offers an explicit non-applying diagnostic mode.
 - `npm run alternate:fetch:transcripts:safe` writes only TXT transcript payloads.
 - A real or isolated canary proves direct-to-TXT output.
 - A second run proves stored/no-op behavior with byte-identical canonical/status files and no requests.

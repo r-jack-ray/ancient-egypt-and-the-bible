@@ -18,7 +18,7 @@ import { type VideoMetadataRecord } from "./metadata.js";
 import { YoutubeRequestError } from "./rate-limit.js";
 import { TranscriptFetchError, type VideoTranscript } from "./transcripts.js";
 
-test("batch writes every ready missing TXT with one shared request limiter and a deterministic handoff", async () => {
+test("batch writes every ready missing TXT with inter-transcript pacing and a deterministic handoff", async () => {
   const episodes = [
     episode("STORED00001", "stored-episode", 1),
     episode("READY000001", "ready-one", 2),
@@ -155,6 +155,43 @@ test("batch writes every ready missing TXT with one shared request limiter and a
     assert.equal(rerun.fetched, 0);
     assert.equal(rerun.storedSkipped, 4);
     assert.deepEqual(rerun.newTranscripts, []);
+  });
+});
+
+test("one transcript fetch does not delay its provider-internal requests", async () => {
+  const ready = episode("READY000001", "ready-one", 1);
+  await withFixture({
+    episodes: [ready],
+    metadata: [readyMetadata(ready.videoId)],
+  }, async () => {
+    let clock = 1_000;
+    const requestStarts: number[] = [];
+    const waits: number[] = [];
+    const result = await fetchTranscriptBatch({
+      requestDelayMs: 60_000,
+      rateLimitNow: () => clock,
+      sleep: async (milliseconds) => {
+        waits.push(milliseconds);
+        clock += milliseconds;
+      },
+      fetch: async () => {
+        requestStarts.push(clock);
+        clock += 100;
+        return new Response("ok");
+      },
+      fetcher: async (options) => {
+        assert.equal(options.requestDelayMs, 0);
+        assert.ok(options.fetch);
+        await options.fetch("https://example.test/video");
+        await options.fetch("https://example.test/player");
+        await options.fetch("https://example.test/captions");
+        return transcript(options.videoId);
+      },
+    });
+
+    assert.equal(result.fetched, 1);
+    assert.deepEqual(requestStarts, [1_000, 1_100, 1_200]);
+    assert.deepEqual(waits, []);
   });
 });
 

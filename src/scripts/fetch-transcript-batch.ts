@@ -46,7 +46,8 @@ function parseArgs(args: string[]): {
 
 Valid stored transcripts are always skipped. Batch-global force is disabled.
 Recorded failures remain eligible on ordinary later runs; only known-unavailable records are excluded.
-The npm command spaces every outbound transcript request by 60 seconds.
+The npm command spaces transcript attempts by 60 seconds. Internal requests needed
+to fetch one transcript are not delayed from each other.
 The final handoff lists each new TXT path and every deferred, failed, or pending record.
 `);
       process.exit(0);

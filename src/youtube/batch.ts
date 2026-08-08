@@ -82,13 +82,18 @@ export async function fetchTranscriptBatch(options: BatchOptions): Promise<Batch
     pendingRecords: [],
   };
   const fetcher = options.fetcher ?? fetchVideoTranscript;
-  const limitedFetch = createRateLimitedFetch({
-    delayMs: options.requestDelayMs,
+  const transcriptFetch = createRateLimitedFetch({
+    delayMs: 0,
     ...(options.fetch !== undefined ? { baseFetch: options.fetch } : {}),
     ...(options.logger !== undefined ? { logger: options.logger } : {}),
     ...(options.rateLimitNow !== undefined ? { now: options.rateLimitNow } : {}),
     ...(options.sleep !== undefined ? { sleep: options.sleep } : {}),
   });
+  const now = options.rateLimitNow ?? Date.now;
+  const sleep = options.sleep ?? ((milliseconds: number) =>
+    new Promise<void>((resolve) => setTimeout(resolve, milliseconds))
+  );
+  let previousTranscriptStart: number | undefined;
   let selected = 0;
 
   for (const episode of episodes.episodes) {
@@ -139,11 +144,19 @@ export async function fetchTranscriptBatch(options: BatchOptions): Promise<Batch
       options.logger?.(`Would fetch ${episode.videoId} -> src/transcripts/txt/${episode.fileStem}.txt`);
       continue;
     }
+    if (previousTranscriptStart !== undefined) {
+      const wait = Math.max(0, previousTranscriptStart + options.requestDelayMs - now());
+      if (wait > 0) {
+        options.logger?.(`Waiting ${Math.ceil(wait / 1000)}s before the next transcript fetch.`);
+        await sleep(wait);
+      }
+    }
+    previousTranscriptStart = now();
     try {
       const transcript = await fetcher({
         videoId: episode.videoId,
-        requestDelayMs: options.requestDelayMs,
-        fetch: limitedFetch,
+        requestDelayMs: 0,
+        fetch: transcriptFetch,
         ...(options.language !== undefined ? { language: options.language } : {}),
         ...(options.logger !== undefined ? { logger: options.logger } : {}),
       });
