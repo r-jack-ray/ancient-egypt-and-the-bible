@@ -5,8 +5,21 @@
   },
   "videos": [
     {
+      "videoId": "C3_uoVOj19I",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
+      "title": "Live Stream #273: Pouring Out the Hick Sauce",
+      "publishedAt": "2026-08-08T07:29:42Z",
+      "durationSeconds": 15490,
+      "liveBroadcastContent": "none",
+      "scheduledStartAt": "2026-08-08T03:00:00Z",
+      "actualStartAt": "2026-08-08T03:00:44Z",
+      "actualEndAt": "2026-08-08T07:19:31Z",
+      "privacyStatus": "public",
+      "uploadStatus": "processed"
+    },
+    {
       "videoId": "8bF8Hm5NpR8",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #272: The Oppression Pharaoh, We Are Legion",
       "publishedAt": "2026-08-01T07:30:59Z",
       "durationSeconds": 15297,
@@ -19,7 +32,7 @@
     },
     {
       "videoId": "lslnXdAd1Ok",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #271: All Your Reliquaries Are Mine",
       "publishedAt": "2026-07-25T07:28:07Z",
       "durationSeconds": 15395,
@@ -32,7 +45,7 @@
     },
     {
       "videoId": "gzXyFDL5TEM",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #270: Dead or Ankh",
       "publishedAt": "2026-07-18T07:13:11Z",
       "durationSeconds": 14495,
@@ -45,7 +58,7 @@
     },
     {
       "videoId": "al_vinriuiw",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #269: Smithers, Release The Book Hounds!",
       "publishedAt": "2026-07-11T06:19:03Z",
       "durationSeconds": 11356,
@@ -58,7 +71,7 @@
     },
     {
       "videoId": "Q5TLsJcfhcE",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #268: Getting It Okay",
       "publishedAt": "2026-07-04T07:23:15Z",
       "durationSeconds": 14821,
@@ -71,7 +84,7 @@
     },
     {
       "videoId": "oi709TjJlBE",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #267: Ramesses II, Marketing Genius",
       "publishedAt": "2026-06-27T08:18:11Z",
       "durationSeconds": 17962,
@@ -84,7 +97,7 @@
     },
     {
       "videoId": "3lcFL2Atyps",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #266: Three Major Questions",
       "publishedAt": "2026-06-20T07:47:34Z",
       "durationSeconds": 16483,
@@ -97,7 +110,7 @@
     },
     {
       "videoId": "wEZ5Ds5lLAE",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #265: The Pharaoh of Swing",
       "publishedAt": "2026-06-13T06:15:18Z",
       "durationSeconds": 11051,
@@ -110,7 +123,7 @@
     },
     {
       "videoId": "vcMbdIAWPX0",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #264: The Shasu of Vancouver",
       "publishedAt": "2026-06-06T07:52:12Z",
       "durationSeconds": 16628,
@@ -123,7 +136,7 @@
     },
     {
       "videoId": "xR30tlUVWoo",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #263: The Live Streamer's Gambit",
       "publishedAt": "2026-05-30T07:34:05Z",
       "durationSeconds": 15439,
@@ -136,7 +149,7 @@
     },
     {
       "videoId": "NzsZlN6phQo",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #262: The Vancouver Victory Stela",
       "publishedAt": "2026-05-23T07:35:02Z",
       "durationSeconds": 15626,
@@ -149,7 +162,7 @@
     },
     {
       "videoId": "H_HihkCg79Y",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #261: Naughty Word Free Live Stream",
       "publishedAt": "2026-05-16T08:00:54Z",
       "durationSeconds": 17342,
@@ -162,7 +175,7 @@
     },
     {
       "videoId": "OcfgbRnZYrI",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #260: Forty-Two Lost Questions",
       "publishedAt": "2026-05-09T07:44:13Z",
       "durationSeconds": 16117,
@@ -175,7 +188,7 @@
     },
     {
       "videoId": "v9NevZrXaIo",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #259: A Turn of the Seasons",
       "publishedAt": "2026-05-02T07:31:48Z",
       "durationSeconds": 15523,
@@ -188,7 +201,7 @@
     },
     {
       "videoId": "foKhkTvoIIw",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #258: Tax Time, There Aint No Reason and There Aint No Rhyme",
       "publishedAt": "2026-04-25T07:44:04Z",
       "durationSeconds": 16374,
@@ -201,7 +214,7 @@
     },
     {
       "videoId": "pqkBVIijD7w",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #257: There Will Be A Test",
       "publishedAt": "2026-04-18T07:16:49Z",
       "durationSeconds": 14562,
@@ -214,7 +227,7 @@
     },
     {
       "videoId": "zvJTEETdX-c",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #256: 18,000 Well-Read, Intelligent, Good-Looking Subs",
       "publishedAt": "2026-04-11T07:22:36Z",
       "durationSeconds": 14479,
@@ -227,7 +240,7 @@
     },
     {
       "videoId": "d8y1Gup3qas",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #255: A Very Good Friday",
       "publishedAt": "2026-04-04T07:15:32Z",
       "durationSeconds": 14402,
@@ -240,7 +253,7 @@
     },
     {
       "videoId": "iopwF9upcr4",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #254: Factoring The Fact Checker",
       "publishedAt": "2026-03-28T07:16:24Z",
       "durationSeconds": 14543,
@@ -253,7 +266,7 @@
     },
     {
       "videoId": "_6WmbdDHC8s",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #253: The Grassy Nome Theory",
       "publishedAt": "2026-03-21T06:44:39Z",
       "durationSeconds": 12812,
@@ -266,7 +279,7 @@
     },
     {
       "videoId": "QXhwWyCR6hc",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #252: The Golden Sound Fox",
       "publishedAt": "2026-03-14T07:26:11Z",
       "durationSeconds": 14758,
@@ -279,7 +292,7 @@
     },
     {
       "videoId": "jwv2y8JJ7as",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #251: Live Streams and Rumors of Live Streams",
       "publishedAt": "2026-03-07T08:04:13Z",
       "durationSeconds": 13704,
@@ -292,7 +305,7 @@
     },
     {
       "videoId": "stST4hqw2F4",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #250: The Origin Of All Live Streams",
       "publishedAt": "2026-02-28T08:48:00Z",
       "durationSeconds": 16214,
@@ -305,7 +318,7 @@
     },
     {
       "videoId": "jwt2Gc_6L0E",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:22.520Z",
       "title": "Live Stream #249: A Seraph in Every Flagon",
       "publishedAt": "2026-02-21T08:06:33Z",
       "durationSeconds": 13891,
@@ -318,7 +331,7 @@
     },
     {
       "videoId": "C6Kywg71LVY",
-      "fetchedAt": "2026-08-01T17:12:10.224Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #248: An Angel Under Every Rock",
       "publishedAt": "2026-02-14T08:53:55Z",
       "durationSeconds": 16769,
@@ -331,7 +344,7 @@
     },
     {
       "videoId": "hz1C0VPD310",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #247: A Hamburger Today For a Scarab Tomorrow",
       "publishedAt": "2026-02-07T08:18:21Z",
       "durationSeconds": 14864,
@@ -344,7 +357,7 @@
     },
     {
       "videoId": "fXqKmfztALQ",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #246: Egyptian Royal Streaming",
       "publishedAt": "2026-01-31T08:24:56Z",
       "durationSeconds": 14991,
@@ -357,7 +370,7 @@
     },
     {
       "videoId": "Qs-d4ght8aU",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #245: Friday The 23rd",
       "publishedAt": "2026-01-24T07:32:37Z",
       "durationSeconds": 12122,
@@ -370,7 +383,7 @@
     },
     {
       "videoId": "IK4BGi8PxBU",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #244: Romani Ite Domum",
       "publishedAt": "2026-01-17T07:56:41Z",
       "durationSeconds": 13447,
@@ -383,7 +396,7 @@
     },
     {
       "videoId": "LqyfBSMasP4",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #243: In Search Of Nuance",
       "publishedAt": "2026-01-10T09:12:04Z",
       "durationSeconds": 17943,
@@ -396,7 +409,7 @@
     },
     {
       "videoId": "PnupeC8FKmI",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #242: Happy New Year 2026",
       "publishedAt": "2026-01-03T08:36:44Z",
       "durationSeconds": 15680,
@@ -409,7 +422,7 @@
     },
     {
       "videoId": "qN_xzWvDxI4",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #241: Decking the Halls with Poison Ivy",
       "publishedAt": "2025-12-27T08:30:41Z",
       "durationSeconds": 15489,
@@ -422,7 +435,7 @@
     },
     {
       "videoId": "JCX5-10cRnY",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #240: The Last of Winter's Tea",
       "publishedAt": "2025-12-20T08:40:34Z",
       "durationSeconds": 16120,
@@ -435,7 +448,7 @@
     },
     {
       "videoId": "ZsgbcQeliOc",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #239: Monsters of Myth and Rubber Chicken",
       "publishedAt": "2025-12-13T08:24:39Z",
       "durationSeconds": 15052,
@@ -448,7 +461,7 @@
     },
     {
       "videoId": "WZmDXScoqr8",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #238: I've Got Your Emails",
       "publishedAt": "2025-12-06T08:37:03Z",
       "durationSeconds": 15761,
@@ -461,7 +474,7 @@
     },
     {
       "videoId": "gCl6LNO1C9k",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #237: Tea Spilled All Over The Floor",
       "publishedAt": "2025-11-29T07:50:02Z",
       "durationSeconds": 12836,
@@ -474,7 +487,7 @@
     },
     {
       "videoId": "r7A_KLa5PBs",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #236: Our Third ETS D&D Special Live Stream",
       "publishedAt": "2025-11-22T04:04:23Z",
       "durationSeconds": 13677,
@@ -487,7 +500,7 @@
     },
     {
       "videoId": "LLjPq776ixs",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #235: Trick Or Treaty",
       "publishedAt": "2025-11-15T07:24:15Z",
       "durationSeconds": 11639,
@@ -500,7 +513,7 @@
     },
     {
       "videoId": "nD2dx7zHZ80",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #234: The Nephilim Are Coming For You",
       "publishedAt": "2025-11-08T09:03:48Z",
       "durationSeconds": 16770,
@@ -513,7 +526,7 @@
     },
     {
       "videoId": "-OcrbEa6Lpk",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #233: Happy All Saints' Eve!!!",
       "publishedAt": "2025-11-01T07:20:53Z",
       "durationSeconds": 14989,
@@ -526,7 +539,7 @@
     },
     {
       "videoId": "ilhsoZRUxAQ",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #232: The ABR Grove Has No Soul",
       "publishedAt": "2025-10-25T08:57:21Z",
       "durationSeconds": 19998,
@@ -539,7 +552,7 @@
     },
     {
       "videoId": "W7vtUR0xYKM",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #231: Why Bother With Stream Titles No One Can Read?",
       "publishedAt": "2025-10-18T08:15:41Z",
       "durationSeconds": 18058,
@@ -552,7 +565,7 @@
     },
     {
       "videoId": "fsOH2nJfj7o",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #230: Ten Things About One Thing",
       "publishedAt": "2025-10-11T08:27:03Z",
       "durationSeconds": 18823,
@@ -565,7 +578,7 @@
     },
     {
       "videoId": "QmWPNaKetvE",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #229: A Levite on Every Street Corner",
       "publishedAt": "2025-10-04T07:18:12Z",
       "durationSeconds": 14813,
@@ -578,7 +591,7 @@
     },
     {
       "videoId": "WTjKMnybR3A",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #228: The ABR Boogie",
       "publishedAt": "2025-09-27T07:33:53Z",
       "durationSeconds": 15616,
@@ -591,7 +604,7 @@
     },
     {
       "videoId": "am_14bsWNQQ",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #227: Just One More Question",
       "publishedAt": "2025-09-20T07:48:18Z",
       "durationSeconds": 16487,
@@ -604,7 +617,7 @@
     },
     {
       "videoId": "zF15vlSZur4",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #226: Gem of a Question",
       "publishedAt": "2025-09-13T07:53:25Z",
       "durationSeconds": 16672,
@@ -617,7 +630,7 @@
     },
     {
       "videoId": "NgKmadBOnGM",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:23.726Z",
       "title": "Live Stream #225: Ancient Egyptian Pyramid Scheme",
       "publishedAt": "2025-09-06T07:27:04Z",
       "durationSeconds": 15153,
@@ -630,7 +643,7 @@
     },
     {
       "videoId": "JI6KgCW5B3w",
-      "fetchedAt": "2026-08-01T17:12:11.509Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #224: Pareidolia Paranoia",
       "publishedAt": "2025-08-30T06:53:24Z",
       "durationSeconds": 13166,
@@ -643,7 +656,7 @@
     },
     {
       "videoId": "u6o1iG0ZuAk",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #223: A Question of Assessed Damage",
       "publishedAt": "2025-08-23T07:26:53Z",
       "durationSeconds": 14967,
@@ -656,7 +669,7 @@
     },
     {
       "videoId": "TGXWgNo_wJE",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Special Live Stream: \"All the Stars as Angels\" Q&A",
       "publishedAt": "2025-08-21T06:46:53Z",
       "durationSeconds": 12352,
@@ -669,7 +682,7 @@
     },
     {
       "videoId": "Inh9XfP2T9w",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #222: The Master of All Classes",
       "publishedAt": "2025-08-16T07:26:16Z",
       "durationSeconds": 15214,
@@ -682,7 +695,7 @@
     },
     {
       "videoId": "EYAWYyFXlT8",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #221: The Concise Fun Notes Edition",
       "publishedAt": "2025-08-09T07:32:27Z",
       "durationSeconds": 15137,
@@ -695,7 +708,7 @@
     },
     {
       "videoId": "qYRbD6EriCg",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #220: Bears, Bears, Everywheres",
       "publishedAt": "2025-08-02T07:35:32Z",
       "durationSeconds": 15694,
@@ -708,7 +721,7 @@
     },
     {
       "videoId": "m5tH6mEi86w",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #219: Ten Things You Wish You Knew",
       "publishedAt": "2025-07-26T07:12:45Z",
       "durationSeconds": 14246,
@@ -721,7 +734,7 @@
     },
     {
       "videoId": "-1l9w5O2qUg",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #218: License to Exegete",
       "publishedAt": "2025-07-19T07:40:13Z",
       "durationSeconds": 15904,
@@ -734,7 +747,7 @@
     },
     {
       "videoId": "4fDBgW37xto",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #217: Cringe Scholars Society… with Red Wine",
       "publishedAt": "2025-07-12T07:42:14Z",
       "durationSeconds": 16213,
@@ -747,7 +760,7 @@
     },
     {
       "videoId": "5bDfwDUvOiQ",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #216: Rock Around The Ark Tonight",
       "publishedAt": "2025-07-05T08:27:26Z",
       "durationSeconds": 18564,
@@ -760,7 +773,7 @@
     },
     {
       "videoId": "LYoh2N5SRJQ",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #215: Amalgamated Lamentations",
       "publishedAt": "2025-06-28T07:22:44Z",
       "durationSeconds": 15073,
@@ -773,7 +786,7 @@
     },
     {
       "videoId": "sQAT3gBSn5c",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #214: Crud-Slurping Egyptian Deities",
       "publishedAt": "2025-06-21T07:27:17Z",
       "durationSeconds": 15102,
@@ -786,7 +799,7 @@
     },
     {
       "videoId": "C8LR4z1tFnQ",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #213: Exploring the Sewer World",
       "publishedAt": "2025-06-14T07:22:53Z",
       "durationSeconds": 14329,
@@ -799,7 +812,7 @@
     },
     {
       "videoId": "4H4OC1XPI-U",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #212: One Degree of Separation",
       "publishedAt": "2025-06-07T07:35:24Z",
       "durationSeconds": 15379,
@@ -812,7 +825,7 @@
     },
     {
       "videoId": "-moIej_LjtE",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #211: When Your Guest is a Gas-Bag",
       "publishedAt": "2025-05-31T07:24:14Z",
       "durationSeconds": 14826,
@@ -825,7 +838,7 @@
     },
     {
       "videoId": "YdM68l5ieEk",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #210: Reading Into The Lines",
       "publishedAt": "2025-05-24T07:56:16Z",
       "durationSeconds": 16548,
@@ -838,7 +851,7 @@
     },
     {
       "videoId": "H6CBCG9YX4U",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #209: One-Meaning Flippancy",
       "publishedAt": "2025-05-17T07:30:22Z",
       "durationSeconds": 15500,
@@ -851,7 +864,7 @@
     },
     {
       "videoId": "MXOn6JjytCE",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Special Live Stream: \"Reliquary of the Dead\" Q&A",
       "publishedAt": "2025-05-15T06:25:45Z",
       "durationSeconds": 11548,
@@ -864,7 +877,7 @@
     },
     {
       "videoId": "wf4G-NcyCe4",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #208: Hysterical Context Error",
       "publishedAt": "2025-05-10T07:58:20Z",
       "durationSeconds": 16908,
@@ -877,7 +890,7 @@
     },
     {
       "videoId": "Gjz-v5Wi804",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #207: Root of the Problem",
       "publishedAt": "2025-05-03T07:40:42Z",
       "durationSeconds": 15664,
@@ -890,7 +903,7 @@
     },
     {
       "videoId": "PBp54FqPv7E",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #206: Getting All Wet",
       "publishedAt": "2025-04-26T07:20:46Z",
       "durationSeconds": 14430,
@@ -903,7 +916,7 @@
     },
     {
       "videoId": "9X7hVNRfNUw",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #205: Dead Seminaries Society",
       "publishedAt": "2025-04-19T07:28:55Z",
       "durationSeconds": 14744,
@@ -916,7 +929,7 @@
     },
     {
       "videoId": "7-_-pSlLCgw",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #204: Never Ending Popcorn",
       "publishedAt": "2025-04-12T07:59:28Z",
       "durationSeconds": 16948,
@@ -929,7 +942,7 @@
     },
     {
       "videoId": "6DKyKGhC8Q4",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #203: Degenerative Artificial Intelligence",
       "publishedAt": "2025-04-05T07:19:22Z",
       "durationSeconds": 14292,
@@ -942,7 +955,7 @@
     },
     {
       "videoId": "KIoyVPmseOc",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #202: Rewriting Rewritten History: Did Egypt Try to Hide the Monster Pyramid Springs?",
       "publishedAt": "2025-03-29T07:16:30Z",
       "durationSeconds": 14554,
@@ -955,7 +968,7 @@
     },
     {
       "videoId": "JZy3BGzlUxo",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:24.970Z",
       "title": "Live Stream #201: Back From The Land Of The Dead",
       "publishedAt": "2025-03-22T07:27:38Z",
       "durationSeconds": 14999,
@@ -968,7 +981,7 @@
     },
     {
       "videoId": "wQkBymcVTEs",
-      "fetchedAt": "2026-08-01T17:12:12.690Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #200: The Terrible Two Hundreds!!!",
       "publishedAt": "2025-03-08T09:08:30Z",
       "durationSeconds": 17283,
@@ -981,7 +994,7 @@
     },
     {
       "videoId": "NSFbjecsdX8",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #199: Discovering the Tomb of Pharaoh Khnop-Hotep.",
       "publishedAt": "2025-03-01T09:15:21Z",
       "durationSeconds": 17851,
@@ -994,7 +1007,7 @@
     },
     {
       "videoId": "jPxGwjQc-B4",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #198: Travel Tips For Visiting Purgatory",
       "publishedAt": "2025-02-22T08:18:46Z",
       "durationSeconds": 14693,
@@ -1007,7 +1020,7 @@
     },
     {
       "videoId": "MzscycBpgjI",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #197: USAID Now Paying Grants in Canadian Tire Money",
       "publishedAt": "2025-02-15T09:09:15Z",
       "durationSeconds": 17045,
@@ -1020,7 +1033,7 @@
     },
     {
       "videoId": "pGmOZ9jdOdQ",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #196: Remembering Kenneth A. Kitchen",
       "publishedAt": "2025-02-08T08:23:11Z",
       "durationSeconds": 14730,
@@ -1033,7 +1046,7 @@
     },
     {
       "videoId": "vd2HbEVjess",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #195: Wisdom of the Channel",
       "publishedAt": "2025-02-01T09:21:30Z",
       "durationSeconds": 18166,
@@ -1046,7 +1059,7 @@
     },
     {
       "videoId": "b4lWcz28fMw",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #194: Vancouver City V",
       "publishedAt": "2025-01-25T08:35:07Z",
       "durationSeconds": 15583,
@@ -1059,7 +1072,7 @@
     },
     {
       "videoId": "F3BEjnAqgWw",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #193: Back in the Saddle.",
       "publishedAt": "2025-01-18T09:22:32Z",
       "durationSeconds": 18382,
@@ -1072,7 +1085,7 @@
     },
     {
       "videoId": "_5SSVZ0_soc",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #192: Truths, Facts, and Blessed Facts",
       "publishedAt": "2025-01-11T08:19:50Z",
       "durationSeconds": 14786,
@@ -1085,7 +1098,7 @@
     },
     {
       "videoId": "J_S_LxHFa08",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #191: Happy New Year!!!",
       "publishedAt": "2024-12-28T08:43:55Z",
       "durationSeconds": 16010,
@@ -1098,7 +1111,7 @@
     },
     {
       "videoId": "QhyTbeOS4g4",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #190: Spilt Tea All Over the Floor",
       "publishedAt": "2024-12-21T08:29:56Z",
       "durationSeconds": 15195,
@@ -1111,7 +1124,7 @@
     },
     {
       "videoId": "CQdYUSe3hV4",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #189: The Thirteenthest of Fridays",
       "publishedAt": "2024-12-14T08:45:54Z",
       "durationSeconds": 16155,
@@ -1124,7 +1137,7 @@
     },
     {
       "videoId": "aLsOi-ig6X4",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #188: Turning to Spilling the Coffee",
       "publishedAt": "2024-12-07T08:30:40Z",
       "durationSeconds": 15326,
@@ -1137,7 +1150,7 @@
     },
     {
       "videoId": "NZiidCizBEQ",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #187: Post-Conference Apocalypse",
       "publishedAt": "2024-11-30T08:23:37Z",
       "durationSeconds": 15071,
@@ -1150,7 +1163,7 @@
     },
     {
       "videoId": "msTEhuIDElw",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #186: Our Second ETS D&D Special Live Stream",
       "publishedAt": "2024-11-23T06:54:36Z",
       "durationSeconds": 9126,
@@ -1163,7 +1176,7 @@
     },
     {
       "videoId": "ZmyvBLejXL0",
-      "fetchedAt": "2026-08-01T17:12:13.921Z",
+      "fetchedAt": "2026-08-08T13:34:26.162Z",
       "title": "Live Stream #185: Song of the Awesome",
       "publishedAt": "2024-11-16T08:45:05Z",
       "durationSeconds": 16284,
@@ -1176,7 +1189,7 @@
     },
     {
       "videoId": "GhhX7GR-zvE",
-      "fetchedAt": "2026-08-01T17:12:15.132Z",
+      "fetchedAt": "2026-08-08T13:34:27.401Z",
       "title": "Live Stream #184: Priesthood of the Most Sacred Question",
       "publishedAt": "2024-11-09T08:19:33Z",
       "durationSeconds": 14568,
@@ -1189,7 +1202,7 @@
     },
     {
       "videoId": "UnLfr0rCC2k",
-      "fetchedAt": "2026-08-01T17:12:15.132Z",
+      "fetchedAt": "2026-08-08T13:34:27.401Z",
       "title": "Live Stream #183: Happy All Saints Day!",
       "publishedAt": "2024-11-02T07:46:16Z",
       "durationSeconds": 16228,
@@ -1202,7 +1215,7 @@
     },
     {
       "videoId": "6frru028lOc",
-      "fetchedAt": "2026-08-01T17:12:15.132Z",
+      "fetchedAt": "2026-08-08T13:34:27.401Z",
       "title": "Live Stream #182: Rolling Dice For The Answers",
       "publishedAt": "2024-10-26T08:09:38Z",
       "durationSeconds": 17660,
@@ -1215,7 +1228,7 @@
     },
     {
       "videoId": "1A4vtYOyyLc",
-      "fetchedAt": "2026-08-01T17:12:15.132Z",
+      "fetchedAt": "2026-08-08T13:34:27.401Z",
       "title": "Live Stream #181: Growing Concern Over The Ever Shrinking Deben",
       "publishedAt": "2024-10-19T07:24:56Z",
       "durationSeconds": 14836,
@@ -1228,7 +1241,7 @@
     },
     {
       "videoId": "poPNaIqdshw",
-      "fetchedAt": "2026-08-01T17:12:15.132Z",
+      "fetchedAt": "2026-08-08T13:34:27.401Z",
       "title": "Live Stream #180: Quirky Square Dancing Publishing",
       "publishedAt": "2024-10-12T07:26:12Z",
       "durationSeconds": 14946,
@@ -1241,7 +1254,7 @@
     },
     {
       "videoId": "FfAZ-VQatxI",
-      "fetchedAt": "2026-08-01T17:12:15.132Z",
+      "fetchedAt": "2026-08-08T13:34:27.401Z",
       "title": "Live Stream #179: Remember That Time I Took a Day Off?  Me Neither.",
       "publishedAt": "2024-10-05T07:29:25Z",
       "durationSeconds": 15213,
@@ -1254,7 +1267,7 @@
     },
     {
       "videoId": "hCdQe9q4A5w",
-      "fetchedAt": "2026-08-01T17:12:15.132Z",
+      "fetchedAt": "2026-08-08T13:34:27.401Z",
       "title": "Live Stream #178: Raising Samuel For Fun and Prophet",
       "publishedAt": "2024-09-28T07:57:16Z",
       "durationSeconds": 16964,
@@ -1267,7 +1280,7 @@
     },
     {
       "videoId": "ISMO6TD9giY",
-      "fetchedAt": "2026-08-01T17:12:15.132Z",
+      "fetchedAt": "2026-08-08T13:34:27.401Z",
       "title": "Live Stream #177: Is David Falk the Same Person as Dr. Falk?",
       "publishedAt": "2024-09-21T07:55:48Z",
       "durationSeconds": 16774,
@@ -1280,7 +1293,7 @@
     },
     {
       "videoId": "sKKScMy3Q64",
-      "fetchedAt": "2026-08-01T17:12:15.132Z",
+      "fetchedAt": "2026-08-08T13:34:27.401Z",
       "title": "Live Stream #176: The People Groups of YouTube",
       "publishedAt": "2024-09-14T07:48:37Z",
       "durationSeconds": 16177,
@@ -1293,7 +1306,7 @@
     },
     {
       "videoId": "bGY1zwr_wss",
-      "fetchedAt": "2026-08-01T17:12:15.132Z",
+      "fetchedAt": "2026-08-08T13:34:27.401Z",
       "title": "Live Stream #175: Meta the Meta, Meta Responses",
       "publishedAt": "2024-09-07T07:17:00Z",
       "durationSeconds": 14646,
@@ -1306,7 +1319,7 @@
     },
     {
       "videoId": "pjs3dNgZMQA",
-      "fetchedAt": "2026-08-01T17:12:16.379Z",
+      "fetchedAt": "2026-08-08T13:34:28.864Z",
       "title": "Live Stream #174: The Shroud With The X-Ray Eyes",
       "publishedAt": "2024-08-31T07:28:07Z",
       "durationSeconds": 14834,
@@ -1319,7 +1332,7 @@
     },
     {
       "videoId": "80oRlFB_V60",
-      "fetchedAt": "2026-08-01T17:12:16.379Z",
+      "fetchedAt": "2026-08-08T13:34:28.864Z",
       "title": "Live Stream #173: I never said she stole my money",
       "publishedAt": "2024-08-24T07:25:13Z",
       "durationSeconds": 14923,
@@ -1332,7 +1345,7 @@
     },
     {
       "videoId": "uSma5je3KA4",
-      "fetchedAt": "2026-08-01T17:12:16.379Z",
+      "fetchedAt": "2026-08-08T13:34:28.864Z",
       "title": "Live Stream #172: A Marathon of 14,000 Subs",
       "publishedAt": "2024-08-17T07:56:09Z",
       "durationSeconds": 16609,
@@ -1345,7 +1358,7 @@
     },
     {
       "videoId": "IArgOM3IUb4",
-      "fetchedAt": "2026-08-01T17:12:16.379Z",
+      "fetchedAt": "2026-08-08T13:34:28.864Z",
       "title": "Live Stream #171: A Census of Every Conjecture",
       "publishedAt": "2024-08-10T07:41:41Z",
       "durationSeconds": 15816,
@@ -1358,7 +1371,7 @@
     },
     {
       "videoId": "rlELX8XI7S8",
-      "fetchedAt": "2026-08-01T17:12:16.379Z",
+      "fetchedAt": "2026-08-08T13:34:28.864Z",
       "title": "Live Stream #170: The Foundation of All Deposits",
       "publishedAt": "2024-08-03T08:11:21Z",
       "durationSeconds": 16211,
@@ -1371,7 +1384,7 @@
     },
     {
       "videoId": "Ur0jd3JLNxk",
-      "fetchedAt": "2026-08-01T17:12:16.379Z",
+      "fetchedAt": "2026-08-08T13:34:28.864Z",
       "title": "Live Stream #169: Your Local Ski Resort Cannot Be The Real Mount Sinai",
       "publishedAt": "2024-07-27T07:25:12Z",
       "durationSeconds": 14115,
@@ -1384,7 +1397,7 @@
     },
     {
       "videoId": "g9tKk48D9Rw",
-      "fetchedAt": "2026-08-01T17:12:16.379Z",
+      "fetchedAt": "2026-08-08T13:34:28.864Z",
       "title": "Live Stream #168: Funky, Groovy, Trendy Ramesses II",
       "publishedAt": "2024-07-20T10:20:37Z",
       "durationSeconds": 15188,
@@ -1397,7 +1410,7 @@
     },
     {
       "videoId": "GRa11_37Vy8",
-      "fetchedAt": "2026-08-01T17:12:16.379Z",
+      "fetchedAt": "2026-08-08T13:34:28.864Z",
       "title": "Live Stream #167: Super Expensive Egyptian Ritual Practice",
       "publishedAt": "2024-07-13T07:24:12Z",
       "durationSeconds": 15042,
@@ -1410,7 +1423,7 @@
     },
     {
       "videoId": "p2U6vH79c7o",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Live Stream #166: Have Nothing to Do with Those Spirally Galaxies",
       "publishedAt": "2024-07-06T07:33:14Z",
       "durationSeconds": 15430,
@@ -1423,7 +1436,7 @@
     },
     {
       "videoId": "Z2_ZnAtHtmM",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Live Stream #165: The Credible Falk Always Checks The Sources",
       "publishedAt": "2024-06-29T08:28:07Z",
       "durationSeconds": 18397,
@@ -1436,7 +1449,7 @@
     },
     {
       "videoId": "l7sVUZAXkas",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Live Stream #164: Is Dr. Falk The Biblical David?",
       "publishedAt": "2024-06-22T07:30:45Z",
       "durationSeconds": 15277,
@@ -1449,7 +1462,7 @@
     },
     {
       "videoId": "NQcd1Bw1bXs",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Dr. Falk plays Assassin's Creed Origins (part 11)",
       "publishedAt": "2024-06-19T02:31:30Z",
       "durationSeconds": 11857,
@@ -1462,7 +1475,7 @@
     },
     {
       "videoId": "IKcic5xC9fA",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Live Stream #163: Succeeding at Failed Questions",
       "publishedAt": "2024-06-15T07:19:12Z",
       "durationSeconds": 14731,
@@ -1475,7 +1488,7 @@
     },
     {
       "videoId": "sJr5k0FP79I",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Dr. Falk plays Assassin's Creed Origins (part 10)",
       "publishedAt": "2024-06-12T03:10:34Z",
       "durationSeconds": 14118,
@@ -1488,7 +1501,7 @@
     },
     {
       "videoId": "PA2-iam9dN0",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Live Stream #162: King for a Day",
       "publishedAt": "2024-06-08T07:32:09Z",
       "durationSeconds": 15510,
@@ -1501,7 +1514,7 @@
     },
     {
       "videoId": "wtYiq8I5dqE",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Dr. Falk plays Assassin's Creed Origins (part 9)",
       "publishedAt": "2024-06-05T03:23:55Z",
       "durationSeconds": 14686,
@@ -1514,7 +1527,7 @@
     },
     {
       "videoId": "2f1Teze-G7Y",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Live Stream #161: All The Second-Born Questions",
       "publishedAt": "2024-06-01T08:09:20Z",
       "durationSeconds": 17410,
@@ -1527,7 +1540,7 @@
     },
     {
       "videoId": "Irr11_k26rY",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Dr. Falk plays Assassin's Creed Origins (part 8)",
       "publishedAt": "2024-05-29T02:25:46Z",
       "durationSeconds": 11525,
@@ -1540,7 +1553,7 @@
     },
     {
       "videoId": "JA1A7IeLekE",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Live Stream #160: The Synchronicity Of 13,000 Subs",
       "publishedAt": "2024-05-25T07:28:23Z",
       "durationSeconds": 15069,
@@ -1553,7 +1566,7 @@
     },
     {
       "videoId": "1a1sbiJ6_GE",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Dr. Falk plays Assassin's Creed Origins (part 7)",
       "publishedAt": "2024-05-22T06:53:59Z",
       "durationSeconds": 13347,
@@ -1566,7 +1579,7 @@
     },
     {
       "videoId": "q88q_ozY_Ec",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Live Stream #159: A Flood of Questions",
       "publishedAt": "2024-05-18T07:43:11Z",
       "durationSeconds": 15994,
@@ -1579,7 +1592,7 @@
     },
     {
       "videoId": "0Y3MlmY_XYA",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Dr. Falk plays Assassin's Creed Origins (part 6)",
       "publishedAt": "2024-05-15T03:13:58Z",
       "durationSeconds": 14375,
@@ -1592,7 +1605,7 @@
     },
     {
       "videoId": "E9vtdhGehes",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Live Stream #158: Biblically Accurate Harsh Language",
       "publishedAt": "2024-05-11T07:58:16Z",
       "durationSeconds": 16658,
@@ -1605,7 +1618,7 @@
     },
     {
       "videoId": "6wHY3Th2tVs",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Dr. Falk plays Assassin's Creed Origins (part 5)",
       "publishedAt": "2024-05-08T03:19:53Z",
       "durationSeconds": 14600,
@@ -1618,7 +1631,7 @@
     },
     {
       "videoId": "pqpz1SEv_II",
-      "fetchedAt": "2026-08-01T17:12:17.586Z",
+      "fetchedAt": "2026-08-08T13:34:30.058Z",
       "title": "Live Stream #157: The No True Canadian Fallacy",
       "publishedAt": "2024-05-04T07:39:20Z",
       "durationSeconds": 15827,
@@ -1631,7 +1644,7 @@
     },
     {
       "videoId": "1N-qg93cl8w",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Dr. Falk plays Assassin's Creed Origins (part 4)",
       "publishedAt": "2024-05-01T02:31:15Z",
       "durationSeconds": 11715,
@@ -1644,7 +1657,7 @@
     },
     {
       "videoId": "bsrdrbRaZYQ",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Live Stream #156: The Pursuasion Dictionary",
       "publishedAt": "2024-04-27T07:58:19Z",
       "durationSeconds": 16960,
@@ -1657,7 +1670,7 @@
     },
     {
       "videoId": "3ib-8HjgiY4",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Dr. Falk plays Assassin's Creed Origins (part 3)",
       "publishedAt": "2024-04-24T02:24:54Z",
       "durationSeconds": 11635,
@@ -1670,7 +1683,7 @@
     },
     {
       "videoId": "qQuVwgNpPk8",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Live Stream #155: The Tyranny of Hypocrisy",
       "publishedAt": "2024-04-20T07:13:34Z",
       "durationSeconds": 14420,
@@ -1683,7 +1696,7 @@
     },
     {
       "videoId": "TPSphYjc8wg",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Dr. Falk plays Assassin's Creed Origins (part 2)",
       "publishedAt": "2024-04-17T02:23:25Z",
       "durationSeconds": 11431,
@@ -1696,7 +1709,7 @@
     },
     {
       "videoId": "kH3qHY_b3BU",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Live Stream #154: A Brief Question of Logic",
       "publishedAt": "2024-04-13T07:33:43Z",
       "durationSeconds": 15317,
@@ -1709,7 +1722,7 @@
     },
     {
       "videoId": "3pnl6NsN9xI",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Dr. Falk plays Assassin's Creed Origins (part 1)",
       "publishedAt": "2024-04-10T02:23:24Z",
       "durationSeconds": 11516,
@@ -1722,7 +1735,7 @@
     },
     {
       "videoId": "B-mR9TACPCM",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Live Stream #153: Philosophy Is A Walk On A Slippery Rock",
       "publishedAt": "2024-04-06T07:16:41Z",
       "durationSeconds": 14439,
@@ -1735,7 +1748,7 @@
     },
     {
       "videoId": "6G_FngsHgV8",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Live Stream #152: Good Friday 2024",
       "publishedAt": "2024-03-30T08:13:32Z",
       "durationSeconds": 17788,
@@ -1748,7 +1761,7 @@
     },
     {
       "videoId": "oGgvDwIod1U",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Live Stream #151: Nine Myths About Spam",
       "publishedAt": "2024-03-23T08:25:26Z",
       "durationSeconds": 18233,
@@ -1761,7 +1774,7 @@
     },
     {
       "videoId": "I53p5iUeVjY",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Live Stream #150: Not So Glorious Glass Fish",
       "publishedAt": "2024-03-16T08:10:23Z",
       "durationSeconds": 17737,
@@ -1774,7 +1787,7 @@
     },
     {
       "videoId": "RE-lcBpQJ0s",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Live Stream #149: Univocality and Naïve Literalism Sitting in a Tree",
       "publishedAt": "2024-03-09T09:44:49Z",
       "durationSeconds": 19648,
@@ -1787,7 +1800,7 @@
     },
     {
       "videoId": "MHfIQdIFROg",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Live Stream #148: Christian Marriage, Meant To Endure",
       "publishedAt": "2024-03-02T08:39:47Z",
       "durationSeconds": 16053,
@@ -1800,7 +1813,7 @@
     },
     {
       "videoId": "mVea6OvoRic",
-      "fetchedAt": "2026-08-01T17:12:18.862Z",
+      "fetchedAt": "2026-08-08T13:34:31.270Z",
       "title": "Live Stream #147: Celebrating 12,000 Subs… We Hope.",
       "publishedAt": "2024-02-24T08:17:48Z",
       "durationSeconds": 14763,
@@ -1813,7 +1826,7 @@
     },
     {
       "videoId": "9vUnL8PmZFI",
-      "fetchedAt": "2026-08-01T17:12:20.079Z",
+      "fetchedAt": "2026-08-08T13:34:32.459Z",
       "title": "Live Stream #146: An Evening with David Falk, Whatcha Expecting?",
       "publishedAt": "2024-02-17T08:49:25Z",
       "durationSeconds": 16448,
@@ -1826,7 +1839,7 @@
     },
     {
       "videoId": "F0YfmR6qli4",
-      "fetchedAt": "2026-08-01T17:12:20.079Z",
+      "fetchedAt": "2026-08-08T13:34:32.459Z",
       "title": "Live Stream #145: Questions at 8pm PST",
       "publishedAt": "2024-02-10T08:56:45Z",
       "durationSeconds": 17035,
@@ -1839,7 +1852,7 @@
     },
     {
       "videoId": "soQU4CJKdt4",
-      "fetchedAt": "2026-08-01T17:12:20.079Z",
+      "fetchedAt": "2026-08-08T13:34:32.459Z",
       "title": "Live Stream #144: Stampede of Sacred Cows",
       "publishedAt": "2024-02-03T07:11:00Z",
       "durationSeconds": 16603,
@@ -1852,7 +1865,7 @@
     },
     {
       "videoId": "QfRTudHfzBk",
-      "fetchedAt": "2026-08-01T17:12:20.079Z",
+      "fetchedAt": "2026-08-08T13:34:32.459Z",
       "title": "Live Stream #143: Something Overripe in the State of the Answers",
       "publishedAt": "2024-01-27T07:20:51Z",
       "durationSeconds": 18414,
@@ -1865,7 +1878,7 @@
     },
     {
       "videoId": "fVPZXw6Vbt0",
-      "fetchedAt": "2026-08-01T17:12:20.079Z",
+      "fetchedAt": "2026-08-08T13:34:32.459Z",
       "title": "Live Stream #142: Think About the Questions!!!",
       "publishedAt": "2024-01-20T07:29:10Z",
       "durationSeconds": 18735,
@@ -1878,7 +1891,7 @@
     },
     {
       "videoId": "u_631AIpRwA",
-      "fetchedAt": "2026-08-01T17:12:20.079Z",
+      "fetchedAt": "2026-08-08T13:34:32.459Z",
       "title": "Live Stream #141: The Sweet Incense of an Answered Question",
       "publishedAt": "2024-01-13T06:55:31Z",
       "durationSeconds": 16895,
@@ -1891,7 +1904,7 @@
     },
     {
       "videoId": "X3LyU6SOsNM",
-      "fetchedAt": "2026-08-01T17:12:20.079Z",
+      "fetchedAt": "2026-08-08T13:34:32.459Z",
       "title": "Live Stream #140: Popcorn or Curse Amulet, which is Saltier?",
       "publishedAt": "2024-01-06T06:33:34Z",
       "durationSeconds": 15681,
@@ -1904,7 +1917,7 @@
     },
     {
       "videoId": "HEs8SiArRI0",
-      "fetchedAt": "2026-08-01T17:12:20.079Z",
+      "fetchedAt": "2026-08-08T13:34:32.459Z",
       "title": "Live Stream #139: Mr. EC Wishes You A Happy 2024",
       "publishedAt": "2023-12-30T07:26:41Z",
       "durationSeconds": 14880,
@@ -1917,7 +1930,7 @@
     },
     {
       "videoId": "gULL91393YI",
-      "fetchedAt": "2026-08-01T17:12:20.079Z",
+      "fetchedAt": "2026-08-08T13:34:32.459Z",
       "title": "Live Stream #138: St. Nick is Watching You",
       "publishedAt": "2023-12-23T08:30:42Z",
       "durationSeconds": 15268,
@@ -1930,7 +1943,7 @@
     },
     {
       "videoId": "fGyijLYdH7A",
-      "fetchedAt": "2026-08-01T17:12:20.079Z",
+      "fetchedAt": "2026-08-08T13:34:32.459Z",
       "title": "Live Stream #137: 365.2422 Days Of Questions",
       "publishedAt": "2023-12-16T09:04:21Z",
       "durationSeconds": 15809,
@@ -1943,7 +1956,7 @@
     },
     {
       "videoId": "QihdtBTu_tg",
-      "fetchedAt": "2026-08-01T17:12:20.079Z",
+      "fetchedAt": "2026-08-08T13:34:32.459Z",
       "title": "Live Stream #136: Extreme Old Questions",
       "publishedAt": "2023-12-09T08:36:47Z",
       "durationSeconds": 15778,
@@ -1956,7 +1969,7 @@
     },
     {
       "videoId": "e4ZN0Zc9I7Y",
-      "fetchedAt": "2026-08-01T17:12:21.404Z",
+      "fetchedAt": "2026-08-08T13:34:33.669Z",
       "title": "Live Stream #135: Full Time!!! Full Time!!!",
       "publishedAt": "2023-12-02T08:26:41Z",
       "durationSeconds": 15013,
@@ -1969,7 +1982,7 @@
     },
     {
       "videoId": "HgdAiK9HH-A",
-      "fetchedAt": "2026-08-01T17:12:21.404Z",
+      "fetchedAt": "2026-08-08T13:34:33.669Z",
       "title": "Live Stream #134: Home Sweet Home",
       "publishedAt": "2023-11-25T08:58:10Z",
       "durationSeconds": 16904,
@@ -1982,7 +1995,7 @@
     },
     {
       "videoId": "m0lfwar6BD0",
-      "fetchedAt": "2026-08-01T17:12:21.404Z",
+      "fetchedAt": "2026-08-08T13:34:33.669Z",
       "title": "Live Stream #133: The ETS D&D Special Live Stream",
       "publishedAt": "2023-11-18T06:16:22Z",
       "durationSeconds": 10197,
@@ -1995,7 +2008,7 @@
     },
     {
       "videoId": "0UFI0kEn0BI",
-      "fetchedAt": "2026-08-01T17:12:21.404Z",
+      "fetchedAt": "2026-08-08T13:34:33.669Z",
       "title": "Live Stream #132: The Questions are Genuine, But Not In The Way You Think",
       "publishedAt": "2023-11-11T08:49:51Z",
       "durationSeconds": 16268,
@@ -2008,7 +2021,7 @@
     },
     {
       "videoId": "5eWfYtTAN4A",
-      "fetchedAt": "2026-08-01T17:12:21.404Z",
+      "fetchedAt": "2026-08-08T13:34:33.669Z",
       "title": "Live Stream #131: Very Spooky Scary Answers",
       "publishedAt": "2023-11-04T07:20:38Z",
       "durationSeconds": 14826,
@@ -2021,7 +2034,7 @@
     },
     {
       "videoId": "9nYsP-vzSXQ",
-      "fetchedAt": "2026-08-01T17:12:21.404Z",
+      "fetchedAt": "2026-08-08T13:34:33.669Z",
       "title": "Live Stream #130: Million Dollar Questions",
       "publishedAt": "2023-10-28T07:28:30Z",
       "durationSeconds": 15188,
@@ -2034,7 +2047,7 @@
     },
     {
       "videoId": "FLegx9MGmdc",
-      "fetchedAt": "2026-08-01T17:12:21.404Z",
+      "fetchedAt": "2026-08-08T13:34:33.669Z",
       "title": "Live Stream #129: Anything But Ammonites",
       "publishedAt": "2023-10-21T09:35:57Z",
       "durationSeconds": 14874,
@@ -2047,7 +2060,7 @@
     },
     {
       "videoId": "SCiHmB9L850",
-      "fetchedAt": "2026-08-01T17:12:21.404Z",
+      "fetchedAt": "2026-08-08T13:34:33.669Z",
       "title": "Live Stream #128: Knowledge Gaps Filled Fast",
       "publishedAt": "2023-10-14T10:21:50Z",
       "durationSeconds": 15363,
@@ -2060,7 +2073,7 @@
     },
     {
       "videoId": "hqbQIlTCGTE",
-      "fetchedAt": "2026-08-01T17:12:21.404Z",
+      "fetchedAt": "2026-08-08T13:34:33.669Z",
       "title": "Live Stream #127: Pyramid of the Puppet Pharaohs",
       "publishedAt": "2023-10-07T06:52:09Z",
       "durationSeconds": 12746,
@@ -2073,7 +2086,7 @@
     },
     {
       "videoId": "Ou2jBECn4rM",
-      "fetchedAt": "2026-08-01T17:12:21.404Z",
+      "fetchedAt": "2026-08-08T13:34:33.669Z",
       "title": "Live Stream #126: Apocalypse Of The Sock Puppet",
       "publishedAt": "2023-09-30T07:58:02Z",
       "durationSeconds": 15130,
@@ -2086,7 +2099,7 @@
     },
     {
       "videoId": "zv-1Fp_A8Fg",
-      "fetchedAt": "2026-08-01T17:12:21.404Z",
+      "fetchedAt": "2026-08-08T13:34:33.669Z",
       "title": "Live Stream #125: In the Beginning... Nope… Let's Question Instead.",
       "publishedAt": "2023-09-23T08:03:21Z",
       "durationSeconds": 15339,
@@ -2099,7 +2112,7 @@
     },
     {
       "videoId": "OZSDvdeTC-Q",
-      "fetchedAt": "2026-08-01T17:12:21.404Z",
+      "fetchedAt": "2026-08-08T13:34:33.669Z",
       "title": "Live Stream #124: Questioning Book Learning",
       "publishedAt": "2023-09-16T08:22:04Z",
       "durationSeconds": 16091,
@@ -2112,7 +2125,7 @@
     },
     {
       "videoId": "8B89Z9FUymI",
-      "fetchedAt": "2026-08-01T17:12:22.566Z",
+      "fetchedAt": "2026-08-08T13:34:34.862Z",
       "title": "Live Stream #123: Biblical Archaeology, A Game Any Clown Can Play",
       "publishedAt": "2023-09-09T08:51:39Z",
       "durationSeconds": 16333,
@@ -2125,7 +2138,7 @@
     },
     {
       "videoId": "chnlrXAizaM",
-      "fetchedAt": "2026-08-01T17:12:22.566Z",
+      "fetchedAt": "2026-08-08T13:34:34.862Z",
       "title": "Live Stream #122: Myths, The Academic World, and Questions",
       "publishedAt": "2023-09-02T10:19:40Z",
       "durationSeconds": 15127,
@@ -2138,7 +2151,7 @@
     },
     {
       "videoId": "4pba10scwKg",
-      "fetchedAt": "2026-08-01T17:12:22.566Z",
+      "fetchedAt": "2026-08-08T13:34:34.862Z",
       "title": "Live Stream #121: Big questions and puny gods",
       "publishedAt": "2023-08-26T07:35:56Z",
       "durationSeconds": 13515,
@@ -2151,7 +2164,7 @@
     },
     {
       "videoId": "0WXR_JFYsFQ",
-      "fetchedAt": "2026-08-01T17:12:22.566Z",
+      "fetchedAt": "2026-08-08T13:34:34.862Z",
       "title": "Live Stream #120: What Are You Going To Do With Your Question?",
       "publishedAt": "2023-08-19T07:48:22Z",
       "durationSeconds": 14272,
@@ -2164,7 +2177,7 @@
     },
     {
       "videoId": "RR1gcWg1gus",
-      "fetchedAt": "2026-08-01T17:12:22.566Z",
+      "fetchedAt": "2026-08-08T13:34:34.862Z",
       "title": "Live Stream #119: Dinosaur? Hippo? Question Monster?",
       "publishedAt": "2023-08-12T07:47:32Z",
       "durationSeconds": 14864,
@@ -2177,7 +2190,7 @@
     },
     {
       "videoId": "JwbrXBi_ieU",
-      "fetchedAt": "2026-08-01T17:12:22.566Z",
+      "fetchedAt": "2026-08-08T13:34:34.862Z",
       "title": "Live Stream #118: Yeah, Even with Good Questions, the Egyptian Afterlife Still Sucks",
       "publishedAt": "2023-08-05T08:20:42Z",
       "durationSeconds": 15693,
@@ -2190,7 +2203,7 @@
     },
     {
       "videoId": "mW67gRhiXgs",
-      "fetchedAt": "2026-08-01T17:12:22.566Z",
+      "fetchedAt": "2026-08-08T13:34:34.862Z",
       "title": "Live Steam #117: Celebrating 10,000 Subscribers",
       "publishedAt": "2023-07-29T07:53:42Z",
       "durationSeconds": 14906,
@@ -2203,7 +2216,7 @@
     },
     {
       "videoId": "iuLLi4v_pkw",
-      "fetchedAt": "2026-08-01T17:12:22.566Z",
+      "fetchedAt": "2026-08-08T13:34:34.862Z",
       "title": "Live Stream #116: Anachronistic Questions Brought Direct to You",
       "publishedAt": "2023-07-22T06:56:43Z",
       "durationSeconds": 11274,
@@ -2216,7 +2229,7 @@
     },
     {
       "videoId": "63Yt1EIc8Ng",
-      "fetchedAt": "2026-08-01T17:12:22.566Z",
+      "fetchedAt": "2026-08-08T13:34:34.862Z",
       "title": "Live Stream #115: The Magic of a Good Question",
       "publishedAt": "2023-07-15T07:46:23Z",
       "durationSeconds": 13715,
@@ -2229,7 +2242,7 @@
     },
     {
       "videoId": "HJp8t4AXgXg",
-      "fetchedAt": "2026-08-01T17:12:22.566Z",
+      "fetchedAt": "2026-08-08T13:34:34.862Z",
       "title": "Live Stream #114: Sugary Question Goodness",
       "publishedAt": "2023-07-08T07:55:03Z",
       "durationSeconds": 15520,
@@ -2242,7 +2255,7 @@
     },
     {
       "videoId": "KSYXqKQnJxA",
-      "fetchedAt": "2026-08-01T17:12:23.779Z",
+      "fetchedAt": "2026-08-08T13:34:36.045Z",
       "title": "Live Stream #113: Questioning the Lore",
       "publishedAt": "2023-07-01T07:45:58Z",
       "durationSeconds": 14521,
@@ -2255,7 +2268,7 @@
     },
     {
       "videoId": "MlFIL9cvfsg",
-      "fetchedAt": "2026-08-01T17:12:23.779Z",
+      "fetchedAt": "2026-08-08T13:34:36.045Z",
       "title": "Live Stream #112: Questions Are The Reward",
       "publishedAt": "2023-06-24T09:48:38Z",
       "durationSeconds": 14301,
@@ -2268,7 +2281,7 @@
     },
     {
       "videoId": "x0lq8l-Ehvs",
-      "fetchedAt": "2026-08-01T17:12:23.779Z",
+      "fetchedAt": "2026-08-08T13:34:36.045Z",
       "title": "Live Stream #111: Questions in the Garden",
       "publishedAt": "2023-06-17T08:21:24Z",
       "durationSeconds": 13780,
@@ -2281,7 +2294,7 @@
     },
     {
       "videoId": "RQKbcY5k4rE",
-      "fetchedAt": "2026-08-01T17:12:23.779Z",
+      "fetchedAt": "2026-08-08T13:34:36.045Z",
       "title": "Live Stream #110: Statues in the Mist",
       "publishedAt": "2023-06-10T08:10:33Z",
       "durationSeconds": 14290,
@@ -2294,7 +2307,7 @@
     },
     {
       "videoId": "rson-uLBhPk",
-      "fetchedAt": "2026-08-01T17:12:23.779Z",
+      "fetchedAt": "2026-08-08T13:34:36.045Z",
       "title": "Live Stream #109: A Revised View of Pseudoscience",
       "publishedAt": "2023-06-03T08:49:57Z",
       "durationSeconds": 14657,
@@ -2307,7 +2320,7 @@
     },
     {
       "videoId": "y5KgOW9yQ3w",
-      "fetchedAt": "2026-08-01T17:12:23.779Z",
+      "fetchedAt": "2026-08-08T13:34:36.045Z",
       "title": "Live Stream #108: The Many Views of Heck",
       "publishedAt": "2023-05-27T09:47:48Z",
       "durationSeconds": 15115,
@@ -2320,7 +2333,7 @@
     },
     {
       "videoId": "DClj9BDRQLQ",
-      "fetchedAt": "2026-08-01T17:12:23.779Z",
+      "fetchedAt": "2026-08-08T13:34:36.045Z",
       "title": "Live Stream #107: A Hot Mess of Ebal Amulet Epigraphy",
       "publishedAt": "2023-05-20T07:37:54Z",
       "durationSeconds": 13542,
@@ -2333,7 +2346,7 @@
     },
     {
       "videoId": "KtleYR1edg8",
-      "fetchedAt": "2026-08-01T17:12:23.779Z",
+      "fetchedAt": "2026-08-08T13:34:36.045Z",
       "title": "Live Stream #106: It may be a problem if Mr EC reads the Bible more than you",
       "publishedAt": "2023-05-13T07:48:24Z",
       "durationSeconds": 14837,
@@ -2346,7 +2359,7 @@
     },
     {
       "videoId": "64BI7V-Ex8E",
-      "fetchedAt": "2026-08-01T17:12:23.779Z",
+      "fetchedAt": "2026-08-08T13:34:36.045Z",
       "title": "Live Stream #105: Happy Birthday!!! Three Years of Ancient Egypt and the Bible",
       "publishedAt": "2023-05-06T07:38:49Z",
       "durationSeconds": 14264,
@@ -2359,7 +2372,7 @@
     },
     {
       "videoId": "_3LJbRKb2Lc",
-      "fetchedAt": "2026-08-01T17:12:23.779Z",
+      "fetchedAt": "2026-08-08T13:34:36.045Z",
       "title": "Live Stream #104: Striving Towards An Inerrant Live Stream",
       "publishedAt": "2023-04-29T07:20:20Z",
       "durationSeconds": 14188,
@@ -2372,7 +2385,7 @@
     },
     {
       "videoId": "pibf9ANi2x4",
-      "fetchedAt": "2026-08-01T17:12:25.072Z",
+      "fetchedAt": "2026-08-08T13:34:37.232Z",
       "title": "Live Stream #103: Six Reasons To Watch This Live Stream",
       "publishedAt": "2023-04-22T07:59:09Z",
       "durationSeconds": 15554,
@@ -2385,7 +2398,7 @@
     },
     {
       "videoId": "tFhkc2K0hIs",
-      "fetchedAt": "2026-08-01T17:12:25.072Z",
+      "fetchedAt": "2026-08-08T13:34:37.232Z",
       "title": "Live Stream #102: PhD in OT or a Cognate Field, a False Dilemma",
       "publishedAt": "2023-04-15T08:16:09Z",
       "durationSeconds": 15414,
@@ -2398,7 +2411,7 @@
     },
     {
       "videoId": "D7p6tUmGDuI",
-      "fetchedAt": "2026-08-01T17:12:25.072Z",
+      "fetchedAt": "2026-08-08T13:34:37.232Z",
       "title": "Live Stream #101: God Will Provide A Lamb",
       "publishedAt": "2023-04-08T07:47:25Z",
       "durationSeconds": 13696,
@@ -2411,7 +2424,7 @@
     },
     {
       "videoId": "dE-S1eNreRU",
-      "fetchedAt": "2026-08-01T17:12:25.072Z",
+      "fetchedAt": "2026-08-08T13:34:37.232Z",
       "title": "Live Stream #100: Celebration? Could Be!",
       "publishedAt": "2023-04-01T08:12:54Z",
       "durationSeconds": 14166,
@@ -2424,7 +2437,7 @@
     },
     {
       "videoId": "X1Q7ZZ5Q6vg",
-      "fetchedAt": "2026-08-01T17:12:25.072Z",
+      "fetchedAt": "2026-08-08T13:34:37.232Z",
       "title": "Live Stream #99: 9000 at 99",
       "publishedAt": "2023-03-25T07:43:20Z",
       "durationSeconds": 14906,
@@ -2437,7 +2450,7 @@
     },
     {
       "videoId": "B2MM9mw7ujM",
-      "fetchedAt": "2026-08-01T17:12:25.072Z",
+      "fetchedAt": "2026-08-08T13:34:37.232Z",
       "title": "Live Stream #98: All Pharaohs are Kings, But Not All Kings are Pharaohs",
       "publishedAt": "2023-03-18T07:45:40Z",
       "durationSeconds": 14554,
@@ -2450,7 +2463,7 @@
     },
     {
       "videoId": "2KzfCJhrZqg",
-      "fetchedAt": "2026-08-01T17:12:25.072Z",
+      "fetchedAt": "2026-08-08T13:34:37.232Z",
       "title": "Live Stream #97: Certified Genuine by the IAA",
       "publishedAt": "2023-03-11T09:07:47Z",
       "durationSeconds": 14471,
@@ -2463,7 +2476,7 @@
     },
     {
       "videoId": "pfU_HsxRrV4",
-      "fetchedAt": "2026-08-01T17:12:25.072Z",
+      "fetchedAt": "2026-08-08T13:34:37.232Z",
       "title": "Live Stream #96: Like A Goodwill Shop Exploded",
       "publishedAt": "2023-03-04T09:18:06Z",
       "durationSeconds": 13834,
@@ -2476,7 +2489,7 @@
     },
     {
       "videoId": "NUHnprKRn0I",
-      "fetchedAt": "2026-08-01T17:12:25.072Z",
+      "fetchedAt": "2026-08-08T13:34:37.232Z",
       "title": "Live Stream #95: Egyptian Myths Interacting With Our Live Streams",
       "publishedAt": "2023-02-25T08:52:04Z",
       "durationSeconds": 10985,
@@ -2489,7 +2502,7 @@
     },
     {
       "videoId": "ZHAJp0qm3uI",
-      "fetchedAt": "2026-08-01T17:12:25.072Z",
+      "fetchedAt": "2026-08-08T13:34:37.232Z",
       "title": "Live Stream #94: A Divinely Inspired Live Stream, or So We Can Dream",
       "publishedAt": "2023-02-18T08:30:27Z",
       "durationSeconds": 11859,
@@ -2502,7 +2515,7 @@
     },
     {
       "videoId": "Q7XQMH-rmWo",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #93: Praying for the People of Turkey",
       "publishedAt": "2023-02-11T21:30:47Z",
       "durationSeconds": 14311,
@@ -2515,7 +2528,7 @@
     },
     {
       "videoId": "EsTdqeuDvS4",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Steam #92: Ten Myths about the Good Doctor",
       "publishedAt": "2023-02-04T09:06:13Z",
       "durationSeconds": 14666,
@@ -2528,7 +2541,7 @@
     },
     {
       "videoId": "h3iIN4M2pIM",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #91: Take Two Cuneiform Tablets and Call Me in the Morning.",
       "publishedAt": "2023-01-28T08:53:44Z",
       "durationSeconds": 13974,
@@ -2541,7 +2554,7 @@
     },
     {
       "videoId": "fX3v3WBBJxw",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #90: Open Round-Table, Discussing the Amorite Tablets.",
       "publishedAt": "2023-01-24T07:15:37Z",
       "durationSeconds": 12674,
@@ -2554,7 +2567,7 @@
     },
     {
       "videoId": "nMFRDIncoB0",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #89: Osiris god of the dead. He's dead dead. Dead as a door knocker.",
       "publishedAt": "2023-01-21T09:31:04Z",
       "durationSeconds": 17800,
@@ -2567,7 +2580,7 @@
     },
     {
       "videoId": "MFQf6gUtm-E",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #88: Popcorn is at the Gates!!!",
       "publishedAt": "2023-01-14T21:50:44Z",
       "durationSeconds": 13560,
@@ -2580,7 +2593,7 @@
     },
     {
       "videoId": "-9ev3g39jtQ",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #87: 8000 Subs, Further and Farther than We Ever Thought",
       "publishedAt": "2023-01-07T20:25:19Z",
       "durationSeconds": 12447,
@@ -2593,7 +2606,7 @@
     },
     {
       "videoId": "PiiwZYM6TQk",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #86: 2022, Ushering Out the Year of the Dead Hard Drive",
       "publishedAt": "2022-12-31T07:53:53Z",
       "durationSeconds": 15141,
@@ -2606,7 +2619,7 @@
     },
     {
       "videoId": "LXv_tj5rTHw",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #85: St. Nicholas vs Arius, the Cage Match. This Time It's Theological!",
       "publishedAt": "2022-12-24T08:19:20Z",
       "durationSeconds": 12271,
@@ -2619,7 +2632,7 @@
     },
     {
       "videoId": "M_i8PNIjQUM",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #84: And Now Back To Our Regularly Scheduled Program",
       "publishedAt": "2022-12-17T08:19:46Z",
       "durationSeconds": 14481,
@@ -2632,7 +2645,7 @@
     },
     {
       "videoId": "46uDNoLqNA8",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #83: Now is the Winter of Our Discontent",
       "publishedAt": "2022-12-10T07:30:05Z",
       "durationSeconds": 15180,
@@ -2645,7 +2658,7 @@
     },
     {
       "videoId": "AgLundgwtWs",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #82: The Censors Are Coming For You!!!",
       "publishedAt": "2022-12-03T19:09:05Z",
       "durationSeconds": 10618,
@@ -2658,7 +2671,7 @@
     },
     {
       "videoId": "Fg5vmXieQmg",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #81: Happy Thanksgiving Weekend",
       "publishedAt": "2022-11-26T20:09:34Z",
       "durationSeconds": 14080,
@@ -2671,7 +2684,7 @@
     },
     {
       "videoId": "3frfGREytOQ",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #80: Drs Falk and Kennedy Debate After Party",
       "publishedAt": "2022-11-20T05:42:53Z",
       "durationSeconds": 19221,
@@ -2684,7 +2697,7 @@
     },
     {
       "videoId": "xPyCgeAk_F8",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #79: Another Vague Cleopatra Tomb Sighting",
       "publishedAt": "2022-11-19T20:00:51Z",
       "durationSeconds": 11561,
@@ -2697,7 +2710,7 @@
     },
     {
       "videoId": "SSu1vuv9p_0",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:38.415Z",
       "title": "Live Stream #78: Lest We Forget",
       "publishedAt": "2022-11-12T21:31:05Z",
       "durationSeconds": 13210,
@@ -2710,7 +2723,7 @@
     },
     {
       "videoId": "typXFqnn9dw",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:39.604Z",
       "title": "Live Stream #77: Well, It Happened.  Open Room Special.",
       "publishedAt": "2022-11-08T05:00:50Z",
       "durationSeconds": 12460,
@@ -2723,7 +2736,7 @@
     },
     {
       "videoId": "VzGVUecFWFI",
-      "fetchedAt": "2026-08-01T17:12:26.293Z",
+      "fetchedAt": "2026-08-08T13:34:39.604Z",
       "title": "Live Stream #76: 100 Years of King Tut",
       "publishedAt": "2022-11-05T18:18:45Z",
       "durationSeconds": 11240,
@@ -2736,7 +2749,7 @@
     },
     {
       "videoId": "THYbmn9nLFA",
-      "fetchedAt": "2026-08-01T17:12:27.453Z",
+      "fetchedAt": "2026-08-08T13:34:39.604Z",
       "title": "Live Stream #75: Halloween and Other Obscure Christian Festivals",
       "publishedAt": "2022-10-29T18:42:31Z",
       "durationSeconds": 12415,
@@ -2749,7 +2762,7 @@
     },
     {
       "videoId": "vU7_A4Cvtng",
-      "fetchedAt": "2026-08-01T17:12:27.453Z",
+      "fetchedAt": "2026-08-08T13:34:39.604Z",
       "title": "Live Stream #74: Who Are You? What Do You Want?",
       "publishedAt": "2022-10-22T18:52:40Z",
       "durationSeconds": 12925,
@@ -2762,7 +2775,7 @@
     },
     {
       "videoId": "bJe4skEqx3Y",
-      "fetchedAt": "2026-08-01T17:12:27.453Z",
+      "fetchedAt": "2026-08-08T13:34:39.604Z",
       "title": "Live Stream #73: When Archaeology Gets Cheesy",
       "publishedAt": "2022-10-15T18:57:02Z",
       "durationSeconds": 13116,
@@ -2775,7 +2788,7 @@
     },
     {
       "videoId": "d837zh26DZw",
-      "fetchedAt": "2026-08-01T17:12:27.453Z",
+      "fetchedAt": "2026-08-08T13:34:39.604Z",
       "title": "Live Stream #72: The Origin of All Knowledge",
       "publishedAt": "2022-10-08T18:24:37Z",
       "durationSeconds": 11270,
@@ -2788,7 +2801,7 @@
     },
     {
       "videoId": "u6bP2Ikr9Xs",
-      "fetchedAt": "2026-08-01T17:12:27.453Z",
+      "fetchedAt": "2026-08-08T13:34:39.604Z",
       "title": "Live Stream #71: The First of Octember",
       "publishedAt": "2022-10-01T18:47:57Z",
       "durationSeconds": 12350,
@@ -2801,7 +2814,7 @@
     },
     {
       "videoId": "3X9HQiOdJOk",
-      "fetchedAt": "2026-08-01T17:12:27.453Z",
+      "fetchedAt": "2026-08-08T13:34:39.604Z",
       "title": "Live Stream #70: For those in the Know",
       "publishedAt": "2022-09-24T18:32:48Z",
       "durationSeconds": 11711,
@@ -2814,7 +2827,7 @@
     },
     {
       "videoId": "gRDrvTEmitw",
-      "fetchedAt": "2026-08-01T17:12:27.453Z",
+      "fetchedAt": "2026-08-08T13:34:39.604Z",
       "title": "Live Stream #69: They Might Be Giants.",
       "publishedAt": "2022-09-17T19:04:15Z",
       "durationSeconds": 11931,
@@ -2827,7 +2840,7 @@
     },
     {
       "videoId": "QkQ2ySujVgY",
-      "fetchedAt": "2026-08-01T17:12:27.453Z",
+      "fetchedAt": "2026-08-08T13:34:39.604Z",
       "title": "Live Stream #68: Uncultured as a Philistine.",
       "publishedAt": "2022-09-10T18:36:23Z",
       "durationSeconds": 11926,
@@ -2840,7 +2853,7 @@
     },
     {
       "videoId": "N3rD-n6CbYY",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:40.817Z",
       "title": "Live Stream #67: Ignorance of the Incredulously Fallacious.",
       "publishedAt": "2022-09-03T18:17:51Z",
       "durationSeconds": 10960,
@@ -2853,7 +2866,7 @@
     },
     {
       "videoId": "6MHlQAmAbSI",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:40.817Z",
       "title": "Live Stream #66: Osiris, Vampires, and Other Undead Playas.",
       "publishedAt": "2022-08-27T18:32:59Z",
       "durationSeconds": 11806,
@@ -2866,7 +2879,7 @@
     },
     {
       "videoId": "oz6vqfVDmQM",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:40.817Z",
       "title": "Live Stream #65: The Storage City of Popcorn",
       "publishedAt": "2022-08-20T18:20:43Z",
       "durationSeconds": 11146,
@@ -2879,7 +2892,7 @@
     },
     {
       "videoId": "1j6E3oI0fNk",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:40.817Z",
       "title": "Live Stream #64: A Flock of Horus Birds.",
       "publishedAt": "2022-08-13T20:10:08Z",
       "durationSeconds": 12655,
@@ -2892,7 +2905,7 @@
     },
     {
       "videoId": "6II72aUU4fM",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:40.817Z",
       "title": "Live Stream #63: Wash and Wear Charioteer Gear.",
       "publishedAt": "2022-08-06T19:02:43Z",
       "durationSeconds": 10076,
@@ -2905,7 +2918,7 @@
     },
     {
       "videoId": "tDAmbiFJLAU",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:40.817Z",
       "title": "Live Stream #62: Kernels of Truth.",
       "publishedAt": "2022-07-30T18:37:59Z",
       "durationSeconds": 10075,
@@ -2918,7 +2931,7 @@
     },
     {
       "videoId": "llax2yc_y8w",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:40.817Z",
       "title": "Live Stream #61: Understanding Hell, There Will Be A Test.",
       "publishedAt": "2022-07-23T18:31:13Z",
       "durationSeconds": 11836,
@@ -2931,7 +2944,7 @@
     },
     {
       "videoId": "5yhF0XK1Nk0",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:40.817Z",
       "title": "Live Stream #60: Early Alphabetic Inscriptions In Funnel Cakes.",
       "publishedAt": "2022-07-16T18:55:29Z",
       "durationSeconds": 13180,
@@ -2944,7 +2957,7 @@
     },
     {
       "videoId": "RqA8RW50z8I",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:40.817Z",
       "title": "Live Stream #59: No Space Like Home",
       "publishedAt": "2022-07-09T18:30:41Z",
       "durationSeconds": 11550,
@@ -2957,7 +2970,7 @@
     },
     {
       "videoId": "iMKb3EZ1uw0",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:40.817Z",
       "title": "Live Stream #58: Is Like The Luckiest Number Ever",
       "publishedAt": "2022-07-02T18:39:34Z",
       "durationSeconds": 12095,
@@ -2970,7 +2983,7 @@
     },
     {
       "videoId": "b3ytxeDVHGg",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:40.817Z",
       "title": "Live Stream #57: This Business Is Our Fifty-Seven",
       "publishedAt": "2022-06-25T19:36:08Z",
       "durationSeconds": 13401,
@@ -2983,7 +2996,7 @@
     },
     {
       "videoId": "MA8Ualgbc4o",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:40.817Z",
       "title": "Live Stream #56: Celebrating Like A Statistician: 6000 +/- 10 Subs!",
       "publishedAt": "2022-06-18T18:03:51Z",
       "durationSeconds": 10070,
@@ -2996,7 +3009,7 @@
     },
     {
       "videoId": "ykRkSLGH810",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:40.817Z",
       "title": "Live Stream #55: Beastie Under The Hood.",
       "publishedAt": "2022-06-11T17:52:14Z",
       "durationSeconds": 9040,
@@ -3009,7 +3022,7 @@
     },
     {
       "videoId": "FT2gTO3om8U",
-      "fetchedAt": "2026-08-01T17:12:28.722Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #54: Amun-Re Dumps Amonet.",
       "publishedAt": "2022-06-04T18:11:12Z",
       "durationSeconds": 10576,
@@ -3022,7 +3035,7 @@
     },
     {
       "videoId": "lS8ldTuFJvU",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #53: Harmony and Discord.",
       "publishedAt": "2022-05-28T18:33:09Z",
       "durationSeconds": 11786,
@@ -3035,7 +3048,7 @@
     },
     {
       "videoId": "XKgzzgmUBKg",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #52: One Year Streaming, We Can't Believe It Either.",
       "publishedAt": "2022-05-21T18:00:35Z",
       "durationSeconds": 9461,
@@ -3048,7 +3061,7 @@
     },
     {
       "videoId": "w-YYxBd2iRw",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #51: Manna Machines Over Area 51.",
       "publishedAt": "2022-05-14T18:41:40Z",
       "durationSeconds": 11761,
@@ -3061,7 +3074,7 @@
     },
     {
       "videoId": "VeCTayU7MpQ",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #50: Terminator Edition.",
       "publishedAt": "2022-05-07T17:37:10Z",
       "durationSeconds": 8485,
@@ -3074,7 +3087,7 @@
     },
     {
       "videoId": "9yvb8Yl3hao",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #49: Counting The Omer.",
       "publishedAt": "2022-04-30T18:06:34Z",
       "durationSeconds": 10095,
@@ -3087,7 +3100,7 @@
     },
     {
       "videoId": "ravUgMK9MEU",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #48: Good Friday Orthodox Style.",
       "publishedAt": "2022-04-23T18:08:21Z",
       "durationSeconds": 10421,
@@ -3100,7 +3113,7 @@
     },
     {
       "videoId": "KvObTy1LgnE",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #47: Passover 2022.",
       "publishedAt": "2022-04-16T18:39:54Z",
       "durationSeconds": 11935,
@@ -3113,7 +3126,7 @@
     },
     {
       "videoId": "l80zyabM1gE",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #46: God Is Our Refuge And Strength.",
       "publishedAt": "2022-04-09T17:57:32Z",
       "durationSeconds": 9720,
@@ -3126,7 +3139,7 @@
     },
     {
       "videoId": "K-auTwN2ygQ",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #45: Amulets and Rumors of Amulets.",
       "publishedAt": "2022-04-02T18:51:36Z",
       "durationSeconds": 12886,
@@ -3139,7 +3152,7 @@
     },
     {
       "videoId": "VasTYoKMMe0",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #44: Voted Most Likely to Become an Atheist by Atheists.",
       "publishedAt": "2022-03-26T18:27:16Z",
       "durationSeconds": 11526,
@@ -3152,7 +3165,7 @@
     },
     {
       "videoId": "l9Wg3VQCv-E",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #43: Discovering the Rediscovered Exodus.",
       "publishedAt": "2022-03-19T17:50:28Z",
       "durationSeconds": 8816,
@@ -3165,7 +3178,7 @@
     },
     {
       "videoId": "DdLF22PXUTY",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #42: Answer to the Ultimate Question of Life, the Universe, and Everything",
       "publishedAt": "2022-03-12T18:54:50Z",
       "durationSeconds": 9685,
@@ -3178,7 +3191,7 @@
     },
     {
       "videoId": "sSZq20O84tc",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #41: Celebrating 5000 Subs!!!",
       "publishedAt": "2022-03-05T08:04:08Z",
       "durationSeconds": 11641,
@@ -3191,7 +3204,7 @@
     },
     {
       "videoId": "t_t-ItKSmJY",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #40: The Indefinite Extended Idiom",
       "publishedAt": "2022-02-26T07:02:28Z",
       "durationSeconds": 9750,
@@ -3204,7 +3217,7 @@
     },
     {
       "videoId": "qi7VuxyqWr8",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #39: Master of the Sock Puppets",
       "publishedAt": "2022-02-19T07:02:00Z",
       "durationSeconds": 9866,
@@ -3217,7 +3230,7 @@
     },
     {
       "videoId": "CdHTkfIpCLQ",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #38: A Doctorate for Every Bunny",
       "publishedAt": "2022-02-12T06:53:51Z",
       "durationSeconds": 9123,
@@ -3230,7 +3243,7 @@
     },
     {
       "videoId": "5O4HOnymvwU",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #37: Normal Temp Before Mummification",
       "publishedAt": "2022-02-05T06:19:52Z",
       "durationSeconds": 7740,
@@ -3243,7 +3256,7 @@
     },
     {
       "videoId": "4ne7HUq5FhA",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #36: Sum of the Integers of the Beast",
       "publishedAt": "2022-01-29T06:41:24Z",
       "durationSeconds": 9183,
@@ -3256,7 +3269,7 @@
     },
     {
       "videoId": "E6eCS3n2Gtk",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #35: Pyramids Versus Tetrahedrons",
       "publishedAt": "2022-01-22T06:53:55Z",
       "durationSeconds": 9721,
@@ -3269,7 +3282,7 @@
     },
     {
       "videoId": "g8-BQFODrd8",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #34: Nothing Keeps A Sock Puppet Down, Could Be....",
       "publishedAt": "2022-01-15T06:24:09Z",
       "durationSeconds": 7767,
@@ -3282,7 +3295,7 @@
     },
     {
       "videoId": "pc-P4s6IR2o",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #33: Twenty-Twenty Too",
       "publishedAt": "2022-01-08T06:35:40Z",
       "durationSeconds": 8026,
@@ -3295,7 +3308,7 @@
     },
     {
       "videoId": "KCxkCQlDTrY",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #32: Last Stream for 2021",
       "publishedAt": "2021-12-31T06:25:41Z",
       "durationSeconds": 8063,
@@ -3308,7 +3321,7 @@
     },
     {
       "videoId": "TT2tApnGZPY",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #31: Twas the Night Before the Night Before Christmas.",
       "publishedAt": "2021-12-24T06:38:30Z",
       "durationSeconds": 7944,
@@ -3321,7 +3334,7 @@
     },
     {
       "videoId": "CG3UQpEmAsk",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:42.023Z",
       "title": "Live Stream #30: Full Moon on Saturday.",
       "publishedAt": "2021-12-18T06:18:33Z",
       "durationSeconds": 7859,
@@ -3334,7 +3347,7 @@
     },
     {
       "videoId": "x-ro6ZwbeMg",
-      "fetchedAt": "2026-08-01T17:12:29.954Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #29: A Copper Penny For Your Thoughts",
       "publishedAt": "2021-12-11T06:29:18Z",
       "durationSeconds": 8443,
@@ -3347,7 +3360,7 @@
     },
     {
       "videoId": "bovInqgl6HI",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #28: The Popcorn Must Flow",
       "publishedAt": "2021-12-04T18:22:29Z",
       "durationSeconds": 7039,
@@ -3360,7 +3373,7 @@
     },
     {
       "videoId": "i9prAi9prCg",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #27: Number of New Testament Books",
       "publishedAt": "2021-11-27T06:13:50Z",
       "durationSeconds": 7399,
@@ -3373,7 +3386,7 @@
     },
     {
       "videoId": "SNg5WZwVWRA",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #26: I Can't Believe We've Been Doing This For 6 Months",
       "publishedAt": "2021-11-20T06:24:48Z",
       "durationSeconds": 7525,
@@ -3386,7 +3399,7 @@
     },
     {
       "videoId": "au5AYPIFPbY",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #25: The Canonical Age For Levitical Priests",
       "publishedAt": "2021-11-13T06:22:57Z",
       "durationSeconds": 7577,
@@ -3399,7 +3412,7 @@
     },
     {
       "videoId": "8ADMb8ZtUiQ",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #24: The 24 Thrones",
       "publishedAt": "2021-11-06T05:33:28Z",
       "durationSeconds": 7807,
@@ -3412,7 +3425,7 @@
     },
     {
       "videoId": "DVV7DMRiBL4",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #23: The 23 Enigma",
       "publishedAt": "2021-10-30T05:15:50Z",
       "durationSeconds": 7427,
@@ -3425,7 +3438,7 @@
     },
     {
       "videoId": "o5hu9f9P6Do",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #22: The Catch-22 of Questions",
       "publishedAt": "2021-10-23T17:07:10Z",
       "durationSeconds": 6997,
@@ -3438,7 +3451,7 @@
     },
     {
       "videoId": "vNKg8-e68Aw",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream # 21: The Weight of the Soul",
       "publishedAt": "2021-10-16T17:02:33Z",
       "durationSeconds": 6807,
@@ -3451,7 +3464,7 @@
     },
     {
       "videoId": "UR7cGZCgB3E",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream # 20: What's Your Twenty?",
       "publishedAt": "2021-10-09T05:20:32Z",
       "durationSeconds": 7843,
@@ -3464,7 +3477,7 @@
     },
     {
       "videoId": "t4AYsYhvxd8",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream # 19: The First of Octember",
       "publishedAt": "2021-10-02T17:21:27Z",
       "durationSeconds": 7027,
@@ -3477,7 +3490,7 @@
     },
     {
       "videoId": "N4pgeufCqLQ",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream # 18: For the Good Life",
       "publishedAt": "2021-09-25T16:53:58Z",
       "durationSeconds": 6288,
@@ -3490,7 +3503,7 @@
     },
     {
       "videoId": "fVpJZyvwIq8",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream # 17: Back to Prime Time",
       "publishedAt": "2021-09-18T16:52:46Z",
       "durationSeconds": 6193,
@@ -3503,7 +3516,7 @@
     },
     {
       "videoId": "8aV8S0cQ2Dg",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream # 16: Questions from the East",
       "publishedAt": "2021-09-11T01:29:35Z",
       "durationSeconds": 8391,
@@ -3516,7 +3529,7 @@
     },
     {
       "videoId": "s3grFd_g6yk",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream # 15: And Other Taboo Jewish Numbers",
       "publishedAt": "2021-09-04T17:08:11Z",
       "durationSeconds": 7017,
@@ -3529,7 +3542,7 @@
     },
     {
       "videoId": "rccstKeVJoI",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream # 14: Fourteen Pieces of Osiris",
       "publishedAt": "2021-08-28T17:02:57Z",
       "durationSeconds": 6767,
@@ -3542,7 +3555,7 @@
     },
     {
       "videoId": "orrXTt_zI6I",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream # 13: Triskaidekaphobia",
       "publishedAt": "2021-08-21T05:23:55Z",
       "durationSeconds": 7747,
@@ -3555,7 +3568,7 @@
     },
     {
       "videoId": "09kSL_GX9Os",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream # 12: The Quorum of the Twelve",
       "publishedAt": "2021-08-14T16:58:34Z",
       "durationSeconds": 6199,
@@ -3568,7 +3581,7 @@
     },
     {
       "videoId": "nTORoSwXMHQ",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #11: Questions at the Eleventh Hour",
       "publishedAt": "2021-08-07T16:58:29Z",
       "durationSeconds": 6610,
@@ -3581,7 +3594,7 @@
     },
     {
       "videoId": "C79MxFcngZ4",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #10: A Tenth Portion.",
       "publishedAt": "2021-07-30T12:44:41Z",
       "durationSeconds": 5901,
@@ -3594,7 +3607,7 @@
     },
     {
       "videoId": "jUs0gqWhuZE",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #9: The Nine Bows.",
       "publishedAt": "2021-07-24T13:00:55Z",
       "durationSeconds": 6373,
@@ -3607,7 +3620,7 @@
     },
     {
       "videoId": "AGAwu3NDnCM",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #8: Questions behind the Eight Ball",
       "publishedAt": "2021-07-17T12:42:38Z",
       "durationSeconds": 5813,
@@ -3620,7 +3633,7 @@
     },
     {
       "videoId": "99jbuPoy8_U",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #7: Seven and the Ragged Tiger",
       "publishedAt": "2021-07-10T12:52:14Z",
       "durationSeconds": 5740,
@@ -3633,7 +3646,7 @@
     },
     {
       "videoId": "XcN_Xhr8bPM",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #6: All of This has Happened Before...",
       "publishedAt": "2021-07-03T12:50:27Z",
       "durationSeconds": 5784,
@@ -3646,7 +3659,7 @@
     },
     {
       "videoId": "6w6NTLN3two",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:43.195Z",
       "title": "Live Stream #5: Five and Even More Questions.",
       "publishedAt": "2021-06-26T13:01:03Z",
       "durationSeconds": 6357,
@@ -3659,7 +3672,7 @@
     },
     {
       "videoId": "HbJo9pcyNgE",
-      "fetchedAt": "2026-08-01T17:12:31.314Z",
+      "fetchedAt": "2026-08-08T13:34:44.432Z",
       "title": "Live Stream #4: The More Bugs Stomped, The More Appear.",
       "publishedAt": "2021-06-19T12:41:07Z",
       "durationSeconds": 5205,
@@ -3672,7 +3685,7 @@
     },
     {
       "videoId": "aauuHFdpbuU",
-      "fetchedAt": "2026-08-01T17:12:32.787Z",
+      "fetchedAt": "2026-08-08T13:34:44.432Z",
       "title": "Live Stream #3: Thrice the Bugs, Thrice the Charm.",
       "publishedAt": "2021-06-12T12:51:27Z",
       "durationSeconds": 5930,
@@ -3685,7 +3698,7 @@
     },
     {
       "videoId": "rm5VDYEkXz8",
-      "fetchedAt": "2026-08-01T17:12:32.787Z",
+      "fetchedAt": "2026-08-08T13:34:44.432Z",
       "title": "Live Stream #2: Bugs, bugs, and fixes.",
       "publishedAt": "2021-06-04T16:45:13Z",
       "durationSeconds": 5462,
@@ -3698,7 +3711,7 @@
     },
     {
       "videoId": "uduERXxcb1E",
-      "fetchedAt": "2026-08-01T17:12:32.787Z",
+      "fetchedAt": "2026-08-08T13:34:44.432Z",
       "title": "Live Stream #1: The Debug Episode.",
       "publishedAt": "2021-05-28T16:27:58Z",
       "durationSeconds": 4821,

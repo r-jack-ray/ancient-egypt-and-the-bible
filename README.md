@@ -279,6 +279,7 @@ Long livestreams are hard to navigate from transcript text alone. This project k
 - [270 Dead or Ankh Questions](docs/questions/270-live-stream-dead-or-ankh-questions.md)
 - [271 All Your Reliquaries Are Mine Questions](docs/questions/271-all-your-reliquaries-are-mine-questions.md)
 - [272 The Oppression Pharaoh, We Are Legion Questions](docs/questions/272-the-oppression-pharaoh-we-are-legion-questions.md)
+- [273 Pouring Out The Hick Sauce Questions](docs/questions/273-pouring-out-the-hick-sauce-questions.md)
 - [Special Live Stream: All the Stars as Angels Q&A Questions](docs/questions/special-live-stream-all-the-stars-as-angels-q-and-a-questions.md)
 - [Special Live Stream: Reliquary of the Dead Q&A Questions](docs/questions/special-live-stream-reliquary-of-the-dead-q-and-a-questions.md)
 - [Dr. Falk Plays Assassin's Creed Origins (part 1) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-1-questions.md)

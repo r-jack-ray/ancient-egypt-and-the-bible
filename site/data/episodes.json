@@ -1,5 +1,19 @@
 [
   {
+    "number": 273,
+    "title": "Pouring Out the Hick Sauce",
+    "slug": "273-pouring-out-the-hick-sauce",
+    "youtube_url": "https://www.youtube.com/watch?v=C3_uoVOj19I",
+    "video_id": "C3_uoVOj19I",
+    "question_page": "questions/273-pouring-out-the-hick-sauce-questions.md",
+    "content_path": "questions/273-pouring-out-the-hick-sauce/",
+    "status": "curated",
+    "is_numbered": true,
+    "is_special": false,
+    "question_count": 61,
+    "series": "numbered livestream"
+  },
+  {
     "number": 272,
     "title": "The Oppression Pharaoh, We Are Legion",
     "slug": "272-the-oppression-pharaoh-we-are-legion",

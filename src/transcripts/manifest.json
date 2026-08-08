@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "C3_uoVOj19I",
+      "fileStem": "273-pouring-out-the-hick-sauce",
+      "path": "txt/273-pouring-out-the-hick-sauce.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "2d60002d17e2448908a1528edae5d7b3c4476b8654d060cbd4c45c2e279813aa",
+      "canonicalByteLength": 232255,
+      "segmentCount": 5050,
+      "firstStartSeconds": 317,
+      "lastStartSeconds": 15430,
+      "fetchedAt": "2026-08-08T13:38:14.879Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "8bF8Hm5NpR8",
       "fileStem": "272-the-oppression-pharaoh-we-are-legion",
       "path": "txt/272-the-oppression-pharaoh-we-are-legion.txt",
