@@ -1,21 +1,8 @@
-import {
-  readEpisodesStore,
-  readFetchStatus,
-  statusPath,
-  type FetchFailure,
-  type FetchStatus,
-} from "../archive.js";
+import { type FetchFailure, type FetchStatus, readEpisodesStore, readFetchStatus, statusPath, } from "../archive.js";
 import { writeJsonIfChanged } from "../pipeline/files.js";
 import { readVideoMetadataStore, resolveVideoReadiness } from "./metadata.js";
-import {
-  classifyFetchError,
-  fetchVideoTranscript,
-  findStoredTranscript,
-  storeTranscript,
-  type FetchTranscriptOptions,
-  type VideoTranscript,
-} from "./transcripts.js";
 import { createRateLimitedFetch, YoutubeRequestError } from "./rate-limit.js";
+import { classifyFetchError, type FetchTranscriptOptions, fetchVideoTranscript, findStoredTranscript, storeTranscript, type VideoTranscript, } from "./transcripts.js";
 
 export interface BatchOptions {
   requestDelayMs: number;
@@ -84,14 +71,14 @@ export async function fetchTranscriptBatch(options: BatchOptions): Promise<Batch
   const fetcher = options.fetcher ?? fetchVideoTranscript;
   const transcriptFetch = createRateLimitedFetch({
     delayMs: 0,
-    ...(options.fetch !== undefined ? { baseFetch: options.fetch } : {}),
-    ...(options.logger !== undefined ? { logger: options.logger } : {}),
-    ...(options.rateLimitNow !== undefined ? { now: options.rateLimitNow } : {}),
-    ...(options.sleep !== undefined ? { sleep: options.sleep } : {}),
+    ...(options.fetch !== undefined ? {baseFetch: options.fetch} : {}),
+    ...(options.logger !== undefined ? {logger: options.logger} : {}),
+    ...(options.rateLimitNow !== undefined ? {now: options.rateLimitNow} : {}),
+    ...(options.sleep !== undefined ? {sleep: options.sleep} : {}),
   });
   const now = options.rateLimitNow ?? Date.now;
   const sleep = options.sleep ?? ((milliseconds: number) =>
-    new Promise<void>((resolve) => setTimeout(resolve, milliseconds))
+          new Promise<void>((resolve) => setTimeout(resolve, milliseconds))
   );
   let previousTranscriptStart: number | undefined;
   let selected = 0;
@@ -118,29 +105,29 @@ export async function fetchTranscriptBatch(options: BatchOptions): Promise<Batch
     const metadataRecord = metadataById.get(episode.videoId);
     if (metadataRecord === undefined) {
       result.deferred += 1;
-      result.deferredRecords.push({ ...pendingRecord, reason: "metadata_missing" });
+      result.deferredRecords.push({...pendingRecord, reason: "metadata_missing"});
       continue;
     }
     const readiness = resolveVideoReadiness(metadataRecord);
     if (readiness.state !== "ready") {
       result.deferred += 1;
-      result.deferredRecords.push({ ...pendingRecord, reason: readiness.reason });
+      result.deferredRecords.push({...pendingRecord, reason: readiness.reason});
       continue;
     }
     if (result.blocked) {
       result.pending += 1;
-      result.pendingRecords.push({ ...pendingRecord, reason: "blocked" });
+      result.pendingRecords.push({...pendingRecord, reason: "blocked"});
       continue;
     }
     if (options.limit !== undefined && selected >= options.limit) {
       result.pending += 1;
-      result.pendingRecords.push({ ...pendingRecord, reason: "limit" });
+      result.pendingRecords.push({...pendingRecord, reason: "limit"});
       continue;
     }
     selected += 1;
     if (options.dryRun) {
       result.pending += 1;
-      result.pendingRecords.push({ ...pendingRecord, reason: "dry_run" });
+      result.pendingRecords.push({...pendingRecord, reason: "dry_run"});
       options.logger?.(`Would fetch ${episode.videoId} -> src/transcripts/txt/${episode.fileStem}.txt`);
       continue;
     }
@@ -157,8 +144,8 @@ export async function fetchTranscriptBatch(options: BatchOptions): Promise<Batch
         videoId: episode.videoId,
         requestDelayMs: 0,
         fetch: transcriptFetch,
-        ...(options.language !== undefined ? { language: options.language } : {}),
-        ...(options.logger !== undefined ? { logger: options.logger } : {}),
+        ...(options.language !== undefined ? {language: options.language} : {}),
+        ...(options.logger !== undefined ? {logger: options.logger} : {}),
       });
       const stored = await storeTranscript(transcript);
       failures.delete(episode.videoId);
@@ -175,8 +162,8 @@ export async function fetchTranscriptBatch(options: BatchOptions): Promise<Batch
         classification,
         message: safeMessage(error),
         ...(error instanceof YoutubeRequestError && error.retryAfter !== undefined
-          ? { retryAfter: error.retryAfter }
-          : {}),
+            ? {retryAfter: error.retryAfter}
+            : {}),
       };
       failures.set(episode.videoId, failure);
       result.failed += 1;
@@ -184,7 +171,7 @@ export async function fetchTranscriptBatch(options: BatchOptions): Promise<Batch
         ...pendingRecord,
         classification,
         message: failure.message,
-        ...(failure.retryAfter !== undefined ? { retryAfter: failure.retryAfter } : {}),
+        ...(failure.retryAfter !== undefined ? {retryAfter: failure.retryAfter} : {}),
       });
       await checkpoint(failures);
       if (classification === "rate_limited_or_blocked") {
@@ -200,35 +187,35 @@ export async function fetchTranscriptBatch(options: BatchOptions): Promise<Batch
 export function formatTranscriptBatchHandoff(result: BatchResult): string {
   const lines = [
     `Transcript batch: fetched=${result.fetched} failed=${result.failed} stored-skipped=${result.storedSkipped} ` +
-      `unavailable-skipped=${result.unavailableSkipped} deferred=${result.deferred} ` +
-      `pending=${result.pending}`,
+    `unavailable-skipped=${result.unavailableSkipped} deferred=${result.deferred} ` +
+    `pending=${result.pending}`,
   ];
   appendSection(
-    lines,
-    "New TXT",
-    result.newTranscripts.map((record) => `${record.path} (${record.videoId})`),
+      lines,
+      "New TXT",
+      result.newTranscripts.map((record) => `${record.path} (${record.videoId})`),
   );
   appendSection(
-    lines,
-    "Deferred",
-    result.deferredRecords.map((record) =>
-      `${record.path} (${record.videoId}): ${record.reason}`
-    ),
+      lines,
+      "Deferred",
+      result.deferredRecords.map((record) =>
+          `${record.path} (${record.videoId}): ${record.reason}`
+      ),
   );
   appendSection(
-    lines,
-    "Failed",
-    result.failureRecords.map((record) =>
-      `${record.path} (${record.videoId}): ${record.classification} ${record.message}` +
-      (record.retryAfter === undefined ? "" : ` retry-after=${record.retryAfter}`)
-    ),
+      lines,
+      "Failed",
+      result.failureRecords.map((record) =>
+          `${record.path} (${record.videoId}): ${record.classification} ${record.message}` +
+          (record.retryAfter === undefined ? "" : ` retry-after=${record.retryAfter}`)
+      ),
   );
   appendSection(
-    lines,
-    "Pending",
-    result.pendingRecords.map((record) =>
-      `${record.path} (${record.videoId}): ${record.reason}`
-    ),
+      lines,
+      "Pending",
+      result.pendingRecords.map((record) =>
+          `${record.path} (${record.videoId}): ${record.reason}`
+      ),
   );
   return lines.join("\n");
 }
@@ -243,10 +230,10 @@ async function checkpoint(failures: ReadonlyMap<string, FetchFailure>): Promise<
 
 function safeMessage(error: unknown): string {
   const message = error instanceof Error
-    ? error.message
-    : typeof error === "string"
-    ? error
-    : "Unknown transcript fetch failure.";
+      ? error.message
+      : typeof error === "string"
+          ? error
+          : "Unknown transcript fetch failure.";
   return message.replace(/\s+/gu, " ").slice(0, 500);
 }
 

@@ -14,22 +14,22 @@ function parseArgs(args: string[]): {
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
     switch (arg) {
-      case "--repo-root":
-        result.repoRoot = value(args, ++index, arg);
-        break;
-      case "--max-rows-per-alias-group":
-        result.maxRowsPerAliasGroup = integer(value(args, ++index, arg), arg);
-        break;
-      case "--help":
-      case "-h":
-        console.log(`Usage: npm run check:search-aliases -- [options]
+    case "--repo-root":
+      result.repoRoot = value(args, ++index, arg);
+      break;
+    case "--max-rows-per-alias-group":
+      result.maxRowsPerAliasGroup = integer(value(args, ++index, arg), arg);
+      break;
+    case "--help":
+    case "-h":
+      console.log(`Usage: npm run check:search-aliases -- [options]
 
   --repo-root <path>
   --max-rows-per-alias-group <count>  Defaults to 1100
 `);
-        process.exit(0);
-      default:
-        throw new Error(`Unknown argument: ${arg ?? ""}`);
+      process.exit(0);
+    default:
+      throw new Error(`Unknown argument: ${arg ?? ""}`);
     }
   }
   return result;
@@ -37,7 +37,9 @@ function parseArgs(args: string[]): {
 
 function value(args: readonly string[], index: number, name: string): string {
   const result = args[index];
-  if (!result) throw new Error(`Missing value for ${name}.`);
+  if (!result) {
+    throw new Error(`Missing value for ${name}.`);
+  }
   return result;
 }
 

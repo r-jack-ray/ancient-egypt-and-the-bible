@@ -1,12 +1,5 @@
 import { readdir, readFile, stat } from "node:fs/promises";
-import {
-  extname,
-  isAbsolute,
-  join,
-  relative,
-  resolve,
-  sep,
-} from "node:path";
+import { extname, isAbsolute, join, relative, resolve, sep, } from "node:path";
 
 export interface RenderedSiteValidationOptions {
   publicDir: string;
@@ -75,28 +68,28 @@ const SITEMAP_NAMESPACE = "http://www.sitemaps.org/schemas/sitemap/0.9";
 const DEFAULT_NO_INDEX_PATHS = ["search/index.html"] as const;
 const NO_INDEX_PATTERN = /(?:^|[\s,])noindex(?:$|[\s,])/iu;
 const ATTRIBUTE_VALUE_PATTERN =
-  "\\s*=\\s*(?:\"(?<double>[^\"]*)\"|'(?<single>[^']*)'|(?<unquoted>[^\\s>]+))";
+    "\\s*=\\s*(?:\"(?<double>[^\"]*)\"|'(?<single>[^']*)'|(?<unquoted>[^\\s>]+))";
 
 export async function validateRenderedSite(
-  options: RenderedSiteValidationOptions,
+    options: RenderedSiteValidationOptions,
 ): Promise<RenderedSiteValidationSummary> {
   const publicDir = resolve(options.publicDir);
   await assertDirectory(publicDir);
   const htmlFiles = await readRenderedHtmlFiles(publicDir);
 
   const canonicalUrls = validateCanonicalUrls(
-    htmlFiles,
-    normalizeHttpBaseUrl(options.expectedBaseUrl, false),
+      htmlFiles,
+      normalizeHttpBaseUrl(options.expectedBaseUrl, false),
   );
   const metaDescriptions = validateMetaDescriptions(htmlFiles);
   const pageTitles = validatePageTitles(htmlFiles);
   const deploymentBaseUrl = normalizeHttpBaseUrl(options.expectedBaseUrl, true);
   const sitemap = await validateSitemap(publicDir, htmlFiles, deploymentBaseUrl);
   const renderedSeo = await validateRenderedSeo(
-    publicDir,
-    htmlFiles,
-    deploymentBaseUrl,
-    options.expectedNoIndexPaths ?? DEFAULT_NO_INDEX_PATHS,
+      publicDir,
+      htmlFiles,
+      deploymentBaseUrl,
+      options.expectedNoIndexPaths ?? DEFAULT_NO_INDEX_PATHS,
   );
 
   return {
@@ -109,42 +102,42 @@ export async function validateRenderedSite(
 }
 
 export function printRenderedValidationSummary(
-  summary: RenderedSiteValidationSummary,
-  writeLine: (line: string) => void = (line) => console.log(line),
+    summary: RenderedSiteValidationSummary,
+    writeLine: (line: string) => void = (line) => console.log(line),
 ): void {
   writeLine("Full-site Hugo canonical URL validation passed.");
   writeLine(
-    `Rendered/unique canonicals: ${summary.canonicalUrls.renderedPages}/${summary.canonicalUrls.uniqueCanonicals}`,
+      `Rendered/unique canonicals: ${summary.canonicalUrls.renderedPages}/${summary.canonicalUrls.uniqueCanonicals}`,
   );
   writeLine("Hugo meta description validation passed.");
   writeLine(
-    `Rendered/indexable pages: ${summary.metaDescriptions.renderedPages}/${summary.metaDescriptions.indexablePages}`,
+      `Rendered/indexable pages: ${summary.metaDescriptions.renderedPages}/${summary.metaDescriptions.indexablePages}`,
   );
   writeLine(
-    `Distinct section descriptions: ${summary.metaDescriptions.distinctSectionDescriptions}`,
+      `Distinct section descriptions: ${summary.metaDescriptions.distinctSectionDescriptions}`,
   );
   writeLine("Hugo page title validation passed.");
   writeLine(
-    `Rendered/unique titles: ${summary.pageTitles.renderedPages}/${summary.pageTitles.uniqueTitles}`,
+      `Rendered/unique titles: ${summary.pageTitles.renderedPages}/${summary.pageTitles.uniqueTitles}`,
   );
   writeLine(`Site-name suffix: ${summary.pageTitles.siteNameSuffix}`);
   writeLine("Hugo sitemap validation passed.");
   writeLine(
-    `Rendered/indexable/sitemap pages: ${summary.sitemap.renderedPages}/${summary.sitemap.indexablePages}/${summary.sitemap.sitemapPages}`,
+      `Rendered/indexable/sitemap pages: ${summary.sitemap.renderedPages}/${summary.sitemap.indexablePages}/${summary.sitemap.sitemapPages}`,
   );
   writeLine(`Lastmod entries: ${summary.sitemap.lastmodEntries}`);
   writeLine("Rendered SEO regression validation passed.");
   writeLine(
-    `Pages/internal links: ${summary.renderedSeo.renderedPages}/${summary.renderedSeo.internalLinks}`,
+      `Pages/internal links: ${summary.renderedSeo.renderedPages}/${summary.renderedSeo.internalLinks}`,
   );
   writeLine(
-    `Noindex pages/JSON-LD blocks: ${summary.renderedSeo.noIndexPages}/${summary.renderedSeo.jsonLdBlocks}`,
+      `Noindex pages/JSON-LD blocks: ${summary.renderedSeo.noIndexPages}/${summary.renderedSeo.jsonLdBlocks}`,
   );
 }
 
 function validateCanonicalUrls(
-  htmlFiles: readonly RenderedHtmlFile[],
-  baseUrl: URL,
+    htmlFiles: readonly RenderedHtmlFile[],
+    baseUrl: URL,
 ): RenderedSiteValidationSummary["canonicalUrls"] {
   const canonicalUrls = new Set<string>();
   let renderedPages = 0;
@@ -158,7 +151,7 @@ function validateCanonicalUrls(
     const canonicalTags = findCanonicalTags(file.html, false);
     if (canonicalTags.length !== 1) {
       throw new Error(
-        `Rendered page must contain exactly one canonical link; found ${canonicalTags.length}: ${file.relativePath}`,
+          `Rendered page must contain exactly one canonical link; found ${canonicalTags.length}: ${file.relativePath}`,
       );
     }
 
@@ -170,16 +163,16 @@ function validateCanonicalUrls(
     const route = getPageRoute(file.relativePath);
     const expectedUrl = new URL(route, baseUrl).href;
     if (
-      /localhost|127\.0\.0\.1/iu.test(actualUrl) ||
-      /\.md(?:$|[?#])/iu.test(actualUrl)
+        /localhost|127\.0\.0\.1/iu.test(actualUrl) ||
+        /\.md(?:$|[?#])/iu.test(actualUrl)
     ) {
       throw new Error(
-        `Rendered page canonical URL is not deployable: ${file.relativePath} -> ${actualUrl}`,
+          `Rendered page canonical URL is not deployable: ${file.relativePath} -> ${actualUrl}`,
       );
     }
     if (actualUrl !== expectedUrl) {
       throw new Error(
-        `Rendered page canonical URL is '${actualUrl}'; expected '${expectedUrl}': ${file.relativePath}`,
+          `Rendered page canonical URL is '${actualUrl}'; expected '${expectedUrl}': ${file.relativePath}`,
       );
     }
     if (canonicalUrls.has(actualUrl)) {
@@ -192,11 +185,11 @@ function validateCanonicalUrls(
     throw new Error("No Hugo-rendered HTML pages were found under the public directory.");
   }
 
-  return { renderedPages, uniqueCanonicals: canonicalUrls.size };
+  return {renderedPages, uniqueCanonicals: canonicalUrls.size};
 }
 
 function validateMetaDescriptions(
-  htmlFiles: readonly RenderedHtmlFile[],
+    htmlFiles: readonly RenderedHtmlFile[],
 ): RenderedSiteValidationSummary["metaDescriptions"] {
   const renderedPages: RenderedDescription[] = [];
 
@@ -207,11 +200,11 @@ function validateMetaDescriptions(
 
     const metaTags = findHtmlTags(file.html, "meta");
     const descriptionTags = metaTags.filter(
-      (tag) => getHtmlAttributeValue(tag, "name")?.toLowerCase() === "description",
+        (tag) => getHtmlAttributeValue(tag, "name")?.toLowerCase() === "description",
     );
     if (descriptionTags.length !== 1) {
       throw new Error(
-        `Rendered page must contain exactly one meta description; found ${descriptionTags.length}: ${file.fullPath}`,
+          `Rendered page must contain exactly one meta description; found ${descriptionTags.length}: ${file.fullPath}`,
       );
     }
 
@@ -221,10 +214,10 @@ function validateMetaDescriptions(
     }
 
     const robotsTags = metaTags.filter(
-      (tag) => getHtmlAttributeValue(tag, "name")?.toLowerCase() === "robots",
+        (tag) => getHtmlAttributeValue(tag, "name")?.toLowerCase() === "robots",
     );
     const isIndexable = !robotsTags.some((tag) =>
-      NO_INDEX_PATTERN.test(getHtmlAttributeValue(tag, "content") ?? ""),
+        NO_INDEX_PATTERN.test(getHtmlAttributeValue(tag, "content") ?? ""),
     );
     const trimmedDescription = description.trim();
     renderedPages.push({
@@ -240,13 +233,13 @@ function validateMetaDescriptions(
   }
 
   const duplicateDescriptions = duplicateGroups(
-    renderedPages.filter((page) => page.isIndexable),
-    (page) => page.normalizedDescription,
+      renderedPages.filter((page) => page.isIndexable),
+      (page) => page.normalizedDescription,
   );
   if (duplicateDescriptions.length > 0) {
     const paths = duplicateDescriptions
-      .map((group) => group.map((page) => page.relativePath).join(", "))
-      .join("; ");
+        .map((group) => group.map((page) => page.relativePath).join(", "))
+        .join("; ");
     throw new Error(`Found duplicate meta descriptions on indexable pages: ${paths}`);
   }
 
@@ -264,11 +257,11 @@ function validateMetaDescriptions(
     return page;
   });
   const distinctSectionDescriptions = new Set(
-    sectionPages.map((page) => page.normalizedDescription),
+      sectionPages.map((page) => page.normalizedDescription),
   ).size;
   if (distinctSectionDescriptions !== sectionPages.length) {
     throw new Error(
-      "Home, Episodes, Questions, and Question Index must have distinct meta descriptions.",
+        "Home, Episodes, Questions, and Question Index must have distinct meta descriptions.",
     );
   }
 
@@ -280,7 +273,7 @@ function validateMetaDescriptions(
 }
 
 function validatePageTitles(
-  htmlFiles: readonly RenderedHtmlFile[],
+    htmlFiles: readonly RenderedHtmlFile[],
 ): RenderedSiteValidationSummary["pageTitles"] {
   const renderedPages: RenderedTitle[] = [];
 
@@ -290,17 +283,17 @@ function validatePageTitles(
     }
 
     const titleMatches = Array.from(
-      file.html.matchAll(/<title\b[^>]*>(?<text>.*?)<\/title>/gisu),
+        file.html.matchAll(/<title\b[^>]*>(?<text>.*?)<\/title>/gisu),
     );
     const h1Matches = Array.from(file.html.matchAll(/<h1\b[^>]*>(?<text>.*?)<\/h1>/gisu));
     if (titleMatches.length !== 1) {
       throw new Error(
-        `Rendered page must contain exactly one title; found ${titleMatches.length}: ${file.relativePath}`,
+          `Rendered page must contain exactly one title; found ${titleMatches.length}: ${file.relativePath}`,
       );
     }
     if (h1Matches.length !== 1) {
       throw new Error(
-        `Rendered page must contain exactly one H1; found ${h1Matches.length}: ${file.relativePath}`,
+          `Rendered page must contain exactly one H1; found ${h1Matches.length}: ${file.relativePath}`,
       );
     }
 
@@ -319,7 +312,7 @@ function validatePageTitles(
       const expectedPrefix = `${episodeTitle} - Livestream ${numberedH1.groups["number"] ?? ""} Q&A | `;
       if (!title.startsWith(expectedPrefix)) {
         throw new Error(
-          `Numbered episode title does not match its H1 and livestream number: ${file.relativePath}`,
+            `Numbered episode title does not match its H1 and livestream number: ${file.relativePath}`,
         );
       }
     } else if (file.relativePath !== "index.html" && !title.startsWith(`${h1} | `)) {
@@ -335,7 +328,7 @@ function validatePageTitles(
       relativePath: file.relativePath,
       title,
       normalizedTitle: title.toLowerCase(),
-      ...(suffix !== undefined ? { titleSuffix: suffix } : {}),
+      ...(suffix !== undefined ? {titleSuffix: suffix} : {}),
     });
   }
 
@@ -346,18 +339,18 @@ function validatePageTitles(
   const duplicateTitles = duplicateGroups(renderedPages, (page) => page.normalizedTitle);
   if (duplicateTitles.length > 0) {
     const paths = duplicateTitles
-      .map((group) => group.map((page) => page.relativePath).join(", "))
-      .join("; ");
+        .map((group) => group.map((page) => page.relativePath).join(", "))
+        .join("; ");
     throw new Error(`Found duplicate rendered titles: ${paths}`);
   }
 
   const nonHomePages = renderedPages.filter((page) => page.relativePath !== "index.html");
   const missingSuffixPages = nonHomePages.filter(
-    (page) => page.titleSuffix === undefined || page.titleSuffix.trim().length === 0,
+      (page) => page.titleSuffix === undefined || page.titleSuffix.trim().length === 0,
   );
   if (missingSuffixPages.length > 0) {
     throw new Error(
-      `Found non-home titles without a site-name suffix: ${missingSuffixPages.map((page) => page.relativePath).join(", ")}`,
+        `Found non-home titles without a site-name suffix: ${missingSuffixPages.map((page) => page.relativePath).join(", ")}`,
     );
   }
 
@@ -374,9 +367,9 @@ function validatePageTitles(
 }
 
 async function validateSitemap(
-  publicDir: string,
-  htmlFiles: readonly RenderedHtmlFile[],
-  baseUrl: URL,
+    publicDir: string,
+    htmlFiles: readonly RenderedHtmlFile[],
+    baseUrl: URL,
 ): Promise<RenderedSiteValidationSummary["sitemap"]> {
   const sitemapPath = join(publicDir, "sitemap.xml");
   let sitemapText: string;
@@ -396,29 +389,29 @@ async function validateSitemap(
     throw new Error(`Rendered sitemap is not valid XML: ${sitemapPath}`);
   }
   if (
-    localXmlName(sitemapRoot.name) !== "urlset" ||
-    namespaceUri(sitemapRoot) !== SITEMAP_NAMESPACE
+      localXmlName(sitemapRoot.name) !== "urlset" ||
+      namespaceUri(sitemapRoot) !== SITEMAP_NAMESPACE
   ) {
     throw new Error("Rendered sitemap must use the standard sitemap urlset namespace.");
   }
 
   const sitemapUrlElements = sitemapRoot.children.filter(
-    (element) =>
-      localXmlName(element.name) === "url" && namespaceUri(element) === SITEMAP_NAMESPACE,
+      (element) =>
+          localXmlName(element.name) === "url" && namespaceUri(element) === SITEMAP_NAMESPACE,
   );
   const actualUrls = new Set<string>();
   for (const urlElement of sitemapUrlElements) {
     const locElements = urlElement.children.filter(
-      (element) =>
-        localXmlName(element.name) === "loc" && namespaceUri(element) === SITEMAP_NAMESPACE,
+        (element) =>
+            localXmlName(element.name) === "loc" && namespaceUri(element) === SITEMAP_NAMESPACE,
     );
     if (locElements.length !== 1 || xmlInnerText(locElements[0] ?? emptyXmlElement()).trim().length === 0) {
       throw new Error("Every sitemap URL entry must contain exactly one non-empty loc element.");
     }
     const url = getValidatedDeploymentUrl(
-      xmlInnerText(locElements[0] ?? emptyXmlElement()).trim(),
-      "Sitemap loc",
-      baseUrl,
+        xmlInnerText(locElements[0] ?? emptyXmlElement()).trim(),
+        "Sitemap loc",
+        baseUrl,
     );
     if (/\/search\/?$/iu.test(url)) {
       throw new Error(`The noindexed search page must not appear in the sitemap: ${url}`);
@@ -446,14 +439,14 @@ async function validateSitemap(
       throw new Error(`Rendered page has an empty canonical URL: ${file.fullPath}`);
     }
     const canonicalUrl = getValidatedDeploymentUrl(
-      canonicalUrlValue,
-      "Canonical URL",
-      baseUrl,
+        canonicalUrlValue,
+        "Canonical URL",
+        baseUrl,
     );
     const metaTags = findHtmlTags(file.html, "meta");
     const isNoIndex = metaTags
-      .filter((tag) => getHtmlAttributeValue(tag, "name")?.toLowerCase() === "robots")
-      .some((tag) => NO_INDEX_PATTERN.test(getHtmlAttributeValue(tag, "content") ?? ""));
+        .filter((tag) => getHtmlAttributeValue(tag, "name")?.toLowerCase() === "robots")
+        .some((tag) => NO_INDEX_PATTERN.test(getHtmlAttributeValue(tag, "content") ?? ""));
     if (!isNoIndex) {
       indexablePages += 1;
       if (expectedUrls.has(canonicalUrl)) {
@@ -470,19 +463,23 @@ async function validateSitemap(
   const unexpectedUrls = Array.from(actualUrls).filter((url) => !expectedUrls.has(url));
   if (missingUrls.length > 0 || unexpectedUrls.length > 0) {
     const details: string[] = [];
-    if (missingUrls.length > 0) details.push(`missing: ${missingUrls.join(", ")}`);
-    if (unexpectedUrls.length > 0) details.push(`unexpected: ${unexpectedUrls.join(", ")}`);
+    if (missingUrls.length > 0) {
+      details.push(`missing: ${missingUrls.join(", ")}`);
+    }
+    if (unexpectedUrls.length > 0) {
+      details.push(`unexpected: ${unexpectedUrls.join(", ")}`);
+    }
     throw new Error(`Sitemap URLs do not match canonical, indexable HTML pages (${details.join("; ")}).`);
   }
 
   const lastmodEntries = sitemapUrlElements.reduce(
-    (count, element) =>
-      count +
-      element.children.filter(
-        (child) =>
-          localXmlName(child.name) === "lastmod" && namespaceUri(child) === SITEMAP_NAMESPACE,
-      ).length,
-    0,
+      (count, element) =>
+          count +
+          element.children.filter(
+              (child) =>
+                  localXmlName(child.name) === "lastmod" && namespaceUri(child) === SITEMAP_NAMESPACE,
+          ).length,
+      0,
   );
   return {
     renderedPages,
@@ -493,17 +490,17 @@ async function validateSitemap(
 }
 
 async function validateRenderedSeo(
-  publicDir: string,
-  htmlFiles: readonly RenderedHtmlFile[],
-  baseUrl: URL,
-  expectedNoIndexPaths: readonly string[],
+    publicDir: string,
+    htmlFiles: readonly RenderedHtmlFile[],
+    baseUrl: URL,
+    expectedNoIndexPaths: readonly string[],
 ): Promise<RenderedSiteValidationSummary["renderedSeo"]> {
   if (htmlFiles.length === 0) {
     throw new Error("No Hugo-rendered HTML pages were found under the public directory.");
   }
 
   const expectedNoIndexSet = new Set(
-    expectedNoIndexPaths.map((path) => path.replaceAll("\\", "/").replace(/^\/+/, "")),
+      expectedNoIndexPaths.map((path) => path.replaceAll("\\", "/").replace(/^\/+/, "")),
   );
   const seenNoIndexSet = new Set<string>();
   const htmlCache = new Map<string, string>();
@@ -524,16 +521,16 @@ async function validateRenderedSeo(
     const canonicalTags = findCanonicalTags(file.html, true);
     const metaTags = findHtmlTags(file.html, "meta");
     const descriptionTags = metaTags.filter(
-      (tag) => getHtmlAttributeValue(tag, "name")?.toLowerCase() === "description",
+        (tag) => getHtmlAttributeValue(tag, "name")?.toLowerCase() === "description",
     );
     if (
-      titleTags.length !== 1 ||
-      h1Tags.length !== 1 ||
-      canonicalTags.length !== 1 ||
-      descriptionTags.length !== 1
+        titleTags.length !== 1 ||
+        h1Tags.length !== 1 ||
+        canonicalTags.length !== 1 ||
+        descriptionTags.length !== 1
     ) {
       throw new Error(
-        `Rendered page must contain exactly one title, H1, canonical, and meta description: ${file.relativePath} (title=${titleTags.length}, h1=${h1Tags.length}, canonical=${canonicalTags.length}, description=${descriptionTags.length})`,
+          `Rendered page must contain exactly one title, H1, canonical, and meta description: ${file.relativePath} (title=${titleTags.length}, h1=${h1Tags.length}, canonical=${canonicalTags.length}, description=${descriptionTags.length})`,
       );
     }
     const description = getHtmlAttributeValue(descriptionTags[0] ?? "", "content");
@@ -542,10 +539,10 @@ async function validateRenderedSeo(
     }
 
     const robotsTags = metaTags.filter(
-      (tag) => getHtmlAttributeValue(tag, "name")?.toLowerCase() === "robots",
+        (tag) => getHtmlAttributeValue(tag, "name")?.toLowerCase() === "robots",
     );
     const noIndexTags = robotsTags.filter((tag) =>
-      NO_INDEX_PATTERN.test(getHtmlAttributeValue(tag, "content") ?? ""),
+        NO_INDEX_PATTERN.test(getHtmlAttributeValue(tag, "content") ?? ""),
     );
     if (expectedNoIndexSet.has(file.relativePath)) {
       if (robotsTags.length !== 1 || noIndexTags.length !== 1) {
@@ -557,9 +554,9 @@ async function validateRenderedSeo(
     }
 
     const jsonLdMatches = Array.from(
-      file.html.matchAll(
-        /<script\b(?=[^>]*\btype\s*=\s*(?:"application\/ld\+json"|'application\/ld\+json'|application\/ld\+json))[^>]*>(?<json>.*?)<\/script>/gisu,
-      ),
+        file.html.matchAll(
+            /<script\b(?=[^>]*\btype\s*=\s*(?:"application\/ld\+json"|'application\/ld\+json'|application\/ld\+json))[^>]*>(?<json>.*?)<\/script>/gisu,
+        ),
     );
     for (const jsonLdMatch of jsonLdMatches) {
       const jsonLd = (jsonLdMatch.groups?.["json"] ?? "").trim();
@@ -594,8 +591,8 @@ async function validateRenderedSeo(
         continue;
       }
       if (
-        targetUrl.hostname.toLowerCase() !== baseUrl.hostname.toLowerCase() ||
-        effectivePort(targetUrl) !== effectivePort(baseUrl)
+          targetUrl.hostname.toLowerCase() !== baseUrl.hostname.toLowerCase() ||
+          effectivePort(targetUrl) !== effectivePort(baseUrl)
       ) {
         continue;
       }
@@ -604,7 +601,7 @@ async function validateRenderedSeo(
       const targetFile = await getInternalTargetFile(targetUrl, baseUrl, publicDir);
       if (targetFile === undefined) {
         brokenLinks.push(
-          `${file.relativePath} -> ${href} (missing target or outside deployment base)`,
+            `${file.relativePath} -> ${href} (missing target or outside deployment base)`,
         );
         continue;
       }
@@ -623,18 +620,18 @@ async function validateRenderedSeo(
   }
 
   const missingNoIndexPaths = Array.from(expectedNoIndexSet).filter(
-    (path) => !seenNoIndexSet.has(path),
+      (path) => !seenNoIndexSet.has(path),
   );
   if (missingNoIndexPaths.length > 0) {
     throw new Error(
-      `Expected noindex pages were not found or validated: ${missingNoIndexPaths.join(", ")}`,
+        `Expected noindex pages were not found or validated: ${missingNoIndexPaths.join(", ")}`,
     );
   }
   if (brokenLinks.length > 0) {
     const examples = brokenLinks.slice(0, 20);
     const suffix = brokenLinks.length > examples.length ? ` (showing first ${examples.length})` : "";
     throw new Error(
-      `Found ${brokenLinks.length} broken internal links${suffix}: ${examples.join("; ")}`,
+        `Found ${brokenLinks.length} broken internal links${suffix}: ${examples.join("; ")}`,
     );
   }
 
@@ -650,17 +647,17 @@ async function readRenderedHtmlFiles(publicDir: string): Promise<RenderedHtmlFil
   const paths = await findFilesRecursively(publicDir, ".html");
   paths.sort((left, right) => left.localeCompare(right, "en"));
   return Promise.all(
-    paths.map(async (fullPath) => ({
-      fullPath,
-      relativePath: relative(publicDir, fullPath).replaceAll("\\", "/"),
-      html: await readFile(fullPath, "utf8"),
-    })),
+      paths.map(async (fullPath) => ({
+        fullPath,
+        relativePath: relative(publicDir, fullPath).replaceAll("\\", "/"),
+        html: await readFile(fullPath, "utf8"),
+      })),
   );
 }
 
 async function findFilesRecursively(directory: string, extension: string): Promise<string[]> {
   const files: string[] = [];
-  const entries = await readdir(directory, { withFileTypes: true });
+  const entries = await readdir(directory, {withFileTypes: true});
   for (const entry of entries) {
     const path = join(directory, entry.name);
     if (entry.isDirectory()) {
@@ -698,8 +695,8 @@ function normalizeHttpBaseUrl(value: string, requireDeployable: boolean): URL {
     throw new Error(`ExpectedBaseUrl must use HTTP or HTTPS: ${value}`);
   }
   if (
-    requireDeployable &&
-    (baseUrl.hostname.toLowerCase() === "localhost" || baseUrl.hostname === "127.0.0.1")
+      requireDeployable &&
+      (baseUrl.hostname.toLowerCase() === "localhost" || baseUrl.hostname === "127.0.0.1")
   ) {
     throw new Error(`ExpectedBaseUrl must be a deployable HTTP or HTTPS URL: ${value}`);
   }
@@ -717,9 +714,9 @@ function getValidatedDeploymentUrl(value: string, label: string, baseUrl: URL): 
     throw new Error(`${label} must use HTTP or HTTPS: ${value}`);
   }
   if (
-    url.hostname.toLowerCase() === "localhost" ||
-    url.hostname === "127.0.0.1" ||
-    /\.md$/iu.test(url.pathname)
+      url.hostname.toLowerCase() === "localhost" ||
+      url.hostname === "127.0.0.1" ||
+      /\.md$/iu.test(url.pathname)
   ) {
     throw new Error(`${label} is not a deployable HTML page URL: ${value}`);
   }
@@ -728,7 +725,7 @@ function getValidatedDeploymentUrl(value: string, label: string, baseUrl: URL): 
   }
   if (!url.href.startsWith(baseUrl.href)) {
     throw new Error(
-      `${label} is outside the configured deployment base '${baseUrl.href}': ${value}`,
+        `${label} is outside the configured deployment base '${baseUrl.href}': ${value}`,
     );
   }
   return url.href;
@@ -742,8 +739,12 @@ function findHtmlTags(html: string, tagName: string): string[] {
 function findCanonicalTags(html: string, allowRelTokenList: boolean): string[] {
   return findHtmlTags(html, "link").filter((tag) => {
     const rel = getHtmlAttributeValue(tag, "rel");
-    if (rel === undefined) return false;
-    if (!allowRelTokenList) return rel.toLowerCase() === "canonical";
+    if (rel === undefined) {
+      return false;
+    }
+    if (!allowRelTokenList) {
+      return rel.toLowerCase() === "canonical";
+    }
     return rel.split(/\s+/u).some((token) => token.toLowerCase() === "canonical");
   });
 }
@@ -751,7 +752,9 @@ function findCanonicalTags(html: string, allowRelTokenList: boolean): string[] {
 function getHtmlAttributeValue(tag: string, name: string): string | undefined {
   const pattern = new RegExp(`\\b${escapeRegExp(name)}${ATTRIBUTE_VALUE_PATTERN}`, "iu");
   const match = pattern.exec(tag);
-  if (match?.groups === undefined) return undefined;
+  if (match?.groups === undefined) {
+    return undefined;
+  }
   const value = match.groups["double"] ?? match.groups["single"] ?? match.groups["unquoted"];
   return value === undefined ? undefined : decodeHtmlEntities(value);
 }
@@ -771,17 +774,17 @@ function decodeHtmlEntities(value: string): string {
     rsquo: "’",
   };
   return value.replace(
-    /&(?<entity>#x[0-9a-f]+|#\d+|[a-z][a-z0-9]+);/giu,
-    (original, _entity: string, _offset: number, _input: string, groups?: Record<string, string>) => {
-      const entity = groups?.["entity"] ?? "";
-      if (/^#x/iu.test(entity)) {
-        return codePointEntity(original, Number.parseInt(entity.slice(2), 16));
-      }
-      if (entity.startsWith("#")) {
-        return codePointEntity(original, Number.parseInt(entity.slice(1), 10));
-      }
-      return namedEntities[entity.toLowerCase()] ?? original;
-    },
+      /&(?<entity>#x[0-9a-f]+|#\d+|[a-z][a-z0-9]+);/giu,
+      (original, _entity: string, _offset: number, _input: string, groups?: Record<string, string>) => {
+        const entity = groups?.["entity"] ?? "";
+        if (/^#x/iu.test(entity)) {
+          return codePointEntity(original, Number.parseInt(entity.slice(2), 16));
+        }
+        if (entity.startsWith("#")) {
+          return codePointEntity(original, Number.parseInt(entity.slice(1), 10));
+        }
+        return namedEntities[entity.toLowerCase()] ?? original;
+      },
   );
 }
 
@@ -801,16 +804,18 @@ function convertToPlainHtmlText(html: string): string {
 }
 
 function getPageRoute(relativePath: string): string {
-  if (relativePath === "index.html") return "";
+  if (relativePath === "index.html") {
+    return "";
+  }
   return relativePath.endsWith("/index.html")
-    ? relativePath.slice(0, -"index.html".length)
-    : relativePath;
+      ? relativePath.slice(0, -"index.html".length)
+      : relativePath;
 }
 
 function isGoogleVerificationFile(file: RenderedHtmlFile): boolean {
   return (
-    /^google[a-z0-9]+\.html$/u.test(file.relativePath) &&
-    /^google-site-verification:\s*google[a-z0-9]+\.html$/u.test(file.html.trim())
+      /^google[a-z0-9]+\.html$/u.test(file.relativePath) &&
+      /^google-site-verification:\s*google[a-z0-9]+\.html$/u.test(file.html.trim())
   );
 }
 
@@ -819,19 +824,24 @@ function duplicateGroups<T>(items: readonly T[], key: (item: T) => string): T[][
   for (const item of items) {
     const itemKey = key(item);
     const group = groups.get(itemKey);
-    if (group === undefined) groups.set(itemKey, [item]);
-    else group.push(item);
+    if (group === undefined) {
+      groups.set(itemKey, [item]);
+    } else {
+      group.push(item);
+    }
   }
   return Array.from(groups.values()).filter((group) => group.length > 1);
 }
 
 async function getInternalTargetFile(
-  url: URL,
-  baseUrl: URL,
-  rootPath: string,
+    url: URL,
+    baseUrl: URL,
+    rootPath: string,
 ): Promise<string | undefined> {
   const basePath = baseUrl.pathname;
-  if (!url.pathname.startsWith(basePath)) return undefined;
+  if (!url.pathname.startsWith(basePath)) {
+    return undefined;
+  }
 
   let relativeUrlPath: string;
   try {
@@ -854,11 +864,17 @@ async function getInternalTargetFile(
 
   for (const candidatePath of candidatePaths) {
     const fullPath = resolve(rootPath, candidatePath);
-    if (!pathIsInside(rootPath, fullPath)) continue;
+    if (!pathIsInside(rootPath, fullPath)) {
+      continue;
+    }
     try {
-      if ((await stat(fullPath)).isFile()) return fullPath;
+      if ((await stat(fullPath)).isFile()) {
+        return fullPath;
+      }
     } catch (error) {
-      if (errorCode(error) !== "ENOENT") throw error;
+      if (errorCode(error) !== "ENOENT") {
+        throw error;
+      }
     }
   }
   return undefined;
@@ -867,30 +883,40 @@ async function getInternalTargetFile(
 function pathIsInside(root: string, candidate: string): boolean {
   const relativePath = relative(resolve(root), resolve(candidate));
   return (
-    relativePath.length > 0 &&
-    relativePath !== ".." &&
-    !relativePath.startsWith(`..${sep}`) &&
-    !isAbsolute(relativePath)
+      relativePath.length > 0 &&
+      relativePath !== ".." &&
+      !relativePath.startsWith(`..${sep}`) &&
+      !isAbsolute(relativePath)
   );
 }
 
 function testHtmlFragment(html: string, fragment: string): boolean {
-  if (fragment.trim().length === 0 || fragment.startsWith(":~:text=")) return true;
+  if (fragment.trim().length === 0 || fragment.startsWith(":~:text=")) {
+    return true;
+  }
   const target = decodeHtmlEntities(decodeURIComponent(fragment));
   const matches = html.matchAll(
-    /\b(?:id|name)\s*=\s*(?:"(?<double>[^"]*)"|'(?<single>[^']*)'|(?<unquoted>[^\s>]+))/giu,
+      /\b(?:id|name)\s*=\s*(?:"(?<double>[^"]*)"|'(?<single>[^']*)'|(?<unquoted>[^\s>]+))/giu,
   );
   for (const match of matches) {
     const value = match.groups?.["double"] ?? match.groups?.["single"] ?? match.groups?.["unquoted"];
-    if (value !== undefined && decodeHtmlEntities(value) === target) return true;
+    if (value !== undefined && decodeHtmlEntities(value) === target) {
+      return true;
+    }
   }
   return false;
 }
 
 function effectivePort(url: URL): string {
-  if (url.port.length > 0) return url.port;
-  if (url.protocol === "http:") return "80";
-  if (url.protocol === "https:") return "443";
+  if (url.port.length > 0) {
+    return url.port;
+  }
+  if (url.protocol === "http:") {
+    return "80";
+  }
+  if (url.protocol === "https:") {
+    return "443";
+  }
   return "";
 }
 
@@ -910,21 +936,29 @@ function parseXml(xml: string): XmlElement {
 
     if (xml.startsWith("<!--", opening)) {
       const end = xml.indexOf("-->", opening + 4);
-      if (end < 0) throw new Error("Unclosed XML comment.");
+      if (end < 0) {
+        throw new Error("Unclosed XML comment.");
+      }
       cursor = end + 3;
       continue;
     }
     if (xml.startsWith("<![CDATA[", opening)) {
       const end = xml.indexOf("]]>", opening + 9);
-      if (end < 0) throw new Error("Unclosed XML CDATA section.");
-      if (stack.length === 0) throw new Error("XML CDATA is outside the document element.");
+      if (end < 0) {
+        throw new Error("Unclosed XML CDATA section.");
+      }
+      if (stack.length === 0) {
+        throw new Error("XML CDATA is outside the document element.");
+      }
       stack[stack.length - 1]?.textParts.push(xml.slice(opening + 9, end));
       cursor = end + 3;
       continue;
     }
     if (xml.startsWith("<?", opening)) {
       const end = xml.indexOf("?>", opening + 2);
-      if (end < 0) throw new Error("Unclosed XML processing instruction.");
+      if (end < 0) {
+        throw new Error("Unclosed XML processing instruction.");
+      }
       cursor = end + 2;
       continue;
     }
@@ -940,18 +974,23 @@ function parseXml(xml: string): XmlElement {
         throw new Error("Invalid XML closing tag.");
       }
       const element = stack.pop();
-      if (element?.name !== closingName) throw new Error("Mismatched XML closing tag.");
+      if (element?.name !== closingName) {
+        throw new Error("Mismatched XML closing tag.");
+      }
     } else {
       const selfClosing = rawTag.endsWith("/");
       const tagBody = selfClosing ? rawTag.slice(0, -1).trimEnd() : rawTag;
       const nameMatch = /^(?<name>[A-Za-z_:][A-Za-z0-9_.:-]*)/u.exec(tagBody);
       const name = nameMatch?.groups?.["name"];
-      if (name === undefined) throw new Error("Invalid XML start tag.");
+      if (name === undefined) {
+        throw new Error("Invalid XML start tag.");
+      }
       const attributes = parseXmlAttributes(tagBody.slice(name.length));
       const namespaces = new Map(stack[stack.length - 1]?.namespaces ?? []);
       for (const [attributeName, attributeValue] of attributes) {
-        if (attributeName === "xmlns") namespaces.set("", attributeValue);
-        else if (attributeName.startsWith("xmlns:")) {
+        if (attributeName === "xmlns") {
+          namespaces.set("", attributeValue);
+        } else if (attributeName.startsWith("xmlns:")) {
           namespaces.set(attributeName.slice("xmlns:".length), attributeValue);
         }
       }
@@ -964,17 +1003,23 @@ function parseXml(xml: string): XmlElement {
       };
       const parent = stack[stack.length - 1];
       if (parent === undefined) {
-        if (root !== undefined) throw new Error("XML contains multiple document elements.");
+        if (root !== undefined) {
+          throw new Error("XML contains multiple document elements.");
+        }
         root = element;
       } else {
         parent.children.push(element);
       }
-      if (!selfClosing) stack.push(element);
+      if (!selfClosing) {
+        stack.push(element);
+      }
     }
     cursor = closing + 1;
   }
 
-  if (root === undefined || stack.length !== 0) throw new Error("XML document is incomplete.");
+  if (root === undefined || stack.length !== 0) {
+    throw new Error("XML document is incomplete.");
+  }
   return root;
 }
 
@@ -983,7 +1028,9 @@ function findXmlTagEnd(xml: string, start: number): number {
   for (let index = start; index < xml.length; index += 1) {
     const character = xml[index];
     if (quote !== undefined) {
-      if (character === quote) quote = undefined;
+      if (character === quote) {
+        quote = undefined;
+      }
     } else if (character === '"' || character === "'") {
       quote = character;
     } else if (character === ">") {
@@ -998,22 +1045,34 @@ function parseXmlAttributes(source: string): ReadonlyMap<string, string> {
   let cursor = 0;
   while (cursor < source.length) {
     while (/\s/u.test(source[cursor] ?? "")) cursor += 1;
-    if (cursor >= source.length) break;
+    if (cursor >= source.length) {
+      break;
+    }
     const nameMatch = /^[A-Za-z_:][A-Za-z0-9_.:-]*/u.exec(source.slice(cursor));
-    if (nameMatch === null) throw new Error("Invalid XML attribute name.");
+    if (nameMatch === null) {
+      throw new Error("Invalid XML attribute name.");
+    }
     const name = nameMatch[0];
     cursor += name.length;
     while (/\s/u.test(source[cursor] ?? "")) cursor += 1;
-    if (source[cursor] !== "=") throw new Error("XML attribute has no equals sign.");
+    if (source[cursor] !== "=") {
+      throw new Error("XML attribute has no equals sign.");
+    }
     cursor += 1;
     while (/\s/u.test(source[cursor] ?? "")) cursor += 1;
     const quote = source[cursor];
-    if (quote !== '"' && quote !== "'") throw new Error("XML attribute value is not quoted.");
+    if (quote !== '"' && quote !== "'") {
+      throw new Error("XML attribute value is not quoted.");
+    }
     cursor += 1;
     const end = source.indexOf(quote, cursor);
-    if (end < 0) throw new Error("Unclosed XML attribute value.");
+    if (end < 0) {
+      throw new Error("Unclosed XML attribute value.");
+    }
     const value = decodeXmlEntities(source.slice(cursor, end));
-    if (attributes.has(name)) throw new Error("Duplicate XML attribute.");
+    if (attributes.has(name)) {
+      throw new Error("Duplicate XML attribute.");
+    }
     attributes.set(name, value);
     cursor = end + 1;
   }
@@ -1021,11 +1080,15 @@ function parseXmlAttributes(source: string): ReadonlyMap<string, string> {
 }
 
 function appendXmlText(stack: XmlElement[], text: string, hasRoot: boolean): void {
-  if (text.length === 0) return;
+  if (text.length === 0) {
+    return;
+  }
   const current = stack[stack.length - 1];
   if (current === undefined) {
     if (text.trim().length > 0 || !hasRoot) {
-      if (text.trim().length > 0) throw new Error("XML text is outside the document element.");
+      if (text.trim().length > 0) {
+        throw new Error("XML text is outside the document element.");
+      }
     }
     return;
   }
@@ -1037,13 +1100,17 @@ function decodeXmlEntities(value: string): string {
     throw new Error("Invalid XML entity.");
   }
   return value.replace(
-    /&(?<entity>amp|lt|gt|apos|quot|#\d+|#x[0-9a-f]+);/giu,
-    (original, _entity: string, _offset: number, _input: string, groups?: Record<string, string>) => {
-      const entity = groups?.["entity"] ?? "";
-      if (/^#x/iu.test(entity)) return codePointEntity(original, Number.parseInt(entity.slice(2), 16));
-      if (entity.startsWith("#")) return codePointEntity(original, Number.parseInt(entity.slice(1), 10));
-      return { amp: "&", apos: "'", gt: ">", lt: "<", quot: '"' }[entity.toLowerCase()] ?? original;
-    },
+      /&(?<entity>amp|lt|gt|apos|quot|#\d+|#x[0-9a-f]+);/giu,
+      (original, _entity: string, _offset: number, _input: string, groups?: Record<string, string>) => {
+        const entity = groups?.["entity"] ?? "";
+        if (/^#x/iu.test(entity)) {
+          return codePointEntity(original, Number.parseInt(entity.slice(2), 16));
+        }
+        if (entity.startsWith("#")) {
+          return codePointEntity(original, Number.parseInt(entity.slice(1), 10));
+        }
+        return {amp: "&", apos: "'", gt: ">", lt: "<", quot: '"'}[entity.toLowerCase()] ?? original;
+      },
   );
 }
 
@@ -1082,6 +1149,6 @@ function escapeRegExp(value: string): string {
 
 function errorCode(error: unknown): string | undefined {
   return typeof error === "object" && error !== null && "code" in error
-    ? String((error as { code?: unknown }).code)
-    : undefined;
+      ? String((error as { code?: unknown }).code)
+      : undefined;
 }

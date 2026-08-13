@@ -2,14 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 
 import { YoutubeRequestError } from "./rate-limit.js";
-import {
-  cleanCaptionText,
-  extractJson3Segments,
-  fetchVideoTranscript,
-  orderTranscriptRecords,
-  transcriptToText,
-  type VideoTranscript,
-} from "./transcripts.js";
+import { cleanCaptionText, extractJson3Segments, fetchVideoTranscript, orderTranscriptRecords, transcriptToText, type VideoTranscript, } from "./transcripts.js";
 
 test("direct transcript renderer preserves the repository TXT contract", () => {
   const transcript: VideoTranscript = {
@@ -20,24 +13,24 @@ test("direct transcript renderer preserves the repository TXT contract", () => {
     availableLanguages: ["en"],
     captionKind: "manual",
     segments: [
-      { startSeconds: 1.9, durationSeconds: 2, text: " first\tsegment " },
-      { startSeconds: 3_723.8, durationSeconds: 1, text: "second\nsegment" },
+      {startSeconds: 1.9, durationSeconds: 2, text: " first\tsegment "},
+      {startSeconds: 3_723.8, durationSeconds: 1, text: "second\nsegment"},
     ],
   };
   assert.equal(
-    transcriptToText(transcript),
-    "[0] 0:01\tfirst segment\n[1] 1:02:03\tsecond segment\n",
+      transcriptToText(transcript),
+      "[0] 0:01\tfirst segment\n[1] 1:02:03\tsecond segment\n",
   );
 });
 
 test("json3 captions are parsed in memory without a JSON payload writer", () => {
   assert.deepEqual(
-    extractJson3Segments({
-      events: [
-        { tStartMs: 1_500, dDurationMs: 2_000, segs: [{ utf8: "Hello " }, { utf8: "world" }] },
-      ],
-    }),
-    [{ startSeconds: 1.5, durationSeconds: 2, text: "Hello world" }],
+      extractJson3Segments({
+        events: [
+          {tStartMs: 1_500, dDurationMs: 2_000, segs: [{utf8: "Hello "}, {utf8: "world"}]},
+        ],
+      }),
+      [{startSeconds: 1.5, durationSeconds: 2, text: "Hello world"}],
   );
 });
 
@@ -48,17 +41,17 @@ test("caption cleanup removes markup, tabs, and line breaks", () => {
 test("primary CAPTCHA evidence trips the circuit breaker without a fallback request", async () => {
   let requests = 0;
   await assert.rejects(
-    fetchVideoTranscript({
-      videoId: "abcdefghijk",
-      requestDelayMs: 0,
-      fetch: (async () => {
-        requests += 1;
-        return new Response('<div class="g-recaptcha">blocked</div>');
-      }) as typeof fetch,
-    }),
-    (error: unknown) =>
-      error instanceof YoutubeRequestError &&
-      error.classification === "rate_limited_or_blocked",
+      fetchVideoTranscript({
+        videoId: "abcdefghijk",
+        requestDelayMs: 0,
+        fetch: (async () => {
+          requests += 1;
+          return new Response('<div class="g-recaptcha">blocked</div>');
+        }) as typeof fetch,
+      }),
+      (error: unknown) =>
+          error instanceof YoutubeRequestError &&
+          error.classification === "rate_limited_or_blocked",
   );
   assert.equal(requests, 1);
 });
@@ -87,10 +80,10 @@ test("manifest records retain canonical episode order after replacement", () => 
   });
 
   assert.deepEqual(
-    orderTranscriptRecords(
-      [record("episode-b"), record("episode-a"), record("unregistered")],
-      [episode("episode-a", 1), episode("episode-b", 2)],
-    ).map((item) => item.videoId),
-    ["episode-a", "episode-b", "unregistered"],
+      orderTranscriptRecords(
+          [record("episode-b"), record("episode-a"), record("unregistered")],
+          [episode("episode-a", 1), episode("episode-b", 2)],
+      ).map((item) => item.videoId),
+      ["episode-a", "episode-b", "unregistered"],
   );
 });

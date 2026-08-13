@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
+import { mkdir, mkdtemp, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
@@ -28,7 +28,7 @@ test("search alias validation checks token aliases, phrase aliases, and expected
       "Query tests: 2",
     ]);
   } finally {
-    await rm(repoRoot, { recursive: true, force: true });
+    await rm(repoRoot, {recursive: true, force: true});
   }
 });
 
@@ -36,57 +36,57 @@ test("search alias validation enforces the broad-match ceiling", async () => {
   const repoRoot = await searchFixture();
   try {
     await assert.rejects(
-      validateHugoSearchAliases({ repoRoot, maxRowsPerAliasGroup: 0, logger: () => undefined }),
-      /Alias group \[pharaoh, pharoah\] matches 1 rows; limit is 0\./u,
+        validateHugoSearchAliases({repoRoot, maxRowsPerAliasGroup: 0, logger: () => undefined}),
+        /Alias group \[pharaoh, pharoah\] matches 1 rows; limit is 0\./u,
     );
   } finally {
-    await rm(repoRoot, { recursive: true, force: true });
+    await rm(repoRoot, {recursive: true, force: true});
   }
 });
 
 async function searchFixture(): Promise<string> {
   const repoRoot = await mkdtemp(join(tmpdir(), "aeb-search-aliases-"));
-  await mkdir(join(repoRoot, "site/data"), { recursive: true });
+  await mkdir(join(repoRoot, "site/data"), {recursive: true});
   await writeFile(
-    join(repoRoot, "site/data/search-aliases.json"),
-    `${JSON.stringify({
-      aliasGroups: [["pharaoh", "pharoah"]],
-      phraseAliasGroups: [["dead sea scrolls", "dss"]],
-      queryTests: [
-        {
-          query: "pharoah",
-          minResults: 1,
-          maxResults: 1,
-          expectedMatches: [{ questionPage: "questions/example.md", questionContains: "Pharaoh" }],
-        },
-        { query: "dss", minResults: 1, maxResults: 1 },
-      ],
-    }, null, 2)}\n`,
-    "utf8",
+      join(repoRoot, "site/data/search-aliases.json"),
+      `${JSON.stringify({
+        aliasGroups: [["pharaoh", "pharoah"]],
+        phraseAliasGroups: [["dead sea scrolls", "dss"]],
+        queryTests: [
+          {
+            query: "pharoah",
+            minResults: 1,
+            maxResults: 1,
+            expectedMatches: [{questionPage: "questions/example.md", questionContains: "Pharaoh"}],
+          },
+          {query: "dss", minResults: 1, maxResults: 1},
+        ],
+      }, null, 2)}\n`,
+      "utf8",
   );
   await writeFile(
-    join(repoRoot, "site/data/questions.json"),
-    `${JSON.stringify([
-      {
-        episode_number: 1,
-        episode_title: "Example",
-        question: "Was Pharaoh connected?",
-        short_answer: "No.",
-        expanded_answer: "The Dead Sea Scrolls are unrelated.",
-        question_page: "questions/example.md",
-        time_label: "1:00",
-      },
-      {
-        episode_number: 2,
-        episode_title: "Another",
-        question: "What was found?",
-        short_answer: "An artifact.",
-        expanded_answer: "An unrelated archaeology question.",
-        question_page: "questions/another.md",
-        time_label: "2:00",
-      },
-    ], null, 2)}\n`,
-    "utf8",
+      join(repoRoot, "site/data/questions.json"),
+      `${JSON.stringify([
+        {
+          episode_number: 1,
+          episode_title: "Example",
+          question: "Was Pharaoh connected?",
+          short_answer: "No.",
+          expanded_answer: "The Dead Sea Scrolls are unrelated.",
+          question_page: "questions/example.md",
+          time_label: "1:00",
+        },
+        {
+          episode_number: 2,
+          episode_title: "Another",
+          question: "What was found?",
+          short_answer: "An artifact.",
+          expanded_answer: "An unrelated archaeology question.",
+          question_page: "questions/another.md",
+          time_label: "2:00",
+        },
+      ], null, 2)}\n`,
+      "utf8",
   );
   return repoRoot;
 }

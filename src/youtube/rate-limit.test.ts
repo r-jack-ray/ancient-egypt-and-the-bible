@@ -30,13 +30,13 @@ test("429 is classified as blocking and exposes only sanitized Retry-After", asy
   const limited = createRateLimitedFetch({
     delayMs: 0,
     baseFetch: async () =>
-      new Response("", { status: 429, headers: { "retry-after": "120" } }),
+        new Response("", {status: 429, headers: {"retry-after": "120"}}),
   });
   await assert.rejects(
-    limited("https://example.test"),
-    (error: unknown) =>
-      error instanceof YoutubeRequestError &&
-      error.classification === "rate_limited_or_blocked" &&
-      error.retryAfter === "120",
+      limited("https://example.test"),
+      (error: unknown) =>
+          error instanceof YoutubeRequestError &&
+          error.classification === "rate_limited_or_blocked" &&
+          error.retryAfter === "120",
   );
 });

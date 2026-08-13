@@ -1,11 +1,11 @@
-import { existsSync, readFileSync, statSync, writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { dirname, isAbsolute, relative, resolve, sep } from "node:path";
 
 export type QuestionTableClassification =
-  | "ordinaryThreeColumn"
-  | "ordinaryFourColumn"
-  | "malformed"
-  | "specialFormat";
+    | "ordinaryThreeColumn"
+    | "ordinaryFourColumn"
+    | "malformed"
+    | "specialFormat";
 
 export interface QuestionTableAnalysis {
   file: string;
@@ -59,8 +59,8 @@ export interface QuestionTableReport {
 }
 
 export function resolveQuestionRepositoryRoot(
-  repoRoot = "",
-  startPaths: readonly string[] = [__dirname, process.cwd()],
+    repoRoot = "",
+    startPaths: readonly string[] = [__dirname, process.cwd()],
 ): string {
   if (repoRoot.trim()) {
     const resolved = resolve(repoRoot);
@@ -68,7 +68,7 @@ export function resolveQuestionRepositoryRoot(
       return resolved;
     }
     throw new Error(
-      `Repository root '${repoRoot}' does not contain package.json, docs/questions, and src/channel/episodes.json.`,
+        `Repository root '${repoRoot}' does not contain package.json, docs/questions, and src/channel/episodes.json.`,
     );
   }
 
@@ -91,7 +91,7 @@ export function resolveQuestionRepositoryRoot(
   }
 
   throw new Error(
-    "Could not find repository root. Expected package.json, docs/questions, and src/channel/episodes.json.",
+      "Could not find repository root. Expected package.json, docs/questions, and src/channel/episodes.json.",
   );
 }
 
@@ -167,35 +167,35 @@ export function questionTimeLabelToSeconds(label: string): number {
 export function isOrdinaryQuestionHeader(cells: readonly string[]): boolean {
   if (cells.length === 3) {
     return cells[0] === "Time"
-      && cells[1] === "Question"
-      && cells[2] === "Short answer / answer direction";
+        && cells[1] === "Question"
+        && cells[2] === "Short answer / answer direction";
   }
   if (cells.length === 4) {
     return cells[0] === "Time"
-      && cells[1] === "Question"
-      && cells[2] === "Short answer / answer direction"
-      && cells[3] === "Expanded answer";
+        && cells[1] === "Question"
+        && cells[2] === "Short answer / answer direction"
+        && cells[3] === "Expanded answer";
   }
   return false;
 }
 
 export function analyzeQuestionTableFile(
-  path: string,
-  repoRoot: string,
-  requireExpandedAnswer = false,
+    path: string,
+    repoRoot: string,
+    requireExpandedAnswer = false,
 ): QuestionTableAnalysis {
   const text = readFileSync(path, "utf8");
   return analyzeQuestionTableText(
-    text,
-    questionRepoRelativePath(repoRoot, path),
-    requireExpandedAnswer,
+      text,
+      questionRepoRelativePath(repoRoot, path),
+      requireExpandedAnswer,
   );
 }
 
 export function analyzeQuestionTableText(
-  text: string,
-  relativePath: string,
-  requireExpandedAnswer = false,
+    text: string,
+    relativePath: string,
+    requireExpandedAnswer = false,
 ): QuestionTableAnalysis {
   const parsed = parseQuestionTableText(text, relativePath, requireExpandedAnswer);
   return {
@@ -213,9 +213,9 @@ export function analyzeQuestionTableText(
 }
 
 export function parseQuestionTableText(
-  text: string,
-  relativePath: string,
-  requireExpandedAnswer = false,
+    text: string,
+    relativePath: string,
+    requireExpandedAnswer = false,
 ): ParsedQuestionTable {
   const lines = fileLines(text);
   const hardErrors: string[] = [];
@@ -262,11 +262,11 @@ export function parseQuestionTableText(
 
   const expectedColumns = headerCells.length;
   let classification: QuestionTableClassification = expectedColumns === 4
-    ? "ordinaryFourColumn"
-    : "ordinaryThreeColumn";
+      ? "ordinaryFourColumn"
+      : "ordinaryThreeColumn";
   if (requireExpandedAnswer && expectedColumns !== 4) {
     hardErrors.push(
-      `${relativePath}:${headerLineIndex + 1} has ${expectedColumns} columns; expected 4 with Expanded answer.`,
+        `${relativePath}:${headerLineIndex + 1} has ${expectedColumns} columns; expected 4 with Expanded answer.`,
     );
   }
 
@@ -278,7 +278,7 @@ export function parseQuestionTableText(
       const dividerCells = splitMarkdownTableRowStrict(requiredLine(lines[dividerLineIndex]));
       if (dividerCells.length !== expectedColumns) {
         hardErrors.push(
-          `${relativePath}:${dividerLineIndex + 1} has ${dividerCells.length} divider cells; expected ${expectedColumns}.`,
+            `${relativePath}:${dividerLineIndex + 1} has ${dividerCells.length} divider cells; expected ${expectedColumns}.`,
         );
       }
       for (const cell of dividerCells) {
@@ -340,10 +340,10 @@ export function parseQuestionTableText(
       const label = requiredGroup(timestampMatch.groups, "label");
       const seconds = Number(requiredGroup(timestampMatch.groups, "seconds"));
       try {
-        timestamp = { href, label, startSeconds: seconds };
+        timestamp = {href, label, startSeconds: seconds};
         if (questionTimeLabelToSeconds(label) !== seconds) {
           hardErrors.push(
-            `${relativePath}:${index + 1} timestamp label '${label}' does not match ?t=${seconds}.`,
+              `${relativePath}:${index + 1} timestamp label '${label}' does not match ?t=${seconds}.`,
           );
         }
       } catch (error) {
@@ -403,23 +403,23 @@ export function parseQuestionTableText(
 }
 
 export function writeQuestionReportFiles(
-  report: QuestionTableReport,
-  jsonPath: string,
-  markdownPath: string,
-  markdownLines: readonly string[],
+    report: QuestionTableReport,
+    jsonPath: string,
+    markdownPath: string,
+    markdownLines: readonly string[],
 ): void {
-  mkdirSync(dirname(jsonPath), { recursive: true });
+  mkdirSync(dirname(jsonPath), {recursive: true});
   writeFileSync(jsonPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
   writeFileSync(markdownPath, `${markdownLines.join("\n")}\n`, "utf8");
 }
 
 function isQuestionRepositoryRoot(path: string): boolean {
   return existsSync(resolve(path, "package.json"))
-    && statSync(resolve(path, "package.json")).isFile()
-    && existsSync(resolve(path, "docs/questions"))
-    && statSync(resolve(path, "docs/questions")).isDirectory()
-    && existsSync(resolve(path, "src/channel/episodes.json"))
-    && statSync(resolve(path, "src/channel/episodes.json")).isFile();
+      && statSync(resolve(path, "package.json")).isFile()
+      && existsSync(resolve(path, "docs/questions"))
+      && statSync(resolve(path, "docs/questions")).isDirectory()
+      && existsSync(resolve(path, "src/channel/episodes.json"))
+      && statSync(resolve(path, "src/channel/episodes.json")).isFile();
 }
 
 function fileLines(text: string): string[] {

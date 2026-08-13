@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "bxrBgOpzJPg",
+      "fileStem": "special-live-stream-lord-of-steel-and-sky-q-a",
+      "path": "txt/special-live-stream-lord-of-steel-and-sky-q-a.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "9cf90b296c928bf26d71b9c589c65efd6cdfd3a7d6034f4822029f8d7efd1fbf",
+      "canonicalByteLength": 146830,
+      "segmentCount": 3289,
+      "firstStartSeconds": 28,
+      "lastStartSeconds": 10515,
+      "fetchedAt": "2026-08-13T13:23:16.277Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "C3_uoVOj19I",
       "fileStem": "273-pouring-out-the-hick-sauce",
       "path": "txt/273-pouring-out-the-hick-sauce.txt",

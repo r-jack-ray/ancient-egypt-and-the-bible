@@ -1,18 +1,12 @@
 #!/usr/bin/env node
+import { spawn } from "node:child_process";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { spawn } from "node:child_process";
 
 import { buildHugoSiteContent } from "../site/build-content.js";
-import {
-  printRenderedValidationSummary,
-  validateRenderedSite,
-} from "../site/rendered-validation.js";
+import { printRenderedValidationSummary, validateRenderedSite, } from "../site/rendered-validation.js";
 import { validateHugoSearchAliases } from "../site/search-alias-validation.js";
-import {
-  printStaticSiteValidationSummary,
-  validateStaticSite,
-} from "../site/static-validation.js";
+import { printStaticSiteValidationSummary, validateStaticSite, } from "../site/static-validation.js";
 
 interface Options {
   repoRoot: string;
@@ -22,14 +16,14 @@ interface Options {
 
 async function main(): Promise<void> {
   const options = parseArgs(process.argv.slice(2));
-  await buildHugoSiteContent({ repoRoot: options.repoRoot });
+  await buildHugoSiteContent({repoRoot: options.repoRoot});
   console.log("Validating Hugo search aliases...");
-  await validateHugoSearchAliases({ repoRoot: options.repoRoot });
-  const staticSummary = await validateStaticSite({ repoRoot: options.repoRoot });
+  await validateHugoSearchAliases({repoRoot: options.repoRoot});
+  const staticSummary = await validateStaticSite({repoRoot: options.repoRoot});
 
   if (!options.skipHugo) {
     const expectedBaseUrl = normalizeBaseUrl(
-      options.expectedBaseUrl ?? (await readConfiguredBaseUrl(options.repoRoot)),
+        options.expectedBaseUrl ?? (await readConfiguredBaseUrl(options.repoRoot)),
     );
     await runHugo(options.repoRoot, expectedBaseUrl);
     const renderedSummary = await validateRenderedSite({
@@ -49,9 +43,11 @@ function parseArgs(args: string[]): Options {
 
   for (let index = 0; index < args.length; index += 1) {
     const argument = args[index];
-    if (argument === "--repo-root") repoRoot = resolve(required(args[++index], argument));
-    else if (argument === "--skip-hugo") skipHugo = true;
-    else if (argument === "--expected-base-url") {
+    if (argument === "--repo-root") {
+      repoRoot = resolve(required(args[++index], argument));
+    } else if (argument === "--skip-hugo") {
+      skipHugo = true;
+    } else if (argument === "--expected-base-url") {
       expectedBaseUrl = required(args[++index], argument);
     } else if (argument === "--help" || argument === "-h") {
       console.log(`Usage: npm run check:site -- [options]
@@ -69,7 +65,7 @@ function parseArgs(args: string[]): Options {
   return {
     repoRoot,
     skipHugo,
-    ...(expectedBaseUrl !== undefined ? { expectedBaseUrl } : {}),
+    ...(expectedBaseUrl !== undefined ? {expectedBaseUrl} : {}),
   };
 }
 
@@ -103,24 +99,30 @@ async function runHugo(repoRoot: string, expectedBaseUrl: string): Promise<void>
     child.on("error", (error: NodeJS.ErrnoException) => {
       if (error.code === "ENOENT") {
         rejectProcess(
-          new Error(
-            "Hugo is not installed or not on PATH. Install Hugo, then run npm run check:site.",
-          ),
+            new Error(
+                "Hugo is not installed or not on PATH. Install Hugo, then run npm run check:site.",
+            ),
         );
       } else {
         rejectProcess(error);
       }
     });
     child.on("exit", (code, signal) => {
-      if (signal) rejectProcess(new Error(`Hugo was terminated by signal ${signal}.`));
-      else if (code !== 0) rejectProcess(new Error(`Hugo build failed with exit code ${code}.`));
-      else resolveProcess();
+      if (signal) {
+        rejectProcess(new Error(`Hugo was terminated by signal ${signal}.`));
+      } else if (code !== 0) {
+        rejectProcess(new Error(`Hugo build failed with exit code ${code}.`));
+      } else {
+        resolveProcess();
+      }
     });
   });
 }
 
 function required(value: string | undefined, option: string): string {
-  if (!value) throw new Error(`Missing value for ${option}.`);
+  if (!value) {
+    throw new Error(`Missing value for ${option}.`);
+  }
   return value;
 }
 

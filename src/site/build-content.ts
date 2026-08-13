@@ -64,7 +64,7 @@ interface QuestionRow {
 }
 
 export async function buildHugoSiteContent(
-  options: BuildHugoSiteContentOptions = {},
+    options: BuildHugoSiteContentOptions = {},
 ): Promise<BuildHugoSiteContentSummary> {
   const repoRoot = resolve(options.repoRoot ?? resolve(__dirname, "../.."));
   const logger = options.logger ?? console.log;
@@ -77,10 +77,10 @@ export async function buildHugoSiteContent(
   await requireFile(episodeStorePath);
   await requireDirectory(questionsSourceDir);
 
-  const questionFileNames = (await readdir(questionsSourceDir, { withFileTypes: true }))
-    .filter((entry) => entry.isFile() && entry.name.endsWith(".md"))
-    .map((entry) => entry.name)
-    .sort(compareOrdinal);
+  const questionFileNames = (await readdir(questionsSourceDir, {withFileTypes: true}))
+      .filter((entry) => entry.isFile() && entry.name.endsWith(".md"))
+      .map((entry) => entry.name)
+      .sort(compareOrdinal);
   if (questionFileNames.length === 0) {
     throw new Error(`No Markdown files found under ${questionsSourceDir}.`);
   }
@@ -143,7 +143,7 @@ export async function buildHugoSiteContent(
       const episode = episodesByNumber.get(number);
       if (episode === undefined) {
         throw new Error(
-          `${sourcePath} starts with episode number ${number}, but no matching entry exists in ${episodesPath}.`,
+            `${sourcePath} starts with episode number ${number}, but no matching entry exists in ${episodesPath}.`,
         );
       }
       pageMetadata = {
@@ -160,8 +160,8 @@ export async function buildHugoSiteContent(
       numberedPageCount += 1;
     } else {
       const slug = baseName.endsWith("-questions")
-        ? baseName.slice(0, -"-questions".length)
-        : baseName;
+          ? baseName.slice(0, -"-questions".length)
+          : baseName;
       let episode = episodesBySlug.get(slug);
       pageMetadata = {
         number: null,
@@ -201,8 +201,8 @@ export async function buildHugoSiteContent(
 
     const descriptionOverride = pageDescriptionOverrideFromMarkdown(lines, sourceRelativePath);
     const descriptionSource = descriptionOverride === null
-      ? "generated_from_questions"
-      : "curated_override";
+        ? "generated_from_questions"
+        : "curated_override";
     const pageDescription = descriptionOverride ?? newQuestionPageDescription(pageMetadata, rows);
     if (descriptionOverride !== null) {
       descriptionOverrideCount += 1;
@@ -274,9 +274,9 @@ export async function buildHugoSiteContent(
 }
 
 function questionRowsFromMarkdown(
-  text: string,
-  path: string,
-  pageMetadata: PageMetadata,
+    text: string,
+    path: string,
+    pageMetadata: PageMetadata,
 ): QuestionRow[] {
   const table = parseQuestionTableText(text, path, true);
   const firstError = table.hardErrors[0];
@@ -296,7 +296,7 @@ function questionRowsFromMarkdown(
     const rowVideoId = videoIdFromUrl(timestamp.href);
     if (pageMetadata.video_id !== null && rowVideoId !== pageMetadata.video_id) {
       throw new Error(
-        `${path}:${row.lineNumber} links to video '${rowVideoId}', expected '${pageMetadata.video_id}'.`,
+          `${path}:${row.lineNumber} links to video '${rowVideoId}', expected '${pageMetadata.video_id}'.`,
       );
     }
     return {
@@ -331,10 +331,10 @@ function pageDescriptionFromMarkdown(lines: readonly string[], fallback: string)
   for (const line of lines) {
     const trimmed = line.trim();
     if (
-      !trimmed ||
-      trimmed.startsWith("#") ||
-      trimmed.startsWith("<!--") ||
-      trimmed === "Time links open the YouTube video at the relevant timestamp."
+        !trimmed ||
+        trimmed.startsWith("#") ||
+        trimmed.startsWith("<!--") ||
+        trimmed === "Time links open the YouTube video at the relevant timestamp."
     ) {
       continue;
     }
@@ -360,7 +360,7 @@ function pageDescriptionOverrideFromMarkdown(lines: readonly string[], path: str
       }
     } else if (/^\s*<!--\s*seo-description\b/u.test(line)) {
       throw new Error(
-        `${path} contains a malformed seo-description override. Use: <!-- seo-description: Concise page description. -->`,
+          `${path} contains a malformed seo-description override. Use: <!-- seo-description: Concise page description. -->`,
       );
     }
   }
@@ -376,8 +376,8 @@ function newQuestionPageDescription(pageMetadata: PageMetadata, rows: readonly Q
     throw new Error("Cannot generate a page description without an episode title.");
   }
   const sourceLabel = pageMetadata.is_numbered
-    ? `${episodeTitle} (Live Stream #${pageMetadata.number})`
-    : episodeTitle;
+      ? `${episodeTitle} (Live Stream #${pageMetadata.number})`
+      : episodeTitle;
   const topics = representativeDescriptionTopics(rows);
   const questionLabel = rows.length === 1 ? "question" : "questions";
   if (topics.length === 1) {
@@ -388,10 +388,10 @@ function newQuestionPageDescription(pageMetadata: PageMetadata, rows: readonly Q
 
 function representativeDescriptionTopics(rows: readonly QuestionRow[], maximumLength = 88): string[] {
   const targets = rows.length === 1
-    ? [0]
-    : rows.length === 2
-      ? [0, 1]
-      : [Math.floor(rows.length / 3), Math.floor((rows.length * 2) / 3)];
+      ? [0]
+      : rows.length === 2
+          ? [0, 1]
+          : [Math.floor(rows.length / 3), Math.floor((rows.length * 2) / 3)];
   const selected = new Set<number>();
   const topics: string[] = [];
   for (const target of targets) {
@@ -402,12 +402,18 @@ function representativeDescriptionTopics(rows: readonly QuestionRow[], maximumLe
     let fallback: { index: number; topic: string } | undefined;
     let added = false;
     for (const candidate of candidates) {
-      if (selected.has(candidate)) continue;
+      if (selected.has(candidate)) {
+        continue;
+      }
       const row = rows[candidate];
-      if (row === undefined) continue;
+      if (row === undefined) {
+        continue;
+      }
       const topic = plainDescriptionText(row.question);
-      if (!topic.trim()) continue;
-      fallback ??= { index: candidate, topic };
+      if (!topic.trim()) {
+        continue;
+      }
+      fallback ??= {index: candidate, topic};
       if (topic.length <= maximumLength) {
         selected.add(candidate);
         topics.push(topic);
@@ -428,11 +434,11 @@ function representativeDescriptionTopics(rows: readonly QuestionRow[], maximumLe
 
 function plainDescriptionText(text: string): string {
   return decodeHtmlEntities(
-    text
-      .replace(/<[^>]+>/gu, " ")
-      .replace(/\[([^\]]+)\]\([^)]+\)/gu, "$1")
-      .replace(/[*_~]/gu, "")
-      .replace(/`/gu, ""),
+      text
+          .replace(/<[^>]+>/gu, " ")
+          .replace(/\[([^\]]+)\]\([^)]+\)/gu, "$1")
+          .replace(/[*_~]/gu, "")
+          .replace(/`/gu, ""),
   ).replace(/\s+/gu, " ").trim().replaceAll('"', "'");
 }
 
@@ -447,14 +453,20 @@ function decodeHtmlEntities(text: string): string {
   };
   return text.replace(/&(?:#(?<decimal>\d+)|#x(?<hex>[0-9a-f]+)|(?<named>[a-z]+));/giu, (entity, ...args: unknown[]) => {
     const groups = args.at(-1) as { decimal?: string; hex?: string; named?: string } | undefined;
-    if (groups?.decimal !== undefined) return String.fromCodePoint(Number(groups.decimal));
-    if (groups?.hex !== undefined) return String.fromCodePoint(Number.parseInt(groups.hex, 16));
+    if (groups?.decimal !== undefined) {
+      return String.fromCodePoint(Number(groups.decimal));
+    }
+    if (groups?.hex !== undefined) {
+      return String.fromCodePoint(Number.parseInt(groups.hex, 16));
+    }
     return groups?.named === undefined ? entity : (named[groups.named.toLowerCase()] ?? entity);
   });
 }
 
 function limitDescriptionText(text: string, maximumLength: number): string {
-  if (text.length <= maximumLength) return text;
+  if (text.length <= maximumLength) {
+    return text;
+  }
   let trimmed = text.slice(0, maximumLength - 3).trimEnd();
   const lastSpace = trimmed.lastIndexOf(" ");
   if (lastSpace >= Math.floor(maximumLength * 0.65)) {
@@ -464,9 +476,15 @@ function limitDescriptionText(text: string, maximumLength: number): string {
 }
 
 function yamlScalar(value: string | number | boolean | null): string {
-  if (value === null) return "null";
-  if (typeof value === "boolean") return value ? "true" : "false";
-  if (typeof value === "number") return String(value);
+  if (value === null) {
+    return "null";
+  }
+  if (typeof value === "boolean") {
+    return value ? "true" : "false";
+  }
+  if (typeof value === "number") {
+    return String(value);
+  }
   return `'${value.replaceAll("'", "''")}'`;
 }
 
@@ -475,7 +493,9 @@ function questionPageNameForSlug(slug: string): string {
 }
 
 function seriesForEpisode(slug: string, isNumbered: boolean): string {
-  if (isNumbered) return "numbered livestream";
+  if (isNumbered) {
+    return "numbered livestream";
+  }
   if (slug.startsWith("dr-falk-plays-assassin-s-creed-origins-")) {
     return "Assassin's Creed side content";
   }
@@ -484,28 +504,34 @@ function seriesForEpisode(slug: string, isNumbered: boolean): string {
 
 function videoIdFromUrl(url: string): string {
   const short = /youtu\.be\/([^?&/]+)/u.exec(url)?.[1];
-  if (short !== undefined) return short;
+  if (short !== undefined) {
+    return short;
+  }
   const query = /[?&]v=([^?&]+)/u.exec(url)?.[1];
-  if (query !== undefined) return query;
+  if (query !== undefined) {
+    return query;
+  }
   throw new Error(`Could not parse YouTube video id from URL '${url}'.`);
 }
 
 async function removeGeneratedQuestionPages(directory: string): Promise<void> {
-  const entries = await readdir(directory, { withFileTypes: true }).catch((error: unknown) => {
-    if (isMissing(error)) return [];
+  const entries = await readdir(directory, {withFileTypes: true}).catch((error: unknown) => {
+    if (isMissing(error)) {
+      return [];
+    }
     throw error;
   });
   for (const entry of entries) {
     if (entry.isFile() && entry.name.endsWith(".md") && entry.name !== "_index.md") {
-      await rm(join(directory, entry.name), { force: true });
+      await rm(join(directory, entry.name), {force: true});
     }
   }
 }
 
 async function countGeneratedQuestionPages(directory: string): Promise<number> {
-  return (await readdir(directory, { withFileTypes: true }))
-    .filter((entry) => entry.isFile() && entry.name.endsWith(".md") && entry.name !== "_index.md")
-    .length;
+  return (await readdir(directory, {withFileTypes: true}))
+      .filter((entry) => entry.isFile() && entry.name.endsWith(".md") && entry.name !== "_index.md")
+      .length;
 }
 
 async function runSearchIndexBuilder(repoRoot: string): Promise<void> {
@@ -519,26 +545,37 @@ async function runSearchIndexBuilder(repoRoot: string): Promise<void> {
     });
     child.once("error", reject);
     child.once("close", (code) => {
-      if (code === 0) resolvePromise();
-      else reject(new Error(`Build-SearchIndex.mjs failed with exit code ${code ?? "unknown"}.`));
+      if (code === 0) {
+        resolvePromise();
+      } else {
+        reject(new Error(`Build-SearchIndex.mjs failed with exit code ${code ?? "unknown"}.`));
+      }
     });
   });
 }
 
 async function requireFile(path: string): Promise<void> {
   try {
-    if ((await stat(path)).isFile()) return;
+    if ((await stat(path)).isFile()) {
+      return;
+    }
   } catch (error) {
-    if (!isMissing(error)) throw error;
+    if (!isMissing(error)) {
+      throw error;
+    }
   }
   throw new Error(`Missing ${path}.`);
 }
 
 async function requireDirectory(path: string): Promise<void> {
   try {
-    if ((await stat(path)).isDirectory()) return;
+    if ((await stat(path)).isDirectory()) {
+      return;
+    }
   } catch (error) {
-    if (!isMissing(error)) throw error;
+    if (!isMissing(error)) {
+      throw error;
+    }
   }
   throw new Error(`Missing ${path}.`);
 }
@@ -557,7 +594,9 @@ function normalizeLineEndings(text: string): string {
 
 function splitFileLines(text: string): string[] {
   const lines = text.split("\n");
-  if (lines.at(-1) === "") lines.pop();
+  if (lines.at(-1) === "") {
+    lines.pop();
+  }
   return lines;
 }
 

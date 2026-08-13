@@ -1,19 +1,11 @@
 import assert from "node:assert/strict";
-import { mkdtemp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
 
-import {
-  transcriptRecordFromText,
-  type EpisodeRecord,
-  type FetchFailure,
-  type TranscriptManifest,
-} from "../archive.js";
-import {
-  fetchTranscriptBatch,
-  formatTranscriptBatchHandoff,
-} from "./batch.js";
+import { type EpisodeRecord, type FetchFailure, type TranscriptManifest, transcriptRecordFromText, } from "../archive.js";
+import { fetchTranscriptBatch, formatTranscriptBatchHandoff, } from "./batch.js";
 import { type VideoMetadataRecord } from "./metadata.js";
 import { YoutubeRequestError } from "./rate-limit.js";
 import { TranscriptFetchError, type VideoTranscript } from "./transcripts.js";
@@ -88,62 +80,62 @@ test("batch writes every ready missing TXT with inter-transcript pacing and a de
     assert.deepEqual(requestStarts, [1_000, 1_500, 2_000]);
     assert.deepEqual(waits, [400, 400]);
     assert.deepEqual(
-      {
-        fetched: result.fetched,
-        failed: result.failed,
-        storedSkipped: result.storedSkipped,
-        unavailableSkipped: result.unavailableSkipped,
-        deferred: result.deferred,
-        pending: result.pending,
-        blocked: result.blocked,
-      },
-      {
-        fetched: 3,
-        failed: 0,
-        storedSkipped: 1,
-        unavailableSkipped: 2,
-        deferred: 2,
-        pending: 0,
-        blocked: false,
-      },
+        {
+          fetched: result.fetched,
+          failed: result.failed,
+          storedSkipped: result.storedSkipped,
+          unavailableSkipped: result.unavailableSkipped,
+          deferred: result.deferred,
+          pending: result.pending,
+          blocked: result.blocked,
+        },
+        {
+          fetched: 3,
+          failed: 0,
+          storedSkipped: 1,
+          unavailableSkipped: 2,
+          deferred: 2,
+          pending: 0,
+          blocked: false,
+        },
     );
     assert.equal(
-      formatTranscriptBatchHandoff(result),
-      [
-        "Transcript batch: fetched=3 failed=0 stored-skipped=1 unavailable-skipped=2 deferred=2 pending=0",
-        "New TXT:",
-        "  src/transcripts/txt/ready-one.txt (READY000001)",
-        "  src/transcripts/txt/ready-two.txt (READY000002)",
-        "  src/transcripts/txt/previous-failure.txt (FAILED00001)",
-        "Deferred:",
-        "  src/transcripts/txt/upcoming-stream.txt (UPCOMING001): upcoming",
-        "  src/transcripts/txt/missing-metadata.txt (MISSING0001): metadata_missing",
-        "Failed: none",
-        "Pending: none",
-      ].join("\n"),
+        formatTranscriptBatchHandoff(result),
+        [
+          "Transcript batch: fetched=3 failed=0 stored-skipped=1 unavailable-skipped=2 deferred=2 pending=0",
+          "New TXT:",
+          "  src/transcripts/txt/ready-one.txt (READY000001)",
+          "  src/transcripts/txt/ready-two.txt (READY000002)",
+          "  src/transcripts/txt/previous-failure.txt (FAILED00001)",
+          "Deferred:",
+          "  src/transcripts/txt/upcoming-stream.txt (UPCOMING001): upcoming",
+          "  src/transcripts/txt/missing-metadata.txt (MISSING0001): metadata_missing",
+          "Failed: none",
+          "Pending: none",
+        ].join("\n"),
     );
     assert.equal(
-      await readFile(join(root, "src/transcripts/txt/ready-one.txt"), "utf8"),
-      "[0] 0:00\tTranscript READY000001.\n",
+        await readFile(join(root, "src/transcripts/txt/ready-one.txt"), "utf8"),
+        "[0] 0:00\tTranscript READY000001.\n",
     );
     assert.equal(
-      await readFile(join(root, "src/transcripts/txt/ready-two.txt"), "utf8"),
-      "[0] 0:00\tTranscript READY000002.\n",
+        await readFile(join(root, "src/transcripts/txt/ready-two.txt"), "utf8"),
+        "[0] 0:00\tTranscript READY000002.\n",
     );
     const manifest = JSON.parse(
-      await readFile(join(root, "src/transcripts/manifest.json"), "utf8"),
+        await readFile(join(root, "src/transcripts/manifest.json"), "utf8"),
     ) as TranscriptManifest;
     assert.deepEqual(
-      manifest.transcripts.map((record) => record.videoId),
-      ["STORED00001", "READY000001", "READY000002", "FAILED00001"],
+        manifest.transcripts.map((record) => record.videoId),
+        ["STORED00001", "READY000001", "READY000002", "FAILED00001"],
     );
     const status = JSON.parse(
-      await readFile(join(root, "src/transcripts/fetch-status.json"), "utf8"),
+        await readFile(join(root, "src/transcripts/fetch-status.json"), "utf8"),
     ) as { failures: FetchFailure[] };
     assert.deepEqual(status.failures, []);
     assert.equal(
-      await readFile(join(root, "src/channel/episodes.json"), "utf8"),
-      episodeStoreBefore,
+        await readFile(join(root, "src/channel/episodes.json"), "utf8"),
+        episodeStoreBefore,
     );
 
     const rerun = await fetchTranscriptBatch({
@@ -224,16 +216,16 @@ test("partial failures checkpoint and remain eligible on an ordinary later run",
       message: "Captions are not ready yet.",
     }]);
     assert.equal(
-      await readFile(join(root, "src/transcripts/txt/successful-transcript.txt"), "utf8"),
-      "[0] 0:00\tTranscript SUCCESS0001.\n",
+        await readFile(join(root, "src/transcripts/txt/successful-transcript.txt"), "utf8"),
+        "[0] 0:00\tTranscript SUCCESS0001.\n",
     );
     const failedStatus = JSON.parse(
-      await readFile(join(root, "src/transcripts/fetch-status.json"), "utf8"),
+        await readFile(join(root, "src/transcripts/fetch-status.json"), "utf8"),
     ) as { failures: FetchFailure[] };
     assert.deepEqual(failedStatus.failures.map((failure) => failure.videoId), ["CAPTION0001"]);
     assert.equal(
-      await readFile(join(root, "src/channel/episodes.json"), "utf8"),
-      episodeStoreBefore,
+        await readFile(join(root, "src/channel/episodes.json"), "utf8"),
+        episodeStoreBefore,
     );
 
     let rerunCalls = 0;
@@ -249,15 +241,15 @@ test("partial failures checkpoint and remain eligible on an ordinary later run",
     assert.equal(rerun.storedSkipped, 1);
     assert.deepEqual(rerun.newTranscripts.map((record) => record.videoId), ["CAPTION0001"]);
     const recoveredStatus = JSON.parse(
-      await readFile(join(root, "src/transcripts/fetch-status.json"), "utf8"),
+        await readFile(join(root, "src/transcripts/fetch-status.json"), "utf8"),
     ) as { failures: FetchFailure[] };
     assert.deepEqual(recoveredStatus.failures, []);
     const manifest = JSON.parse(
-      await readFile(join(root, "src/transcripts/manifest.json"), "utf8"),
+        await readFile(join(root, "src/transcripts/manifest.json"), "utf8"),
     ) as TranscriptManifest;
     assert.deepEqual(
-      manifest.transcripts.map((record) => record.videoId),
-      ["SUCCESS0001", "CAPTION0001"],
+        manifest.transcripts.map((record) => record.videoId),
+        ["SUCCESS0001", "CAPTION0001"],
     );
   });
 });
@@ -299,7 +291,7 @@ test("dry-run keeps known-unavailable records skipped and applies limits to the 
       },
     ]);
     const manifest = JSON.parse(
-      await readFile(join(root, "src/transcripts/manifest.json"), "utf8"),
+        await readFile(join(root, "src/transcripts/manifest.json"), "utf8"),
     ) as TranscriptManifest;
     assert.deepEqual(manifest.transcripts, []);
   });
@@ -331,9 +323,9 @@ test("blocking evidence stops requests but still reports the remaining batch sta
       fetcher: async (options) => {
         calls.push(options.videoId);
         throw new YoutubeRequestError(
-          "YouTube returned blocking evidence.",
-          "rate_limited_or_blocked",
-          "120",
+            "YouTube returned blocking evidence.",
+            "rate_limited_or_blocked",
+            "120",
         );
       },
     });
@@ -362,14 +354,14 @@ interface FixtureOptions {
 }
 
 async function withFixture(
-  options: FixtureOptions,
-  action: (root: string) => Promise<void>,
+    options: FixtureOptions,
+    action: (root: string) => Promise<void>,
 ): Promise<void> {
   const root = await mkdtemp(join(tmpdir(), "transcript-batch-"));
   const originalDirectory = process.cwd();
   try {
-    await mkdir(join(root, "src/channel"), { recursive: true });
-    await mkdir(join(root, "src/transcripts/txt"), { recursive: true });
+    await mkdir(join(root, "src/channel"), {recursive: true});
+    await mkdir(join(root, "src/transcripts/txt"), {recursive: true});
     await writeJson(join(root, "src/channel/episodes.json"), {
       schemaVersion: 1,
       channel: {
@@ -381,7 +373,7 @@ async function withFixture(
     });
     await writeJson(join(root, "src/channel/video-metadata.json"), {
       schemaVersion: 1,
-      source: { api: "youtube-data-api-v3" },
+      source: {api: "youtube-data-api-v3"},
       videos: options.metadata,
     });
     await writeJson(join(root, "src/transcripts/fetch-status.json"), {
@@ -392,14 +384,14 @@ async function withFixture(
     for (const storedEpisode of options.storedEpisodes ?? []) {
       const text = "[0] 0:00\tStored transcript.\n";
       await writeFile(
-        join(root, "src/transcripts/txt", `${storedEpisode.fileStem}.txt`),
-        text,
-        "utf8",
+          join(root, "src/transcripts/txt", `${storedEpisode.fileStem}.txt`),
+          text,
+          "utf8",
       );
       storedRecords.push(transcriptRecordFromText(
-        storedEpisode,
-        text,
-        "legacy-json-bootstrap",
+          storedEpisode,
+          text,
+          "legacy-json-bootstrap",
       ));
     }
     await writeJson(join(root, "src/transcripts/manifest.json"), {
@@ -417,15 +409,15 @@ async function withFixture(
     await action(root);
   } finally {
     process.chdir(originalDirectory);
-    await rm(root, { recursive: true, force: true });
+    await rm(root, {recursive: true, force: true});
   }
 }
 
 function episode(
-  videoId: string,
-  fileStem: string,
-  order: number,
-  transcriptPolicy: EpisodeRecord["transcriptPolicy"] = "expected",
+    videoId: string,
+    fileStem: string,
+    order: number,
+    transcriptPolicy: EpisodeRecord["transcriptPolicy"] = "expected",
 ): EpisodeRecord {
   return {
     videoId,

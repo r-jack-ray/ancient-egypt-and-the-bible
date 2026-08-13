@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
-import { createRequire } from "node:module";
-import { fileURLToPath } from "node:url";
+import {createRequire} from "node:module";
+import {fileURLToPath} from "node:url";
 import MiniSearch from "minisearch";
 
 const require = createRequire(import.meta.url);
@@ -86,7 +86,7 @@ const miniSearch = new MiniSearch(miniSearchOptions);
 
 miniSearch.addAll(indexDocs);
 
-fs.mkdirSync(outputDir, { recursive: true });
+fs.mkdirSync(outputDir, {recursive: true});
 writeJson(docsPath, displayDocs);
 writeJson(indexPath, miniSearch);
 writeJson(manifestPath, {
@@ -102,7 +102,7 @@ writeJson(manifestPath, {
   index_fields: miniSearchOptions.fields,
   store_fields: miniSearchOptions.storeFields,
   alias_config: aliasConfig
-}, { pretty: true });
+}, {pretty: true});
 
 console.log(`Built search index for ${displayDocs.length.toLocaleString("en-US")} documents.`);
 console.log(`Wrote ${path.relative(repoRoot, docsPath).replaceAll(path.sep, "/")}`);

@@ -1,21 +1,13 @@
 import { randomUUID } from "node:crypto";
+import { mkdir, open, readFile, rename, rm, stat, writeFile, } from "node:fs/promises";
 import { dirname, isAbsolute, relative, resolve } from "node:path";
-import {
-  mkdir,
-  open,
-  readFile,
-  rename,
-  rm,
-  stat,
-  writeFile,
-} from "node:fs/promises";
 
 export function stableJson(value: unknown): string {
   return `${JSON.stringify(value, null, 2)}\n`;
 }
 
 export async function atomicWriteText(path: string, text: string): Promise<void> {
-  await mkdir(dirname(path), { recursive: true });
+  await mkdir(dirname(path), {recursive: true});
   const temporaryPath = `${path}.${process.pid}.${randomUUID()}.tmp`;
   const handle = await open(temporaryPath, "wx");
   try {
@@ -28,7 +20,7 @@ export async function atomicWriteText(path: string, text: string): Promise<void>
   try {
     await replaceFile(temporaryPath, path);
   } finally {
-    await rm(temporaryPath, { force: true });
+    await rm(temporaryPath, {force: true});
   }
 }
 
@@ -67,7 +59,7 @@ async function replaceFile(source: string, destination: string): Promise<void> {
     await rename(destination, backup);
     movedExisting = true;
     await rename(source, destination);
-    await rm(backup, { force: true });
+    await rm(backup, {force: true});
   } catch (error) {
     if (movedExisting) {
       try {
@@ -82,8 +74,8 @@ async function replaceFile(source: string, destination: string): Promise<void> {
 
 export function errorCode(error: unknown): string | undefined {
   return typeof error === "object" && error !== null && "code" in error
-    ? String((error as { code?: unknown }).code)
-    : undefined;
+      ? String((error as { code?: unknown }).code)
+      : undefined;
 }
 
 export async function fileExists(path: string): Promise<boolean> {
@@ -100,10 +92,10 @@ export async function fileExists(path: string): Promise<boolean> {
 export function assertPathInside(root: string, candidate: string): void {
   const relativePath = relative(resolve(root), resolve(candidate));
   if (
-    !relativePath ||
-    relativePath === ".." ||
-    relativePath.startsWith(`..${process.platform === "win32" ? "\\" : "/"}`) ||
-    isAbsolute(relativePath)
+      !relativePath ||
+      relativePath === ".." ||
+      relativePath.startsWith(`..${process.platform === "win32" ? "\\" : "/"}`) ||
+      isAbsolute(relativePath)
   ) {
     throw new Error(`Path escapes owned root ${root}: ${candidate}`);
   }
@@ -114,6 +106,6 @@ export async function readJsonUnknown(path: string): Promise<unknown> {
 }
 
 export async function writeDiagnostic(path: string, value: unknown): Promise<void> {
-  await mkdir(dirname(path), { recursive: true });
+  await mkdir(dirname(path), {recursive: true});
   await writeFile(path, stableJson(value), "utf8");
 }

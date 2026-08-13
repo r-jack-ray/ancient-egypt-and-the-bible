@@ -8,14 +8,14 @@ async function main(): Promise<void> {
   const stored = new Set(manifest.transcripts.map((record) => record.videoId));
   const missing = episodes.episodes.filter((record) => !stored.has(record.videoId));
   const knownUnavailable = missing.filter(
-    (record) => record.transcriptPolicy === "known-unavailable",
+      (record) => record.transcriptPolicy === "known-unavailable",
   ).length;
   const pending = missing.filter((record) => record.transcriptPolicy === "expected").length;
 
   console.log(
-    `Transcript status: episodes=${episodes.episodes.length} stored=${stored.size} ` +
-    `known-unavailable=${knownUnavailable} pending=${pending} ` +
-    `recorded-failures=${status.failures.length}.`,
+      `Transcript status: episodes=${episodes.episodes.length} stored=${stored.size} ` +
+      `known-unavailable=${knownUnavailable} pending=${pending} ` +
+      `recorded-failures=${status.failures.length}.`,
   );
   if (status.failures.length > 0) {
     console.log("Recorded failures:");

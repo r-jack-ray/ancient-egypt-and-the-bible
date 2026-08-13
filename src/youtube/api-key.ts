@@ -15,8 +15,8 @@ export async function resolveYoutubeApiKey(options: ApiKeyOptions = {}): Promise
     return readKeyFile(options.apiKeyFile);
   }
   const environmentValue = options.environment === undefined
-    ? process.env.YOUTUBE_API_KEY
-    : options.environment.YOUTUBE_API_KEY;
+      ? process.env.YOUTUBE_API_KEY
+      : options.environment.YOUTUBE_API_KEY;
   if (environmentValue !== undefined) {
     return normalizeKey(environmentValue, "YOUTUBE_API_KEY");
   }
@@ -26,7 +26,7 @@ export async function resolveYoutubeApiKey(options: ApiKeyOptions = {}): Promise
   } catch (error) {
     if (errorCode(error) === "ENOENT") {
       throw new Error(
-        `YouTube API key not found. Use --api-key-file, YOUTUBE_API_KEY, or ${defaultApiKeyFile}.`,
+          `YouTube API key not found. Use --api-key-file, YOUTUBE_API_KEY, or ${defaultApiKeyFile}.`,
       );
     }
     throw error;

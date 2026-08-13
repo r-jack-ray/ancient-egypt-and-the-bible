@@ -10,37 +10,49 @@ async function main(): Promise<void> {
   let refreshAll = false;
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
-    if (arg === "--api-key-file") apiKeyFile = required(args[++index], arg);
-    else if (arg === "--request-delay-ms") delayMs = number(required(args[++index], arg), arg);
-    else if (arg === "--limit") limit = number(required(args[++index], arg), arg);
-    else if (arg === "--refresh-all") refreshAll = true;
-    else if (arg === "--help" || arg === "-h") {
+    if (arg === "--api-key-file") {
+      apiKeyFile = required(args[++index], arg);
+    } else if (arg === "--request-delay-ms") {
+      delayMs = number(required(args[++index], arg), arg);
+    } else if (arg === "--limit") {
+      limit = number(required(args[++index], arg), arg);
+    } else if (arg === "--refresh-all") {
+      refreshAll = true;
+    } else if (arg === "--help" || arg === "-h") {
       console.log(
-        "Usage: npm run refresh:livestream-metadata -- [--api-key-file path] [--limit n] [--request-delay-ms ms] [--refresh-all]",
+          "Usage: npm run refresh:livestream-metadata -- [--api-key-file path] [--limit n] [--request-delay-ms ms] [--refresh-all]",
       );
       return;
-    } else throw new Error(`Unknown argument: ${arg ?? ""}`);
+    } else {
+      throw new Error(`Unknown argument: ${arg ?? ""}`);
+    }
   }
-  const apiKey = await resolveYoutubeApiKey({ ...(apiKeyFile !== undefined ? { apiKeyFile } : {}) });
+  const apiKey = await resolveYoutubeApiKey({...(apiKeyFile !== undefined ? {apiKeyFile} : {})});
   const result = await fetchAndStoreVideoMetadata({
     apiKey,
     delayMs,
-    ...(limit !== undefined ? { limit } : {}),
-    ...(refreshAll ? { refreshAll: true } : {}),
+    ...(limit !== undefined ? {limit} : {}),
+    ...(refreshAll ? {refreshAll: true} : {}),
     logger: (message) => console.error(message),
   });
   console.error(`Stored normalized metadata for ${result.videos.length} videos.`);
 }
 
 function required(value: string | undefined, name: string): string {
-  if (!value) throw new Error(`Missing value for ${name}.`);
+  if (!value) {
+    throw new Error(`Missing value for ${name}.`);
+  }
   return value;
 }
+
 function number(value: string, name: string): number {
   const parsed = Number(value);
-  if (!Number.isInteger(parsed) || parsed < 0) throw new Error(`${name} must be a non-negative integer.`);
+  if (!Number.isInteger(parsed) || parsed < 0) {
+    throw new Error(`${name} must be a non-negative integer.`);
+  }
   return parsed;
 }
+
 main().catch((error: unknown) => {
   console.error(error instanceof Error ? error.message : String(error));
   process.exitCode = 1;

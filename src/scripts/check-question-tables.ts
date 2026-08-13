@@ -34,12 +34,12 @@ export function main(args: readonly string[] = process.argv.slice(2)): number {
   const requireExpandedAnswer = options.requireExpandedAnswer || !options.allowLegacyThreeColumn;
 
   const files = options.paths.length > 0
-    ? uniqueSorted(options.paths.map((path) => resolveQuestionMarkdownFile(path, repoRoot)))
-    : questionMarkdownFiles(questionsPath);
+      ? uniqueSorted(options.paths.map((path) => resolveQuestionMarkdownFile(path, repoRoot)))
+      : questionMarkdownFiles(questionsPath);
   const details = files.map((path) => analyzeQuestionTableFile(path, repoRoot, requireExpandedAnswer));
   const ordinary = details.filter((detail) =>
-    detail.headerColumns > 0
-    && ["ordinaryThreeColumn", "ordinaryFourColumn", "malformed"].includes(detail.classification)
+      detail.headerColumns > 0
+      && ["ordinaryThreeColumn", "ordinaryFourColumn", "malformed"].includes(detail.classification)
   );
   const malformed = details.filter((detail) => detail.classification === "malformed");
   const warnings = details.flatMap((detail) => detail.warnings);
@@ -70,17 +70,17 @@ export function main(args: readonly string[] = process.argv.slice(2)): number {
   const writeReports = report.hardErrorCount > 0 || options.report;
   if (writeReports) {
     writeQuestionReportFiles(
-      report,
-      jsonPath,
-      markdownPath,
-      questionTableReportMarkdown(report),
+        report,
+        jsonPath,
+        markdownPath,
+        questionTableReportMarkdown(report),
     );
   }
 
   const outcome = report.hardErrorCount > 0 ? "Question table validation failed" : "Question tables valid";
   console.log(
-    `${outcome}: files=${report.filesScanned} ordinary=${report.ordinaryFilesValidated} ` +
-    `rows=${report.totalQuestionRows} hard-errors=${report.hardErrorCount} warnings=${report.warningCount}.`,
+      `${outcome}: files=${report.filesScanned} ordinary=${report.ordinaryFilesValidated} ` +
+      `rows=${report.totalQuestionRows} hard-errors=${report.hardErrorCount} warnings=${report.warningCount}.`,
   );
   if (report.hardErrors.length > 0) {
     console.error("Hard errors:");
@@ -111,16 +111,25 @@ export function parseArgs(args: readonly string[]): Options | null {
 
   for (let index = 0; index < args.length; index += 1) {
     const argument = args[index];
-    if (argument === "--repo-root") options.repoRoot = required(args[++index], argument);
-    else if (argument === "--questions-dir") options.questionsDir = required(args[++index], argument);
-    else if (argument === "--path") options.paths.push(required(args[++index], argument));
-    else if (argument === "--output-dir") options.outputDir = required(args[++index], argument);
-    else if (argument === "--json-name") options.jsonName = required(args[++index], argument);
-    else if (argument === "--markdown-name") options.markdownName = required(args[++index], argument);
-    else if (argument === "--report") options.report = true;
-    else if (argument === "--allow-legacy-three-column") options.allowLegacyThreeColumn = true;
-    else if (argument === "--require-expanded-answer") options.requireExpandedAnswer = true;
-    else if (argument === "--help" || argument === "-h") {
+    if (argument === "--repo-root") {
+      options.repoRoot = required(args[++index], argument);
+    } else if (argument === "--questions-dir") {
+      options.questionsDir = required(args[++index], argument);
+    } else if (argument === "--path") {
+      options.paths.push(required(args[++index], argument));
+    } else if (argument === "--output-dir") {
+      options.outputDir = required(args[++index], argument);
+    } else if (argument === "--json-name") {
+      options.jsonName = required(args[++index], argument);
+    } else if (argument === "--markdown-name") {
+      options.markdownName = required(args[++index], argument);
+    } else if (argument === "--report") {
+      options.report = true;
+    } else if (argument === "--allow-legacy-three-column") {
+      options.allowLegacyThreeColumn = true;
+    } else if (argument === "--require-expanded-answer") {
+      options.requireExpandedAnswer = true;
+    } else if (argument === "--help" || argument === "-h") {
       console.log(`Usage: tsx src/scripts/check-question-tables.ts [options]
 
 Options:
@@ -146,10 +155,10 @@ function questionMarkdownFiles(questionsPath: string): string[] {
   if (!existsSync(questionsPath)) {
     throw new Error(`Questions directory not found: ${questionsPath}`);
   }
-  return readdirSync(questionsPath, { withFileTypes: true })
-    .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith(".md"))
-    .map((entry) => resolve(questionsPath, entry.name))
-    .sort((left, right) => left.localeCompare(right));
+  return readdirSync(questionsPath, {withFileTypes: true})
+      .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith(".md"))
+      .map((entry) => resolve(questionsPath, entry.name))
+      .sort((left, right) => left.localeCompare(right));
 }
 
 function questionTableReportMarkdown(report: QuestionTableReport): string[] {

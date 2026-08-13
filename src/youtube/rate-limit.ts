@@ -9,9 +9,9 @@ export interface RateLimiterOptions {
 
 export class YoutubeRequestError extends Error {
   constructor(
-    message: string,
-    readonly classification: "rate_limited_or_blocked" | "fetch_failed",
-    readonly retryAfter?: string,
+      message: string,
+      readonly classification: "rate_limited_or_blocked" | "fetch_failed",
+      readonly retryAfter?: string,
   ) {
     super(message);
   }
@@ -21,15 +21,15 @@ export function createRateLimitedFetch(options: RateLimiterOptions): typeof fetc
   const baseFetch = options.baseFetch ?? fetch;
   const now = options.now ?? Date.now;
   const sleep = options.sleep ?? ((milliseconds) =>
-    new Promise<void>((resolve) => setTimeout(resolve, milliseconds))
+          new Promise<void>((resolve) => setTimeout(resolve, milliseconds))
   );
   const timeoutMs = options.timeoutMs ?? 30_000;
   let previousStart: number | undefined;
   let chain = Promise.resolve();
 
   return (async (
-    input: Parameters<typeof fetch>[0],
-    init?: Parameters<typeof fetch>[1],
+      input: Parameters<typeof fetch>[0],
+      init?: Parameters<typeof fetch>[1],
   ): Promise<Response> => {
     const run = async (): Promise<Response> => {
       if (previousStart !== undefined) {
@@ -44,7 +44,7 @@ export function createRateLimitedFetch(options: RateLimiterOptions): typeof fetc
       const signal = init?.signal == null ? timeout : AbortSignal.any([init.signal, timeout]);
       let response: Response;
       try {
-        response = await baseFetch(input, { ...init, signal });
+        response = await baseFetch(input, {...init, signal});
       } catch (error) {
         const message = error instanceof Error ? error.message : "Network request failed.";
         throw new YoutubeRequestError(`YouTube request failed: ${message}`, "fetch_failed");
@@ -52,15 +52,15 @@ export function createRateLimitedFetch(options: RateLimiterOptions): typeof fetc
       if (response.status === 429 || response.status === 403) {
         const retryAfter = sanitizeRetryAfter(response.headers.get("retry-after"));
         throw new YoutubeRequestError(
-          `YouTube request blocked with HTTP ${response.status}.`,
-          "rate_limited_or_blocked",
-          retryAfter,
+            `YouTube request blocked with HTTP ${response.status}.`,
+            "rate_limited_or_blocked",
+            retryAfter,
         );
       }
       if (!response.ok) {
         throw new YoutubeRequestError(
-          `YouTube request failed with HTTP ${response.status}.`,
-          "fetch_failed",
+            `YouTube request failed with HTTP ${response.status}.`,
+            "fetch_failed",
         );
       }
       return response;

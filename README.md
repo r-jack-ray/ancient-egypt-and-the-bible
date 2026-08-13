@@ -280,6 +280,7 @@ Long livestreams are hard to navigate from transcript text alone. This project k
 - [271 All Your Reliquaries Are Mine Questions](docs/questions/271-all-your-reliquaries-are-mine-questions.md)
 - [272 The Oppression Pharaoh, We Are Legion Questions](docs/questions/272-the-oppression-pharaoh-we-are-legion-questions.md)
 - [273 Pouring Out The Hick Sauce Questions](docs/questions/273-pouring-out-the-hick-sauce-questions.md)
+- [Special Live Stream: Lord of Steel and Sky Q&A Questions](docs/questions/special-live-stream-lord-of-steel-and-sky-q-a-questions.md)
 - [Special Live Stream: All the Stars as Angels Q&A Questions](docs/questions/special-live-stream-all-the-stars-as-angels-q-and-a-questions.md)
 - [Special Live Stream: Reliquary of the Dead Q&A Questions](docs/questions/special-live-stream-reliquary-of-the-dead-q-and-a-questions.md)
 - [Dr. Falk Plays Assassin's Creed Origins (part 1) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-1-questions.md)
@@ -404,13 +405,13 @@ npm ci
 npm run check:transcript-store
 ```
 
-The ignored API key fallback is `.local/youtube-api-key.txt`. The normal inventory refresh registers the newest numbered livestream and stores its metadata:
+The ignored API key fallback is `.local/youtube-api-key.txt`. The normal inventory refresh registers numbered livestreams and broadcasts whose titles begin `Special Live Stream`, then stores their metadata:
 
 ```powershell
 npm run fetch:livestreams
 ```
 
-The command completes channel discovery, selects the newest proposed numbered livestream, pins the resolved channel source when needed, and atomically updates canonical inventory and metadata. It does not add unrelated or special broadcasts. Use `--accept-addition VIDEO_ID` to select one or more specific proposed additions instead. An explicit `--review-only` run writes the concise delta `reports/stream-inventory-candidate.json` without changing canonical files; ordinary runs write no report unless `--output` is passed.
+The command completes channel discovery, selects every proposed numbered or explicitly titled special livestream, pins the resolved channel source when needed, and atomically updates canonical inventory and metadata. Other broadcasts remain excluded. Use `--accept-latest` or `--accept-addition VIDEO_ID` to make an explicit narrower selection. An explicit `--review-only` run writes the concise delta `reports/stream-inventory-candidate.json` without changing canonical files; ordinary runs write no report unless `--output` is passed.
 
 Run a conservatively paced batch for all ready missing transcripts:
 
@@ -424,17 +425,17 @@ The batch spaces transcript attempts by 60 seconds but does not insert delays be
 
 The TypeScript/TXT pipeline replaces the legacy sequence of maintaining a separate Markdown stream index, downloading transcript JSON, and converting that JSON separately. `src/channel/episodes.json` is the sole canonical archive inventory. The weekly curation, two independent audit passes, Hugo generation, and Git review remain part of the process.
 
-### 1. Register the newest numbered livestream
+### 1. Register new numbered and special livestreams
 
-For the normal weekly pull, fetch a complete inventory and atomically register the newest numbered addition with its metadata:
+For the normal weekly pull, fetch a complete inventory and atomically register every proposed numbered livestream and every broadcast whose title begins `Special Live Stream`:
 
 ```powershell
 npm run fetch:livestreams
 ```
 
-This automatically pins the resolved channel source when needed. Unrelated or special live broadcasts are left out of canonical inventory.
+This automatically pins the resolved channel source when needed. Other live broadcasts remain outside canonical inventory.
 
-To accept one or more specific additions instead of the automatic newest-numbered selection:
+To make an explicit selection instead of the automatic numbered-and-special set:
 
 ```powershell
 npm run fetch:livestreams -- --accept-addition VIDEO_ID_1 --accept-addition VIDEO_ID_2
@@ -612,7 +613,7 @@ Timestamp links point to the relevant place in the YouTube video. Curated Markdo
 
 ## Current Status
 
-The repository currently has canonical TXT transcripts for 270 numbered episode streams. Curated Markdown pages currently exist for 270 numbered episode streams under `docs/questions/`, matching the current numbered TXT coverage.
+The repository currently has canonical TXT transcripts for 271 numbered episode streams. Curated Markdown pages currently exist for 271 numbered episode streams under `docs/questions/`, matching the current numbered TXT coverage.
 
 Known blocked numbered episodes remain:
 - Live Stream #118: transcript disabled / empty placeholder

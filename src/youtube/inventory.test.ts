@@ -1,17 +1,18 @@
 import assert from "node:assert/strict";
-import { mkdtemp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
 
-import { inventoryJournalPath, readEpisodesStore, type EpisodeRecord } from "../archive.js";
+import { type EpisodeRecord, inventoryJournalPath, readEpisodesStore } from "../archive.js";
 import {
   applyInventoryCandidate,
   buildAcceptedInventoryEpisodes,
+  defaultInventoryAdditions,
   episodeFromVideoMetadata,
   fetchInventoryCandidate,
-  latestNumberedAddition,
   type InventoryCandidate,
+  latestNumberedAddition,
   writeInventoryReport,
 } from "./inventory.js";
 
@@ -47,7 +48,7 @@ test("inventory discovery uses injected fetch for channel lookup and paginated u
       return jsonResponse({
         items: [{
           id: channelId,
-          contentDetails: { relatedPlaylists: { uploads: uploadsPlaylistId } },
+          contentDetails: {relatedPlaylists: {uploads: uploadsPlaylistId}},
         }],
       });
     }
@@ -55,8 +56,8 @@ test("inventory discovery uses injected fetch for channel lookup and paginated u
       if (url.searchParams.get("pageToken") === null) {
         return jsonResponse({
           items: [
-            { contentDetails: { videoId: newStreamId } },
-            { contentDetails: { videoId: ordinaryId } },
+            {contentDetails: {videoId: newStreamId}},
+            {contentDetails: {videoId: ordinaryId}},
           ],
           nextPageToken: "page-2",
         });
@@ -64,8 +65,8 @@ test("inventory discovery uses injected fetch for channel lookup and paginated u
       assert.equal(url.searchParams.get("pageToken"), "page-2");
       return jsonResponse({
         items: [
-          { contentDetails: { videoId: existing.videoId } },
-          { contentDetails: { videoId: newStreamId } },
+          {contentDetails: {videoId: existing.videoId}},
+          {contentDetails: {videoId: newStreamId}},
         ],
       });
     }
@@ -76,9 +77,9 @@ test("inventory discovery uses injected fetch for channel lookup and paginated u
           if (videoId === newStreamId) {
             return {
               id: videoId,
-              snippet: { title: "Live Stream #999: Fixture discovery" },
-              contentDetails: { duration: "PT1H" },
-              status: { privacyStatus: "public", uploadStatus: "processed" },
+              snippet: {title: "Live Stream #999: Fixture discovery"},
+              contentDetails: {duration: "PT1H"},
+              status: {privacyStatus: "public", uploadStatus: "processed"},
               liveStreamingDetails: {
                 actualStartTime: "2026-08-01T00:00:00Z",
                 actualEndTime: "2026-08-01T01:00:00Z",
@@ -88,16 +89,16 @@ test("inventory discovery uses injected fetch for channel lookup and paginated u
           if (videoId === ordinaryId) {
             return {
               id: videoId,
-              snippet: { title: "Ordinary upload", liveBroadcastContent: "none" },
-              contentDetails: { duration: "PT10M" },
-              status: { privacyStatus: "public", uploadStatus: "processed" },
+              snippet: {title: "Ordinary upload", liveBroadcastContent: "none"},
+              contentDetails: {duration: "PT10M"},
+              status: {privacyStatus: "public", uploadStatus: "processed"},
             };
           }
           return {
             id: videoId,
-            snippet: { title: existing.linkText },
-            contentDetails: { duration: "PT1H" },
-            status: { privacyStatus: "public", uploadStatus: "processed" },
+            snippet: {title: existing.linkText},
+            contentDetails: {duration: "PT1H"},
+            status: {privacyStatus: "public", uploadStatus: "processed"},
             liveStreamingDetails: {
               actualStartTime: "2026-07-31T00:00:00Z",
               actualEndTime: "2026-07-31T01:00:00Z",
@@ -106,7 +107,7 @@ test("inventory discovery uses injected fetch for channel lookup and paginated u
         }),
       });
     }
-    return jsonResponse({ error: { message: "Unexpected endpoint." } }, 404);
+    return jsonResponse({error: {message: "Unexpected endpoint."}}, 404);
   }) as typeof fetch;
 
   const candidate = await fetchInventoryCandidate({
@@ -141,34 +142,34 @@ test("inventory discovery uses injected fetch for channel lookup and paginated u
 test("inventory discovery reports a channel response with missing uploads fields", async () => {
   const current = await readEpisodesStore();
   const mockFetch = (async () => jsonResponse({
-    items: [{ id: current.channel.channelId, contentDetails: { relatedPlaylists: {} } }],
+    items: [{id: current.channel.channelId, contentDetails: {relatedPlaylists: {}}}],
   })) as typeof fetch;
   await assert.rejects(
-    fetchInventoryCandidate({
-      apiKey: "fixture-key",
-      delayMs: 0,
-      fetch: mockFetch,
-    }),
-    /did not resolve to an uploads playlist/u,
+      fetchInventoryCandidate({
+        apiKey: "fixture-key",
+        delayMs: 0,
+        fetch: mockFetch,
+      }),
+      /did not resolve to an uploads playlist/u,
   );
 });
 
 test("inventory discovery fixtures cover no additions and multiple additions", async () => {
   const repoRoot = await mkdtemp(join(tmpdir(), "inventory-discovery-"));
   try {
-    await mkdir(join(repoRoot, "src/channel"), { recursive: true });
+    await mkdir(join(repoRoot, "src/channel"), {recursive: true});
     await writeFile(
-      join(repoRoot, "src/channel/episodes.json"),
-      `${JSON.stringify({
-        schemaVersion: 1,
-        channel: {
-          handleUrl: "https://www.youtube.com/@ancientegyptandthebible",
-          channelId: "fixture-channel",
-          uploadsPlaylistId: "fixture-uploads",
-        },
-        episodes: [baseline],
-      }, null, 2)}\n`,
-      "utf8",
+        join(repoRoot, "src/channel/episodes.json"),
+        `${JSON.stringify({
+          schemaVersion: 1,
+          channel: {
+            handleUrl: "https://www.youtube.com/@ancientegyptandthebible",
+            channelId: "fixture-channel",
+            uploadsPlaylistId: "fixture-uploads",
+          },
+          episodes: [baseline],
+        }, null, 2)}\n`,
+        "utf8",
     );
 
     const noAdditionRequests: URL[] = [];
@@ -177,9 +178,9 @@ test("inventory discovery fixtures cover no additions and multiple additions", a
       delayMs: 0,
       repoRoot,
       fetch: inventoryFixtureFetch(
-        [baseline.videoId],
-        new Map([[baseline.videoId, baseline.linkText]]),
-        noAdditionRequests,
+          [baseline.videoId],
+          new Map([[baseline.videoId, baseline.linkText]]),
+          noAdditionRequests,
       ),
       now: () => new Date("2026-08-01T12:34:56Z"),
     });
@@ -187,8 +188,8 @@ test("inventory discovery fixtures cover no additions and multiple additions", a
     assert.deepEqual(noAdditions.omittedBaselineVideoIds, []);
     assert.deepEqual(noAdditions.titleChanges, []);
     assert.equal(
-      noAdditionRequests.filter((url) => url.pathname.endsWith("/videos")).length,
-      1,
+        noAdditionRequests.filter((url) => url.pathname.endsWith("/videos")).length,
+        1,
     );
 
     const firstAddition = "NEWSTREAM01";
@@ -199,30 +200,30 @@ test("inventory discovery fixtures cover no additions and multiple additions", a
       delayMs: 0,
       repoRoot,
       fetch: inventoryFixtureFetch(
-        [firstAddition, secondAddition, baseline.videoId],
-        new Map([
-          [firstAddition, "Live Stream #272: First fixture addition"],
-          [secondAddition, "Live Stream #273: Second fixture addition"],
-          [baseline.videoId, baseline.linkText],
-        ]),
-        multipleRequests,
+          [firstAddition, secondAddition, baseline.videoId],
+          new Map([
+            [firstAddition, "Live Stream #272: First fixture addition"],
+            [secondAddition, "Live Stream #273: Second fixture addition"],
+            [baseline.videoId, baseline.linkText],
+          ]),
+          multipleRequests,
       ),
       now: () => new Date("2026-08-01T12:34:56Z"),
     });
     assert.deepEqual(
-      multipleAdditions.additions.map((record) => record.videoId),
-      [firstAddition, secondAddition],
+        multipleAdditions.additions.map((record) => record.videoId),
+        [firstAddition, secondAddition],
     );
     assert.deepEqual(
-      multipleAdditions.additions.map((record) => record.episodeNumber),
-      [272, 273],
+        multipleAdditions.additions.map((record) => record.episodeNumber),
+        [272, 273],
     );
     assert.equal(
-      multipleRequests.filter((url) => url.pathname.endsWith("/videos")).length,
-      1,
+        multipleRequests.filter((url) => url.pathname.endsWith("/videos")).length,
+        1,
     );
   } finally {
-    await rm(repoRoot, { recursive: true, force: true });
+    await rm(repoRoot, {recursive: true, force: true});
   }
 });
 
@@ -273,6 +274,28 @@ test("latest selection skips non-numbered broadcasts", () => {
   assert.equal(latestNumberedAddition([unrelated, latest])?.videoId, latest.videoId);
 });
 
+test("default selection includes numbered and special livestreams", () => {
+  const latest = episodeFromVideoMetadata({
+    videoId: "8bF8Hm5NpR8",
+    fetchedAt: "2026-08-01T16:45:58Z",
+    title: "Live Stream #272: Latest",
+  }, 2);
+  const special = episodeFromVideoMetadata({
+    videoId: "bxrBgOpzJPg",
+    fetchedAt: "2026-08-01T16:45:58Z",
+    title: "Special Live Stream: \"Lord of Steel and Sky\" Q&A",
+  }, 3);
+  const unrelated = episodeFromVideoMetadata({
+    videoId: "ZYXWVUTSRQP",
+    fetchedAt: "2026-08-01T16:45:58Z",
+    title: "An Egyptologist reacts to another video",
+  }, 4);
+  assert.deepEqual(
+      defaultInventoryAdditions([latest, special, unrelated]).map((record) => record.videoId),
+      [latest.videoId, special.videoId],
+  );
+});
+
 test("inventory review reports contain the human delta without internal metadata", async () => {
   const reportRoot = await mkdtemp(join(tmpdir(), "inventory-report-"));
   try {
@@ -303,9 +326,9 @@ test("inventory review reports contain the human delta without internal metadata
     const reportPath = join(reportRoot, "stream-inventory-candidate.json");
 
     await writeInventoryReport(
-      reportPath,
-      candidate,
-      new Date("2026-08-02T12:34:56Z"),
+        reportPath,
+        candidate,
+        new Date("2026-08-02T12:34:56Z"),
     );
 
     const text = await readFile(reportPath, "utf8");
@@ -338,7 +361,7 @@ test("inventory review reports contain the human delta without internal metadata
     assert.equal(report.metadata, undefined);
     assert.doesNotMatch(text, /fetchedAt/u);
   } finally {
-    await rm(reportRoot, { recursive: true, force: true });
+    await rm(reportRoot, {recursive: true, force: true});
   }
 });
 
@@ -361,7 +384,7 @@ test("inventory apply rejects empty and unknown selections", () => {
 test("inventory apply atomically updates only canonical episodes and metadata", async () => {
   const repoRoot = await mkdtemp(join(tmpdir(), "inventory-apply-"));
   try {
-    await mkdir(join(repoRoot, "src/channel"), { recursive: true });
+    await mkdir(join(repoRoot, "src/channel"), {recursive: true});
     const currentStore = {
       schemaVersion: 1,
       channel: {
@@ -372,14 +395,14 @@ test("inventory apply atomically updates only canonical episodes and metadata", 
       episodes: [baseline],
     } as const;
     await writeFile(
-      join(repoRoot, "src/channel/episodes.json"),
-      `${JSON.stringify(currentStore, null, 2)}\n`,
-      "utf8",
+        join(repoRoot, "src/channel/episodes.json"),
+        `${JSON.stringify(currentStore, null, 2)}\n`,
+        "utf8",
     );
     await writeFile(
-      join(repoRoot, "src/channel/video-metadata.json"),
-      `${JSON.stringify({ schemaVersion: 1, source: { api: "youtube-data-api-v3" }, videos: [] }, null, 2)}\n`,
-      "utf8",
+        join(repoRoot, "src/channel/video-metadata.json"),
+        `${JSON.stringify({schemaVersion: 1, source: {api: "youtube-data-api-v3"}, videos: []}, null, 2)}\n`,
+        "utf8",
     );
 
     const additionMetadata = {
@@ -415,10 +438,10 @@ test("inventory apply atomically updates only canonical episodes and metadata", 
     });
 
     const episodes = JSON.parse(
-      await readFile(join(repoRoot, "src/channel/episodes.json"), "utf8"),
+        await readFile(join(repoRoot, "src/channel/episodes.json"), "utf8"),
     ) as { episodes: EpisodeRecord[] };
     const metadata = JSON.parse(
-      await readFile(join(repoRoot, "src/channel/video-metadata.json"), "utf8"),
+        await readFile(join(repoRoot, "src/channel/video-metadata.json"), "utf8"),
     ) as { videos: { videoId: string }[] };
     assert.deepEqual(episodes.episodes.map((episode) => episode.videoId), [addition.videoId, baseline.videoId]);
     assert.deepEqual(episodes.episodes.map((episode) => episode.order), [1, 2]);
@@ -428,35 +451,35 @@ test("inventory apply atomically updates only canonical episodes and metadata", 
 
     const appliedEpisodes = await readFile(join(repoRoot, "src/channel/episodes.json"), "utf8");
     const appliedMetadata = await readFile(join(repoRoot, "src/channel/video-metadata.json"), "utf8");
-    await applyInventoryCandidate({ ...candidate, additions: [] }, {
+    await applyInventoryCandidate({...candidate, additions: []}, {
       acceptSource: false,
       acceptedAdditionIds: [],
       repoRoot,
     });
     assert.equal(
-      await readFile(join(repoRoot, "src/channel/episodes.json"), "utf8"),
-      appliedEpisodes,
+        await readFile(join(repoRoot, "src/channel/episodes.json"), "utf8"),
+        appliedEpisodes,
     );
     assert.equal(
-      await readFile(join(repoRoot, "src/channel/video-metadata.json"), "utf8"),
-      appliedMetadata,
+        await readFile(join(repoRoot, "src/channel/video-metadata.json"), "utf8"),
+        appliedMetadata,
     );
   } finally {
-    await rm(repoRoot, { recursive: true, force: true });
+    await rm(repoRoot, {recursive: true, force: true});
   }
 });
 
 function jsonResponse(value: unknown, status = 200): Response {
   return new Response(JSON.stringify(value), {
     status,
-    headers: { "content-type": "application/json" },
+    headers: {"content-type": "application/json"},
   });
 }
 
 function inventoryFixtureFetch(
-  uploadIds: readonly string[],
-  titles: ReadonlyMap<string, string>,
-  requests: URL[],
+    uploadIds: readonly string[],
+    titles: ReadonlyMap<string, string>,
+    requests: URL[],
 ): typeof fetch {
   return (async (input: Parameters<typeof fetch>[0]) => {
     const url = new URL(String(input));
@@ -465,13 +488,13 @@ function inventoryFixtureFetch(
       return jsonResponse({
         items: [{
           id: "fixture-channel",
-          contentDetails: { relatedPlaylists: { uploads: "fixture-uploads" } },
+          contentDetails: {relatedPlaylists: {uploads: "fixture-uploads"}},
         }],
       });
     }
     if (url.pathname.endsWith("/playlistItems")) {
       return jsonResponse({
-        items: uploadIds.map((videoId) => ({ contentDetails: { videoId } })),
+        items: uploadIds.map((videoId) => ({contentDetails: {videoId}})),
       });
     }
     if (url.pathname.endsWith("/videos")) {
@@ -483,8 +506,8 @@ function inventoryFixtureFetch(
             title: titles.get(videoId),
             liveBroadcastContent: "none",
           },
-          contentDetails: { duration: "PT1H" },
-          status: { privacyStatus: "public", uploadStatus: "processed" },
+          contentDetails: {duration: "PT1H"},
+          status: {privacyStatus: "public", uploadStatus: "processed"},
           liveStreamingDetails: {
             actualStartTime: "2026-08-01T00:00:00Z",
             actualEndTime: "2026-08-01T01:00:00Z",
@@ -492,6 +515,6 @@ function inventoryFixtureFetch(
         })),
       });
     }
-    return jsonResponse({ error: { message: "Unexpected endpoint." } }, 404);
+    return jsonResponse({error: {message: "Unexpected endpoint."}}, 404);
   }) as typeof fetch;
 }

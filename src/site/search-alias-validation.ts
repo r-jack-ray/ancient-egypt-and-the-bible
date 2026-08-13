@@ -34,7 +34,7 @@ const dangerousTerms = new Set([
 ]);
 
 const numberedBookPattern =
-  "sam|samuel|kgs|kings|chr|chron|chronicles|cor|corinthians|thess|thessalonians";
+    "sam|samuel|kgs|kings|chr|chron|chronicles|cor|corinthians|thess|thessalonians";
 const bibleReferenceBooks = [
   "genesis", "exodus", "leviticus", "numbers", "deuteronomy", "joshua",
   "judges", "ruth", "samuel", "kings", "chronicles", "ezra", "nehemiah",
@@ -50,11 +50,11 @@ const bibleReferenceBooks = [
   "col", "heb", "jas", "jud", "rev", "psa", "mk", "lk", "ps",
 ];
 const bookPattern = [...bibleReferenceBooks]
-  .sort((left, right) => right.length - left.length)
-  .join("|");
+    .sort((left, right) => right.length - left.length)
+    .join("|");
 
 export async function validateHugoSearchAliases(
-  options: ValidateHugoSearchAliasesOptions = {},
+    options: ValidateHugoSearchAliasesOptions = {},
 ): Promise<HugoSearchAliasValidationSummary> {
   const repoRoot = resolve(options.repoRoot ?? resolve(__dirname, "../.."));
   const maxRowsPerAliasGroup = options.maxRowsPerAliasGroup ?? 1_100;
@@ -67,8 +67,8 @@ export async function validateHugoSearchAliases(
   const questionsPath = join(repoRoot, "site/data/questions.json");
   await requireFile(aliasPath, `Missing ${aliasPath}.`);
   await requireFile(
-    questionsPath,
-    `Missing ${questionsPath}. Run npm run build:site-content first.`,
+      questionsPath,
+      `Missing ${questionsPath}. Run npm run build:site-content first.`,
   );
 
   const aliasConfig = jsonObject(JSON.parse(await readFile(aliasPath, "utf8")), aliasPath);
@@ -77,11 +77,11 @@ export async function validateHugoSearchAliases(
     throw new Error(`No aliasGroups found in ${aliasPath}.`);
   }
   const phraseAliasGroups = aliasConfig.phraseAliasGroups === undefined
-    ? []
-    : stringGroups(aliasConfig.phraseAliasGroups, "phraseAliasGroups", aliasPath);
+      ? []
+      : stringGroups(aliasConfig.phraseAliasGroups, "phraseAliasGroups", aliasPath);
   const queryTests = aliasConfig.queryTests === undefined
-    ? []
-    : objectArray(aliasConfig.queryTests, "queryTests", aliasPath);
+      ? []
+      : objectArray(aliasConfig.queryTests, "queryTests", aliasPath);
 
   validateAliasGroups(aliasGroups, phraseAliasGroups);
 
@@ -109,11 +109,11 @@ export async function validateHugoSearchAliases(
     const tokenSet = new Set(tokens);
     const normalizedText = ` ${tokens.join(" ")} `;
     const aliases = searchAliasesForText(
-      tokens,
-      tokenSet,
-      normalizedText,
-      aliasMap,
-      normalizedPhraseAliasGroups,
+        tokens,
+        tokenSet,
+        normalizedText,
+        aliasMap,
+        normalizedPhraseAliasGroups,
     );
     const haystackSet = new Set(tokens);
     for (const alias of aliases) {
@@ -123,16 +123,20 @@ export async function validateHugoSearchAliases(
     }
 
     const rowIndex = questionSearchRows.length;
-    for (const term of tokenSet) addSearchIndexTerm(tokenRowIndex, term, rowIndex);
-    for (const term of haystackSet) addSearchIndexTerm(haystackRowIndex, term, rowIndex);
-    questionSearchRows.push({ question, normalizedText, haystackSet });
+    for (const term of tokenSet) {
+      addSearchIndexTerm(tokenRowIndex, term, rowIndex);
+    }
+    for (const term of haystackSet) {
+      addSearchIndexTerm(haystackRowIndex, term, rowIndex);
+    }
+    questionSearchRows.push({question, normalizedText, haystackSet});
   }
 
   for (const group of aliasGroups) {
     const matchingRowCount = matchingRowCountForAnyIndexedTerm(tokenRowIndex, group);
     if (matchingRowCount > maxRowsPerAliasGroup) {
       throw new Error(
-        `Alias group [${group.join(", ")}] matches ${matchingRowCount} rows; limit is ${maxRowsPerAliasGroup}.`,
+          `Alias group [${group.join(", ")}] matches ${matchingRowCount} rows; limit is ${maxRowsPerAliasGroup}.`,
       );
     }
   }
@@ -140,7 +144,9 @@ export async function validateHugoSearchAliases(
   for (const group of normalizedPhraseAliasGroups) {
     const candidateRows = new Set<number>();
     for (const firstToken of group.firstTokens) {
-      for (const rowIndex of tokenRowIndex.get(firstToken) ?? []) candidateRows.add(rowIndex);
+      for (const rowIndex of tokenRowIndex.get(firstToken) ?? []) {
+        candidateRows.add(rowIndex);
+      }
     }
     let matchingRowCount = 0;
     for (const rowIndex of candidateRows) {
@@ -151,7 +157,7 @@ export async function validateHugoSearchAliases(
     }
     if (matchingRowCount > maxRowsPerAliasGroup) {
       throw new Error(
-        `Phrase alias group [${group.terms.join(", ")}] matches ${matchingRowCount} rows; limit is ${maxRowsPerAliasGroup}.`,
+          `Phrase alias group [${group.terms.join(", ")}] matches ${matchingRowCount} rows; limit is ${maxRowsPerAliasGroup}.`,
       );
     }
   }
@@ -178,7 +184,9 @@ function validateAliasGroups(aliasGroups: readonly string[][], phraseAliasGroups
   const seenTerms = new Set<string>();
   for (const [index, group] of aliasGroups.entries()) {
     const groupNumber = index + 1;
-    if (group.length < 2) throw new Error(`Alias group ${groupNumber} must contain at least two terms.`);
+    if (group.length < 2) {
+      throw new Error(`Alias group ${groupNumber} must contain at least two terms.`);
+    }
     const localTerms = new Set<string>();
     for (const term of group) {
       if (term !== term.toLowerCase()) {
@@ -193,8 +201,12 @@ function validateAliasGroups(aliasGroups: readonly string[][], phraseAliasGroups
       if (dangerousTerms.has(term)) {
         throw new Error(`Alias group ${groupNumber} term '${term}' is too broad for search aliases.`);
       }
-      if (localTerms.has(term)) throw new Error(`Alias group ${groupNumber} repeats term '${term}'.`);
-      if (seenTerms.has(term)) throw new Error(`Alias term '${term}' appears in more than one group.`);
+      if (localTerms.has(term)) {
+        throw new Error(`Alias group ${groupNumber} repeats term '${term}'.`);
+      }
+      if (seenTerms.has(term)) {
+        throw new Error(`Alias term '${term}' appears in more than one group.`);
+      }
       localTerms.add(term);
       seenTerms.add(term);
     }
@@ -208,23 +220,29 @@ function validateAliasGroups(aliasGroups: readonly string[][], phraseAliasGroups
     }
     const localTerms = new Set<string>();
     for (const term of group) {
-      if (!term.trim()) throw new Error(`Phrase alias group ${groupNumber} contains an empty term.`);
+      if (!term.trim()) {
+        throw new Error(`Phrase alias group ${groupNumber} contains an empty term.`);
+      }
       if (term !== term.toLowerCase()) {
         throw new Error(`Phrase alias group ${groupNumber} term '${term}' must be lowercase.`);
       }
       if (!/^[a-z0-9]+( [a-z0-9]+)*$/u.test(term)) {
         throw new Error(
-          `Phrase alias group ${groupNumber} term '${term}' must use only ASCII letters, numbers, and single spaces.`,
+            `Phrase alias group ${groupNumber} term '${term}' must use only ASCII letters, numbers, and single spaces.`,
         );
       }
-      if (term.length < 2) throw new Error(`Phrase alias group ${groupNumber} term '${term}' is too short.`);
+      if (term.length < 2) {
+        throw new Error(`Phrase alias group ${groupNumber} term '${term}' is too short.`);
+      }
       if (dangerousTerms.has(term)) {
         throw new Error(`Phrase alias group ${groupNumber} term '${term}' is too broad for search aliases.`);
       }
       if (localTerms.has(term)) {
         throw new Error(`Phrase alias group ${groupNumber} repeats term '${term}'.`);
       }
-      if (seenTerms.has(term)) throw new Error(`Alias term '${term}' appears in more than one group.`);
+      if (seenTerms.has(term)) {
+        throw new Error(`Alias term '${term}' appears in more than one group.`);
+      }
       localTerms.add(term);
       seenTerms.add(term);
     }
@@ -232,17 +250,19 @@ function validateAliasGroups(aliasGroups: readonly string[][], phraseAliasGroups
 }
 
 function validateQueryTest(
-  queryTest: JsonObject,
-  haystackRowIndex: ReadonlyMap<string, readonly number[]>,
-  questionSearchRows: readonly QuestionSearchRow[],
+    queryTest: JsonObject,
+    haystackRowIndex: ReadonlyMap<string, readonly number[]>,
+    questionSearchRows: readonly QuestionSearchRow[],
 ): void {
   const query = stringValue(queryTest.query);
   const queryTokens = searchTokens(normalizeSearchQuery(query));
-  if (queryTokens.length === 0) throw new Error("Query test has an empty query.");
+  if (queryTokens.length === 0) {
+    throw new Error("Query test has an empty query.");
+  }
   const matchingRowIndexes = matchingRowIndexesForAllIndexedTerms(
-    haystackRowIndex,
-    questionSearchRows,
-    queryTokens,
+      haystackRowIndex,
+      questionSearchRows,
+      queryTokens,
   );
   const matchingRowCount = matchingRowIndexes.length;
   if (queryTest.minResults !== undefined) {
@@ -266,7 +286,7 @@ function validateQueryTest(
       });
       if (!found) {
         throw new Error(
-          `Query '${query}' did not return expected match: ${formatExpectedSearchResult(expectedMatch)}.`,
+            `Query '${query}' did not return expected match: ${formatExpectedSearchResult(expectedMatch)}.`,
         );
       }
     }
@@ -275,7 +295,9 @@ function validateQueryTest(
 
 function normalizeSearchQuery(value: string): string {
   let text = value.toLowerCase().trim();
-  if (!text) return "";
+  if (!text) {
+    return "";
+  }
   text = text.replace(new RegExp(`\\b(first|1st|i)\\s+(${numberedBookPattern})\\b`, "gu"), "1 $2");
   text = text.replace(new RegExp(`\\b(second|2nd|ii)\\s+(${numberedBookPattern})\\b`, "gu"), "2 $2");
   text = text.replace(new RegExp(`\\b(third|3rd|iii)\\s+(${numberedBookPattern})\\b`, "gu"), "3 $2");
@@ -295,7 +317,9 @@ function normalizeSearchPhrase(value: string): string {
 function searchAliasMap(aliasGroups: readonly string[][]): Map<string, string[]> {
   const result = new Map<string, string[]>();
   for (const group of aliasGroups) {
-    for (const term of group) result.set(term, group.filter((alias) => alias !== term));
+    for (const term of group) {
+      result.set(term, group.filter((alias) => alias !== term));
+    }
   }
   return result;
 }
@@ -304,65 +328,88 @@ function normalizePhraseAliasGroups(groups: readonly string[][]): NormalizedPhra
   const result: NormalizedPhraseAliasGroup[] = [];
   for (const group of groups) {
     const terms = group.map(normalizeSearchPhrase).filter(Boolean);
-    if (terms.length === 0) continue;
+    if (terms.length === 0) {
+      continue;
+    }
     const firstTokens = new Set<string>();
     for (const term of terms) {
       const firstToken = searchTokens(term)[0];
-      if (firstToken !== undefined) firstTokens.add(firstToken);
+      if (firstToken !== undefined) {
+        firstTokens.add(firstToken);
+      }
     }
-    result.push({ terms, firstTokens: [...firstTokens] });
+    result.push({terms, firstTokens: [...firstTokens]});
   }
   return result;
 }
 
 function searchAliasesForText(
-  tokens: readonly string[],
-  tokenSet: ReadonlySet<string>,
-  normalizedText: string,
-  aliasMap: ReadonlyMap<string, readonly string[]>,
-  phraseAliasGroups: readonly NormalizedPhraseAliasGroup[],
+    tokens: readonly string[],
+    tokenSet: ReadonlySet<string>,
+    normalizedText: string,
+    aliasMap: ReadonlyMap<string, readonly string[]>,
+    phraseAliasGroups: readonly NormalizedPhraseAliasGroup[],
 ): string[] {
   const aliases = new Set<string>();
   for (const token of tokens) {
-    for (const alias of aliasMap.get(token) ?? []) aliases.add(alias);
+    for (const alias of aliasMap.get(token) ?? []) {
+      aliases.add(alias);
+    }
   }
   for (const group of phraseAliasGroups) {
-    if (group.terms.length < 2 || !group.firstTokens.some((token) => tokenSet.has(token))) continue;
-    if (!group.terms.some((term) => normalizedText.includes(` ${term} `))) continue;
-    for (const alias of group.terms) aliases.add(alias);
+    if (group.terms.length < 2 || !group.firstTokens.some((token) => tokenSet.has(token))) {
+      continue;
+    }
+    if (!group.terms.some((term) => normalizedText.includes(` ${term} `))) {
+      continue;
+    }
+    for (const alias of group.terms) {
+      aliases.add(alias);
+    }
   }
   return [...aliases];
 }
 
 function addSearchIndexTerm(index: Map<string, number[]>, term: string, rowIndex: number): void {
   const rows = index.get(term);
-  if (rows === undefined) index.set(term, [rowIndex]);
-  else rows.push(rowIndex);
+  if (rows === undefined) {
+    index.set(term, [rowIndex]);
+  } else {
+    rows.push(rowIndex);
+  }
 }
 
 function matchingRowCountForAnyIndexedTerm(
-  index: ReadonlyMap<string, readonly number[]>,
-  terms: readonly string[],
+    index: ReadonlyMap<string, readonly number[]>,
+    terms: readonly string[],
 ): number {
   const rows = new Set<number>();
   for (const term of terms) {
-    for (const rowIndex of index.get(term) ?? []) rows.add(rowIndex);
+    for (const rowIndex of index.get(term) ?? []) {
+      rows.add(rowIndex);
+    }
   }
   return rows.size;
 }
 
 function matchingRowIndexesForAllIndexedTerms(
-  index: ReadonlyMap<string, readonly number[]>,
-  questionSearchRows: readonly QuestionSearchRow[],
-  terms: readonly string[],
+    index: ReadonlyMap<string, readonly number[]>,
+    questionSearchRows: readonly QuestionSearchRow[],
+    terms: readonly string[],
 ): number[] {
   let candidateRows: readonly number[] | undefined;
   for (const term of terms) {
     const rows = index.get(term);
-    if (rows === undefined) return [];
-    if (candidateRows === undefined || rows.length < candidateRows.length) candidateRows = rows;
+    if (rows === undefined) {
+      return [];
+    }
+    if (candidateRows === undefined || rows.length < candidateRows.length) {
+      candidateRows = rows;
+    }
   }
-  if (candidateRows === undefined) return [];
+  if (candidateRows === undefined) {
+    return [];
+  }
   return candidateRows.filter((rowIndex) => {
     const row = questionSearchRows[rowIndex];
     return row !== undefined && terms.every((term) => row.haystackSet.has(term));
@@ -375,16 +422,22 @@ function haystackContainsAnyPhrase(haystack: string, terms: readonly string[]): 
 
 function questionMatchesExpectedSearchResult(question: JsonObject, expected: JsonObject): boolean {
   if (
-    expected.questionPage !== undefined &&
-    stringValue(question.question_page) !== stringValue(expected.questionPage)
-  ) return false;
+      expected.questionPage !== undefined &&
+      stringValue(question.question_page) !== stringValue(expected.questionPage)
+  ) {
+    return false;
+  }
   if (
-    expected.timeLabel !== undefined &&
-    stringValue(question.time_label) !== stringValue(expected.timeLabel)
-  ) return false;
+      expected.timeLabel !== undefined &&
+      stringValue(question.time_label) !== stringValue(expected.timeLabel)
+  ) {
+    return false;
+  }
   if (expected.questionContains !== undefined) {
     const questionText = stringValue(question.question).toLowerCase();
-    if (!questionText.includes(stringValue(expected.questionContains).toLowerCase())) return false;
+    if (!questionText.includes(stringValue(expected.questionContains).toLowerCase())) {
+      return false;
+    }
   }
   return true;
 }
@@ -400,20 +453,28 @@ function formatExpectedSearchResult(expected: JsonObject): string {
 }
 
 function stringGroups(value: unknown, name: string, path: string): string[][] {
-  if (!Array.isArray(value)) throw new Error(`${name} in ${path} must be an array.`);
+  if (!Array.isArray(value)) {
+    throw new Error(`${name} in ${path} must be an array.`);
+  }
   return value.map((group, index) => {
-    if (!Array.isArray(group)) throw new Error(`${name}[${index}] in ${path} must be an array.`);
+    if (!Array.isArray(group)) {
+      throw new Error(`${name}[${index}] in ${path} must be an array.`);
+    }
     return group.map(stringValue);
   });
 }
 
 function objectArray(value: unknown, name: string, path: string): JsonObject[] {
-  if (!Array.isArray(value)) throw new Error(`${name} in ${path} must be an array.`);
+  if (!Array.isArray(value)) {
+    throw new Error(`${name} in ${path} must be an array.`);
+  }
   return value.map((item, index) => jsonObject(item, `${path} ${name}[${index}]`));
 }
 
 function normalizeObjectList(value: unknown, name: string): JsonObject[] {
-  if (value === null) return [];
+  if (value === null) {
+    return [];
+  }
   const values = Array.isArray(value) ? value : [value];
   return values.map((item, index) => jsonObject(item, `${name}[${index}]`));
 }
@@ -431,15 +492,21 @@ function stringValue(value: unknown): string {
 
 function integerValue(value: unknown, label: string): number {
   const result = Number(value);
-  if (!Number.isInteger(result)) throw new Error(`${label} must be an integer.`);
+  if (!Number.isInteger(result)) {
+    throw new Error(`${label} must be an integer.`);
+  }
   return result;
 }
 
 async function requireFile(path: string, message: string): Promise<void> {
   try {
-    if ((await stat(path)).isFile()) return;
+    if ((await stat(path)).isFile()) {
+      return;
+    }
   } catch (error) {
-    if (!isMissing(error)) throw error;
+    if (!isMissing(error)) {
+      throw error;
+    }
   }
   throw new Error(message);
 }

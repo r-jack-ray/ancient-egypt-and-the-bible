@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { recoverInventoryTransaction, validateRepositoryStore } from "../archive.js";
-import { recoverTranscriptTransaction } from "../youtube/transcripts.js";
 import { recoverStaleWriterLease } from "../pipeline/lease.js";
+import { recoverTranscriptTransaction } from "../youtube/transcripts.js";
 
 async function main(): Promise<void> {
   const repair = process.argv.slice(2).includes("--repair-transaction");
@@ -19,7 +19,7 @@ async function main(): Promise<void> {
 
   const result = await validateRepositoryStore();
   console.log(
-    `Transcript store valid: episodes=${result.episodeCount} stored=${result.storedCount} unavailable=${result.unavailableCount}.`,
+      `Transcript store valid: episodes=${result.episodeCount} stored=${result.storedCount} unavailable=${result.unavailableCount}.`,
   );
 }
 

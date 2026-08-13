@@ -1,24 +1,21 @@
 #!/usr/bin/env node
 import { resolveYoutubeApiKey } from "../youtube/api-key.js";
-import {
-  applyInventoryCandidate,
-  fetchInventoryCandidate,
-  latestNumberedAddition,
-  writeInventoryReport,
-} from "../youtube/inventory.js";
+import { applyInventoryCandidate, defaultInventoryAdditions, fetchInventoryCandidate, latestNumberedAddition, writeInventoryReport, } from "../youtube/inventory.js";
 
 const defaultReportPath = "reports/stream-inventory-candidate.json";
 
 async function main(): Promise<void> {
   const args = parseArgs(process.argv.slice(2));
-  if (args === null) return;
+  if (args === null) {
+    return;
+  }
   const apiKey = await resolveYoutubeApiKey({
-    ...(args.apiKeyFile !== undefined ? { apiKeyFile: args.apiKeyFile } : {}),
+    ...(args.apiKeyFile !== undefined ? {apiKeyFile: args.apiKeyFile} : {}),
   });
   const candidate = await fetchInventoryCandidate({
     apiKey,
     delayMs: args.delayMs,
-    ...(args.maxPages !== undefined ? { maxPages: args.maxPages } : {}),
+    ...(args.maxPages !== undefined ? {maxPages: args.maxPages} : {}),
     logger: (message) => console.error(message),
   });
   const reportPath = args.output ?? (args.reviewOnly ? defaultReportPath : undefined);
@@ -26,13 +23,13 @@ async function main(): Promise<void> {
     await writeInventoryReport(reportPath, candidate);
   }
   console.error(
-    `Inventory candidate: complete=${candidate.complete} additions=${candidate.additions.length} ` +
+      `Inventory candidate: complete=${candidate.complete} additions=${candidate.additions.length} ` +
       `omitted-baseline=${candidate.omittedBaselineVideoIds.length}` +
       (reportPath === undefined ? "" : ` report=${reportPath}`),
   );
   if (!args.reviewOnly) {
     const acceptedAdditionIds = [...args.acceptedAdditionIds];
-    if (args.acceptLatest || acceptedAdditionIds.length === 0) {
+    if (args.acceptLatest) {
       const latest = latestNumberedAddition(candidate.additions);
       if (latest === undefined) {
         if (acceptedAdditionIds.length === 0) {
@@ -43,6 +40,16 @@ async function main(): Promise<void> {
         acceptedAdditionIds.push(latest.videoId);
         console.error(`Selected latest numbered livestream: ${latest.videoId} (${latest.linkText}).`);
       }
+    } else if (acceptedAdditionIds.length === 0) {
+      const defaults = defaultInventoryAdditions(candidate.additions);
+      if (defaults.length === 0) {
+        console.error("No new numbered or special livestream is available; canonical inventory is unchanged.");
+        return;
+      }
+      acceptedAdditionIds.push(...defaults.map((record) => record.videoId));
+      console.error(
+          `Selected default livestream additions: ${defaults.map((record) => record.videoId).join(", ")}.`,
+      );
     }
     await applyInventoryCandidate(candidate, {
       acceptSource: true,
@@ -80,49 +87,51 @@ export function parseArgs(args: readonly string[]): {
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
     switch (arg) {
-      case "--api-key-file":
-        result.apiKeyFile = value(args, ++index, arg);
-        break;
-      case "--output":
-        result.output = value(args, ++index, arg);
-        break;
-      case "--request-delay-ms":
-        result.delayMs = integer(value(args, ++index, arg), arg);
-        break;
-      case "--max-pages":
-        result.maxPages = integer(value(args, ++index, arg), arg);
-        break;
-      case "--review-only":
-        result.reviewOnly = true;
-        break;
-      case "--accept-latest":
-        result.acceptLatest = true;
-        break;
-      case "--accept-addition":
-        result.acceptedAdditionIds.push(value(args, ++index, arg));
-        break;
-      case "--help":
-      case "-h":
-        console.log(`Usage: npm run fetch:livestreams -- [options]
+    case "--api-key-file":
+      result.apiKeyFile = value(args, ++index, arg);
+      break;
+    case "--output":
+      result.output = value(args, ++index, arg);
+      break;
+    case "--request-delay-ms":
+      result.delayMs = integer(value(args, ++index, arg), arg);
+      break;
+    case "--max-pages":
+      result.maxPages = integer(value(args, ++index, arg), arg);
+      break;
+    case "--review-only":
+      result.reviewOnly = true;
+      break;
+    case "--accept-latest":
+      result.acceptLatest = true;
+      break;
+    case "--accept-addition":
+      result.acceptedAdditionIds.push(value(args, ++index, arg));
+      break;
+    case "--help":
+    case "-h":
+      console.log(`Usage: npm run fetch:livestreams -- [options]
 
-By default, discovery registers the newest numbered livestream, pins the
-resolved channel source when needed, and updates canonical metadata. Unselected
-special broadcasts are not added. Use --review-only for an explicit diagnostic
-run that writes reports/stream-inventory-candidate.json without canonical
-changes. The API key precedence is --api-key-file, YOUTUBE_API_KEY, then
-.local/youtube-api-key.txt. Literal command-line keys are not accepted.
+By default, discovery registers every proposed numbered livestream and every
+broadcast whose title begins "Special Live Stream", pins the resolved channel
+source when needed, and updates canonical metadata. Other broadcasts are not
+added. Use --accept-latest or --accept-addition for an explicit selection. Use
+--review-only for a diagnostic run that writes
+reports/stream-inventory-candidate.json without canonical changes. The API key
+precedence is --api-key-file, YOUTUBE_API_KEY, then .local/youtube-api-key.txt.
+Literal command-line keys are not accepted.
 
   --api-key-file <path>
   --output <path>               Write the concise inventory delta here
   --request-delay-ms <ms>
   --max-pages <count>           Partial probe; requires --review-only
   --review-only                Do not update canonical files
-  --accept-latest              Also accept the newest numbered livestream
+  --accept-latest              Explicitly select the newest numbered livestream
   --accept-addition <videoId>  Accept one proposed addition; repeat as needed
 `);
-        return null;
-      default:
-        throw new Error(`Unknown argument: ${arg ?? ""}`);
+      return null;
+    default:
+      throw new Error(`Unknown argument: ${arg ?? ""}`);
     }
   }
   if (result.maxPages !== undefined && !result.reviewOnly) {
@@ -133,13 +142,17 @@ changes. The API key precedence is --api-key-file, YOUTUBE_API_KEY, then
 
 function value(args: readonly string[], index: number, name: string): string {
   const result = args[index];
-  if (!result) throw new Error(`Missing value for ${name}.`);
+  if (!result) {
+    throw new Error(`Missing value for ${name}.`);
+  }
   return result;
 }
 
 function integer(input: string, name: string): number {
   const result = Number(input);
-  if (!Number.isInteger(result) || result < 0) throw new Error(`${name} must be a non-negative integer.`);
+  if (!Number.isInteger(result) || result < 0) {
+    throw new Error(`${name} must be a non-negative integer.`);
+  }
   return result;
 }
 

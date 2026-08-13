@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { parseArgs } from "./get-channel-video-links.js";
 
-test("livestream discovery applies the newest numbered addition by default", () => {
+test("livestream discovery applies canonical additions by default", () => {
   assert.deepEqual(parseArgs([]), {
     delayMs: 1_000,
     reviewOnly: false,
@@ -23,7 +23,7 @@ test("livestream discovery makes a non-applying run explicit", () => {
 
 test("livestream discovery rejects a partial default run", () => {
   assert.throws(
-    () => parseArgs(["--max-pages", "1"]),
-    /--max-pages requires --review-only/u,
+      () => parseArgs(["--max-pages", "1"]),
+      /--max-pages requires --review-only/u,
   );
 });

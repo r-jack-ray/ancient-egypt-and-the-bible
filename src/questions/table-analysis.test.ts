@@ -1,17 +1,11 @@
 import assert from "node:assert/strict";
-import { existsSync, mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { test } from "node:test";
 
 import { main as checkQuestionTables, parseArgs } from "../scripts/check-question-tables.js";
-import {
-  analyzeQuestionTableText,
-  parseQuestionTableText,
-  questionTimeLabelToSeconds,
-  resolveQuestionRepositoryRoot,
-  splitMarkdownTableRowStrict,
-} from "./table-analysis.js";
+import { analyzeQuestionTableText, parseQuestionTableText, questionTimeLabelToSeconds, resolveQuestionRepositoryRoot, splitMarkdownTableRowStrict, } from "./table-analysis.js";
 
 const validFourColumnPage = [
   "# Example",
@@ -56,20 +50,20 @@ test("four-column question tables validate timestamps and expanded answers", () 
 
 test("legacy and pending expanded-answer policies match the old validator", () => {
   const threeColumn = validFourColumnPage
-    .replace(" | Expanded answer |", " |")
-    .replace("|---|---|---|---|", "|---|---|---|")
-    .replace(" | A longer transcript-grounded answer. |", " |");
+      .replace(" | Expanded answer |", " |")
+      .replace("|---|---|---|---|", "|---|---|---|")
+      .replace(" | A longer transcript-grounded answer. |", " |");
   assert.equal(
-    analyzeQuestionTableText(threeColumn, "legacy.md", false).classification,
-    "ordinaryThreeColumn",
+      analyzeQuestionTableText(threeColumn, "legacy.md", false).classification,
+      "ordinaryThreeColumn",
   );
   const requiredLegacy = analyzeQuestionTableText(threeColumn, "legacy.md", true);
   assert.equal(requiredLegacy.classification, "malformed");
   assert.match(requiredLegacy.hardErrors[0] ?? "", /expected 4 with Expanded answer/u);
 
   const pending = validFourColumnPage.replace(
-    "A longer transcript-grounded answer.",
-    "_Expansion pending._",
+      "A longer transcript-grounded answer.",
+      "_Expansion pending._",
   );
   assert.equal(analyzeQuestionTableText(pending, "pending.md", false).pendingExpandedAnswers, 1);
   assert.equal(analyzeQuestionTableText(pending, "pending.md", true).classification, "malformed");
@@ -86,9 +80,9 @@ test("timestamp labels support minutes and hours and must match the link", () =>
   assert.equal(questionTimeLabelToSeconds("1:02"), 62);
   assert.equal(questionTimeLabelToSeconds("1:02:03"), 3_723);
   const mismatch = analyzeQuestionTableText(
-    validFourColumnPage.replace("?t=62", "?t=63"),
-    "mismatch.md",
-    true,
+      validFourColumnPage.replace("?t=62", "?t=63"),
+      "mismatch.md",
+      true,
   );
   assert.match(mismatch.hardErrors.join("\n"), /does not match \?t=63/u);
 });
@@ -114,8 +108,8 @@ test("question-table CLI writes diagnostics only on failure or explicit request"
   const jsonPath = join(repoRoot, "reports/question-table-validation.json");
   const markdownPath = join(repoRoot, "reports/question-table-validation.md");
   try {
-    mkdirSync(join(repoRoot, "docs/questions"), { recursive: true });
-    mkdirSync(join(repoRoot, "src/channel"), { recursive: true });
+    mkdirSync(join(repoRoot, "docs/questions"), {recursive: true});
+    mkdirSync(join(repoRoot, "src/channel"), {recursive: true});
     writeFileSync(join(repoRoot, "package.json"), "{}\n", "utf8");
     writeFileSync(join(repoRoot, "src/channel/episodes.json"), "{}\n", "utf8");
     writeFileSync(pagePath, validFourColumnPage, "utf8");
@@ -127,8 +121,8 @@ test("question-table CLI writes diagnostics only on failure or explicit request"
     assert.equal(checkQuestionTables(["--repo-root", repoRoot, "--report"]), 0);
     assert.equal(existsSync(jsonPath), true);
     assert.equal(existsSync(markdownPath), true);
-    rmSync(jsonPath, { force: true });
-    rmSync(markdownPath, { force: true });
+    rmSync(jsonPath, {force: true});
+    rmSync(markdownPath, {force: true});
 
     writeFileSync(pagePath, validFourColumnPage.replace("?t=62", "?t=63"), "utf8");
     const errorOutput: string[] = [];
@@ -145,22 +139,22 @@ test("question-table CLI writes diagnostics only on failure or explicit request"
     assert.match(readFileSync(markdownPath, "utf8"), /does not match \?t=63/u);
     assert.match(errorOutput.join("\n"), /does not match \?t=63/u);
   } finally {
-    rmSync(repoRoot, { recursive: true, force: true });
+    rmSync(repoRoot, {recursive: true, force: true});
   }
 });
 
 test("question repository root detection uses canonical Node-era markers", () => {
   const repoRoot = mkdtempSync(join(tmpdir(), "question-root-"));
   try {
-    mkdirSync(join(repoRoot, "docs/questions"), { recursive: true });
-    mkdirSync(join(repoRoot, "src/channel"), { recursive: true });
+    mkdirSync(join(repoRoot, "docs/questions"), {recursive: true});
+    mkdirSync(join(repoRoot, "src/channel"), {recursive: true});
     writeFileSync(join(repoRoot, "package.json"), "{}\n", "utf8");
     writeFileSync(join(repoRoot, "src/channel/episodes.json"), "{}\n", "utf8");
     assert.equal(
-      resolveQuestionRepositoryRoot("", [join(repoRoot, "docs/questions")]),
-      repoRoot,
+        resolveQuestionRepositoryRoot("", [join(repoRoot, "docs/questions")]),
+        repoRoot,
     );
   } finally {
-    rmSync(repoRoot, { recursive: true, force: true });
+    rmSync(repoRoot, {recursive: true, force: true});
   }
 });

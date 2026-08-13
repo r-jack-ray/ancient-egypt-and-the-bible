@@ -22,10 +22,10 @@ interface GeneratedDescription {
 }
 
 const generatedDescriptionPattern =
-  /^Explore \d+ transcript-grounded questions? from .+(?:, including ".*" and ".*"|: ".*")$/;
+    /^Explore \d+ transcript-grounded questions? from .+(?:, including ".*" and ".*"|: ".*")$/;
 
 export async function validateStaticSite(
-  options: StaticSiteValidationOptions = {},
+    options: StaticSiteValidationOptions = {},
 ): Promise<StaticSiteValidationSummary> {
   const repoRoot = resolve(options.repoRoot ?? ".");
   const sourceDir = resolve(repoRoot, "docs/questions");
@@ -33,12 +33,12 @@ export async function validateStaticSite(
 
   const sourceFiles = (await markdownFiles(sourceDir)).sort();
   const generatedFiles = (await markdownFiles(generatedDir))
-    .filter((file) => file !== "_index.md")
-    .sort();
+      .filter((file) => file !== "_index.md")
+      .sort();
 
   if (sourceFiles.length !== generatedFiles.length) {
     throw new Error(
-      `Generated question count ${generatedFiles.length} does not match source count ${sourceFiles.length}.`,
+        `Generated question count ${generatedFiles.length} does not match source count ${sourceFiles.length}.`,
     );
   }
 
@@ -49,46 +49,46 @@ export async function validateStaticSite(
 
   if (numberedPageCount !== expectedNumberedPageCount) {
     throw new Error(
-      `Expected ${expectedNumberedPageCount} numbered pages from docs/questions, found ${numberedPageCount}.`,
+        `Expected ${expectedNumberedPageCount} numbered pages from docs/questions, found ${numberedPageCount}.`,
     );
   }
   if (specialPageCount !== expectedSpecialPageCount) {
     throw new Error(
-      `Expected ${expectedSpecialPageCount} special pages from docs/questions, found ${specialPageCount}.`,
+        `Expected ${expectedSpecialPageCount} special pages from docs/questions, found ${specialPageCount}.`,
     );
   }
 
   const descriptions = await Promise.all(
-    generatedFiles.map(async (file): Promise<GeneratedDescription> => {
-      const path = resolve(generatedDir, file);
-      const content = await readFile(path, "utf8");
-      const descriptionMatch = /^description: '(?<value>(?:[^']|'')*)'\r?$/m.exec(content);
-      const sourceMatch =
-        /^description_source: '(?<value>generated_from_questions|curated_override)'\r?$/m.exec(
-          content,
-        );
-      const description = descriptionMatch?.groups?.value?.replaceAll("''", "'").trim();
-      const source = sourceMatch?.groups?.value;
+      generatedFiles.map(async (file): Promise<GeneratedDescription> => {
+        const path = resolve(generatedDir, file);
+        const content = await readFile(path, "utf8");
+        const descriptionMatch = /^description: '(?<value>(?:[^']|'')*)'\r?$/m.exec(content);
+        const sourceMatch =
+            /^description_source: '(?<value>generated_from_questions|curated_override)'\r?$/m.exec(
+                content,
+            );
+        const description = descriptionMatch?.groups?.value?.replaceAll("''", "'").trim();
+        const source = sourceMatch?.groups?.value;
 
-      if (
-        !description ||
-        (source !== "generated_from_questions" && source !== "curated_override")
-      ) {
-        throw new Error(`Generated page is missing a valid description or description_source: ${path}`);
-      }
-      if (source === "generated_from_questions" && !generatedDescriptionPattern.test(description)) {
-        throw new Error(
-          `Generated question-derived description is not substantive or uses an unexpected format: ${path}`,
-        );
-      }
+        if (
+            !description ||
+            (source !== "generated_from_questions" && source !== "curated_override")
+        ) {
+          throw new Error(`Generated page is missing a valid description or description_source: ${path}`);
+        }
+        if (source === "generated_from_questions" && !generatedDescriptionPattern.test(description)) {
+          throw new Error(
+              `Generated question-derived description is not substantive or uses an unexpected format: ${path}`,
+          );
+        }
 
-      return {
-        path,
-        description,
-        normalizedDescription: description.toLocaleLowerCase("en-US"),
-        source,
-      };
-    }),
+        return {
+          path,
+          description,
+          normalizedDescription: description.toLocaleLowerCase("en-US"),
+          source,
+        };
+      }),
   );
 
   const pathsByDescription = new Map<string, string[]>();
@@ -100,7 +100,7 @@ export async function validateStaticSite(
   const duplicatePaths = [...pathsByDescription.values()].filter((paths) => paths.length > 1);
   if (duplicatePaths.length > 0) {
     throw new Error(
-      `Found duplicate generated page descriptions: ${duplicatePaths.map((paths) => paths.join(", ")).join("; ")}`,
+        `Found duplicate generated page descriptions: ${duplicatePaths.map((paths) => paths.join(", ")).join("; ")}`,
     );
   }
 
@@ -109,28 +109,28 @@ export async function validateStaticSite(
     throw new Error("Generated episode data is empty.");
   }
   const questions = parseJsonArray(
-    await readFile(resolve(repoRoot, "site/data/questions.json"), "utf8"),
+      await readFile(resolve(repoRoot, "site/data/questions.json"), "utf8"),
   );
 
   const requiredFields = ["question_page", "question", "short_answer", "time_label", "video_url"];
   const badRows = questions.filter(
-    (row) =>
-      !isRecord(row) ||
-      requiredFields.some((field) => !isNonEmptyString(row[field])),
+      (row) =>
+          !isRecord(row) ||
+          requiredFields.some((field) => !isNonEmptyString(row[field])),
   );
   if (badRows.length > 0) {
     throw new Error(`Found ${badRows.length} generated question rows with missing required fields.`);
   }
 
   const badExpandedRows = questions.filter(
-    (row) =>
-      !isRecord(row) ||
-      !isNonEmptyString(row.expanded_answer) ||
-      /_Expansion pending\._/.test(row.expanded_answer),
+      (row) =>
+          !isRecord(row) ||
+          !isNonEmptyString(row.expanded_answer) ||
+          /_Expansion pending\._/.test(row.expanded_answer),
   );
   if (badExpandedRows.length > 0) {
     throw new Error(
-      `Found ${badExpandedRows.length} generated question rows with missing or pending expanded answers.`,
+        `Found ${badExpandedRows.length} generated question rows with missing or pending expanded answers.`,
     );
   }
 
@@ -139,10 +139,10 @@ export async function validateStaticSite(
     numberedPageCount,
     specialPageCount,
     generatedDescriptionCount: descriptions.filter(
-      (record) => record.source === "generated_from_questions",
+        (record) => record.source === "generated_from_questions",
     ).length,
     overriddenDescriptionCount: descriptions.filter(
-      (record) => record.source === "curated_override",
+        (record) => record.source === "curated_override",
     ).length,
     questionRowCount: questions.length,
   };
@@ -152,18 +152,18 @@ export function printStaticSiteValidationSummary(summary: StaticSiteValidationSu
   console.log("Hugo compatibility validation passed.");
   console.log(`Source/generated pages: ${summary.sourceQuestionCount}`);
   console.log(
-    `Numbered/special pages: ${summary.numberedPageCount}/${summary.specialPageCount}`,
+      `Numbered/special pages: ${summary.numberedPageCount}/${summary.specialPageCount}`,
   );
   console.log(
-    `Generated/overridden descriptions: ${summary.generatedDescriptionCount}/${summary.overriddenDescriptionCount}`,
+      `Generated/overridden descriptions: ${summary.generatedDescriptionCount}/${summary.overriddenDescriptionCount}`,
   );
   console.log(`Question rows: ${summary.questionRowCount}`);
 }
 
 async function markdownFiles(directory: string): Promise<string[]> {
-  return (await readdir(directory, { withFileTypes: true }))
-    .filter((entry) => entry.isFile() && entry.name.endsWith(".md"))
-    .map((entry) => entry.name);
+  return (await readdir(directory, {withFileTypes: true}))
+      .filter((entry) => entry.isFile() && entry.name.endsWith(".md"))
+      .map((entry) => entry.name);
 }
 
 function isNumberedPage(path: string): boolean {

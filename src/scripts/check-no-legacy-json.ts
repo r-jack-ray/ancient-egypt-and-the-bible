@@ -8,7 +8,7 @@ const legacyTranscriptPaths = [
 ] as const;
 
 export function findTrackedLegacyJson(
-  repoRoot = resolve(__dirname, "../.."),
+    repoRoot = resolve(__dirname, "../.."),
 ): string[] {
   const result = spawnSync("git", ["ls-files", "--", ...legacyTranscriptPaths], {
     cwd: repoRoot,
@@ -22,22 +22,24 @@ export function findTrackedLegacyJson(
   if (result.status !== 0) {
     const detail = (result.stderr || result.stdout).trim();
     throw new Error(
-      `git ls-files failed${result.signal ? ` with signal ${result.signal}` : ` with status ${result.status}`}`
-      + (detail ? `: ${detail}` : "."),
+        `git ls-files failed${result.signal ? ` with signal ${result.signal}` : ` with status ${result.status}`}`
+        + (detail ? `: ${detail}` : "."),
     );
   }
 
   return result.stdout
-    .split(/\r?\n/u)
-    .map((path) => path.trim())
-    .filter((path) => path.length > 0);
+      .split(/\r?\n/u)
+      .map((path) => path.trim())
+      .filter((path) => path.length > 0);
 }
 
 export function main(): number {
   const trackedPaths = findTrackedLegacyJson();
   if (trackedPaths.length > 0) {
     console.error("Tracked legacy transcript JSON is not allowed:");
-    for (const path of trackedPaths) console.error(`  ${path}`);
+    for (const path of trackedPaths) {
+      console.error(`  ${path}`);
+    }
     return 1;
   }
 

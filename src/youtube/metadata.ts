@@ -1,9 +1,6 @@
 import { metadataPath, readEpisodesStore } from "../archive.js";
 import { errorCode, readJsonUnknown, writeJsonIfChanged } from "../pipeline/files.js";
-import {
-  createYoutubeDataApiClient,
-  type YoutubeVideoResource,
-} from "./data-api.js";
+import { createYoutubeDataApiClient, type YoutubeVideoResource, } from "./data-api.js";
 
 export interface VideoMetadataRecord {
   videoId: string;
@@ -36,11 +33,11 @@ export async function fetchVideoMetadata(options: {
 }): Promise<VideoMetadataRecord[]> {
   const youtube = createYoutubeDataApiClient({
     apiKey: options.apiKey,
-    ...(options.fetch !== undefined ? { fetch: options.fetch } : {}),
-    ...(options.sleep !== undefined ? { sleep: options.sleep } : {}),
+    ...(options.fetch !== undefined ? {fetch: options.fetch} : {}),
+    ...(options.sleep !== undefined ? {sleep: options.sleep} : {}),
   });
   const sleep = options.sleep ?? ((milliseconds: number) =>
-    new Promise<void>((resolve) => setTimeout(resolve, milliseconds))
+          new Promise<void>((resolve) => setTimeout(resolve, milliseconds))
   );
   const now = options.now ?? (() => new Date());
   const records: VideoMetadataRecord[] = [];
@@ -79,26 +76,28 @@ export async function fetchAndStoreVideoMetadata(options: {
   const existing = await readVideoMetadataStore(output);
   const byId = new Map(existing.videos.map((record) => [record.videoId, record]));
   const selected = selectMetadataRefreshVideoIds(ids, existing.videos, {
-    ...(options.limit !== undefined ? { limit: options.limit } : {}),
-    ...(options.refreshAll ? { refreshAll: true } : {}),
+    ...(options.limit !== undefined ? {limit: options.limit} : {}),
+    ...(options.refreshAll ? {refreshAll: true} : {}),
   });
   const fetched = await fetchVideoMetadata({
     apiKey: options.apiKey,
     videoIds: selected,
     delayMs: options.delayMs,
-    ...(options.fetch !== undefined ? { fetch: options.fetch } : {}),
-    ...(options.sleep !== undefined ? { sleep: options.sleep } : {}),
-    ...(options.now !== undefined ? { now: options.now } : {}),
-    ...(options.logger !== undefined ? { logger: options.logger } : {}),
+    ...(options.fetch !== undefined ? {fetch: options.fetch} : {}),
+    ...(options.sleep !== undefined ? {sleep: options.sleep} : {}),
+    ...(options.now !== undefined ? {now: options.now} : {}),
+    ...(options.logger !== undefined ? {logger: options.logger} : {}),
   });
-  for (const record of fetched) byId.set(record.videoId, record);
+  for (const record of fetched) {
+    byId.set(record.videoId, record);
+  }
   const videos = ids.flatMap((videoId) => {
     const record = byId.get(videoId);
     return record === undefined ? [] : [record];
   });
   const store: VideoMetadataStore = {
     schemaVersion: 1,
-    source: { api: "youtube-data-api-v3" },
+    source: {api: "youtube-data-api-v3"},
     videos,
   };
   await writeJsonIfChanged(output, store);
@@ -106,13 +105,15 @@ export async function fetchAndStoreVideoMetadata(options: {
 }
 
 export function selectMetadataRefreshVideoIds(
-  videoIds: readonly string[],
-  existingRecords: readonly VideoMetadataRecord[],
-  options: { limit?: number; refreshAll?: boolean } = {},
+    videoIds: readonly string[],
+    existingRecords: readonly VideoMetadataRecord[],
+    options: { limit?: number; refreshAll?: boolean } = {},
 ): string[] {
   const byId = new Map(existingRecords.map((record) => [record.videoId, record]));
   const selected = videoIds.filter((videoId) => {
-    if (options.refreshAll) return true;
+    if (options.refreshAll) {
+      return true;
+    }
     const record = byId.get(videoId);
     return record === undefined || resolveVideoReadiness(record).state !== "ready";
   });
@@ -125,7 +126,7 @@ export async function readVideoMetadataStore(path = metadataPath): Promise<Video
     value = await readJsonUnknown(path);
   } catch (error) {
     if (errorCode(error) === "ENOENT") {
-      return { schemaVersion: 1, source: { api: "youtube-data-api-v3" }, videos: [] };
+      return {schemaVersion: 1, source: {api: "youtube-data-api-v3"}, videos: []};
     }
     throw error;
   }
@@ -136,34 +137,34 @@ export async function readVideoMetadataStore(path = metadataPath): Promise<Video
 }
 
 export function resolveVideoReadiness(record: VideoMetadataRecord | undefined):
-  | { state: "ready" }
-  | { state: "deferred"; reason: string }
-  | { state: "invalid"; reason: string } {
+    | { state: "ready" }
+    | { state: "deferred"; reason: string }
+    | { state: "invalid"; reason: string } {
   if (record === undefined) {
-    return { state: "invalid", reason: "metadata_missing" };
+    return {state: "invalid", reason: "metadata_missing"};
   }
   if (record.liveBroadcastContent === "upcoming") {
-    return { state: "deferred", reason: "upcoming" };
+    return {state: "deferred", reason: "upcoming"};
   }
   if (record.liveBroadcastContent === "live") {
-    return { state: "deferred", reason: "live_in_progress" };
+    return {state: "deferred", reason: "live_in_progress"};
   }
   if (record.uploadStatus === "uploaded") {
-    return { state: "deferred", reason: "processing" };
+    return {state: "deferred", reason: "processing"};
   }
   if (record.uploadStatus !== "processed") {
-    return { state: "invalid", reason: "invalid_upload_status" };
+    return {state: "invalid", reason: "invalid_upload_status"};
   }
   if (record.durationSeconds === undefined || record.durationSeconds <= 0) {
-    return { state: "invalid", reason: "invalid_duration" };
+    return {state: "invalid", reason: "invalid_duration"};
   }
   if (
-    (record.scheduledStartAt !== undefined || record.actualStartAt !== undefined) &&
-    record.actualEndAt === undefined
+      (record.scheduledStartAt !== undefined || record.actualStartAt !== undefined) &&
+      record.actualEndAt === undefined
   ) {
-    return { state: "deferred", reason: "completion_unconfirmed" };
+    return {state: "deferred", reason: "completion_unconfirmed"};
   }
-  return { state: "ready" };
+  return {state: "ready"};
 }
 
 export function parseYoutubeDuration(value: string | null | undefined): number | undefined {
@@ -175,20 +176,20 @@ export function parseYoutubeDuration(value: string | null | undefined): number |
     return undefined;
   }
   return (Number(match[1] ?? 0) * 86_400) +
-    (Number(match[2] ?? 0) * 3_600) +
-    (Number(match[3] ?? 0) * 60) +
-    Number(match[4] ?? 0);
+      (Number(match[2] ?? 0) * 3_600) +
+      (Number(match[3] ?? 0) * 60) +
+      Number(match[4] ?? 0);
 }
 
 function normalizeVideo(
-  item: YoutubeVideoResource,
-  fetchedAt: string,
+    item: YoutubeVideoResource,
+    fetchedAt: string,
 ): VideoMetadataRecord | undefined {
   const videoId = item.id ?? undefined;
   if (videoId === undefined) {
     return undefined;
   }
-  const record: VideoMetadataRecord = { videoId, fetchedAt };
+  const record: VideoMetadataRecord = {videoId, fetchedAt};
   assign(record, "title", item.snippet?.title);
   assign(record, "publishedAt", item.snippet?.publishedAt);
   const durationSeconds = parseYoutubeDuration(item.contentDetails?.duration);
@@ -208,9 +209,9 @@ function normalizeVideo(
 }
 
 function assign<K extends keyof VideoMetadataRecord>(
-  record: VideoMetadataRecord,
-  key: K,
-  value: VideoMetadataRecord[K] | null | undefined,
+    record: VideoMetadataRecord,
+    key: K,
+    value: VideoMetadataRecord[K] | null | undefined,
 ): void {
   if (value !== undefined && value !== null) {
     record[key] = value;

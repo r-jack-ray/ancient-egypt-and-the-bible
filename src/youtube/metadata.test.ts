@@ -1,16 +1,10 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 
-import {
-  fetchVideoMetadata,
-  parseYoutubeDuration,
-  resolveVideoReadiness,
-  selectMetadataRefreshVideoIds,
-  type VideoMetadataRecord,
-} from "./metadata.js";
+import { fetchVideoMetadata, parseYoutubeDuration, resolveVideoReadiness, selectMetadataRefreshVideoIds, type VideoMetadataRecord, } from "./metadata.js";
 
 test("metadata fetch batches 50 IDs and preserves spacing and normalization", async () => {
-  const ids = Array.from({ length: 101 }, (_value, index) => `video-${String(index).padStart(5, "0")}`);
+  const ids = Array.from({length: 101}, (_value, index) => `video-${String(index).padStart(5, "0")}`);
   const requests: URL[] = [];
   const sleeps: number[] = [];
   const logs: string[] = [];
@@ -21,7 +15,9 @@ test("metadata fetch batches 50 IDs and preserves spacing and normalization", as
     const requestedIds = url.searchParams.get("id")?.split(",") ?? [];
     return jsonResponse({
       items: requestedIds.map((videoId) => {
-        if (videoId === skippedId) return { snippet: { title: "Missing ID" } };
+        if (videoId === skippedId) {
+          return {snippet: {title: "Missing ID"}};
+        }
         if (videoId === ids[0]) {
           return {
             id: videoId,
@@ -30,8 +26,8 @@ test("metadata fetch batches 50 IDs and preserves spacing and normalization", as
               publishedAt: "2026-08-01T00:00:00Z",
               liveBroadcastContent: "none",
             },
-            contentDetails: { duration: "PT1H2M3S" },
-            status: { privacyStatus: "public", uploadStatus: "processed" },
+            contentDetails: {duration: "PT1H2M3S"},
+            status: {privacyStatus: "public", uploadStatus: "processed"},
             liveStreamingDetails: {
               scheduledStartTime: "2026-08-01T00:00:00Z",
               actualStartTime: "2026-08-01T00:01:00Z",
@@ -39,7 +35,7 @@ test("metadata fetch batches 50 IDs and preserves spacing and normalization", as
             },
           };
         }
-        return { id: videoId };
+        return {id: videoId};
       }),
     });
   }) as typeof fetch;
@@ -89,16 +85,16 @@ test("metadata readiness defers scheduled, live, and processing streams", () => 
     uploadStatus: "processed",
   };
   assert.deepEqual(
-    resolveVideoReadiness({ ...base, liveBroadcastContent: "upcoming" }),
-    { state: "deferred", reason: "upcoming" },
+      resolveVideoReadiness({...base, liveBroadcastContent: "upcoming"}),
+      {state: "deferred", reason: "upcoming"},
   );
   assert.deepEqual(
-    resolveVideoReadiness({ ...base, liveBroadcastContent: "live" }),
-    { state: "deferred", reason: "live_in_progress" },
+      resolveVideoReadiness({...base, liveBroadcastContent: "live"}),
+      {state: "deferred", reason: "live_in_progress"},
   );
   assert.deepEqual(
-    resolveVideoReadiness({ ...base, uploadStatus: "uploaded" }),
-    { state: "deferred", reason: "processing" },
+      resolveVideoReadiness({...base, uploadStatus: "uploaded"}),
+      {state: "deferred", reason: "processing"},
   );
 });
 
@@ -112,12 +108,12 @@ test("completed stream needs independent end evidence", () => {
     actualStartAt: "2026-07-25T00:01:00Z",
   };
   assert.deepEqual(
-    resolveVideoReadiness(stream),
-    { state: "deferred", reason: "completion_unconfirmed" },
+      resolveVideoReadiness(stream),
+      {state: "deferred", reason: "completion_unconfirmed"},
   );
   assert.deepEqual(
-    resolveVideoReadiness({ ...stream, actualEndAt: "2026-07-25T01:00:00Z" }),
-    { state: "ready" },
+      resolveVideoReadiness({...stream, actualEndAt: "2026-07-25T01:00:00Z"}),
+      {state: "ready"},
   );
 });
 
@@ -144,17 +140,17 @@ test("metadata refresh includes missing and changing schedule records", () => {
   };
   const ids = [ready.videoId, upcoming.videoId, "12345678901"];
   assert.deepEqual(
-    selectMetadataRefreshVideoIds(ids, [ready, upcoming]),
-    [upcoming.videoId, "12345678901"],
+      selectMetadataRefreshVideoIds(ids, [ready, upcoming]),
+      [upcoming.videoId, "12345678901"],
   );
   assert.deepEqual(
-    selectMetadataRefreshVideoIds(ids, [ready, upcoming], { refreshAll: true, limit: 2 }),
-    [ready.videoId, upcoming.videoId],
+      selectMetadataRefreshVideoIds(ids, [ready, upcoming], {refreshAll: true, limit: 2}),
+      [ready.videoId, upcoming.videoId],
   );
 });
 
 function jsonResponse(value: unknown): Response {
   return new Response(JSON.stringify(value), {
-    headers: { "content-type": "application/json" },
+    headers: {"content-type": "application/json"},
   });
 }

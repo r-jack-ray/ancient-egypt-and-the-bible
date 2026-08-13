@@ -1,20 +1,21 @@
 import { randomUUID } from "node:crypto";
-import { dirname } from "node:path";
 import { mkdir, open, readFile, rm } from "node:fs/promises";
+import { dirname } from "node:path";
 
 import { errorCode } from "./files.js";
 
 export interface WriterLease {
   path: string;
   token: string;
+
   release(): Promise<void>;
 }
 
 export async function acquireWriterLease(
-  purpose: string,
-  path = ".tmp/transcript-store/writer.lock",
+    purpose: string,
+    path = ".tmp/transcript-store/writer.lock",
 ): Promise<WriterLease> {
-  await mkdir(dirname(path), { recursive: true });
+  await mkdir(dirname(path), {recursive: true});
   const token = randomUUID();
   const record = {
     schemaVersion: 1,
@@ -59,13 +60,15 @@ export async function acquireWriterLease(
 }
 
 export async function recoverStaleWriterLease(
-  path = ".tmp/transcript-store/writer.lock",
+    path = ".tmp/transcript-store/writer.lock",
 ): Promise<"none" | "removed"> {
   let record: { pid?: unknown };
   try {
     record = JSON.parse(await readFile(path, "utf8")) as { pid?: unknown };
   } catch (error) {
-    if (errorCode(error) === "ENOENT") return "none";
+    if (errorCode(error) === "ENOENT") {
+      return "none";
+    }
     throw error;
   }
   if (typeof record.pid !== "number" || !Number.isInteger(record.pid) || record.pid <= 0) {
@@ -75,7 +78,9 @@ export async function recoverStaleWriterLease(
     process.kill(record.pid, 0);
     throw new Error(`Writer lease process ${record.pid} is still active; refusing recovery.`);
   } catch (error) {
-    if (error instanceof Error && error.message.includes("refusing recovery")) throw error;
+    if (error instanceof Error && error.message.includes("refusing recovery")) {
+      throw error;
+    }
     if (errorCode(error) !== "ESRCH") {
       throw new Error(`Could not prove writer lease process ${record.pid} is absent.`);
     }

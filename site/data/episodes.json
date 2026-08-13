@@ -1,5 +1,33 @@
 [
   {
+    "number": null,
+    "title": "Special Live Stream: \"Lord of Steel and Sky\" Q&A",
+    "slug": "special-live-stream-lord-of-steel-and-sky-q-a",
+    "youtube_url": "https://www.youtube.com/watch?v=bxrBgOpzJPg",
+    "video_id": "bxrBgOpzJPg",
+    "question_page": "questions/special-live-stream-lord-of-steel-and-sky-q-a-questions.md",
+    "content_path": "questions/special-live-stream-lord-of-steel-and-sky-q-a/",
+    "status": "curated",
+    "is_numbered": false,
+    "is_special": true,
+    "question_count": 50,
+    "series": "special stream"
+  },
+  {
+    "number": 274,
+    "title": "You Get an Exodus Pharaoh... And You Get...",
+    "slug": "274-you-get-an-exodus-pharaoh-and-you-get",
+    "youtube_url": "https://www.youtube.com/watch?v=to9KKIzyvxs",
+    "video_id": "to9KKIzyvxs",
+    "question_page": null,
+    "content_path": null,
+    "status": "missing_question_page",
+    "is_numbered": true,
+    "is_special": false,
+    "question_count": 0,
+    "series": "numbered livestream"
+  },
+  {
     "number": 273,
     "title": "Pouring Out the Hick Sauce",
     "slug": "273-pouring-out-the-hick-sauce",

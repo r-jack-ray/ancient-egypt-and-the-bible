@@ -4,10 +4,7 @@ import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { test } from "node:test";
 
-import {
-  printRenderedValidationSummary,
-  validateRenderedSite,
-} from "./rendered-validation.js";
+import { printRenderedValidationSummary, validateRenderedSite, } from "./rendered-validation.js";
 
 const BASE_URL = "https://example.test/archive/";
 
@@ -73,7 +70,7 @@ test("validates the complete rendered-site contract and preserves summary output
       "Noindex pages/JSON-LD blocks: 1/1",
     ]);
   } finally {
-    await rm(publicDir, { recursive: true, force: true });
+    await rm(publicDir, {recursive: true, force: true});
   }
 });
 
@@ -83,11 +80,11 @@ test("rejects a canonical URL that does not match its rendered route", async () 
   });
   try {
     await assert.rejects(
-      validateRenderedSite({ publicDir, expectedBaseUrl: BASE_URL }),
-      /canonical URL is .* expected .*episodes\//u,
+        validateRenderedSite({publicDir, expectedBaseUrl: BASE_URL}),
+        /canonical URL is .* expected .*episodes\//u,
     );
   } finally {
-    await rm(publicDir, { recursive: true, force: true });
+    await rm(publicDir, {recursive: true, force: true});
   }
 });
 
@@ -97,11 +94,11 @@ test("rejects duplicate descriptions on indexable pages", async () => {
   });
   try {
     await assert.rejects(
-      validateRenderedSite({ publicDir, expectedBaseUrl: BASE_URL }),
-      /duplicate meta descriptions on indexable pages/u,
+        validateRenderedSite({publicDir, expectedBaseUrl: BASE_URL}),
+        /duplicate meta descriptions on indexable pages/u,
     );
   } finally {
-    await rm(publicDir, { recursive: true, force: true });
+    await rm(publicDir, {recursive: true, force: true});
   }
 });
 
@@ -111,11 +108,11 @@ test("rejects a rendered title that is inconsistent with its H1", async () => {
   });
   try {
     await assert.rejects(
-      validateRenderedSite({ publicDir, expectedBaseUrl: BASE_URL }),
-      /title is inconsistent with its H1/u,
+        validateRenderedSite({publicDir, expectedBaseUrl: BASE_URL}),
+        /title is inconsistent with its H1/u,
     );
   } finally {
-    await rm(publicDir, { recursive: true, force: true });
+    await rm(publicDir, {recursive: true, force: true});
   }
 });
 
@@ -125,23 +122,23 @@ test("rejects a sitemap that omits an indexable canonical page", async () => {
   });
   try {
     await assert.rejects(
-      validateRenderedSite({ publicDir, expectedBaseUrl: BASE_URL }),
-      /Sitemap URLs do not match canonical, indexable HTML pages \(missing:/u,
+        validateRenderedSite({publicDir, expectedBaseUrl: BASE_URL}),
+        /Sitemap URLs do not match canonical, indexable HTML pages \(missing:/u,
     );
   } finally {
-    await rm(publicDir, { recursive: true, force: true });
+    await rm(publicDir, {recursive: true, force: true});
   }
 });
 
 test("rejects invalid JSON-LD during the consolidated SEO pass", async () => {
-  const publicDir = await createRenderedSiteFixture({ homeJsonLd: "{not-json}" });
+  const publicDir = await createRenderedSiteFixture({homeJsonLd: "{not-json}"});
   try {
     await assert.rejects(
-      validateRenderedSite({ publicDir, expectedBaseUrl: BASE_URL }),
-      /contains invalid JSON-LD: index\.html/u,
+        validateRenderedSite({publicDir, expectedBaseUrl: BASE_URL}),
+        /contains invalid JSON-LD: index\.html/u,
     );
   } finally {
-    await rm(publicDir, { recursive: true, force: true });
+    await rm(publicDir, {recursive: true, force: true});
   }
 });
 
@@ -151,11 +148,11 @@ test("rejects missing internal targets and fragments", async () => {
   });
   try {
     await assert.rejects(
-      validateRenderedSite({ publicDir, expectedBaseUrl: BASE_URL }),
-      /Found 2 broken internal links/u,
+        validateRenderedSite({publicDir, expectedBaseUrl: BASE_URL}),
+        /Found 2 broken internal links/u,
     );
   } finally {
-    await rm(publicDir, { recursive: true, force: true });
+    await rm(publicDir, {recursive: true, force: true});
   }
 });
 
@@ -165,67 +162,67 @@ async function createRenderedSiteFixture(options: FixtureOptions = {}): Promise<
   const homeBody = options.homeBody ?? '<a href="episodes/#overview">Episodes</a>';
 
   await writePage(
-    publicDir,
-    "index.html",
-    pageHtml({
-      title: "Example Site",
-      h1: "Ancient Egypt archive",
-      canonical: BASE_URL,
-      description: "Home archive description.",
-      body: homeBody,
-      jsonLd: homeJsonLd,
-    }),
+      publicDir,
+      "index.html",
+      pageHtml({
+        title: "Example Site",
+        h1: "Ancient Egypt archive",
+        canonical: BASE_URL,
+        description: "Home archive description.",
+        body: homeBody,
+        jsonLd: homeJsonLd,
+      }),
   );
   await writePage(
-    publicDir,
-    "episodes/index.html",
-    pageHtml({
-      title: options.episodesTitle ?? "Episodes &amp; More | Example Site",
-      h1: "Episodes &amp; More",
-      h1Attributes: ' id="overview"',
-      canonical: options.episodesCanonical ?? `${BASE_URL}episodes/`,
-      description: options.episodesDescription ?? "Episode archive description.",
-    }),
+      publicDir,
+      "episodes/index.html",
+      pageHtml({
+        title: options.episodesTitle ?? "Episodes &amp; More | Example Site",
+        h1: "Episodes &amp; More",
+        h1Attributes: ' id="overview"',
+        canonical: options.episodesCanonical ?? `${BASE_URL}episodes/`,
+        description: options.episodesDescription ?? "Episode archive description.",
+      }),
   );
   await writePage(
-    publicDir,
-    "questions/index.html",
-    pageHtml({
-      title: "Questions | Example Site",
-      h1: "Questions",
-      canonical: `${BASE_URL}questions/`,
-      description: "Question index description.",
-      body: `<a href="${BASE_URL}">Home</a>`,
-    }),
+      publicDir,
+      "questions/index.html",
+      pageHtml({
+        title: "Questions | Example Site",
+        h1: "Questions",
+        canonical: `${BASE_URL}questions/`,
+        description: "Question index description.",
+        body: `<a href="${BASE_URL}">Home</a>`,
+      }),
   );
   await writePage(
-    publicDir,
-    "search/index.html",
-    pageHtml({
-      title: "Search | Example Site",
-      h1: "Search",
-      canonical: `${BASE_URL}search/`,
-      description: "Search page description.",
-      robots: "noindex, follow",
-      body: '<a href="../questions/">Questions</a>',
-    }),
+      publicDir,
+      "search/index.html",
+      pageHtml({
+        title: "Search | Example Site",
+        h1: "Search",
+        canonical: `${BASE_URL}search/`,
+        description: "Search page description.",
+        robots: "noindex, follow",
+        body: '<a href="../questions/">Questions</a>',
+      }),
   );
 
   const sitemapRoutes = options.sitemapRoutes ?? ["", "episodes/", "questions/"];
   const sitemapEntries = sitemapRoutes
-    .map(
-      (route) =>
-        `  <url><loc>${BASE_URL}${route}</loc><lastmod>2026-08-01</lastmod></url>`,
-    )
-    .join("\n");
+      .map(
+          (route) =>
+              `  <url><loc>${BASE_URL}${route}</loc><lastmod>2026-08-01</lastmod></url>`,
+      )
+      .join("\n");
   await writeFile(
-    join(publicDir, "sitemap.xml"),
-    `<?xml version="1.0" encoding="utf-8"?>
+      join(publicDir, "sitemap.xml"),
+      `<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapEntries}
 </urlset>
 `,
-    "utf8",
+      "utf8",
   );
   return publicDir;
 }
@@ -259,6 +256,6 @@ function pageHtml(options: {
 
 async function writePage(root: string, relativePath: string, contents: string): Promise<void> {
   const path = join(root, relativePath);
-  await mkdir(dirname(path), { recursive: true });
+  await mkdir(dirname(path), {recursive: true});
   await writeFile(path, contents, "utf8");
 }

@@ -1,8 +1,5 @@
 #!/usr/bin/env node
-import {
-  printRenderedValidationSummary,
-  validateRenderedSite,
-} from "../site/rendered-validation.js";
+import { printRenderedValidationSummary, validateRenderedSite, } from "../site/rendered-validation.js";
 
 interface CliOptions {
   publicDir: string;
@@ -43,12 +40,16 @@ function parseArgs(args: readonly string[]): CliOptions {
     }
   }
 
-  if (publicDir === undefined) throw new Error("Missing required --public-dir.");
-  if (expectedBaseUrl === undefined) throw new Error("Missing required --expected-base-url.");
+  if (publicDir === undefined) {
+    throw new Error("Missing required --public-dir.");
+  }
+  if (expectedBaseUrl === undefined) {
+    throw new Error("Missing required --expected-base-url.");
+  }
   return {
     publicDir,
     expectedBaseUrl,
-    ...(expectedNoIndexPaths.length > 0 ? { expectedNoIndexPaths } : {}),
+    ...(expectedNoIndexPaths.length > 0 ? {expectedNoIndexPaths} : {}),
   };
 }
 
