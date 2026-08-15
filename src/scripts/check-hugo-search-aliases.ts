@@ -25,7 +25,7 @@ function parseArgs(args: string[]): {
       console.log(`Usage: npm run check:search-aliases -- [options]
 
   --repo-root <path>
-  --max-rows-per-alias-group <count>  Defaults to 1100
+  --max-rows-per-alias-group <count>  Optional fixture or diagnostic ceiling
 `);
       process.exit(0);
     default:

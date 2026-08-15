@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-import { existsSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
 import {
   analyzeQuestionTableFile,
+  listQuestionMarkdownFiles,
   type QuestionTableReport,
   resolveQuestionMarkdownFile,
   resolveQuestionRepositoryRoot,
@@ -35,7 +35,7 @@ export function main(args: readonly string[] = process.argv.slice(2)): number {
 
   const files = options.paths.length > 0
       ? uniqueSorted(options.paths.map((path) => resolveQuestionMarkdownFile(path, repoRoot)))
-      : questionMarkdownFiles(questionsPath);
+      : listQuestionMarkdownFiles(questionsPath);
   const details = files.map((path) => analyzeQuestionTableFile(path, repoRoot, requireExpandedAnswer));
   const ordinary = details.filter((detail) =>
       detail.headerColumns > 0
@@ -149,16 +149,6 @@ Options:
     }
   }
   return options;
-}
-
-function questionMarkdownFiles(questionsPath: string): string[] {
-  if (!existsSync(questionsPath)) {
-    throw new Error(`Questions directory not found: ${questionsPath}`);
-  }
-  return readdirSync(questionsPath, {withFileTypes: true})
-      .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith(".md"))
-      .map((entry) => resolve(questionsPath, entry.name))
-      .sort((left, right) => left.localeCompare(right));
 }
 
 function questionTableReportMarkdown(report: QuestionTableReport): string[] {

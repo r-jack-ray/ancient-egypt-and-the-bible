@@ -12,7 +12,6 @@ test("search alias validation checks token aliases, phrase aliases, and expected
     const messages: string[] = [];
     const summary = await validateHugoSearchAliases({
       repoRoot,
-      maxRowsPerAliasGroup: 10,
       logger: (message) => messages.push(message),
     });
     assert.deepEqual(summary, {
@@ -39,6 +38,16 @@ test("search alias validation enforces the broad-match ceiling", async () => {
         validateHugoSearchAliases({repoRoot, maxRowsPerAliasGroup: 0, logger: () => undefined}),
         /Alias group \[pharaoh, pharoah\] matches 1 rows; limit is 0\./u,
     );
+  } finally {
+    await rm(repoRoot, {recursive: true, force: true});
+  }
+});
+
+test("search alias validation has no implicit corpus-size ceiling", async () => {
+  const repoRoot = await broadAliasFixture(1_101);
+  try {
+    const summary = await validateHugoSearchAliases({repoRoot, logger: () => undefined});
+    assert.equal(summary.questionRowCount, 1_101);
   } finally {
     await rm(repoRoot, {recursive: true, force: true});
   }
@@ -86,6 +95,25 @@ async function searchFixture(): Promise<string> {
           time_label: "2:00",
         },
       ], null, 2)}\n`,
+      "utf8",
+  );
+  return repoRoot;
+}
+
+async function broadAliasFixture(questionRowCount: number): Promise<string> {
+  const repoRoot = await mkdtemp(join(tmpdir(), "aeb-search-aliases-broad-"));
+  await mkdir(join(repoRoot, "site/data"), {recursive: true});
+  await writeFile(
+      join(repoRoot, "site/data/search-aliases.json"),
+      `${JSON.stringify({aliasGroups: [["pharaoh", "pharoah"]]}, null, 2)}\n`,
+      "utf8",
+  );
+  await writeFile(
+      join(repoRoot, "site/data/questions.json"),
+      `${JSON.stringify(Array.from({length: questionRowCount}, (_, index) => ({
+        episode_number: index + 1,
+        question: `Synthetic Pharaoh question ${index + 1}`,
+      })), null, 2)}\n`,
       "utf8",
   );
   return repoRoot;

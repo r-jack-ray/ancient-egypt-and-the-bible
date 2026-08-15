@@ -28,6 +28,7 @@ npm run fetch:livestreams
 npm run fetch:transcripts -- --dry-run
 npm run build:site-content
 npm run check:question-tables
+npm run check:question-wording
 npm test
 npm run check:quick
 npm run check
@@ -110,6 +111,7 @@ Timestamp links should point directly to YouTube with `?t=`. For links intended 
 - `npm run check:ci`: run validation when generated output and the tracked worktree must also remain clean.
 - `npm test`: run the JavaScript search suite and compiled TypeScript tests.
 - `npm run check:js`: run after changing JavaScript or the search-index builder.
+- `npm run check:question-wording`: report deterministic mechanical wording and review candidates in parsed Q&A cells; use `--strict` to fail on findings and `--fuzzy` to include typo-tolerant variants.
 - `npm run check:transcript-store`: run for acquisition changes; it validates canonical archive state and detects inventory and transcript transactions.
 - `npm run check:site:static`: run for source-to-site compatibility validation; it generates the ignored question stubs before checking them.
 - `npm run check:site:rendered -- --public-dir site/public --expected-base-url URL`: run after a production-baseURL Hugo render to check complete rendered metadata, indexability, JSON-LD parsing, sitemap coverage, and internal links.

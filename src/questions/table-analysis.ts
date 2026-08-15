@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import {existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync} from "node:fs";
 import { dirname, isAbsolute, relative, resolve, sep } from "node:path";
 
 export type QuestionTableClassification =
@@ -112,6 +112,16 @@ export function resolveQuestionMarkdownFile(inputPath: string, repoRoot: string)
     throw new Error(`Question Markdown path must end in .md: ${inputPath}`);
   }
   return resolve(candidate);
+}
+
+export function listQuestionMarkdownFiles(questionsPath: string): string[] {
+  if (!existsSync(questionsPath)) {
+    throw new Error(`Questions directory not found: ${questionsPath}`);
+  }
+  return readdirSync(questionsPath, {withFileTypes: true})
+      .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith(".md"))
+      .map((entry) => resolve(questionsPath, entry.name))
+      .sort((left, right) => left.localeCompare(right));
 }
 
 export function splitMarkdownTableRowStrict(line: string): string[] {

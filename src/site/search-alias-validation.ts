@@ -3,6 +3,7 @@ import { join, resolve } from "node:path";
 
 export interface ValidateHugoSearchAliasesOptions {
   repoRoot?: string;
+  /** Apply only to controlled fixture data or an explicit diagnostic. */
   maxRowsPerAliasGroup?: number;
   logger?: (message: string) => void;
 }
@@ -57,9 +58,9 @@ export async function validateHugoSearchAliases(
     options: ValidateHugoSearchAliasesOptions = {},
 ): Promise<HugoSearchAliasValidationSummary> {
   const repoRoot = resolve(options.repoRoot ?? resolve(__dirname, "../.."));
-  const maxRowsPerAliasGroup = options.maxRowsPerAliasGroup ?? 1_100;
+  const maxRowsPerAliasGroup = options.maxRowsPerAliasGroup;
   const logger = options.logger ?? console.log;
-  if (!Number.isInteger(maxRowsPerAliasGroup)) {
+  if (maxRowsPerAliasGroup !== undefined && !Number.isInteger(maxRowsPerAliasGroup)) {
     throw new Error("maxRowsPerAliasGroup must be an integer.");
   }
 
@@ -132,33 +133,35 @@ export async function validateHugoSearchAliases(
     questionSearchRows.push({question, normalizedText, haystackSet});
   }
 
-  for (const group of aliasGroups) {
-    const matchingRowCount = matchingRowCountForAnyIndexedTerm(tokenRowIndex, group);
-    if (matchingRowCount > maxRowsPerAliasGroup) {
-      throw new Error(
-          `Alias group [${group.join(", ")}] matches ${matchingRowCount} rows; limit is ${maxRowsPerAliasGroup}.`,
-      );
+  if (maxRowsPerAliasGroup !== undefined) {
+    for (const group of aliasGroups) {
+      const matchingRowCount = matchingRowCountForAnyIndexedTerm(tokenRowIndex, group);
+      if (matchingRowCount > maxRowsPerAliasGroup) {
+        throw new Error(
+            `Alias group [${group.join(", ")}] matches ${matchingRowCount} rows; limit is ${maxRowsPerAliasGroup}.`,
+        );
+      }
     }
-  }
 
-  for (const group of normalizedPhraseAliasGroups) {
-    const candidateRows = new Set<number>();
-    for (const firstToken of group.firstTokens) {
-      for (const rowIndex of tokenRowIndex.get(firstToken) ?? []) {
-        candidateRows.add(rowIndex);
+    for (const group of normalizedPhraseAliasGroups) {
+      const candidateRows = new Set<number>();
+      for (const firstToken of group.firstTokens) {
+        for (const rowIndex of tokenRowIndex.get(firstToken) ?? []) {
+          candidateRows.add(rowIndex);
+        }
       }
-    }
-    let matchingRowCount = 0;
-    for (const rowIndex of candidateRows) {
-      const row = questionSearchRows[rowIndex];
-      if (row !== undefined && haystackContainsAnyPhrase(row.normalizedText, group.terms)) {
-        matchingRowCount += 1;
+      let matchingRowCount = 0;
+      for (const rowIndex of candidateRows) {
+        const row = questionSearchRows[rowIndex];
+        if (row !== undefined && haystackContainsAnyPhrase(row.normalizedText, group.terms)) {
+          matchingRowCount += 1;
+        }
       }
-    }
-    if (matchingRowCount > maxRowsPerAliasGroup) {
-      throw new Error(
-          `Phrase alias group [${group.terms.join(", ")}] matches ${matchingRowCount} rows; limit is ${maxRowsPerAliasGroup}.`,
-      );
+      if (matchingRowCount > maxRowsPerAliasGroup) {
+        throw new Error(
+            `Phrase alias group [${group.terms.join(", ")}] matches ${matchingRowCount} rows; limit is ${maxRowsPerAliasGroup}.`,
+        );
+      }
     }
   }
 

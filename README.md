@@ -143,6 +143,8 @@ npm run check
 | `npm run status:transcripts` | Print transcript coverage and acquisition status without writing a report. |
 | `npm run check:question-tables` | Validate all Q&A tables and filled expanded answers. |
 | `npm run check:question-tables -- --path docs/questions/<page>.md` | Validate one curated page. |
+| `npm run check:question-wording` | Report mechanical and report-shaped wording in parsed Q&A cells; add `--strict` to fail on findings. |
+| `npm run check:question-wording -- --path docs/questions/<page>.md` | Scan one curated page; add `--fuzzy` for typo-tolerant phrase variants or `--report` for ignored JSON and Markdown reports. |
 | `npm run build:site-content` | Regenerate Hugo question stubs, tracked site data, and prebuilt search artifacts. |
 | `npm run check:search-aliases` | Validate search aliases and their query expectations. |
 | `npm run check:site:static` | Regenerate and validate site content and aliases without invoking Hugo. |
@@ -309,6 +311,7 @@ Run `npm run check:site:static` when layouts, generated compatibility content, o
 |---|---|---|
 | `reports/stream-inventory-candidate.json` | `fetch:livestreams -- --review-only`, or a run with `--output` | Ignored review artifact; replace or remove when the comparison is complete. |
 | `reports/question-table-validation.json` and `.md` | A failing table check, or a passing check with `--report` | Ignored diagnostics; later emitted reports replace them. |
+| `reports/question-wording-scan.json` and `.md` | `check:question-wording -- --report` | Ignored wording-triage reports; exact rules are separated from review and optional fuzzy findings. |
 | [`site/data/episodes.json`](./site/data/episodes.json), [`site/data/questions.json`](./site/data/questions.json), [`site/static/search/`](./site/static/search/) | `build:site-content` and site checks | Tracked deterministic outputs; review and commit changes with their sources. |
 | [`site/content/questions/*.md`](./site/content/questions/) except `_index.md` | `build:site-content` and site checks | Ignored generated stubs; regenerate locally and leave unstaged. |
 | `site/public/` | Hugo | Ignored local render and deployment input. |

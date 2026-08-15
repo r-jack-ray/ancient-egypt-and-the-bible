@@ -25,6 +25,7 @@
     "build:site-content": "tsx src/scripts/build-hugo-site-content.ts",
     "build:search-index": "node scripts/build-search-index.mjs",
     "check:question-tables": "tsx src/scripts/check-question-tables.ts",
+    "check:question-wording": "tsx src/scripts/check-question-wording.ts",
     "check:search-aliases": "tsx src/scripts/check-hugo-search-aliases.ts",
     "check:site": "tsx src/scripts/check-site.ts",
     "check:site:static": "tsx src/scripts/check-site.ts --skip-hugo",
