@@ -22,7 +22,9 @@ interface Options {
   jsonName: string;
   markdownName: string;
   report: boolean;
+  review: boolean;
   strict: boolean;
+  strictReview: boolean;
   fuzzy: boolean;
   fuzzyThreshold: number;
   summaryOnly: boolean;
@@ -30,7 +32,11 @@ interface Options {
 
 interface MechanicalWordingReport {
   generatedAt: string;
+  completionCriterion: string;
+  reviewPolicy: string;
+  review: boolean;
   strict: boolean;
+  strictReview: boolean;
   fuzzy: boolean;
   fuzzyThreshold: number;
   filesScanned: number;
@@ -44,6 +50,13 @@ interface MechanicalWordingReport {
   findings: MechanicalWordingFinding[];
 }
 
+const completionCriterion =
+    "Completion is based on parse errors and actionable high-confidence issues; review candidates are triage input.";
+const reviewPolicy =
+    "Review candidates require transcript-grounded judgment. Do not bulk-rewrite them or use a zero review " +
+    "count as a completion target. Preserve attribution when it carries interpretation, uncertainty, " +
+    "disagreement, opinion, preference, or personal experience.";
+
 export function main(args: readonly string[] = process.argv.slice(2)): number {
   const options = parseArgs(args);
   if (options === null) {
@@ -56,6 +69,7 @@ export function main(args: readonly string[] = process.argv.slice(2)): number {
   const files = options.paths.length > 0
       ? uniqueSorted(options.paths.map((path) => resolveQuestionMarkdownFile(path, repoRoot)))
       : listQuestionMarkdownFiles(questionsPath);
+  const includeReview = options.review || options.strictReview || options.fuzzy;
 
   const findings: MechanicalWordingFinding[] = [];
   const parseErrors: string[] = [];
@@ -69,6 +83,7 @@ export function main(args: readonly string[] = process.argv.slice(2)): number {
       ordinaryFilesScanned += 1;
       rowsScanned += parsed.rows.length;
       findings.push(...scanQuestionTableMechanicalWording(parsed, {
+        includeReview,
         includeFuzzy: options.fuzzy,
         fuzzyThreshold: options.fuzzyThreshold,
       }));
@@ -79,7 +94,11 @@ export function main(args: readonly string[] = process.argv.slice(2)): number {
   const reviewCount = findings.length - highConfidenceCount;
   const report: MechanicalWordingReport = {
     generatedAt: new Date().toISOString(),
+    completionCriterion,
+    reviewPolicy,
+    review: includeReview,
     strict: options.strict,
+    strictReview: options.strictReview,
     fuzzy: options.fuzzy,
     fuzzyThreshold: options.fuzzyThreshold,
     filesScanned: files.length,
@@ -94,9 +113,10 @@ export function main(args: readonly string[] = process.argv.slice(2)): number {
   };
 
   console.log(
-      `Mechanical wording scan: files=${report.filesScanned} ordinary=${report.ordinaryFilesScanned} ` +
-      `rows=${report.rowsScanned} findings=${report.findingCount} high=${report.highConfidenceCount} ` +
-      `review=${report.reviewCount} parse-errors=${report.parseErrorCount}.`,
+      `Mechanical wording scan: mode=${includeReview ? "review" : "actionable"} ` +
+      `files=${report.filesScanned} ordinary=${report.ordinaryFilesScanned} rows=${report.rowsScanned} ` +
+      `issues=${report.highConfidenceCount} review-candidates=${report.reviewCount} ` +
+      `parse-errors=${report.parseErrorCount}.`,
   );
   if (parseErrors.length > 0) {
     console.error("Question-table parse errors:");
@@ -104,17 +124,18 @@ export function main(args: readonly string[] = process.argv.slice(2)): number {
       console.error(`  ${error}`);
     }
   }
-  if (!options.summaryOnly && findings.length > 0) {
-    console.log("Mechanical wording findings:");
-    for (const finding of findings) {
-      const fuzzyDetail = finding.similarity === undefined
-          ? ""
-          : ` -> ${JSON.stringify(finding.referencePhrase)} (${finding.similarity.toFixed(3)})`;
-      console.log(
-          `  ${finding.file}:${finding.lineNumber} [${finding.cell}] ` +
-          `${finding.confidence} ${finding.ruleId}: ${JSON.stringify(finding.match)}${fuzzyDetail}`,
-      );
-    }
+  if (reviewCount > 0) {
+    console.log(reviewPolicy);
+  }
+  if (!options.summaryOnly) {
+    printFindings(
+        "Actionable mechanical wording issues:",
+        findings.filter((finding) => finding.confidence === "high"),
+    );
+    printFindings(
+        "Judgment-required review candidates:",
+        findings.filter((finding) => finding.confidence === "review"),
+    );
   }
 
   if (options.report) {
@@ -128,7 +149,9 @@ export function main(args: readonly string[] = process.argv.slice(2)): number {
     console.log(`  ${markdownPath}`);
   }
 
-  return parseErrors.length > 0 || (options.strict && findings.length > 0) ? 1 : 0;
+  const strictFailure = options.strict && highConfidenceCount > 0;
+  const strictReviewFailure = options.strictReview && findings.length > 0;
+  return parseErrors.length > 0 || strictFailure || strictReviewFailure ? 1 : 0;
 }
 
 export function parseArgs(args: readonly string[]): Options | null {
@@ -140,7 +163,9 @@ export function parseArgs(args: readonly string[]): Options | null {
     jsonName: "question-wording-scan.json",
     markdownName: "question-wording-scan.md",
     report: false,
+    review: false,
     strict: false,
+    strictReview: false,
     fuzzy: false,
     fuzzyThreshold: 0.9,
     summaryOnly: false,
@@ -162,8 +187,12 @@ export function parseArgs(args: readonly string[]): Options | null {
       options.markdownName = required(args[++index], argument);
     } else if (argument === "--report") {
       options.report = true;
+    } else if (argument === "--review") {
+      options.review = true;
     } else if (argument === "--strict") {
       options.strict = true;
+    } else if (argument === "--strict-review") {
+      options.strictReview = true;
     } else if (argument === "--fuzzy") {
       options.fuzzy = true;
     } else if (argument === "--fuzzy-threshold") {
@@ -174,7 +203,14 @@ export function parseArgs(args: readonly string[]): Options | null {
       console.log(`Usage: npm run check:question-wording -- [options]
 
 Scans parsed docs/questions Q&A cells for mechanical or report-shaped wording.
-Findings are advisory unless --strict is supplied. Question-table parse errors always fail.
+The default scan reports actionable high-confidence issues only. Use --review to include
+judgment-required candidates. High-confidence issues fail only with --strict; review
+candidates also fail only when --strict-review is supplied. Question-table parse errors
+always fail.
+
+Review candidates require transcript-grounded judgment. Do not bulk-rewrite them or use a
+zero review count as a completion target. Retain attribution when it carries interpretation,
+uncertainty, disagreement, opinion, preference, or personal experience.
 
 Options:
   --repo-root <path>
@@ -184,8 +220,10 @@ Options:
   --output-dir <path>
   --json-name <name>
   --markdown-name <name>
-  --strict                      Exit 1 when wording findings are present
-  --fuzzy                       Include typo-tolerant phrase variants for review
+  --review                      Include judgment-required wording candidates
+  --strict                      Exit 1 on high-confidence issues
+  --strict-review               Exit 1 on high-confidence issues or review candidates
+  --fuzzy                       Enable review mode and add typo-tolerant variants
   --fuzzy-threshold <0..1>      Defaults to 0.9
   --summary-only                Suppress individual console findings
   --help`);
@@ -208,29 +246,69 @@ function reportMarkdown(report: MechanicalWordingReport): string[] {
     `| Files scanned | ${report.filesScanned} |`,
     `| Ordinary files scanned | ${report.ordinaryFilesScanned} |`,
     `| Question rows scanned | ${report.rowsScanned} |`,
-    `| High-confidence findings | ${report.highConfidenceCount} |`,
-    `| Review findings | ${report.reviewCount} |`,
+    `| High-confidence issues | ${report.highConfidenceCount} |`,
+    `| Review candidates | ${report.reviewCount} |`,
     `| Question-table parse errors | ${report.parseErrorCount} |`,
+    "",
+    report.completionCriterion,
+    "",
+    report.reviewPolicy,
     "",
   ];
   if (report.parseErrors.length > 0) {
     lines.push("## Question-Table Parse Errors", "", ...report.parseErrors.map((error) => `- ${error}`), "");
   }
-  if (report.findings.length > 0) {
-    lines.push("## Findings", "");
-    for (const finding of report.findings) {
-      const fuzzyDetail = finding.similarity === undefined
-          ? ""
-          : `; near \`${escapeInlineCode(finding.referencePhrase ?? "")}\` at ${finding.similarity.toFixed(3)}`;
-      lines.push(
-          `- \`${finding.file}:${finding.lineNumber}\` [${finding.cell}] **${finding.confidence}** ` +
-          `\`${finding.ruleId}\`: \`${escapeInlineCode(finding.match)}\`${fuzzyDetail}`,
-          `  - ${escapeMarkdown(finding.excerpt)}`,
-      );
-    }
-    lines.push("");
-  }
+  appendReportFindings(
+      lines,
+      "Actionable Issues",
+      report.findings.filter((finding) => finding.confidence === "high"),
+  );
+  appendReportFindings(
+      lines,
+      "Judgment-Required Review Candidates",
+      report.findings.filter((finding) => finding.confidence === "review"),
+  );
   return lines;
+}
+
+function appendReportFindings(
+    lines: string[],
+    heading: string,
+    findings: readonly MechanicalWordingFinding[],
+): void {
+  if (findings.length === 0) {
+    return;
+  }
+  lines.push(`## ${heading}`, "");
+  for (const finding of findings) {
+    const fuzzyDetail = finding.similarity === undefined
+        ? ""
+        : `; near \`${escapeInlineCode(finding.referencePhrase ?? "")}\` at ${finding.similarity.toFixed(3)}`;
+    lines.push(
+        `- \`${finding.file}:${finding.lineNumber}\` [${finding.cell}] ` +
+        `\`${finding.ruleId}\`: \`${escapeInlineCode(finding.match)}\`${fuzzyDetail}`,
+        `  - ${escapeMarkdown(finding.excerpt)}`,
+        `  - Guidance: ${escapeMarkdown(finding.guidance)}`,
+    );
+  }
+  lines.push("");
+}
+
+function printFindings(title: string, findings: readonly MechanicalWordingFinding[]): void {
+  if (findings.length === 0) {
+    return;
+  }
+  console.log(title);
+  for (const finding of findings) {
+    const fuzzyDetail = finding.similarity === undefined
+        ? ""
+        : ` -> ${JSON.stringify(finding.referencePhrase)} (${finding.similarity.toFixed(3)})`;
+    console.log(
+        `  ${finding.file}:${finding.lineNumber} [${finding.cell}] ` +
+        `${finding.ruleId}: ${JSON.stringify(finding.match)}${fuzzyDetail}`,
+    );
+    console.log(`    Guidance: ${finding.guidance}`);
+  }
 }
 
 function uniqueSorted(values: readonly string[]): string[] {

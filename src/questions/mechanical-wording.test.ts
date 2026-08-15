@@ -23,7 +23,7 @@ test("mechanical wording rules distinguish high-confidence and review findings",
       "**Earlier** in the transcript, the date was uncertain.",
       "The host explained that the date was uncertain.",
   ), "docs/questions/example.md", true);
-  const findings = scanQuestionTableMechanicalWording(parsed);
+  const findings = scanQuestionTableMechanicalWording(parsed, {includeReview: true});
 
   assert.deepEqual(
       findings.map(({cell, confidence, ruleId, match}) => ({cell, confidence, ruleId, match})),
@@ -53,22 +53,75 @@ test("permitted uncertainty and meaningful personal attribution are not flagged"
   assert.deepEqual(scanQuestionTableMechanicalWording(parsed), []);
 });
 
-test("report-shaped answer and transcript frames remain explicit review targets", () => {
+test("meaningful interpretive and disagreement attribution is preserved", () => {
   const parsed = parseQuestionTableText(questionPage(
-      "The answer says the name was rendered in the transcript.",
+      "In Falk's view, the reading best fits the imagery.",
+      "Falk argues that the reading is stronger and rejects the proposed alternative.",
+  ), "docs/questions/example.md", true);
+
+  assert.deepEqual(scanQuestionTableMechanicalWording(parsed), []);
+});
+
+test("report-shaped answer and transcript frames are classified explicitly", () => {
+  const parsed = parseQuestionTableText(questionPage(
+      "The reply confirms the name was rendered in the transcript.",
       "The transcript says the question asks for more than the segment answers.",
   ), "docs/questions/example.md", true);
-  const findings = scanQuestionTableMechanicalWording(parsed);
+  const findings = scanQuestionTableMechanicalWording(parsed, {includeReview: true});
 
   assert.deepEqual(
       findings.map(({confidence, ruleId}) => ({confidence, ruleId})),
       [
-        {confidence: "review", ruleId: "answer-reporting-frame"},
+        {confidence: "high", ruleId: "answer-reporting-frame"},
         {confidence: "high", ruleId: "transcript-rendering-reference"},
-        {confidence: "review", ruleId: "transcript-reporting-frame"},
+        {confidence: "high", ruleId: "transcript-reporting-frame"},
         {confidence: "review", ruleId: "question-reporting-frame"},
       ],
   );
+});
+
+test("conversation-position navigation is an actionable issue", () => {
+  const parsed = parseQuestionTableText(questionPage(
+      "Later in the discussion, Spinosaurus is named as the favorite.",
+      "Spinosaurus is the favorite dinosaur.",
+  ), "docs/questions/example.md", true);
+  const findings = scanQuestionTableMechanicalWording(parsed, {includeReview: false});
+
+  assert.deepEqual(
+      findings.map(({confidence, ruleId, match}) => ({confidence, ruleId, match})),
+      [{
+        confidence: "high",
+        ruleId: "conversation-position-reference",
+        match: "Later in the discussion",
+      }],
+  );
+});
+
+test("subjectless yes-or-no answer continuations are actionable issues", () => {
+  const parsed = parseQuestionTableText(questionPage(
+      "Yes, several times, and recommends it as a must-see.",
+      "Yes. He has visited several times and recommends it as a must-see.",
+  ), "docs/questions/example.md", true);
+  const findings = scanQuestionTableMechanicalWording(parsed);
+
+  assert.deepEqual(
+      findings.map(({cell, confidence, ruleId}) => ({cell, confidence, ruleId})),
+      [{
+        cell: "shortAnswer",
+        confidence: "high",
+        ruleId: "subjectless-personal-verb-after-yes-no",
+      }],
+  );
+});
+
+test("actionable-only scans omit judgment-required review candidates", () => {
+  const parsed = parseQuestionTableText(questionPage(
+      "The date remains uncertain.",
+      "The host explained that the date was uncertain.",
+  ), "docs/questions/example.md", true);
+
+  assert.equal(scanQuestionTableMechanicalWording(parsed, {includeReview: true}).length, 1);
+  assert.deepEqual(scanQuestionTableMechanicalWording(parsed), []);
 });
 
 test("fuzzy review is opt-in and catches typo variants", () => {
@@ -85,7 +138,7 @@ test("fuzzy review is opt-in and catches typo variants", () => {
   assert.ok((findings[0]?.similarity ?? 0) >= 0.9);
 });
 
-test("question-wording CLI is report-only by default and strict on request", () => {
+test("question-wording CLI gates high-confidence and review findings separately", () => {
   const repoRoot = mkdtempSync(join(tmpdir(), "question-wording-"));
   const pagePath = join(repoRoot, "docs/questions/example.md");
   const jsonPath = join(repoRoot, "reports/question-wording-scan.json");
@@ -110,10 +163,28 @@ test("question-wording CLI is report-only by default and strict on request", () 
     assert.equal(existsSync(jsonPath), true);
     assert.equal(existsSync(markdownPath), true);
     assert.match(readFileSync(jsonPath, "utf8"), /transcript-position-reference/u);
+    assert.match(readFileSync(jsonPath, "utf8"), /Remove transcript-position navigation/u);
+    assert.match(readFileSync(jsonPath, "utf8"), /Do not bulk-rewrite/u);
+    assert.match(readFileSync(markdownPath, "utf8"), /## Actionable Issues/u);
     assert.equal(withoutConsole(() => checkQuestionWording([
       "--repo-root",
       repoRoot,
       "--strict",
+    ])), 1);
+
+    writeFileSync(pagePath, questionPage(
+        "The date remains uncertain.",
+        "The host explained that the date was uncertain.",
+    ), "utf8");
+    assert.equal(withoutConsole(() => checkQuestionWording([
+      "--repo-root",
+      repoRoot,
+      "--strict",
+    ])), 0);
+    assert.equal(withoutConsole(() => checkQuestionWording([
+      "--repo-root",
+      repoRoot,
+      "--strict-review",
     ])), 1);
   } finally {
     rmSync(repoRoot, {recursive: true, force: true});
@@ -126,15 +197,19 @@ test("question-wording CLI accepts scoped paths and fuzzy controls", () => {
     "docs/questions/one.md",
     "--path",
     "docs/questions/two.md",
+    "--review",
     "--fuzzy",
     "--fuzzy-threshold",
     "0.93",
+    "--strict-review",
     "--summary-only",
   ]);
   assert.ok(options);
   assert.deepEqual(options.paths, ["docs/questions/one.md", "docs/questions/two.md"]);
+  assert.equal(options.review, true);
   assert.equal(options.fuzzy, true);
   assert.equal(options.fuzzyThreshold, 0.93);
+  assert.equal(options.strictReview, true);
   assert.equal(options.summaryOnly, true);
 });
 

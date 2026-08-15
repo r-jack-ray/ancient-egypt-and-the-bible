@@ -14,12 +14,14 @@ export interface MechanicalWordingFinding {
   confidence: MechanicalWordingConfidence;
   match: string;
   excerpt: string;
+  guidance: string;
   characterStart: number;
   similarity?: number;
   referencePhrase?: string;
 }
 
 export interface MechanicalWordingOptions {
+  includeReview?: boolean;
   includeFuzzy?: boolean;
   fuzzyThreshold?: number;
 }
@@ -30,6 +32,7 @@ interface MechanicalWordingRule {
   cells: readonly MechanicalWordingCell[];
   pattern: RegExp;
   captureGroup: string | null;
+  guidance: string;
 }
 
 interface FuzzyPhrase {
@@ -60,6 +63,7 @@ const deterministicRules: readonly MechanicalWordingRule[] = [
     cells: allCells,
     pattern: /\b(?:(?:earlier|later|elsewhere|previously|above|below)\s+(?:in|from|within)\s+(?:the|this)\s+transcript|(?:in|from|within)\s+(?:the|this)\s+transcript\s+(?:earlier|later|elsewhere|previously|above|below))\b/giu,
     captureGroup: null,
+    guidance: "Remove transcript-position navigation and state the supported answer directly.",
   },
   {
     id: "transcript-rendering-reference",
@@ -67,6 +71,15 @@ const deterministicRules: readonly MechanicalWordingRule[] = [
     cells: allCells,
     pattern: /\b(?:rendered|recorded|preserved|transcribed)\s+in\s+(?:the|this)\s+transcript\b/giu,
     captureGroup: null,
+    guidance: "Use the intended wording only when the source supports it; otherwise preserve the uncertainty.",
+  },
+  {
+    id: "conversation-position-reference",
+    confidence: "high",
+    cells: allCells,
+    pattern: /\b(?:earlier|later|elsewhere|previously|above|below)\s+(?:in|from|within)\s+(?:the|this)\s+(?:discussion|exchange|answer|response|reply)\b/giu,
+    captureGroup: null,
+    guidance: "Remove navigation within the discussion or exchange and state the supported information directly.",
   },
   {
     id: "transcript-authority-frame",
@@ -74,20 +87,23 @@ const deterministicRules: readonly MechanicalWordingRule[] = [
     cells: allCells,
     pattern: /\baccording\s+to\s+(?:the|this)\s+transcript\b/giu,
     captureGroup: null,
+    guidance: "State the transcript-grounded answer directly instead of presenting the transcript as an authority.",
   },
   {
     id: "transcript-reporting-frame",
-    confidence: "review",
+    confidence: "high",
     cells: allCells,
     pattern: /\b(?:the|this)\s+transcript\s+(?:says?|states?|notes?|records?|reads?|renders?|describes?|mentions?|shows?|identifies?|explains?|indicates?)\b/giu,
     captureGroup: null,
+    guidance: "Rewrite as a direct answer when possible; keep explicit source limits when the exchange does not answer the question.",
   },
   {
     id: "answer-reporting-frame",
-    confidence: "review",
+    confidence: "high",
     cells: answerCells,
-    pattern: /\b(?:the|this)\s+(?:answer|response)\s+(?:says?|states?|notes?|records?|explains?|describes?|mentions?|shows?|identifies?|indicates?)\b/giu,
+    pattern: /\b(?:the|this)\s+(?:answer|response|reply)\s+(?:says?|states?|notes?|records?|reports?|explains?|describes?|mentions?|shows?|identifies?|indicates?|confirms?)\b/giu,
     captureGroup: null,
+    guidance: "Replace commentary about the answer, response, or reply with a direct answer, not a passive synonym such as 'is described'; retain uncertainty about what was established.",
   },
   {
     id: "question-reporting-frame",
@@ -95,15 +111,28 @@ const deterministicRules: readonly MechanicalWordingRule[] = [
     cells: answerCells,
     pattern: /\b(?:the|this)\s+question\s+(?:asks?|is\s+asking|says?|states?|mentions?)\b/giu,
     captureGroup: null,
+    guidance: "Remove question-reporting commentary unless it is needed to explain a mismatch between the question and the available answer.",
   },
   {
     id: "routine-attribution-opening",
     confidence: "review",
     cells: answerCells,
-    pattern: /(?:^|[.!?]\s+)(?<phrase>(?:he|the\s+host|dr\.?\s+falk)\s+(?:said|says|argued|argues|explained|explains|rejected|rejects|described|describes|noted|notes|observed|observes|stated|states))\b/giu,
+    pattern: /(?:^|[.!?]\s+)(?<phrase>(?:he|the\s+host|(?:dr\.?\s+)?falk)\s+(?:said|says|explained|explains|described|describes|noted|notes|observed|observes|stated|states))\b/giu,
     captureGroup: "phrase",
+    guidance: "Remove only routine reporting frames, and do not convert them mechanically to passive voice. Preserve attribution when it carries interpretation, uncertainty, disagreement, opinion, preference, or personal experience.",
+  },
+  {
+    id: "subjectless-personal-verb-after-yes-no",
+    confidence: "high",
+    cells: answerCells,
+    pattern: /^(?<phrase>(?:yes|no),\s+(?:once|twice|three\s+times|several\s+times|many\s+times|often|occasionally|rarely|never)\b[^.!?]{0,60},\s+and\s+(?:recommends?|prefers?|argues?|believes?|thinks?|says?|describes?|explains?))\b/giu,
+    captureGroup: "phrase",
+    guidance: "Restore the missing person or subject so the answer is a complete grammatical sentence.",
   },
 ];
+
+const fuzzyGuidance =
+    "Inspect the source before editing this possible variant; remove mechanical navigation without deleting uncertainty or meaningful attribution.";
 
 const fuzzyPhrases: readonly FuzzyPhrase[] = [
   {phrase: "earlier in the transcript", cells: allCells},
@@ -128,6 +157,7 @@ export function scanQuestionTableMechanicalWording(
     options: MechanicalWordingOptions = {},
 ): MechanicalWordingFinding[] {
   const includeFuzzy = options.includeFuzzy ?? false;
+  const includeReview = options.includeReview ?? includeFuzzy;
   const fuzzyThreshold = options.fuzzyThreshold ?? 0.9;
   if (fuzzyThreshold < 0 || fuzzyThreshold > 1) {
     throw new Error("fuzzyThreshold must be between 0 and 1.");
@@ -150,6 +180,7 @@ export function scanQuestionTableMechanicalWording(
           row.lineNumber,
           cell,
           text,
+          includeReview,
           includeFuzzy,
           fuzzyThreshold,
       ));
@@ -164,12 +195,13 @@ function scanCell(
     lineNumber: number,
     cell: MechanicalWordingCell,
     text: string,
+    includeReview: boolean,
     includeFuzzy: boolean,
     fuzzyThreshold: number,
 ): MechanicalWordingFinding[] {
   const located: LocatedFinding[] = [];
   for (const rule of deterministicRules) {
-    if (!rule.cells.includes(cell)) {
+    if (!rule.cells.includes(cell) || (!includeReview && rule.confidence === "review")) {
       continue;
     }
     for (const match of text.matchAll(rule.pattern)) {
@@ -182,14 +214,24 @@ function scanCell(
       const phraseOffset = match[0].lastIndexOf(phrase);
       const start = match.index + Math.max(phraseOffset, 0);
       located.push({
-        finding: baseFinding(file, lineNumber, cell, rule.id, rule.confidence, phrase, text, start),
+        finding: baseFinding(
+            file,
+            lineNumber,
+            cell,
+            rule.id,
+            rule.confidence,
+            phrase,
+            text,
+            start,
+            rule.guidance,
+        ),
         start,
         end: start + phrase.length,
       });
     }
   }
 
-  if (includeFuzzy) {
+  if (includeReview && includeFuzzy) {
     located.push(...fuzzyFindings(file, lineNumber, cell, text, fuzzyThreshold, located));
   }
   return located.map((item) => item.finding);
@@ -247,6 +289,7 @@ function fuzzyFindings(
               candidate,
               text,
               first.start,
+              fuzzyGuidance,
           ),
           similarity: roundedScore(score),
           referencePhrase: reference.phrase,
@@ -292,6 +335,7 @@ function baseFinding(
     match: string,
     text: string,
     characterStart: number,
+    guidance: string,
 ): MechanicalWordingFinding {
   return {
     file,
@@ -301,6 +345,7 @@ function baseFinding(
     confidence,
     match,
     excerpt: excerptAround(text, characterStart, match.length),
+    guidance,
     characterStart,
   };
 }
