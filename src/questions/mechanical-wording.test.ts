@@ -213,6 +213,48 @@ test("question-wording CLI accepts scoped paths and fuzzy controls", () => {
   assert.equal(options.summaryOnly, true);
 });
 
+test("question-wording CLI limits a strict scan to the supplied Markdown path", () => {
+  const repoRoot = mkdtempSync(join(tmpdir(), "question-wording-scoped-"));
+  const cleanRelativePath = "docs/questions/clean.md";
+  const issueRelativePath = "docs/questions/issue.md";
+  try {
+    mkdirSync(join(repoRoot, "docs/questions"), {recursive: true});
+    mkdirSync(join(repoRoot, "src/channel"), {recursive: true});
+    writeFileSync(join(repoRoot, "package.json"), "{}\n", "utf8");
+    writeFileSync(join(repoRoot, "src/channel/episodes.json"), "{}\n", "utf8");
+    writeFileSync(join(repoRoot, cleanRelativePath), questionPage(
+        "The date remains uncertain.",
+        "The surviving evidence does not establish a precise date.",
+    ), "utf8");
+    writeFileSync(join(repoRoot, issueRelativePath), questionPage(
+        "Earlier in the transcript, the date was uncertain.",
+        "The date remains uncertain.",
+    ), "utf8");
+
+    assert.equal(withoutConsole(() => checkQuestionWording([
+      "--repo-root",
+      repoRoot,
+      "--strict",
+    ])), 1);
+    assert.equal(withoutConsole(() => checkQuestionWording([
+      "--repo-root",
+      repoRoot,
+      "--path",
+      cleanRelativePath,
+      "--strict",
+    ])), 0);
+    assert.equal(withoutConsole(() => checkQuestionWording([
+      "--repo-root",
+      repoRoot,
+      "--path",
+      issueRelativePath,
+      "--strict",
+    ])), 1);
+  } finally {
+    rmSync(repoRoot, {recursive: true, force: true});
+  }
+});
+
 function questionPage(shortAnswer: string, expandedAnswer: string): string {
   return [
     "# Example",

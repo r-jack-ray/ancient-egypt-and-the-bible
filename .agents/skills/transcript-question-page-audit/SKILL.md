@@ -302,6 +302,21 @@ Also verify:
 - Any remaining `_Expansion pending._` row is recorded as an explicit deferral or blocker; strict table validation will fail until it is resolved.
 - Transcript inspection supports the expanded-answer prose; a passing structural validator alone does not establish semantic support.
 
+After completing every other page edit and targeted check, run the scoped wording
+check on the page as the final validation step. For a logged audit, run it
+immediately before appending `src/transcript-audit.log`:
+
+```powershell
+npm run check:question-wording -- --path docs/questions/FILE.md --strict --review
+```
+
+Fix every actionable high-confidence issue and rerun the command until it exits
+successfully. Inspect each review candidate against the transcript and preserve
+attribution when it carries interpretation, uncertainty, disagreement, opinion,
+preference, or personal experience. Review candidates require judgment; their
+count does not need to reach zero, and `--strict-review` is not the completion
+gate for this workflow.
+
 ## Final Response
 
 Lead with the result. For completed change tasks, use the repo's compact closeout shape when it fits:
@@ -376,6 +391,7 @@ Finish only when relevant items are true:
 - `question_count_before`, `question_count_after`, and `question_count_change` agree
 - full-coverage audits inspected the TXT transcript from beginning to end without gaps
 - targeted audits were limited only because the user requested or identified a narrow scope
+- the scoped `check:question-wording` command passed for the processed page after all other page checks; review candidates were adjudicated against the transcript rather than bulk-rewritten
 - the audit log was appended only after independent page analysis and validation
 - the recorded `coverage` value matches the work actually performed
 - diff was reviewed

@@ -196,7 +196,8 @@ Derive exact seconds from the TXT display timestamp. If a temporary structured d
 4. Review the resulting diff.
 5. Update navigation and status references, especially `README.md`, when adding or moving public curated pages.
 6. If several pages were created in parallel, serialize shared-file updates such as `README.md`, indexes, status records, and `src/transcript-audit.log` through the parent agent.
-7. Append the creation or regeneration tracking record only after the page and related changes have been validated.
+7. Run the scoped wording check described under Validation as the final page check.
+8. Append the creation or regeneration tracking record only after the page and related changes have been validated and the scoped wording check has passed.
 
 ## Existing Page Safety
 
@@ -397,6 +398,21 @@ If a TXT file was acquired for the stream, verify it exists at the manifest-owne
 
 If a new curated page was added, ensure `README.md` links to the new page when the surrounding README section lists curated episodes or curated pages.
 
+After completing every other page edit and validation step, run the scoped wording
+check on the created page. Run this immediately before appending its creation or
+regeneration record to `src/transcript-audit.log`:
+
+```powershell
+npm run check:question-wording -- --path $path --strict --review
+```
+
+Fix every actionable high-confidence issue and rerun the command until it exits
+successfully. Inspect each review candidate against the transcript and preserve
+attribution when it carries interpretation, uncertainty, disagreement, opinion,
+preference, or personal experience. Review candidates require judgment; their
+count does not need to reach zero, and `--strict-review` is not the completion
+gate for this workflow.
+
 ## Final Response
 
 Lead with the result. For completed change tasks, use the repo's compact closeout shape when it fits:
@@ -432,6 +448,7 @@ A task using this skill is complete only when the relevant items are true:
 - no placeholder links remain
 - `question_count_before`, `question_count_after`, and `question_count_change` agree
 - the final question-row count was checked
+- the scoped `check:question-wording` command passed for the created page after all other page checks; review candidates were adjudicated against the transcript rather than bulk-rewritten
 - the creation or regeneration record was appended only after independent transcript analysis and page validation
 - the recorded `coverage=full` matches the work actually performed
 - ordinary first-pass creation records use `could_use_further_inspection=yes` and do not claim that an audit occurred
