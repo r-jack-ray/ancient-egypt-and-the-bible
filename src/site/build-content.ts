@@ -535,7 +535,7 @@ async function countGeneratedQuestionPages(directory: string): Promise<number> {
 }
 
 async function runSearchIndexBuilder(repoRoot: string): Promise<void> {
-  const scriptPath = join(repoRoot, "scripts/Build-SearchIndex.mjs");
+  const scriptPath = join(repoRoot, "scripts/build-search-index.mjs");
   await requireFile(scriptPath);
   await new Promise<void>((resolvePromise, reject) => {
     const child = spawn(process.execPath, [scriptPath, repoRoot], {
@@ -548,7 +548,7 @@ async function runSearchIndexBuilder(repoRoot: string): Promise<void> {
       if (code === 0) {
         resolvePromise();
       } else {
-        reject(new Error(`Build-SearchIndex.mjs failed with exit code ${code ?? "unknown"}.`));
+        reject(new Error(`build-search-index.mjs failed with exit code ${code ?? "unknown"}.`));
       }
     });
   });

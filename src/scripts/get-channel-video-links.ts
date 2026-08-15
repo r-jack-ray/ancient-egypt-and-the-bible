@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { resolveYoutubeApiKey } from "../youtube/api-key.js";
-import { applyInventoryCandidate, defaultInventoryAdditions, fetchInventoryCandidate, latestNumberedAddition, writeInventoryReport, } from "../youtube/inventory.js";
+import { applyInventoryCandidate, defaultInventoryAdditions, fetchInventoryCandidate, type InventoryCandidate, latestNumberedAddition, writeInventoryReport, } from "../youtube/inventory.js";
 
 const defaultReportPath = "reports/stream-inventory-candidate.json";
 
@@ -28,36 +28,56 @@ async function main(): Promise<void> {
       (reportPath === undefined ? "" : ` report=${reportPath}`),
   );
   if (!args.reviewOnly) {
-    const acceptedAdditionIds = [...args.acceptedAdditionIds];
-    if (args.acceptLatest) {
-      const latest = latestNumberedAddition(candidate.additions);
-      if (latest === undefined) {
-        if (acceptedAdditionIds.length === 0) {
-          console.error("No new numbered livestream is available; canonical inventory is unchanged.");
-          return;
-        }
-      } else if (!acceptedAdditionIds.includes(latest.videoId)) {
-        acceptedAdditionIds.push(latest.videoId);
-        console.error(`Selected latest numbered livestream: ${latest.videoId} (${latest.linkText}).`);
+    await applySelectedInventoryCandidate(candidate, args);
+  } else {
+    console.error("Explicit review-only run; canonical inventory is unchanged.");
+  }
+}
+
+export async function applySelectedInventoryCandidate(
+    candidate: InventoryCandidate,
+    options: {
+      acceptLatest: boolean;
+      acceptedAdditionIds: readonly string[];
+    },
+    dependencies: {
+      apply?: typeof applyInventoryCandidate;
+      logger?: (message: string) => void;
+    } = {},
+): Promise<void> {
+  const apply = dependencies.apply ?? applyInventoryCandidate;
+  const logger = dependencies.logger ?? console.error;
+  const acceptedAdditionIds = [...options.acceptedAdditionIds];
+  if (options.acceptLatest) {
+    const latest = latestNumberedAddition(candidate.additions);
+    if (latest === undefined) {
+      if (acceptedAdditionIds.length === 0) {
+        logger("No new numbered livestream is available; refreshing canonical metadata only.");
       }
-    } else if (acceptedAdditionIds.length === 0) {
-      const defaults = defaultInventoryAdditions(candidate.additions);
-      if (defaults.length === 0) {
-        console.error("No new numbered or special livestream is available; canonical inventory is unchanged.");
-        return;
-      }
+    } else if (!acceptedAdditionIds.includes(latest.videoId)) {
+      acceptedAdditionIds.push(latest.videoId);
+      logger(`Selected latest numbered livestream: ${latest.videoId} (${latest.linkText}).`);
+    }
+  } else if (acceptedAdditionIds.length === 0) {
+    const defaults = defaultInventoryAdditions(candidate.additions);
+    if (defaults.length === 0) {
+      logger("No new numbered or special livestream is available; refreshing canonical metadata only.");
+    } else {
       acceptedAdditionIds.push(...defaults.map((record) => record.videoId));
-      console.error(
+      logger(
           `Selected default livestream additions: ${defaults.map((record) => record.videoId).join(", ")}.`,
       );
     }
-    await applyInventoryCandidate(candidate, {
-      acceptSource: true,
-      acceptedAdditionIds,
-    });
-    console.error("Applied selected additions to canonical episode inventory and metadata.");
+  }
+  await apply(candidate, {
+    acceptSource: true,
+    acceptedAdditionIds,
+    allowEmptySelection: acceptedAdditionIds.length === 0,
+  });
+  if (acceptedAdditionIds.length === 0) {
+    logger("Refreshed canonical livestream metadata; episode inventory is unchanged.");
   } else {
-    console.error("Explicit review-only run; canonical inventory is unchanged.");
+    logger("Applied selected additions to canonical episode inventory and metadata.");
   }
 }
 

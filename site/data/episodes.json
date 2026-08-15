@@ -19,12 +19,12 @@
     "slug": "274-you-get-an-exodus-pharaoh-and-you-get",
     "youtube_url": "https://www.youtube.com/watch?v=to9KKIzyvxs",
     "video_id": "to9KKIzyvxs",
-    "question_page": null,
-    "content_path": null,
-    "status": "missing_question_page",
+    "question_page": "questions/274-you-get-an-exodus-pharaoh-and-you-get-questions.md",
+    "content_path": "questions/274-you-get-an-exodus-pharaoh-and-you-get/",
+    "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 0,
+    "question_count": 92,
     "series": "numbered livestream"
   },
   {

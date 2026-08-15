@@ -25,6 +25,23 @@
       "captionKind": "unknown"
     },
     {
+      "videoId": "to9KKIzyvxs",
+      "fileStem": "274-you-get-an-exodus-pharaoh-and-you-get",
+      "path": "txt/274-you-get-an-exodus-pharaoh-and-you-get.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "7ba9a7811a8bccca00e9d09599fab41618fe902587824ea2f6c7d645732bf5f2",
+      "canonicalByteLength": 253725,
+      "segmentCount": 5615,
+      "firstStartSeconds": 337,
+      "lastStartSeconds": 17158,
+      "fetchedAt": "2026-08-15T16:04:25.046Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "C3_uoVOj19I",
       "fileStem": "273-pouring-out-the-hick-sauce",
       "path": "txt/273-pouring-out-the-hick-sauce.txt",

@@ -4,7 +4,7 @@
   "private": true,
   "type": "commonjs",
   "engines": {
-    "node": ">=22"
+    "node": ">=22.19"
   },
   "scripts": {
     "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\"",
@@ -13,20 +13,17 @@
     "test": "npm run test:search && npm run test:typescript",
     "test:search": "node --test tests/*.test.js",
     "test:typescript": "npm run clean && npm run build && node --test \"dist/**/*.test.js\"",
-    "check": "npm run check:offline",
+    "check": "npm run test:typescript && npm run check:transcript-store && npm run check:js && npm run check:site:static && npm run test:search",
     "check:quick": "npm run check:types && npm run check:js",
-    "check:functional": "npm run test:typescript && npm run check:transcript-store && npm run check:js && npm run check:site:static && npm run test:search",
-    "check:offline": "npm run check:functional && npm run check:no-legacy-json",
-    "check:ci": "npm run check:offline && git diff --check && git diff --exit-code",
-    "check:js": "node --check scripts/Build-SearchIndex.mjs && node --check site/assets/js/search-core.js && node --check site/assets/js/search.js && node --check site/assets/js/site.js",
+    "check:ci": "npm run check && git diff --check && git diff --exit-code",
+    "check:js": "node --check scripts/build-search-index.mjs && node --check site/assets/js/search-core.js && node --check site/assets/js/search.js && node --check site/assets/js/site.js",
     "check:transcript-store": "tsx src/scripts/check-transcript-store.ts",
-    "check:no-legacy-json": "tsx src/scripts/check-no-legacy-json.ts",
     "fetch:livestreams": "tsx src/scripts/get-channel-video-links.ts",
     "refresh:livestream-metadata": "tsx src/scripts/fetch-video-metadata.ts",
     "fetch:transcripts": "tsx src/scripts/fetch-transcript-batch.ts --request-delay-ms 60000",
     "status:transcripts": "tsx src/scripts/transcript-status.ts",
     "build:site-content": "tsx src/scripts/build-hugo-site-content.ts",
-    "build:search-index": "node scripts/Build-SearchIndex.mjs",
+    "build:search-index": "node scripts/build-search-index.mjs",
     "check:question-tables": "tsx src/scripts/check-question-tables.ts",
     "check:search-aliases": "tsx src/scripts/check-hugo-search-aliases.ts",
     "check:site": "tsx src/scripts/check-site.ts",
@@ -39,8 +36,18 @@
   },
   "devDependencies": {
     "@types/node": "^22.20.1",
+    "dice-coefficient": "^2.1.1",
+    "fast-fuzzy": "^1.12.0",
+    "gray-matter": "^4.0.3",
+    "htmlparser2": "^12.0.0",
+    "ignore": "^7.0.6",
+    "lighthouse": "^13.4.1",
+    "markdown-it": "^15.0.0",
     "minisearch": "^7.2.0",
-    "tsx": "^4.23.11",
+    "ps-list": "^9.0.0",
+    "puppeteer-core": "^25.7.0",
+    "systeminformation": "^5.33.1",
+    "tsx": "^4.23.12",
     "typescript": "^5.9.3"
   },
   "allowScripts": {

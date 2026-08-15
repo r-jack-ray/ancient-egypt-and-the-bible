@@ -38,7 +38,11 @@ Use the current repository layout:
 2. Transcript mapping and validation facts: `src/transcripts/manifest.json`
 3. Source transcript: `src/transcripts/txt/<fileStem>.txt`
 
-TXT is the transcript source of record and default curation surface. Resolve its stable `fileStem` from the manifest. Legacy JSON is retained temporarily as optional historical evidence, but normal creation must not require it or create a new JSON payload.
+Transcript source rules:
+
+- Use TXT as the transcript source of record and default curation surface.
+- Resolve the stable `fileStem` from the manifest.
+- Treat retained legacy JSON as optional historical evidence; normal creation must not require it or create a new JSON payload.
 
 If an expected TXT file is missing, validate the store and, when acquisition is authorized, use the safe all-eligible TypeScript batch:
 
@@ -48,7 +52,11 @@ npm run fetch:transcripts -- --dry-run
 npm run fetch:transcripts
 ```
 
-Use `--limit 1` only as a general batch canary; it does not select a video ID. If acquisition reports unavailable captions or no transcript segments, do not invent a page. Temporary structured diagnostics belong under ignored `reports/`, not in the tracked transcript store.
+Acquisition guardrails:
+
+- Use `--limit 1` only as a general batch canary; it does not select a video ID.
+- Do not invent a page when acquisition reports unavailable captions or no transcript segments.
+- Keep temporary structured diagnostics under ignored `reports/` rather than in the tracked transcript store.
 
 ## Output Location
 

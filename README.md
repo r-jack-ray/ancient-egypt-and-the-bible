@@ -2,575 +2,324 @@
 
 > Live site: [r-jack-ray.github.io/ancient-egypt-and-the-bible](https://r-jack-ray.github.io/ancient-egypt-and-the-bible/)
 
-This repository is a public reference project for the *Ancient Egypt and the Bible* livestream archive. Its goal is to turn livestream transcripts into material that is easy to browse, search, quote, and verify from the original videos.
+This repository turns the *Ancient Egypt and the Bible* livestream archive into a searchable, transcript-grounded reference. It combines canonical timestamped transcripts with curated question-and-answer pages so readers can find a topic, inspect a concise answer, and jump to the relevant moment in the original video.
 
-Long livestreams are hard to navigate from transcript text alone. This project keeps canonical TXT transcripts and curated Markdown Q&A pages so readers can jump from a topic or question directly to the matching moment in the video.
+The curated pages are navigation aids. Verify quotations, context, and ambiguous captions against the [original YouTube channel](https://www.youtube.com/@ancientegyptandthebible) and video.
 
-## Start Here
+## Explore the Archive
 
-- [Curated Q&A pages](docs/questions/) - browse the public Markdown reference pages directly.
-- [1 The Debug Episode Questions](docs/questions/1-the-debug-episode-questions.md)
-- [2 Bugs Bugs And Fixes Questions](docs/questions/2-bugs-bugs-and-fixes-questions.md)
-- [3 Thrice The Bugs Thrice The Charm Questions](docs/questions/3-thrice-the-bugs-thrice-the-charm-questions.md)
-- [4 The More Bugs Stomped The More Appear Questions](docs/questions/4-the-more-bugs-stomped-the-more-appear-questions.md)
-- [5 Five And Even More Questions](docs/questions/5-five-and-even-more-questions.md)
-- [6 All Of This Has Happened Before Questions](docs/questions/6-all-of-this-has-happened-before-questions.md)
-- [7 Seven And The Ragged Tiger Questions](docs/questions/7-seven-and-the-ragged-tiger-questions.md)
-- [8 Questions Behind The Eight Ball Questions](docs/questions/8-questions-behind-the-eight-ball-questions.md)
-- [9 The Nine Bows Questions](docs/questions/9-the-nine-bows-questions.md)
-- [10 A Tenth Portion Questions](docs/questions/10-a-tenth-portion-questions.md)
-- [11 Questions At The Eleventh Hour Questions](docs/questions/11-questions-at-the-eleventh-hour-questions.md)
-- [12 The Quorum Of The Twelve Questions](docs/questions/12-the-quorum-of-the-twelve-questions.md)
-- [13 Triskaidekaphobia Questions](docs/questions/13-triskaidekaphobia-questions.md)
-- [14 Fourteen Pieces Of Osiris Questions](docs/questions/14-fourteen-pieces-of-osiris-questions.md)
-- [15 And Other Taboo Jewish Numbers Questions](docs/questions/15-and-other-taboo-jewish-numbers-questions.md)
-- [16 Questions From The East Questions](docs/questions/16-questions-from-the-east-questions.md)
-- [17 Back To Prime Time Questions](docs/questions/17-back-to-prime-time-questions.md)
-- [18 For The Good Life Questions](docs/questions/18-for-the-good-life-questions.md)
-- [19 The First Of Octember Questions](docs/questions/19-the-first-of-octember-questions.md)
-- [20 What's Your Twenty Questions](docs/questions/20-what-s-your-twenty-questions.md)
-- [21 The Weight Of The Soul Questions](docs/questions/21-the-weight-of-the-soul-questions.md)
-- [22 The Catch 22 Of Questions](docs/questions/22-the-catch-22-of-questions.md)
-- [23 The 23 Enigma Questions](docs/questions/23-the-23-enigma-questions.md)
-- [24 The 24 Thrones Questions](docs/questions/24-the-24-thrones-questions.md)
-- [25 The Canonical Age For Levitical Priests Questions](docs/questions/25-the-canonical-age-for-levitical-priests-questions.md)
-- [26 I Can't Believe Weve Been Doing This For 6 Months Questions](docs/questions/26-i-can-t-believe-we-ve-been-doing-this-for-6-months-questions.md)
-- [27 Number Of New Testament Books Questions](docs/questions/27-number-of-new-testament-books-questions.md)
-- [28 The Popcorn Must Flow Questions](docs/questions/28-the-popcorn-must-flow-questions.md)
-- [29 A Copper Penny For Your Thoughts Questions](docs/questions/29-a-copper-penny-for-your-thoughts-questions.md)
-- [30 Full Moon On Saturday Questions](docs/questions/30-full-moon-on-saturday-questions.md)
-- [31 Twas The Night Before The Night Before Christmas Questions](docs/questions/31-twas-the-night-before-the-night-before-christmas-questions.md)
-- [32 Last Stream For 2021 Questions](docs/questions/32-last-stream-for-2021-questions.md)
-- [33 Twenty Twenty Too Questions](docs/questions/33-twenty-twenty-too-questions.md)
-- [34 Nothing Keeps A Sock Puppet Down Could Be Questions](docs/questions/34-nothing-keeps-a-sock-puppet-down-could-be-questions.md)
-- [35 Pyramids Versus Tetrahedrons Questions](docs/questions/35-pyramids-versus-tetrahedrons-questions.md)
-- [36 Sum Of The Integers Of The Beast Questions](docs/questions/36-sum-of-the-integers-of-the-beast-questions.md)
-- [37 Normal Temp Before Mummification Questions](docs/questions/37-normal-temp-before-mummification-questions.md)
-- [38 A Doctorate For Every Bunny Questions](docs/questions/38-a-doctorate-for-every-bunny-questions.md)
-- [39 Master Of The Sock Puppets Questions](docs/questions/39-master-of-the-sock-puppets-questions.md)
-- [40 The Indefinite Extended Idiom Questions](docs/questions/40-the-indefinite-extended-idiom-questions.md)
-- [41 Celebrating 5000 Subs Questions](docs/questions/41-celebrating-5000-subs-questions.md)
-- [42 Answer To The Ultimate Question Of Life The Universe And Everything Questions](docs/questions/42-answer-to-the-ultimate-question-of-life-the-universe-and-everything-questions.md)
-- [43 Discovering The Rediscovered Exodus Questions](docs/questions/43-discovering-the-rediscovered-exodus-questions.md)
-- [44 Voted Most Likely To Become An Atheist By Atheists Questions](docs/questions/44-voted-most-likely-to-become-an-atheist-by-atheists-questions.md)
-- [45 Amulets And Rumors Of Amulets Questions](docs/questions/45-amulets-and-rumors-of-amulets-questions.md)
-- [46 God Is Our Refuge And Strength Questions](docs/questions/46-god-is-our-refuge-and-strength-questions.md)
-- [47 Passover 2022 Questions](docs/questions/47-passover-2022-questions.md)
-- [48 Good Friday Orthodox Style Questions](docs/questions/48-good-friday-orthodox-style-questions.md)
-- [49 Counting The Omer Questions](docs/questions/49-counting-the-omer-questions.md)
-- [50 Terminator Edition Questions](docs/questions/50-terminator-edition-questions.md)
-- [51 Manna Machines Over Area 51 Questions](docs/questions/51-manna-machines-over-area-51-questions.md)
-- [52 One Year Streaming We Can't Believe It Either Questions](docs/questions/52-one-year-streaming-we-can-t-believe-it-either-questions.md)
-- [53 Harmony And Discord Questions](docs/questions/53-harmony-and-discord-questions.md)
-- [54 Amun Re Dumps Amonet Questions](docs/questions/54-amun-re-dumps-amonet-questions.md)
-- [55 Beastie Under The Hood Questions](docs/questions/55-beastie-under-the-hood-questions.md)
-- [56 Celebrating Like A Statistician 6000 10 Subs Questions](docs/questions/56-celebrating-like-a-statistician-6000-10-subs-questions.md)
-- [57 This Business Is Our Fifty Seven Questions](docs/questions/57-this-business-is-our-fifty-seven-questions.md)
-- [58 Is Like The Luckiest Number Ever Questions](docs/questions/58-is-like-the-luckiest-number-ever-questions.md)
-- [59 No Space Like Home Questions](docs/questions/59-no-space-like-home-questions.md)
-- [60 Early Alphabetic Inscriptions In Funnel Cakes Questions](docs/questions/60-early-alphabetic-inscriptions-in-funnel-cakes-questions.md)
-- [61 Understanding Hell There Will Be A Test Questions](docs/questions/61-understanding-hell-there-will-be-a-test-questions.md)
-- [62 Kernels Of Truth Questions](docs/questions/62-kernels-of-truth-questions.md)
-- [63 Wash And Wear Charioteer Gear Questions](docs/questions/63-wash-and-wear-charioteer-gear-questions.md)
-- [64 A Flock Of Horus Birds Questions](docs/questions/64-a-flock-of-horus-birds-questions.md)
-- [65 The Storage City Of Popcorn Questions](docs/questions/65-the-storage-city-of-popcorn-questions.md)
-- [66 Osiris Vampires And Other Undead Playas Questions](docs/questions/66-osiris-vampires-and-other-undead-playas-questions.md)
-- [67 Ignorance Of The Incredulously Fallacious Questions](docs/questions/67-ignorance-of-the-incredulously-fallacious-questions.md)
-- [68 Uncultured As A Philistine Questions](docs/questions/68-uncultured-as-a-philistine-questions.md)
-- [69 They Might Be Giants Questions](docs/questions/69-they-might-be-giants-questions.md)
-- [70 For Those In The Know Questions](docs/questions/70-for-those-in-the-know-questions.md)
-- [71 The First Of Octember Questions](docs/questions/71-the-first-of-octember-questions.md)
-- [72 The Origin Of All Knowledge Questions](docs/questions/72-the-origin-of-all-knowledge-questions.md)
-- [73 When Archaeology Gets Cheesy Questions](docs/questions/73-when-archaeology-gets-cheesy-questions.md)
-- [74 Who Are You What Do You Want Questions](docs/questions/74-who-are-you-what-do-you-want-questions.md)
-- [75 Halloween And Other Obscure Christian Festivals Questions](docs/questions/75-halloween-and-other-obscure-christian-festivals-questions.md)
-- [76 100 Years Of King Tut Questions](docs/questions/76-100-years-of-king-tut-questions.md)
-- [77 Well It Happened Open Room Special Questions](docs/questions/77-well-it-happened-open-room-special-questions.md)
-- [78 Lest We Forget Questions](docs/questions/78-lest-we-forget-questions.md)
-- [79 Another Vague Cleopatra Tomb Sighting Questions](docs/questions/79-another-vague-cleopatra-tomb-sighting-questions.md)
-- [80 Drs Falk And Kennedy Debate After Party Questions](docs/questions/80-drs-falk-and-kennedy-debate-after-party-questions.md)
-- [81 Happy Thanksgiving Weekend Questions](docs/questions/81-happy-thanksgiving-weekend-questions.md)
-- [82 The Censors Are Coming For You Questions](docs/questions/82-the-censors-are-coming-for-you-questions.md)
-- [83 Now Is The Winter Of Our Discontent Questions](docs/questions/83-now-is-the-winter-of-our-discontent-questions.md)
-- [84 And Now Back To Our Regularly Scheduled Program Questions](docs/questions/84-and-now-back-to-our-regularly-scheduled-program-questions.md)
-- [85 St Nicholas Vs Arius The Cage Match This Time It's Theological Questions](docs/questions/85-st-nicholas-vs-arius-the-cage-match-this-time-it-s-theological-questions.md)
-- [86 2022 Ushering Out The Year Of The Dead Hard Drive Questions](docs/questions/86-2022-ushering-out-the-year-of-the-dead-hard-drive-questions.md)
-- [87 8000 Subs Further And Farther Than We Ever Thought Questions](docs/questions/87-8000-subs-further-and-farther-than-we-ever-thought-questions.md)
-- [88 Popcorn Is At The Gates Questions](docs/questions/88-popcorn-is-at-the-gates-questions.md)
-- [89 Osiris God Of The Dead He's Dead Dead Dead As A Door Knocker Questions](docs/questions/89-osiris-god-of-the-dead-he-s-dead-dead-dead-as-a-door-knocker-questions.md)
-- [90 Open Round Table Discussing The Amorite Tablets Questions](docs/questions/90-open-round-table-discussing-the-amorite-tablets-questions.md)
-- [91 Take Two Cuneiform Tablets And Call Me In The Morning Questions](docs/questions/91-take-two-cuneiform-tablets-and-call-me-in-the-morning-questions.md)
-- [92 Ten Myths About The Good Doctor Questions](docs/questions/92-ten-myths-about-the-good-doctor-questions.md)
-- [93 Praying For The People Of Turkey Questions](docs/questions/93-praying-for-the-people-of-turkey-questions.md)
-- [94 A Divinely Inspired Live Stream Or So We Can Dream Questions](docs/questions/94-a-divinely-inspired-live-stream-or-so-we-can-dream-questions.md)
-- [95 Egyptian Myths Interacting With Our Live Streams Questions](docs/questions/95-egyptian-myths-interacting-with-our-live-streams-questions.md)
-- [96 Like A Goodwill Shop Exploded Questions](docs/questions/96-like-a-goodwill-shop-exploded-questions.md)
-- [97 Certified Genuine By The Iaa Questions](docs/questions/97-certified-genuine-by-the-iaa-questions.md)
-- [98 All Pharaohs Are Kings But Not All Kings Are Pharaohs Questions](docs/questions/98-all-pharaohs-are-kings-but-not-all-kings-are-pharaohs-questions.md)
-- [99 9000 At 99 Questions](docs/questions/99-9000-at-99-questions.md)
-- [100 Celebration Could Be Questions](docs/questions/100-celebration-could-be-questions.md)
-- [101 God Will Provide A Lamb Questions](docs/questions/101-god-will-provide-a-lamb-questions.md)
-- [102 Ph D In Ot Or A Cognate Field A False Dilemma Questions](docs/questions/102-ph-d-in-ot-or-a-cognate-field-a-false-dilemma-questions.md)
-- [103 Six Reasons To Watch This Live Stream Questions](docs/questions/103-six-reasons-to-watch-this-live-stream-questions.md)
-- [104 Striving Towards An Inerrant Live Stream Questions](docs/questions/104-striving-towards-an-inerrant-live-stream-questions.md)
-- [105 Happy Birthday Three Years Of Ancient Egypt And The Bible Questions](docs/questions/105-happy-birthday-three-years-of-ancient-egypt-and-the-bible-questions.md)
-- [106 It May Be A Problem If Mr Ec Reads The Bible More Than You Questions](docs/questions/106-it-may-be-a-problem-if-mr-ec-reads-the-bible-more-than-you-questions.md)
-- [107 A Hot Mess Of Ebal Amulet Epigraphy Questions](docs/questions/107-a-hot-mess-of-ebal-amulet-epigraphy-questions.md)
-- [108 The Many Views Of Heck Questions](docs/questions/108-the-many-views-of-heck-questions.md)
-- [109 A Revised View Of Pseudoscience Questions](docs/questions/109-a-revised-view-of-pseudoscience-questions.md)
-- [110 Statues In The Mist Questions](docs/questions/110-statues-in-the-mist-questions.md)
-- [111 Questions In The Garden Questions](docs/questions/111-questions-in-the-garden-questions.md)
-- [112 Questions Are The Reward Questions](docs/questions/112-questions-are-the-reward-questions.md)
-- [113 Questioning The Lore Questions](docs/questions/113-questioning-the-lore-questions.md)
-- [114 Sugary Question Goodness Questions](docs/questions/114-sugary-question-goodness-questions.md)
-- [115 The Magic Of A Good Question Questions](docs/questions/115-the-magic-of-a-good-question-questions.md)
-- [116 Anachronistic Questions Brought Direct To You Questions](docs/questions/116-anachronistic-questions-brought-direct-to-you-questions.md)
-- [117 Celebrating 10000 Subs Questions](docs/questions/117-celebrating-10000-subs-questions.md)
-- [119 Dinosaur Hippo Question Monster Questions](docs/questions/119-dinosaur-hippo-question-monster-questions.md)
-- [120 What Are You Going To Do With Your Question Questions](docs/questions/120-what-are-you-going-to-do-with-your-question-questions.md)
-- [121 Big Questions And Puny Gods Questions](docs/questions/121-big-questions-and-puny-gods-questions.md)
-- [122 Myths The Academic World And Questions](docs/questions/122-myths-the-academic-world-and-questions.md)
-- [123 Biblical Archaeology A Game Any Clown Can Play Questions](docs/questions/123-biblical-archaeology-a-game-any-clown-can-play-questions.md)
-- [124 Questioning Book Learning Questions](docs/questions/124-questioning-book-learning-questions.md)
-- [125 In The Beginning Nope Let's Question Instead Questions](docs/questions/125-in-the-beginning-nope-let-s-question-instead-questions.md)
-- [126 Apocalypse Of The Sock Puppet Questions](docs/questions/126-apocalypse-of-the-sock-puppet-questions.md)
-- [127 Pyramid Of The Puppet Pharaohs Questions](docs/questions/127-pyramid-of-the-puppet-pharaohs-questions.md)
-- [128 Knowledge Gaps Filled Fast Questions](docs/questions/128-knowledge-gaps-filled-fast-questions.md)
-- [129 Anything But Ammonites Questions](docs/questions/129-anything-but-ammonites-questions.md)
-- [130 Million Dollar Questions](docs/questions/130-million-dollar-questions.md)
-- [131 Very Spooky Scary Answers Questions](docs/questions/131-very-spooky-scary-answers-questions.md)
-- [132 The Questions Are Genuine But Not In The Way You Think Questions](docs/questions/132-the-questions-are-genuine-but-not-in-the-way-you-think-questions.md)
-- [133 The Ets D&D Special Live Stream Questions](docs/questions/133-the-ets-d-and-d-special-live-stream-questions.md)
-- [134 Home Sweet Home Questions](docs/questions/134-home-sweet-home-questions.md)
-- [135 Full Time Full Time Questions](docs/questions/135-full-time-full-time-questions.md)
-- [136 Extreme Old Questions](docs/questions/136-extreme-old-questions.md)
-- [137 365 2422 Days Of Questions](docs/questions/137-365-2422-days-of-questions.md)
-- [138 St Nick Is Watching You Questions](docs/questions/138-st-nick-is-watching-you-questions.md)
-- [139 Mr Ec Wishes You A Happy 2024 Questions](docs/questions/139-mr-ec-wishes-you-a-happy-2024-questions.md)
-- [140 Popcorn Or Curse Amulet Which Is Saltier Questions](docs/questions/140-popcorn-or-curse-amulet-which-is-saltier-questions.md)
-- [141 The Sweet Incense Of An Answered Question Questions](docs/questions/141-the-sweet-incense-of-an-answered-question-questions.md)
-- [142 Think About The Questions](docs/questions/142-think-about-the-questions.md)
-- [143 Something Overripe In The State Of The Answers Questions](docs/questions/143-something-overripe-in-the-state-of-the-answers-questions.md)
-- [144 Stampede Of Sacred Cows Questions](docs/questions/144-stampede-of-sacred-cows-questions.md)
-- [145 Questions At 8 Pm Pst Questions](docs/questions/145-questions-at-8-pm-pst-questions.md)
-- [146 An Evening With David Falk Whatcha Expecting Questions](docs/questions/146-an-evening-with-david-falk-whatcha-expecting-questions.md)
-- [147 Celebrating 12000 Subs We Hope Questions](docs/questions/147-celebrating-12000-subs-we-hope-questions.md)
-- [148 Christian Marriage Meant To Endure Questions](docs/questions/148-christian-marriage-meant-to-endure-questions.md)
-- [149 Univocality And Naive Literalism Sitting In A Tree Questions](docs/questions/149-univocality-and-naive-literalism-sitting-in-a-tree-questions.md)
-- [150 Not So Glorious Glass Fish Questions](docs/questions/150-not-so-glorious-glass-fish-questions.md)
-- [151 Nine Myths About Spam Questions](docs/questions/151-nine-myths-about-spam-questions.md)
-- [152 Good Friday 2024 Questions](docs/questions/152-good-friday-2024-questions.md)
-- [153 Philosophy Is A Walk On A Slippery Rock Questions](docs/questions/153-philosophy-is-a-walk-on-a-slippery-rock-questions.md)
-- [154 A Brief Question Of Logic Questions](docs/questions/154-a-brief-question-of-logic-questions.md)
-- [155 The Tyranny Of Hypocrisy Questions](docs/questions/155-the-tyranny-of-hypocrisy-questions.md)
-- [156 The Pursuasion Dictionary Questions](docs/questions/156-the-pursuasion-dictionary-questions.md)
-- [157 The No True Canadian Fallacy Questions](docs/questions/157-the-no-true-canadian-fallacy-questions.md)
-- [158 Biblically Accurate Harsh Language Questions](docs/questions/158-biblically-accurate-harsh-language-questions.md)
-- [159 A Flood Of Questions](docs/questions/159-a-flood-of-questions.md)
-- [160 The Synchronicity Of 13000 Subs Questions](docs/questions/160-the-synchronicity-of-13000-subs-questions.md)
-- [161 All The Second Born Questions](docs/questions/161-all-the-second-born-questions.md)
-- [163 Succeeding At Failed Questions](docs/questions/163-succeeding-at-failed-questions.md)
-- [164 Is Dr Falk The Biblical David Questions](docs/questions/164-is-dr-falk-the-biblical-david-questions.md)
-- [165 The Credible Falk Always Checks The Sources Questions](docs/questions/165-the-credible-falk-always-checks-the-sources-questions.md)
-- [166 Have Nothing To Do With Those Spirally Galaxies Questions](docs/questions/166-have-nothing-to-do-with-those-spirally-galaxies-questions.md)
-- [167 Super Expensive Egyptian Ritual Practice Questions](docs/questions/167-super-expensive-egyptian-ritual-practice-questions.md)
-- [168 Funky Groovy Trendy Ramesses Ii Questions](docs/questions/168-funky-groovy-trendy-ramesses-ii-questions.md)
-- [169 Your Local Ski Resort Cannot Be The Real Mount Sinai Questions](docs/questions/169-your-local-ski-resort-cannot-be-the-real-mount-sinai-questions.md)
-- [170 The Foundation Of All Deposits Questions](docs/questions/170-the-foundation-of-all-deposits-questions.md)
-- [171 A Census Of Every Conjecture Questions](docs/questions/171-a-census-of-every-conjecture-questions.md)
-- [172 A Marathon Of 14000 Subs Questions](docs/questions/172-a-marathon-of-14000-subs-questions.md)
-- [173 I Never Said She Stole My Money Questions](docs/questions/173-i-never-said-she-stole-my-money-questions.md)
-- [174 The Shroud With The X Ray Eyes Questions](docs/questions/174-the-shroud-with-the-x-ray-eyes-questions.md)
-- [175 Meta The Meta Meta Responses Questions](docs/questions/175-meta-the-meta-meta-responses-questions.md)
-- [176 The People Groups Of You Tube Questions](docs/questions/176-the-people-groups-of-you-tube-questions.md)
-- [177 Is David Falk The Same Person As Dr Falk Questions](docs/questions/177-is-david-falk-the-same-person-as-dr-falk-questions.md)
-- [178 Raising Samuel For Fun And Prophet Questions](docs/questions/178-raising-samuel-for-fun-and-prophet-questions.md)
-- [179 Remember That Time I Took A Day Off Me Neither Questions](docs/questions/179-remember-that-time-i-took-a-day-off-me-neither-questions.md)
-- [180 Quirky Square Dancing Publishing Questions](docs/questions/180-quirky-square-dancing-publishing-questions.md)
-- [181 Growing Concern Over The Ever Shrinking Deben Questions](docs/questions/181-growing-concern-over-the-ever-shrinking-deben-questions.md)
-- [182 Rolling Dice For The Answers Questions](docs/questions/182-rolling-dice-for-the-answers-questions.md)
-- [183 Happy All Saints Day Questions](docs/questions/183-happy-all-saints-day-questions.md)
-- [184 Priesthood Of The Most Sacred Question Questions](docs/questions/184-priesthood-of-the-most-sacred-question-questions.md)
-- [185 Song Of The Awesome Questions](docs/questions/185-song-of-the-awesome-questions.md)
-- [186 Our Second Ets D&D Special Live Stream Questions](docs/questions/186-our-second-ets-d-and-d-special-live-stream-questions.md)
-- [187 Post Conference Apocalypse Questions](docs/questions/187-post-conference-apocalypse-questions.md)
-- [188 Turning To Spilling The Coffee Questions](docs/questions/188-turning-to-spilling-the-coffee-questions.md)
-- [189 The Thirteenthest Of Fridays Questions](docs/questions/189-the-thirteenthest-of-fridays-questions.md)
-- [190 Spilt Tea All Over The Floor Questions](docs/questions/190-spilt-tea-all-over-the-floor-questions.md)
-- [191 Happy New Year Questions](docs/questions/191-happy-new-year-questions.md)
-- [192 Truths Facts And Blessed Facts Questions](docs/questions/192-truths-facts-and-blessed-facts-questions.md)
-- [193 Back In The Saddle Questions](docs/questions/193-back-in-the-saddle-questions.md)
-- [194 Vancouver City V Questions](docs/questions/194-vancouver-city-v-questions.md)
-- [195 Wisdom Of The Channel Questions](docs/questions/195-wisdom-of-the-channel-questions.md)
-- [196 Remembering Kenneth A Kitchen Questions](docs/questions/196-remembering-kenneth-a-kitchen-questions.md)
-- [197 Usaid Now Paying Grants In Canadian Tire Money Questions](docs/questions/197-usaid-now-paying-grants-in-canadian-tire-money-questions.md)
-- [198 Travel Tips For Visiting Purgatory Questions](docs/questions/198-travel-tips-for-visiting-purgatory-questions.md)
-- [199 Discovering The Tomb Of Pharaoh Khnop Hotep Questions](docs/questions/199-discovering-the-tomb-of-pharaoh-khnop-hotep-questions.md)
-- [200 The Terrible Two Hundreds Questions](docs/questions/200-the-terrible-two-hundreds-questions.md)
-- [201 Back From The Land Of The Dead Questions](docs/questions/201-back-from-the-land-of-the-dead-questions.md)
-- [202 Rewriting Rewritten History Did Egypt Try To Hide The Monster Pyramid Springs Questions](docs/questions/202-rewriting-rewritten-history-did-egypt-try-to-hide-the-monster-pyramid-springs-questions.md)
-- [203 Degenerative Artificial Intelligence Questions](docs/questions/203-degenerative-artificial-intelligence-questions.md)
-- [204 Never Ending Popcorn Questions](docs/questions/204-never-ending-popcorn-questions.md)
-- [205 Dead Seminaries Society Questions](docs/questions/205-dead-seminaries-society-questions.md)
-- [206 Getting All Wet Questions](docs/questions/206-getting-all-wet-questions.md)
-- [207 Root Of The Problem Questions](docs/questions/207-root-of-the-problem-questions.md)
-- [208 Hysterical Context Error Questions](docs/questions/208-hysterical-context-error-questions.md)
-- [209 One Meaning Flippancy Questions](docs/questions/209-one-meaning-flippancy-questions.md)
-- [210 Reading Into The Lines Questions](docs/questions/210-reading-into-the-lines-questions.md)
-- [211 When Your Guest Is A Gas Bag Questions](docs/questions/211-when-your-guest-is-a-gas-bag-questions.md)
-- [212 One Degree Of Separation Questions](docs/questions/212-one-degree-of-separation-questions.md)
-- [213 Exploring The Sewer World Questions](docs/questions/213-exploring-the-sewer-world-questions.md)
-- [214 Crud Slurping Egyptian Deities Questions](docs/questions/214-crud-slurping-egyptian-deities-questions.md)
-- [215 Amalgamated Lamentations Questions](docs/questions/215-amalgamated-lamentations-questions.md)
-- [216 Rock Around The Ark Tonight Questions](docs/questions/216-rock-around-the-ark-tonight-questions.md)
-- [217 Cringe Scholars Society With Red Wine Questions](docs/questions/217-cringe-scholars-society-with-red-wine-questions.md)
-- [218 License To Exegete Questions](docs/questions/218-license-to-exegete-questions.md)
-- [219 Ten Things You Wish You Knew Questions](docs/questions/219-ten-things-you-wish-you-knew-questions.md)
-- [220 Bears Bears Everywheres Questions](docs/questions/220-bears-bears-everywheres-questions.md)
-- [221 The Concise Fun Notes Edition Questions](docs/questions/221-the-concise-fun-notes-edition-questions.md)
-- [222 The Master Of All Classes Questions](docs/questions/222-the-master-of-all-classes-questions.md)
-- [223 A Question Of Assessed Damage Questions](docs/questions/223-a-question-of-assessed-damage-questions.md)
-- [224 Pareidolia Paranoia Questions](docs/questions/224-pareidolia-paranoia-questions.md)
-- [225 Ancient Egyptian Pyramid Scheme Questions](docs/questions/225-ancient-egyptian-pyramid-scheme-questions.md)
-- [226 Gem Of A Question Questions](docs/questions/226-gem-of-a-question-questions.md)
-- [227 Just One More Question Questions](docs/questions/227-just-one-more-question-questions.md)
-- [228 The Abr Boogie Questions](docs/questions/228-the-abr-boogie-questions.md)
-- [229 A Levite On Every Street Corner Questions](docs/questions/229-a-levite-on-every-street-corner-questions.md)
-- [230 Ten Things About One Thing Questions](docs/questions/230-ten-things-about-one-thing-questions.md)
-- [231 Why Bother With Stream Titles No One Can Read Questions](docs/questions/231-why-bother-with-stream-titles-no-one-can-read-questions.md)
-- [232 The Abr Grove Has No Soul Questions](docs/questions/232-the-abr-grove-has-no-soul-questions.md)
-- [233 Happy All Saints' Eve Questions](docs/questions/233-happy-all-saints-eve-questions.md)
-- [234 The Nephilim Are Coming For You Questions](docs/questions/234-the-nephilim-are-coming-for-you-questions.md)
-- [235 Trick Or Treaty Questions](docs/questions/235-trick-or-treaty-questions.md)
-- [236 Our Third ETS D&D Special Live Stream Questions](docs/questions/236-our-third-ets-d-and-d-special-live-stream-questions.md)
-- [237 Tea Spilled All Over The Floor Questions](docs/questions/237-tea-spilled-all-over-the-floor-questions.md)
-- [238 I've Got Your Emails Questions](docs/questions/238-i-ve-got-your-emails-questions.md)
-- [239 Monsters Of Myth And Rubber Chicken Questions](docs/questions/239-monsters-of-myth-and-rubber-chicken-questions.md)
-- [240 The Last Of Winter's Tea Questions](docs/questions/240-the-last-of-winter-s-tea-questions.md)
-- [241 Decking The Halls With Poison Ivy Questions](docs/questions/241-decking-the-halls-with-poison-ivy-questions.md)
-- [242 Happy New Year 2026 Questions](docs/questions/242-happy-new-year-2026-questions.md)
-- [243 In Search Of Nuance Questions](docs/questions/243-in-search-of-nuance-questions.md)
-- [244 Romani Ite Domum Questions](docs/questions/244-romani-ite-domum-questions.md)
-- [245 Friday The 23 Rd Questions](docs/questions/245-friday-the-23-rd-questions.md)
-- [246 Egyptian Royal Streaming Questions](docs/questions/246-egyptian-royal-streaming-questions.md)
-- [247 A Hamburger Today For A Scarab Tomorrow Questions](docs/questions/247-a-hamburger-today-for-a-scarab-tomorrow-questions.md)
-- [248 An Angel Under Every Rock Questions](docs/questions/248-an-angel-under-every-rock-questions.md)
-- [249 A Seraph In Every Flagon Questions](docs/questions/249-a-seraph-in-every-flagon-questions.md)
-- [250 The Origin Of All Live Streams Questions](docs/questions/250-the-origin-of-all-live-streams-questions.md)
-- [251 Live Streams And Rumors Of Live Streams Questions](docs/questions/251-live-streams-and-rumors-of-live-streams-questions.md)
-- [252 The Golden Sound Fox Questions](docs/questions/252-the-golden-sound-fox-questions.md)
-- [253 The Grassy Nome Theory Questions](docs/questions/253-the-grassy-nome-theory-questions.md)
-- [254 Factoring The Fact Checker Questions](docs/questions/254-factoring-the-fact-checker-questions.md)
-- [255 A Very Good Friday Questions](docs/questions/255-a-very-good-friday-questions.md)
-- [256 18000 Well Read Intelligent Good Looking Subs Questions](docs/questions/256-18000-well-read-intelligent-good-looking-subs-questions.md)
-- [257 There Will Be A Test Questions](docs/questions/257-there-will-be-a-test-questions.md)
-- [258 Tax Time There Aint No Reason And There Aint No Rhyme Questions](docs/questions/258-tax-time-there-aint-no-reason-and-there-aint-no-rhyme-questions.md)
-- [259 A Turn Of The Seasons Questions](docs/questions/259-a-turn-of-the-seasons-questions.md)
-- [260 Forty Two Lost Questions](docs/questions/260-forty-two-lost-questions.md)
-- [261 Naughty Word Free Live Stream Questions](docs/questions/261-naughty-word-free-live-stream-questions.md)
-- [262 The Vancouver Victory Stela Questions](docs/questions/262-the-vancouver-victory-stela-questions.md)
-- [263 The Live Streamer S Gambit Questions](docs/questions/263-the-live-streamer-s-gambit-questions.md)
-- [264 The Shasu Of Vancouver Questions](docs/questions/264-the-shasu-of-vancouver-questions.md)
-- [265 The Pharaoh Of Swing Questions](docs/questions/265-the-pharaoh-of-swing-questions.md)
-- [266 Three Major Questions Questions](docs/questions/266-three-major-questions-questions.md)
-- [267 Ramesses II, Marketing Genius Questions](docs/questions/267-ramesses-ii-marketing-genius-questions.md)
-- [268 Getting It Okay Questions](docs/questions/268-getting-it-okay-questions.md)
-- [269 Smithers Release The Book Hounds Questions](docs/questions/269-smithers-release-the-book-hounds-questions.md)
-- [270 Dead or Ankh Questions](docs/questions/270-live-stream-dead-or-ankh-questions.md)
-- [271 All Your Reliquaries Are Mine Questions](docs/questions/271-all-your-reliquaries-are-mine-questions.md)
-- [272 The Oppression Pharaoh, We Are Legion Questions](docs/questions/272-the-oppression-pharaoh-we-are-legion-questions.md)
-- [273 Pouring Out The Hick Sauce Questions](docs/questions/273-pouring-out-the-hick-sauce-questions.md)
-- [Special Live Stream: Lord of Steel and Sky Q&A Questions](docs/questions/special-live-stream-lord-of-steel-and-sky-q-a-questions.md)
-- [Special Live Stream: All the Stars as Angels Q&A Questions](docs/questions/special-live-stream-all-the-stars-as-angels-q-and-a-questions.md)
-- [Special Live Stream: Reliquary of the Dead Q&A Questions](docs/questions/special-live-stream-reliquary-of-the-dead-q-and-a-questions.md)
-- [Dr. Falk Plays Assassin's Creed Origins (part 1) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-1-questions.md)
-- [Dr. Falk Plays Assassin's Creed Origins (part 2) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-2-questions.md)
-- [Dr. Falk Plays Assassin's Creed Origins (part 3) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-3-questions.md)
-- [Dr. Falk Plays Assassin's Creed Origins (part 4) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-4-questions.md)
-- [Dr. Falk Plays Assassin's Creed Origins (part 5) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-5-questions.md)
-- [Dr. Falk Plays Assassin's Creed Origins (part 6) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-6-questions.md)
-- [Dr. Falk Plays Assassin's Creed Origins (part 7) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-7-questions.md)
-- [Dr. Falk Plays Assassin's Creed Origins (part 8) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-8-questions.md)
-- [Dr. Falk Plays Assassin's Creed Origins (part 9) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-9-questions.md)
-- [Dr. Falk Plays Assassin's Creed Origins (part 10) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-10-questions.md)
-- [Dr. Falk Plays Assassin's Creed Origins (part 11) Questions](docs/questions/dr-falk-plays-assassin-s-creed-origins-part-11-questions.md)
+| Destination | Purpose |
+|---|---|
+| [Curated Markdown](./docs/questions/) | Read the authoritative human-edited Q&A pages directly on GitHub. |
+| [Canonical TXT transcripts](./src/transcripts/txt/) | Search the complete stored transcript corpus. |
+| [Episode inventory](./src/channel/episodes.json) | Inspect canonical stream membership, titles, video IDs, slugs, and transcript policy. |
+| [Hugo site source](./site/) | Inspect the content, layouts, assets, data, and search surfaces used for deployment. |
 
+Timestamp links on Q&A pages open the matching YouTube video at the question start.
 
-- [Livestream episodes](https://r-jack-ray.github.io/ancient-egypt-and-the-bible/episodes/) - public episode list with videos and curated Q&A links.
+## Current Archive Snapshot
+
+Inventory counts observed on 2026-08-15:
+
+| Surface | Coverage |
+|---|---:|
+| Registered streams | 288: 274 numbered and 14 special or side-series streams |
+| Canonical TXT transcripts | 286: 272 numbered and all 14 non-numbered streams |
+| Curated Q&A pages | 286: 272 numbered and all 14 non-numbered streams |
+| Known-unavailable transcripts | 2 numbered streams |
+
+The two canonical `known-unavailable` records are:
+
+- Live Stream #118: *Yeah, Even with Good Questions, the Egyptian Afterlife Still Sucks*
+- Live Stream #162: *King for a Day*
+
+Run `npm run status:transcripts` for the current stored, known-unavailable, pending, and recorded-failure totals.
+
+## Content and Data Flow
+
+The repository has distinct authoritative and generated surfaces:
+
+```text
+YouTube Data API
+  -> src/channel/episodes.json + src/channel/video-metadata.json
+  -> npm run fetch:transcripts
+  -> src/transcripts/manifest.json + src/transcripts/txt/
+  -> transcript-grounded curation and audit
+  -> docs/questions/ + src/transcript-audit.log
+  -> npm run build:site-content
+  -> Hugo question stubs + site data + prebuilt search data
+  -> Hugo render
+  -> site/public/ and the GitHub Pages artifact
+```
+
+| Path | Role and edit policy |
+|---|---|
+| [`src/channel/episodes.json`](./src/channel/episodes.json) | Sole canonical archive inventory and stable identity mapping. |
+| [`src/channel/video-metadata.json`](./src/channel/video-metadata.json) | Canonical normalized YouTube metadata and readiness state. |
+| [`src/transcripts/manifest.json`](./src/transcripts/manifest.json) | Canonical video-to-TXT mapping, provenance, hashes, byte lengths, and line counts. |
+| [`src/transcripts/fetch-status.json`](./src/transcripts/fetch-status.json) | Resumable transcript-acquisition failure state. |
+| [`src/transcripts/txt/`](./src/transcripts/txt/) | Canonical transcript payloads and the source of record for curation. |
+| [`docs/questions/`](./docs/questions/) | Canonical human-edited Q&A pages. Hugo publishes generated counterparts to GitHub Pages. |
+| [`src/transcript-audit.log`](./src/transcript-audit.log) | Append-only creation and audit history. It records work completed rather than transcript evidence. |
+| [`site/data/search-aliases.json`](./site/data/search-aliases.json) | Curated search spelling, transliteration, abbreviation, and phrase aliases. |
+| [`site/data/episodes.json`](./site/data/episodes.json), [`site/data/questions.json`](./site/data/questions.json) | Tracked generated site data. Regenerate and commit these files with source changes. |
+| [`site/static/search/`](./site/static/search/) | Tracked generated MiniSearch documents, index, and manifest. Regenerate and commit them with source changes. |
+| [`site/content/questions/*.md`](./site/content/questions/) | Ignored generated front-matter stubs, except the handwritten tracked `_index.md`. |
+| `site/public/`, `dist/`, `reports/` | Ignored local build or diagnostic output. |
+
+Each canonical TXT line contains a segment index, display timestamp, a tab, and normalized transcript text. Raw transcript JSON and TSV are outside the tracked transcript store.
+
+Ordinary Q&A pages use the filled four-column contract:
+
+```text
+Time | Question | Short answer / answer direction | Expanded answer
+```
+
+Both answer fields are grounded in the manifest-owned TXT transcript. The expanded answer preserves the supported reasoning, examples, qualifications, and uncertainty needed to understand the response.
 
 ## Repository Layout
 
 ```text
-docs/
-  questions/                  Public curated Markdown Q&A reference pages
-reports/
-  Generated local reports, validation output, smoke-test output, and triage artifacts
-scripts/
-  Build-SearchIndex.mjs       Builds precomputed MiniSearch data for the Hugo search page
+.agents/skills/              Repository-specific Codex curation and search workflows
+.github/workflows/           Linux/Windows validation and GitHub Pages deployment
+docs/questions/              Canonical curated Markdown Q&A pages
+project-notes/               Durable project and GitHub handling notes
+reports/                     Ignored generated diagnostics and review artifacts
+scripts/                     JavaScript search-index builder
 site/
-  hugo.yaml                   Hugo site configuration
-  content/                    Generated compatibility content for the Hugo site
-  data/                       Generated episode/question data plus curated search aliases
-  static/search/              Generated prebuilt search index and slim result payload
-  layouts/                    Hugo templates for reference pages and search
-  assets/                     Hugo-managed CSS and client assets
+  assets/                    Hugo-managed CSS and browser JavaScript
+  content/                   Handwritten section indexes and generated question stubs
+  data/                      Generated episode/question data and curated search aliases
+  layouts/                   Hugo templates
+  static/search/             Generated prebuilt search artifacts
+  hugo.yaml                  Hugo configuration
 src/
-  archive.ts                  Typed inventory, manifest, TXT format, and validation contracts
-  channel/
-    episodes.json             Canonical archive identity and stable filename inventory
-    video-metadata.json       Normalized YouTube metadata snapshot
-  questions/                  Question-table validation and revision-triage modules
-  scripts/                    TypeScript command-line entry points
-  site/                       Hugo generation and validation modules
-  transcripts/
-    manifest.json             Validated TXT payload facts and canonical hashes
-    fetch-status.json         Resumable transcript failure state
-    txt/                      Canonical transcript payloads and curation surface
+  channel/                   Canonical archive inventory and YouTube metadata
+  pipeline/                  Atomic-file and lease helpers
+  questions/                 Markdown table parsing and validation
+  scripts/                   TypeScript command-line entry points
+  site/                      Site generation and validation
+  transcripts/              Manifest, fetch state, and canonical TXT payloads
+  youtube/                   Inventory, metadata, and transcript acquisition
+  transcript-audit.log       Append-only curation and audit history
+task-notes/                  Transient project notes and retained decision history
+tests/                       Browser-search tests; TypeScript tests are colocated under src/
 ```
 
-## File Types
+Useful project guidance:
 
-`src/transcripts/txt/` is the transcript source of record for curation and auditing. Each line has a segment index, display timestamp, a tab, and normalized transcript text. `src/transcripts/manifest.json` maps video IDs to stable TXT files and records canonical-LF hashes, lengths, and line counts.
+- [Repository contributor and agent guidance](./AGENTS.md)
+- [First-pass transcript curation skill](./.agents/skills/transcript-to-md-reference/SKILL.md)
+- [Existing-page transcript audit skill](./.agents/skills/transcript-question-page-audit/SKILL.md)
+- [Search-index curation skill](./.agents/skills/search-index-curator/SKILL.md)
+- [GitHub Pages and Actions handling](./project-notes/github-handling/README.md)
+- [Task-note policy](./task-notes/README.md)
 
-Raw transcript JSON and TSV are not part of the tracked transcript store. Create temporary structured diagnostics only under ignored `reports/` when a specific task requires them.
+## Local Setup and Validation
 
-`docs/questions/` contains the canonical, human-edited reference pages. These are meant to be read directly on GitHub Pages and GitHub and may include cleaned-up questions, short answer summaries, and timestamp links.
-
-`site/` contains the Hugo compatibility site. `site/content/questions/_index.md` is the sole handwritten, tracked Markdown file in the question-content directory. Every other `site/content/questions/*.md` file is a generated, ignored front-matter stub; never hand-edit or commit those stubs. The same generator refreshes the tracked data under `site/data/` and `site/static/search/` from `docs/questions/` and the canonical `src/channel/episodes.json` inventory.
-
-## Local Dependencies
-
-Node.js 22 is required for the repository tooling. Run `npm ci` before Hugo compatibility validation so the TypeScript commands and prebuilt MiniSearch index builder use the pinned dependencies. Hugo Extended is required for full local Hugo site validation and preview.
+Node.js 22.19 or newer is required. Install the pinned dependencies before using the repository tooling:
 
 ```powershell
 npm ci
 ```
 
-The canonical network-free repository validation is:
+The canonical network-free validation command is:
 
 ```powershell
 npm run check
 ```
 
-`check` delegates to `check:offline`, which runs the complete functional pipeline plus repository policy checks without requiring network access or Hugo. Use `npm run check:quick` for TypeScript (including unused-code enforcement) and JavaScript syntax only, or `npm run check:functional` when a disposable proof copy intentionally cannot satisfy repository policy checks. GitHub Actions runs `npm run check:ci`, which adds a clean generated-output/worktree requirement after the offline pipeline.
+`npm run check` compiles and tests the TypeScript tools, validates the canonical transcript store, checks JavaScript, regenerates and validates static Hugo/search content, and runs the search tests. Because it reaches `check:site:static`, a separate `build:site-content` run is unnecessary in the normal final validation sequence.
 
-On a clean clone, generate the Hugo question mirrors, data, and search artifacts explicitly with:
+### Command Reference
 
-```powershell
-npm run build:site-content
-```
+| Command | Purpose |
+|---|---|
+| `npm run check:quick` | Type-check with unused-code enforcement and check JavaScript syntax. |
+| `npm test` | Run browser-search tests and compiled TypeScript tests. |
+| `npm run check` | Run the canonical network-free repository validation pipeline. |
+| `npm run check:ci` | Run the canonical validation pipeline, whitespace gate, and tracked generated-output/worktree cleanliness check. Use it on a clean committed checkout or in CI. |
+| `npm run check:transcript-store` | Validate inventory, metadata, manifest, fetch state, TXT payloads, and transaction state. |
+| `npm run status:transcripts` | Print transcript coverage and acquisition status without writing a report. |
+| `npm run check:question-tables` | Validate all Q&A tables and filled expanded answers. |
+| `npm run check:question-tables -- --path docs/questions/<page>.md` | Validate one curated page. |
+| `npm run build:site-content` | Regenerate Hugo question stubs, tracked site data, and prebuilt search artifacts. |
+| `npm run check:search-aliases` | Validate search aliases and their query expectations. |
+| `npm run check:site:static` | Regenerate and validate site content and aliases without invoking Hugo. |
+| `npm run check:site` | Regenerate content, validate aliases and static data, render with Hugo, and validate rendered metadata, indexability, JSON-LD, sitemap coverage, and internal links. |
+| `npm run check:site:rendered -- --public-dir site/public --expected-base-url URL` | Validate an existing production-baseURL Hugo render. |
+| `npm run serve:site` | Regenerate content and serve the site locally at the GitHub Pages subpath. |
 
-The site validation commands, `npm run serve:site`, and GitHub Actions run this generation step automatically. A clean checkout therefore needs no committed episode mirrors under `site/content/questions/`.
+### Hugo Preview
 
-On Windows, install Hugo Extended globally with Winget:
+Hugo Extended is required for a full local render and preview. On Windows:
 
 ```powershell
 winget install Hugo.Hugo.Extended
-```
-
-After installation, open a new terminal and verify that Hugo is on `PATH`:
-
-```powershell
 hugo version
-```
-
-If `hugo version` works, run the full Hugo site validation:
-
-```powershell
 npm run check:site
-```
-
-If Hugo is not installed yet, the non-rendering compatibility checks can still run with:
-
-```powershell
-npm run check:site:static
-```
-
-To generate the compatibility content and preview the Hugo site locally with the same subpath used by GitHub Pages, run:
-
-```powershell
 npm run serve:site
 ```
 
-This command regenerates the site content before starting Hugo. Then open <http://127.0.0.1:1314/ancient-egypt-and-the-bible/>.
+Open <http://127.0.0.1:1314/ancient-egypt-and-the-bible/> after the server starts. Use `npm run check:site:static` when only the Node-based compatibility checks are needed.
 
-For GitHub Pages, GitHub Actions, and deployment environment handling, see [GitHub Handling Notes](project-notes/github-handling/README.md).
+## Livestream Acquisition and Curation
 
-## Transcript Acquisition
+### 1. Refresh the Canonical Inventory
 
-Install the pinned Node 22 dependencies, then validate the tracked canonical store:
+The YouTube API key precedence is `--api-key-file`, `YOUTUBE_API_KEY`, then the ignored `.local/youtube-api-key.txt` fallback. Literal command-line keys are rejected.
 
-```powershell
-npm ci
-npm run check:transcript-store
-```
-
-The ignored API key fallback is `.local/youtube-api-key.txt`. The normal inventory refresh registers numbered livestreams and broadcasts whose titles begin `Special Live Stream`, then stores their metadata:
+Run the normal inventory refresh:
 
 ```powershell
 npm run fetch:livestreams
 ```
 
-The command completes channel discovery, selects every proposed numbered or explicitly titled special livestream, pins the resolved channel source when needed, and atomically updates canonical inventory and metadata. Other broadcasts remain excluded. Use `--accept-latest` or `--accept-addition VIDEO_ID` to make an explicit narrower selection. An explicit `--review-only` run writes the concise delta `reports/stream-inventory-candidate.json` without changing canonical files; ordinary runs write no report unless `--output` is passed.
+By default, the command registers every proposed numbered livestream and every broadcast whose title begins `Special Live Stream`, pins the resolved channel source when needed, and atomically updates [`src/channel/episodes.json`](./src/channel/episodes.json) and [`src/channel/video-metadata.json`](./src/channel/video-metadata.json). Other broadcasts remain outside the canonical inventory.
 
-Run a conservatively paced batch for all ready missing transcripts:
-
-```powershell
-npm run fetch:transcripts
-```
-
-The batch spaces transcript attempts by 60 seconds but does not insert delays between the internal requests needed to fetch one transcript. It stops making requests on blocking/rate-limit evidence, checkpoints typed failure state, skips valid stored and known-unavailable files before any request, and writes no raw transcript JSON. Its final handoff lists every newly stored TXT path and every deferred, failed, or pending record. Use `--dry-run` for a network-free and canonical-write-free preview or `--limit 1` for a batch canary. Recorded failures remain eligible on ordinary later runs; only `known-unavailable` records are durably excluded. Valid stored transcripts are never overwritten.
-
-## Weekly Livestream Workflow
-
-The TypeScript/TXT pipeline replaces the legacy sequence of maintaining a separate Markdown stream index, downloading transcript JSON, and converting that JSON separately. `src/channel/episodes.json` is the sole canonical archive inventory. The weekly curation, two independent audit passes, Hugo generation, and Git review remain part of the process.
-
-### 1. Register new numbered and special livestreams
-
-For the normal weekly pull, fetch a complete inventory and atomically register every proposed numbered livestream and every broadcast whose title begins `Special Live Stream`:
-
-```powershell
-npm run fetch:livestreams
-```
-
-This automatically pins the resolved channel source when needed. Other live broadcasts remain outside canonical inventory.
-
-To make an explicit selection instead of the automatic numbered-and-special set:
-
-```powershell
-npm run fetch:livestreams -- --accept-addition VIDEO_ID_1 --accept-addition VIDEO_ID_2
-```
-
-Request a non-applying diagnostic inventory only when needed:
+Use a report-only review when needed:
 
 ```powershell
 npm run fetch:livestreams -- --review-only
 ```
 
-The explicit diagnostic run writes the ignored delta `reports/stream-inventory-candidate.json`, including source identity, completeness, additions, omissions, title changes, and excluded uploads. Partial probes require `--review-only`, unknown accepted IDs are rejected, and unselected proposed additions remain excluded. Ordinary runs write no report; pass `--output <path>` when a delta artifact is intentionally needed.
+This writes the ignored YouTube channel inventory delta to `reports/stream-inventory-candidate.json` without canonical changes. Use `--accept-latest` or repeat `--accept-addition VIDEO_ID` for an explicit selection, and use `--output <path>` when a report is intentionally required from another run mode.
 
-The accepted inventory atomically updates `src/channel/episodes.json` and `src/channel/video-metadata.json`. The episode store is the sole canonical archive inventory; do not maintain a separate stream list.
+### 2. Acquire Missing Transcripts
 
-### 2. Pull the registered transcript directly to TXT
-
-Fetch every registered, ready livestream that does not yet have a valid TXT transcript:
-
-```powershell
-npm run fetch:transcripts
-```
-
-The separate caption-scraping batch reads canonical episode order, skips valid stored, known-unavailable, and not-ready transcripts, and writes each successful transcript directly to `src/transcripts/txt/<fileStem>.txt` while updating `src/transcripts/manifest.json`. It does not write a JSON transcript or require a conversion step. The final handoff identifies each new TXT path for the creation and audit steps below, plus every deferred, failed, or pending record that still needs attention.
-
-For batch work, preview the selection without network access or canonical writes, then fetch ready missing transcripts:
+Preview the eligible batch without network access or canonical writes, then fetch all ready missing transcripts:
 
 ```powershell
 npm run fetch:transcripts -- --dry-run
 npm run fetch:transcripts
 ```
 
-Use `--limit 1` for a single batch canary. Recorded failures are retried by ordinary later runs, while valid stored transcripts are never overwritten and `known-unavailable` records remain skipped. `npm run refresh:livestream-metadata` refreshes missing and scheduled, live, processing, or otherwise not-ready records so schedule and completion changes are retained; add `-- --refresh-all` for a full metadata refresh.
+The npm command spaces transcript attempts by 60 seconds. It skips valid stored transcripts, known-unavailable records, and streams that are not ready; writes successful payloads directly under [`src/transcripts/txt/`](./src/transcripts/txt/); updates the manifest and fetch state; and reports every stored, deferred, failed, or pending record. Valid stored TXT files remain unchanged. Recorded failures remain eligible on later runs.
 
-### 3. Validate transcript state
+Use `--limit 1` for a batch canary. Refresh incomplete or changing video metadata with:
+
+```powershell
+npm run refresh:livestream-metadata
+npm run refresh:livestream-metadata -- --refresh-all
+```
+
+Validate the resulting state:
 
 ```powershell
 npm run check:transcript-store
 npm run status:transcripts
 ```
 
-`check:transcript-store` validates canonical archive integrity. `status:transcripts` is a read-only stdout status view for stored, known-unavailable, pending, and recorded-failure counts; it creates no report file. If acquisition was interrupted during an inventory or transcript transaction, run `npm run check:transcript-store -- --repair-transaction`, then validate again.
+Reserve `npm run check:transcript-store -- --repair-transaction` for an unfinished inventory or transcript transaction journal.
 
-### 4. Create the first-pass Q&A page
+### 3. Create the First-Pass Q&A Page
 
-Resolve the canonical TXT path through `src/transcripts/manifest.json`, then give Codex this direct instruction:
+Resolve the stable `fileStem` through [`src/transcripts/manifest.json`](./src/transcripts/manifest.json), then use the [first-pass curation skill](./.agents/skills/transcript-to-md-reference/SKILL.md):
 
 ```text
 src/transcripts/txt/<fileStem>.txt process with $transcript-to-md-reference
 ```
 
-The first-pass skill inspects the full TXT transcript, creates the ordinary page under `docs/questions/`, validates its transcript-grounded questions and answers, and appends one creation record to `src/transcript-audit.log`.
+The creation pass inspects the complete transcript, records every supported audience question, writes the canonical page under [`docs/questions/`](./docs/questions/), validates it, and appends one creation record to [`src/transcript-audit.log`](./src/transcript-audit.log).
 
-Ordinary pages use `docs/questions/<slug>-questions.md`. If the slug already ends in `questions`, use `docs/questions/<slug>.md` to avoid a duplicated suffix. Do not use the creation skill to overwrite an existing curated page.
+For new ordinary pages, use `docs/questions/<slug>-questions.md`. When the slug already ends in `questions`, use `docs/questions/<slug>.md`. Existing historical filenames remain stable; resolve existing pages from the actual directory and canonical stream identity.
 
-### 5. Run two independent full audit passes
+### 4. Run One Independent Full Audit
 
-After first-pass creation, run the following instruction twice as separate tasks:
+After creation, use the [page-audit skill](./.agents/skills/transcript-question-page-audit/SKILL.md) once as a separate task:
 
 ```text
-docs/questions/<page>.md process with $transcript-question-page-audit find and fix issues with complete transcript-grounded validation
+docs/questions/<page>.md use $transcript-question-page-audit find and fix issues with complete transcript-grounded validation, full transcript coverage, and final direct-answer wording cleanup; report material changes, checks, blockers, and uncertainty
 ```
 
-Each audit independently inspects the full manifest-owned TXT transcript, repairs supported completeness, timestamp, wording, answer, link, or table issues, validates the resulting page, and appends one audit record to `src/transcript-audit.log`. The second pass audits the result of the first pass; it is not a substitute for first-pass creation.
+Stop the normal semantic workflow when the audit records `coverage=full`, `could_use_further_inspection=no`, `expanded_answers_pending=0`, and validation passes. Run a follow-up only for an explicit trigger such as incomplete coverage, unresolved caption or timestamp uncertainty, a named wording issue, or a broad structural problem found by the audit.
 
-When a page is added or renamed, update this README's explicit page links and `Current Status` counts against the actual filesystem inventory. The known blocked numbered episodes, currently 118 and 162, remain listed until usable transcripts exist.
-
-### 6. Generate and validate Hugo content
+### 5. Validate and Review the Complete Change
 
 ```powershell
 npm run check:question-tables -- --path docs/questions/<page>.md
-npm run build:site-content
-npm run check:site:static
-npm test
+npm run check
 git diff --check
-```
-
-`npm run build:site-content` regenerates the ignored question mirrors under `site/content/questions/`; do not hand-edit or stage those generated mirrors. Use `npm run check:site` when a local Hugo executable is available and a full render is wanted.
-
-### 7. Review, commit, and push
-
-Review the complete feature-branch diff before staging:
-
-```powershell
 git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible status --short
 git diff
 ```
 
-Stage only the reviewed canonical inventory, metadata, TXT, manifest, curated Markdown, README, and audit-log changes. Do not stage ignored reports or generated Hugo question mirrors.
+Review and stage the relevant canonical inventory, metadata, TXT, manifest, fetch state, curated Markdown, audit log, and README changes. Include regenerated tracked [`site/data/episodes.json`](./site/data/episodes.json), [`site/data/questions.json`](./site/data/questions.json), and [`site/static/search/`](./site/static/search/) artifacts. The ignored question stubs under [`site/content/questions/`](./site/content/questions/) and local `site/public/` render stay out of the commit.
 
-```powershell
-git commit -m "add livestream N questions"
-git push
-```
-
-The end-to-end weekly path is:
+The steady-state weekly path is:
 
 ```text
-review YouTube inventory
--> accept stream into canonical episode inventory
--> acquire canonical TXT
--> create first-pass Q&A page
--> run full audit
--> run second full audit
--> generate and validate Hugo content
--> review, commit, and push
+refresh inventory
+  -> acquire canonical TXT
+  -> create first-pass Q&A page
+  -> run one independent full audit
+  -> run npm run check
+  -> review canonical and tracked generated changes
+  -> commit and push
 ```
 
-## Additional Maintenance
+## Q&A Curation Contract
 
-### Validate content changes
+For ordinary pages:
 
-Before committing maintenance changes, run focused checks for the files you touched:
+- Inspect the complete manifest-owned TXT transcript for creation and full-audit tasks.
+- Include all real transcript-supported audience questions, including live chat, super chats, backlog questions, and questions read aloud by the host.
+- Use direct, searchable question wording while preserving names, Bible references, technical terms, dates, and chronology markers.
+- Point each timestamp to the question start and keep the display label equal to the `?t=` value in seconds.
+- Fill both answer columns with transcript-grounded prose. Keep the short answer scannable and the expanded answer sufficiently developed for the source response.
+- Preserve uncertainty and limits when the captions or answer are unclear.
+- Keep outside facts out of the curated answer unless the project scope is explicitly changed.
+
+Use this timestamp-link form:
+
+```html
+<a href="https://youtu.be/VIDEO_ID?t=123" target="_blank" rel="noopener noreferrer">2:03</a>
+```
+
+The site generator derives representative SEO descriptions from curated questions. Add a single transcript-grounded override near the top of a canonical page only when the generated description is weak:
+
+```html
+<!-- seo-description: Concise, accurate description of this episode's questions. -->
+```
+
+## Search Maintenance
+
+Use the [search-index curation skill](./.agents/skills/search-index-curator/SKILL.md) for missing, noisy, misspelled, transliterated, or Bible-reference queries.
+
+- Curate domain-specific aliases in [`site/data/search-aliases.json`](./site/data/search-aliases.json).
+- Change [`site/assets/js/search-core.js`](./site/assets/js/search-core.js) for normalization, matching, ranking support, or highlighting behavior.
+- Change [`site/assets/js/search.js`](./site/assets/js/search.js) or [`site/layouts/search/list.html`](./site/layouts/search/list.html) for browser orchestration or wiring.
+- Change [`scripts/build-search-index.mjs`](./scripts/build-search-index.mjs) when index generation itself needs correction.
+- Add query expectations or tests with every behavior change.
+
+Typical validation is:
 
 ```powershell
-git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible status --short
-git diff --check
-rg "TODO|FIXME|placeholder|timestamp needed|missing timestamp" docs/questions README.md
+npm run build:search-index
+npm run check:search-aliases
+npm test
+npm run check:js
 ```
 
-For curated Markdown edits, also check that table rows have consistent columns, timestamp links use the correct video ID and `?t=` seconds, and summaries are supported by the transcript. For broad README or inventory updates, compare the README list and status counts against `docs/questions/*.md` and `src/transcripts/txt/*.txt`.
+Run `npm run check:site:static` when layouts, generated compatibility content, or site wiring changes.
 
-For ordinary Q&A table structure and expanded-answer cells, run:
+## Reports and Generated Output
 
-```powershell
-npm run check:question-tables
-```
+| Artifact | Created by | Lifecycle |
+|---|---|---|
+| `reports/stream-inventory-candidate.json` | `fetch:livestreams -- --review-only`, or a run with `--output` | Ignored review artifact; replace or remove when the comparison is complete. |
+| `reports/question-table-validation.json` and `.md` | A failing table check, or a passing check with `--report` | Ignored diagnostics; later emitted reports replace them. |
+| [`site/data/episodes.json`](./site/data/episodes.json), [`site/data/questions.json`](./site/data/questions.json), [`site/static/search/`](./site/static/search/) | `build:site-content` and site checks | Tracked deterministic outputs; review and commit changes with their sources. |
+| [`site/content/questions/*.md`](./site/content/questions/) except `_index.md` | `build:site-content` and site checks | Ignored generated stubs; regenerate locally and leave unstaged. |
+| `site/public/` | Hugo | Ignored local render and deployment input. |
 
-A clean run prints one concise summary and creates no report. Failures print their errors and write detailed JSON and Markdown diagnostics under `reports/`; add `-- --report` to request those files for a passing run.
+Put temporary structured diagnostics, validation output, smoke-test output, and triage artifacts under ignored `reports/`. Put transient human or AI notes under [`task-notes/`](./task-notes/) using the [documented naming policy](./task-notes/README.md).
 
-### Recover the canonical transcript store
+## Canonical Store Recovery
 
-`src/channel/episodes.json`, `src/channel/video-metadata.json`, `src/transcripts/manifest.json`, `src/transcripts/fetch-status.json`, and `src/transcripts/txt/` are tracked canonical state. A fresh clone already contains a complete store; there is no bootstrap or manifest-regeneration step.
+The tracked canonical state consists of [`src/channel/episodes.json`](./src/channel/episodes.json), [`src/channel/video-metadata.json`](./src/channel/video-metadata.json), [`src/transcripts/manifest.json`](./src/transcripts/manifest.json), [`src/transcripts/fetch-status.json`](./src/transcripts/fetch-status.json), and [`src/transcripts/txt/`](./src/transcripts/txt/). A fresh clone already contains the store.
 
-For accidental working-tree loss or corruption, first review `git status` and `git diff`, then restore the affected canonical paths from one reviewed, known-good Git commit. Restore every file owned by the same inventory or transcript transaction from the same commit so their identities, hashes, provenance, and status remain coherent. For broader repository loss, use a fresh clone. Then validate the restored state:
+For accidental working-tree loss or corruption, first inspect `git status` and `git diff`. Restore every affected file owned by the same inventory or transcript transaction from one reviewed, known-good commit so identity, hashes, provenance, and status remain coherent. Use a fresh clone for broad repository loss. Then validate:
 
 ```powershell
 npm ci
@@ -578,79 +327,14 @@ npm run check:transcript-store
 npm run check
 ```
 
-Use `npm run check:transcript-store -- --repair-transaction` only for an unfinished transaction journal. Do not synthesize the manifest, metadata, or fetch status from TXT files alone; that would discard canonical provenance and recovery state. After restoring the last committed store, rerun the guarded inventory or transcript acquisition workflow only for reviewed work that was never committed.
+Use `--repair-transaction` only for an unfinished journal. Restore coherent canonical state before rerunning acquisition for reviewed work that was never committed.
 
-### Report ownership and cleanup
+## Continuous Integration and Deployment
 
-| Artifact | Reader and purpose | When generated | Lifecycle |
-|---|---|---|---|
-| `reports/stream-inventory-candidate.json` | Maintainer inspects a concise Google inventory delta when a diagnostic artifact is needed. | An explicit `fetch:livestreams -- --review-only` run, or any run with `--output`. | The next emitted inventory report overwrites it. Delete it when no comparison artifact is needed. |
-| `reports/question-table-validation.json` and `.md` | Maintainer uses detailed local table diagnostics; CI receives the same hard errors directly in its log. | On validation failure, or on a passing run with explicit `--report`. | A later emitted report replaces them. Delete them after a clean validation if the old failure record is no longer useful. |
+The [validation workflow](./.github/workflows/validate.yml) runs `npm run check:ci` on Linux and Windows for pull requests and manual dispatches. The [Pages workflow](./.github/workflows/pages.yml) runs on pushes to `master` and manual dispatches; it validates the repository, installs Hugo Extended, renders the production site, runs `check:site:rendered`, and deploys the Pages artifact.
 
-All retained report files are ignored generated artifacts. Transcript status remains stdout-only through `status:transcripts`, so it has no file cleanup lifecycle.
-
-For Hugo site changes, run:
-
-```powershell
-npm run check:site
-```
-
-This regenerates the compatibility site, verifies source/generated page counts, checks required question-row fields, and runs `hugo --source site` when Hugo is installed.
-
-For search alias-only changes, run the narrower check:
-
-```powershell
-npm run check:search-aliases
-```
-
-Curate search aliases in `site/data/search-aliases.json`, not directly in `site/assets/js/search.js`, unless the indexing behavior itself needs to change.
-
-## How to Use This Reference
-
-Use GitHub search to find a topic, Bible passage, person, place, or episode number. For broad searching, canonical TXT transcripts are usually the fastest to scan. For cleaner browsing, use the curated Markdown pages when available.
-
-Timestamp links point to the relevant place in the YouTube video. Curated Markdown pages may use HTML links with `target="_blank"` so GitHub opens the video in a new tab.
-
-## Current Status
-
-The repository currently has canonical TXT transcripts for 271 numbered episode streams. Curated Markdown pages currently exist for 271 numbered episode streams under `docs/questions/`, matching the current numbered TXT coverage.
-
-Known blocked numbered episodes remain:
-- Live Stream #118: transcript disabled / empty placeholder
-- Live Stream #162: transcript disabled / empty placeholder
-
-Curated pages should be treated as reference aids, not full replacements for the original video or transcript.
-
-## Transcripts Disabled By Creator and Cannot be processed at present.
-- Live Stream #118: Yeah, Even with Good Questions, the Egyptian Afterlife Still Sucks
-- Live Stream #162: King for a Day
-
-## Contributing Notes
-
-When converting transcripts:
-
-- Treat `src/transcripts/txt/` as the canonical transcript payload and curation surface.
-- Resolve video IDs and stable files through `src/channel/episodes.json` and `src/transcripts/manifest.json`.
-- Use the TypeScript direct-to-TXT commands for new acquisition.
-- Do not create new tracked transcript JSON or TSV payloads.
-- Put temporary structured diagnostics and canary output under ignored `reports/`.
-
-When adding or improving a curated page:
-
-- Keep the episode number and title clear at the top.
-- Use `docs/questions/<slug>-questions.md` for ordinary episode pages, unless the slug already ends in `questions`; in that case use `docs/questions/<slug>.md`.
-- Prefer tables for question lists, topic indexes, and timestamp references.
-- Link timestamps directly to YouTube with the `?t=` parameter.
-- Use short, factual answer summaries when the transcript supports them.
-- Preserve uncertainty when the transcript is unclear.
-- Do not silently invent answers that are not present in the source transcript.
-
-For GitHub-friendly timestamp links that open in a new tab, use:
-
-```html
-<a href="https://youtu.be/VIDEO_ID?t=123" target="_blank" rel="noopener noreferrer">2:03</a>
-```
+Repository Pages settings, environment policy, branch validation, and deployment troubleshooting are documented in [GitHub Handling Notes](./project-notes/github-handling/README.md).
 
 ## Scope
 
-This project is a navigation and reference layer over public video transcripts. It is intended to help viewers, students, and researchers find where topics are discussed, then verify context in the original video.
+This project is a navigation and reference layer over public video transcripts. It helps viewers, students, and researchers locate a discussion and verify it in the original video and transcript.

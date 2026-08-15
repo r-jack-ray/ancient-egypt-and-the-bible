@@ -15,6 +15,7 @@ import {
   latestNumberedAddition,
   writeInventoryReport,
 } from "./inventory.js";
+import { resolveVideoReadiness, type VideoMetadataRecord } from "./metadata.js";
 
 const baseline: EpisodeRecord = {
   videoId: "abcdefghijk",
@@ -379,6 +380,15 @@ test("inventory apply rejects empty and unknown selections", () => {
       () => buildAcceptedInventoryEpisodes([baseline], [latest], ["ZYXWVUTSRQP"]),
       /not proposed additions/u,
   );
+  assert.deepEqual(
+      buildAcceptedInventoryEpisodes(
+          [baseline],
+          [latest],
+          [],
+          {allowEmptySelection: true},
+      ),
+      [baseline],
+  );
 });
 
 test("inventory apply atomically updates only canonical episodes and metadata", async () => {
@@ -464,6 +474,100 @@ test("inventory apply atomically updates only canonical episodes and metadata", 
         await readFile(join(repoRoot, "src/channel/video-metadata.json"), "utf8"),
         appliedMetadata,
     );
+  } finally {
+    await rm(repoRoot, {recursive: true, force: true});
+  }
+});
+
+test("inventory apply refreshes stale metadata when there are no episode additions", async () => {
+  const repoRoot = await mkdtemp(join(tmpdir(), "inventory-metadata-refresh-"));
+  try {
+    await mkdir(join(repoRoot, "src/channel"), {recursive: true});
+    const currentStore = {
+      schemaVersion: 1,
+      channel: {
+        handleUrl: "https://www.youtube.com/@ancientegyptandthebible",
+        channelId: "channel-id",
+        uploadsPlaylistId: "uploads-id",
+      },
+      episodes: [baseline],
+    } as const;
+    const staleMetadata: VideoMetadataRecord = {
+      videoId: baseline.videoId,
+      fetchedAt: "2026-08-13T13:22:44.984Z",
+      title: baseline.linkText,
+      durationSeconds: 0,
+      liveBroadcastContent: "upcoming",
+      scheduledStartAt: "2026-08-15T03:00:00Z",
+      privacyStatus: "public",
+      uploadStatus: "uploaded",
+    };
+    const readyMetadata: VideoMetadataRecord = {
+      ...staleMetadata,
+      fetchedAt: "2026-08-15T06:00:00.000Z",
+      durationSeconds: 10_800,
+      liveBroadcastContent: "none",
+      actualStartAt: "2026-08-15T03:05:00Z",
+      actualEndAt: "2026-08-15T06:00:00Z",
+      uploadStatus: "processed",
+    };
+    const unselectedMetadata: VideoMetadataRecord = {
+      videoId: "ZYXWVUTSRQP",
+      fetchedAt: "2026-08-15T06:00:00.000Z",
+      title: "An unnumbered side-series livestream",
+      durationSeconds: 3_600,
+      liveBroadcastContent: "none",
+      scheduledStartAt: "2026-08-14T03:00:00Z",
+      actualStartAt: "2026-08-14T03:05:00Z",
+      actualEndAt: "2026-08-14T04:05:00Z",
+      privacyStatus: "public",
+      uploadStatus: "processed",
+    };
+    await writeFile(
+        join(repoRoot, "src/channel/episodes.json"),
+        `${JSON.stringify(currentStore, null, 2)}\n`,
+        "utf8",
+    );
+    await writeFile(
+        join(repoRoot, "src/channel/video-metadata.json"),
+        `${JSON.stringify({
+          schemaVersion: 1,
+          source: {api: "youtube-data-api-v3"},
+          videos: [staleMetadata],
+        }, null, 2)}\n`,
+        "utf8",
+    );
+    const candidate: InventoryCandidate = {
+      schemaVersion: 1,
+      complete: true,
+      source: {
+        handleUrl: currentStore.channel.handleUrl,
+        channelId: currentStore.channel.channelId,
+        uploadsPlaylistId: currentStore.channel.uploadsPlaylistId,
+      },
+      additions: [episodeFromVideoMetadata(unselectedMetadata, 2)],
+      omittedBaselineVideoIds: [],
+      titleChanges: [],
+      excludedOrdinaryUploadIds: [],
+      metadata: [unselectedMetadata, readyMetadata],
+    };
+
+    await applyInventoryCandidate(candidate, {
+      acceptSource: false,
+      acceptedAdditionIds: [],
+      allowEmptySelection: true,
+      repoRoot,
+    });
+
+    const episodes = JSON.parse(
+        await readFile(join(repoRoot, "src/channel/episodes.json"), "utf8"),
+    ) as { episodes: EpisodeRecord[] };
+    const metadata = JSON.parse(
+        await readFile(join(repoRoot, "src/channel/video-metadata.json"), "utf8"),
+    ) as { videos: VideoMetadataRecord[] };
+    assert.deepEqual(episodes.episodes, [baseline]);
+    assert.deepEqual(metadata.videos, [readyMetadata]);
+    assert.deepEqual(resolveVideoReadiness(metadata.videos[0]), {state: "ready"});
   } finally {
     await rm(repoRoot, {recursive: true, force: true});
   }

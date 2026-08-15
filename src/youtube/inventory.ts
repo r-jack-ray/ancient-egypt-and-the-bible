@@ -159,6 +159,7 @@ export async function applyInventoryCandidate(
     options: {
       acceptSource: boolean;
       acceptedAdditionIds: readonly string[];
+      allowEmptySelection?: boolean;
       repoRoot?: string;
     },
 ): Promise<void> {
@@ -181,6 +182,7 @@ export async function applyInventoryCandidate(
       current.episodes,
       candidate.additions,
       [...accepted],
+      {allowEmptySelection: options.allowEmptySelection === true},
   );
   const next: EpisodesStore = {
     schemaVersion: 1,
@@ -236,6 +238,7 @@ export function buildAcceptedInventoryEpisodes(
     currentEpisodes: readonly EpisodeRecord[],
     additions: readonly EpisodeRecord[],
     acceptedAdditionIds: readonly string[],
+    options: { allowEmptySelection?: boolean } = {},
 ): EpisodeRecord[] {
   const additionsById = new Map(additions.map((record) => [record.videoId, record]));
   const accepted = new Set(acceptedAdditionIds);
@@ -243,7 +246,7 @@ export function buildAcceptedInventoryEpisodes(
   if (unknown.length > 0) {
     throw new Error(`Accepted video IDs are not proposed additions: ${unknown.join(", ")}`);
   }
-  if (additions.length > 0 && accepted.size === 0) {
+  if (additions.length > 0 && accepted.size === 0 && !options.allowEmptySelection) {
     throw new Error("Apply requires at least one --accept-addition or --accept-latest selection.");
   }
   return [

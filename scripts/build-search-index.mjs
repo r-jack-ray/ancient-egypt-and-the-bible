@@ -91,7 +91,7 @@ writeJson(docsPath, displayDocs);
 writeJson(indexPath, miniSearch);
 writeJson(manifestPath, {
   version: 1,
-  generated_by: "scripts/Build-SearchIndex.mjs",
+  generated_by: "scripts/build-search-index.mjs",
   source_data: "site/data/questions.json",
   source_aliases: "site/data/search-aliases.json",
   document_count: displayDocs.length,

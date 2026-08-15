@@ -35,7 +35,12 @@ npm run fetch:transcripts -- --dry-run
 npm run fetch:transcripts
 ```
 
-Use `--limit 1` only as a general batch canary; it does not select a video ID. If the manifest is invalid, the TXT is missing, or acquisition reports no caption segments, stop for that page and report the blocker. Do not guess from the existing Markdown. Legacy JSON is optional historical evidence while retained, not a prerequisite or active source.
+Acquisition guardrails:
+
+- Use `--limit 1` only as a general batch canary; it does not select a video ID.
+- Stop for that page and report the blocker when the manifest is invalid, the TXT is missing, or acquisition reports no caption segments.
+- Do not guess from the existing Markdown.
+- Treat retained legacy JSON as optional historical evidence rather than a prerequisite or active source.
 
 Special-purpose pages may not match the source slug exactly. Resolve the source stream from page headings, links, README references, `src/channel/episodes.json`, or nearby transcript names.
 
@@ -288,8 +293,14 @@ git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible diff --check -- 
 git -c safe.directory=C:/Workspaces/ancient-egypt-and-the-bible diff -- $path
 ```
 
-Also verify display timestamps match `?t=` seconds for changed rows or when links were edited.
-For ordinary pages, also verify the table header is exactly `| Time | Question | Short answer / answer direction | Expanded answer |`, that every data row begins with a timestamp link, and that every expanded-answer cell is non-empty, transcript-grounded text. Treat any remaining `_Expansion pending._` row as an explicit deferral or blocker; strict table validation will fail until it is resolved. Do not treat a passing structural validator as proof that expanded-answer prose is transcript-supported; semantic support still requires transcript inspection.
+Also verify:
+
+- Display timestamps match `?t=` seconds for changed rows or when links were edited.
+- Ordinary-page table headers are exactly `| Time | Question | Short answer / answer direction | Expanded answer |`.
+- Every ordinary-page data row begins with a timestamp link.
+- Every expanded-answer cell contains non-empty, transcript-grounded text.
+- Any remaining `_Expansion pending._` row is recorded as an explicit deferral or blocker; strict table validation will fail until it is resolved.
+- Transcript inspection supports the expanded-answer prose; a passing structural validator alone does not establish semantic support.
 
 ## Final Response
 
@@ -319,9 +330,14 @@ Before editing, count actual question rows as `question_count_before`. After edi
 question_count_change = question_count_after - question_count_before
 ```
 
-Confirm the recorded counts agree. Do not read or summarize the whole log before auditing. After the independent audit, search only for target-file records if prior history may clarify unresolved concerns.
+Logging rules:
 
-Append exactly one new record after validation. Preserve existing records without rewriting, sorting, or normalizing them. Do not add or infer an `audit_pass` number.
+- Confirm the recorded counts agree.
+- Do not read or summarize the whole log before auditing.
+- After the independent audit, search only for target-file records if prior history may clarify unresolved concerns.
+- Append exactly one new record after validation.
+- Preserve existing records without rewriting, sorting, or normalizing them.
+- Do not add or infer an `audit_pass` number.
 
 Record:
 
