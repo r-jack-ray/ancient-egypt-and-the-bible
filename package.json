@@ -20,7 +20,8 @@
     "check:transcript-store": "tsx src/scripts/check-transcript-store.ts",
     "fetch:livestreams": "tsx src/scripts/get-channel-video-links.ts",
     "refresh:livestream-metadata": "tsx src/scripts/fetch-video-metadata.ts",
-    "fetch:transcripts": "tsx src/scripts/fetch-transcript-batch.ts --request-delay-ms 60000",
+    "fetch:transcripts": "tsx src/scripts/fetch-transcript-batch.ts",
+    "fetch:transcripts:safe": "tsx src/scripts/fetch-transcript-batch.ts --request-delay-ms 60000",
     "status:transcripts": "tsx src/scripts/transcript-status.ts",
     "build:site-content": "tsx src/scripts/build-hugo-site-content.ts",
     "build:search-index": "node scripts/build-search-index.mjs",
@@ -52,6 +53,6 @@
     "typescript": "^5.9.3"
   },
   "allowScripts": {
-    "esbuild@0.28.1": true
+    "esbuild@0.28.2": true
   }
 }

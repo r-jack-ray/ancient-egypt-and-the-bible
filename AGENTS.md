@@ -144,6 +144,7 @@ Transcript curation rules:
 - Preserve uncertainty when audio or transcript text is unclear.
 - Include all real questions supported by the transcript, including questions beyond super chats.
 - Keep curated pages useful as navigation aids with a question, timestamp, direct video link, short answer direction, and transcript-grounded expanded answer when supported by the source.
+- Dating standard nomenclature is BC and AD and not BCE and CE. Override any BCE/CE references to BC/AD.
 
 ### Agent Routing
 

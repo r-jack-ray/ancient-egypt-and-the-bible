@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "CsODLTtHgBk",
+      "fileStem": "275-the-week-after-the-end-of-the-world",
+      "path": "txt/275-the-week-after-the-end-of-the-world.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "d14424da41c14622d451a64faee700b5f649d92596b6e525a2b46db3b56dbe97",
+      "canonicalByteLength": 220031,
+      "segmentCount": 4983,
+      "firstStartSeconds": 492,
+      "lastStartSeconds": 15800,
+      "fetchedAt": "2026-08-22T17:51:22.355Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "bxrBgOpzJPg",
       "fileStem": "special-live-stream-lord-of-steel-and-sky-q-a",
       "path": "txt/special-live-stream-lord-of-steel-and-sky-q-a.txt",
