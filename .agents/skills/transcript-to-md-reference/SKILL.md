@@ -20,6 +20,8 @@ The canonical public livestream inventory is `src/channel/episodes.json`. Treat 
 
 This skill is for first-pass page creation with Codex. Use `transcript-question-page-audit` for later correction passes, completeness audits, timestamp repairs, or minimal-diff improvements to existing pages.
 
+Before drafting public prose, read `.agents/skills/humanizer/SKILL.md` completely. Reserve its embedded-mode rewrite loop for the final public-wording pass below.
+
 ## Default Behavior
 
 Default to creating the requested page or pages with full transcript coverage. Keep artifact completeness and validation independent of closeout length.
@@ -174,6 +176,7 @@ After completing the transcript inventory:
 5. Add a transcript-grounded expanded answer that gives the main reasoning, caveats, examples, or limits supported by the answer span.
 6. Preserve uncertainty when the answer is incomplete or indirect.
 7. Write the output under `docs/questions/`.
+8. After all transcript-backed row content is drafted, run the Final Public-Wording Pass below before verifying the rows.
 
 ### 7. Verify Every Row
 
@@ -270,12 +273,15 @@ Question wording should create direct, searchable questions:
 
 Answer wording should be concise, third-person, and useful in search results:
 
-- write short and expanded answers as concise third-person summaries of the host's response
-- reflect what the host actually says
+- write short and expanded answers as direct, concise third-person explanations
+- reflect the transcript-supported answer
 - preserve caveats, uncertainty, disagreement, and limits
 - avoid outside research
-- do not begin routine answers with "He said," "He argued," or "He explained."
-- use attribution only when the answer depends on the host's interpretation, uncertainty, disagreement, or stated opinion
+- do not begin routine answers with "He said," "He argued," "He explained," or equivalent `the host` reporting frames
+- use explicit speaker attribution only when the identity carries necessary meaning, such as distinguishing speakers, owning a direct quotation, or preserving personal status, experience, or preference
+- preserve interpretation, uncertainty, disagreement, opinion, humor, and source limits without automatically preserving a generic speaker label; in a single-source answer, wording such as `In this reading...` can retain the distinction without repeating `the host`
+- preserve claim type and ownership: a self-description must remain a self-description, a personal judgment must remain a judgment, a recommendation must remain advice, and a personal knowledge limit must not become a general claim
+- do not replace meaningful attribution with passive voice or an abstract proxy merely to remove a speaker label; if direct subject-first prose would overstate the source, use compact wording such as `In his view...`, `He describes himself as...`, `He recommends...`, or `He rejects...`
 - prefer compact phrasing suitable for search results, tables, and index pages
 - preserve the difference between what the question asks and what the answer actually supports
 
@@ -293,6 +299,20 @@ Use uncertainty when needed:
 ```text
 The transcript does not give a clear direct answer.
 ```
+
+## Final Public-Wording Pass
+
+After the complete question inventory and transcript-grounded row content are drafted, and before final row verification, validation, navigation updates, and creation logging:
+
+1. Apply `$humanizer` in embedded mode. Run its draft, audit, and final loop internally, then write only the final prose to the page. Do not place Humanizer draft text, audit bullets, or a separate Humanizer summary in the Markdown, audit log, or handoff.
+2. Review every authored public prose field in the new page with Humanizer: questions, short answers, expanded answers, and any SEO description or other authored public prose. This defines the review scope, not a rewrite quota. Leave clean prose unchanged. Read each short and expanded answer together, then scan adjacent rows so repeated attribution and uniform sentence patterns are visible across the page.
+3. Treat the transcript and this skill's evidence-preservation rules as higher priority than generic Humanizer defaults. Preserve every supported claim, proper noun, title, date, number, Bible reference, technical term, searchable question detail, qualification, caveat, uncertainty, interpretation, disagreement, opinion, humor, personal experience, and source limitation. Do not resolve unclear names or terms from outside knowledge, turn an interpretation into an objective fact, or add specificity absent from the transcript.
+4. The page, video link, and transcript mapping already establish provenance. In a single-speaker answer, remove framing such as `the host`, `the speaker`, `the presenter`, `the lecturer`, repeated speaker names, and reporting openings such as `he said` when they only identify who supplied the answer. Prefer natural subject-first prose for claims the transcript presents directly. Scan the whole page for these forms and adjudicate every hit. A remaining hit is valid when the following ownership rules require it; zero matches is not the goal.
+5. Preserve claim ownership when it affects meaning. Self-description, personal status, knowledge, experience, preference, judgment, interpretation, disagreement, rejection, and recommendation may require compact attribution even in a solo-speaker stream. `He describes his Egyptology as mainstream` and `In his view, intuition is largely innate` preserve distinctions that categorical rewrites would erase.
+6. Do not hide meaningful ownership with passive voice such as `is considered`, `is criticized`, or `are urged`, or make an abstract proxy perform a human act merely to avoid attribution. Choose a natural subject. Keep compact attribution when removing it would make the sentence more absolute, awkward, or unclear.
+7. Determine speaker context from the transcript before removing a name or pronoun. Preserve audience members, guests, quoted scholars, historical figures, and other people who could be confused with the main speaker. Do not replace one repetitive label with another.
+8. During this pass, leave stream-identifying headings, timestamp anchors and link targets, table columns, row order, Markdown structure, filenames, source identity, and audit-log text unchanged.
+9. Recheck every rewritten cell against its answer span and its pre-Humanizer wording. Confirm that the claim is still the same kind of claim and that the sentence has a natural subject and verb. Reject or revise wording that adds, removes, strengthens, weakens, generalizes, or reattributes a claim. The scoped wording check remains an additional validation gate, not a substitute for this evidence check.
 
 ## Table Rules
 
@@ -408,10 +428,12 @@ npm run check:question-wording -- --path $path --strict --review
 
 Fix every actionable high-confidence issue and rerun the command until it exits
 successfully. Inspect each review candidate against the transcript and preserve
-attribution when it carries interpretation, uncertainty, disagreement, opinion,
-preference, or personal experience. Review candidates require judgment; their
-count does not need to reach zero, and `--strict-review` is not the completion
-gate for this workflow.
+attribution when it carries self-description, personal status or knowledge,
+interpretation, uncertainty, disagreement, opinion, recommendation, preference,
+or personal experience. Do not clear a review candidate by converting meaningful
+attribution to passive voice or an awkward abstract subject. Review candidates
+require judgment; their count does not need to reach zero, and `--strict-review`
+is not the completion gate for this workflow.
 
 ## Final Response
 
@@ -436,7 +458,9 @@ A task using this skill is complete only when the relevant items are true:
 - retained questions are supported by transcript text
 - retained questions are written as direct, searchable questions
 - answer summaries are supported by transcript text and preserve uncertainty
-- short and expanded answers use concise third-person phrasing and avoid routine "He said" openings
+- short and expanded answers use concise third-person phrasing and avoid routine reporting frames and generic speaker labels without a transcript-grounded reason
+- the embedded Humanizer pass covered all authored public prose and every rewrite was rechecked against the transcript
+- Humanizer rewrites preserve claim type and ownership; attribution removal did not turn self-description, judgment, recommendation, or personal knowledge into a categorical, passive, or awkward claim
 - no outside facts were added
 - timestamps point to question starts
 - timestamp links use `?t=` seconds
