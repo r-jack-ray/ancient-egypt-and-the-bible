@@ -19,13 +19,13 @@ Timestamp links on Q&A pages open the matching YouTube video at the question sta
 
 ## Current Archive Snapshot
 
-Inventory counts observed on 2026-08-15:
+Inventory counts observed on 2026-08-29:
 
 | Surface | Coverage |
 |---|---:|
-| Registered streams | 288: 274 numbered and 14 special or side-series streams |
-| Canonical TXT transcripts | 286: 272 numbered and all 14 non-numbered streams |
-| Curated Q&A pages | 287: 273 numbered and all 14 non-numbered streams |
+| Registered streams | 290: 276 numbered and 14 special or side-series streams |
+| Canonical TXT transcripts | 288: 274 numbered and all 14 non-numbered streams |
+| Curated Q&A pages | 288: 274 numbered and all 14 non-numbered streams |
 | Known-unavailable transcripts | 2 numbered streams |
 
 The two canonical `known-unavailable` records are:

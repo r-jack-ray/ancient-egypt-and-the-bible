@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "EtsUriBXx9s",
+      "fileStem": "276-one-ring-to-rule-them-all-joseph-style",
+      "path": "txt/276-one-ring-to-rule-them-all-joseph-style.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "92b3639fae6c0c7830323620bd4fa16a906482ab5915d3b68e3a79e09d87e053",
+      "canonicalByteLength": 219514,
+      "segmentCount": 4866,
+      "firstStartSeconds": 0,
+      "lastStartSeconds": 15669,
+      "fetchedAt": "2026-08-29T10:37:03.312Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "CsODLTtHgBk",
       "fileStem": "275-the-week-after-the-end-of-the-world",
       "path": "txt/275-the-week-after-the-end-of-the-world.txt",
