@@ -21,6 +21,25 @@ Use `transcript-to-md-reference` instead for first-pass page creation.
 
 Before editing public prose, read `.agents/skills/humanizer/SKILL.md` completely. Reserve its embedded-mode rewrite loop for the final public-wording pass below.
 
+## Scope Boundary
+
+Treat the page or pages named by the user as the complete audit scope. For each target page, access only the material needed for that page:
+
+- the named Q&A Markdown page
+- its exact records in `src/channel/episodes.json` and `src/transcripts/manifest.json`
+- its manifest-owned TXT transcript
+- this skill, the Humanizer skill, and directly invoked validator implementation when troubleshooting a target-scoped check
+- `src/transcript-audit.log`, limited to target-file history when needed and one authorized append after validation
+
+Use explicit file paths and target-scoped commands throughout the audit. Do not inventory the repository or inspect unrelated worktree state:
+
+- do not run `git status`, an unscoped `git diff`, `git diff --stat`, or another command that lists repository-wide changes
+- do not open, diff, summarize, or report changes in `package.json`, lockfiles, other Q&A pages, other transcripts, generated site files, or any file outside the target's evidence and validation path
+- do not inspect neighboring pages or transcripts for comparison, style, possible omissions, or concurrent work unless the user explicitly adds them to the audit scope
+- if unrelated paths appear incidentally in command output, ignore them and continue without investigating or mentioning them
+
+Only the target page and one audit-log record may be changed by this workflow. Write a report or diagnostic file only when the user explicitly requests one. If a validator cannot remain target-scoped, use the target-only fallback checks in this skill instead of broadening the audit.
+
 ## Sources
 
 Use these in order:
@@ -29,22 +48,18 @@ Use these in order:
 2. Canonical identity and path: `src/channel/episodes.json` and `src/transcripts/manifest.json`
 3. Source transcript: `src/transcripts/txt/<fileStem>.txt`
 
-If an expected TXT is missing, validate the store and use the safe all-eligible batch only when acquisition is authorized:
+If an expected TXT is missing, stop and report the store inconsistency. Do not
+run repository-wide store validation or all-eligible transcript acquisition as
+part of this page audit. Acquisition is a separate task that requires explicit
+user authorization before the audit can resume.
 
-```powershell
-npm run check:transcript-store
-npm run fetch:transcripts -- --dry-run
-npm run fetch:transcripts
-```
+Source guardrails:
 
-Acquisition guardrails:
-
-- Use `--limit 1` only as a general batch canary; it does not select a video ID.
-- Stop for that page and report the blocker when the manifest is invalid, the TXT is missing, or acquisition reports no caption segments.
+- Stop for that page and report the blocker when the manifest is invalid or the TXT is missing.
 - Do not guess from the existing Markdown.
-- Treat retained legacy JSON as optional historical evidence rather than a prerequisite or active source.
+- Do not inspect retained legacy JSON unless the user explicitly identifies it as evidence for the named page.
 
-Special-purpose pages may not match the source slug exactly. Resolve the source stream from page headings, links, README references, `src/channel/episodes.json`, or nearby transcript names.
+Special-purpose pages may not match the source slug exactly. Resolve the source stream from the page heading and links, then the exact matching records in `src/channel/episodes.json` and `src/transcripts/manifest.json`. Do not inspect nearby Q&A pages or transcript files to infer the mapping. If the exact source remains ambiguous, stop and report the blocker.
 
 ## Audit Workflow
 
@@ -59,7 +74,7 @@ Read the Markdown page first. Extract:
 
 Use `src/channel/episodes.json` to confirm uncertain title, slug, or video ID.
 
-Do not require legacy JSON or create tracked TSV diagnostics. The canonical TXT should answer page-scoped audit questions; put exceptional diagnostics under ignored `reports/`.
+Do not require legacy JSON or create diagnostics. The canonical TXT should answer page-scoped audit questions.
 
 ### 2. Determine Coverage
 
@@ -199,7 +214,7 @@ Short answers should be concise and search-friendly. Expanded answers should be 
 - preserve caveats, uncertainty, disagreement, and limits
 - avoid outside research
 - make routine answer cells answer-shaped, not report-shaped: prefer `Pyramids were resurrection machines...` over `The host described pyramids as...`
-- use `docs/questions/266-three-major-questions-questions.md` as the style model for direct answer phrasing: `The Greek term means...`, `Wine was already present...`, and `The ark's danger is tied...`
+- prefer direct answer phrasing such as `The Greek term means...`, `Wine was already present...`, and `The ark's danger is tied...`
 - do not mechanically replace "He said" with "The host said"; if attribution is unnecessary, remove the attribution frame entirely
 - avoid routine openings such as "He said," "He says," "He rejects," "He argued," "He explained," "The host said," "The host argued," or "The host explained"
 - use explicit speaker attribution only when the identity carries necessary meaning, such as distinguishing speakers, owning a direct quotation, or preserving personal status, experience, or preference
@@ -279,19 +294,18 @@ After the transcript comparison and all row-content decisions are complete, and 
 
 ## Validation
 
-After edits, run targeted checks. For ordinary pages, prefer the repo validator,
-which requires four-column rows and populated expanded answers by default:
-
-```powershell
-npm run check:question-tables
-```
-
-For a narrow single-file pass, or when the full corpus validator is too noisy or
-slow for the current task, scope the same validator to the target file:
+After edits, run only target-scoped checks. For ordinary pages, use the scoped
+repo validator, which requires four-column rows and populated expanded answers
+by default:
 
 ```powershell
 npm run check:question-tables -- --path docs/questions/FILE.md
 ```
+
+Do not run the unscoped `npm run check:question-tables` command during this
+workflow. If the scoped command ignores its path, reports unrelated files, or
+cannot run cleanly, stop using it for this audit and run the local target-file
+checks below.
 
 The validator's table-analysis implementation is `src/questions/table-analysis.ts`.
 If the scoped validator is unavailable in an older checkout, run these
@@ -342,7 +356,10 @@ is not the completion gate for this workflow.
 
 ## Final Response
 
-Lead with the result. For completed change tasks, use the repo's compact closeout shape when it fits:
+Lead with the result. Report only the named page, its matching transcript, the
+target-scoped checks, and the authorized audit-log append. Do not mention or
+characterize unrelated worktree changes. For completed change tasks, use the
+repo's compact closeout shape when it fits:
 
 - Changed:
 - Files:
@@ -419,5 +436,5 @@ Finish only when relevant items are true:
 - the scoped `check:question-wording` command passed for the processed page after all other page checks; review candidates were adjudicated against the transcript rather than bulk-rewritten
 - the audit log was appended only after independent page analysis and validation
 - the recorded `coverage` value matches the work actually performed
-- diff was reviewed
+- the target-page diff was reviewed with an explicit pathspec; no repository-wide status or diff inspection was performed
 - final response retains all material changes, checks, blockers, and uncertainty without optional transcript-by-transcript detail
