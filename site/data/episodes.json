@@ -1,5 +1,19 @@
 [
   {
+    "number": 277,
+    "title": "Climate Change In A Teacup",
+    "slug": "277-climate-change-in-a-teacup",
+    "youtube_url": "https://www.youtube.com/watch?v=WxBeDodHT9c",
+    "video_id": "WxBeDodHT9c",
+    "question_page": "questions/277-climate-change-in-a-teacup-questions.md",
+    "content_path": "questions/277-climate-change-in-a-teacup/",
+    "status": "curated",
+    "is_numbered": true,
+    "is_special": false,
+    "question_count": 99,
+    "series": "numbered livestream"
+  },
+  {
     "number": 276,
     "title": "One Ring To Rule Them All, Joseph Style",
     "slug": "276-one-ring-to-rule-them-all-joseph-style",
@@ -10,7 +24,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 98,
+    "question_count": 99,
     "series": "numbered livestream"
   },
   {
@@ -80,7 +94,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 70,
+    "question_count": 72,
     "series": "numbered livestream"
   },
   {
@@ -220,7 +234,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 67,
+    "question_count": 69,
     "series": "numbered livestream"
   },
   {
@@ -234,7 +248,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 88,
+    "question_count": 91,
     "series": "numbered livestream"
   },
   {
@@ -262,7 +276,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 64,
+    "question_count": 65,
     "series": "numbered livestream"
   },
   {
@@ -304,7 +318,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 80,
+    "question_count": 83,
     "series": "numbered livestream"
   },
   {
@@ -318,7 +332,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 67,
+    "question_count": 68,
     "series": "numbered livestream"
   },
   {
@@ -360,7 +374,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 70,
+    "question_count": 71,
     "series": "numbered livestream"
   },
   {
@@ -374,7 +388,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 67,
+    "question_count": 68,
     "series": "numbered livestream"
   },
   {
@@ -402,7 +416,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 58,
+    "question_count": 59,
     "series": "numbered livestream"
   },
   {
@@ -514,7 +528,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 74,
+    "question_count": 75,
     "series": "numbered livestream"
   },
   {
@@ -556,7 +570,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 64,
+    "question_count": 66,
     "series": "numbered livestream"
   },
   {
@@ -584,7 +598,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 26,
+    "question_count": 29,
     "series": "numbered livestream"
   },
   {
@@ -598,7 +612,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 55,
+    "question_count": 56,
     "series": "numbered livestream"
   },
   {
@@ -654,7 +668,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 82,
+    "question_count": 83,
     "series": "numbered livestream"
   },
   {
@@ -682,7 +696,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 74,
+    "question_count": 76,
     "series": "numbered livestream"
   },
   {
@@ -696,7 +710,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 70,
+    "question_count": 71,
     "series": "numbered livestream"
   },
   {
@@ -710,7 +724,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 67,
+    "question_count": 68,
     "series": "numbered livestream"
   },
   {
@@ -724,7 +738,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 48,
+    "question_count": 52,
     "series": "numbered livestream"
   },
   {
@@ -738,7 +752,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 54,
+    "question_count": 58,
     "series": "numbered livestream"
   },
   {
@@ -794,7 +808,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 80,
+    "question_count": 85,
     "series": "numbered livestream"
   },
   {
@@ -808,7 +822,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 67,
+    "question_count": 68,
     "series": "numbered livestream"
   },
   {
@@ -836,7 +850,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 55,
+    "question_count": 56,
     "series": "numbered livestream"
   },
   {
@@ -976,7 +990,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 81,
+    "question_count": 83,
     "series": "numbered livestream"
   },
   {
@@ -1032,7 +1046,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 56,
+    "question_count": 57,
     "series": "numbered livestream"
   },
   {
@@ -1046,7 +1060,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 63,
+    "question_count": 64,
     "series": "numbered livestream"
   },
   {
@@ -1060,7 +1074,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 95,
+    "question_count": 98,
     "series": "numbered livestream"
   },
   {
@@ -1074,7 +1088,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 48,
+    "question_count": 49,
     "series": "numbered livestream"
   },
   {
@@ -1088,7 +1102,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 61,
+    "question_count": 66,
     "series": "numbered livestream"
   },
   {
@@ -1102,7 +1116,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 51,
+    "question_count": 52,
     "series": "numbered livestream"
   },
   {
@@ -1116,7 +1130,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 65,
+    "question_count": 68,
     "series": "numbered livestream"
   },
   {
@@ -1158,7 +1172,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 72,
+    "question_count": 75,
     "series": "numbered livestream"
   },
   {
@@ -1200,7 +1214,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 60,
+    "question_count": 61,
     "series": "numbered livestream"
   },
   {
@@ -1270,7 +1284,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 55,
+    "question_count": 56,
     "series": "numbered livestream"
   },
   {
@@ -1284,7 +1298,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 50,
+    "question_count": 52,
     "series": "numbered livestream"
   },
   {
@@ -1340,7 +1354,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 52,
+    "question_count": 53,
     "series": "numbered livestream"
   },
   {
@@ -1354,7 +1368,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 54,
+    "question_count": 56,
     "series": "numbered livestream"
   },
   {
@@ -1368,7 +1382,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 86,
+    "question_count": 87,
     "series": "numbered livestream"
   },
   {
@@ -1410,7 +1424,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 60,
+    "question_count": 62,
     "series": "numbered livestream"
   },
   {
@@ -1424,7 +1438,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 74,
+    "question_count": 76,
     "series": "numbered livestream"
   },
   {
@@ -1452,7 +1466,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 66,
+    "question_count": 70,
     "series": "numbered livestream"
   },
   {
@@ -1466,7 +1480,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 55,
+    "question_count": 57,
     "series": "numbered livestream"
   },
   {
@@ -1494,7 +1508,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 59,
+    "question_count": 60,
     "series": "numbered livestream"
   },
   {
@@ -1522,7 +1536,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 42,
+    "question_count": 45,
     "series": "numbered livestream"
   },
   {
@@ -1536,7 +1550,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 57,
+    "question_count": 64,
     "series": "numbered livestream"
   },
   {
@@ -1564,7 +1578,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 46,
+    "question_count": 47,
     "series": "numbered livestream"
   },
   {
@@ -1578,7 +1592,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 50,
+    "question_count": 52,
     "series": "numbered livestream"
   },
   {
@@ -1774,7 +1788,7 @@
     "status": "curated",
     "is_numbered": false,
     "is_special": true,
-    "question_count": 58,
+    "question_count": 60,
     "series": "Assassin's Creed side content"
   },
   {
@@ -1816,7 +1830,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 51,
+    "question_count": 55,
     "series": "numbered livestream"
   },
   {
@@ -1830,7 +1844,7 @@
     "status": "curated",
     "is_numbered": false,
     "is_special": true,
-    "question_count": 34,
+    "question_count": 36,
     "series": "Assassin's Creed side content"
   },
   {
@@ -1844,7 +1858,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 66,
+    "question_count": 67,
     "series": "numbered livestream"
   },
   {
@@ -1858,7 +1872,7 @@
     "status": "curated",
     "is_numbered": false,
     "is_special": true,
-    "question_count": 24,
+    "question_count": 25,
     "series": "Assassin's Creed side content"
   },
   {
@@ -1900,7 +1914,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 63,
+    "question_count": 66,
     "series": "numbered livestream"
   },
   {
@@ -1928,7 +1942,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 52,
+    "question_count": 57,
     "series": "numbered livestream"
   },
   {
@@ -1942,7 +1956,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 47,
+    "question_count": 48,
     "series": "numbered livestream"
   },
   {
@@ -1984,7 +1998,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 76,
+    "question_count": 77,
     "series": "numbered livestream"
   },
   {
@@ -2012,7 +2026,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 54,
+    "question_count": 58,
     "series": "numbered livestream"
   },
   {
@@ -2040,7 +2054,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 53,
+    "question_count": 58,
     "series": "numbered livestream"
   },
   {
@@ -2082,7 +2096,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 50,
+    "question_count": 55,
     "series": "numbered livestream"
   },
   {
@@ -2110,7 +2124,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 48,
+    "question_count": 47,
     "series": "numbered livestream"
   },
   {
@@ -2124,7 +2138,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 47,
+    "question_count": 48,
     "series": "numbered livestream"
   },
   {
@@ -2306,7 +2320,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 44,
+    "question_count": 48,
     "series": "numbered livestream"
   },
   {
@@ -2446,7 +2460,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 38,
+    "question_count": 40,
     "series": "numbered livestream"
   },
   {
@@ -2922,7 +2936,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 31,
+    "question_count": 32,
     "series": "numbered livestream"
   },
   {
@@ -3286,7 +3300,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 34,
+    "question_count": 35,
     "series": "numbered livestream"
   },
   {
@@ -3468,7 +3482,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 27,
+    "question_count": 28,
     "series": "numbered livestream"
   },
   {
@@ -3622,7 +3636,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 32,
+    "question_count": 31,
     "series": "numbered livestream"
   },
   {
@@ -3678,7 +3692,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 34,
+    "question_count": 36,
     "series": "numbered livestream"
   },
   {

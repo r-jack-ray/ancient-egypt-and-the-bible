@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "WxBeDodHT9c",
+      "fileStem": "277-climate-change-in-a-teacup",
+      "path": "txt/277-climate-change-in-a-teacup.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "ae50acb2eaadf6222c358e391528ead3207c88c8e7050b1680eee6f39d2373d0",
+      "canonicalByteLength": 244160,
+      "segmentCount": 5368,
+      "firstStartSeconds": 409,
+      "lastStartSeconds": 16636,
+      "fetchedAt": "2026-09-05T13:13:45.496Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "EtsUriBXx9s",
       "fileStem": "276-one-ring-to-rule-them-all-joseph-style",
       "path": "txt/276-one-ring-to-rule-them-all-joseph-style.txt",
