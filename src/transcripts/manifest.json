@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "VMBTHpL0NoQ",
+      "fileStem": "278-pocket-full-of-trinitite",
+      "path": "txt/278-pocket-full-of-trinitite.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "9f9436578d39da6cd4407b4ed94ecfd4424363eb7cef9f6cbe13a2ad6597728d",
+      "canonicalByteLength": 214797,
+      "segmentCount": 4794,
+      "firstStartSeconds": 92,
+      "lastStartSeconds": 15175,
+      "fetchedAt": "2026-09-12T23:55:57.765Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "WxBeDodHT9c",
       "fileStem": "277-climate-change-in-a-teacup",
       "path": "txt/277-climate-change-in-a-teacup.txt",

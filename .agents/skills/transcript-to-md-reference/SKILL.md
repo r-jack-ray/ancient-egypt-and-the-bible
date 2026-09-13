@@ -227,7 +227,7 @@ Time links open the YouTube video at the relevant timestamp.
 
 | Time | Question | Short answer / answer direction | Expanded answer |
 |---:|---|---|---|
-| <a href="https://youtu.be/VIDEO_ID?t=136" target="_blank" rel="noopener noreferrer">2:16</a> | Did the Sea Peoples' attacks on Egypt under Merneptah and Ramesses III contribute to the end of the New Kingdom? | Yes, especially under Ramesses III, but the decline was a longer economic and political process. | The answer treats the Sea Peoples as one contributing pressure, especially in Ramesses III's reign, but not as a single-cause explanation. The decline is framed as a broader process involving economic and political strain as well as foreign attacks. |
+| <a href="https://youtu.be/VIDEO_ID?t=136" target="_blank" rel="noopener noreferrer">2:16</a> | Did the Sea Peoples' attacks on Egypt under Merneptah and Ramesses III contribute to the end of the New Kingdom? | Yes, especially under Ramesses III, but the decline was a longer economic and political process. | The Sea Peoples' attacks contributed to the decline, especially in Ramesses III's reign. Economic and political strain also contributed, so foreign attacks alone do not explain the end of the New Kingdom. |
 ```
 
 For topic indexes or special-purpose pages, adapt the heading and table columns, but keep timestamp links in the first column unless the user asks for a different structure.
@@ -278,12 +278,30 @@ Answer wording should be concise, third-person, and useful in search results:
 - preserve caveats, uncertainty, disagreement, and limits
 - avoid outside research
 - do not begin routine answers with "He said," "He argued," "He explained," or equivalent `the host` reporting frames
-- use explicit speaker attribution only when the identity carries necessary meaning, such as distinguishing speakers, owning a direct quotation, or preserving personal status, experience, or preference
-- preserve interpretation, uncertainty, disagreement, opinion, humor, and source limits without automatically preserving a generic speaker label; in a single-source answer, wording such as `In this reading...` can retain the distinction without repeating `the host`
+- apply the question-subject attribution rule below to both answer columns, including sentences after the opening
+- preserve interpretation, uncertainty, disagreement, opinion, humor, and source limits in the substance of the answer; these categories alone do not justify host attribution
 - preserve claim type and ownership: a self-description must remain a self-description, a personal judgment must remain a judgment, a recommendation must remain advice, and a personal knowledge limit must not become a general claim
-- do not replace meaningful attribution with passive voice or an abstract proxy merely to remove a speaker label; if direct subject-first prose would overstate the source, use compact wording such as `In his view...`, `He describes himself as...`, `He recommends...`, or `He rejects...`
+- do not replace meaningful attribution with passive voice or an abstract proxy merely to remove a speaker label; retain the minimum ownership needed under the question-subject rule
 - prefer compact phrasing suitable for search results, tables, and index pages
 - preserve the difference between what the question asks and what the answer actually supports
+
+### Question-Subject Attribution Rule
+
+For questions about the Bible, Egypt, history, language, theology, or another subject, answer the question plainly. Make the passage, event, object, argument, or other actual subject the grammatical subject. The page already identifies Dr Falk as the source. A question addressed to him, including `What do you think about...` or `How do you interpret...`, is not automatically a question about him personally.
+
+- Suppress routine host narration throughout both answer cells: `He says`, `He explains`, `He argues`, `He thinks`, `He notes`, `He points out`, `He adds`, `He rejects`, `He interprets`, `He distinguishes`, `He connects`, and equivalents using `Falk`, `Dr Falk`, `the host`, or `his view/reading/point`. Do not just vary the reporting verb or replace the pronoun with a name.
+- State the explanation and its reasons directly. A Bible interpretation does not need `he interprets` in each sentence. Preserve a necessary distinction with a compact qualifier such as `In this reading` or `One possible explanation`, only when supported. Do not replace every removed attribution with the same qualifier or add uncertainty to a confident answer.
+- Keep personal attribution when the question is directly about Dr Falk's life, work, credentials, beliefs, preferences, plans, experiences, or knowledge. In a mixed answer, attribute the personal portion and write the subject explanation directly. If an ordinary topic question receives only a personal knowledge limit, keep that limit personal: `He has not read the book` must not become `The book has not been studied`.
+- Preserve named ownership for competing speakers, quotations, third-party claims or allegations, and a personal judgment whose meaning would otherwise change. Interpretation or disagreement alone is not a blanket exemption for repeated host narration. Establish necessary ownership once within an answer cell, then explain the reasons directly unless the owner changes or would become unclear.
+- Preserve pronouns referring to biblical or historical people. Resolve who `he` refers to before editing. Remove redundant framing without deleting evidence, reasoning, examples, or caveats to lower an attribution count.
+
+Illustrative wording patterns (use only claims supported by the actual transcript):
+
+| Question context | Avoid | Prefer |
+|---|---|---|
+| An ordinary Bible question | `He explains that the passage uses a metaphor. He adds that the surrounding verses explain it.` | `The passage uses a metaphor, which the surrounding verses explain.` |
+| An explicitly tentative interpretation | `He thinks this might refer to a local event.` | `This might refer to a local event.` |
+| A question about his reading | `The book has not been read.` | `He has not read the book.` |
 
 Expanded answers:
 
@@ -307,8 +325,8 @@ After the complete question inventory and transcript-grounded row content are dr
 1. Apply `$humanizer` in embedded mode. Run its draft, audit, and final loop internally, then write only the final prose to the page. Do not place Humanizer draft text, audit bullets, or a separate Humanizer summary in the Markdown, audit log, or handoff.
 2. Review every authored public prose field in the new page with Humanizer: questions, short answers, expanded answers, and any SEO description or other authored public prose. This defines the review scope, not a rewrite quota. Leave clean prose unchanged. Read each short and expanded answer together, then scan adjacent rows so repeated attribution and uniform sentence patterns are visible across the page.
 3. Treat the transcript and this skill's evidence-preservation rules as higher priority than generic Humanizer defaults. Preserve every supported claim, proper noun, title, date, number, Bible reference, technical term, searchable question detail, qualification, caveat, uncertainty, interpretation, disagreement, opinion, humor, personal experience, and source limitation. Do not resolve unclear names or terms from outside knowledge, turn an interpretation into an objective fact, or add specificity absent from the transcript.
-4. The page, video link, and transcript mapping already establish provenance. In a single-speaker answer, remove framing such as `the host`, `the speaker`, `the presenter`, `the lecturer`, repeated speaker names, and reporting openings such as `he said` when they only identify who supplied the answer. Prefer natural subject-first prose for claims the transcript presents directly. Scan the whole page for these forms and adjudicate every hit. A remaining hit is valid when the following ownership rules require it; zero matches is not the goal.
-5. Preserve claim ownership when it affects meaning. Self-description, personal status, knowledge, experience, preference, judgment, interpretation, disagreement, rejection, and recommendation may require compact attribution even in a solo-speaker stream. `He describes his Egyptology as mainstream` and `In his view, intuition is largely innate` preserve distinctions that categorical rewrites would erase.
+4. Run an explicit over-attribution check, including for GPT-6 output. Apply the Question-Subject Attribution Rule to every short and expanded answer, not just sentence openings. Scan `he`, `his`, speaker names, generic speaker labels, and reporting verbs in context. Read adjacent rows to catch repeated narration that individual-cell checks miss. For ordinary Bible or history questions, the finished cells should explain the subject directly.
+5. For each retained host attribution, identify the personal fact, necessary claim owner, quotation, or speaker distinction it preserves. `This is his interpretation` by itself does not justify serial reporting frames. Check both columns independently so each reads naturally on its own; do not copy an attribution into the expanded answer just because the short answer uses it. Counts are triage, not a deletion quota.
 6. Do not hide meaningful ownership with passive voice such as `is considered`, `is criticized`, or `are urged`, or make an abstract proxy perform a human act merely to avoid attribution. Choose a natural subject. Keep compact attribution when removing it would make the sentence more absolute, awkward, or unclear.
 7. Determine speaker context from the transcript before removing a name or pronoun. Preserve audience members, guests, quoted scholars, historical figures, and other people who could be confused with the main speaker. Do not replace one repetitive label with another.
 8. During this pass, leave stream-identifying headings, timestamp anchors and link targets, table columns, row order, Markdown structure, filenames, source identity, and audit-log text unchanged.
@@ -427,13 +445,12 @@ npm run check:question-wording -- --path $path --strict --review
 ```
 
 Fix every actionable high-confidence issue and rerun the command until it exits
-successfully. Inspect each review candidate against the transcript and preserve
-attribution when it carries self-description, personal status or knowledge,
-interpretation, uncertainty, disagreement, opinion, recommendation, preference,
-or personal experience. Do not clear a review candidate by converting meaningful
-attribution to passive voice or an awkward abstract subject. Review candidates
-require judgment; their count does not need to reach zero, and `--strict-review`
-is not the completion gate for this workflow.
+successfully. Adjudicate each review candidate against the transcript using the
+Question-Subject Attribution Rule. A passing scan does not excuse repetitive
+`he` narration, and an interpretation label alone does not justify retaining it.
+Preserve necessary personal or competing-source ownership without passive voice
+or awkward abstract subjects. Review candidates require judgment; their count
+does not need to reach zero, and `--strict-review` is not the completion gate.
 
 ## Final Response
 
@@ -460,6 +477,7 @@ A task using this skill is complete only when the relevant items are true:
 - answer summaries are supported by transcript text and preserve uncertainty
 - short and expanded answers use concise third-person phrasing and avoid routine reporting frames and generic speaker labels without a transcript-grounded reason
 - the embedded Humanizer pass covered all authored public prose and every rewrite was rechecked against the transcript
+- ordinary subject questions have direct answers in both columns; the whole-page attribution check covered later sentences and justified retained host references under the question-subject rule
 - Humanizer rewrites preserve claim type and ownership; attribution removal did not turn self-description, judgment, recommendation, or personal knowledge into a categorical, passive, or awkward claim
 - no outside facts were added
 - timestamps point to question starts

@@ -1,5 +1,19 @@
 [
   {
+    "number": 278,
+    "title": "Pocket Full Of Trinitite",
+    "slug": "278-pocket-full-of-trinitite",
+    "youtube_url": "https://www.youtube.com/watch?v=VMBTHpL0NoQ",
+    "video_id": "VMBTHpL0NoQ",
+    "question_page": "questions/278-pocket-full-of-trinitite-questions.md",
+    "content_path": "questions/278-pocket-full-of-trinitite/",
+    "status": "curated",
+    "is_numbered": true,
+    "is_special": false,
+    "question_count": 67,
+    "series": "numbered livestream"
+  },
+  {
     "number": 277,
     "title": "Climate Change In A Teacup",
     "slug": "277-climate-change-in-a-teacup",
@@ -24,7 +38,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 99,
+    "question_count": 100,
     "series": "numbered livestream"
   },
   {
