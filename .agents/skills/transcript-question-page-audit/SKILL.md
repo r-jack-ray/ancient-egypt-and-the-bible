@@ -65,7 +65,7 @@ Special-purpose pages may not match the source slug exactly. Resolve the source 
 
 ### 1. Route And Scan
 
-Read the Markdown page first. Extract:
+The coordinating agent reads the Markdown page first. Extract:
 
 - source video ID from timestamp links
 - current row timestamps and questions
@@ -75,6 +75,8 @@ Read the Markdown page first. Extract:
 Use `src/channel/episodes.json` to confirm uncertain title, slug, or video ID.
 
 Do not require legacy JSON or create diagnostics. The canonical TXT should answer page-scoped audit questions.
+
+Independent discovery agents may start from the verified canonical TXT without reading the existing question list or earlier findings. See Parallel And Batch Guidance.
 
 ### 2. Determine Coverage
 
@@ -92,7 +94,8 @@ Full coverage means:
 
 - inspect the working TXT transcript from beginning to end
 - use contiguous bounded windows with overlap so no transcript range is skipped
-- compare all audience-question turns against the existing page
+- discover audience-question turns directly from the TXT, including turns absent from the existing page; existing rows and timestamps must not define the discovery scope
+- reconcile the transcript-derived question inventory with the page, checking for missing questions, omitted follow-ups, and distinct questions incorrectly merged into one row
 - verify every existing row against its supporting transcript area
 
 Targeted coverage means inspecting only the transcript areas needed for the
@@ -384,11 +387,18 @@ repo's compact closeout shape when it fits:
 
 Mention every material blocker or uncertainty. Do not list every transcript candidate or unchanged row unless the user asked for a report.
 
-## Batch Guidance
+When parallel agents were used, distinguish agents that read the original TXT from structural or wording helpers. Distinguish collective full coverage across assigned ranges from independent repeated full-transcript reads.
 
-- Assign at most one semantic audit per file.
-- When auditing multiple files in parallel, give each semantic subagent a distinct page and transcript.
-- Semantic subagents should be read-only; the parent agent applies edits and appends the shared audit log serially.
+## Parallel And Batch Guidance
+
+- Multiple semantic agents may review the same page and original canonical TXT. This skill imposes no per-page or per-transcript limit on their number; choose the allocation for transcript length, difficulty, available capacity, and the user's request.
+- For a full audit using parallel agents, assign multiple agents to semantic reading of the original TXT. Structural, link, and wording helpers supplement transcript review and do not count as independent transcript scans.
+- Include a fresh question-discovery pass covering the entire TXT, assigned to one agent or divided among agents in contiguous overlapping ranges. Give discovery agents the verified source identity, TXT path, and inclusion rules; withhold the existing question list and previous findings until they return their transcript-derived candidates. This lets the audit recover questions missed during initial page creation.
+- Start discovery agents without inherited conversation history containing the page or prior findings (for example, `fork_turns="none"`). Supply the verified source identity and path, scope, skill instructions, and reading/inclusion rules explicitly.
+- Other semantic agents can verify existing rows, independently reread the whole transcript, or examine overlapping ranges and difficult passages. Combine these approaches as useful. Extend range boundaries to capture complete question-and-answer turns.
+- Each transcript reviewer reports the exact ranges read, candidate question-start timestamps, supporting answer spans, and unresolved issues. The coordinator reconciles the coverage map, deduplicates overlap findings, and adjudicates disagreements and unmatched candidates against the TXT. Every discovered candidate must be represented by a supported row or have a reason for exclusion; an unchanged row count is not proof of completeness.
+- For batches, keep each assignment tied to its named page and manifest-owned transcript. Several reviewers may share that assignment; do not inspect unrelated pages or transcripts.
+- Semantic subagents remain read-only. One coordinating agent applies edits, performs final validation, and appends one audit-log record per audited page serially.
 - Do not treat candidate-search output as complete transcript coverage.
 
 ## Audit Log
@@ -449,6 +459,7 @@ Finish only when relevant items are true:
 - no placeholder links or legacy links remain
 - `question_count_before`, `question_count_after`, and `question_count_change` agree
 - full-coverage audits inspected the TXT transcript from beginning to end without gaps
+- the transcript-derived question inventory was reconciled with the page, including questions missed during initial creation; parallel coverage reports support the claimed discovery and verification coverage
 - targeted audits were limited only because the user requested or identified a narrow scope
 - the scoped `check:question-wording` command passed for the processed page after all other page checks; review candidates were adjudicated against the transcript rather than bulk-rewritten
 - the audit log was appended only after independent page analysis and validation

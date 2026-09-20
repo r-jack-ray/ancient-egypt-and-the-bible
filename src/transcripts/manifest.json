@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "BNmyGkeodhs",
+      "fileStem": "279-weighed-down-with-bling",
+      "path": "txt/279-weighed-down-with-bling.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "43259361b84c3b532ab921bc29e4e622427117ab94a5a77ac6e8e836589069dc",
+      "canonicalByteLength": 233236,
+      "segmentCount": 5214,
+      "firstStartSeconds": 243,
+      "lastStartSeconds": 16497,
+      "fetchedAt": "2026-09-19T17:23:39.000Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "VMBTHpL0NoQ",
       "fileStem": "278-pocket-full-of-trinitite",
       "path": "txt/278-pocket-full-of-trinitite.txt",

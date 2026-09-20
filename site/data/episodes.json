@@ -1,5 +1,19 @@
 [
   {
+    "number": 279,
+    "title": "Weighed Down With Bling",
+    "slug": "279-weighed-down-with-bling",
+    "youtube_url": "https://www.youtube.com/watch?v=BNmyGkeodhs",
+    "video_id": "BNmyGkeodhs",
+    "question_page": "questions/279-weighed-down-with-bling-questions.md",
+    "content_path": "questions/279-weighed-down-with-bling/",
+    "status": "curated",
+    "is_numbered": true,
+    "is_special": false,
+    "question_count": 77,
+    "series": "numbered livestream"
+  },
+  {
     "number": 278,
     "title": "Pocket Full Of Trinitite",
     "slug": "278-pocket-full-of-trinitite",
@@ -52,7 +66,7 @@
     "status": "curated",
     "is_numbered": true,
     "is_special": false,
-    "question_count": 82,
+    "question_count": 83,
     "series": "numbered livestream"
   },
   {
