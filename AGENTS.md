@@ -8,7 +8,7 @@ This repository is a Questions & Answers reference archive for the Ancient Egypt
 - `src/transcripts/manifest.json`: canonical TXT payload facts and video-ID-to-file mapping.
 - `src/transcripts/txt/`: canonical transcript payloads, one indexed/timestamped segment per line, and the default curation surface.
 - `docs/questions/`: canonical curated GitHub-readable Q&A reference pages with timestamp links, short answers, and filled transcript-grounded expanded answers.
-- `site/`: Hugo compatibility site. `site/content/questions/_index.md` is handwritten and tracked; the other question Markdown files are generated front-matter stubs, ignored by Git, and must not be edited or committed.
+- `site/`: Hugo compatibility site. `site/content/questions/_index.md` is tracked section configuration that suppresses the Questions listing while preserving individual Q&A pages; the other question Markdown files are generated front-matter stubs, ignored by Git, and must not be edited or committed.
 - `tests/`: Node test coverage for the generated search index and client-side search behavior.
 - `src/scripts/`: Node 22.19+ and strict TypeScript inventory, transcript acquisition, reporting, site generation, and validation CLIs.
 - `reports/`: ignored generated reports, validation output, smoke-test output, and triage artifacts.

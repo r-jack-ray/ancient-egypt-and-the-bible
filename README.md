@@ -10,6 +10,8 @@ The curated pages are navigation aids. Verify quotations, context, and ambiguous
 
 | Destination | Purpose |
 |---|---|
+| [Episodes](https://r-jack-ray.github.io/ancient-egypt-and-the-bible/episodes/) | Browse all livestreams together in archive order. |
+| [Question Index](https://r-jack-ray.github.io/ancient-egypt-and-the-bible/search/) | Search questions and answers across the archive. |
 | [Curated Markdown](./docs/questions/) | Read the authoritative human-edited Q&A pages directly on GitHub. |
 | [Canonical TXT transcripts](./src/transcripts/txt/) | Search the complete stored transcript corpus. |
 | [Episode inventory](./src/channel/episodes.json) | Inspect canonical stream membership, titles, video IDs, slugs, and transcript policy. |
@@ -66,7 +68,7 @@ YouTube Data API
 | [`site/data/search-aliases.json`](./site/data/search-aliases.json) | Curated search spelling, transliteration, abbreviation, and phrase aliases. |
 | [`site/data/episodes.json`](./site/data/episodes.json), [`site/data/questions.json`](./site/data/questions.json) | Tracked generated site data. Regenerate and commit these files with source changes. |
 | [`site/static/search/`](./site/static/search/) | Tracked generated MiniSearch documents, index, and manifest. Regenerate and commit them with source changes. |
-| [`site/content/questions/*.md`](./site/content/questions/) | Ignored generated front-matter stubs, except the handwritten tracked `_index.md`. |
+| [`site/content/questions/*.md`](./site/content/questions/) | Ignored generated front-matter stubs, except the tracked `_index.md` that suppresses the Questions listing. |
 | `site/public/`, `dist/`, `reports/` | Ignored local build or diagnostic output. |
 
 Each canonical TXT line contains a segment index, display timestamp, a tab, and normalized transcript text. Raw transcript JSON and TSV are outside the tracked transcript store.

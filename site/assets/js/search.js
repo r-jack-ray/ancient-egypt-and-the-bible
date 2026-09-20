@@ -9,7 +9,6 @@
 
   var basePath = root.getAttribute("data-base-path") || "/";
   var input = root.querySelector("[data-search-input]");
-  var typeFilter = root.querySelector("[data-type-filter]");
   var episodeFilter = root.querySelector("[data-episode-filter]");
   var sortControl = root.querySelector("[data-sort-control]");
   var clearButton = root.querySelector("[data-clear-search]");
@@ -28,7 +27,7 @@
   var normalize = core.normalize;
   var normalizeBibleReferenceQuery = core.normalizeBibleReferenceQuery;
   var searchAliasIndex = core.createSearchAliasIndex({});
-  var controls = [input, typeFilter, episodeFilter, sortControl, clearButton, loadMoreButton].filter(Boolean);
+  var controls = [input, episodeFilter, sortControl, clearButton, loadMoreButton].filter(Boolean);
 
   function siteUrl(path) {
     return basePath.replace(/\/?$/, "/") + (path || "").replace(/^\/+/, "");
@@ -125,50 +124,20 @@
     return Promise.reject(new Error("MiniSearch cannot deserialize the prebuilt index."));
   }
 
-  function prepareDisplayRows(rows) {
+  function prepareDisplayRows(rows, episodeOrder) {
+    var orderByPath = new Map(episodeOrder.map(function (path, index) {
+      return [path, index];
+    }));
     questionBySearchId = {};
     questions = rows || [];
     questions.forEach(function (row) {
+      row.episode_order = orderByPath.has(row.content_path) ? orderByPath.get(row.content_path) : episodeOrder.length;
       questionBySearchId[row.search_id] = row;
     });
   }
 
   function sortedDefaultRows(rows) {
-    return rows.slice().sort(function (a, b) {
-      var aNumber = a.episode_number || 0;
-      var bNumber = b.episode_number || 0;
-      if (aNumber !== bNumber) {
-        return bNumber - aNumber;
-      }
-      return (a.row_index || 0) - (b.row_index || 0);
-    });
-  }
-
-  function compareByNewest(a, b) {
-    var aNumber = a.episode_number || 0;
-    var bNumber = b.episode_number || 0;
-    if (aNumber !== bNumber) {
-      return bNumber - aNumber;
-    }
-    return (a.row_index || 0) - (b.row_index || 0);
-  }
-
-  function compareByOldest(a, b) {
-    var aNumber = a.episode_number || 0;
-    var bNumber = b.episode_number || 0;
-    if (aNumber !== bNumber) {
-      return aNumber - bNumber;
-    }
-    return (a.row_index || 0) - (b.row_index || 0);
-  }
-
-  function compareByTime(a, b) {
-    var aNumber = a.episode_number || 0;
-    var bNumber = b.episode_number || 0;
-    if (aNumber !== bNumber) {
-      return bNumber - aNumber;
-    }
-    return (a.start_seconds || 0) - (b.start_seconds || 0);
+    return rows.slice().sort(core.compareByNewest);
   }
 
   function searchTextForRow(row) {
@@ -224,7 +193,6 @@
       }
     });
 
-    score += Math.min((row.episode_number || 0) / 1000, 1);
     return score;
   }
 
@@ -306,15 +274,7 @@
   }
 
   function matchesFilters(row) {
-    var type = typeFilter ? typeFilter.value : "all";
     var episode = episodeFilter ? parseInt(episodeFilter.value, 10) : NaN;
-
-    if (type === "numbered" && !row.is_numbered) {
-      return false;
-    }
-    if (type === "special" && !row.is_special) {
-      return false;
-    }
     if (!Number.isNaN(episode) && row.episode_number !== episode) {
       return false;
     }
@@ -380,7 +340,7 @@
       var expandedAnswerNode = fragment.querySelector("[data-result-expanded-answer]");
 
       setText("[data-result-meta]", [
-        row.is_numbered ? "Live Stream #" + row.episode_number : "Special",
+        row.is_numbered ? "Livestream #" + row.episode_number : "Livestream",
         "question " + row.row_index
       ].join(" · "), fragment);
 
@@ -438,9 +398,6 @@
     if (input && input.value.trim()) {
       params.set("q", input.value.trim());
     }
-    if (typeFilter && typeFilter.value !== "all") {
-      params.set("type", typeFilter.value);
-    }
     if (episodeFilter && episodeFilter.value.trim()) {
       params.set("episode", episodeFilter.value.trim());
     }
@@ -469,7 +426,7 @@
         if (a.score !== b.score) {
           return b.score - a.score;
         }
-        return (b.row.episode_number || 0) - (a.row.episode_number || 0);
+        return core.compareByNewest(a.row, b.row);
       }).map(function (entry) {
         return entry.row;
       });
@@ -480,11 +437,11 @@
     }
 
     if (sortMode === "newest") {
-      rows = rows.sort(compareByNewest);
+      rows = rows.sort(core.compareByNewest);
     } else if (sortMode === "oldest") {
-      rows = rows.sort(compareByOldest);
+      rows = rows.sort(core.compareByOldest);
     } else if (sortMode === "time") {
-      rows = rows.sort(compareByTime);
+      rows = rows.sort(core.compareByTime);
     }
 
     currentRows = rows;
@@ -498,9 +455,6 @@
     if (input && params.has("q")) {
       input.value = params.get("q");
     }
-    if (typeFilter && params.has("type")) {
-      typeFilter.value = params.get("type");
-    }
     if (episodeFilter && params.has("episode")) {
       episodeFilter.value = params.get("episode");
     }
@@ -509,7 +463,7 @@
     }
   }
 
-  [input, typeFilter, episodeFilter, sortControl].forEach(function (control) {
+  [input, episodeFilter, sortControl].forEach(function (control) {
     if (control) {
       control.addEventListener("input", function () {
         resultLimit = resultLimitStep;
@@ -526,9 +480,6 @@
     clearButton.addEventListener("click", function () {
       if (input) {
         input.value = "";
-      }
-      if (typeFilter) {
-        typeFilter.value = "all";
       }
       if (episodeFilter) {
         episodeFilter.value = "";
@@ -566,7 +517,7 @@
     var indexData = results[2] || {};
 
     searchAliasIndex = core.createSearchAliasIndex(manifest.alias_config || {});
-    prepareDisplayRows(docs);
+    prepareDisplayRows(docs, manifest.episode_order || []);
     return loadMiniSearchIndex(indexData);
   }).then(function (loadedMiniSearch) {
     miniSearch = loadedMiniSearch;

@@ -18,6 +18,8 @@ const validFourColumnPage = [
   "",
 ].join("\n");
 
+const questionsSectionConfig = "---\ntitle: Questions\nbuild:\n  list: never\n  render: never\n---\n";
+
 const invalidSharedTableFixtures = [
   {
     name: "invalid divider",
@@ -61,11 +63,11 @@ async function writeSiteFixtureRepository(repoRoot: string, questionMarkdown: st
       questionMarkdown,
       "utf8",
   );
-  await writeFile(join(repoRoot, "site/content/questions/_index.md"), "handwritten\n", "utf8");
+  await writeFile(join(repoRoot, "site/content/questions/_index.md"), questionsSectionConfig, "utf8");
   await writeFile(join(repoRoot, "site/content/questions/stale.md"), "stale\n", "utf8");
 }
 
-test("site content build generates deterministic data and preserves the handwritten index", async () => {
+test("site content build generates deterministic data and preserves the suppressed Questions section", async () => {
   const repoRoot = await mkdtemp(join(tmpdir(), "aeb-site-content-"));
   try {
     await writeSiteFixtureRepository(repoRoot, validFourColumnPage);
@@ -84,7 +86,7 @@ test("site content build generates deterministic data and preserves the handwrit
       descriptionOverrideCount: 0,
       questionRowCount: 1,
     });
-    assert.equal(await readFile(join(repoRoot, "site/content/questions/_index.md"), "utf8"), "handwritten\n");
+    assert.equal(await readFile(join(repoRoot, "site/content/questions/_index.md"), "utf8"), questionsSectionConfig);
     await assert.rejects(readFile(join(repoRoot, "site/content/questions/stale.md"), "utf8"), /ENOENT/u);
 
     const page = await readFile(join(repoRoot, "site/content/questions/1-example-questions.md"), "utf8");

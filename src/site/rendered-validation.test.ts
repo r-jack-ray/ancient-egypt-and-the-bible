@@ -14,6 +14,7 @@ interface FixtureOptions {
   episodesTitle?: string;
   homeBody?: string;
   homeJsonLd?: string;
+  questionsIndex?: boolean;
   sitemapRoutes?: readonly string[];
 }
 
@@ -31,7 +32,7 @@ test("validates the complete rendered-site contract and preserves summary output
     assert.deepEqual(summary.metaDescriptions, {
       renderedPages: 4,
       indexablePages: 3,
-      distinctSectionDescriptions: 4,
+      distinctSectionDescriptions: 3,
     });
     assert.deepEqual(summary.pageTitles, {
       renderedPages: 4,
@@ -58,7 +59,7 @@ test("validates the complete rendered-site contract and preserves summary output
       "Rendered/unique canonicals: 4/4",
       "Hugo meta description validation passed.",
       "Rendered/indexable pages: 4/3",
-      "Distinct section descriptions: 4",
+      "Distinct section descriptions: 3",
       "Hugo page title validation passed.",
       "Rendered/unique titles: 4/4",
       "Site-name suffix: Example Site",
@@ -130,6 +131,18 @@ test("rejects a sitemap that omits an indexable canonical page", async () => {
   }
 });
 
+test("rejects a rendered Questions listing", async () => {
+  const publicDir = await createRenderedSiteFixture({questionsIndex: true});
+  try {
+    await assert.rejects(
+        validateRenderedSite({publicDir, expectedBaseUrl: BASE_URL}),
+        /Questions listing must not be rendered/u,
+    );
+  } finally {
+    await rm(publicDir, {recursive: true, force: true});
+  }
+});
+
 test("rejects invalid JSON-LD during the consolidated SEO pass", async () => {
   const publicDir = await createRenderedSiteFixture({homeJsonLd: "{not-json}"});
   try {
@@ -186,15 +199,27 @@ async function createRenderedSiteFixture(options: FixtureOptions = {}): Promise<
   );
   await writePage(
       publicDir,
-      "questions/index.html",
+      "questions/example/index.html",
       pageHtml({
-        title: "Questions | Example Site",
-        h1: "Questions",
-        canonical: `${BASE_URL}questions/`,
-        description: "Question index description.",
+        title: "Example questions | Example Site",
+        h1: "Example questions",
+        canonical: `${BASE_URL}questions/example/`,
+        description: "Example livestream questions.",
         body: `<a href="${BASE_URL}">Home</a>`,
       }),
   );
+  if (options.questionsIndex) {
+    await writePage(
+        publicDir,
+        "questions/index.html",
+        pageHtml({
+          title: "Questions | Example Site",
+          h1: "Questions",
+          canonical: `${BASE_URL}questions/`,
+          description: "Question listing description.",
+        }),
+    );
+  }
   await writePage(
       publicDir,
       "search/index.html",
@@ -204,11 +229,11 @@ async function createRenderedSiteFixture(options: FixtureOptions = {}): Promise<
         canonical: `${BASE_URL}search/`,
         description: "Search page description.",
         robots: "noindex, follow",
-        body: '<a href="../questions/">Questions</a>',
+        body: '<a href="../episodes/">Episodes</a>',
       }),
   );
 
-  const sitemapRoutes = options.sitemapRoutes ?? ["", "episodes/", "questions/"];
+  const sitemapRoutes = options.sitemapRoutes ?? ["", "episodes/", "questions/example/"];
   const sitemapEntries = sitemapRoutes
       .map(
           (route) =>

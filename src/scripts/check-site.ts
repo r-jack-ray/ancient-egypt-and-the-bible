@@ -91,7 +91,7 @@ function normalizeBaseUrl(value: string): string {
 async function runHugo(repoRoot: string, expectedBaseUrl: string): Promise<void> {
   const siteRoot = resolve(repoRoot, "site");
   await new Promise<void>((resolveProcess, rejectProcess) => {
-    const child = spawn("hugo", ["--source", siteRoot, "--baseURL", expectedBaseUrl], {
+    const child = spawn("hugo", ["--source", siteRoot, "--baseURL", expectedBaseUrl, "--cleanDestinationDir"], {
       cwd: repoRoot,
       stdio: "inherit",
       shell: false,

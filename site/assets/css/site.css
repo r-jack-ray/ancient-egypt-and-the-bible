@@ -300,11 +300,9 @@ button:focus {
   font-weight: 700;
 }
 
-.home-columns {
+.home-list {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.62fr);
-  gap: 26px;
-  align-items: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .section-heading {
@@ -357,8 +355,7 @@ button:focus {
   font-size: 0.92rem;
 }
 
-.episode-index-list,
-.question-page-list {
+.episode-index-list {
   display: grid;
   gap: 10px;
   margin: 0;
@@ -366,10 +363,9 @@ button:focus {
   list-style: none;
 }
 
-.episode-index-card,
-.question-page-card {
+.episode-index-card {
   display: grid;
-  grid-template-columns: 82px minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: 14px;
   border: 1px solid var(--line);
@@ -378,42 +374,25 @@ button:focus {
   padding: 14px;
 }
 
-.episode-badge,
-.question-page-badge {
-  display: inline-block;
-  min-width: 58px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface-alt);
-  color: var(--accent-dark);
-  font-weight: 700;
-  padding: 5px 8px;
-  text-align: center;
-}
-
-.episode-index-body,
-.question-page-body {
+.episode-index-body {
   display: grid;
   gap: 3px;
   min-width: 0;
 }
 
-.episode-index-title,
-.question-page-title {
+.episode-index-title {
   font-weight: 700;
   overflow-wrap: anywhere;
 }
 
-.episode-index-actions,
-.question-page-actions {
+.episode-index-actions {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 8px;
 }
 
-.episode-index-actions a,
-.question-page-actions a {
+.episode-index-actions a {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface-alt);
@@ -425,8 +404,7 @@ button:focus {
   white-space: nowrap;
 }
 
-.episode-index-actions a:hover,
-.question-page-actions a:hover {
+.episode-index-actions a:hover {
   border-color: var(--accent);
 }
 
@@ -786,7 +764,7 @@ th:first-child {
 
 @media (max-width: 900px) {
   .home-intro,
-  .home-columns {
+  .home-list {
     grid-template-columns: 1fr;
   }
 
@@ -826,13 +804,11 @@ th:first-child {
     grid-template-columns: 1fr;
   }
 
-  .episode-index-card,
-  .question-page-card {
+  .episode-index-card {
     grid-template-columns: 1fr;
   }
 
-  .episode-index-actions,
-  .question-page-actions {
+  .episode-index-actions {
     justify-content: flex-start;
   }
 

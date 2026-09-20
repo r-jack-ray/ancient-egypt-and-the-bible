@@ -1,9 +1,9 @@
 {{ define "main" }}
 {{ $contentPath := printf "questions/%s/" .Params.slug }}
 {{ $questions := where hugo.Data.questions "content_path" $contentPath }}
-{{ $numberedPages := where (where hugo.Data.episodes "is_numbered" true) "content_path" "!=" nil }}
+{{ $episodePages := where hugo.Data.episodes "content_path" "!=" nil }}
 {{ $currentIndex := -1 }}
-{{ range $index, $episode := $numberedPages }}
+{{ range $index, $episode := $episodePages }}
   {{ if eq $episode.content_path $contentPath }}
     {{ $currentIndex = $index }}
   {{ end }}
@@ -14,10 +14,10 @@
   {{ $newerIndex := sub $currentIndex 1 }}
   {{ $olderIndex := add $currentIndex 1 }}
   {{ if ge $newerIndex 0 }}
-    {{ $newer = index $numberedPages $newerIndex }}
+    {{ $newer = index $episodePages $newerIndex }}
   {{ end }}
-  {{ if lt $olderIndex (len $numberedPages) }}
-    {{ $older = index $numberedPages $olderIndex }}
+  {{ if lt $olderIndex (len $episodePages) }}
+    {{ $older = index $episodePages $olderIndex }}
   {{ end }}
 {{ end }}
 <article>
@@ -30,7 +30,7 @@
     {{ end }}
   {{ end }}
   <div class="question-meta-bar">
-    <span>{{ if .Params.is_numbered }}{{ .Title }}{{ else }}{{ .Params.series }}{{ end }}</span>
+    <span>Livestream</span>
     <span>{{ .Params.question_count }} questions</span>
     {{ with .Params.video_id }}
     <a href="https://youtu.be/{{ . }}" target="_blank" rel="noopener noreferrer">Watch Full Video</a>
@@ -40,10 +40,10 @@
     <a href="{{ "episodes/" | relURL }}">All episodes</a>
     <a href="{{ "search/" | relURL }}">Question index</a>
     {{ with $older.content_path }}
-    <a href="{{ . | relURL }}">Older: #{{ $older.number }}</a>
+    <a href="{{ . | relURL }}">Older: {{ if $older.is_numbered }}#{{ $older.number }}{{ else }}{{ $older.title }}{{ end }}</a>
     {{ end }}
     {{ with $newer.content_path }}
-    <a href="{{ . | relURL }}">Newer: #{{ $newer.number }}</a>
+    <a href="{{ . | relURL }}">Newer: {{ if $newer.is_numbered }}#{{ $newer.number }}{{ else }}{{ $newer.title }}{{ end }}</a>
     {{ end }}
   </nav>
 

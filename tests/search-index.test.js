@@ -11,6 +11,7 @@ const manifest = JSON.parse(fs.readFileSync(path.join(repoRoot, "site/static/sea
 const docs = JSON.parse(fs.readFileSync(path.join(repoRoot, "site/static/search/docs.json"), "utf8"));
 const indexData = JSON.parse(fs.readFileSync(path.join(repoRoot, "site/static/search/index.json"), "utf8"));
 const questions = JSON.parse(fs.readFileSync(path.join(repoRoot, "site/data/questions.json"), "utf8"));
+const episodes = JSON.parse(fs.readFileSync(path.join(repoRoot, "site/data/episodes.json"), "utf8"));
 const miniSearch = MiniSearch.loadJS(indexData, core.createMiniSearchOptions());
 
 function search(query) {
@@ -32,6 +33,14 @@ test("serialized MiniSearch index loads and returns source-backed results", () =
 
   assert.ok(results.length > 100);
   assert.ok(docs.some((doc) => doc.search_id === results[0].id));
+});
+
+test("search manifest preserves the Episodes directory order for every question page", () => {
+  const expectedPaths = episodes.filter((episode) => episode.content_path).map((episode) => episode.content_path);
+  assert.deepEqual(manifest.episode_order, expectedPaths);
+  const paths = new Set(manifest.episode_order);
+  assert.equal(paths.size, expectedPaths.length);
+  assert.ok(docs.every((doc) => paths.has(doc.content_path)));
 });
 
 test("prebuilt index preserves token aliases and phrase aliases", () => {

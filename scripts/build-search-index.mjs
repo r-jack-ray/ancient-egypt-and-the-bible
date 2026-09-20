@@ -11,6 +11,7 @@ const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(process.argv[2] || path.join(scriptDir, ".."));
 const siteDir = path.join(repoRoot, "site");
 const questionsPath = path.join(siteDir, "data", "questions.json");
+const episodesPath = path.join(siteDir, "data", "episodes.json");
 const aliasesPath = path.join(siteDir, "data", "search-aliases.json");
 const minisearchPackagePath = path.join(repoRoot, "node_modules", "minisearch", "package.json");
 const outputDir = path.join(siteDir, "static", "search");
@@ -76,6 +77,7 @@ function indexDoc(row, displayDoc, aliasIndex) {
 }
 
 const questions = readJson(questionsPath);
+const episodeOrder = readJson(episodesPath).filter((episode) => episode.content_path).map((episode) => episode.content_path);
 const aliasConfig = core.readSearchAliasConfig(readJson(aliasesPath));
 const aliasIndex = core.createSearchAliasIndex(aliasConfig);
 const minisearchPackage = readJson(minisearchPackagePath);
@@ -95,6 +97,7 @@ writeJson(manifestPath, {
   source_data: "site/data/questions.json",
   source_aliases: "site/data/search-aliases.json",
   document_count: displayDocs.length,
+  episode_order: episodeOrder,
   minisearch_version: minisearchPackage.version,
   index_url: "index.json",
   docs_url: "docs.json",

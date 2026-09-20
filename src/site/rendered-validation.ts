@@ -76,6 +76,9 @@ export async function validateRenderedSite(
   const publicDir = resolve(options.publicDir);
   await assertDirectory(publicDir);
   const htmlFiles = await readRenderedHtmlFiles(publicDir);
+  if (htmlFiles.some((file) => file.relativePath === "questions/index.html")) {
+    throw new Error("The Questions listing must not be rendered; use the Episodes listing instead.");
+  }
 
   const canonicalUrls = validateCanonicalUrls(
       htmlFiles,
@@ -246,7 +249,6 @@ function validateMetaDescriptions(
   const sectionPaths = [
     "index.html",
     "episodes/index.html",
-    "questions/index.html",
     "search/index.html",
   ];
   const sectionPages = sectionPaths.map((sectionPath) => {
@@ -261,7 +263,7 @@ function validateMetaDescriptions(
   ).size;
   if (distinctSectionDescriptions !== sectionPages.length) {
     throw new Error(
-        "Home, Episodes, Questions, and Question Index must have distinct meta descriptions.",
+        "Home, Episodes, and Question Index must have distinct meta descriptions.",
     );
   }
 

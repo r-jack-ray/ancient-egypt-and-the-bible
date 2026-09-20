@@ -455,6 +455,18 @@
     });
   }
 
+  function compareByNewest(a, b) {
+    return a.episode_order - b.episode_order || (a.row_index || 0) - (b.row_index || 0);
+  }
+
+  function compareByOldest(a, b) {
+    return b.episode_order - a.episode_order || (a.row_index || 0) - (b.row_index || 0);
+  }
+
+  function compareByTime(a, b) {
+    return a.episode_order - b.episode_order || (a.start_seconds || 0) - (b.start_seconds || 0);
+  }
+
   function createMiniSearchOptions() {
     return {
       idField: "search_id",
@@ -497,6 +509,9 @@
     hasUnrepresentedHighlightMatch: hasUnrepresentedHighlightMatch,
     createSearchMatchModel: createSearchMatchModel,
     matchesSearchText: matchesSearchText,
+    compareByNewest: compareByNewest,
+    compareByOldest: compareByOldest,
+    compareByTime: compareByTime,
     createMiniSearchOptions: createMiniSearchOptions
   };
 }));

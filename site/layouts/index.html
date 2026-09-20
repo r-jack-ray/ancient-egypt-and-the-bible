@@ -2,9 +2,7 @@
 {{ $episodes := hugo.Data.episodes }}
 {{ $questions := hugo.Data.questions }}
 {{ $curated := where $episodes "status" "curated" }}
-{{ $numbered := where $curated "is_numbered" true }}
-{{ $special := where $curated "is_special" true }}
-{{ $latest := index $numbered 0 }}
+{{ $latest := index $curated 0 }}
 <section class="home-intro">
   <div>
     <h1 class="page-title">{{ .Title }}</h1>
@@ -20,7 +18,7 @@
     <img src="https://img.youtube.com/vi/{{ .video_id }}/hqdefault.jpg" alt="" loading="eager">
     <span class="latest-feature-body">
       <span class="eyebrow">Latest curated stream</span>
-      <strong>#{{ .number }}: {{ .title }}</strong>
+      <strong>{{ if .is_numbered }}#{{ .number }}: {{ end }}{{ .title }}</strong>
       <span>{{ .question_count }} questions</span>
     </span>
   </a>
@@ -30,15 +28,7 @@
 <section class="summary-grid" aria-label="Corpus summary">
   <div class="metric">
     <span class="metric-value">{{ len $curated }}</span>
-    <span class="metric-label">curated pages</span>
-  </div>
-  <div class="metric">
-    <span class="metric-value">{{ len $numbered }}</span>
-    <span class="metric-label">numbered livestreams</span>
-  </div>
-  <div class="metric">
-    <span class="metric-value">{{ len $special }}</span>
-    <span class="metric-label">special pages</span>
+    <span class="metric-label">curated livestreams</span>
   </div>
   <div class="metric">
     <span class="metric-value">{{ len $questions }}</span>
@@ -46,35 +36,18 @@
   </div>
 </section>
 
-<div class="home-columns">
-  <section>
-    <div class="section-heading">
-      <h2>Latest Numbered Streams</h2>
-      <a href="{{ "episodes/" | relURL }}">All episodes</a>
-    </div>
-    <ul class="reference-list compact-list">
-      {{ range first 12 $numbered }}
-      <li class="reference-item">
-        <a class="reference-item-title" href="{{ .content_path | relURL }}">#{{ .number }}: {{ .title }}</a>
-        <span class="reference-item-meta">{{ .question_count }} questions</span>
-      </li>
-      {{ end }}
-    </ul>
-  </section>
-
-  <section>
-    <div class="section-heading">
-      <h2>Special Pages</h2>
-      <a href="{{ "questions/" | relURL }}">All pages</a>
-    </div>
-    <ul class="reference-list compact-list">
-      {{ range $special }}
-      <li class="reference-item">
-        <a class="reference-item-title" href="{{ .content_path | relURL }}">{{ .title }}</a>
-        <span class="reference-item-meta">{{ .question_count }} questions</span>
-      </li>
-      {{ end }}
-    </ul>
-  </section>
-</div>
+<section>
+  <div class="section-heading">
+    <h2>Latest Livestreams</h2>
+    <a href="{{ "episodes/" | relURL }}">All episodes</a>
+  </div>
+  <ul class="reference-list compact-list home-list">
+    {{ range first 12 $curated }}
+    <li class="reference-item">
+      <a class="reference-item-title" href="{{ .content_path | relURL }}">{{ if .is_numbered }}#{{ .number }}: {{ end }}{{ .title }}</a>
+      <span class="reference-item-meta">{{ .question_count }} questions</span>
+    </li>
+    {{ end }}
+  </ul>
+</section>
 {{ end }}
