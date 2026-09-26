@@ -5,6 +5,8 @@ description: Create curated Ancient Egypt and the Bible Q&A Markdown pages under
 
 # Transcript to MD Reference
 
+**Write the answers directly. This site already establishes Dr Falk as the source. Zero routine host attribution, passive reporting, or mechanical framing is a completion requirement across questions, short answers, and expanded answers. Even one unnecessary `Falk says`, `he explains`, `the criticism is`, or equivalent wrapper must be removed.**
+
 ## Overview
 
 Create curated Markdown reference pages from livestream transcript files. The goal is not to reproduce the whole transcript. The goal is to make GitHub Pages readers able to:
@@ -172,8 +174,8 @@ After completing the transcript inventory:
 1. Order rows by the question-start timestamp.
 2. Combine split transcript fragments into one readable question.
 3. Use the question start, not the answer start, for the timestamp.
-4. Add a short answer or answer direction only when the transcript clearly supports it.
-5. Add a transcript-grounded expanded answer that gives the main reasoning, caveats, examples, or limits supported by the answer span.
+4. Add a direct short answer or answer direction only when the transcript clearly supports it. Apply the attribution rule while drafting the question and answer.
+5. Add a direct, transcript-grounded expanded answer that gives the main reasoning, caveats, examples, or limits supported by the answer span, without routine host attribution or source wrappers.
 6. Preserve uncertainty when the answer is incomplete or indirect.
 7. Write the output under `docs/questions/`.
 8. After all transcript-backed row content is drafted, run the Final Public-Wording Pass below before verifying the rows.
@@ -269,36 +271,52 @@ Question wording should create direct, searchable questions:
 - combine split transcript fragments and correct obvious transcript artifacts
 - keep names, titles, Bible references, Egyptian terms, dates, and chronology markers searchable
 - do not add context from the answer into the question
+- remove conversational addressee framing such as `What does he think about...` or `What does Dr Falk recommend...`; ask directly about the subject or requested recommendation unless the question concerns an actual personal fact
 - do not silently resolve an unclear proper noun or technical term from outside knowledge
 
-Answer wording should be concise, third-person, and useful in search results:
+Answer wording should explain the subject directly and be useful in search results. Direct advice such as `Start with...` or `Get help with...` is appropriate for recommendations:
 
-- write short and expanded answers as direct, concise third-person explanations
+- write short and expanded answers as direct explanations or advice, preserving the supported reasoning and detail
 - reflect the transcript-supported answer
 - preserve caveats, uncertainty, disagreement, and limits
 - avoid outside research
-- do not begin routine answers with "He said," "He argued," "He explained," or equivalent `the host` reporting frames
-- apply the question-subject attribution rule below to both answer columns, including sentences after the opening
+- remove routine reporting frames such as "He said," "He argued," "He explained," or equivalents using `the host` wherever they appear
+- apply the question-subject attribution rule below to questions and both answer columns, including sentences after the opening
 - preserve interpretation, uncertainty, disagreement, opinion, humor, and source limits in the substance of the answer; these categories alone do not justify host attribution
-- preserve claim type and ownership: a self-description must remain a self-description, a personal judgment must remain a judgment, a recommendation must remain advice, and a personal knowledge limit must not become a general claim
-- do not replace meaningful attribution with passive voice or an abstract proxy merely to remove a speaker label; retain the minimum ownership needed under the question-subject rule
+- preserve claim type through the actual wording: advice stays advice, uncertainty stays uncertain, and a personal knowledge limit stays personal; the site's established source does not need to be restated
+- apply only the concrete attribution exceptions below; `claim ownership`, `personal judgment`, and `third-person prose` are not general reasons to insert the host
 - prefer compact phrasing suitable for search results, tables, and index pages
 - preserve the difference between what the question asks and what the answer actually supports
 
 ### Question-Subject Attribution Rule
 
-For questions about the Bible, Egypt, history, language, theology, or another subject, answer the question plainly. Make the passage, event, object, argument, or other actual subject the grammatical subject. The page already identifies Dr Falk as the source. A question addressed to him, including `What do you think about...` or `How do you interpret...`, is not automatically a question about him personally.
+The site, page, and video link already supply provenance. Readers know whose answers these are. Write the substance directly from the first draft, and preserve already direct wording during audits. Do not add a host reference to make prose sound more careful, scholarly, or transcript-grounded.
 
-- Suppress routine host narration throughout both answer cells: `He says`, `He explains`, `He argues`, `He thinks`, `He notes`, `He points out`, `He adds`, `He rejects`, `He interprets`, `He distinguishes`, `He connects`, and equivalents using `Falk`, `Dr Falk`, `the host`, or `his view/reading/point`. Do not just vary the reporting verb or replace the pronoun with a name.
-- State the explanation and its reasons directly. A Bible interpretation does not need `he interprets` in each sentence. Preserve a necessary distinction with a compact qualifier such as `In this reading` or `One possible explanation`, only when supported. Do not replace every removed attribution with the same qualifier or add uncertainty to a confident answer.
-- Keep personal attribution when the question is directly about Dr Falk's life, work, credentials, beliefs, preferences, plans, experiences, or knowledge. In a mixed answer, attribute the personal portion and write the subject explanation directly. If an ordinary topic question receives only a personal knowledge limit, keep that limit personal: `He has not read the book` must not become `The book has not been studied`.
-- Preserve named ownership for competing speakers, quotations, third-party claims or allegations, and a personal judgment whose meaning would otherwise change. Interpretation or disagreement alone is not a blanket exemption for repeated host narration. Establish necessary ownership once within an answer cell, then explain the reasons directly unless the owner changes or would become unclear.
-- Preserve pronouns referring to biblical or historical people. Resolve who `he` refers to before editing. Remove redundant framing without deleting evidence, reasoning, examples, or caveats to lower an attribution count.
+- **Ordinary subject questions require no host attribution.** Make the passage, event, object, argument, or other actual subject the grammatical subject. `What do you think...`, `How do you interpret...`, `Do you believe...`, and `What do you recommend...` are ordinary ways of asking a subject question. Remove that framing from the curated question. Interpretation, theology, disagreement, advice, and recommendations do not become personal-profile questions just because they were addressed to Dr Falk.
+- Remove routine `Falk says`, `Dr Falk recommends`, `he explains`, `he argues`, `he thinks`, `he notes`, `he adds`, `he rejects`, `he interprets`, and equivalent reporting anywhere in questions or answers. One such frame per row or cell is still over-attribution. Changing the verb, using `the host`, or replacing `he` with `Dr Falk` does not fix it.
+- Remove disguised source wrappers too: `in his view`, `in this account`, `in this explanation`, `according to the discussion`, `the answer identifies`, and `the transcript says`. Do not add `in this reading` or `one possible interpretation` merely to replace a deleted host reference. A qualifier belongs only when it preserves an expressed degree of uncertainty or distinguishes an actual alternative in the answer.
+- Remove mechanical labels that announce what the sentence is doing: `the criticism is`, `the point is`, `the argument is`, `the answer is`, `the explanation is`, `the recommendation is`, and `the conclusion is`. State the criticism, reason, answer, or advice directly. Do not swap one label for another or write abstractions such as `the criticism rejects`. Preserve a named argument or criticism when it is the actual subject being examined; the defect is the empty lead-in, not the noun itself.
+- Remove process narration such as `the conclusion here leans`, `the discussion leaves open`, `the answer favors`, and `the response stops short of`. This rule covers equivalent wording, not just the listed strings. State the supported likelihood or unresolved issue directly: `A later date is more likely` or `The date remains uncertain`. Preserve the actual degree of uncertainty and the reason for it; do not make the discussion, conclusion, or answer stand in for the subject.
+- Avoid passive reporting language: `is described as`, `is presented as`, `is viewed as`, `is considered`, `is interpreted as`, `it is argued that`, `is recommended`, and `is said to`. Do not remove `Falk says` only to hide the same reporting in passive voice. State the supported description, inference, or advice directly. When an actual quotation or allegation needs an owner, name that owner briefly. Ordinary factual passives such as `The temple was built...` are not reporting frames.
+- Preserve the claim's strength in its substance: keep `likely`, `may`, or an explicit limit when the transcript supports it. Do not add hedges to a confident answer. Give recommendations as advice, for example `Start with Kelley's Hebrew grammar, especially the third edition`; do not frame ordinary advice as `Dr Falk recommends...` or turn it into an unsupported universal ranking.
+- Retain a host reference only for a concrete personal fact (biography, experience, plans, self-description, or a personal knowledge limit), a quotation or allegation that requires an owner, or an actual comparison between speakers that would otherwise be ambiguous. A topic opinion or recommendation alone does not qualify. In mixed answers, confine attribution to the personal fact or necessary comparison and explain the subject directly. `He has not read the book` must remain personal.
+- For each retained reference, identify the exact personal fact, quotation or allegation owner, or speaker distinction that would be lost without it. `It is his interpretation`, `it is his recommendation`, `claim ownership`, and `it sounds more cautious` fail this test. Use the minimum reference needed where the exception applies; it does not license host narration elsewhere in the row. These are internal editing decisions, not disclaimers to add to the page.
+- Preserve names and pronouns referring to biblical or historical figures, authors, guests, or other actual subjects. Preserve evidence, reasoning, examples, and caveats. Rewrite naturally rather than using passive reporting (`is considered`, `is recommended`) or an abstract source proxy to conceal redundant attribution.
 
 Illustrative wording patterns (use only claims supported by the actual transcript):
 
 | Question context | Avoid | Prefer |
 |---|---|---|
+| A subject question addressed to the host | `What does he think of the similarities between Psalm 104 and the Hymn to the Aten?` | `How are Psalm 104 and the Hymn to the Aten related?` |
+| A request for a learning resource | `Which book does Dr Falk recommend for learning biblical Hebrew?` | `Which book should I use to learn biblical Hebrew?` |
+| Ordinary advice | `He recommends Kelley's Hebrew grammar and advises getting help with the alphabet.` | `Start with Kelley's Hebrew grammar. Get help with the alphabet at the beginning.` |
+| Disguised source framing | `In his explanation, shared cultural transmission is likely.` | `Shared cultural transmission is likely.` |
+| A mechanical criticism label | `The criticism is that the claim lacks evidence.` | `The claim lacks evidence.` |
+| A mechanical advice label | `The recommendation is to get help with the alphabet.` | `Get help with the alphabet.` |
+| A narrated likelihood | `The conclusion here leans toward a later date.` | `A later date is more likely.` |
+| A narrated uncertainty | `The discussion leaves open whether the texts are directly related.` | `Whether the texts are directly related remains uncertain.` |
+| Passive reporting | `The passage is described as using a metaphor.` | `The passage uses a metaphor.` |
+| A passive recommendation | `Getting help with the alphabet is recommended.` | `Get help with the alphabet.` |
 | An ordinary Bible question | `He explains that the passage uses a metaphor. He adds that the surrounding verses explain it.` | `The passage uses a metaphor, which the surrounding verses explain.` |
 | An explicitly tentative interpretation | `He thinks this might refer to a local event.` | `This might refer to a local event.` |
 | A question about his reading | `The book has not been read.` | `He has not read the book.` |
@@ -315,7 +333,7 @@ Expanded answers:
 Use uncertainty when needed:
 
 ```text
-The transcript does not give a clear direct answer.
+The date remains uncertain.
 ```
 
 ## Final Public-Wording Pass
@@ -325,9 +343,9 @@ After the complete question inventory and transcript-grounded row content are dr
 1. Apply `$humanizer` in embedded mode. Run its draft, audit, and final loop internally, then write only the final prose to the page. Do not place Humanizer draft text, audit bullets, or a separate Humanizer summary in the Markdown, audit log, or handoff.
 2. Review every authored public prose field in the new page with Humanizer: questions, short answers, expanded answers, and any SEO description or other authored public prose. This defines the review scope, not a rewrite quota. Leave clean prose unchanged. Read each short and expanded answer together, then scan adjacent rows so repeated attribution and uniform sentence patterns are visible across the page.
 3. Treat the transcript and this skill's evidence-preservation rules as higher priority than generic Humanizer defaults. Preserve every supported claim, proper noun, title, date, number, Bible reference, technical term, searchable question detail, qualification, caveat, uncertainty, interpretation, disagreement, opinion, humor, personal experience, and source limitation. Do not resolve unclear names or terms from outside knowledge, turn an interpretation into an objective fact, or add specificity absent from the transcript.
-4. Run an explicit over-attribution check, including for GPT-6 output. Apply the Question-Subject Attribution Rule to every short and expanded answer, not just sentence openings. Scan `he`, `his`, speaker names, generic speaker labels, and reporting verbs in context. Read adjacent rows to catch repeated narration that individual-cell checks miss. For ordinary Bible or history questions, the finished cells should explain the subject directly.
-5. For each retained host attribution, identify the personal fact, necessary claim owner, quotation, or speaker distinction it preserves. `This is his interpretation` by itself does not justify serial reporting frames. Check both columns independently so each reads naturally on its own; do not copy an attribution into the expanded answer just because the short answer uses it. Counts are triage, not a deletion quota.
-6. Do not hide meaningful ownership with passive voice such as `is considered`, `is criticized`, or `are urged`, or make an abstract proxy perform a human act merely to avoid attribution. Choose a natural subject. Keep compact attribution when removing it would make the sentence more absolute, awkward, or unclear.
+4. Run an explicit over-attribution and mechanical-framing check, including for GPT-6 output. Apply the Question-Subject Attribution Rule to every question, short answer, and expanded answer, including later sentences. Scan `Falk`, `Dr. Falk`, `he`, `his`, generic speaker labels, reporting verbs, source wrappers, and lead-ins such as `the criticism is` in context. Inspect the diff for framing added to previously direct prose. Every unnecessary occurrence is an issue even if it occurs only once or passes the wording checker.
+5. Apply the concrete exception test to every retained host reference. Check both answer columns independently; an exception in one cell does not authorize attribution in the other. Read adjacent rows for repeated frames. Zero routine host attribution, passive reporting, or mechanical framing is required before completion; references that pass a concrete exception may remain.
+6. Preserve supported uncertainty and advice through natural subject wording. Awkwardness after deleting a name is a reason to rewrite the sentence, not permission to restore redundant attribution. Do not substitute passive reporting, an abstract source proxy, or labels such as `the criticism is`. Do not add public disclaimers to explain these editing decisions.
 7. Determine speaker context from the transcript before removing a name or pronoun. Preserve audience members, guests, quoted scholars, historical figures, and other people who could be confused with the main speaker. Do not replace one repetitive label with another.
 8. During this pass, leave stream-identifying headings, timestamp anchors and link targets, table columns, row order, Markdown structure, filenames, source identity, and audit-log text unchanged.
 9. Recheck every rewritten cell against its answer span and its pre-Humanizer wording. Confirm that the claim is still the same kind of claim and that the sentence has a natural subject and verb. Reject or revise wording that adds, removes, strengthens, weakens, generalizes, or reattributes a claim. The scoped wording check remains an additional validation gate, not a substitute for this evidence check.
@@ -446,11 +464,12 @@ npm run check:question-wording -- --path $path --strict --review
 
 Fix every actionable high-confidence issue and rerun the command until it exits
 successfully. Adjudicate each review candidate against the transcript using the
-Question-Subject Attribution Rule. A passing scan does not excuse repetitive
-`he` narration, and an interpretation label alone does not justify retaining it.
-Preserve necessary personal or competing-source ownership without passive voice
-or awkward abstract subjects. Review candidates require judgment; their count
-does not need to reach zero, and `--strict-review` is not the completion gate.
+Question-Subject Attribution Rule. The semantic completion gate is zero routine
+host attribution, passive reporting, or mechanical framing in questions and both answer columns,
+including source wrappers and lead-ins such as `the criticism is`. A passing scan
+or a `review` classification does not waive this rule. Retain only references that
+pass a concrete exception. Their presence means the raw candidate count need not
+reach zero; `--strict-review` is not the completion gate.
 
 ## Final Response
 
@@ -475,9 +494,9 @@ A task using this skill is complete only when the relevant items are true:
 - retained questions are supported by transcript text
 - retained questions are written as direct, searchable questions
 - answer summaries are supported by transcript text and preserve uncertainty
-- short and expanded answers use concise third-person phrasing and avoid routine reporting frames and generic speaker labels without a transcript-grounded reason
+- questions and both answer columns contain zero routine host attribution, passive reporting, source-wrapper substitutes, or mechanical lead-ins such as `the criticism is`; existing direct prose has not gained new framing
 - the embedded Humanizer pass covered all authored public prose and every rewrite was rechecked against the transcript
-- ordinary subject questions have direct answers in both columns; the whole-page attribution check covered later sentences and justified retained host references under the question-subject rule
+- ordinary subject questions ask about the subject directly; both answer columns explain it directly; the attribution check covered later sentences and every retained host reference passed a concrete exception
 - Humanizer rewrites preserve claim type and ownership; attribution removal did not turn self-description, judgment, recommendation, or personal knowledge into a categorical, passive, or awkward claim
 - no outside facts were added
 - timestamps point to question starts
