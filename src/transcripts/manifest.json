@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "Kg7RZ5BrIgk",
+      "fileStem": "280-a-miracle-this-live-stream-is-still-going",
+      "path": "txt/280-a-miracle-this-live-stream-is-still-going.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "71e256464ca2cc7d902d81ed7fd4ef72d50e54a7139050322302498d10221d9b",
+      "canonicalByteLength": 198776,
+      "segmentCount": 4469,
+      "firstStartSeconds": 57,
+      "lastStartSeconds": 14625,
+      "fetchedAt": "2026-09-27T19:25:22.911Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "BNmyGkeodhs",
       "fileStem": "279-weighed-down-with-bling",
       "path": "txt/279-weighed-down-with-bling.txt",

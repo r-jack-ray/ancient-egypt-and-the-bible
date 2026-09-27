@@ -1,11 +1,8 @@
 #!/usr/bin/env node
-import {mkdirSync, readFileSync, writeFileSync} from "node:fs";
-import {resolve} from "node:path";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { resolve } from "node:path";
 
-import {
-  type MechanicalWordingFinding,
-  scanQuestionTableMechanicalWording,
-} from "../questions/mechanical-wording.js";
+import { type MechanicalWordingFinding, scanQuestionTableMechanicalWording, } from "../questions/mechanical-wording.js";
 import {
   listQuestionMarkdownFiles,
   parseQuestionTableText,

@@ -1,7 +1,7 @@
-import {fuzzy} from "fast-fuzzy";
-import MarkdownIt = require("markdown-it");
+import { fuzzy } from "fast-fuzzy";
 
-import type {ParsedQuestionTable} from "./table-analysis.js";
+import type { ParsedQuestionTable } from "./table-analysis.js";
+import MarkdownIt = require("markdown-it");
 
 export type MechanicalWordingCell = "question" | "shortAnswer" | "expandedAnswer";
 export type MechanicalWordingConfidence = "high" | "review";
@@ -247,7 +247,7 @@ function fuzzyFindings(
 ): LocatedFinding[] {
   const words = wordTokens(text);
   const transcriptWordIndexes = words.flatMap((word, index) =>
-    resemblesTranscript(word.value) ? [index] : []
+      resemblesTranscript(word.value) ? [index] : []
   );
   const candidates: LocatedFinding[] = [];
   for (const reference of fuzzyPhrases) {
@@ -301,8 +301,8 @@ function fuzzyFindings(
   }
 
   candidates.sort((left, right) =>
-    (right.finding.similarity ?? 0) - (left.finding.similarity ?? 0)
-    || left.start - right.start
+      (right.finding.similarity ?? 0) - (left.finding.similarity ?? 0)
+      || left.start - right.start
   );
   const selected: LocatedFinding[] = [];
   for (const candidate of candidates) {

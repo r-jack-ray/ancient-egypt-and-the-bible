@@ -1,10 +1,14 @@
 const assert = require("node:assert/strict");
-const fs = require("node:fs");
-const path = require("node:path");
 const test = require("node:test");
 
 const core = require("../site/assets/js/search-core.js");
-const aliasConfig = JSON.parse(fs.readFileSync(path.join(__dirname, "../site/data/search-aliases.json"), "utf8"));
+const aliasConfig = {
+  aliasGroups: [["pharaoh", "pharoah", "pharaohs"]],
+  phraseAliasGroups: [
+    ["ramses 2", "ramses ii", "ramesses ii", "rameses ii"],
+    ["dss", "dead sea scrolls"]
+  ]
+};
 const aliasIndex = core.createSearchAliasIndex(aliasConfig);
 
 function spansFor(query, text) {

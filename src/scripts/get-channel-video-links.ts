@@ -1,6 +1,13 @@
 #!/usr/bin/env node
 import { resolveYoutubeApiKey } from "../youtube/api-key.js";
-import { applyInventoryCandidate, defaultInventoryAdditions, fetchInventoryCandidate, type InventoryCandidate, latestNumberedAddition, writeInventoryReport, } from "../youtube/inventory.js";
+import {
+  applyInventoryCandidate,
+  defaultInventoryAdditions,
+  fetchInventoryCandidate,
+  type InventoryCandidate,
+  latestNumberedAddition,
+  writeInventoryReport,
+} from "../youtube/inventory.js";
 
 const defaultReportPath = "reports/stream-inventory-candidate.json";
 

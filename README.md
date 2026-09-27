@@ -21,16 +21,16 @@ Timestamp links on Q&A pages open the matching YouTube video at the question sta
 
 ## Current Archive Snapshot
 
-Inventory counts observed on 2026-09-19:
+Inventory counts observed on 2026-09-27:
 
 | Surface | Coverage |
 |---|---:|
-| Registered streams | 293: 279 numbered and 14 special or side-series streams |
-| Canonical TXT transcripts | 291: 277 numbered and all 14 non-numbered streams |
-| Curated Q&A pages | 291: 277 numbered and all 14 non-numbered streams |
+| Registered streams | 294: 280 numbered and 14 special or side-series streams |
+| Canonical TXT transcripts | 292: 278 numbered and all 14 non-numbered streams |
+| Curated Q&A pages | 292: 278 numbered and all 14 non-numbered streams |
 | Known-unavailable transcripts | 2 numbered streams |
 
-Latest numbered Q&A page: [Livestream 279: Weighed Down With Bling](./docs/questions/279-weighed-down-with-bling-questions.md).
+Latest numbered Q&A page: [Livestream 280: A Miracle This Live Stream Is Still Going](./docs/questions/280-a-miracle-this-live-stream-is-still-going-questions.md).
 
 The two canonical `known-unavailable` records are:
 

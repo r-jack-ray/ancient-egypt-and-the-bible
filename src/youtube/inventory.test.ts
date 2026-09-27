@@ -29,8 +29,28 @@ const baseline: EpisodeRecord = {
   transcriptPolicy: "expected",
 };
 
-test("inventory discovery uses injected fetch for channel lookup and paginated uploads", async () => {
-  const current = await readEpisodesStore();
+async function writeDiscoveryFixture(repoRoot: string): Promise<void> {
+  await mkdir(join(repoRoot, "src/channel"), {recursive: true});
+  await writeFile(
+      join(repoRoot, "src/channel/episodes.json"),
+      `${JSON.stringify({
+        schemaVersion: 1,
+        channel: {
+          handleUrl: "https://www.youtube.com/@ancientegyptandthebible",
+          channelId: "fixture-channel",
+          uploadsPlaylistId: "fixture-uploads",
+        },
+        episodes: [baseline],
+      }, null, 2)}\n`,
+      "utf8",
+  );
+}
+
+test("inventory discovery uses injected fetch for channel lookup and paginated uploads", async (t) => {
+  const repoRoot = await mkdtemp(join(tmpdir(), "inventory-discovery-"));
+  t.after(() => rm(repoRoot, {recursive: true, force: true}));
+  await writeDiscoveryFixture(repoRoot);
+  const current = await readEpisodesStore(join(repoRoot, "src/channel/episodes.json"));
   const channelId = current.channel.channelId;
   const uploadsPlaylistId = current.channel.uploadsPlaylistId;
   const existing = current.episodes[0];
@@ -112,6 +132,7 @@ test("inventory discovery uses injected fetch for channel lookup and paginated u
   }) as typeof fetch;
 
   const candidate = await fetchInventoryCandidate({
+    repoRoot,
     apiKey: "fixture-key",
     delayMs: 250,
     fetch: mockFetch,
@@ -140,13 +161,17 @@ test("inventory discovery uses injected fetch for channel lookup and paginated u
   assert.ok(logs.includes("Fetched uploads page 2; videos=3."));
 });
 
-test("inventory discovery reports a channel response with missing uploads fields", async () => {
-  const current = await readEpisodesStore();
+test("inventory discovery reports a channel response with missing uploads fields", async (t) => {
+  const repoRoot = await mkdtemp(join(tmpdir(), "inventory-discovery-"));
+  t.after(() => rm(repoRoot, {recursive: true, force: true}));
+  await writeDiscoveryFixture(repoRoot);
+  const current = await readEpisodesStore(join(repoRoot, "src/channel/episodes.json"));
   const mockFetch = (async () => jsonResponse({
     items: [{id: current.channel.channelId, contentDetails: {relatedPlaylists: {}}}],
   })) as typeof fetch;
   await assert.rejects(
       fetchInventoryCandidate({
+        repoRoot,
         apiKey: "fixture-key",
         delayMs: 0,
         fetch: mockFetch,
@@ -158,20 +183,7 @@ test("inventory discovery reports a channel response with missing uploads fields
 test("inventory discovery fixtures cover no additions and multiple additions", async () => {
   const repoRoot = await mkdtemp(join(tmpdir(), "inventory-discovery-"));
   try {
-    await mkdir(join(repoRoot, "src/channel"), {recursive: true});
-    await writeFile(
-        join(repoRoot, "src/channel/episodes.json"),
-        `${JSON.stringify({
-          schemaVersion: 1,
-          channel: {
-            handleUrl: "https://www.youtube.com/@ancientegyptandthebible",
-            channelId: "fixture-channel",
-            uploadsPlaylistId: "fixture-uploads",
-          },
-          episodes: [baseline],
-        }, null, 2)}\n`,
-        "utf8",
-    );
+    await writeDiscoveryFixture(repoRoot);
 
     const noAdditionRequests: URL[] = [];
     const noAdditions = await fetchInventoryCandidate({
