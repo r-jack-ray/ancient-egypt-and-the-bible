@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "vgy0qCRMHdk",
+      "fileStem": "281-wild-a-historic-live-stream",
+      "path": "txt/281-wild-a-historic-live-stream.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "4ac60e36e558a7c03ad13869a37beb935f83d29a296099bf4eb079416da43d8c",
+      "canonicalByteLength": 208952,
+      "segmentCount": 4691,
+      "firstStartSeconds": 198,
+      "lastStartSeconds": 15096,
+      "fetchedAt": "2026-10-03T15:56:00.687Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "Kg7RZ5BrIgk",
       "fileStem": "280-a-miracle-this-live-stream-is-still-going",
       "path": "txt/280-a-miracle-this-live-stream-is-still-going.txt",
