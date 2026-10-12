@@ -3,8 +3,9 @@
   "generated_by": "scripts/build-search-index.mjs",
   "source_data": "site/data/questions.json",
   "source_aliases": "site/data/search-aliases.json",
-  "document_count": 14856,
+  "document_count": 14948,
   "episode_order": [
+    "questions/282-spitting-out-refreshing-sacred-fire/",
     "questions/281-wild-a-historic-live-stream/",
     "questions/280-a-miracle-this-live-stream-is-still-going/",
     "questions/279-weighed-down-with-bling/",

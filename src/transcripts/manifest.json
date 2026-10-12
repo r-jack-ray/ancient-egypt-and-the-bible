@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "f0OlK-HMb64",
+      "fileStem": "282-spitting-out-refreshing-sacred-fire",
+      "path": "txt/282-spitting-out-refreshing-sacred-fire.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "2837c2beed97d6a4c726469545b1fa8d1f817fd21b70d3e636af41ffbf96fee7",
+      "canonicalByteLength": 225489,
+      "segmentCount": 5013,
+      "firstStartSeconds": 8,
+      "lastStartSeconds": 15689,
+      "fetchedAt": "2026-10-12T01:20:36.438Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "vgy0qCRMHdk",
       "fileStem": "281-wild-a-historic-live-stream",
       "path": "txt/281-wild-a-historic-live-stream.txt",
