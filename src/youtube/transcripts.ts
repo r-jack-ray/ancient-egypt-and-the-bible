@@ -16,6 +16,7 @@ import {
   transcriptRecordFromText,
   transcriptRoot,
 } from "../archive.js";
+import { assertVideoNotBlocked } from "../channel/blocked-videos.js";
 import { assertPathInside, atomicWriteJson, atomicWriteText, fileExists, } from "../pipeline/files.js";
 import { acquireWriterLease } from "../pipeline/lease.js";
 import { createRateLimitedFetch, YoutubeRequestError } from "./rate-limit.js";
@@ -51,6 +52,7 @@ export interface FetchTranscriptOptions {
 
 export async function fetchVideoTranscript(options: FetchTranscriptOptions): Promise<VideoTranscript> {
   assertVideoId(options.videoId);
+  assertVideoNotBlocked(options.videoId);
   const limitedFetch = options.fetch ?? createRateLimitedFetch({
     delayMs: options.requestDelayMs,
     ...(options.logger !== undefined ? {logger: options.logger} : {}),

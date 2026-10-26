@@ -11,9 +11,23 @@ import {
   inventoryJournalPath,
   recoverInventoryTransaction,
   transcriptRecordFromText,
+  validateEpisodes,
   validateTranscriptText,
 } from "./archive.js";
 import { assertPathInside } from "./pipeline/files.js";
+
+test("canonical archive validation rejects blocklisted videos", () => {
+  const episode = testEpisode();
+  assert.doesNotThrow(() => validateEpisodes([episode]));
+  assert.throws(
+    () => validateEpisodes([{
+      ...episode,
+      videoId: "hJ_9yHtzflc",
+      url: "https://www.youtube.com/watch?v=hJ_9yHtzflc",
+    }]),
+    /hJ_9yHtzflc is blocklisted/u,
+  );
+});
 
 test("TXT formatter timestamp contract supports hours", () => {
   assert.equal(formatTimestamp(8), "0:08");

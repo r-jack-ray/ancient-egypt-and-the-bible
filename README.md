@@ -21,16 +21,16 @@ Timestamp links on Q&A pages open the matching YouTube video at the question sta
 
 ## Current Archive Snapshot
 
-Inventory counts observed on 2026-10-11:
+Inventory counts observed on 2026-10-25:
 
 | Surface | Coverage |
 |---|---:|
-| Registered streams | 296: 282 numbered and 14 special or side-series streams |
-| Canonical TXT transcripts | 294: 280 numbered and all 14 non-numbered streams |
-| Curated Q&A pages | 294: 280 numbered and all 14 non-numbered streams |
+| Registered streams | 297: 283 numbered and 14 special or side-series streams |
+| Canonical TXT transcripts | 295: 281 numbered and all 14 non-numbered streams |
+| Curated Q&A pages | 295: 281 numbered and all 14 non-numbered streams |
 | Known-unavailable transcripts | 2 numbered streams |
 
-Latest numbered Q&A page: [Livestream 282: Spitting Out Refreshing Sacred Fire](./docs/questions/282-spitting-out-refreshing-sacred-fire-questions.md).
+Latest numbered Q&A page: [Livestream 283: Celebrating Short Nephilim](./docs/questions/283-celebrating-short-nephilim-questions.md).
 
 The two canonical `known-unavailable` records are:
 
@@ -182,6 +182,8 @@ npm run fetch:livestreams
 ```
 
 By default, the command registers every proposed numbered livestream and every broadcast whose title begins `Special Live Stream`, pins the resolved channel source when needed, and atomically updates [`src/channel/episodes.json`](./src/channel/episodes.json) and [`src/channel/video-metadata.json`](./src/channel/video-metadata.json). Other broadcasts remain outside the canonical inventory.
+
+[`src/channel/blocked-videos.json`](./src/channel/blocked-videos.json) excludes specific videos from livestream discovery and transcript retrieval. It includes `hJ_9yHtzflc`, a looping composite of old livestreams. Blocklisted IDs are skipped before discovery requests video metadata; explicit inventory acceptance, canonical archive validation, and direct transcript fetching reject them.
 
 Use a report-only review when needed:
 

@@ -38,6 +38,22 @@ test("caption cleanup removes markup, tabs, and line breaks", () => {
   assert.equal(cleanCaptionText("<b>A&amp;B</b>\r\nnext\tword"), "A&B next word");
 });
 
+test("blocklisted composites reject direct transcript fetching before any network request", async () => {
+  let requests = 0;
+  await assert.rejects(
+      fetchVideoTranscript({
+        videoId: "hJ_9yHtzflc",
+        requestDelayMs: 0,
+        fetch: (async () => {
+          requests += 1;
+          return new Response("Unexpected request");
+        }) as typeof fetch,
+      }),
+      /hJ_9yHtzflc is blocklisted/u,
+  );
+  assert.equal(requests, 0);
+});
+
 test("primary CAPTCHA evidence trips the circuit breaker without a fallback request", async () => {
   let requests = 0;
   await assert.rejects(

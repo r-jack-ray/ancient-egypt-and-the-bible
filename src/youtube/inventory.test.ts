@@ -240,6 +240,58 @@ test("inventory discovery fixtures cover no additions and multiple additions", a
   }
 });
 
+test("inventory discovery omits blocklisted composites before metadata requests", async (t) => {
+  const repoRoot = await mkdtemp(join(tmpdir(), "inventory-blocklist-"));
+  t.after(() => rm(repoRoot, {recursive: true, force: true}));
+  await writeDiscoveryFixture(repoRoot);
+  const blockedId = "hJ_9yHtzflc";
+  const newStreamId = "NEWSTREAM01";
+  const requests: URL[] = [];
+  const candidate = await fetchInventoryCandidate({
+    apiKey: "fixture-key",
+    delayMs: 0,
+    repoRoot,
+    fetch: inventoryFixtureFetch(
+        [blockedId, newStreamId, baseline.videoId],
+        new Map([
+          [blockedId, "Live Stream #999: Looping composite"],
+          [newStreamId, "Live Stream #272: New episode"],
+          [baseline.videoId, baseline.linkText],
+        ]),
+        requests,
+    ),
+  });
+
+  assert.deepEqual(candidate.additions.map((record) => record.videoId), [newStreamId]);
+  assert.deepEqual(candidate.omittedBaselineVideoIds, []);
+  assert.equal(JSON.stringify(candidate).includes(blockedId), false);
+  assert.deepEqual(
+      requests.filter((url) => url.pathname.endsWith("/videos"))
+          .map((url) => url.searchParams.get("id")),
+      [`${newStreamId},${baseline.videoId}`],
+  );
+});
+
+test("stale inventory selections cannot reintroduce a blocklisted video", () => {
+  const blocked = episodeFromVideoMetadata({
+    videoId: "hJ_9yHtzflc",
+    fetchedAt: "2026-10-13T00:00:00Z",
+    title: "Live Stream #999: Looping composite",
+  }, 2);
+  const eligible = episodeFromVideoMetadata({
+    videoId: "NEWSTREAM01",
+    fetchedAt: "2026-10-13T00:00:00Z",
+    title: "Live Stream #272: New episode",
+  }, 3);
+  const additions = [blocked, eligible];
+  assert.deepEqual(defaultInventoryAdditions(additions), [eligible]);
+  assert.equal(latestNumberedAddition(additions), eligible);
+  assert.throws(
+      () => buildAcceptedInventoryEpisodes([baseline], additions, [blocked.videoId]),
+      /hJ_9yHtzflc is blocklisted/u,
+  );
+});
+
 test("numbered inventory additions use the established archive identity shape", () => {
   const episode = episodeFromVideoMetadata({
     videoId: "8bF8Hm5NpR8",

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "videos": [
+    {
+      "videoId": "hJ_9yHtzflc",
+      "url": "https://www.youtube.com/watch?v=hJ_9yHtzflc",
+      "reason": "Looping composite of old livestreams, excluded from the livestream archive and transcript retrieval."
+    }
+  ]
+}

@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "h-ukjpmFR6Q",
+      "fileStem": "283-celebrating-short-nephilim",
+      "path": "txt/283-celebrating-short-nephilim.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "4a0bf269e438164429cb2973f7a7ea5dfef2b71bcd00c166e0b0c0aee6608c20",
+      "canonicalByteLength": 246720,
+      "segmentCount": 6024,
+      "firstStartSeconds": 119,
+      "lastStartSeconds": 15666,
+      "fetchedAt": "2026-10-25T21:55:50.988Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "f0OlK-HMb64",
       "fileStem": "282-spitting-out-refreshing-sacred-fire",
       "path": "txt/282-spitting-out-refreshing-sacred-fire.txt",

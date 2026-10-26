@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { basename, join, resolve } from "node:path";
 import { readFile, readdir, rm } from "node:fs/promises";
 
+import { assertVideoNotBlocked } from "./channel/blocked-videos.js";
 import {
   assertPathInside,
   atomicWriteText,
@@ -92,6 +93,7 @@ export function validateEpisodes(episodes: readonly EpisodeRecord[]): void {
     if (!/^[A-Za-z0-9_-]{11}$/u.test(episode.videoId)) {
       throw new Error(`Invalid YouTube video ID: ${episode.videoId}`);
     }
+    assertVideoNotBlocked(episode.videoId);
     if (!isPortableStem(episode.fileStem) || episode.slug !== episode.fileStem) {
       throw new Error(`Invalid or divergent stable fileStem for ${episode.videoId}: ${episode.fileStem}`);
     }

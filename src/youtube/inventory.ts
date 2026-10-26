@@ -2,6 +2,7 @@ import { readFile, rm } from "node:fs/promises";
 import { resolve } from "node:path";
 
 import { type EpisodeRecord, episodesPath, type EpisodesStore, inventoryJournalPath, metadataPath, readEpisodesStore, validateEpisodes, } from "../archive.js";
+import { assertVideoNotBlocked, isBlockedVideo } from "../channel/blocked-videos.js";
 import { atomicWriteJson, atomicWriteText, stableJson, writeDiagnostic, } from "../pipeline/files.js";
 import { acquireWriterLease } from "../pipeline/lease.js";
 import { createYoutubeDataApiClient } from "./data-api.js";
@@ -102,7 +103,7 @@ export async function fetchInventoryCandidate(options: {
     }
     const page = await youtube.fetchPlaylistVideoPage(uploadsPlaylistId, token);
     for (const id of page.videoIds) {
-      if (!uploadIds.includes(id)) {
+      if (!isBlockedVideo(id) && !uploadIds.includes(id)) {
         uploadIds.push(id);
       }
     }
@@ -242,6 +243,9 @@ export function buildAcceptedInventoryEpisodes(
 ): EpisodeRecord[] {
   const additionsById = new Map(additions.map((record) => [record.videoId, record]));
   const accepted = new Set(acceptedAdditionIds);
+  for (const videoId of accepted) {
+    assertVideoNotBlocked(videoId);
+  }
   const unknown = [...accepted].filter((videoId) => !additionsById.has(videoId));
   if (unknown.length > 0) {
     throw new Error(`Accepted video IDs are not proposed additions: ${unknown.join(", ")}`);
@@ -262,15 +266,19 @@ export function defaultInventoryAdditions(
     additions: readonly EpisodeRecord[],
 ): EpisodeRecord[] {
   return additions.filter((record) =>
-      record.episodeNumber !== undefined ||
-      /^Special Live\s*Stream\b/iu.test(record.linkText.trim())
+      !isBlockedVideo(record.videoId) && (
+          record.episodeNumber !== undefined ||
+          /^Special Live\s*Stream\b/iu.test(record.linkText.trim())
+      )
   );
 }
 
 export function latestNumberedAddition(
     additions: readonly EpisodeRecord[],
 ): EpisodeRecord | undefined {
-  return additions.find((record) => record.episodeNumber !== undefined);
+  return additions.find((record) =>
+      !isBlockedVideo(record.videoId) && record.episodeNumber !== undefined
+  );
 }
 
 export function buildInventoryDeltaReport(
