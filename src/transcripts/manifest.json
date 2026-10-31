@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "pst3yJdgfpA",
+      "fileStem": "284-wyatt-s-bottomless-grain-pits",
+      "path": "txt/284-wyatt-s-bottomless-grain-pits.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "988cda4704bff722b21a186abf3a1c1f7504ff6429a1fc66bee7d43f0492e8cf",
+      "canonicalByteLength": 250736,
+      "segmentCount": 5552,
+      "firstStartSeconds": 343,
+      "lastStartSeconds": 16983,
+      "fetchedAt": "2026-10-31T15:46:22.073Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "h-ukjpmFR6Q",
       "fileStem": "283-celebrating-short-nephilim",
       "path": "txt/283-celebrating-short-nephilim.txt",

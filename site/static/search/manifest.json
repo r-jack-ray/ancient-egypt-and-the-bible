@@ -3,8 +3,9 @@
   "generated_by": "scripts/build-search-index.mjs",
   "source_data": "site/data/questions.json",
   "source_aliases": "site/data/search-aliases.json",
-  "document_count": 15024,
+  "document_count": 15105,
   "episode_order": [
+    "questions/284-wyatt-s-bottomless-grain-pits/",
     "questions/283-celebrating-short-nephilim/",
     "questions/282-spitting-out-refreshing-sacred-fire/",
     "questions/281-wild-a-historic-live-stream/",

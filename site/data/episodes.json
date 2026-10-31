@@ -1,5 +1,19 @@
 [
   {
+    "number": 284,
+    "title": "Wyatt's Bottomless Grain Pits",
+    "slug": "284-wyatt-s-bottomless-grain-pits",
+    "youtube_url": "https://www.youtube.com/watch?v=pst3yJdgfpA",
+    "video_id": "pst3yJdgfpA",
+    "question_page": "questions/284-wyatt-s-bottomless-grain-pits-questions.md",
+    "content_path": "questions/284-wyatt-s-bottomless-grain-pits/",
+    "status": "curated",
+    "is_numbered": true,
+    "is_special": false,
+    "question_count": 81,
+    "series": "numbered livestream"
+  },
+  {
     "number": 283,
     "title": "Celebrating Short Nephilim",
     "slug": "283-celebrating-short-nephilim",
