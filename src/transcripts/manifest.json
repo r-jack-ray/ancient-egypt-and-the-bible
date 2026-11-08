@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "4zedFV0sETc",
+      "fileStem": "285-joseph-time-traveller",
+      "path": "txt/285-joseph-time-traveller.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "50e9b75bf40a04b1118aa1a9fc9127bab0898c4947d910b6dbc11f28a0a773e8",
+      "canonicalByteLength": 274790,
+      "segmentCount": 6091,
+      "firstStartSeconds": 142,
+      "lastStartSeconds": 19255,
+      "fetchedAt": "2026-11-08T00:42:59.981Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "pst3yJdgfpA",
       "fileStem": "284-wyatt-s-bottomless-grain-pits",
       "path": "txt/284-wyatt-s-bottomless-grain-pits.txt",
