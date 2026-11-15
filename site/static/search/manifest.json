@@ -3,8 +3,9 @@
   "generated_by": "scripts/build-search-index.mjs",
   "source_data": "site/data/questions.json",
   "source_aliases": "site/data/search-aliases.json",
-  "document_count": 15201,
+  "document_count": 15255,
   "episode_order": [
+    "questions/286-friday-the-13th-a-fine-day-for-a-book-launch/",
     "questions/285-joseph-time-traveller/",
     "questions/284-wyatt-s-bottomless-grain-pits/",
     "questions/283-celebrating-short-nephilim/",

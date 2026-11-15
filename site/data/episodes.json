@@ -1,5 +1,19 @@
 [
   {
+    "number": 286,
+    "title": "Friday The 13th, A Fine Day For A Book Launch!",
+    "slug": "286-friday-the-13th-a-fine-day-for-a-book-launch",
+    "youtube_url": "https://www.youtube.com/watch?v=OJ8k4CE23_E",
+    "video_id": "OJ8k4CE23_E",
+    "question_page": "questions/286-friday-the-13th-a-fine-day-for-a-book-launch-questions.md",
+    "content_path": "questions/286-friday-the-13th-a-fine-day-for-a-book-launch/",
+    "status": "curated",
+    "is_numbered": true,
+    "is_special": false,
+    "question_count": 54,
+    "series": "numbered livestream"
+  },
+  {
     "number": 285,
     "title": "Joseph, Time-Traveller",
     "slug": "285-joseph-time-traveller",

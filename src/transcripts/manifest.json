@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "OJ8k4CE23_E",
+      "fileStem": "286-friday-the-13th-a-fine-day-for-a-book-launch",
+      "path": "txt/286-friday-the-13th-a-fine-day-for-a-book-launch.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "8aa24d96288de1c1ad66a4652baecc48d6d256a0e98e64b417500f3fdc7808a6",
+      "canonicalByteLength": 161056,
+      "segmentCount": 4107,
+      "firstStartSeconds": 292,
+      "lastStartSeconds": 11523,
+      "fetchedAt": "2026-11-15T17:22:05.958Z",
+      "selectedLanguage": "en",
+      "availableLanguages": [
+        "en"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "4zedFV0sETc",
       "fileStem": "285-joseph-time-traveller",
       "path": "txt/285-joseph-time-traveller.txt",

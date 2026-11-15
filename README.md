@@ -21,16 +21,16 @@ Timestamp links on Q&A pages open the matching YouTube video at the question sta
 
 ## Current Archive Snapshot
 
-Inventory counts observed on 2026-11-07:
+Inventory counts observed on 2026-11-15:
 
 | Surface | Coverage |
 |---|---:|
-| Registered streams | 299: 285 numbered and 14 special or side-series streams |
-| Canonical TXT transcripts | 297: 283 numbered and all 14 non-numbered streams |
-| Curated Q&A pages | 297: 283 numbered and all 14 non-numbered streams |
+| Registered streams | 300: 286 numbered and 14 special or side-series streams |
+| Canonical TXT transcripts | 298: 284 numbered and all 14 non-numbered streams |
+| Curated Q&A pages | 298: 284 numbered and all 14 non-numbered streams |
 | Known-unavailable transcripts | 2 numbered streams |
 
-Latest numbered Q&A page: [Livestream 285: Joseph, Time-Traveller](./docs/questions/285-joseph-time-traveller-questions.md).
+Latest numbered Q&A page: [Livestream 286: Friday The 13th, A Fine Day For A Book Launch!](./docs/questions/286-friday-the-13th-a-fine-day-for-a-book-launch-questions.md).
 
 The two canonical `known-unavailable` records are:
 
