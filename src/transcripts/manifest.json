@@ -8,6 +8,23 @@
   },
   "transcripts": [
     {
+      "videoId": "SfI4MCrNJVI",
+      "fileStem": "287-thou-shall-not-steal",
+      "path": "txt/287-thou-shall-not-steal.txt",
+      "source": "youtube-transcript-plus",
+      "contentSha256": "f3488d0b5e1e873c28e0375447571fb04675a8e2eadbede68246679db51faf24",
+      "canonicalByteLength": 113999,
+      "segmentCount": 1792,
+      "firstStartSeconds": 19,
+      "lastStartSeconds": 6848,
+      "fetchedAt": "2026-11-22T18:02:13.683Z",
+      "selectedLanguage": "ar",
+      "availableLanguages": [
+        "ar"
+      ],
+      "captionKind": "unknown"
+    },
+    {
       "videoId": "OJ8k4CE23_E",
       "fileStem": "286-friday-the-13th-a-fine-day-for-a-book-launch",
       "path": "txt/286-friday-the-13th-a-fine-day-for-a-book-launch.txt",

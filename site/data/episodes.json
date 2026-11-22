@@ -1,5 +1,19 @@
 [
   {
+    "number": 287,
+    "title": "Thou Shall Not Steal!",
+    "slug": "287-thou-shall-not-steal",
+    "youtube_url": "https://www.youtube.com/watch?v=SfI4MCrNJVI",
+    "video_id": "SfI4MCrNJVI",
+    "question_page": "questions/287-thou-shall-not-steal-questions.md",
+    "content_path": "questions/287-thou-shall-not-steal/",
+    "status": "curated",
+    "is_numbered": true,
+    "is_special": false,
+    "question_count": 22,
+    "series": "numbered livestream"
+  },
+  {
     "number": 286,
     "title": "Friday The 13th, A Fine Day For A Book Launch!",
     "slug": "286-friday-the-13th-a-fine-day-for-a-book-launch",
