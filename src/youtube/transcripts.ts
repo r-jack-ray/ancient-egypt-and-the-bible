@@ -25,6 +25,7 @@ const userAgent =
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36";
 const maximumResponseBytes = 20 * 1024 * 1024;
 const journalPath = ".tmp/transcript-store/transaction.json";
+const defaultTranscriptLanguage = "en";
 
 export interface CaptionSegment {
   startSeconds: number;
@@ -59,26 +60,38 @@ export async function fetchVideoTranscript(options: FetchTranscriptOptions): Pro
   });
   try {
     return await fetchWithPlus(options, limitedFetch);
-  } catch (error) {
-    if (error instanceof YoutubeRequestError && error.classification === "rate_limited_or_blocked") {
-      throw error;
+  } catch (primaryError) {
+    if (primaryError instanceof YoutubeRequestError && primaryError.classification === "rate_limited_or_blocked") {
+      throw primaryError;
     }
-    if (error instanceof Error && error.name === "YoutubeTranscriptTooManyRequestError") {
+    if (primaryError instanceof Error && primaryError.name === "YoutubeTranscriptTooManyRequestError") {
       throw new YoutubeRequestError(
           "Primary transcript provider reported YouTube blocking/CAPTCHA evidence.",
           "rate_limited_or_blocked",
       );
     }
-    options.logger?.(`Primary transcript provider failed: ${safeMessage(error)}. Trying caption-track fallback.`);
+    const primaryMessage = safeMessage(primaryError);
+    options.logger?.(`Primary transcript provider failed for ${options.videoId}: ${primaryMessage} Trying caption-track fallback.`);
+    try {
+      return await fetchWatchPageCaptions(options, limitedFetch);
+    } catch (fallbackError) {
+      const fallbackClassification = classifyFetchError(fallbackError);
+      if (fallbackClassification === "rate_limited_or_blocked") {
+        throw fallbackError;
+      }
+      const primaryClassification = classifyFetchError(primaryError);
+      const classification = fallbackClassification === "no_caption_tracks" &&
+          (primaryClassification === "language_unavailable" || primaryClassification === "empty_transcript")
+          ? primaryClassification
+          : fallbackClassification;
+      const language = options.language ?? "English";
+      throw new TranscriptFetchError(
+          `Could not download ${language} captions for ${options.videoId}. ` +
+          `Watch-page fallback: ${safeMessage(fallbackError)} Primary provider: ${primaryMessage}`,
+          classification,
+      );
+    }
   }
-  const fallback = await fetchWatchPageCaptions(options, limitedFetch);
-  if (fallback === undefined) {
-    throw new TranscriptFetchError(
-        `No caption tracks found for video ${options.videoId}.`,
-        "no_caption_tracks",
-    );
-  }
-  return fallback;
 }
 
 export class TranscriptFetchError extends Error {
@@ -105,9 +118,20 @@ async function fetchWithPlus(
     videoFetch: (params: FetchParams) => plusFetch(params, limitedFetch),
     playerFetch: (params: FetchParams) => plusFetch(params, limitedFetch),
     transcriptFetch: (params: FetchParams) => plusFetch(params, limitedFetch),
-    ...(options.language !== undefined ? {lang: options.language} : {}),
+    lang: options.language ?? defaultTranscriptLanguage,
   };
-  const result = await fetchTranscriptPlus(options.videoId, config);
+  let result: TranscriptResult;
+  try {
+    result = await fetchTranscriptPlus(options.videoId, config);
+  } catch (error) {
+    const regionalEnglish = options.language === undefined && isPlusLanguageUnavailable(error)
+        ? error.availableLangs.find(isEnglishLanguage)
+        : undefined;
+    if (regionalEnglish === undefined) {
+      throw error;
+    }
+    result = await fetchTranscriptPlus(options.videoId, {...config, lang: regionalEnglish});
+  }
   return normalizePlus(options.videoId, result);
 }
 
@@ -166,7 +190,7 @@ function normalizePlusSegment(segment: PlusSegment): CaptionSegment | undefined 
 async function fetchWatchPageCaptions(
     options: FetchTranscriptOptions,
     limitedFetch: typeof fetch,
-): Promise<VideoTranscript | undefined> {
+): Promise<VideoTranscript> {
   const watch = await readLimitedText(
       await limitedFetch(`https://www.youtube.com/watch?v=${options.videoId}`, {
         headers: {"user-agent": userAgent, "accept-language": "en-US,en;q=0.9"},
@@ -178,30 +202,45 @@ async function fetchWatchPageCaptions(
   const player = extractAssignedJson(watch, "ytInitialPlayerResponse");
   const tracks = captionTracks(player);
   if (tracks.length === 0) {
-    return undefined;
+    throw new TranscriptFetchError("No caption tracks found.", "no_caption_tracks");
   }
-  const selected = selectCaptionTrack(tracks, options.language);
-  if (selected === undefined) {
+  const availableLanguages = [...new Set(tracks.map((track) => track.languageCode))];
+  const candidates = selectCaptionTracks(tracks, options.language);
+  if (candidates.length === 0) {
     throw new TranscriptFetchError(
-        `No caption track matched language ${options.language ?? "(default)"}.`,
+        `No caption track matched ${options.language ?? "English"}. Available languages: ${availableLanguages.join(", ")}.`,
         "language_unavailable",
     );
   }
-  const separator = selected.baseUrl.includes("?") ? "&" : "?";
-  const payload = await readLimitedText(await limitedFetch(`${selected.baseUrl}${separator}fmt=json3`));
-  const segments = extractJson3Segments(JSON.parse(payload) as unknown);
-  if (segments.length === 0) {
-    throw new TranscriptFetchError(`Caption track contained no segments for ${options.videoId}.`, "empty_transcript");
+  const failures: string[] = [];
+  let classification: TranscriptFetchError["classification"] = "empty_transcript";
+  for (const track of candidates) {
+    const captionKind = track.kind === "asr" ? "automatic" : "manual";
+    try {
+      const separator = track.baseUrl.includes("?") ? "&" : "?";
+      const payload = await readLimitedText(await limitedFetch(`${track.baseUrl}${separator}fmt=json3`));
+      const segments = payload.trim() ? extractJson3Segments(JSON.parse(payload) as unknown) : [];
+      if (segments.length > 0) {
+        return {
+          videoId: options.videoId,
+          source: "watch-page-captions",
+          fetchedAt: new Date().toISOString(),
+          selectedLanguage: track.languageCode,
+          availableLanguages,
+          captionKind,
+          segments,
+        };
+      }
+      failures.push(`${track.languageCode} (${captionKind}) contained no segments.`);
+    } catch (error) {
+      if (error instanceof YoutubeRequestError && error.classification === "rate_limited_or_blocked") {
+        throw error;
+      }
+      classification = "fetch_failed";
+      failures.push(`${track.languageCode} (${captionKind}): ${safeMessage(error)}`);
+    }
   }
-  return {
-    videoId: options.videoId,
-    source: "watch-page-captions",
-    fetchedAt: new Date().toISOString(),
-    selectedLanguage: selected.languageCode,
-    availableLanguages: [...new Set(tracks.map((track) => track.languageCode))],
-    captionKind: selected.kind === "asr" ? "automatic" : "manual",
-    segments,
-  };
+  throw new TranscriptFetchError(failures.join(" "), classification);
 }
 
 interface CaptionTrack {
@@ -231,17 +270,31 @@ function captionTracks(player: unknown): CaptionTrack[] {
   });
 }
 
-function selectCaptionTrack(
+function selectCaptionTracks(
     tracks: CaptionTrack[],
     language: string | undefined,
-): CaptionTrack | undefined {
+): CaptionTrack[] {
   if (language !== undefined) {
     const wanted = language.toLowerCase();
-    return tracks.find((track) => track.languageCode.toLowerCase() === wanted);
+    return tracks.filter((track) => track.languageCode.toLowerCase() === wanted);
   }
-  return tracks.find((track) => track.languageCode.startsWith("en") && track.kind !== "asr") ??
-      tracks.find((track) => track.languageCode.startsWith("en")) ??
-      tracks[0];
+  const english = tracks.filter((track) => isEnglishLanguage(track.languageCode));
+  return [
+    ...english.filter((track) => track.kind !== "asr"),
+    ...english.filter((track) => track.kind === "asr"),
+  ];
+}
+
+function isEnglishLanguage(language: string): boolean {
+  return /^en(?:-|$)/iu.test(language);
+}
+
+function isPlusLanguageUnavailable(error: unknown): error is Error & {availableLangs: string[]} {
+  return error instanceof Error &&
+      error.name === "YoutubeTranscriptNotAvailableLanguageError" &&
+      "availableLangs" in error &&
+      Array.isArray(error.availableLangs) &&
+      error.availableLangs.every((language: unknown) => typeof language === "string");
 }
 
 export function extractJson3Segments(value: unknown): CaptionSegment[] {
@@ -466,6 +519,9 @@ export function classifyFetchError(error: unknown):
   }
   if (error instanceof TranscriptFetchError) {
     return error.classification;
+  }
+  if (isPlusLanguageUnavailable(error)) {
+    return "language_unavailable";
   }
   const message = safeMessage(error);
   if (/no caption tracks?/iu.test(message)) {

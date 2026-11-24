@@ -46,12 +46,16 @@ function parseArgs(args: string[]): {
   --limit <count>
   --request-delay-ms <ms>
   --dry-run                 Network-free and canonical-write-free
-  --language <code>
+  --language <code>         Require a specific caption language
+
+By default, fetch English captions (en or a regional English track).
+If English cannot be downloaded, the run reports the reason and records the failure.
+Use --language to explicitly request another available caption language.
 
 Valid stored transcripts are always skipped. Batch-global force is disabled.
 Recorded failures remain eligible on ordinary later runs; only known-unavailable records are excluded.
-The npm command spaces transcript attempts by 60 seconds. Internal requests needed
-to fetch one transcript are not delayed from each other.
+Transcript attempts are spaced by 5 seconds by default, or 60 seconds with
+npm run fetch:transcripts:safe. Requests within one attempt are not delayed.
 The final handoff lists each new TXT path and every deferred, failed, or pending record.
 `);
       process.exit(0);

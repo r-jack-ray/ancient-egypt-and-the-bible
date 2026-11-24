@@ -254,6 +254,59 @@ test("partial failures checkpoint and remain eligible on an ordinary later run",
   });
 });
 
+test("batch reports Arabic-only captions as a language failure without storing a TXT", async () => {
+  const record = episode("ARABIC00001", "arabic-only-captions", 1);
+  const player = {
+    captions: {
+      playerCaptionsTracklistRenderer: {
+        captionTracks: [{baseUrl: "https://www.youtube.com/api/timedtext?lang=ar", languageCode: "ar"}],
+      },
+    },
+  };
+  await withFixture({
+    episodes: [record],
+    metadata: [readyMetadata(record.videoId)],
+  }, async (root) => {
+    const result = await fetchTranscriptBatch({
+      requestDelayMs: 0,
+      fetch: async (input) => {
+        const url = new URL(String(input));
+        if (url.pathname === "/watch") {
+          return new Response(
+              `"INNERTUBE_API_KEY":"example"; var ytInitialPlayerResponse = ${JSON.stringify(player)};`,
+          );
+        }
+        if (url.pathname === "/youtubei/v1/player") {
+          return Response.json(player);
+        }
+        assert.equal(url.pathname, "/api/timedtext");
+        assert.equal(url.searchParams.get("lang"), "ar");
+        return url.searchParams.get("fmt") === "json3"
+            ? Response.json({events: [{tStartMs: 0, dDurationMs: 1_000, segs: [{utf8: "مرحبا"}]}]})
+            : new Response('<text start="0" dur="1">مرحبا</text>');
+      },
+    });
+
+    assert.equal(result.fetched, 0);
+    assert.equal(result.failed, 1);
+    const [failure] = result.failureRecords;
+    assert.ok(failure);
+    assert.equal(failure.classification, "language_unavailable");
+    assert.match(failure.message, /\bar\b/u);
+    assert.ok(formatTranscriptBatchHandoff(result).includes(
+        `${failure.path} (${record.videoId}): language_unavailable ${failure.message}`,
+    ));
+    const status = JSON.parse(
+        await readFile(join(root, "src/transcripts/fetch-status.json"), "utf8"),
+    ) as { failures: FetchFailure[] };
+    assert.equal(status.failures.length, 1);
+    assert.equal(status.failures[0]?.videoId, record.videoId);
+    assert.equal(status.failures[0]?.classification, "language_unavailable");
+    assert.equal(status.failures[0]?.message, failure.message);
+    await assert.rejects(readFile(join(root, failure.path), "utf8"), {code: "ENOENT"});
+  });
+});
+
 test("dry-run keeps known-unavailable records skipped and applies limits to the preview", async () => {
   const episodes = [
     episode("UNAVAIL0001", "known-unavailable-one", 1, "known-unavailable"),

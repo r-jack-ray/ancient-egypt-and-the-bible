@@ -3,7 +3,7 @@
   "generated_by": "scripts/build-search-index.mjs",
   "source_data": "site/data/questions.json",
   "source_aliases": "site/data/search-aliases.json",
-  "document_count": 15277,
+  "document_count": 15278,
   "episode_order": [
     "questions/287-thou-shall-not-steal/",
     "questions/286-friday-the-13th-a-fine-day-for-a-book-launch/",

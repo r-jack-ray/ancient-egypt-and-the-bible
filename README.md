@@ -202,7 +202,9 @@ npm run fetch:transcripts -- --dry-run
 npm run fetch:transcripts
 ```
 
-The npm command spaces transcript attempts by 60 seconds. It skips valid stored transcripts, known-unavailable records, and streams that are not ready; writes successful payloads directly under [`src/transcripts/txt/`](./src/transcripts/txt/); updates the manifest and fetch state; and reports every stored, deferred, failed, or pending record. Valid stored TXT files remain unchanged. Recorded failures remain eligible on later runs.
+The batch requests English captions, including regional English tracks. If it cannot download English, it reports the reason in the handoff and saves it in [`src/transcripts/fetch-status.json`](./src/transcripts/fetch-status.json). When English is missing, the report lists any other caption languages YouTube offered. Use `--language <code>` to explicitly request another available language. Run `npm run status:transcripts` to review saved failures.
+
+Transcript attempts are spaced by five seconds by default and by 60 seconds with `npm run fetch:transcripts:safe`. The batch skips valid stored transcripts and known-unavailable records, defers streams that are still preparing, and writes successful payloads directly under [`src/transcripts/txt/`](./src/transcripts/txt/). Recorded failures remain eligible on later runs.
 
 Use `--limit 1` for a batch canary. Refresh incomplete or changing video metadata with:
 

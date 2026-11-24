@@ -12,15 +12,15 @@
       "fileStem": "287-thou-shall-not-steal",
       "path": "txt/287-thou-shall-not-steal.txt",
       "source": "youtube-transcript-plus",
-      "contentSha256": "f3488d0b5e1e873c28e0375447571fb04675a8e2eadbede68246679db51faf24",
-      "canonicalByteLength": 113999,
-      "segmentCount": 1792,
-      "firstStartSeconds": 19,
-      "lastStartSeconds": 6848,
-      "fetchedAt": "2026-11-22T18:02:13.683Z",
-      "selectedLanguage": "ar",
+      "contentSha256": "09dc7dbecf90878ffd7722e64920f6fb7e7c4b1cf5575503e87045acfc2049e7",
+      "canonicalByteLength": 97803,
+      "segmentCount": 2559,
+      "firstStartSeconds": 20,
+      "lastStartSeconds": 6849,
+      "fetchedAt": "2026-11-24T21:26:21.335Z",
+      "selectedLanguage": "en",
       "availableLanguages": [
-        "ar"
+        "en"
       ],
       "captionKind": "unknown"
     },
